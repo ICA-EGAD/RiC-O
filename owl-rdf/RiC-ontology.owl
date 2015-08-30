@@ -1,0 +1,1661 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dvp4c/ontologies/RiC"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/dvp4c/ontologies/RiC"
+     versionIRI="http://www.semanticweb.org/dvp4c/ontologies/RiC/04">
+    <Prefix name="" IRI="http://www.semanticweb.org/dvp4c/ontologies/RiC#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmbientFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Appellation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalRecordSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalRecordSetDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConceptualObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorporateBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorporateBodyType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreationOrAccumulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObjectDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanGeographicFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanGeographicFeatureType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mandate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandateDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGeographicFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGeographicFeatureType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalPhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupationOrPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupationOrPositionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccurrentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersistentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person-like"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProxyAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordComponentContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordComponentRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordSetType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationDescriptionContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffiliatedPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgentName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAncestor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAppellation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBirthDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeathDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAgentNameOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAppellationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isControlledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEmployedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIdentifierOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLanguageUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLegalStatusOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNameOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPredecessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSiblingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpouseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSuccesorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHistory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://isni.org/isni/0000000053111928"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Delescluze,_Charles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Delescluze,__Henri_(1819-1879)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FRAN_NP_50303"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FRAN_NP_50304"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#French"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ISNI"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentName"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmbientFunction"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Appellation"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalDescriptionContent"/>
+        <Class IRI="#CulturalObjectDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalRecordSet"/>
+        <Class IRI="#RecordSet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalRecordSetDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological"/>
+        <Class IRI="#NaturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConceptualObject"/>
+        <Class IRI="#CulturalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorporateBody"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorporateBodyType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreationOrAccumulation"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalAffiliation"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObject"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObjectDescriptionContent"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalPhysicalObject"/>
+        <Class IRI="#CulturalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalPhysicalObject"/>
+        <Class IRI="#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateRange"/>
+        <Class IRI="#Date"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#OccurrentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanGeographicFeature"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanGeographicFeatureType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identifier"/>
+        <Class IRI="#Appellation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationMedium"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationObject"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationRealization"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mandate"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandateDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name"/>
+        <Class IRI="#Appellation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGeographicFeature"/>
+        <Class IRI="#NaturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGeographicFeatureType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalPhysicalObject"/>
+        <Class IRI="#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupationOrPosition"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupationOrPositionType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Biological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person-like"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalObject"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProxyAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordComponentContent"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordComponentRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordContent"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordDescriptionContent"/>
+        <Class IRI="#RecordDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordSet"/>
+        <Class IRI="#Set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordSetType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationDescriptionContent"/>
+        <Class IRI="#ArchivalDescriptionContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoleType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rule"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleType"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleDate"/>
+        <Class IRI="#Date"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Appellation"/>
+        <Class IRI="#Period"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Appellation"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorporateBody"/>
+        <Class IRI="#Family"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorporateBodyType"/>
+        <Class IRI="#CulturalAffiliation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorporateBodyType"/>
+        <Class IRI="#Language"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CulturalAffiliation"/>
+        <Class IRI="#Language"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Date"/>
+        <Class IRI="#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Date"/>
+        <Class IRI="#OccurrentEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Date"/>
+        <Class IRI="#PersistentEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#Person-like"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#ProxyAgent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Identifier"/>
+        <Class IRI="#Name"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InformationObject"/>
+        <Class IRI="#Period"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Location"/>
+        <Class IRI="#OccurrentEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Location"/>
+        <Class IRI="#PersistentEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OccurrentEntity"/>
+        <Class IRI="#PersistentEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Period"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#ProxyAgent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person-like"/>
+        <Class IRI="#ProxyAgent"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Identifier"/>
+        <NamedIndividual IRI="http://isni.org/isni/0000000053111928"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgentName"/>
+        <NamedIndividual IRI="#Delescluze,_Charles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgentName"/>
+        <NamedIndividual IRI="#Delescluze,__Henri_(1819-1879)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#FRAN_NP_50303"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#FRAN_NP_50304"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#French"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+        <NamedIndividual IRI="#FRAN_NP_50303"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <NamedIndividual IRI="#FRAN_NP_50304"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIdentifierOf"/>
+        <NamedIndividual IRI="http://isni.org/isni/0000000053111928"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgentName"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+        <NamedIndividual IRI="#Delescluze,_Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+        <NamedIndividual IRI="#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgentName"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <NamedIndividual IRI="#Delescluze,__Henri_(1819-1879)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <NamedIndividual IRI="#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ISNI"/>
+        <NamedIndividual IRI="http://isni.org/isni/0000000053111928"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHistory"/>
+        <NamedIndividual IRI="#Delescluze,_Charles_(1809-1871)"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Frère d’Azémia et Henri Delescluze. Journaliste républicain engagé sous la monarchie de Juillet, ce qui lui vaut un long exil en Belgique dans les années 1830. Revenu en France, il dirige L’Impartial du Nord à Valenciennes, et est nommé commissaire du gouvernement en 1848. Revenu à Paris, il est l’un des principaux fondateurs de la Solidarité républicaine, et un important soutien de Ledru-Rollin, notamment, par son journal La Révolution démocratique et sociale. Delescluze prend part à la manifestation des Arts-et-Métiers le 13 juin 1849, et parvient à s’enfuir. Réfugié à Londres, il continue son activité de journaliste (Le Proscrit, La Voix du proscrit), tout en essayant difficilement de se lancer dans l’industrie (fabrique de graisse). Il rentre en France clandestinement en 1854, et, dénoncé, il est jugé à nouveau et condamné. Prisonnier à Belle-Île, puis à Corte, il est considéré comme un ennemi dangereux par le régime, et à ce titre est envoyé à Cayenne. À la fin du Second Empire, il dirige à nouveau un journal d’opposition à Paris, le Réveil. Bien qu’un peu isolé par ses idées radicales, il prend part à la Commune, et trouve la mort en défendant la barricade du Château d’Eau.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHistory"/>
+        <NamedIndividual IRI="#Delescluze,_Henri_(1819-1879)"/>
+        <Literal datatypeIRI="&xsd;string">Henri Delescluze (1819-1879), frère de Louis-Charles Delescluze auquel il était très attaché, eut également un destin hors du commun. Arrêté le 26 octobre 1850, sous l’inculpation d’excitation à la guerre civile et complot contre la sûreté de l’État, il fut incarcéré à Mazas, puis transféré à Lyon, pour être bientôt emprisonné à Belle-Ile jusqu’en 1853. Condamné au bannissement, il s’embarqua ensuite pour l’Angleterre puis, en 1854 pour les États-Unis, où il demeura jusqu’en 1879, après avoir vainement tenté de rentrer en France à plusieurs reprises. Il revint finalement à Paris un mois avant sa mort survenue le 28 avril 1879.</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#controls"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAffiliatedPerson"/>
+        <ObjectProperty IRI="#hasMember"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAgentName"/>
+        <ObjectProperty IRI="#hasName"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDirector"/>
+        <ObjectProperty IRI="#hasMember"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <ObjectProperty IRI="#hasMember"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIdentifier"/>
+        <ObjectProperty IRI="#hasAppellation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <ObjectProperty IRI="#hasType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLegalStatus"/>
+        <ObjectProperty IRI="#hasType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasName"/>
+        <ObjectProperty IRI="#hasAppellation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#hasAncestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAgentNameOf"/>
+        <ObjectProperty IRI="#isNameOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAncestorOf"/>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isControlledBy"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isEmployedBy"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIdentifierOf"/>
+        <ObjectProperty IRI="#isAppellationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLanguageUsedBy"/>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLegalStatusOf"/>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNameOf"/>
+        <ObjectProperty IRI="#isAppellationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPredecessorOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSpouseOf"/>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSuccesorOf"/>
+        <ObjectProperty IRI="#isAgentAssociatedWithAgent"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isControlledBy"/>
+        <ObjectProperty IRI="#controls"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAffiliatedPerson"/>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAgentName"/>
+        <ObjectProperty IRI="#isAgentNameOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAppellationOf"/>
+        <ObjectProperty IRI="#hasAppellation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#hasChild"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDirector"/>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <ObjectProperty IRI="#isEmployedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIdentifier"/>
+        <ObjectProperty IRI="#isIdentifierOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLanguageUsedBy"/>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLegalStatusOf"/>
+        <ObjectProperty IRI="#hasLegalStatus"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isNameOf"/>
+        <ObjectProperty IRI="#hasName"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectProperty IRI="#hasType"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isSiblingOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isSpouseOf"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasAncestor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#controls"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAffiliatedPerson"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBirthDate"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBirthDate"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeathDate"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeathDate"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegalStatus"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAgentNameOf"/>
+        <Class IRI="#AgentName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAncestorOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAncestorOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAppellationOf"/>
+        <Class IRI="#Appellation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isControlledBy"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEmployedBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIdentifierOf"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLanguageUsedBy"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLegalStatusOf"/>
+        <Class IRI="#CorporateBodyType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNameOf"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpouseOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpouseOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#controls"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAcquiredIdentity"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAffiliatedPerson"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAgentName"/>
+        <Class IRI="#AgentName"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAncestor"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAppellation"/>
+        <Class IRI="#Appellation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBirthDate"/>
+        <Class IRI="#SingleDate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeathDate"/>
+        <Class IRI="#SingleDate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIdentifier"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalStatus"/>
+        <Class IRI="#CorporateBodyType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubordinateBody"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAcquiredIdentityOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAffiliatedTo"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAgentNameOf"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAncestorOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAncestorOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isControlledBy"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEmployedBy"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFamilyLinkedTo"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLanguageUsedBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLegalStatusOf"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpouseOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpouseOf"/>
+        <Class IRI="#Person-like"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubordinateBodyOf"/>
+        <Class IRI="#CorporateBody"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHistory"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHistory"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Charles Delescluze in BnF world</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isni.org/isni/0000000053111928</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISNI 0000 0000 5311 1928</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 25-08-2015] 
+ (from Daniel&apos;s draft on functions) The activity(ies), action(s) and transaction(s) employed by an Agent in fulfilling a Function.
+Additions :
+An activity often has a verb in its name. Examples : registering students ; subsidising ; maintaining roads
+An instance of an activity, as any instance of an Event, may have dates. It has specific contextual features : may have an history and its own cultural and social context, as well as methods, tools and means ; may be performed by one to more instances of Agent at the same time or successively ; may be authorized by one to many instances of Agent, through a mandate ; may be governed by rules ; may be carried out in order to fullfill one or more ambient functions, and in practicing one or more occupation ; may result in the creation or accumulation of one or more archival record sets.
+An instance of an Activity may consist of distinct Activities.
+An instance of an Activity may be associated with a generic conceptual ActivityType (examples : writing an article ; registering students), defined in a controlled vocabulary or thesaurus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015] (From Ric Conceptual Model)
+Known identities that are or are perceived to be responsible for acting and producing effects. The most common agents are persons, corporate bodies, and families. Agent includes both the creators of records as well as known identities that are documented in records, thus Agent includes Person-like identities (pseudonyms, fictional characters, mythical and sacred characters, …). Further, entities that are created by a person or group that act on behalf of the creator in an autonomous or semi-autonomous manner are included in Agent (e.g., software agents; space and underwater probes that generate data (records) that is in fulfilment of the creator agent&apos;s mandate).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AmbientFunction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 27-08-2015] 
+The goal, objective, purpose of an Agent, be it assigned to, or freely chosen, by the Agent. It usually has a quite wide scope. It may have other functions as parts. 
+A function often has a common noun as a name. Examples (from French context) : &quot;culture&quot; &gt; &quot;cultural heritage&quot; &gt; &quot;historical buildings&quot; (as defined since 19th century). 
+An instance of a function has contextual features (a social and cultural context) and a history (it can appear or even be defined in some period or civilization and thus be specific to it, become an important field for human activity in this cultural context, evolve, disappear, be somewhat replaced by another one). 
+It may be assigned to one or more agents (or chosen as a purpose by them) at the same time or successively, possibly through one or more high level mandates ; may be governed by some high level rules (law) ; may be associated with other functions and with personal occupations or positions ; may imply performing some activities.
+A instance of a function may, among other features, be associated with a generic conceptual FunctionType, defined in a controlled vocabulary or thesaurus.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArchivalRecordSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Record Set is an intellectual grouping of records based on one or more
+			properties shared by two or more records. Though such a group may be coextensive with a RecordStorageUnit (physically
+			arrangement and storage), this is not essential. NOTE: the term is used in its mathematical meaning (BFP)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CorporateBody</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015]
+A group that has been given or has given itself an organization or structure, such that it has a social or legal recognition. May include other corporate bodies and/or persons, and may be divided into   units</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CulturalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cultural object is a man-made object. Though the term &quot;cultural&quot; is
+			often used as a synonym for &quot;high culture,&quot; for example, the Mona Lisa, or Il Duomo, here it is used in
+			contrast to Natural Object, or Culture versus Nature, the former being all of the objects that are human produced,
+			and the latter as the given environment. (Rousseau was apparently the first to make this distinction). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Date</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015] (From note on Date and Place entities)
+The moment when something happens or lasts in the history of an entity. Includes single dates and date ranges. Not to be confused with Period, which is about human representation (concepts) of dates, generally expressed through a controlled vocabulary.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Delescluze,_Charles</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Delescluze, Charles (1809-1871)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Delescluze,_Charles_(1809-1871)</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">change name to agentType or legalCateagory ?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Delescluze,__Henri_(1819-1879)</IRI>
+        <Literal datatypeIRI="&xsd;string">Delescluze, Henri (1819-1879)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#English</IRI>
+        <Literal datatypeIRI="&xsd;string">English</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FRAN_NP_50303</IRI>
+        <Literal datatypeIRI="&xsd;string">Charles Delescluze in ANF world</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FRAN_NP_50304</IRI>
+        <Literal datatypeIRI="&xsd;string">Henri Delescluze in ANF world</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Family</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015] Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.  (from RDA and FRAD)
+Includes family branches (a family may have some family subdivisions).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#French</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">French</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015]
+Any gathering of agents that may itself play the role of one agent. Includes families and corporate bodies/organizations. A group may have any agents as member(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanGeographicFeature</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015]
+Includes settlements of any kind, buildings, historical regions, political and administrative areas. Often associated with space information, given using Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015] (From note on Date and Place entities)
+The geographic point or area where an event takes place or to which it refers, where an agent is located or has its jurisdiction, where records are kept, functions and activities are realized, etc. Can be used to locate a geographic feature, be it human or natural.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mandate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 25-08-2015] 
+The assignment of one or more functions, and/or one or more activities, and/or one or more occupations, by one or more Agents to one or more Agents.
+This assignment is defined as an event in the history of the Agent; it thus may have a date and a location. It also may involve one or more authorizing agents, and concerns functions,  activities or occupations, for some duration and in some jurisdiction, according to some rules. It may be recorded (so is documented by a Record).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturalGeographicFeature</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 24-08-2015]
+Includes natural geographic objects, such as mountains, rivers, etc. Often associated with space information, given using Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OccupationOrPosition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 27-08-2015]  A profession, job or position that a person may have, which may assign him/her functions and goals, and from which may result activities.
+Includes positions in corporate bodies (such as : head, president, executive director, assistant, etc.).
+Often associated with a concept of a controlled vocabulary (instance of ProfessionOrPositionType).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersistentEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class is more or less the same as CRM &quot;Persistent
+			Item&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person is distinguished from Person-like in order to make it possible to
+			accurately distinguish between the Person and one or more &quot;Person identities&quot; that may be acquired over a
+			life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This Agent identity is for a biological person. The identity is the identity
+			the person is given in proximity to the date of birth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person-like</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person-like is an identity acquired (as opposed to the identity given in
+			proximity to birth). Such identities may be shared by two or more Persons. Futher, the relation of a Person-like
+			agent to a person or persons (or group or groups) may be unknown or tenuous. A Person-like agent may, in fact, be a fictitious
+			or mythical identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProxyAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ProxyAgents are identities created by and that act on behalf of Person or
+			Corporate Body. This class covers software agents, and unmanned vehicles and probes that function autonymously or
+			semi-autonymously. Such agents act and generate records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 25-08-2015] The role that an Agent plays in some Event affecting any Entity, or with respect to a function or activity.
+Examples : a person participates in a creation/accumulation event with the role of collector, or author, of the records
+Not to be confused with the occupation or position of the person; nor with activities or ambient functions.
+May be often associated with a concept  of a thesaurus (instance of RoleType)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rule</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[FC, Proposal, 25-08-2015] 
+(From Daniel&apos;s draft on business entities, slightly changed). Rules and regulations that govern the way in which a Function is realized, Activity(ies) or profession(s) and position(s) are performed. Such Rule(s) may be in the form of a plan (e.g. a sequence (timeline) with milestones, specific activities and sub-function), that is, a plan of work is a type of Rule.
+Addition : May be often associated with a concept of a thesaurus (instance of RuleType)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

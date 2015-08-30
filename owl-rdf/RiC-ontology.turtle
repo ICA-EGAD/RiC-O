@@ -1,0 +1,1393 @@
+@prefix : <http://www.semanticweb.org/dvp4c/ontologies/RiC#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dvp4c/ontologies/RiC> .
+
+<http://www.semanticweb.org/dvp4c/ontologies/RiC> rdf:type owl:Ontology ;
+                                                  
+                                                  owl:versionIRI <http://www.semanticweb.org/dvp4c/ontologies/RiC/04> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#controls
+
+:controls rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :CorporateBody ;
+          
+          rdfs:range :CorporateBody ;
+          
+          rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasAcquiredIdentity
+
+:hasAcquiredIdentity rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:domain :Group ,
+                                 :Person ;
+                     
+                     rdfs:range :Person-like ;
+                     
+                     rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasAffiliatedPerson
+
+:hasAffiliatedPerson rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:domain :CorporateBody ;
+                     
+                     rdfs:range :Person ;
+                     
+                     rdfs:subPropertyOf :hasMember ;
+                     
+                     owl:inverseOf :isAffiliatedTo .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasAgentName
+
+:hasAgentName rdf:type owl:ObjectProperty ;
+              
+              rdfs:range :AgentName ;
+              
+              rdfs:subPropertyOf :hasName ;
+              
+              owl:inverseOf :isAgentNameOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasAncestor
+
+:hasAncestor rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             
+             rdfs:range :Person ;
+             
+             rdfs:domain :Person ,
+                         :Person-like ;
+             
+             rdfs:range :Person-like ;
+             
+             owl:inverseOf :isAncestorOf ;
+             
+             rdfs:subPropertyOf :isFamilyLinkedTo .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasAppellation
+
+:hasAppellation rdf:type owl:ObjectProperty ;
+                
+                rdfs:range :Appellation .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasBirthDate
+
+:hasBirthDate rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Person ,
+                          :Person-like ;
+              
+              rdfs:range :SingleDate .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasChild
+
+:hasChild rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Person ;
+          
+          rdfs:range :Person ;
+          
+          rdfs:domain :Person-like ;
+          
+          rdfs:range :Person-like ;
+          
+          rdfs:subPropertyOf :isAncestorOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasDeathDate
+
+:hasDeathDate rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Person ,
+                          :Person-like ;
+              
+              rdfs:range :SingleDate .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasDirector
+
+:hasDirector rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :CorporateBody ;
+             
+             rdfs:range :Person ;
+             
+             rdfs:subPropertyOf :hasMember ;
+             
+             owl:inverseOf :isDirectorOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasEmployee
+
+:hasEmployee rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :CorporateBody ;
+             
+             rdfs:range :Person ;
+             
+             rdfs:subPropertyOf :hasMember ;
+             
+             owl:inverseOf :isEmployedBy .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasIdentifier
+
+:hasIdentifier rdf:type owl:ObjectProperty ;
+               
+               rdfs:range :Identifier ;
+               
+               rdfs:subPropertyOf :hasAppellation ;
+               
+               owl:inverseOf :isIdentifierOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasLanguage
+
+:hasLanguage rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :Agent ;
+             
+             rdfs:range :Language ;
+             
+             rdfs:subPropertyOf :hasType .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasLegalStatus
+
+:hasLegalStatus rdf:type owl:ObjectProperty ;
+                
+                rdfs:domain :CorporateBody ;
+                
+                rdfs:range :CorporateBodyType ;
+                
+                rdfs:subPropertyOf :hasType .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasMember
+
+:hasMember rdf:type owl:ObjectProperty ;
+           
+           rdfs:range :Group ;
+           
+           rdfs:domain :Group ;
+           
+           rdfs:range :Person ,
+                      :Person-like ;
+           
+           rdfs:subPropertyOf :isAgentAssociatedWithAgent ;
+           
+           owl:inverseOf :isMemberOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasName
+
+:hasName rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :Name ;
+         
+         rdfs:subPropertyOf :hasAppellation .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasParent
+
+:hasParent rdf:type owl:ObjectProperty ;
+           
+           rdfs:domain :Person ;
+           
+           rdfs:range :Person ,
+                      :Person-like ;
+           
+           rdfs:domain :Person-like ;
+           
+           rdfs:subPropertyOf :hasAncestor ;
+           
+           owl:inverseOf :hasChild .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasSubordinateBody
+
+:hasSubordinateBody rdf:type owl:ObjectProperty ,
+                             owl:TransitiveProperty ;
+                    
+                    rdfs:domain :CorporateBody ;
+                    
+                    rdfs:range :CorporateBody ;
+                    
+                    rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasType
+
+:hasType rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAcquiredIdentityOf
+
+:isAcquiredIdentityOf rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:range :Group ,
+                                 :Person ;
+                      
+                      rdfs:domain :Person-like ;
+                      
+                      owl:inverseOf :hasAcquiredIdentity ;
+                      
+                      rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAffiliatedTo
+
+:isAffiliatedTo rdf:type owl:ObjectProperty ;
+                
+                rdfs:range :CorporateBody ,
+                           :Location ;
+                
+                rdfs:domain :Person ;
+                
+                rdfs:subPropertyOf :isMemberOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAgentAssociatedWithAgent
+
+:isAgentAssociatedWithAgent rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAgentNameOf
+
+:isAgentNameOf rdf:type owl:ObjectProperty ;
+               
+               rdfs:range :Agent ;
+               
+               rdfs:domain :AgentName ;
+               
+               rdfs:subPropertyOf :isNameOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAncestorOf
+
+:isAncestorOf rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              
+              rdfs:domain :Person ;
+              
+              rdfs:range :Person ,
+                         :Person-like ;
+              
+              rdfs:domain :Person-like ;
+              
+              rdfs:subPropertyOf :isFamilyLinkedTo .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isAppellationOf
+
+:isAppellationOf rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:domain :Appellation ;
+                 
+                 owl:inverseOf :hasAppellation .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isControlledBy
+
+:isControlledBy rdf:type owl:ObjectProperty ;
+                
+                rdfs:domain :CorporateBody ;
+                
+                rdfs:range :CorporateBody ;
+                
+                owl:inverseOf :controls ;
+                
+                rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isDirectorOf
+
+:isDirectorOf rdf:type owl:ObjectProperty ;
+              
+              rdfs:range :CorporateBody ;
+              
+              rdfs:domain :Person ;
+              
+              rdfs:subPropertyOf :isMemberOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isEmployedBy
+
+:isEmployedBy rdf:type owl:ObjectProperty ;
+              
+              rdfs:range :CorporateBody ;
+              
+              rdfs:domain :Person ;
+              
+              rdfs:subPropertyOf :isMemberOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isFamilyLinkedTo
+
+:isFamilyLinkedTo rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ,
+                           owl:TransitiveProperty ;
+                  
+                  rdfs:domain :Person ;
+                  
+                  rdfs:range :Person ,
+                             :Person-like ;
+                  
+                  rdfs:domain :Person-like ;
+                  
+                  rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isIdentifierOf
+
+:isIdentifierOf rdf:type owl:ObjectProperty ;
+                
+                rdfs:domain :Identifier ;
+                
+                rdfs:subPropertyOf :isAppellationOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isLanguageUsedBy
+
+:isLanguageUsedBy rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:range :Agent ;
+                  
+                  rdfs:domain :Language ;
+                  
+                  owl:inverseOf :hasLanguage ;
+                  
+                  rdfs:subPropertyOf :isTypeOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isLegalStatusOf
+
+:isLegalStatusOf rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:range :CorporateBody ;
+                 
+                 rdfs:domain :CorporateBodyType ;
+                 
+                 owl:inverseOf :hasLegalStatus ;
+                 
+                 rdfs:subPropertyOf :isTypeOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isMemberOf
+
+:isMemberOf rdf:type owl:ObjectProperty ;
+            
+            rdfs:domain :Group ;
+            
+            rdfs:range :Group ;
+            
+            rdfs:domain :Person ,
+                        :Person-like ;
+            
+            rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isNameOf
+
+:isNameOf rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Name ;
+          
+          owl:inverseOf :hasName ;
+          
+          rdfs:subPropertyOf :isAppellationOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isOwnedBy
+
+:isOwnedBy rdf:type owl:ObjectProperty ;
+           
+           rdfs:domain :CorporateBody ;
+           
+           rdfs:range :Group ,
+                      :Person ;
+           
+           rdfs:subPropertyOf :isAgentAssociatedWithAgent ;
+           
+           owl:inverseOf :isOwnerOf .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isOwnerOf
+
+:isOwnerOf rdf:type owl:ObjectProperty ;
+           
+           rdfs:range :CorporateBody ;
+           
+           rdfs:domain :Group ,
+                       :Person ;
+           
+           rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isPredecessorOf
+
+:isPredecessorOf rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isSiblingOf
+
+:isSiblingOf rdf:type owl:ObjectProperty ,
+                      owl:SymmetricProperty ;
+             
+             rdfs:range :Person ;
+             
+             rdfs:domain :Person ;
+             
+             rdfs:range :Person-like ;
+             
+             rdfs:domain :Person-like ;
+             
+             rdfs:subPropertyOf :isFamilyLinkedTo .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isSpouseOf
+
+:isSpouseOf rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty ;
+            
+            rdfs:domain :Person ;
+            
+            rdfs:range :Person ;
+            
+            rdfs:domain :Person-like ;
+            
+            rdfs:range :Person-like ;
+            
+            rdfs:subPropertyOf :isFamilyLinkedTo .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isSubordinateBodyOf
+
+:isSubordinateBodyOf rdf:type owl:ObjectProperty ,
+                              owl:TransitiveProperty ;
+                     
+                     rdfs:range :CorporateBody ;
+                     
+                     rdfs:domain :CorporateBody ;
+                     
+                     owl:inverseOf :hasSubordinateBody ;
+                     
+                     rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isSuccesorOf
+
+:isSuccesorOf rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf :isAgentAssociatedWithAgent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#isTypeOf
+
+:isTypeOf rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Type ;
+          
+          owl:inverseOf :hasType .
+
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+
+owl:sameAs rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#hasHistory
+
+:hasHistory rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :Agent ;
+            
+            rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Activity
+
+:Activity rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Event ;
+          
+          rdfs:comment """[FC, Proposal, 25-08-2015] 
+ (from Daniel's draft on functions) The activity(ies), action(s) and transaction(s) employed by an Agent in fulfilling a Function.
+Additions :
+An activity often has a verb in its name. Examples : registering students ; subsidising ; maintaining roads
+An instance of an activity, as any instance of an Event, may have dates. It has specific contextual features : may have an history and its own cultural and social context, as well as methods, tools and means ; may be performed by one to more instances of Agent at the same time or successively ; may be authorized by one to many instances of Agent, through a mandate ; may be governed by rules ; may be carried out in order to fullfill one or more ambient functions, and in practicing one or more occupation ; may result in the creation or accumulation of one or more archival record sets.
+An instance of an Activity may consist of distinct Activities.
+An instance of an Activity may be associated with a generic conceptual ActivityType (examples : writing an article ; registering students), defined in a controlled vocabulary or thesaurus."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ActivityType
+
+:ActivityType rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Agent
+
+:Agent rdf:type owl:Class ;
+       
+       rdfs:label "Agent" ;
+       
+       rdfs:subClassOf :PersistentEntity ;
+       
+       rdfs:comment """[FC, Proposal, 24-08-2015] (From Ric Conceptual Model)
+Known identities that are or are perceived to be responsible for acting and producing effects. The most common agents are persons, corporate bodies, and families. Agent includes both the creators of records as well as known identities that are documented in records, thus Agent includes Person-like identities (pseudonyms, fictional characters, mythical and sacred characters, …). Further, entities that are created by a person or group that act on behalf of the creator in an autonomous or semi-autonomous manner are included in Agent (e.g., software agents; space and underwater probes that generate data (records) that is in fulfilment of the creator agent's mandate)."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#AgentDescriptionContent
+
+:AgentDescriptionContent rdf:type owl:Class ;
+                         
+                         rdfs:subClassOf :ArchivalDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#AgentName
+
+:AgentName rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Name .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#AmbientFunction
+
+:AmbientFunction rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :ConceptualObject ;
+                 
+                 rdfs:comment """[FC, Proposal, 27-08-2015] 
+The goal, objective, purpose of an Agent, be it assigned to, or freely chosen, by the Agent. It usually has a quite wide scope. It may have other functions as parts. 
+A function often has a common noun as a name. Examples (from French context) : \"culture\" > \"cultural heritage\" > \"historical buildings\" (as defined since 19th century). 
+An instance of a function has contextual features (a social and cultural context) and a history (it can appear or even be defined in some period or civilization and thus be specific to it, become an important field for human activity in this cultural context, evolve, disappear, be somewhat replaced by another one). 
+It may be assigned to one or more agents (or chosen as a purpose by them) at the same time or successively, possibly through one or more high level mandates ; may be governed by some high level rules (law) ; may be associated with other functions and with personal occupations or positions ; may imply performing some activities.
+A instance of a function may, among other features, be associated with a generic conceptual FunctionType, defined in a controlled vocabulary or thesaurus.
+"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Appellation
+
+:Appellation rdf:type owl:Class ;
+             
+             rdfs:subClassOf :ConceptualObject ;
+             
+             owl:disjointWith :Period ,
+                              :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ArchivalDescriptionContent
+
+:ArchivalDescriptionContent rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :CulturalObjectDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ArchivalDescriptionRealization
+
+:ArchivalDescriptionRealization rdf:type owl:Class ;
+                                
+                                rdfs:subClassOf :InformationRealization .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ArchivalRecordSet
+
+:ArchivalRecordSet rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :RecordSet ;
+                   
+                   rdfs:comment """Record Set is an intellectual grouping of records based on one or more
+			properties shared by two or more records. Though such a group may be coextensive with a RecordStorageUnit (physically
+			arrangement and storage), this is not essential. NOTE: the term is used in its mathematical meaning (BFP)""" .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ArchivalRecordSetDescriptionContent
+
+:ArchivalRecordSetDescriptionContent rdf:type owl:Class ;
+                                     
+                                     rdfs:subClassOf :ArchivalDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Biological
+
+:Biological rdf:type owl:Class ;
+            
+            rdfs:subClassOf :NaturalPhysicalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ConceptualObject
+
+:ConceptualObject rdf:type owl:Class ;
+                  
+                  rdfs:subClassOf :CulturalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CorporateBody
+
+:CorporateBody rdf:type owl:Class ;
+               
+               rdfs:subClassOf :Group ;
+               
+               owl:disjointWith :Family ;
+               
+               rdfs:comment """[FC, Proposal, 24-08-2015]
+A group that has been given or has given itself an organization or structure, such that it has a social or legal recognition. May include other corporate bodies and/or persons, and may be divided into   units"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CorporateBodyType
+
+:CorporateBodyType rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :Type ;
+                   
+                   owl:disjointWith :CulturalAffiliation ,
+                                    :Language .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CreationOrAccumulation
+
+:CreationOrAccumulation rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :Activity .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CulturalAffiliation
+
+:CulturalAffiliation rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf :Type ;
+                     
+                     owl:disjointWith :Language .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CulturalObject
+
+:CulturalObject rdf:type owl:Class ;
+                
+                rdfs:subClassOf :PersistentEntity ;
+                
+                rdfs:comment """Cultural object is a man-made object. Though the term \"cultural\" is
+			often used as a synonym for \"high culture,\" for example, the Mona Lisa, or Il Duomo, here it is used in
+			contrast to Natural Object, or Culture versus Nature, the former being all of the objects that are human produced,
+			and the latter as the given environment. (Rousseau was apparently the first to make this distinction). """ .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CulturalObjectDescriptionContent
+
+:CulturalObjectDescriptionContent rdf:type owl:Class ;
+                                  
+                                  rdfs:subClassOf :InformationObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#CulturalPhysicalObject
+
+:CulturalPhysicalObject rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :CulturalObject ,
+                                        :PhysicalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Date
+
+:Date rdf:type owl:Class ;
+      
+      owl:disjointWith :Location ,
+                       :OccurrentEntity ,
+                       :PersistentEntity ;
+      
+      rdfs:comment """[FC, Proposal, 24-08-2015] (From note on Date and Place entities)
+The moment when something happens or lasts in the history of an entity. Includes single dates and date ranges. Not to be confused with Period, which is about human representation (concepts) of dates, generally expressed through a controlled vocabulary.
+"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#DateRange
+
+:DateRange rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Date .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Event
+
+:Event rdf:type owl:Class ;
+       
+       rdfs:subClassOf :OccurrentEntity .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Family
+
+:Family rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Group ;
+        
+        rdfs:comment """[FC, Proposal, 24-08-2015] Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.  (from RDA and FRAD)
+Includes family branches (a family may have some family subdivisions)."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#FunctionDescriptionContent
+
+:FunctionDescriptionContent rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :ArchivalDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#FunctionRealization
+
+:FunctionRealization rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf :InformationRealization .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#FunctionType
+
+:FunctionType rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Group
+
+:Group rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Agent ;
+       
+       owl:disjointWith :Person ,
+                        :Person-like ,
+                        :ProxyAgent ;
+       
+       rdfs:comment """[FC, Proposal, 24-08-2015]
+Any gathering of agents that may itself play the role of one agent. Includes families and corporate bodies/organizations. A group may have any agents as member(s)."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#HumanGeographicFeature
+
+:HumanGeographicFeature rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :CulturalPhysicalObject ;
+                        
+                        rdfs:comment """[FC, Proposal, 24-08-2015]
+Includes settlements of any kind, buildings, historical regions, political and administrative areas. Often associated with space information, given using Location"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#HumanGeographicFeatureType
+
+:HumanGeographicFeatureType rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Identifier
+
+:Identifier rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Appellation ;
+            
+            owl:disjointWith :Name .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#InformationMedium
+
+:InformationMedium rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :CulturalPhysicalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#InformationObject
+
+:InformationObject rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :ConceptualObject ;
+                   
+                   owl:disjointWith :Period .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#InformationRealization
+
+:InformationRealization rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :CulturalPhysicalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Language
+
+:Language rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Location
+
+:Location rdf:type owl:Class ;
+          
+          owl:disjointWith :OccurrentEntity ,
+                           :PersistentEntity ;
+          
+          rdfs:comment """[FC, Proposal, 24-08-2015] (From note on Date and Place entities)
+The geographic point or area where an event takes place or to which it refers, where an agent is located or has its jurisdiction, where records are kept, functions and activities are realized, etc. Can be used to locate a geographic feature, be it human or natural."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Mandate
+
+:Mandate rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Event ;
+         
+         rdfs:comment """[FC, Proposal, 25-08-2015] 
+The assignment of one or more functions, and/or one or more activities, and/or one or more occupations, by one or more Agents to one or more Agents.
+This assignment is defined as an event in the history of the Agent; it thus may have a date and a location. It also may involve one or more authorizing agents, and concerns functions,  activities or occupations, for some duration and in some jurisdiction, according to some rules. It may be recorded (so is documented by a Record)."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#MandateDescriptionContent
+
+:MandateDescriptionContent rdf:type owl:Class ;
+                           
+                           rdfs:subClassOf :ArchivalDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Name
+
+:Name rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Appellation .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#NaturalGeographicFeature
+
+:NaturalGeographicFeature rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :NaturalPhysicalObject ;
+                          
+                          rdfs:comment """[FC, Proposal, 24-08-2015]
+Includes natural geographic objects, such as mountains, rivers, etc. Often associated with space information, given using Location"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#NaturalGeographicFeatureType
+
+:NaturalGeographicFeatureType rdf:type owl:Class ;
+                              
+                              rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#NaturalPhysicalObject
+
+:NaturalPhysicalObject rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :PhysicalObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#OccupationOrPosition
+
+:OccupationOrPosition rdf:type owl:Class ;
+                      
+                      rdfs:subClassOf :ConceptualObject ;
+                      
+                      rdfs:comment """[FC, Proposal, 27-08-2015]  A profession, job or position that a person may have, which may assign him/her functions and goals, and from which may result activities.
+Includes positions in corporate bodies (such as : head, president, executive director, assistant, etc.).
+Often associated with a concept of a controlled vocabulary (instance of ProfessionOrPositionType)."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#OccupationOrPositionType
+
+:OccupationOrPositionType rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#OccurrentEntity
+
+:OccurrentEntity rdf:type owl:Class ;
+                 
+                 owl:disjointWith :PersistentEntity .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Period
+
+:Period rdf:type owl:Class ;
+        
+        rdfs:subClassOf :ConceptualObject ;
+        
+        owl:disjointWith :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#PersistentEntity
+
+:PersistentEntity rdf:type owl:Class ;
+                  
+                  rdfs:comment """This class is more or less the same as CRM \"Persistent
+			Item\"""" .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Person
+
+:Person rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Agent ,
+                        :Biological ;
+        
+        owl:disjointWith :ProxyAgent ;
+        
+        rdfs:comment """Person is distinguished from Person-like in order to make it possible to
+			accurately distinguish between the Person and one or more \"Person identities\" that may be acquired over a
+			life."""@en ,
+                     """This Agent identity is for a biological person. The identity is the identity
+			the person is given in proximity to the date of birth."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Person-like
+
+:Person-like rdf:type owl:Class ;
+             
+             rdfs:subClassOf :Agent ;
+             
+             owl:disjointWith :ProxyAgent ;
+             
+             rdfs:comment """Person-like is an identity acquired (as opposed to the identity given in
+			proximity to birth). Such identities may be shared by two or more Persons. Futher, the relation of a Person-like
+			agent to a person or persons (or group or groups) may be unknown or tenuous. A Person-like agent may, in fact, be a fictitious
+			or mythical identity."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#PhysicalObject
+
+:PhysicalObject rdf:type owl:Class ;
+                
+                rdfs:subClassOf :PersistentEntity .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ProxyAgent
+
+:ProxyAgent rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Agent ;
+            
+            rdfs:comment """ProxyAgents are identities created by and that act on behalf of Person or
+			Corporate Body. This class covers software agents, and unmanned vehicles and probes that function autonymously or
+			semi-autonymously. Such agents act and generate records."""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordComponentContent
+
+:RecordComponentContent rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :InformationObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordComponentRealization
+
+:RecordComponentRealization rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :InformationRealization .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordContent
+
+:RecordContent rdf:type owl:Class ;
+               
+               rdfs:subClassOf :InformationObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordDescriptionContent
+
+:RecordDescriptionContent rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :ArchivalDescriptionContent ,
+                                          :RecordDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordRealization
+
+:RecordRealization rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :InformationRealization .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordSet
+
+:RecordSet rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Set .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordSetType
+
+:RecordSetType rdf:type owl:Class ;
+               
+               rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RecordType
+
+:RecordType rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RelationDescriptionContent
+
+:RelationDescriptionContent rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :ArchivalDescriptionContent .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Role
+
+:Role rdf:type owl:Class ;
+      
+      rdfs:subClassOf :ConceptualObject ;
+      
+      rdfs:comment """[FC, Proposal, 25-08-2015] The role that an Agent plays in some Event affecting any Entity, or with respect to a function or activity.
+Examples : a person participates in a creation/accumulation event with the role of collector, or author, of the records
+Not to be confused with the occupation or position of the person; nor with activities or ambient functions.
+May be often associated with a concept  of a thesaurus (instance of RoleType)"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RoleType
+
+:RoleType rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Rule
+
+:Rule rdf:type owl:Class ;
+      
+      rdfs:subClassOf :InformationObject ;
+      
+      rdfs:comment """[FC, Proposal, 25-08-2015] 
+(From Daniel's draft on business entities, slightly changed). Rules and regulations that govern the way in which a Function is realized, Activity(ies) or profession(s) and position(s) are performed. Such Rule(s) may be in the form of a plan (e.g. a sequence (timeline) with milestones, specific activities and sub-function), that is, a plan of work is a type of Rule.
+Addition : May be often associated with a concept of a thesaurus (instance of RuleType)"""@en .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#RuleType
+
+:RuleType rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Type .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Set
+
+:Set rdf:type owl:Class ;
+     
+     rdfs:subClassOf :InformationObject .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#SingleDate
+
+:SingleDate rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Date .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Type
+
+:Type rdf:type owl:Class ;
+      
+      rdfs:subClassOf :ConceptualObject .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person
+
+<http://data.bnf.fr/ark:/12148/cb130151488#foaf:Person> rdf:type :Person ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        rdfs:label "Charles Delescluze in BnF world" ;
+                                                        
+                                                        owl:sameAs <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)> .
+
+
+
+###  http://isni.org/isni/0000000053111928
+
+<http://isni.org/isni/0000000053111928> rdf:type :Identifier ,
+                                                 owl:NamedIndividual ;
+                                        
+                                        rdfs:label "ISNI 0000 0000 5311 1928" ;
+                                        
+                                        :isIdentifierOf <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)> .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles
+
+<http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles> rdf:type :AgentName ,
+                                                                               owl:NamedIndividual ;
+                                                                      
+                                                                      rdfs:label "Delescluze, Charles (1809-1871)" .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)
+
+<http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)> rdf:type :Person ,
+                                                                                           owl:NamedIndividual ;
+                                                                                  
+                                                                                  rdfs:comment "change name to agentType or legalCateagory ?" ;
+                                                                                  
+                                                                                  :hasHistory "Frère d’Azémia et Henri Delescluze. Journaliste républicain engagé sous la monarchie de Juillet, ce qui lui vaut un long exil en Belgique dans les années 1830. Revenu en France, il dirige L’Impartial du Nord à Valenciennes, et est nommé commissaire du gouvernement en 1848. Revenu à Paris, il est l’un des principaux fondateurs de la Solidarité républicaine, et un important soutien de Ledru-Rollin, notamment, par son journal La Révolution démocratique et sociale. Delescluze prend part à la manifestation des Arts-et-Métiers le 13 juin 1849, et parvient à s’enfuir. Réfugié à Londres, il continue son activité de journaliste (Le Proscrit, La Voix du proscrit), tout en essayant difficilement de se lancer dans l’industrie (fabrique de graisse). Il rentre en France clandestinement en 1854, et, dénoncé, il est jugé à nouveau et condamné. Prisonnier à Belle-Île, puis à Corte, il est considéré comme un ennemi dangereux par le régime, et à ce titre est envoyé à Cayenne. À la fin du Second Empire, il dirige à nouveau un journal d’opposition à Paris, le Réveil. Bien qu’un peu isolé par ses idées radicales, il prend part à la Commune, et trouve la mort en défendant la barricade du Château d’Eau." ;
+                                                                                  
+                                                                                  :hasAgentName <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles> ;
+                                                                                  
+                                                                                  owl:sameAs :FRAN_NP_50303 ;
+                                                                                  
+                                                                                  :hasLanguage :French .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Henri_(1819-1879)
+
+<http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Henri_(1819-1879)> rdf:type :Person ,
+                                                                                         owl:NamedIndividual ;
+                                                                                
+                                                                                :hasHistory "Henri Delescluze (1819-1879), frère de Louis-Charles Delescluze auquel il était très attaché, eut également un destin hors du commun. Arrêté le 26 octobre 1850, sous l’inculpation d’excitation à la guerre civile et complot contre la sûreté de l’État, il fut incarcéré à Mazas, puis transféré à Lyon, pour être bientôt emprisonné à Belle-Ile jusqu’en 1853. Condamné au bannissement, il s’embarqua ensuite pour l’Angleterre puis, en 1854 pour les États-Unis, où il demeura jusqu’en 1879, après avoir vainement tenté de rentrer en France à plusieurs reprises. Il revint finalement à Paris un mois avant sa mort survenue le 28 avril 1879."^^xsd:string ;
+                                                                                
+                                                                                :isSiblingOf <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)> ;
+                                                                                
+                                                                                :hasAgentName <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,__Henri_(1819-1879)> ;
+                                                                                
+                                                                                :hasLanguage :English ;
+                                                                                
+                                                                                owl:sameAs :FRAN_NP_50304 ;
+                                                                                
+                                                                                :hasLanguage :French .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,__Henri_(1819-1879)
+
+<http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,__Henri_(1819-1879)> rdf:type :AgentName ,
+                                                                                          owl:NamedIndividual ;
+                                                                                 
+                                                                                 rdfs:label "Delescluze, Henri (1819-1879)"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#English
+
+:English rdf:type :Language ,
+                  owl:NamedIndividual ;
+         
+         rdfs:label "English"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#FRAN_NP_50303
+
+:FRAN_NP_50303 rdf:type :Person ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "Charles Delescluze in ANF world"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#FRAN_NP_50304
+
+:FRAN_NP_50304 rdf:type :Person ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "Henri Delescluze in ANF world"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#French
+
+:French rdf:type :Language ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "French" .
+
+
+
+###  http://www.semanticweb.org/dvp4c/ontologies/RiC#ISNI
+
+:ISNI rdf:type owl:NamedIndividual ;
+      
+      :isTypeOf <http://isni.org/isni/0000000053111928> .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Charles_(1809-1871)>
+                        <http://www.semanticweb.org/dvp4c/ontologies/RiC#Delescluze,_Henri_(1819-1879)>
+                      )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
