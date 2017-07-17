@@ -1,4 +1,4 @@
-- Example of using RiC-O -
+﻿- Example of using RiC-O -
 
 - RDF files generated from XML/EAC and XML/EAD files created by the Archives nationales de France -
 
@@ -31,6 +31,7 @@ RiC-O classes used :
 - RecordSet
 - Proxy
 - a quite important number of Relation subclasses (DenominationRelation, TypeRelation, LocationRelation, RecordsProvenanceRelation, AgentHierarchicalRelation and subclasses, AgentMembershipRelation, AgentLeadershipRelation, AgentControlRelation, AgentWholePartRelation, BusinessRelation, TemporalRelation)
+- Description
 
 The files that you can find in this folder are samples of the source and of the RDF files.
 I can provide a lot more.
