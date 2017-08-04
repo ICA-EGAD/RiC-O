@@ -12,21 +12,6 @@
     <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/ontology">
         <owl:imports rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <owl:versionInfo xml:lang="en">This version is an incomplete version
-
-Current limits:
-- top level system of classes and properties to be reviewed, checked and enhanced
-- formal constraints not complete
-- documentation is partial
-- no alignments made yet
-
-Notes, July 14th
-Added or changed:
-- object properties heldBy and holderOf
-- some data properties for Record and Record Sets (notes, which are subproperties of a general note data property)
-- positionIn object property
-
-- first tests are work in progress</owl:versionInfo>
         <rdfs:comment xml:lang="en">Main characteristics :
 - domain ontology : aims to provide classes and properties needed for describing archival records of any kind. 
 Does not borrow any part from other ontologies  - except that it uses SKOS ontology for defining some concepts
@@ -59,6 +44,23 @@ Sources of inspiration / possible targets for alignements:
 - OAI-ORE and EDM
 ....</rdfs:comment>
         <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA RiC-O)</rdfs:label>
+        <owl:versionInfo xml:lang="en">This version is an incomplete version
+
+Current limits:
+- top level system of classes and properties to be reviewed, checked and enhanced
+- formal constraints not complete
+- documentation is partial
+- no alignments made yet
+- not yet tested
+
+
+Notes, July 14th
+Added or changed:
+- object properties heldBy and holderOf
+- some data properties for Record and Record Sets (notes, which are subproperties of a general note data property)
+- positionIn object property
+
+- first tests are work in progress</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3990,16 +3992,8 @@ See ISAD(G) and Interpares glossary</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasEndDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#beginningDate"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4011,6 +4005,12 @@ See ISAD(G) and Interpares glossary</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#description"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#endDate"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
