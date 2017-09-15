@@ -19,7 +19,7 @@ Current limits:
 - formal constraints not complete
 - documentation is partial
 - no alignments made yet
-- not yet tested
+- not yet fully tested
 
 
 Notes, July and August 2017 :
@@ -214,6 +214,36 @@ Sources of inspiration / possible targets for alignements:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsSuperiorInHierarchicalRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasSocialRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasHierarchicalParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#agentLeader -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentLeader">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentMember"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentLeaderOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#agentLeaderOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentLeaderOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#agentMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#member"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentMemberOf"/>
     </owl:ObjectProperty>
     
 
@@ -2068,12 +2098,23 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#position -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#position">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isContextOf"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#positionIn"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#positionIn -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#positionIn">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
     </owl:ObjectProperty>
     
 
