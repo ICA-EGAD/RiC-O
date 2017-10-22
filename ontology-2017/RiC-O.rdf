@@ -70,7 +70,7 @@ Sources of inspiration / possible targets for alignements:
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -78,7 +78,7 @@ Sources of inspiration / possible targets for alignements:
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+    <!-- http://www.ica.org/standards/RiC/ontology#activityPerformedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#activityPerformedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#associatedWithRelation"/>
@@ -86,6 +86,23 @@ Sources of inspiration / possible targets for alignements:
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#affectedBy">
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#affects"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#affects">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
     </owl:ObjectProperty>
     
 
@@ -582,10 +599,20 @@ Sources of inspiration / possible targets for alignements:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#created -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#created">
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#createdBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A shortcut for the  archival vague provenance relation
+For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#createdBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#createdBy">
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCreatorOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
@@ -1332,6 +1359,16 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#involves"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasPerformanceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasPerformanceRelation">
@@ -1592,6 +1629,23 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#involvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#involvedIn">
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#involves"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#involves">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#isAuthorOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isAuthorOf">
@@ -1627,16 +1681,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isCopyOf">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isCreatorOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isCreatorOf">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">A shortcut for the  archival vague provenance relation
-For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -1975,7 +2019,7 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation"/>
     </owl:ObjectProperty>
     
 
@@ -2050,6 +2094,7 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <!-- http://www.ica.org/standards/RiC/ontology#performedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#performedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasParticipant"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#performs"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
@@ -2200,7 +2245,7 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#provenanceEntity">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationAssociates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation"/>
-    <rdfs:range>
+        <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
@@ -2830,6 +2875,12 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Activity">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">QUESTION: apart from the question of Activity being a subclass of Event or not, I tend to slightly change the current definition of Activity in CM, for introducing something like &quot;possibly repeated over time&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
@@ -3095,7 +3146,7 @@ Possibly related to the position that the agent occupies within the group of whi
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#AuthorityRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
@@ -3322,6 +3373,19 @@ QUESTION: do we also introduce a Region class, with possible subclasses like Phy
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#DataSet -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DataSet">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
+        <rdfs:comment xml:lang="en">For example : the content of a database ; a spreadsheet...
+
+QUESTION : is this class to be considered a subclass of RecordSet or a subclass of a set?
+TODO : check definition of data set</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#Date -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Date">
@@ -3442,12 +3506,74 @@ Certainty concerns the relation itself, not the Description of a relation</rdfs:
     <!-- http://www.ica.org/standards/RiC/ontology#Event -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Event">
-        <rdfs:comment xml:lang="en">QUESTIONS: 
-- are some relations to be considered also as events? e.g. : production, authorship, authorizing, ...
-- do we define Activity as a subclass of Event? 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#affects"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDate"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasName"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasParticipant"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasPlace"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#involves"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#certainty"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#description"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#state"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An event is something that happened, whatever its causes are. An event may be considered as being a part of the context of another entitie(s); i can also affect any other entity. It has some spatial and temporal boundaries.
+
+Possible alignments with:
+- LODE Event (http://linkedevents.org/ontology/#term-Event)
+- the Event ontology Event (http://motools.sourceforge.net/event/event.html#term_Event)
+- CIDOC-CRM E5 Event
+
+QUESTIONS: 
+- are some relations (or all relations &quot;in between&quot;) to be considered also as events? e.g. : production, authorship, authorizing, ...
+- Activity is for now defined as a subclass of Event. Is this correct? 
 see CIDOC-CRM, whoch does so, Activity being an event generated by an Agent
 see also DOLCE-DNS</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
+        <rdfs:label xml:lang="fr">Evénement</rdfs:label>
     </owl:Class>
     
 
@@ -4034,7 +4160,11 @@ If kept, we must see if it can be aligned with OAI-ORE Proxy.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryForm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">QUESTION: Do we need a &quot;cultural object&quot; class, superclass of Record ?</rdfs:comment>
+        <rdfs:comment xml:lang="en">Linguistic, symbolic, or graphic information represented in any persistent
+form, on any durable carrier, by any method, by an Agent in the course of
+life or work events and Activities
+
+QUESTION: Do we need a &quot;cultural object&quot; class, superclass of Record ?</rdfs:comment>
         <rdfs:label xml:lang="en">Record</rdfs:label>
     </owl:Class>
     
@@ -4146,7 +4276,7 @@ NOTE : for the moment I have cerated a SKOS vocabulary for record set types, whe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#producingEntity"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass>
+                <owl:onClass>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
@@ -4166,7 +4296,7 @@ QUESTION. do we need subclasses ? if so, we should IMHO also have subclasses for
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#RecordsProvenanceRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#Relation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Relation">
         <rdfs:subClassOf>
