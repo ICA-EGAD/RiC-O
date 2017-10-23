@@ -19,18 +19,7 @@ Current limits:
 - formal constraints not complete
 - documentation is partial
 - no alignments made yet
-- not yet fully tested
-
-
-Notes, July and August 2017 :
-Added or changed:
-- object properties heldBy and holderOf
-- some data properties for Record and Record Sets (notes, which are subproperties of a general note data property)
-- positionIn object property
-- other object properties that are shortcuts for some relations (among which isCreatorOf/createdBy)
-- changed the definition of some restriction classes (RecordSet for example)
-
-- first tests, within a Frnech project involving the ANF, the BnF and the ministry of Culture, are almost finished</owl:versionInfo>
+- not yet fully tested (though first tests, within a French project involving the ANF, the BnF and the ministry of Culture, are almost finished)</owl:versionInfo>
         <rdfs:comment xml:lang="en">Main characteristics :
 - domain ontology : aims to provide classes and properties needed for describing archival records of any kind. 
 Does not borrow any part from other ontologies  - except that it uses SKOS ontology for defining some concepts
@@ -4157,7 +4146,8 @@ If kept, we must see if it can be aligned with OAI-ORE Proxy.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#documentaryForm"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryForm"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryForm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Linguistic, symbolic, or graphic information represented in any persistent
