@@ -884,7 +884,7 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2003,7 +2003,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2022,7 +2022,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
                 </owl:unionOf>
             </owl:Class>
@@ -3147,7 +3147,7 @@ Possibly related to the position that the agent occupies within the group of whi
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
                         </owl:unionOf>
                     </owl:Class>
@@ -3181,6 +3181,12 @@ Possibly related to the position that the agent occupies within the group of whi
 See ISAD(G) and Interpares glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Archival Provenance Relation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#ArchivalResource -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
     
 
 
@@ -3369,7 +3375,9 @@ QUESTION: do we also introduce a Region class, with possible subclasses like Phy
         <rdfs:comment xml:lang="en">For example : the content of a database ; a spreadsheet...
 
 QUESTION : is this class to be considered a subclass of RecordSet or a subclass of a set?
-TODO : check definition of data set</rdfs:comment>
+TODO : check definition of data set
+
+PROBABLY REMOVE THIS</rdfs:comment>
         <rdfs:label xml:lang="en">Data Set</rdfs:label>
     </owl:Class>
     
@@ -4143,6 +4151,7 @@ If kept, we must see if it can be aligned with OAI-ORE Proxy.</rdfs:comment>
     <!-- http://www.ica.org/standards/RiC/ontology#Record -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Record">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#documentaryForm"/>
@@ -4156,20 +4165,6 @@ life or work events and Activities
 
 QUESTION: Do we need a &quot;cultural object&quot; class, superclass of Record ?</rdfs:comment>
         <rdfs:label xml:lang="en">Record</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RecordElement -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#integratedIn"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Record Element</rdfs:label>
     </owl:Class>
     
 
@@ -4192,9 +4187,32 @@ I would rather use shortcuts, including accurate ones (draft of, copy of), and a
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#RecordPart -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#integratedIn"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Record Element</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#RecordSet -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4255,7 +4273,7 @@ NOTE : for the moment I have cerated a SKOS vocabulary for record set types, whe
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordElement"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
                         </owl:unionOf>
                     </owl:Class>
