@@ -1421,6 +1421,24 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasPurpose -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasPurpose">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPurposeOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Purpose"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasSequenceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSequenceRelation">
@@ -1750,6 +1768,16 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isPlaceOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isContextOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#isPurposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isPurposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isContextOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Purpose"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
     </owl:ObjectProperty>
     
 
@@ -2866,11 +2894,19 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasPurpose"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Purpose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#performedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">QUESTION: apart from the question of Activity being a subclass of Event or not, I tend to slightly change the current definition of Activity in CM, for introducing something like &quot;possibly repeated over time&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">QUESTION: apart from the question of Activity being a subclass of Event or not, I tend to slightly change the current definition of Activity in CM, for introducing something like &quot;possibly repeated over time&quot;.
+
+TODO : create the properties that relate an activity and a function/purpose</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
@@ -3475,7 +3511,10 @@ PROBABLY REMOVE THIS</rdfs:comment>
 Constituent parts : date of creation, date updated, author(), distributor, rule(s) used, evidence
 May thus be connected to any entity, including relation
 
-Certainty concerns the relation itself, not the Description of a relation</rdfs:comment>
+Certainty concerns the relation itself, not the Description of a relation
+
+QUESTIONS :- should we rename this class? is Description clear enough?
+- should Description be considered a subclass of Dataset (if we keep Dataset) ?</rdfs:comment>
         <rdfs:label xml:lang="en">Description</rdfs:label>
     </owl:Class>
     
@@ -3661,6 +3700,12 @@ It describes one to many Record(s) or RecordSet(s).</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Function">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#fulfilledBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Function</rdfs:label>
     </owl:Class>
     
@@ -3931,6 +3976,18 @@ an instance of a name part can be assigned a type, using an instance of NamePart
     <!-- http://www.ica.org/standards/RiC/ontology#Occupation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasPurpose"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Purpose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#pursuedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Occupation</rdfs:label>
     </owl:Class>
     
@@ -4144,6 +4201,30 @@ Note : I made this change in the definition of Person in order to, both allow us
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">For the moment, Introduced for handling the sequencing of records or records sets in a set.
 If kept, we must see if it can be aligned with OAI-ORE Proxy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#Purpose -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Purpose">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isPurposeOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Or goal or objective
+Introduced after Rome meeting
+Subclass of Function, considered here as the umbrella, vague, entity</rdfs:comment>
     </owl:Class>
     
 
@@ -4598,6 +4679,7 @@ ANother way of handling this would be to change the definition of position and o
     <!-- http://www.ica.org/standards/RiC/ontology#Type -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Type">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Characteristic-SocialOrCultural"/>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Concept"/>
         <rdfs:comment xml:lang="en">A superclass for any category of some thing. A type characterizes an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">Type</rdfs:label>
