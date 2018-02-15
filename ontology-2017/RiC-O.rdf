@@ -26,7 +26,7 @@ Does not borrow any part from other ontologies  - except that it uses SKOS ontol
 Will be aligned with other ontologies
 - conforms to RiC-CM version 1; any entity, property or relation defined in RiC-CM is represented and formally defined in RiC-O. 
 Plus other entities and properties, and hierarchies of classes and properties
-- comes with several SKOS vocabularies
+- comes with one SKOS vocabulary (for now)
 
 Principles :
 - useful : either for expressing in RDF the data contained in existing archival finding aids, authority records and vocabularies, without loosing any data, structural or &apos;semi-implicit&apos; information, or for enabling to create directly RDF triples 
@@ -530,7 +530,6 @@ Sources of inspiration / possible targets for alignements:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#contentType">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#type"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#contentTypeOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
     </owl:ObjectProperty>
     
 
@@ -539,7 +538,7 @@ Sources of inspiration / possible targets for alignements:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#contentTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
+    <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
     </owl:ObjectProperty>
     
 
@@ -623,7 +622,8 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#denominatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasCharacteristic"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDenominationOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DenominationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DenominationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Name"/>
     </owl:ObjectProperty>
     
 
@@ -660,8 +660,24 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#digitalCopy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#copy"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDigitalCopyOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1303,7 +1319,6 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasName">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#characteristic-SocialOrCultural"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#nameOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Name"/>
     </owl:ObjectProperty>
     
 
@@ -1312,7 +1327,6 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasNamePart">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Name"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#NamePart"/>
     </owl:ObjectProperty>
     
 
@@ -1386,7 +1400,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasPreferredName">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasName"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#preferredNameOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Name"/>
     </owl:ObjectProperty>
     
 
@@ -1430,6 +1443,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1523,6 +1537,15 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasName"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#titleOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasType -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasType">
@@ -1583,7 +1606,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#identifiedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasName"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#identifies"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Identifier"/>
     </owl:ObjectProperty>
     
 
@@ -1592,7 +1614,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#identifies">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#nameOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Identifier"/>
         <rdfs:comment xml:lang="en">A shortcut for the Identification Relation. Directly connects an identifier and the thing that it identifies.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -1777,7 +1798,15 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isPurposeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isContextOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Purpose"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -2146,7 +2175,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#type"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#placeTypeOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceType"/>
     </owl:ObjectProperty>
     
 
@@ -2155,7 +2183,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#placeTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
     </owl:ObjectProperty>
     
@@ -2292,6 +2319,20 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Proxy"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#published -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#published">
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#publishedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#publishedBy"/>
     
 
 
@@ -2519,12 +2560,19 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#titleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#titleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#nameOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#type -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#type">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#characteristic"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:comment>a shortcut for the Categorization Relation, to be used to connect directly, for example, a Record Set and a Record Set Type. Shortcut for the hasTypeRelation.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -2816,6 +2864,14 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#publicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#publicationDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#qualityOfInformation -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualityOfInformation">
@@ -2869,14 +2925,6 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#title -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#title">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2904,9 +2952,8 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">QUESTION: apart from the question of Activity being a subclass of Event or not, I tend to slightly change the current definition of Activity in CM, for introducing something like &quot;possibly repeated over time&quot;.
-
-TODO : create the properties that relate an activity and a function/purpose</rdfs:comment>
+        <rdfs:comment xml:lang="en">QUESTION: Activity is considered a subclass of Event (it is an event that involves actively at least one agent).
+Is it also a subclass of Function?</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
@@ -3706,6 +3753,7 @@ It describes one to many Record(s) or RecordSet(s).</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">according to RiC-CM v 2, an umbrella entity, superclass of Purpose, Activity(?)</rdfs:comment>
         <rdfs:label xml:lang="en">Function</rdfs:label>
     </owl:Class>
     
@@ -3988,6 +4036,7 @@ an instance of a name part can be assigned a type, using an instance of NamePart
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Do we get rid of this class (considering that in RiC-CM v2 we ony have Occupation as a concept, and that we have OccupationType for this ?</rdfs:comment>
         <rdfs:label xml:lang="en">Occupation</rdfs:label>
     </owl:Class>
     
@@ -4013,6 +4062,7 @@ an instance of a name part can be assigned a type, using an instance of NamePart
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#OccupationType">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:comment xml:lang="en">OccupationType should probably be renamed to OccupationAbstract, and stand for RiC-CM v 2 Occupation entity (secondary entity, as a SKOS concept)</rdfs:comment>
     </owl:Class>
     
 
@@ -4216,6 +4266,7 @@ If kept, we must see if it can be aligned with OAI-ORE Proxy.</rdfs:comment>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
                             <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation"/>
                         </owl:unionOf>
                     </owl:Class>
@@ -4663,6 +4714,18 @@ ANother way of handling this would be to change the definition of position and o
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#TemporalRelation">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#followingThingInTime"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#precedingThingInTime"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The relation that connects a thing and another one that follows it in time</rdfs:comment>
     </owl:Class>
     
