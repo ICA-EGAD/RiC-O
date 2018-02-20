@@ -1614,6 +1614,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#identifies">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#nameOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Identifier"/>
         <rdfs:comment xml:lang="en">A shortcut for the Identification Relation. Directly connects an identifier and the thing that it identifies.</rdfs:comment>
     </owl:ObjectProperty>
     
