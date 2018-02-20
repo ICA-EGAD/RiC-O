@@ -538,7 +538,7 @@ Sources of inspiration / possible targets for alignements:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#contentTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeOf"/>
-    <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
     </owl:ObjectProperty>
     
 
@@ -591,7 +591,7 @@ Sources of inspiration / possible targets for alignements:
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#created">
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#createdBy"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:comment xml:lang="en">A shortcut for the  archival vague provenance relation
 For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     </owl:ObjectProperty>
@@ -601,7 +601,7 @@ For the moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     <!-- http://www.ica.org/standards/RiC/ontology#createdBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#createdBy">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
 
@@ -2056,15 +2056,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#originatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#associatedWithRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originatedObject"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation"/>
     </owl:ObjectProperty>
     
@@ -2075,15 +2067,7 @@ May be used, particulary, for connecting proxies in the context of a set.</rdfs:
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#originatedObject">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationAssociates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalProvenanceRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
     </owl:ObjectProperty>
     
 
@@ -3226,15 +3210,7 @@ Possibly related to the position that the agent occupies within the group of whi
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#originatedObject"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#ArchivalResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
