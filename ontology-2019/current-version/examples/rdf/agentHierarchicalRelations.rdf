@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/agentControlRelation/005205-d215e550">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+        <rdfs:label xml:lang="fr">Relation de contrôle ou de tutelle entre les agents "France.
+            Direction générale des arts et des lettres (1944-1969)" et "Centre national du livre
+            (France)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1946-10-11</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:agentControlRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005075"/>
+        <RiC:agentControlRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/leadershipRelation/050836-d250e344">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+        <rdfs:label xml:lang="fr">Relation de "leadership" ou de direction entre les agents
+            "Jaujard, Jacques (1895-1967)" et "France. Direction générale des arts et des lettres
+            (1944-1969)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-12-31</RiC:endDate>
+        <RiC:leadershipRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050836"/>
+        <RiC:leadershipRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:leadershipWithPosition
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/position/050836-d250e344"
+        />
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/009943-d242e564">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "France. Direction
+            des bibliothèques et de la lecture publique (1945-1975)" et "France. Direction générale
+            des arts et des lettres (1944-1969)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-08-18</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/009943"/>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e494">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "France. Direction
+            générale des arts et des lettres (1944-1969)" et "Ministère de la Culture et de la
+            Communication"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1959-02-03</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/000005"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e608">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "France. Direction
+            générale des arts et des lettres (1944-1969)" et "Ministère de l'Éducation
+            nationale"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-02-02</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/000016"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e443">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">relation du tout à une partie entre les agents "France. Direction générale
+            des arts et des lettres (1944-1969)" et "Service des enseignements
+            artistiques"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-01-01</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005200"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e460">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">relation du tout à une partie entre les agents "France. Direction générale
+            des arts et des lettres (1944-1969)" et "Bureau des affaires générales (direction
+            générale des arts et lettres)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1959-01-01</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005201"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e477">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">relation du tout à une partie entre les agents "France. Direction générale
+            des arts et des lettres (1944-1969)" et "Cabinet du directeur général des arts et
+            lettres"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-01-01</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005203"/>
+    </rdf:Description>
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/groupSubdivisionRelation/005205-d215e531">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">relation hiérarchique entre les agents "France. Direction générale
+            des arts et des lettres (1944-1969)" et "France. Service de la création artistique
+            (1962-1987)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1962-01-01</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-12-31</RiC:endDate>
+        <RiC:groupSubdivisionRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:groupSubdivisionRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005204"/>
+    </rdf:Description>
+   
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/leadershipRelation/050836-d250e344">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+        <rdfs:label xml:lang="fr">Relation de "leadership" ou de direction entre les agents
+            "Jaujard, Jacques (1895-1967)" et "France. Direction générale des arts et des lettres
+            (1944-1969)"</rdfs:label>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-12-31</RiC:endDate>
+        <RiC:leadershipRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050836"/>
+        <RiC:leadershipRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:leadershipWithPosition
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/position/050836-d250e344"
+        />
+    </rdf:Description>
+   
+    <rdf:Description
+        rdf:about="http://data.archives-nationales.culture.gouv.fr/leadershipRelation/005205-d215e509">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+        <rdfs:label xml:lang="fr">Relation "leadership" ou de direction entre les agents "France. Direction générale des
+            arts et des lettres (1944-1969)" et "Moinot, Pierre (1920-2007)"</rdfs:label>
+        <RiC:description xml:lang="fr"> isDirectedBy </RiC:description>
+        <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1966-01-01</RiC:beginningDate>
+        <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</RiC:endDate>
+        <RiC:leadershipRelationHasTarget
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005205"/>
+        <RiC:leadershipRelationHasSource
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051284"/>
+    </rdf:Description>
+</rdf:RDF>
