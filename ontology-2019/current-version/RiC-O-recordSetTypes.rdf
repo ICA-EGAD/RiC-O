@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
-     xml:base="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+<rdf:RDF xmlns="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+     
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:RiC-O-vocabs-1="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+     xmlns:rico-vocabs-1="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:cc="http://creativecommons.org/ns#">
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
     <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <skos:prefLabel>Record Set Types</skos:prefLabel>
