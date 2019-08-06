@@ -60,8 +60,7 @@
                   <rico:activityIsTargetOfActivityRealizationRelation
                      rdf:resource="activityRealizationRelation/005205-d-5y3g3ef6o-1651r6rgctc85"/>
                   <rico:hasActivityType
-                     rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"
-                  />
+                     rdf:resource="activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"/>
                </rico:Activity>
             </rico:activityRealizationRelationHasTarget>
          </rico:ActivityRealizationRelation>
@@ -134,7 +133,6 @@
             deviennent autonomes au sein du ministère des Affaires culturelles. Le décret n° 69-297
             du 2 avril 1969 institue à sa place une direction de l'action culturelle, dont les
             textes d'application ne seront jamais publiés.</html:p>
-         <html:p/>
          <html:p>La DGAL est dirigée :</html:p>
          <html:ul>
             <html:li>de 1944 à 1959, par Jacques Jaujard (1895-1967) ;</html:li>
@@ -152,10 +150,10 @@
             <html:li>Direction des Archives de France ; </html:li>
             <html:li>Service des Lettres. </html:li>
          </html:ul>
-         <html:p>Cette organisation évolue jusqu’en 1959, date de la fin de la DGAL en tant que telle et
-            de la création d’un ministère d’État chargé des Affaires culturelles, sous la direction
-            d’André Malraux. La direction est alors placée sous l’autorité du nouveau ministère, et
-            regroupe : </html:p>
+         <html:p>Cette organisation évolue jusqu’en 1959, date de la fin de la DGAL en tant que
+            telle et de la création d’un ministère d’État chargé des Affaires culturelles, sous la
+            direction d’André Malraux. La direction est alors placée sous l’autorité du nouveau
+            ministère, et regroupe : </html:p>
          <html:ul>
             <html:li>une sous-direction des Spectacles et de la Musique ; </html:li>
             <html:li>trois bureaux se partageant le domaine des arts plastiques ; </html:li>
@@ -164,17 +162,17 @@
          <html:p>Dans les années 1960 sont installés un service des enseignements artistiques et un
             service de la musique.</html:p>
       </rico:noteOnStructureOrGenealogy>
-      <rico:agentIsSourceOfAgentHierarchicalRelation
+      <rico:groupIsSourceOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/005205-005200-19450101-19691231"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation
+      <rico:groupIsSourceOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/005205-005201-19590101-19691231"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation
+      <rico:groupIsSourceOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/005205-005203-19450101-19691231"/>
-      <rico:agentIsTargetOfAgentHierarchicalRelation
+      <rico:groupIsTargetOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/000005-005205-19590203-19691231"/>
-      <rico:agentTargetOfAgentHierarchicalRelation
+      <rico:groupIsTargetOfLeadershipRelation
          rdf:resource="agentHierarchicalRelation/051284-005205-19660101-19691231"/>
-      <rico:agentIsSourceOfAgentHierarchicalRelation
+      <rico:groupIsSourceOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/005205-005204-19620101-19681231"/>
       <rico:agentIsSourceOfAgentControlRelation
          rdf:resource="agentHierarchicalRelation/005205-005075-19461011-19691231"/>
@@ -184,15 +182,16 @@
          rdf:resource="agentTemporalRelation/051163-005205-19441120-*"/>
       <rico:groupIsTargetOfLeadershipRelation
          rdf:resource="agentHierarchicalRelation/050836-005205-19441120-19591231"/>
-      <rico:agentIsTargetOfHierarchicalRelation
+      <rico:groupIsTargetOfGroupSubdivisionRelation
          rdf:resource="agentHierarchicalRelation/000016-005205-19441120-19590202"/>
-      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb135724950#about"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb135724950#about"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/016197-005205"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/021769-005205"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/050397-005205"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/054955-005205"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/050931-005205"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/055688-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/055688-005205"
+      />
    </rico:CorporateBody>
    <rico:AgentOriginationRelation rdf:about="originationRelation/016197-005205">
       <rico:originationRelationHasSource rdf:resource="recordSet/016197"/>
