@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+ 
+    <rico:AgentTemporalRelation
+        rdf:about="agentTemporalRelation/051163-005205-19441120-*">
+       
+        <rdfs:label xml:lang="fr">Relation chronologique entre les agents "France. Ministère de
+            l'Éducation nationale. Secrétariat général des Beaux-Arts (1940-1944)" et "France.
+            Direction générale des arts et des lettres (1944-1969)", début : 20 novembre 1944</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</rico:beginningDate>
+        <rico:agentTemporalRelationHasSource
+            rdf:resource="corporateBody/051163"/>
+        <rico:agentTemporalRelationHasTarget
+            rdf:resource="corporateBody/005205"/>
+    </rico:AgentTemporalRelation>
+   
+   
+</rdf:RDF>

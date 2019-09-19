@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="corporateBody/005205"/>
+      <rico:authoredBy rdf:resource="corporateBody/005061"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+         >2013-04-23</rico:creationDate>
+      <rico:lastUpdateDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+         >2017-03-17</rico:lastUpdateDate>
+      <rico:source xml:lang="fr">Journal officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF13572495</rico:source>
+      <rico:source xml:lang="fr">Dardy-Cretin (Michèle), Histoire administrative du ministère de la
+         culture et de la communication (1959-2012). Paris: Collection du Comité d'histoire du
+         ministère de la culture et de la communication, 2012</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000106665044"/>
+   </rico:Description>
+   <rico:CorporateBody rdf:about="corporateBody/005205">
+      <rico:describedBy rdf:resource="description/005205"/>
+      <isni:ISNIAssigned>0000000106665044</isni:ISNIAssigned>
+      <rdfs:label xml:lang="fr">France. Direction générale des arts et des lettres
+         (1944-1969)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName
+            rdf:about="agentName/005205-France.%20Direction%20g%C3%A9n%C3%A9rale%20des%20arts%20et%20des%20lettres%20%281944-1969%29">
+            <rdfs:label xml:lang="fr">France. Direction générale des arts et des lettres
+               (1944-1969)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction générale des arts et des lettres
+               (1944-1969)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="corporateBody/005205"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005205-DGAL">
+            <rdfs:label xml:lang="fr">DGAL</rdfs:label>
+            <rico:textualValue xml:lang="fr">DGAL</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="corporateBody/005205"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+         >1944-11-20</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+      <rico:hasLegalStatus
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsSourceOfActivityRealizationRelation>
+         <rico:ActivityRealizationRelation
+            rdf:about="activityRealizationRelation/005205-d-5y3g3ef6o-1651r6rgctc85">
+            <rico:activityRealizationRelationHasSource rdf:resource="corporateBody/005205"/>
+            <rico:activityRealizationRelationHasTarget>
+               <rico:Activity>
+                  <rico:activityIsTargetOfActivityRealizationRelation
+                     rdf:resource="activityRealizationRelation/005205-d-5y3g3ef6o-1651r6rgctc85"/>
+                  <rico:hasActivityType
+                     rdf:resource="activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"/>
+               </rico:Activity>
+            </rico:activityRealizationRelationHasTarget>
+         </rico:ActivityRealizationRelation>
+      </rico:agentIsSourceOfActivityRealizationRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Ordonnance du 20 novembre 1944 portant réorganisation de l'administration centrale
+            du ministère de l'Éducation nationale
+            (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000874492&amp;fastPos=3&amp;fastReqId=1605640365&amp;categorieLien=id&amp;oldAction=rechTexte).</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Décret n° 45-1889 du 18 août 1945 portant organisation de la direction générale des
+            Arts et des Lettres.</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Arrêté du 18 août 1945 sur les attributions des bureaux de la direction générale
+            des Arts et Lettres.</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Décret du 17 juillet 1961 portant nomination du directeur général des Arts et des
+            Lettres au ministère d'État chargé des Affaires culturelles.</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Arrêté du 25 avril 1967 relatif aux attributions du directeur général des Arts et
+            des Lettres.</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Décret du 7 mars 1969 mettant fin aux fonctions du directeur général des Arts et
+            des Lettres au ministère des Affaires culturelles.</html:p>
+      </rico:authorizingMandate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p>Arrêté du 26 avril 1969 relatif au transfert au directeur de l'Administration
+            générale des certaines attributions en matière de personnel antérieurement exercées par
+            le directeur général des Arts et des Lettres.</html:p>
+      </rico:authorizingMandate>
+      <rico:history rdf:parseType="Literal">
+         <html:p>La direction générale des Arts et des Lettres (DGAL) est créée le 20 novembre 1944,
+            par une ordonnance du gouvernement provisoire de la République française portant
+            réorganisation de l'administration centrale du ministère de l'Éducation nationale. Le
+            décret n° 45-1889 du 18 août 1945 définit l'organisation et détaille ses
+            attributions.</html:p>
+         <html:p>Pour autant, il existait déjà une administration des Beaux-Arts depuis 1789, avec
+            la nomination de François-Emmanuel Guignard de Saint-Priest comme ministre de la Maison
+            du roi. Il est ensuite devenu ministre de l'Intérieur et a reçu certaines attributions
+            des Beaux-Arts. Lors de la chute de la Monarchie, le 10 août 1792, l’ensemble des
+            compétences des Beaux-Arts a été transféré au ministère de l’Intérieur (décret du 15
+            septembre 1792). Celui-ci a majoritairement conservé les attributions relatives aux
+            Beaux-Arts, pour la période allant de 1792 à 1852, malgré des exceptions, notamment de
+            1831 à 1834. À partir de 1852, les compétences des Beaux-Arts ont été réparties entre le
+            ministère d’État et la nouvelle Maison de l’Empereur, et ce jusqu’en 1863. À cette date,
+            la Maison de l’Empereur a pris le nom de « Maison de l’Empereur et des Beaux-Arts ». En
+            1870, les compétences des Beaux-Arts ont rejoint le ministère de l’Instruction publique.
+            Ainsi à partir de cette période, l’administration des Beaux-Arts s’est stabilisée et a
+            été placée sous la tutelle du ministère de l’Éducation nationale, nouvelle appellation
+            de l’ancien ministère de l’Instruction publique (1938-1959).</html:p>
+         <html:p>La DGAL est donc plus indépendante pour mener la politique culturelle et est
+            chargée de « toutes les questions relatives au progrès et à la diffusion des lettres,
+            des arts plastiques, des spectacles, de la musique ainsi que des bibliothèques et des
+            archives » (décret n° 45-1889 du 18 août 1945, article 1er). Cependant, elle connaît des
+            difficultés sous la IVe République : la direction des arts plastiques est ramenée au
+            rang de sous-direction, la direction des bibliothèques et de la lecture publique est
+            ramenée au rang de service, les emplois de chef du service des lettres et de directeur
+            des spectacles et de la musique sont supprimés, les effectifs diminuent.</html:p>
+         <html:p>La création du ministère de la Culture en 1959 est l'occasion de lancer une enquête
+            administrative sur la DGAL et son manque de moyens, mais les projets de réforme
+            n'aboutissent pas. Dans les années 1960, la DGAL est progressivement vidée de sa
+            substance en raison de la prise d'autonomie de ses composantes. Le 1er décembre 1967, le
+            directeur général des Arts et des Lettres Pierre Moinot remet un rapport préconisant la
+            suppression de la DGAL.</html:p>
+         <html:p>Elle est supprimée en 1969 et les services et directions qui en dépendaient
+            deviennent autonomes au sein du ministère des Affaires culturelles. Le décret n° 69-297
+            du 2 avril 1969 institue à sa place une direction de l'action culturelle, dont les
+            textes d'application ne seront jamais publiés.</html:p>
+         <html:p>La DGAL est dirigée :</html:p>
+         <html:ul>
+            <html:li>de 1944 à 1959, par Jacques Jaujard (1895-1967) ;</html:li>
+            <html:li>de 1960 à 1966, par Gaëtan Picon (1915-1976) ;</html:li>
+            <html:li>de 1967 à 1969, par Pierre Moinot (1920-2007).</html:li>
+         </html:ul>
+      </rico:history>
+      <rico:noteOnStructureOrGenealogy rdf:parseType="Literal">
+         <html:p>La DGAL est composée, en 1944, de six directions et services :</html:p>
+         <html:ul>
+            <html:li>Direction des Arts plastiques ; </html:li>
+            <html:li>Direction des Musées de France ; </html:li>
+            <html:li>Direction des Spectacles et de la Musique ; </html:li>
+            <html:li>Direction des Bibliothèques de France et de la Lecture publique ; </html:li>
+            <html:li>Direction des Archives de France ; </html:li>
+            <html:li>Service des Lettres. </html:li>
+         </html:ul>
+         <html:p>Cette organisation évolue jusqu’en 1959, date de la fin de la DGAL en tant que
+            telle et de la création d’un ministère d’État chargé des Affaires culturelles, sous la
+            direction d’André Malraux. La direction est alors placée sous l’autorité du nouveau
+            ministère, et regroupe : </html:p>
+         <html:ul>
+            <html:li>une sous-direction des Spectacles et de la Musique ; </html:li>
+            <html:li>trois bureaux se partageant le domaine des arts plastiques ; </html:li>
+            <html:li>la direction des Musées de France.</html:li>
+         </html:ul>
+         <html:p>Dans les années 1960 sont installés un service des enseignements artistiques et un
+            service de la musique.</html:p>
+      </rico:noteOnStructureOrGenealogy>
+      <rico:groupIsSourceOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/005205-005200-19450101-19691231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/005205-005201-19590101-19691231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/005205-005203-19450101-19691231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/000005-005205-19590203-19691231"/>
+      <rico:groupIsTargetOfLeadershipRelation
+         rdf:resource="agentHierarchicalRelation/051284-005205-19660101-19691231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/005205-005204-19620101-19681231"/>
+      <rico:agentIsSourceOfAgentControlRelation
+         rdf:resource="agentHierarchicalRelation/005205-005075-19461011-19691231"/>
+      <rico:agentIsSourceOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/005205-009943-19450818-19501231"/>
+      <rico:agentIsTargetOfAgentTemporalRelation
+         rdf:resource="agentTemporalRelation/051163-005205-19441120-*"/>
+      <rico:groupIsTargetOfLeadershipRelation
+         rdf:resource="agentHierarchicalRelation/050836-005205-19441120-19591231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation
+         rdf:resource="agentHierarchicalRelation/000016-005205-19441120-19590202"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb135724950#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/016197-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/021769-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/050397-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/054955-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/050931-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="originationRelation/055688-005205"
+      />
+   </rico:CorporateBody>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/016197-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/016197"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/021769-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/021769"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/050397-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/050397"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/054955-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/054955"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/050931-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/050931"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="originationRelation/055688-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/055688"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
+</rdf:RDF>

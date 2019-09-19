@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-005075-19461011-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+        <rdfs:label xml:lang="fr">Relation de contrôle ou de tutelle entre les agents "France.
+            Direction générale des arts et des lettres (1944-1969)" et "Centre national du livre
+            (France)"</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1946-10-11</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+        <rico:agentControlRelationHasTarget rdf:resource="corporateBody/005075"/>
+        <rico:agentControlRelationHasSource rdf:resource="corporateBody/005205"/>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/050836-005205-19441120-19591231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+        <rdfs:label xml:lang="fr">Relation de "leadership" ou de direction entre les agents
+            "Jaujard, Jacques (1895-1967)" et "France. Direction générale des arts et des lettres
+            (1944-1969)"</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-12-31</rico:endDate>
+        <rico:leadershipRelationHasSource rdf:resource="person/050836"/>
+        <rico:leadershipRelationHasTarget rdf:resource="corporateBody/005205"/>
+        <rico:leadershipWithPosition rdf:resource="position/050836-d250e344"/>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-009943-19450818-19501231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/009943"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+        <rdfs:label xml:lang="fr">Relation hiérarchique entre le parent "France. Direction générale
+            des arts et des lettres (1944-1969)" et l'enfant "France. Direction des bibliothèques et
+            de la lecture publique (1945-1975)", début : 18 août 1945, fin : 1950</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-08-18</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-12-31</rico:endDate> </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/000005-005205-19590203-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "Ministère de la
+            Culture et de la Communication" et "France. Direction générale des arts et des lettres
+            (1944-1969)", début : 3 février 1959, fin : 1969</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1959-02-03</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005205"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/000005"/>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/000016-005205-19441120-19590202">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005205"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/000016"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "Ministère de
+            l'Éducation nationale" et "France. Direction générale des arts et des lettres
+            (1944-1969)", début : 20 novembre 1944, fin : 2 février 1959</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1944-11-20</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-02-02</rico:endDate> </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-005200-19450101-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005200"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+        <rdfs:label xml:lang="fr">Relation hiérarchique du tout à une partie entre les agents
+            "France. Direction générale des arts et des lettres (1944-1969)" et "Service des
+            enseignements artistiques", début : 1945, fin : 1969</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-01-01</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-005201-19590101-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005201"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre lees agents "France. Direction
+            générale des arts et des lettres (1944-1969)" et "Bureau des affaires générales
+            (direction générale des arts et lettres)", début : 1959, fin : 1969</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1959-01-01</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-005203-19450101-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005203"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "France. Direction
+            générale des arts et des lettres (1944-1969)" et "Cabinet du directeur général des arts
+            et lettres", début : 1945, fin : 1969</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1945-01-01</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-005204-19620101-19681231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+        <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005204"/>
+        <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+        <rdfs:label xml:lang="fr">Relation du tout à une partie entre les agents "France. Direction
+            générale des arts et des lettres (1944-1969)" et "France. Service de la création
+            artistique (1962-1987)", début : 1962, fin : 1968</rdfs:label>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >1962-01-01</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-12-31</rico:endDate>
+    </rico:AgentHierarchicalRelation>
+    <rico:AgentHierarchicalRelation
+        rdf:about="agentHierarchicalRelation/005205-051284-19660101-19691231">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+        <rdfs:label xml:lang="fr">Relation de "leadership" ou de direction entre les agents "France.
+            Direction générale des arts et des lettres (1944-1969)" et "Moinot, Pierre
+            (1920-2007)"</rdfs:label> <rico:beginningDate
+            rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-01-01</rico:beginningDate>
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+        <rico:leadershipRelationHasTarget rdf:resource="corporateBody/005205"/>
+        <rico:leadershipRelationHasSource rdf:resource="person/051284"/>
+    </rico:AgentHierarchicalRelation>
+</rdf:RDF>
