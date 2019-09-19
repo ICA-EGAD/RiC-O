@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
@@ -14,6 +15,19 @@
      xmlns:rico-vocabs-1="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
     <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/ontology">
         <owl:imports rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <owl:versionInfo xml:lang="en">This is a non public, beta version, of v0.1 draft 
+            
+            WARNING: This
+            version is an incomplete version, which will be followed by other beta versions till the files can be considered quite complete and can be released publicly. 
+            RiC-O, like RiC-CM v0.2 to which it conforms, is
+            still a work in progress and many components of it are still unstable. 
+            Main current limits: 
+            - top level hierarchies of classes and properties to be reviewed, checked and enhanced 
+            - naming conventions to be accurately defined and applied
+            - formal constraints not complete 
+            - documentation is partial 
+            - no alignments made yet 
+            - not yet fully tested (though several projects, including large ones, have been using and are using RiC-O, particularly in the Archives nationales de France).</owl:versionInfo>
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
         <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
@@ -166,19 +180,6 @@ September 19: towards a beta version of v0-1 draft :
 - Removed importing SKOS.
 - RecordSetType, LegalStatus, CarrierType, ProductionTechniqueType are no longer subclasses of skos:Concept.
         </skos:historyNote>
-        <owl:versionInfo xml:lang="en">This is a non public, beta version, of v0.1 draft 
-            
-            WARNING: This
-            version is an incomplete version, which will be followed by other beta versions till the files can be considered quite complete and can be released publicly. 
-            RiC-O, like RiC-CM v0.2 to which it conforms, is
-            still a work in progress and many components of it are still unstable. 
-            Main current limits: 
-            - top level hierarchies of classes and properties to be reviewed, checked and enhanced 
-            - naming conventions to be accurately defined and applied
-            - formal constraints not complete 
-            - documentation is partial 
-            - no alignments made yet 
-            - not yet fully tested (though several projects, including large ones, have been using and are using RiC-O, particularly in the Archives nationales de France).</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6977,14 +6978,12 @@ An Activity Category may be defined globally, or specific to a particular activi
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:comment xml:lang="en">Machine created by a Person or Group that performs an Activity
-            based on coded instructions, especially one capable of a range of programmed responses
-            to different circumstances.</rdfs:comment>
-        <rdfs:label xml:lang="en">Delegate Agent</rdfs:label>
-        <skos:definition xml:lang="en">Machine created by a Person or Group that performs an
-            Activity based on coded instructions, especially one capable of a range of programmed
-            responses to different circumstances.</skos:definition>
-        <skos:prefLabel xml:lang="en">Delegate Agent</skos:prefLabel>
+        <rdfs:label xml:lang="en">Mechanism</rdfs:label>
+        <skos:definition xml:lang="en">A process or system created by a Person or Group that performs an Activity.</skos:definition>
+        <skos:historyNote xml:lang="en">elegate Agent class renamed Mechanism, definition and scope note updated on September 19 (as RiC-CM v0.2 had been updated)</skos:historyNote>
+        <skos:prefLabel xml:lang="en">Mechanism</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Mechanism is a kind of Agent (E04).
+A Mechanism may have both mechanical and software components, or may be exclusively software. A Mechanism acts in the world producing physical or social effects, and frequently generates or modifies Records.</skos:scopeNote>
     </owl:Class>
     
 
@@ -9722,7 +9721,6 @@ Rule should not be confused with the one or more documentary sources that serve 
     
 
 
- 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
