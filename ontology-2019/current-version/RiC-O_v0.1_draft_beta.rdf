@@ -81,51 +81,6 @@
             (ICA RiC-O)</dc:title>
         <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of
             EGAD RiC-O team</dc:creator>
-        <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
-            2018-....
-            All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
-        <dc:description xml:lang="en">Main characteristics : 
-            - domain ontology: aims to provide
-            classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
-            - conforms to RiC-CM: any
-            entity, property or relation defined in RiC-CM is represented and formally defined in
-            RiC-O. Plus other entities and properties, and hierarchies of classes and properties 
-            - comes with one SKOS vocabulary (for now) 
-            Principles: 
-            - useful : either for expressing
-            in RDF the data contained in existing archival finding aids, authority records and
-            vocabularies, without loosing any data, structural or &apos;semi-implicit&apos;
-            information, or for enabling to create directly RDF triples 
-            - functional : ability to
-            query, retrieve and display the RDF data conforming to it, for some target audiences
-            including archivists, records managers, researchers and users of records ; ability to
-            make some inferences; ability to connect the triples to other ones (individuals proven
-            to be the same, or to be engaged into a relation) 
-            - flexible (as any format defined for
-            archival description, since granularity and accuracy of description can vary ; see for example &quot;shortcuts&quot; and n-ary relations)
-            - open : extensibility (possibility to add quite easily some new subclasses and
-            properties, inheriting the formal constraints of the upper levels) ; possibility to connect RiC-O to some SKOS vocabularies; upper generic classes designed according to DOLCE main
-            principles, with a broader scope than the archival domain ; interoperability (classes
-            and properties will be aligned with those of other ontologies) ...
-            Sources of inspiration / possible targets for further alignments: 
-            - DUL (The DOLCE+DnS Ultralite ontology):
-            http://www.ontologydesignpatterns.org/ont/dul/DUL.owl 
-            - PROV-O (The Prov Ontology): https://www.w3.org/TR/prov-o/ 
-            - PREMIS OWL Ontology for PREMIS Data Dictionary version 3: https://www.loc.gov/standards/premis/ontology/owl-version3.html
-            - CIDOC-CRM, FRBRoo, IFLA-LRM 
-            - OAI-ORE:  http://www.openarchives.org/ore/1.0/terms 
-            - Europeana Data Model (EDM)(see
-            https://pro.europeana.eu/resources/standardization-tools/edm-documentation) 
-            - The Organization Ontology: https://www.w3.org/TR/vocab-org/ 
-            - AgRelOn (an Agent Relationship Ontology): https://d-nb.info/standards/elementset/agrelon 
-            - Bio (BIO: A vocabulary for
-            biographical information): http://vocab.org/bio/ 
-            - LODE: An ontology for Linking Open
-            Descriptions of Events: http://linkedevents.org/ontology/ 
-            - The Event Ontology:http://motools.sourceforge.net/event/event.html 
-            - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
-            - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
-            - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</dc:description>
         <skos:historyNote xml:lang="en">Previous version, dated May 2018, has been updated as
             concerns many aspects: 
             - class system made compliant with the current, not finished,
@@ -180,7 +135,54 @@ September 19: towards a beta version of v0-1 draft :
 - Removed importing SKOS.
 - RecordSetType, LegalStatus, CarrierType, ProductionTechniqueType are no longer subclasses of skos:Concept.
 - removed Action, Purpose and Process classes and all the properties concerned. Renamed ActivityRealizationRelation to PerformanceRelation (and other changes concerning the object properties). Updated the annotations properties of Activity
-- Activity made a subclass of Event</skos:historyNote>
+- Activity made a subclass of Event
+- removed, under Agent, all the classes that corresponded dicrectly to some DULCE-DNS classes. Updated the definitions of the remaining classes
+- removed SocialIdentity class and SocialIdentityType + the properties concerned</skos:historyNote>
+        <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
+            2018-....
+            All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
+        <dc:description xml:lang="en">Main characteristics : 
+            - domain ontology: aims to provide
+            classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
+            - conforms to RiC-CM: any
+            entity, property or relation defined in RiC-CM is represented and formally defined in
+            RiC-O. Plus other entities and properties, and hierarchies of classes and properties 
+            - comes with one SKOS vocabulary (for now) 
+            Principles: 
+            - useful : either for expressing
+            in RDF the data contained in existing archival finding aids, authority records and
+            vocabularies, without loosing any data, structural or &apos;semi-implicit&apos;
+            information, or for enabling to create directly RDF triples 
+            - functional : ability to
+            query, retrieve and display the RDF data conforming to it, for some target audiences
+            including archivists, records managers, researchers and users of records ; ability to
+            make some inferences; ability to connect the triples to other ones (individuals proven
+            to be the same, or to be engaged into a relation) 
+            - flexible (as any format defined for
+            archival description, since granularity and accuracy of description can vary ; see for example &quot;shortcuts&quot; and n-ary relations)
+            - open : extensibility (possibility to add quite easily some new subclasses and
+            properties, inheriting the formal constraints of the upper levels) ; possibility to connect RiC-O to some SKOS vocabularies; upper generic classes designed according to DOLCE main
+            principles, with a broader scope than the archival domain ; interoperability (classes
+            and properties will be aligned with those of other ontologies) ...
+            Sources of inspiration / possible targets for further alignments: 
+            - DUL (The DOLCE+DnS Ultralite ontology):
+            http://www.ontologydesignpatterns.org/ont/dul/DUL.owl 
+            - PROV-O (The Prov Ontology): https://www.w3.org/TR/prov-o/ 
+            - PREMIS OWL Ontology for PREMIS Data Dictionary version 3: https://www.loc.gov/standards/premis/ontology/owl-version3.html
+            - CIDOC-CRM, FRBRoo, IFLA-LRM 
+            - OAI-ORE:  http://www.openarchives.org/ore/1.0/terms 
+            - Europeana Data Model (EDM)(see
+            https://pro.europeana.eu/resources/standardization-tools/edm-documentation) 
+            - The Organization Ontology: https://www.w3.org/TR/vocab-org/ 
+            - AgRelOn (an Agent Relationship Ontology): https://d-nb.info/standards/elementset/agrelon 
+            - Bio (BIO: A vocabulary for
+            biographical information): http://vocab.org/bio/ 
+            - LODE: An ontology for Linking Open
+            Descriptions of Events: http://linkedevents.org/ontology/ 
+            - The Event Ontology:http://motools.sourceforge.net/event/event.html 
+            - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
+            - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
+            - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</dc:description>
     </owl:Ontology>
     
 
@@ -2071,17 +2073,6 @@ September 19: towards a beta version of v0-1 draft :
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasSocialIdentityType -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSocialIdentityType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSocialIdentityTypeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentity"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentityType"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSource">
@@ -3232,28 +3223,6 @@ September 19: towards a beta version of v0-1 draft :
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#isSocialIdentityFor -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSocialIdentityFor">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knownUnderIdentity"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentity"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">A shortcut for the SocialIdentityRelation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isSocialIdentityTypeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSocialIdentityTypeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentityType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentity"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#isSourceOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSourceOf">
@@ -3352,16 +3321,6 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:comment xml:lang="en">used to say that some Place is within another one</rdfs:comment>
         <rdfs:label xml:lang="en">is Within</rdfs:label>
         <skos:note xml:lang="en">TO DO align with geosparql object property within?</skos:note>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#knownUnderIdentity -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knownUnderIdentity">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentity"/>
     </owl:ObjectProperty>
     
 
@@ -8796,47 +8755,6 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#SocialIdentity -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SocialIdentity">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Concept"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isSocialIdentityFor"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The constellation of traits under which an agent is known. Can
-            evolve over time.</rdfs:comment>
-        <rdfs:label xml:lang="en">Social Identity</rdfs:label>
-        <skos:note xml:lang="en">NOT PRESENT IN RiC-CM QUESTION: if, as suggested by Daniel during
-            our February meeting, we consider that Person has 2 subclasses, social person and
-            physical one, both being agents, and that Group is a subclass of social agent (I have
-            already added those classes), do we remove social identity ? Any agent may have a social
-            identity. The question would rather be : do we really need social identity as this
-            constellation of traits ?</skos:note>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#SocialIdentityType -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SocialIdentityType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isSocialIdentityTypeOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialIdentity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">e.g. &quot;assumed&quot;, &quot;given&quot;, etc. If we keep the
-            social identity type</rdfs:comment>
-        <rdfs:label xml:lang="en">Social Identity Type</rdfs:label>
     </owl:Class>
     
 
