@@ -1116,6 +1116,7 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEvidenceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
     </owl:ObjectProperty>
     
 
@@ -3578,6 +3579,14 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -4803,6 +4812,14 @@ September 19: towards a beta version of v0-1 draft :
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
     </owl:ObjectProperty>
     
@@ -5835,10 +5852,6 @@ An Activity Category may be defined globally, or be specific to a particular act
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <skos:definition xml:lang="en">A Person, or Group, or an entity created by a person or group
             (Mechanism), or a Position, that acts in the world.</skos:definition>
-        <skos:note xml:lang="en">QUESTION: For now agent identity is not represented as such in
-            RiC-O. Do we go this way? TODO : for Person, PhysicalAgent and SocialAgent, and
-            subclasses; see if we can consider them as subclasses of DOLC-DNS (DUL) ontology
-            classes</skos:note>
         <skos:prefLabel xml:lang="en">Agent</skos:prefLabel>
         <skos:scopeNote xml:lang="en">An Agent may have one or more identities; an identity is a
             constellation of properties or relations that together “identify” the Agent. A Person or
@@ -6293,8 +6306,6 @@ An Activity Category may be defined globally, or be specific to a particular act
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#CorporateBody">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <owl:disjointWith rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
-        <rdfs:comment xml:lang="en">An organized group of persons that act together as an Agent, and
-            that has a recognized legal or social status.</rdfs:comment>
         <rdfs:label xml:lang="en">Corporate Body</rdfs:label>
         <skos:definition xml:lang="en">An organized group of persons that act together as an Agent,
             and that has a recognized legal or social status.</skos:definition>
@@ -6309,6 +6320,26 @@ An Activity Category may be defined globally, or be specific to a particular act
             the set of people belonging to it and can act as an Agent. Organizations are often
             decomposable into hierarchical structures.&quot;)</skos:note>
         <skos:prefLabel xml:lang="en">Corporate Body</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Definition	An organized group of persons that act together as an Agent, and that has a recognized legal or social status. 
+
+Scope Note	Corporate Body is a kind of Group
+
+This entity includes:
+- Any organization or group of people who acts, or may act, as a unit.
+- Corporate bodies with legal status or not.
+- Corporate bodies subordinated to another one.
+- International organization and NGO
+- Corporate bodies with public power (legislative, executive or judicial) or corporate bodies with a jurisdiction over a population or a space.
+- Military organizations, regular or not.
+- Associations, political parties, trade unions, businessmen associations, companies, societies, foundations, cooperative institutions…
+- Institutions associated to religious communities.
+- Nobiliary institutions.
+- Temporary institutions.
+- Set of people that acts according to a plan, a Project, etc.
+- Set of people or groups that can act as a unit inside a ship or a set of ships.
+- Music bands, artistic groups, intellectual groups.
+- Historical and current corporate bodies.
+- Institutions that manage and preserve archival records.</skos:scopeNote>
     </owl:Class>
     
 
@@ -6732,6 +6763,13 @@ In particular, archivists, records managers and end users may need to use some m
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The functional provenance relation, that connects a record
             resource and an activity, when the record resource results from the activity. Shortcut:
             isEvidenceOf</rdfs:comment>
@@ -6749,18 +6787,25 @@ In particular, archivists, records managers and end users may need to use some m
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#FamilyType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Two or more persons related by birth, or through marriage,
-            adoption, civil union, or other social conventions that bind them together as a socially
-            recognized familial group.</rdfs:comment>
         <rdfs:label xml:lang="en">Family</rdfs:label>
         <skos:definition xml:lang="en">Two or more persons related by birth, or through marriage,
             adoption, civil union, or other social conventions that bind them together as a socially
             recognized familial group.</skos:definition>
         <skos:prefLabel xml:lang="en">Family</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">Though family may be a recognized legal group in specific
-            contexts, the term may also be used for groups that are socially recognized as families.
-            A family may be a group of persons related either by consanguinity or affinity or
-            cohabitation or other social conventions.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Family is a kind of Group (E06)
+
+“Family” is used here as a general term that encompasses a wide variety of familial groups. Other types of familial groups include Dynasty, Clan, House, Tribe and others. 
+
+Though family may be a recognized legal group in specific contexts, the term may also be used for groups that are socially recognized as families. A family may be a group of persons related either by consanguinity or affinity or cohabitation or other social conventions. 
+
+In some context, a Family may be a legally recognized as Corporate Body. For example, certain North American peoples  (tribes) retain self-government rights and have jurisdiction over defined tribal lands.
+
+This entity includes:
+- Familiar units, clans, houses…
+- Dynasties, lineages, royal houses, nobiliary houses…
+- Owners or holders of a title of nobility.
+- Historical or current families.
+- Families that manage records.</skos:scopeNote>
     </owl:Class>
     
 
@@ -6911,7 +6956,7 @@ Shortcut : isFunctionnallyEquivalentTo</rdfs:comment>
     <!-- http://www.ica.org/standards/RiC/ontology#Group -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Group">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAsPersonMember"/>
@@ -6931,19 +6976,19 @@ Shortcut : isFunctionnallyEquivalentTo</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:comment xml:lang="en">Persons that act together as an Agent.</rdfs:comment>
         <rdfs:label xml:lang="en">Group</rdfs:label>
-        <skos:definition xml:lang="en">Persons that act together as an Agent.</skos:definition>
+        <skos:definition xml:lang="en">Two or more Agents that act together as an Agent.</skos:definition>
         <skos:note xml:lang="en">See IFLA-LRM E8 (Collective agent). Defined as &quot;A gathering or
             organization of persons bearing a particular name and capable of acting as a
             unit&quot;.</skos:note>
         <skos:prefLabel xml:lang="en">Group</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">A group has a socially constructed and recognized identity.
-            Each member of the group plays a particular role or roles in the coordinated activity of
-            the group (Position). Corporate Bodies and Families are kinds of groups, though other
-            kinds of groups are possible. For example, the “electorate,” that is all of the voters
-            in a given election. Complex, large groups may be subdivided into other
-            groups.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Group is a kind of Agent (E04)
+
+A Group has a socially recognized identity. Each member of the group plays a particular role or roles in the coordinated activity of the group (Position). 
+
+Corporate Bodies and Families are kinds of groups, though other kinds of groups are possible. For example, the “electorate,” that is all of the voters in a given election. 
+
+Complex, large groups may be subdivided into other groups</skos:scopeNote>
     </owl:Class>
     
 
@@ -7555,6 +7600,20 @@ An Occupation may be pursued independently by a person, or pursued within a Corp
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The generic archival provenance relation, that connects a record
             resource or a Record Resource Instantiation and, either an agent (including mechanism agent and position) that created,
             received or accumulated the record resource, or an activity (or any entity that is a
@@ -7629,27 +7688,38 @@ Shortcut: performs</skos:definition>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DemographicGroup"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A human being, with a socially constructed identity or
-            persona.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasBirthDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDeathDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Person</rdfs:label>
-        <skos:definition xml:lang="en">A human being, with a socially constructed identity or
-            persona.</skos:definition>
-        <skos:note xml:lang="en">PREVIOUS DEFINITION AND NOTE :A person according to common sense.
-            Is both a natural, physical object, and a social object. Note : I made this change in
-            the definition of Person in order to, both allow users not to use, if they do not want
-            so, the subclasses (Physical Person and Social Person), and allow furher alignment with
-            DOLCE-DNS ontology</skos:note>
+        <skos:definition xml:lang="en">A human being with a social identity or persona.</skos:definition>
         <skos:prefLabel xml:lang="en">Person</skos:prefLabel>
-    </owl:Class>
-    
+        <skos:scopeNote xml:lang="en">Person is a kind of Agent (E04)
 
+Most commonly, a human being (biological person) has a single coeval social identity or persona. In everyday discourse, this is the “real person.”
 
-    <!-- http://www.ica.org/standards/RiC/ontology#PhysicalAgent -->
+Less common though not rare, over the course of a lifetime, personae in addition to the coeval (or “original”) persona may be associated with the human being. Such “alternative personae” are most often created by the original person for specific purposes. 
 
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PhysicalAgent">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <skos:note xml:lang="en">NOT PRESENT IN RIC-CM TODO: maybe say this is a subclass of DUL
-            class</skos:note>
+Under some circumstances, an alternative persona might eclipse or replace the original person (Mark Twain eclipsing Samuel Clemens; John Wayne eclipsing Marion Mitchell Morrison), that is, the social (shared) alternative identity becomes the predominate identity.
+
+Less common yet is two or more persons collaborate to create a shared persona. Persona shared by two or more Persons constitute a kind of Group.
+
+Within the archival context, the original Person generally will be the focus of the description, with alternative personae noted. Exceptionally, an alternative persona may displace the coeval persona. 
+
+This entity includes:
+- Historical or current people.
+- People that manage records.</skos:scopeNote>
     </owl:Class>
     
 
@@ -7685,33 +7755,6 @@ Shortcut: performs</skos:definition>
         <skos:scopeNote xml:lang="en">Usually associated to one to many places, and known during
             some time. A location may have some geometrical features (coordinates). See PLEIADES
             ontology</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#PhysicalPerson -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PhysicalPerson">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#PhysicalAgent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasBirthDate"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDeathDate"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Physical Person</rdfs:label>
-        <skos:note xml:lang="en">NOT PRESENT IN RIC-CM TODO: maybe say this is a subclass of DUL
-            class</skos:note>
-        <skos:prefLabel xml:lang="en">Physical Person</skos:prefLabel>
     </owl:Class>
     
 
@@ -7806,7 +7849,7 @@ Shortcut: performs</skos:definition>
     <!-- http://www.ica.org/standards/RiC/ontology#Position -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Position">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialPerson"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#occupiedBy"/>
@@ -7820,24 +7863,29 @@ Shortcut: performs</skos:definition>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The functional role of a Person within a Group.</rdfs:comment>
         <rdfs:label xml:lang="en">Position</rdfs:label>
         <skos:definition xml:lang="en">The functional role of a Person within a
             Group.</skos:definition>
-        <skos:note xml:lang="en">Position made a subclass of Social Person for now</skos:note>
         <skos:prefLabel xml:lang="en">Position</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">Position is the intersection of a Person and a Group. Position
-            exists independently of the Person that holds the position. More than one Person may
-            hold a Position. Position is commonly defined in a mandate, often called a position
-            description or job description. The mandate may specify the activity and competencies
-            for performing the activity. A Position is often given a name. A Position may be tied to
-            a project or to a set of tasks and thus have a defined duration. A Position may change
-            over time, as the Group that establishes it changes over time. Position is not to be
-            confused with Occupation or Activity. Within the Records created by a Corporate Body, a
-            Position may be used to identify the Record Sets resulting from Activities performed by
-            one or more Persons holding the Position over time, without necessarily identifying or
-            describing the Person or Persons, or identifying which Records were created by each
-            Person.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Position is a kind of Agent
+
+Position is the intersection of a Person and a Group.
+
+Position exists independently of the Person that holds the position. 
+
+More than one Person may hold a Position.
+
+Position is commonly defined in a mandate, often called a position description or job description.  The mandate may specify the activity and competencies for performing the activity. 
+
+A Position is often given a name.
+
+A Position may be tied to a project or to a set of tasks and thus have a defined duration.
+
+A Position may change over time, as the Group that establishes it changes over time.
+
+Position is not to be confused with Occupation or Activity .
+
+Within the Records created by a Corporate Body, a Position may be used to identify the Record Sets resulting from Activities performed by one or more Persons holding the Position over time, without necessarily identifying or describing the Person or Persons, or identifying which Records were created by each Person.</skos:scopeNote>
     </owl:Class>
     
 
@@ -8752,22 +8800,6 @@ Rule should not be confused with the one or more documentary sources that serve 
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#SocialAgent -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SocialAgent">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
-        <rdfs:comment xml:lang="en">DUL (DOLCE-Dns ultralite) : &quot;Any individual whose existence
-            is granted simply by its social communicability and capability of action (through some
-            PhysicalAgent).&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Social Agent</rdfs:label>
-        <skos:note xml:lang="en">NOT PRESENT IN RIC-CM TODO: maybe say this is a subclass of DUL
-            class</skos:note>
-        <skos:prefLabel xml:lang="en">Social Agent</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#SocialIdentity -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SocialIdentity">
@@ -8805,23 +8837,6 @@ Rule should not be confused with the one or more documentary sources that serve 
         <rdfs:comment xml:lang="en">e.g. &quot;assumed&quot;, &quot;given&quot;, etc. If we keep the
             social identity type</rdfs:comment>
         <rdfs:label xml:lang="en">Social Identity Type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#SocialPerson -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SocialPerson">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SocialAgent"/>
-        <rdfs:comment xml:lang="en">DUL (DOLCE-DNS ultralite) : &quot;A SocialAgent that needs the
-            existence of a specific NaturalPerson in order to act (but the lifetime of the
-            NaturalPerson has only to overlap that of the SocialPerson).&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">Social Person</rdfs:label>
-        <skos:note xml:lang="en">NOT PRESENT IN RIC-CM TODO: maybe say this is a subclass of DUL
-            class NOTE : DUL introduces an actsThrough property, whose domain is SocialAgent and
-            whose range is Agent (inverse property : actsFor)</skos:note>
-        <skos:prefLabel xml:lang="en">Social Person</skos:prefLabel>
     </owl:Class>
     
 
