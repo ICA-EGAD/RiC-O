@@ -136,7 +136,14 @@ September 19: towards a beta version of v0-1 draft :
 - removed Action, Purpose and Process classes and all the properties concerned. Renamed ActivityRealizationRelation to PerformanceRelation (and other changes concerning the object properties). Updated the annotations properties of Activity
 - Activity made a subclass of Event
 - removed, under Agent, all the classes that corresponded dicrectly to some DULCE-DNS classes. Updated the definitions of the remaining classes
-- removed SocialIdentity class and SocialIdentityType + the properties concerned</skos:historyNote>
+- removed SocialIdentity class and SocialIdentityType + the properties concerned
+        
+September 20 : 
+- removed ActivityDomain  and RelationType (and the properties concerned)
+- renamed TimeAppellation > DateAppellation
+- renamed Role > RoleType, and moved it to Type
+- fixed the label of Instantiation
+        </skos:historyNote>
         <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
             2018-....
             All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
@@ -230,6 +237,16 @@ September 19: towards a beta version of v0-1 draft :
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#closeTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ica.org/standards/RiC/ontology#closeTo">
+        <rdfs:comment xml:lang="en">An annotation property for recording a possible mapping to a component in another ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">close to</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -865,7 +882,7 @@ September 19: towards a beta version of v0-1 draft :
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorshipWithRole">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Role"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RoleType"/>
     </owl:ObjectProperty>
     
 
@@ -1293,27 +1310,6 @@ September 19: towards a beta version of v0-1 draft :
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasActivityDomain -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasActivityDomain">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityDomainOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDomain"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#hasActivityInDomain -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasActivityInDomain">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityDomainOfAgent"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDomain"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasActivityOfType -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasActivityOfType">
@@ -1510,6 +1506,17 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:label xml:lang="en">has Correspondent (PenFriend?)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#hasDateAppellation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasDateAppellation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAppellation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
     </owl:ObjectProperty>
     
 
@@ -2028,17 +2035,6 @@ September 19: towards a beta version of v0-1 draft :
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasRelationType -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasRelationType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelationTypeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationType"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasRepresentationType -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasRepresentationType">
@@ -2134,17 +2130,6 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAcquaintance"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#hasTimeAppellation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasTimeAppellation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAppellation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isTimeAppellationOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#TimeAppellation"/>
     </owl:ObjectProperty>
     
 
@@ -2345,25 +2330,6 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWithEvent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isActivityDomainOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isActivityDomainOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDomain"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isActivityDomainOfAgent -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isActivityDomainOfAgent">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDomain"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
 
@@ -2596,6 +2562,16 @@ September 19: towards a beta version of v0-1 draft :
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#wasCreatedAtDate"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#isDateAppellationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAppellationOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
     </owl:ObjectProperty>
     
 
@@ -3182,16 +3158,6 @@ September 19: towards a beta version of v0-1 draft :
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#isRelationTypeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isRelationTypeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#isRepresentationTypeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isRepresentationTypeOf">
@@ -3258,16 +3224,6 @@ September 19: towards a beta version of v0-1 draft :
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#controls"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isTimeAppellationOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isTimeAppellationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAppellationOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TimeAppellation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
     </owl:ObjectProperty>
     
 
@@ -5038,7 +4994,7 @@ September 19: towards a beta version of v0-1 draft :
     <!-- http://www.ica.org/standards/RiC/ontology#calendar -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#calendar">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TimeAppellation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5718,20 +5674,6 @@ An Activity may be composed of other Activities.</skos:scopeNote>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#ActivityDomain -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ActivityDomain">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityDomainOfAgent"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#ActivityType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ActivityType">
@@ -6380,8 +6322,8 @@ This entity includes:
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasTimeAppellation"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#TimeAppellation"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDateAppellation"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Chronological information associated with an entity that
@@ -6400,6 +6342,28 @@ This entity includes:
             non-contiguous single dates or date ranges. A date may be represented in natural
             language, or based on a digital standard, or both. Digital standard dates will typically
             be based on ISO 8601, or Extended Date-Time Format (EDTF).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#DateAppellation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DateAppellation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#calendar"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Date Appellation</rdfs:label>
     </owl:Class>
     
 
@@ -7147,7 +7111,8 @@ Complex, large groups may be subdivided into other groups</skos:scopeNote>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Record Resource Instantiation</rdfs:label>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Instantiation</rdfs:label>
         <skos:definition xml:lang="en">Not defined yet in RiC-CM. 
 
 First attempt for a definition: The physical representation, manifestation, of (the message conveyed by) a Record Resource.
@@ -8449,13 +8414,6 @@ Record Set Type may be extended to reflect types of Record Sets that are not arc
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasRelationType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#certainty"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -8626,14 +8584,6 @@ Shortcut: isAssociatedWithPlace</rdfs:comment>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationType -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#RepresentationType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RepresentationType">
@@ -8645,10 +8595,10 @@ Shortcut: isAssociatedWithPlace</rdfs:comment>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#Role -->
+    <!-- http://www.ica.org/standards/RiC/ontology#RoleType -->
 
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Role">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RoleType">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:comment xml:lang="en">The role an agent plays in some context (usually in some
             relation) Not to be confused with a position (position of an agent in some group). For
             example, a person who is the head of some corporate body may play the role of annotator
@@ -8833,28 +8783,6 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#TimeAppellation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#TimeAppellation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isTimeAppellationOf"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#calendar"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Time Appellation</rdfs:label>
     </owl:Class>
     
 
