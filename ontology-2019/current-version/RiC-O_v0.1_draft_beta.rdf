@@ -2,36 +2,31 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:skos1="skos:"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rico-vocabs-1="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
     <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/ontology">
         <owl:imports rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <owl:versionInfo xml:lang="en">This is a non public, beta version, of v0.1 draft 
-            
-            WARNING: This
-            version is an incomplete version, which will be followed by other beta versions till the files can be considered quite complete and can be released publicly. 
-            RiC-O, like RiC-CM v0.2 to which it conforms, is
-            still a work in progress and many components of it are still unstable. 
-            Main current limits: 
-            - top level hierarchies of classes and properties to be reviewed, checked and enhanced 
-            - naming conventions to be accurately defined and applied
-            - formal constraints not complete 
-            - documentation is partial 
-            - no alignments made yet 
-            - not yet fully tested (though several projects, including large ones, have been using and are using RiC-O, particularly in the Archives nationales de France).</owl:versionInfo>
-        <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
-        <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival
-            Description (ICA EGAD)</dc:creator>
         <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
             EGAD</dc:contributor>
+        <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of
+            EGAD RiC-O team</dc:creator>
+        <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival
+            Description (ICA EGAD)</dc:creator>
+        <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
+        <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
+            2018-....
+            All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
+        <dc:title xml:lang="en">International Council on Archives Records in Contexts Ontology
+            (ICA RiC-O)</dc:title>
         <rdfs:comment xml:lang="en">Main characteristics : 
             - domain ontology: aims to provide
             classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
@@ -76,10 +71,19 @@
             - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</rdfs:comment>
         <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
             (ICA RiC-O)</rdfs:label>
-        <dc:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O)</dc:title>
-        <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of
-            EGAD RiC-O team</dc:creator>
+        <owl:versionInfo xml:lang="en">This is a non public, beta version, of v0.1 draft 
+            
+            WARNING: This
+            version is an incomplete version, which will be followed by other beta versions till the files can be considered quite complete and can be released publicly. 
+            RiC-O, like RiC-CM v0.2 to which it conforms, is
+            still a work in progress and many components of it are still unstable. 
+            Main current limits: 
+            - top level hierarchies of classes and properties to be reviewed, checked and enhanced 
+            - naming conventions to be accurately defined and applied
+            - formal constraints not complete 
+            - documentation is partial 
+            - no alignments made yet 
+            - not yet fully tested (though several projects, including large ones, have been using and are using RiC-O, particularly in the Archives nationales de France).</owl:versionInfo>
         <skos:historyNote xml:lang="en">Previous version, dated May 2018, has been updated as
             concerns many aspects: 
             - class system made compliant with the current, not finished,
@@ -140,55 +144,10 @@ September 19: towards a beta version of v0-1 draft :
         
 September 20 : 
 - removed ActivityDomain  and RelationType (and the properties concerned)
-- renamed TimeAppellation > DateAppellation
-- renamed Role > RoleType, and moved it to Type
+- renamed TimeAppellation &gt; DateAppellation
+- renamed Role &gt; RoleType, and moved it to Type
 - fixed the label of Instantiation
         </skos:historyNote>
-        <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
-            2018-....
-            All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
-        <dc:description xml:lang="en">Main characteristics : 
-            - domain ontology: aims to provide
-            classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
-            - conforms to RiC-CM: any
-            entity, property or relation defined in RiC-CM is represented and formally defined in
-            RiC-O. Plus other entities and properties, and hierarchies of classes and properties 
-            - comes with one SKOS vocabulary (for now) 
-            Principles: 
-            - useful : either for expressing
-            in RDF the data contained in existing archival finding aids, authority records and
-            vocabularies, without loosing any data, structural or &apos;semi-implicit&apos;
-            information, or for enabling to create directly RDF triples 
-            - functional : ability to
-            query, retrieve and display the RDF data conforming to it, for some target audiences
-            including archivists, records managers, researchers and users of records ; ability to
-            make some inferences; ability to connect the triples to other ones (individuals proven
-            to be the same, or to be engaged into a relation) 
-            - flexible (as any format defined for
-            archival description, since granularity and accuracy of description can vary ; see for example &quot;shortcuts&quot; and n-ary relations)
-            - open : extensibility (possibility to add quite easily some new subclasses and
-            properties, inheriting the formal constraints of the upper levels) ; possibility to connect RiC-O to some SKOS vocabularies; upper generic classes designed according to DOLCE main
-            principles, with a broader scope than the archival domain ; interoperability (classes
-            and properties will be aligned with those of other ontologies) ...
-            Sources of inspiration / possible targets for further alignments: 
-            - DUL (The DOLCE+DnS Ultralite ontology):
-            http://www.ontologydesignpatterns.org/ont/dul/DUL.owl 
-            - PROV-O (The Prov Ontology): https://www.w3.org/TR/prov-o/ 
-            - PREMIS OWL Ontology for PREMIS Data Dictionary version 3: https://www.loc.gov/standards/premis/ontology/owl-version3.html
-            - CIDOC-CRM, FRBRoo, IFLA-LRM 
-            - OAI-ORE:  http://www.openarchives.org/ore/1.0/terms 
-            - Europeana Data Model (EDM)(see
-            https://pro.europeana.eu/resources/standardization-tools/edm-documentation) 
-            - The Organization Ontology: https://www.w3.org/TR/vocab-org/ 
-            - AgRelOn (an Agent Relationship Ontology): https://d-nb.info/standards/elementset/agrelon 
-            - Bio (BIO: A vocabulary for
-            biographical information): http://vocab.org/bio/ 
-            - LODE: An ontology for Linking Open
-            Descriptions of Events: http://linkedevents.org/ontology/ 
-            - The Event Ontology:http://motools.sourceforge.net/event/event.html 
-            - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
-            - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
-            - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</dc:description>
     </owl:Ontology>
     
 
@@ -5075,6 +5034,7 @@ September 20 :
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#creationDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#beginningDate"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5097,6 +5057,16 @@ September 20 :
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#deathDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#endDate"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#deletionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#deletionDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#endDate"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5260,6 +5230,7 @@ September 20 :
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#modificationDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#date"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5528,6 +5499,16 @@ September 20 :
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#technicalCharacteristics">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Mechanism"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#temporalReferenceSystem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#temporalReferenceSystem">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:note>A date might refer to other time reference systems than Gregorian, eg. Hellenic Julian, Unix-Time,</skos:note>
     </owl:DatatypeProperty>
     
 
@@ -6326,22 +6307,12 @@ This entity includes:
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Chronological information associated with an entity that
-            contributes to its identification and contextualization.</rdfs:comment>
         <rdfs:label xml:lang="en">Date</rdfs:label>
-        <skos:definition xml:lang="en">Chronological information associated with an entity that
-            contributes to its identification and contextualization.</skos:definition>
-        <skos:note xml:lang="en">NOTE: this has to be more accurately defined. Some suggestions:
-            Replace the name by Temporal Entity, and the name of DateRange by DateInterval? Define a
-            Time Appellation, for handling textual strings for dates + calendar attribute ? See The
-            Time Ontology (W3C recomendation end of 2017): https://www.w3.org/TR/owl-time/ See also
-            TISC ontlogy for object properties about time
-            (http://observedchange.com/tisc/ns/)</skos:note>
+        <skos:definition xml:lang="en">Chronological information associated with an entity that contributes to its identification and contextualization</skos:definition>
         <skos:prefLabel xml:lang="en">Date</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">Date includes both single dates, a date range, or a set of
-            non-contiguous single dates or date ranges. A date may be represented in natural
-            language, or based on a digital standard, or both. Digital standard dates will typically
-            be based on ISO 8601, or Extended Date-Time Format (EDTF).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Date includes both single dates, a date range, or a set of non-contiguous single dates or date ranges. A date may be represented in natural language, based on a digital standard, or both. 
+
+Digital standard dates will typically be based on ISO 8601, or Extended Date-Time Format (EDTF).</skos:scopeNote>
     </owl:Class>
     
 
@@ -6387,6 +6358,7 @@ This entity includes:
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.ica.org/standards/RiC/ontology#SingleDate"/>
+        <skos:definition>Chronological information associated with an entity that contributes to its identification and contextualization that implies or explicitly states a start date and end date.</skos:definition>
     </owl:Class>
     
 
@@ -6406,10 +6378,8 @@ This entity includes:
         <rdfs:comment xml:lang="en">Non-contiguous dates or date ranges</rdfs:comment>
         <rdfs:label xml:lang="en">Date Set</rdfs:label>
         <skos:definition xml:lang="en">Non-contiguous dates or date ranges</skos:definition>
-        <skos:note xml:lang="en">Created 23 August 2018 as a subclass of Set</skos:note>
         <skos:prefLabel xml:lang="en">Date Set</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">Primarily used in the description of Record Sets to describe
-            dates of member Records</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Primarily used in the description of Record Sets to describe dates of member Records</skos:scopeNote>
     </owl:Class>
     
 
@@ -8704,6 +8674,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <skos:definition>Chronological information associated with an entity that contributes to its identification and contextualization represented as a specific year, year-month, or year-month-day, or year-month-day-time.</skos:definition>
     </owl:Class>
     
 
@@ -8921,5 +8892,5 @@ Rule should not be confused with the one or more documentary sources that serve 
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
