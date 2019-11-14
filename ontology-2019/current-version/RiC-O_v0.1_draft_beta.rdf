@@ -30,56 +30,6 @@
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
         <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
-        <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
-            EGAD</dc:contributor>
-        <rdfs:comment xml:lang="en">Main characteristics : 
-            - domain ontology: aims to provide
-            classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
-            - conforms to RiC-CM: any
-            entity, property or relation defined in RiC-CM is represented and formally defined in
-            RiC-O. Plus other entities and properties, and hierarchies of classes and properties 
-            - comes with one SKOS vocabulary (for now) 
-            Principles: 
-            - useful : either for expressing
-            in RDF the data contained in existing archival finding aids, authority records and
-            vocabularies, without loosing any data, structural or &apos;semi-implicit&apos;
-            information, or for enabling to create directly RDF triples 
-            - functional : ability to
-            query, retrieve and display the RDF data conforming to it, for some target audiences
-            including archivists, records managers, researchers and users of records ; ability to
-            make some inferences; ability to connect the triples to other ones (individuals proven
-            to be the same, or to be engaged into a relation) 
-            - flexible (as any format defined for
-            archival description, since granularity and accuracy of description can vary ; see for example &quot;shortcuts&quot; and n-ary relations)
-            - open : extensibility (possibility to add quite easily some new subclasses and
-            properties, inheriting the formal constraints of the upper levels) ; possibility to connect RiC-O to some SKOS vocabularies; upper generic classes designed according to DOLCE main
-            principles, with a broader scope than the archival domain ; interoperability (classes
-            and properties will be aligned with those of other ontologies) ...
-            Sources of inspiration / possible targets for further alignments: 
-            - DUL (The DOLCE+DnS Ultralite ontology):
-            http://www.ontologydesignpatterns.org/ont/dul/DUL.owl 
-            - PROV-O (The Prov Ontology): https://www.w3.org/TR/prov-o/ 
-            - PREMIS OWL Ontology for PREMIS Data Dictionary version 3: https://www.loc.gov/standards/premis/ontology/owl-version3.html
-            - CIDOC-CRM, FRBRoo, IFLA-LRM 
-            - OAI-ORE:  http://www.openarchives.org/ore/1.0/terms 
-            - Europeana Data Model (EDM)(see
-            https://pro.europeana.eu/resources/standardization-tools/edm-documentation) 
-            - The Organization Ontology: https://www.w3.org/TR/vocab-org/ 
-            - AgRelOn (an Agent Relationship Ontology): https://d-nb.info/standards/elementset/agrelon 
-            - Bio (BIO: A vocabulary for
-            biographical information): http://vocab.org/bio/ 
-            - LODE: An ontology for Linking Open
-            Descriptions of Events: http://linkedevents.org/ontology/ 
-            - The Event Ontology:http://motools.sourceforge.net/event/event.html 
-            - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
-             - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
-            - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</rdfs:comment>
-        <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O)</rdfs:label>
-        <dc:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O)</dc:title>
-        <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of
-            EGAD RiC-O team</dc:creator>
         <skos:historyNote xml:lang="en">Previous version, dated May 2018, has been updated as
             concerns many aspects: 
             - class system made compliant with the current, not finished,
@@ -140,10 +90,61 @@ September 19: towards a beta version of v0-1 draft :
         
 September 20 : 
 - removed ActivityDomain  and RelationType (and the properties concerned)
-- renamed TimeAppellation > DateAppellation
-- renamed Role > RoleType, and moved it to Type
+- renamed TimeAppellation &gt; DateAppellation
+- renamed Role &gt; RoleType, and moved it to Type
 - fixed the label of Instantiation
-        </skos:historyNote>
+
+September 25: fixed the domain of encodingFormat (changed to Instantiation) ; removed ConceptAppellation class</skos:historyNote>
+        <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
+            EGAD</dc:contributor>
+        <rdfs:comment xml:lang="en">Main characteristics : 
+            - domain ontology: aims to provide
+            classes and properties needed for describing archival records of any kind. Will be aligned with other ontologies. 
+            - conforms to RiC-CM: any
+            entity, property or relation defined in RiC-CM is represented and formally defined in
+            RiC-O. Plus other entities and properties, and hierarchies of classes and properties 
+            - comes with one SKOS vocabulary (for now) 
+            Principles: 
+            - useful : either for expressing
+            in RDF the data contained in existing archival finding aids, authority records and
+            vocabularies, without loosing any data, structural or &apos;semi-implicit&apos;
+            information, or for enabling to create directly RDF triples 
+            - functional : ability to
+            query, retrieve and display the RDF data conforming to it, for some target audiences
+            including archivists, records managers, researchers and users of records ; ability to
+            make some inferences; ability to connect the triples to other ones (individuals proven
+            to be the same, or to be engaged into a relation) 
+            - flexible (as any format defined for
+            archival description, since granularity and accuracy of description can vary ; see for example &quot;shortcuts&quot; and n-ary relations)
+            - open : extensibility (possibility to add quite easily some new subclasses and
+            properties, inheriting the formal constraints of the upper levels) ; possibility to connect RiC-O to some SKOS vocabularies; upper generic classes designed according to DOLCE main
+            principles, with a broader scope than the archival domain ; interoperability (classes
+            and properties will be aligned with those of other ontologies) ...
+            Sources of inspiration / possible targets for further alignments: 
+            - DUL (The DOLCE+DnS Ultralite ontology):
+            http://www.ontologydesignpatterns.org/ont/dul/DUL.owl 
+            - PROV-O (The Prov Ontology): https://www.w3.org/TR/prov-o/ 
+            - PREMIS OWL Ontology for PREMIS Data Dictionary version 3: https://www.loc.gov/standards/premis/ontology/owl-version3.html
+            - CIDOC-CRM, FRBRoo, IFLA-LRM 
+            - OAI-ORE:  http://www.openarchives.org/ore/1.0/terms 
+            - Europeana Data Model (EDM)(see
+            https://pro.europeana.eu/resources/standardization-tools/edm-documentation) 
+            - The Organization Ontology: https://www.w3.org/TR/vocab-org/ 
+            - AgRelOn (an Agent Relationship Ontology): https://d-nb.info/standards/elementset/agrelon 
+            - Bio (BIO: A vocabulary for
+            biographical information): http://vocab.org/bio/ 
+            - LODE: An ontology for Linking Open
+            Descriptions of Events: http://linkedevents.org/ontology/ 
+            - The Event Ontology:http://motools.sourceforge.net/event/event.html 
+            - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
+             - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
+            - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</rdfs:comment>
+        <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
+            (ICA RiC-O)</rdfs:label>
+        <dc:title xml:lang="en">International Council on Archives Records in Contexts Ontology
+            (ICA RiC-O)</dc:title>
+        <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of
+            EGAD RiC-O team</dc:creator>
         <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
             2018-....
             All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
@@ -5114,14 +5115,7 @@ September 20 :
     <!-- http://www.ica.org/standards/RiC/ontology#encodingFormat -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#encodingFormat">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -6165,24 +6159,6 @@ An Activity Category may be defined globally, or be specific to a particular act
         <skos:note xml:lang="en">NOT PRESENT AS SUCH IN RiC-CM. Here we need to distinguish Things
             and Concepts</skos:note>
         <skos:prefLabel xml:lang="en">Concept</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#ConceptAppellation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ConceptAppellation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isAppellationOf"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Concept Appellation</rdfs:label>
-        <skos:note xml:lang="en">In RiC-CM, is called &quot;Term&quot;</skos:note>
-        <skos:scopeNote xml:lang="en">Used for concepts (close to SKOS labels)</skos:scopeNote>
     </owl:Class>
     
 
