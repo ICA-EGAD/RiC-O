@@ -5709,8 +5709,8 @@ An Activity may be composed of other Activities.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityTypeOfAgent"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A02 (Activity Type attribute)</RiCConceptuallModelCorrespondingComponent>
@@ -6267,7 +6267,7 @@ This entity includes:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isCorporateBodyTypeOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <RiCConceptuallModelCorrespondingComponent>RiC-A13 (Corporate Body Type attribute)</RiCConceptuallModelCorrespondingComponent>
@@ -7505,19 +7505,12 @@ An Occupation may be pursued independently by a person, or pursued within a Corp
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#DemographicGroup"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isOccupationTypeOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isOccupationTypeOfPerson"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">OccupationType should probably be renamed to OccupationAbstract,
-            and stand for RiC-CM v 2 Occupation entity (secondary entity, as a SKOS
-            concept)</rdfs:comment>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A33 (Occupation Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Occupation Type</rdfs:label>
     </owl:Class>
     
 
@@ -8592,6 +8585,13 @@ Shortcut: isAssociatedWithPlace</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RepresentationType">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isRepresentationTypeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A40 (Representation Type attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">Representation Type</rdfs:label>
         <skos:definition xml:lang="en">Specific characteristics for types of representation (e.g., script for textual, bit rate for audio, resolution for image, encoding format for digital records etc.)</skos:definition>
         <skos:historyNote xml:lang="en">Added 2019, July 17</skos:historyNote>
