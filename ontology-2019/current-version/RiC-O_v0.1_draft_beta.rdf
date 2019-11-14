@@ -1589,16 +1589,16 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasDocumentaryForm -->
+    <!-- http://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasDocumentaryForm">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormOf"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -2651,16 +2651,16 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#isDocumentaryFormOf -->
+    <!-- http://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormOf">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -6576,15 +6576,22 @@ Shortcut: has Derived Instantiation</skos:definition>
     <!-- http://www.ica.org/standards/RiC/ontology#DocumentaryFormType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Record"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Here, considered as a Record Type</rdfs:comment>
-        <rdfs:label xml:lang="en">Documentary Form</rdfs:label>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A16 (Documentary Form Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Documentary Form Type</rdfs:label>
     </owl:Class>
     
 
@@ -6693,6 +6700,8 @@ In particular, archivists, records managers and end users may need to use some m
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A18 (Event Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Event Type</rdfs:label>
     </owl:Class>
     
 
@@ -6790,6 +6799,8 @@ This entity includes:
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A20 (Family Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Family Type</rdfs:label>
     </owl:Class>
     
 
@@ -7991,7 +8002,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDocumentaryForm"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8283,20 +8294,6 @@ Shortcut : has Instantiation</skos:definition>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceType -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#RecordSet -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSet">
@@ -8373,13 +8370,14 @@ Shortcut : has Instantiation</skos:definition>
     <!-- http://www.ica.org/standards/RiC/ontology#RecordSetType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordSetType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isRecordSetTypeOf"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A39 (Record Set Type attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">e.g. fonds, series, subseries, collection, file, etc. Users are
             strongly recommended to use concepts from a SKOS vocabulary for populating this class,
             and first of all the SKOS vocabulary we provide. NOTE : for the moment I have cerated a
