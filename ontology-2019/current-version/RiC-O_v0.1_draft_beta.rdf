@@ -1338,6 +1338,7 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasActivityType">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isActivityTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityType"/>
     </owl:ObjectProperty>
     
@@ -1510,6 +1511,17 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasCorporateBodyType -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasCorporateBodyType">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCorporateBodyTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasCorrespondent -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasCorrespondent">
@@ -1669,17 +1681,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isGeographicalCoordinatesOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#GeographicalCoordinates"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#hasGroupType -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasGroupType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isGroupTypeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
     </owl:ObjectProperty>
     
 
@@ -2351,6 +2352,7 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isActivityTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityType"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
     </owl:ObjectProperty>
     
 
@@ -2563,6 +2565,16 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isInstantiationDerivedFrom"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#isCorporateBodyTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isCorporateBodyTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
     </owl:ObjectProperty>
     
 
@@ -2782,16 +2794,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#GeographicalCoordinates"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isGroupTypeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isGroupTypeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
     </owl:ObjectProperty>
     
 
@@ -5711,6 +5713,7 @@ An Activity may be composed of other Activities.</skos:scopeNote>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A02 (Activity Type attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">QUESTION : or Activity (abstract) ?</rdfs:comment>
         <rdfs:label xml:lang="en">Activity Type</rdfs:label>
         <skos:definition xml:lang="en">A kind or category of Activity independent of the instances of the Activity that are specific to particular social and cultural contexts.</skos:definition>
@@ -6157,6 +6160,8 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A06 (Carrier Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Carrier Type</rdfs:label>
     </owl:Class>
     
 
@@ -6206,6 +6211,8 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A11 (Content Type attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Content Type</rdfs:label>
     </owl:Class>
     
 
@@ -6259,7 +6266,7 @@ This entity includes:
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isGroupTypeOf"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isCorporateBodyTypeOf"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6910,7 +6917,7 @@ Shortcut : isFunctionnallyEquivalentTo</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasGroupType"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasCorporateBodyType"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
