@@ -1786,17 +1786,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasMediumOfType -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasMediumOfType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isMediumTypeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MediaType"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasMember -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasMember">
@@ -2917,16 +2906,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isMainSubjectOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSubjectOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isMediumTypeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isMediumTypeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWith"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MediaType"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
     </owl:ObjectProperty>
     
@@ -7237,7 +7216,8 @@ Any given Record Resource may be represented in more than one language, and any 
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:label xml:lang="en">Legal Status</rdfs:label>
         <skos:note xml:lang="en">NOT PRESENT IN RiC-CM Do we keep it ? I am not sure QUESTION : is
-            legal status a characteristic for agents only ?</skos:note>
+            legal status a characteristic for agents only ?
+Left as it is, waiting for a decision about the definition and domain of the Legal Status attribute (see my comment in the attributes file), and about merging it or not with Corporate Body Type.</skos:note>
     </owl:Class>
     
 
@@ -7313,15 +7293,6 @@ A Mandate should not be confused with the one or more documentary sources that s
         <skos:prefLabel xml:lang="en">Mechanism</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Mechanism is a kind of Agent (E04).
 A Mechanism may have both mechanical and software components, or may be exclusively software. A Mechanism acts in the world producing physical or social effects, and frequently generates or modifies Records.</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#MediaType -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#MediaType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <skos:note xml:lang="en">To be removed?</skos:note>
     </owl:Class>
     
 
