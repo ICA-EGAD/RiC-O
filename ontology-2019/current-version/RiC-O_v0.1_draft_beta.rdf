@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
@@ -4915,6 +4916,24 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#authenticity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authenticity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">authenticity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#authorizingMandate -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorizingMandate">
@@ -4964,11 +4983,34 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#carrierExtent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#carrierExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A05 (Carrier Extent attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">carrier extent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#certainty -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#certainty">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#classification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#classification">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A08 (Classification attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">classification</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4985,6 +5027,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A09 (Conditions of Access attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">conditions of access</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5001,17 +5045,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#contentExtent -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#contentExtent">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <skos:historyNote>added 2019, July 17</skos:historyNote>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A10 (Conditions of Use attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">conditions of use</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5155,6 +5190,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A46 (Instantiation Extent attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Instantiation extent</rdfs:label>
         <skos:historyNote>added 2019, July 17</skos:historyNote>
     </owl:DatatypeProperty>
     
@@ -5166,6 +5203,24 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#structure"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#integrity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#integrity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A26 (Integrity attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">integrity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5360,6 +5415,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">physical or logical extent</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. Use only if you cannot use the subproperties (particularly if the same free text is being used in your current metadata for describing the record resource, carrier and instantiation extent).</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5397,6 +5454,19 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualityOfRepresentation">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A19 (Record Resource extent attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
+        <skos:historyNote>added 2019, July 17</skos:historyNote>
     </owl:DatatypeProperty>
     
 
@@ -8049,12 +8119,6 @@ Such information may serve a variety of purposes, though it always documents or 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#contentExtent"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#history"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -8062,6 +8126,12 @@ Such information may serve a variety of purposes, though it always documents or 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#noteOnAuthenticityAndIntegrity"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceExtent"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
