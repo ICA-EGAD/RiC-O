@@ -4921,15 +4921,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#arrangement -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#arrangement">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#authenticity -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authenticity">
@@ -4954,6 +4945,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleFollowed"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">authorizing mandate</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Mandate class for handling mandates.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5065,16 +5058,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#contentStructure -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#contentStructure">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#structure"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#creationDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#creationDate">
@@ -5090,9 +5073,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#date">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <skos:note xml:lang="en">NOTE : kept for the moment, along with the corresponding object
-            property, in order to handle simple data on dates. Same for the other data poperties on
-            dates</skos:note>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be made obsolete later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5142,14 +5124,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#endDate">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#generalContext -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#generalContext">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5323,6 +5297,25 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#noteOnArrangement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnArrangement">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#noteOnGeneralContext -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnGeneralContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#noteOnLanguage -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnLanguage">
@@ -5348,6 +5341,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A34 (Note on Physical Characteristics attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">note on physical characteristics</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5415,6 +5410,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#productionTechnique">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A36 (Production Technique attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">production technique</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5438,11 +5435,24 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#qualifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualifier">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A37 (Qualifier attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">qualifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#qualityOfRepresentation -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualityOfRepresentation">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A38 (Quality of Representation attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">quality of representation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5463,7 +5473,18 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <!-- http://www.ica.org/standards/RiC/ontology#recordResourceState -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceState">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#state"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A43 (State attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Record Resource state</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceStructure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#structure"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
@@ -5473,7 +5494,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <!-- http://www.ica.org/standards/RiC/ontology#relationState -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationState">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#state"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">for qualifying a relation (&quot;present&quot;,
@@ -5487,9 +5507,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ruleFollowed">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">NOTE : kept for the moment, along with the isRegulatedBy object
-            property, in order to handle simple data on rules</rdfs:comment>
-        <rdfs:label>Rule Followed</rdfs:label>
+        <rdfs:label>rule followed</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Rule class for handling rules.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5499,6 +5518,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#scopeAndContent">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A41 (Scope and Content attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">scope and content</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5506,7 +5527,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <!-- http://www.ica.org/standards/RiC/ontology#source -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#source">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
@@ -5517,15 +5537,6 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#standardizedValue">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#textualValue"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#state -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#state">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
@@ -5544,15 +5555,9 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#subject -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#subject">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A44 (Structure attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">structure</rdfs:label>
+        <skos:scopeNote xml:lang="en">Use only if you cannot use the subproperties (particularly if the same free text is being used in your current metadata for describing the record resource and the instantiation structure).</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5562,6 +5567,8 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#technicalCharacteristics">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Mechanism"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A45 (Technical Characteristics attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">technical characteristics</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8091,7 +8098,7 @@ Such information may serve a variety of purposes, though it always documents or 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#contentStructure"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceStructure"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8286,7 +8293,7 @@ Shortcut : has Instantiation</skos:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#arrangement"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#noteOnArrangement"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
