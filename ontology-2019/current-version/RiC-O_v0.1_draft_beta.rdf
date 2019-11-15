@@ -31,71 +31,6 @@
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
         <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
-        <skos:historyNote xml:lang="en">Previous version, dated May 2018, has been updated as
-            concerns many aspects: 
-            - class system made compliant with the current, not finished,
-            version of RiC-CM (v2); particularly, several classes have been renamed, some have been
-            added (Action, Process, SingleDate, DateRange, DateSet); Position is now a subclass of
-            Agent 
-            - same for data and object properties, including the system of n-ary relations;
-            lot of properties added, some removed 
-            - some classes and properties added for handling
-            Places (PhysicalLocation and GeographicalCoordinates) and dates (TimeAppellation) 
-            - reviewed the list and names of object properties for n-ary relations (in particular, new
-            top level properties created: relationConnects, relationHasSource, relationHasTarget;
-            names of properties include &quot;hasTarget&quot;, &quot;hasSource&quot;,
-            &quot;isSourceOf&quot;, or &quot;isTargetOf&quot;, or &quot;connects&quot;. 
-            - formal definition of classes created (but remains not finished) 
-            - minimal documentation for classes added (using rdfs:label; rdfs:comment; skos:scopeNote. Skos:note contains
-            current questions and comments for RiC-O development team) 
-            - some metadata added about the ontology itself and about the SKOS vocabulary on record set types, including a
-            versionInfo note (that contains a warning) and a CC-BY license. 
-            On October 31, version reviewed and some details updated : created CarrierType, ProductionTechniqueType,
-            OccupationType, OccupationRelation and the object properties needed to define or use
-            them; re-introduced some data properties needed for enabling current archival metadata
-            to be converted easily to RDF: source, identifier, title, height, width. 
-            On December 7, a few changes made when needed for handling ANF data : changed the domain for state
-            property, added isWithin object property. 
-On 2019, February 22-26, main changes : 
-- renamed Function &gt; Purpose
-- renamed some object properties (has Date &gt; isAssociatedWithDate, hasPlace &gt; isAssociatedWithPlace), renamed LocationRelation to RelationToPlace, removed LeadesrhipRelation under AgentMembershipRelation, and also cleaned the shortcut personIsMemberOf.
-Added hasDerivedRecordResource and wasMigratedInto object properties (and their inverse ones).
-Renamed RegulationRelation &gt; RelationToRule; CategorizationRelation &gt; RelationToType. 
-Moved hasSender and hasAddresse under hasOrigination
-Occupation is now a subclass of Activity ; pursues a subproperty of realizes
-OccupationRelation is a subclass of ActivityRealizationRelation
-Added FunctionalEquivalenceRelation under RecordResourceRelation, + the object properties needed
-
-March 8 : introduced a &quot;state&quot; data property, and made relationState and RecordResourceState subproperties of it
-Fixed some inconsistencies in the relation system of classes and properties
-
-March 19: history data property fixed (it is not a functional property)
-April 29: hasSource has no range any more; added usedFromDate and usedToDate properties ; changed agentIsSourceOfHierarchicalRelation to AgentIsSourceOfAgentHierarchicalRelation, same for the inverse relation ; reviewed the OriginationRelation class and properties system
-May 21: changed personIsSourceOfSubordinationRelation to personIsSourceOfAgentSubordinationRelation (and same for the related properties)
-
-June 27: 
-- changed the definition of Rule, made Mandate a subclass of Rule and changed its definition; created the RelationToMandate class and the needed object properties. 
-- replaced &apos;occuredAt&apos; by &apos;isAssociatedWithPlace&apos; in the definition of the Relation class
-- on the root element, replaced xmlns:ontology=&quot;rico:&quot; by xmlns:rico=&quot;rico:&quot;
-
-July 22-August 6:
-- introduced the Instantiation class, InstantiationRelation and RecordResourceRepresentationRelation classes, and every data and object property needed for handling these new classes. Which implied to make some changes in the definition of RecordResource and RecordResourceRelation.
-        
-September 19: towards a beta version of v0-1 draft : 
-- Removed importing SKOS.
-- RecordSetType, LegalStatus, CarrierType, ProductionTechniqueType are no longer subclasses of skos:Concept.
-- removed Action, Purpose and Process classes and all the properties concerned. Renamed ActivityRealizationRelation to PerformanceRelation (and other changes concerning the object properties). Updated the annotations properties of Activity
-- Activity made a subclass of Event
-- removed, under Agent, all the classes that corresponded dicrectly to some DULCE-DNS classes. Updated the definitions of the remaining classes
-- removed SocialIdentity class and SocialIdentityType + the properties concerned
-        
-September 20 : 
-- removed ActivityDomain  and RelationType (and the properties concerned)
-- renamed TimeAppellation &gt; DateAppellation
-- renamed Role &gt; RoleType, and moved it to Type
-- fixed the label of Instantiation
-
-September 25: fixed the domain of encodingFormat (changed to Instantiation) ; removed ConceptAppellation class</skos:historyNote>
         <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
             EGAD</dc:contributor>
         <rdfs:comment xml:lang="en">Main characteristics : 
@@ -191,6 +126,73 @@ September 25: fixed the domain of encodingFormat (changed to Instantiation) ; re
             - OGC GeoSPARQL: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf 
             - Linked Places Format (http://whgazetteer.org/tag/linked-places-format/ - for now, a JSON format)
             - Time Ontology in OWL: https://www.w3.org/TR/owl-time/</dc:description>
+        <skos:historyNote xml:lang="en">Previous version, dated May 2018, has been updated as
+            concerns many aspects: 
+            - class system made compliant with the current, not finished,
+            version of RiC-CM (v2); particularly, several classes have been renamed, some have been
+            added (Action, Process, SingleDate, DateRange, DateSet); Position is now a subclass of
+            Agent 
+            - same for data and object properties, including the system of n-ary relations;
+            lot of properties added, some removed 
+            - some classes and properties added for handling
+            Places (PhysicalLocation and GeographicalCoordinates) and dates (TimeAppellation) 
+            - reviewed the list and names of object properties for n-ary relations (in particular, new
+            top level properties created: relationConnects, relationHasSource, relationHasTarget;
+            names of properties include &quot;hasTarget&quot;, &quot;hasSource&quot;,
+            &quot;isSourceOf&quot;, or &quot;isTargetOf&quot;, or &quot;connects&quot;. 
+            - formal definition of classes created (but remains not finished) 
+            - minimal documentation for classes added (using rdfs:label; rdfs:comment; skos:scopeNote. Skos:note contains
+            current questions and comments for RiC-O development team) 
+            - some metadata added about the ontology itself and about the SKOS vocabulary on record set types, including a
+            versionInfo note (that contains a warning) and a CC-BY license. 
+            On October 31, version reviewed and some details updated : created CarrierType, ProductionTechniqueType,
+            OccupationType, OccupationRelation and the object properties needed to define or use
+            them; re-introduced some data properties needed for enabling current archival metadata
+            to be converted easily to RDF: source, identifier, title, height, width. 
+            On December 7, a few changes made when needed for handling ANF data : changed the domain for state
+            property, added isWithin object property. 
+On 2019, February 22-26, main changes : 
+- renamed Function &gt; Purpose
+- renamed some object properties (has Date &gt; isAssociatedWithDate, hasPlace &gt; isAssociatedWithPlace), renamed LocationRelation to RelationToPlace, removed LeadesrhipRelation under AgentMembershipRelation, and also cleaned the shortcut personIsMemberOf.
+Added hasDerivedRecordResource and wasMigratedInto object properties (and their inverse ones).
+Renamed RegulationRelation &gt; RelationToRule; CategorizationRelation &gt; RelationToType. 
+Moved hasSender and hasAddresse under hasOrigination
+Occupation is now a subclass of Activity ; pursues a subproperty of realizes
+OccupationRelation is a subclass of ActivityRealizationRelation
+Added FunctionalEquivalenceRelation under RecordResourceRelation, + the object properties needed
+
+March 8 : introduced a &quot;state&quot; data property, and made relationState and RecordResourceState subproperties of it
+Fixed some inconsistencies in the relation system of classes and properties
+
+March 19: history data property fixed (it is not a functional property)
+April 29: hasSource has no range any more; added usedFromDate and usedToDate properties ; changed agentIsSourceOfHierarchicalRelation to AgentIsSourceOfAgentHierarchicalRelation, same for the inverse relation ; reviewed the OriginationRelation class and properties system
+May 21: changed personIsSourceOfSubordinationRelation to personIsSourceOfAgentSubordinationRelation (and same for the related properties)
+
+June 27: 
+- changed the definition of Rule, made Mandate a subclass of Rule and changed its definition; created the RelationToMandate class and the needed object properties. 
+- replaced &apos;occuredAt&apos; by &apos;isAssociatedWithPlace&apos; in the definition of the Relation class
+- on the root element, replaced xmlns:ontology=&quot;rico:&quot; by xmlns:rico=&quot;rico:&quot;
+
+July 22-August 6:
+- introduced the Instantiation class, InstantiationRelation and RecordResourceRepresentationRelation classes, and every data and object property needed for handling these new classes. Which implied to make some changes in the definition of RecordResource and RecordResourceRelation.
+        
+September 19: towards a beta version of v0-1 draft : 
+- Removed importing SKOS.
+- RecordSetType, LegalStatus, CarrierType, ProductionTechniqueType are no longer subclasses of skos:Concept.
+- removed Action, Purpose and Process classes and all the properties concerned. Renamed ActivityRealizationRelation to PerformanceRelation (and other changes concerning the object properties). Updated the annotations properties of Activity
+- Activity made a subclass of Event
+- removed, under Agent, all the classes that corresponded dicrectly to some DULCE-DNS classes. Updated the definitions of the remaining classes
+- removed SocialIdentity class and SocialIdentityType + the properties concerned
+        
+September 20 : 
+- removed ActivityDomain  and RelationType (and the properties concerned)
+- renamed TimeAppellation &gt; DateAppellation
+- renamed Role &gt; RoleType, and moved it to Type
+- fixed the label of Instantiation
+
+September 25: fixed the domain of encodingFormat (changed to Instantiation) ; removed ConceptAppellation class
+
+November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the majority of the classes and data properties. Created a CMcorrespondingComponent annotation property, subproperty of skos:note, for mapping RiC-O components to RiC-CM when appliable. Added a &apos;usability&apos; skos:scopeNote on some data properties for specifying they are to be used only if the corresponding classes and object properties cannot be used.</skos:historyNote>
     </owl:Ontology>
     
 
