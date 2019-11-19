@@ -345,6 +345,45 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#accumulatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accumulatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasProvenance"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulates"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R028 (&apos;accumulated by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">accumulated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#accumulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accumulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isProvenanceOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R028i (accumulates relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">accumulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects">
@@ -766,7 +805,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#authored -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authored">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#created"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCreatorOf"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authoredBy"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -925,6 +964,45 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#collectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#collectedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulatedBy"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#collects"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R030 (&apos;collected by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">collected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#collects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#collects">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulates"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R030i (collects relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">collects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#consistsOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#consistsOf">
@@ -983,26 +1061,23 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#created -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#created">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#createdBy"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:comment xml:lang="en">A shortcut for the archival vague provenance relation For the
-            moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#createdBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#createdBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOrigination"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasProvenance"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCreatorOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R027 (&apos;created by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for CreationRelation</rdfs:comment>
+        <rdfs:label xml:lang="en">created by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1142,6 +1217,27 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#documentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#documentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDocumentationOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R033i (&apos;documented by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">A shortcut for the Evidence Relation</rdfs:comment>
+        <rdfs:label xml:lang="en">documented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#evidenceRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasSource">
@@ -1167,17 +1263,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEvidenceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#evidencedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#evidencedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEvidenceOf"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:comment xml:lang="en">A shortcut for the Evidence Relation</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -1382,10 +1467,19 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#hasAddressee -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasAddressee">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOrigination"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasProvenance"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAddresseeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R032 (&apos;has addressee&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">has addressee</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1771,6 +1865,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R025 (&apos;has instantiation&apos; relation)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label>has Instantiation</rdfs:label>
         <skos:definition>Ths shortcut for the InstantiationRelation</skos:definition>
     </owl:ObjectProperty>
@@ -1937,24 +2032,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasOrigination -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasOrigination">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:comment xml:lang="en">The shortcut for OriginationRelation</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasParent">
@@ -2048,6 +2125,27 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasProvenance -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasProvenance">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isProvenanceOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R026 (&apos;has provenance&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">The shortcut for OriginationRelation</rdfs:comment>
+        <rdfs:label xml:lang="en">has provenance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasRecordSetType -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasRecordSetType">
@@ -2073,10 +2171,19 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#hasSender -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSender">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOrigination"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasProvenance"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSenderOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R031 (&apos;has sender&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">has sender</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2283,6 +2390,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R025i (instantiates relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">instantiates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2437,9 +2546,18 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#isAddresseeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isAddresseeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isProvenanceOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-032i (&apos;is addressee of&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">is addressee of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2674,6 +2792,26 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#isCreatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isCreatorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isProvenanceOf"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R027i (&apos;is creator of &apos;relation&apos;)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">A shortcut for the archival vague provenance relation For the
+            moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#isDateAppellationOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf">
@@ -2755,6 +2893,26 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#isDocumentationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDocumentationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R033 (&apos;is documentation of&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">The shortcut for EvidenceRelation</rdfs:comment>
+        <rdfs:label xml:lang="en">is documentation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#isDraftOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDraftOf">
@@ -2816,16 +2974,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EventType"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isEvidenceOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isEvidenceOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOrigination"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:comment xml:lang="en">The shortcut for EvidenceRelation</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -3075,22 +3223,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#isOriginationOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isOriginationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isPartOf">
@@ -3187,6 +3319,25 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#isProvenanceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isProvenanceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R026i (&apos;is provenance of&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">is provenance of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource">
@@ -3272,9 +3423,18 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#isSenderOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSenderOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isProvenanceOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R031i (&apos;is sender of&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">is sender of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4119,13 +4279,41 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#receivedOrAccumulated -->
+    <!-- http://www.ica.org/standards/RiC/ontology#receivedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#receivedOrAccumulated">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#wasReceivedOrAccumulatedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#receivedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulatedBy"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#receives"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R029 (&apos;received by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">received by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#receives -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#receives">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R029i (receives relation)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">receives</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4942,17 +5130,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasModificationDate"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#wasReceivedOrAccumulatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#wasReceivedOrAccumulatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOrigination"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:comment xml:lang="en">The shortcut for ReceptionOrAccumulationRelation</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -5911,12 +6088,6 @@ An Activity Category may be defined globally, or be specific to a particular act
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#identifiedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Identifier"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginationOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
