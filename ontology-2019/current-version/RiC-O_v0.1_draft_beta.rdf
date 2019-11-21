@@ -1967,7 +1967,14 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasLegalStatus">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#legalStatusOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#LegalStatus"/>
     </owl:ObjectProperty>
     
@@ -3777,7 +3784,14 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#legalStatusOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#LegalStatus"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -5510,6 +5524,17 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#dateQualifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#dateQualifier">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A37 (Date Qualifier attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">date qualifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#deathDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#deathDate">
@@ -5766,18 +5791,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#noteOnPhysicalCharacteristics -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnPhysicalCharacteristics">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A34 (Note on Physical Characteristics attribute)</RiCConceptuallModelCorrespondingComponent>
-        <rdfs:label xml:lang="en">note on physical characteristics</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#noteOnProcessApplied -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnProcessApplied">
@@ -5814,6 +5827,17 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#physicalCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#physicalCharacteristics">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A34 (Note on Physical Characteristics attribute)</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">note on physical characteristics</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5862,17 +5886,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#qualifier -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualifier">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A37 (Qualifier attribute)</RiCConceptuallModelCorrespondingComponent>
-        <rdfs:label xml:lang="en">qualifier</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7470,7 +7483,7 @@ Complex, large groups may be subdivided into other groups</skos:scopeNote>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#noteOnPhysicalCharacteristics"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalCharacteristics"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7661,6 +7674,7 @@ Any given Record Resource may be represented in more than one language, and any 
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#LegalStatus">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
+        <RiCConceptuallModelCorrespondingComponent>RiC-A28 (Legal Status attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">Legal Status</rdfs:label>
         <skos:note xml:lang="en">NOT PRESENT IN RiC-CM Do we keep it ? I am not sure QUESTION : is
             legal status a characteristic for agents only ?
