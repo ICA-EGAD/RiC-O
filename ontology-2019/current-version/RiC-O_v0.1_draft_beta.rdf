@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
@@ -384,6 +383,35 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#accumulationRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accumulationRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAccumulationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#accumulationRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accumulationRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAccumulationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects">
@@ -391,6 +419,45 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfActivityDocumentationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#activityIsTargetOfActivityDocumentationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#activityIsTargetOfActivityDocumentationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#activityIsTargetOfActivityDocumentationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -611,6 +678,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAccumulationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAccumulationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentOriginationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentControlRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentControlRelation">
@@ -636,7 +713,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentOriginationRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentOriginationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
@@ -656,17 +733,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation">
@@ -674,17 +740,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#creationRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfReceptionOrAccumulationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfReceptionOrAccumulationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentOriginationRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -713,11 +768,29 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAgentOriginationRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAgentOriginationRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
         <rdfs:range>
             <owl:Class>
@@ -734,7 +807,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
@@ -897,39 +970,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#creationRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAuthorshipRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#creationRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#authorshipWithRole -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorshipWithRole">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RoleType"/>
     </owl:ObjectProperty>
     
@@ -1127,7 +1171,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#creationRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfCreationRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfCreationRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
         <rdfs:range>
             <owl:Class>
@@ -1174,7 +1218,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#derivationRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#derivationRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#temporalRelationHasSource"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
@@ -1186,7 +1230,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#derivationRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#derivationRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#temporalRelationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfDerivationRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
@@ -1198,8 +1242,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#descendanceRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#descendanceRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasSource"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#familyRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsSourceOfDescendanceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -1210,8 +1254,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#descendanceRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#descendanceRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasTarget"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#familyRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsTargetOfDescendanceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -1275,35 +1319,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R066 (&apos;enforced by&apos; relation)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">enforced by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#evidenceRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfEvidenceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#evidenceRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEvidenceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
     </owl:ObjectProperty>
     
 
@@ -1390,7 +1405,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#functionalEquivalenceRelationConnects -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#functionalEquivalenceRelationConnects">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToFunctionalEquivalenceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -2470,9 +2485,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToInstantiationRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -2481,9 +2496,21 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToInstantiationRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfMigrationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfMigrationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#migrationRelationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -2492,6 +2519,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfDerivationRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToInstantiationRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
@@ -2499,22 +2527,33 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfRecordResourceRepresentationRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfMigrationRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfRecordResourceRepresentationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasTarget"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfMigrationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfDerivationRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#migrationRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects -->
+    <!-- http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfRecordResourceToInstantiationRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfRecordResourceToInstantiationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationConnects"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
     </owl:ObjectProperty>
     
@@ -3879,6 +3918,26 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#migrationRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#migrationRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#derivationRelationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#migrationRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#migrationRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#derivationRelationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#occupationIsTargetOfOccupationRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#occupationIsTargetOfOccupationRelation">
@@ -3932,42 +3991,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R054 (&apos;occupies&apos; relation)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">occupies</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#originationRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#originationRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfOriginationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -4157,8 +4180,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#personIsSourceOfDescendanceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsSourceOfDescendanceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentTemporalRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasFamilyRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
         <skos:altLabel>person is the ancestor/has descendant in relation</skos:altLabel>
@@ -4233,8 +4256,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#personIsTargetOfDescendanceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsTargetOfDescendanceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentTemporalRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasFamilyRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
         <skos:altLabel>person is the descendant in relation</skos:altLabel>
@@ -4370,6 +4393,41 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#provenanceRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#proxyFor -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#proxyFor">
@@ -4467,39 +4525,11 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfReceptionOrAccumulationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#temporalRelationHasSource"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceGeneticRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -4511,7 +4541,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#temporalRelationHasTarget"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceGeneticRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -4546,109 +4576,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRelationConnects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAgentOriginationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAgentOriginationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfOriginationRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAuthorshipRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAuthorshipRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfCreationRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfCreationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfCreationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAgentOriginationRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfEvidenceRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfEvidenceRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfOriginationRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfOriginationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfOriginationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfReceptionOrAccumulationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfReceptionOrAccumulationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfAgentOriginationRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4657,20 +4585,19 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceGeneticRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceRepresentationRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceToInstantiationRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceRepresentationRelation">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceToInstantiationRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4689,7 +4616,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceGeneticRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
     </owl:ObjectProperty>
@@ -4706,31 +4632,116 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAccumulationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAccumulationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAgentOriginationRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfActivityDocumentationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfActivityDocumentationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAgentOriginationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAgentOriginationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfCreationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfCreationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfAgentOriginationRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#recordResourceRelationConnects -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceRelationConnects">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationConnects"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasSource -->
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasSource">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasTarget -->
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasTarget -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasTarget">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
     </owl:ObjectProperty>
     
@@ -4952,29 +4963,29 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequenceIn">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#sequenceRelationHasSource -->
+    <!-- http://www.ica.org/standards/RiC/ontology#sequentialRelationHasSource -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasSource">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequenceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequentialRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#sequenceRelationHasTarget -->
+    <!-- http://www.ica.org/standards/RiC/ontology#sequentialRelationHasTarget -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasTarget">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequenceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequentialRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
@@ -5025,7 +5036,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#temporalRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#temporalRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasSource"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasSource"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
@@ -5036,7 +5047,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#temporalRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#temporalRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasTarget"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasTarget"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTemporalRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
@@ -5114,12 +5125,12 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequenceRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequentialRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequenceRelation">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequentialRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5127,7 +5138,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfTemporalRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfTemporalRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequenceRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfSequentialRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
     </owl:ObjectProperty>
@@ -5155,15 +5166,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEvidenceRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEvidenceRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#EvidenceRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation">
@@ -5180,23 +5182,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfOriginationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5221,12 +5206,12 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequenceRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequentialRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequenceRelation">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequentialRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5234,7 +5219,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTemporalRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTemporalRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequenceRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfSequentialRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
     </owl:ObjectProperty>
@@ -6110,6 +6095,39 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#AccumulationRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AccumulationRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulationRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#accumulationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The relation that connects a record resource and an agent
+            (including mechanism and position) that received or accumulated it. Shortcut:
+            wasReceivedOrAccumulatedBy</rdfs:comment>
+        <rdfs:label xml:lang="en">Accumulation Relation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation">
@@ -6170,6 +6188,39 @@ In a corporate or government context an Activity may also be called a function.
 An Activity exists in a specific social and cultural context, and within that context is subject to change over time. 
 
 An Activity may be composed of other Activities.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The functional provenance relation, that connects a record
+            resource and an activity, when the record resource results from the activity. Shortcut:
+            isEvidenceOf</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity Documentation Relation</rdfs:label>
     </owl:Class>
     
 
@@ -6394,7 +6445,7 @@ An Activity Category may be defined globally, or be specific to a particular act
     <!-- http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#agentOriginationRelationHasSource"/>
@@ -6416,6 +6467,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Agent Origination Relation</rdfs:label>
     </owl:Class>
     
 
@@ -6568,43 +6620,6 @@ An Activity Category may be defined globally, or be specific to a particular act
         <rdfs:label xml:lang="en">Authority Relation</rdfs:label>
         <skos:scopeNote xml:lang="en">Would probably rarely be used as such (use its
             sub-categories).</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#AuthorshipRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AuthorshipRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between an author -in a bibliographic meaning, as
-            well as in diplomatics - and an object. The author agent is intellectually responsible
-            of conceptualizing the object, of its meaning and content (example : a person being the
-            author of a work, of a software). The agent may also be responsible of issuing the
-            object (if it is a record), by itself or through another agent that acts by its name,
-            command or delegation. Shortcut: authoredBy</rdfs:comment>
-        <rdfs:label xml:lang="en">Authorship Relation</rdfs:label>
-        <skos:note xml:lang="en">QUESTION: if we introduce a Message class (set of content in PREMIS) would the Authorship relation rather have source this set of content (or a union of set of content and Record instantiation)?</skos:note>
     </owl:Class>
     
 
@@ -6791,7 +6806,7 @@ This entity includes:
             agent produces in the course of some business process. Examples : a record set generated
             by (the agents occupying) a specific position in a ministry ; a set of letters written
             by a person. Shortcut: createdBy</rdfs:comment>
-        <rdfs:label xml:lang="en">Creation Relation Or Production Relation?</rdfs:label>
+        <rdfs:label xml:lang="en">Creation Relation</rdfs:label>
     </owl:Class>
     
 
@@ -6918,7 +6933,7 @@ Identifying Agents as members of particular demographic groups may provide ident
     <!-- http://www.ica.org/standards/RiC/ontology#DerivationRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DerivationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6935,7 +6950,7 @@ Identifying Agents as members of particular demographic groups may provide ident
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Derivation Relation</rdfs:label>
-        <skos:definition xml:lang="en">A relation between 2 record resource instantiations, when the later is derived from the former
+        <skos:definition xml:lang="en">A relation between 2 record resource instantiations, when the first one has derive instantiation the second one.
 Shortcut: has Derived Instantiation</skos:definition>
     </owl:Class>
     
@@ -6944,6 +6959,7 @@ Shortcut: has Derived Instantiation</skos:definition>
     <!-- http://www.ica.org/standards/RiC/ontology#DescendanceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DescendanceRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentTemporalRelation"/>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7139,38 +7155,6 @@ In particular, archivists, records managers and end users may need to use some m
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#EvidenceRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#EvidenceRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#evidenceRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The functional provenance relation, that connects a record
-            resource and an activity, when the record resource results from the activity. Shortcut:
-            isEvidenceOf</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#Family -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Family">
@@ -7271,7 +7255,7 @@ This entity includes:
     <!-- http://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#functionalEquivalenceRelationConnects"/>
@@ -7284,6 +7268,7 @@ context and for some users at least, may be considered as equivalent, so that on
            them can be used instead of the other one. This equivalence is usually based upon the
             fact that the record resource instantitions have at least the same intellectual content.
 Shortcut : isFunctionnallyEquivalentTo</rdfs:comment>
+        <rdfs:label xml:lang="en">Functional Equivalence Relation</rdfs:label>
     </owl:Class>
     
 
@@ -7548,18 +7533,18 @@ Distinguishing the message conveyed (Record Resource) and its physical represent
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#InstantiationRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation -->
 
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#InstantiationRelation">
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationRelationConnects"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelationConnects"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Record Resource Instantiation Relation</rdfs:label>
+        <rdfs:label xml:lang="en">Instantiation to Instantiation Relation</rdfs:label>
         <skos:definition xml:lang="en">A relation between two instantiations
 Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
         <skos:historyNote xml:lang="en">Added on July 17, 2019</skos:historyNote>
@@ -7782,6 +7767,30 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#MigrationRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#MigrationRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#migrationRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#migrationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Migration Relation</rdfs:label>
+        <skos:definition xml:lang="en">A relation betwwen to instantiations, when the first is migrated into the second one.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#Name -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Name">
@@ -7886,49 +7895,6 @@ An Occupation may be pursued independently by a person, or pursued within a Corp
         </rdfs:subClassOf>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A33 (Occupation Type attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">Occupation Type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#OriginationRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#OriginationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#originationRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The generic archival provenance relation, that connects a record
-            resource or a Record Resource Instantiation and, either an agent (including mechanism agent and position) that created,
-            received or accumulated the record resource, or an activity (or any entity that is a
-            facet of activity) from which results the record resource. Key relation in the archival
-            world. Shortcut: hasOrigination</rdfs:comment>
-        <skos:scopeNote xml:lang="en">This relation stands for organic and for functional
-            provenance.</skos:scopeNote>
     </owl:Class>
     
 
@@ -8284,6 +8250,51 @@ Within the Records created by a Corporate Body, a Position may be used to identi
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#ProvenanceRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Activity"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The generic archival provenance relation, that connects a record
+            resource or a Record Resource Instantiation and, either an agent (including mechanism agent and position) that created,
+            received or accumulated the record resource, or an activity (or any entity that is a
+            facet of activity) from which results the record resource. Key relation in the archival
+            world. Shortcut: hasOrigination</rdfs:comment>
+        <rdfs:label xml:lang="en">Provenance Relation</rdfs:label>
+        <skos:definition xml:lang="en">A relation that defines the provenance or origin of a Record Resource or Instantiation, for example the relation between a Record Resource and the Agent which created it or the Activity from which it resulted.</skos:definition>
+        <skos:scopeNote xml:lang="en">This relation stands for organic and for functional
+            provenance.</skos:scopeNote>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#Proxy -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Proxy">
@@ -8315,39 +8326,6 @@ Within the Records created by a Corporate Body, a Position may be used to identi
         <skos:prefLabel xml:lang="en">Proxy</skos:prefLabel>
         <skos:scopeNote xml:lang="en">For the moment, Introduced for handling the sequencing of
             records or records sets in a set.</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ReceptionOrAccumulationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentOriginationRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#receptionOrAccumulationRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation that connects a record resource and an agent
-            (including mechanism and position) that received or accumulated it. Shortcut:
-            wasReceivedOrAccumulatedBy</rdfs:comment>
-        <rdfs:label xml:lang="en">Reception Or Accumulation Relation</rdfs:label>
     </owl:Class>
     
 
@@ -8540,8 +8518,7 @@ Such information may serve a variety of purposes, though it always documents or 
     <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceRelation"/>
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationHasSource"/>
@@ -8587,9 +8564,35 @@ Such information may serve a variety of purposes, though it always documents or 
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation -->
 
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceRelation">
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Record Resource to Instantiation Relation</rdfs:label>
+        <skos:definition xml:lang="en">The relation that exists between a Record Resource and an Instantiation that represents it.
+Shortcut : has Instantiation</skos:definition>
+        <skos:historyNote xml:lang="en">Added on July 17, 2019</skos:historyNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8598,34 +8601,8 @@ Such information may serve a variety of purposes, though it always documents or 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A relation between two record resources. Shortcut : recordResourceIsAssociatedWithRecordResource</rdfs:comment>
-        <rdfs:label xml:lang="en">Record Resource Relation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceRepresentationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceRepresentationRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Instantiation Relation</rdfs:label>
-        <skos:definition xml:lang="en">The relation that exists between a Record Resource and an Instantiation that represents it.
-Shortcut : has Instantiation</skos:definition>
-        <skos:historyNote xml:lang="en">Added on July 17, 2019</skos:historyNote>
+        <rdfs:label xml:lang="en">Record Resource to Record Resource Relation</rdfs:label>
+        <skos:definition xml:lang="en">A relation that holds between a Record Resource and another Record Resource, for example the relation between a Record Resource and a draft or copy of that Record Resource.</skos:definition>
     </owl:Class>
     
 
@@ -8982,33 +8959,25 @@ Rule should not be confused with the one or more documentary sources that serve 
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#SequenceRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#SequentialRelation -->
 
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SequenceRelation">
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#SequentialRelation">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasTarget"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasTarget"/>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#sequenceRelationHasSource"/>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#sequentialRelationHasSource"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#sequenceIn"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A relation between 2 entities that have been ordered in a set,
-            no matter what the criterion is for ordering them. Shortcut : hasNext</rdfs:comment>
-        <rdfs:label xml:lang="en">Sequence Relation</rdfs:label>
+        <rdfs:label xml:lang="en">Sequential Relation</rdfs:label>
+        <skos:definition xml:lang="en">Any relation that describes a logical sequence between two entities, for example the relation between an Agent and its following Agent.</skos:definition>
     </owl:Class>
     
 
@@ -9100,7 +9069,7 @@ Rule should not be confused with the one or more documentary sources that serve 
     <!-- http://www.ica.org/standards/RiC/ontology#TemporalRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#TemporalRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SequenceRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#temporalRelationHasSource"/>
@@ -9189,6 +9158,7 @@ Rule should not be confused with the one or more documentary sources that serve 
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">shortcut: hasPart</rdfs:comment>
         <rdfs:label xml:lang="en">Whole Part Relation</rdfs:label>
+        <skos:definition xml:lang="en">The relation that holds between a whole and its parts, for example the relation between a Record and its constituent Record Part(s).</skos:definition>
     </owl:Class>
     
 
