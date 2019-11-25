@@ -412,17 +412,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#activityDocumentationRelationHasSource">
@@ -522,13 +511,13 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#agentHasProfessionalRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#agentHasWorkRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentHasProfessionalRelation">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentHasWorkRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#professionalRelationConnects"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#workRelationConnects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ProfessionalRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#WorkRelation"/>
     </owl:ObjectProperty>
     
 
@@ -563,7 +552,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
     </owl:ObjectProperty>
     
 
@@ -617,7 +606,15 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfIntellectualPropertyRightsRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfAuthorityRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasSource"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
     </owl:ObjectProperty>
     
@@ -639,7 +636,15 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfOwnershipRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfAuthorityRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ownershipRelationHasSource"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OwnershipRelation"/>
     </owl:ObjectProperty>
     
@@ -744,30 +749,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentMembershipRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipRelationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#groupIsTargetOfAgentMembershipRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentOrActivityIsTargetOfProvenanceRelation">
@@ -818,7 +799,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentRelationConnects">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationConnects"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
@@ -1125,7 +1106,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#correspondenceRelationConnects -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#correspondenceRelationConnects">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingRelationConnects"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasCorrespondenceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#CorrespondenceRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -1425,13 +1406,14 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#groupIsTargetOfAgentMembershipRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#groupIsSourceOfMembershipRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#groupIsTargetOfAgentMembershipRelation">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#groupIsSourceOfMembershipRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfMembershipRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
     </owl:ObjectProperty>
     
 
@@ -2583,7 +2565,15 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorityRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -2592,9 +2582,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorityRelationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfIntellectualPropertyRightsRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfIntellectualPropertyRightsRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3736,6 +3733,41 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsSourceOfKnowingOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsTargetOfKnowingOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#knowingRelationConnects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knowingRelationConnects">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#knownOfBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knownOfBy">
@@ -3868,9 +3900,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#managementRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorityRelationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfManagementRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3889,10 +3928,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#membershipRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#membershipRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfMembershipRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
     </owl:ObjectProperty>
     
 
@@ -3900,10 +3939,11 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#membershipRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#membershipRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfMembershipRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsTargetOfMembershipRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
     </owl:ObjectProperty>
     
 
@@ -3912,7 +3952,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#membershipWithPosition">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
     </owl:ObjectProperty>
     
@@ -4044,7 +4084,15 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ownershipRelationHasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorityRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OwnershipRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -4094,20 +4142,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#personHasCorrespondenceRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personHasCorrespondenceRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CorrespondenceRelation"/>
     </owl:ObjectProperty>
@@ -4120,6 +4158,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4142,17 +4190,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#spouseRelationConnects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#SpouseRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentMembershipRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentMembershipRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfMembershipRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4185,6 +4222,17 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
         <skos:altLabel>person is the ancestor/has descendant in relation</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#personIsSourceOfKnowingOfRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsSourceOfKnowingOfRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4224,7 +4272,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#personIsSourceOfTeachingRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsSourceOfTeachingRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#teachingRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -4265,10 +4313,32 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#personIsTargetOfKnowingOfRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsTargetOfKnowingOfRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#personIsTargetOfMembershipRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsTargetOfMembershipRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#personIsTargetOfTeachingRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsTargetOfTeachingRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasAcquaintanceRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personHasKnowingRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#teachingRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -4379,16 +4449,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R009 (precedes in time relation)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">precedes in time</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#professionalRelationConnects -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#professionalRelationConnects">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ProfessionalRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
 
@@ -4563,9 +4623,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelationHasTarget">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#managementRelationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceHoldingRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfRecordResourceHoldingRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -4602,32 +4669,12 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfIntellectualPropertyRightsRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfIntellectualPropertyRightsRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAuthorityRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceGeneticRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceGeneticRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceHoldingRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceIsTargetOfRecordResourceHoldingRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation"/>
     </owl:ObjectProperty>
     
 
@@ -4713,6 +4760,50 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ProvenanceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfIntellectualPropertyRightsRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfIntellectualPropertyRightsRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAuthorityRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfManagementRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfManagementRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAuthorityRelation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfRecordResourceHoldingRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfRecordResourceHoldingRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsTargetOfManagementRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5014,7 +5105,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#teachingRelationHasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#teachingRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TeachingRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -5025,7 +5116,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#teachingRelationHasTarget -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#teachingRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingRelationConnects"/>
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TeachingRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
@@ -5070,7 +5161,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfMembershipRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5166,22 +5256,11 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfManagementRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAuthorityRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfMembershipRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfMembershipRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5293,6 +5372,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#WholePartRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#workRelationConnects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#workRelationConnects">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#WorkRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
 
@@ -6128,24 +6217,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#acquaintanceRelationConnects"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A relation between two persons who know (have met, have
-            corresponded with...) each other. Shortcut : hasAcquaintance</rdfs:comment>
-        <rdfs:label xml:lang="en">Acquaintance Relation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#Activity -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Activity">
@@ -6336,6 +6407,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R041 and RiC-R041i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects an agent and another agent which the
             former has under its control, to which it gives orders, whose activity it supervises.
             Shortcut: controls</rdfs:comment>
@@ -6347,7 +6419,7 @@ An Activity Category may be defined globally, or be specific to a particular act
     <!-- http://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#accordingToRule"/>
@@ -6368,44 +6440,10 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R045 and RiC-R045i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">The vague agent hierarchical relation, between two agents of any
             kind. Same as in EAC-CPF Shortcut: isHierarchicallySuperiorTo</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Hierarchical Relation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentMembershipRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#agentMembershipRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipWithPosition"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Simply connects an agent and a group of which he/she/it is a
-            member, without specifying what kind of membership (affiliation, formal arrangement...)
-            Possibly related to the position that the agent occupies within the group of which it is
-            a member Shortcut : personIsMemberOf object property</rdfs:comment>
-        <rdfs:label xml:lang="en">Agent Membership Relation</rdfs:label>
     </owl:Class>
     
 
@@ -6472,24 +6510,6 @@ An Activity Category may be defined globally, or be specific to a particular act
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#AgentRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A relation between two agents Shortcut :
-            hasInteractionWith object property</rdfs:comment>
-        <rdfs:label xml:lang="en">Agent Relation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation">
@@ -6508,6 +6528,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R043 and RiC-R043i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects a person and another person which the
             former is superior of. Shortcut: isSuperiorOf</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Subordination Relation</rdfs:label>
@@ -6518,7 +6539,7 @@ An Activity Category may be defined globally, or be specific to a particular act
     <!-- http://www.ica.org/standards/RiC/ontology#AgentTemporalRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentTemporalRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6539,6 +6560,25 @@ An Activity Category may be defined globally, or be specific to a particular act
             Agent B may result from a significant change of Agent A. Shortcut:
             agentPrecedesInTime</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Temporal Relation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#agentRelationConnects"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R044 and RiC-R044i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">A relation between two agents Shortcut :
+            hasInteractionWith object property</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent Relation</rdfs:label>
     </owl:Class>
     
 
@@ -6615,11 +6655,12 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">Management relations group</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a thing on which the agent has some power
             or authority, including other agents. Shortcut: hasAuthorityOver</rdfs:comment>
         <rdfs:label xml:lang="en">Authority Relation</rdfs:label>
         <skos:scopeNote xml:lang="en">Would probably rarely be used as such (use its
-            sub-categories).</skos:scopeNote>
+            sub-categories)</skos:scopeNote>
     </owl:Class>
     
 
@@ -6762,7 +6803,7 @@ This entity includes:
     <!-- http://www.ica.org/standards/RiC/ontology#CorrespondenceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#CorrespondenceRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#correspondenceRelationConnects"/>
@@ -6770,6 +6811,7 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R052 and RiC-R052i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between two persons who correspond with each other
             Shortcut : hasCorrespondent</rdfs:comment>
         <rdfs:label xml:lang="en">Correspondence Relation</rdfs:label>
@@ -7191,7 +7233,7 @@ This entity includes:
     <!-- http://www.ica.org/standards/RiC/ontology#FamilyRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#FamilyRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#familyRelationConnects"/>
@@ -7199,6 +7241,7 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R047 and RiC-R047i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">A family relation between two persons. Shortcut :
             hasFamilyLinkWith</rdfs:comment>
         <rdfs:label xml:lang="en">Family Relation</rdfs:label>
@@ -7372,6 +7415,7 @@ Complex, large groups may be subdivided into other groups</skos:scopeNote>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R005 and RiC-R005i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSubdivision</rdfs:comment>
         <rdfs:label xml:lang="en">Group Subdivision Relation</rdfs:label>
     </owl:Class>
@@ -7560,16 +7604,32 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasSource"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasTarget"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R040 and RiC-R040i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a record resource on which the agent has
             some intellectual property rights. Shortcut:
             hasIntellectualPropertyRightsOn</rdfs:comment>
@@ -7577,6 +7637,49 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
         <skos:scopeNote xml:lang="en">Can be used, when the record resource is a work, for
             specifying the connection between the record resource and its
             author(s).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#KnowingOfRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#KnowingOfRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingOfRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Knowing Of Relation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#KnowingRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#KnowingRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#knowingRelationConnects"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">A relation between two persons who know (have met, have
+            corresponded with...) each other. Shortcut : hasAcquaintance</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowing Relation</rdfs:label>
     </owl:Class>
     
 
@@ -7648,6 +7751,7 @@ Any given Record Resource may be represented in more than one language, and any 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R042 and RiC-R042i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects a person and a group which the person
             leads Shortcut: isLeaderOf</rdfs:comment>
         <rdfs:label xml:lang="en">Leadership Relation</rdfs:label>
@@ -7686,6 +7790,7 @@ Left as it is, waiting for a decision about the definition and domain of the Leg
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R038 and RiC-R038i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Curatorial or management relation. Connects an agent and a
             record resource that the agent manages. Shortcut: manages</rdfs:comment>
         <rdfs:label xml:lang="en">Management Relation</rdfs:label>
@@ -7746,22 +7851,32 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
     <!-- http://www.ica.org/standards/RiC/ontology#MembershipRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#MembershipRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipRelationHasSource"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipRelationHasTarget"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Between two things. Shortcut: isMemberOf</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipWithPosition"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R055 and RiC-R055i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">Simply connects a group and a person, when the first one has member the second one
+            Possibly related to the position that the agent occupies within the group of which it is
+            a member</rdfs:comment>
         <rdfs:label xml:lang="en">Membership Relation</rdfs:label>
     </owl:Class>
     
@@ -7914,9 +8029,18 @@ An Occupation may be pursued independently by a person, or pursued within a Corp
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#ownershipRelationHasSource"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Group"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Person"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Position"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R037 and RiC-R037bis relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a thing (of any kind) that the agent owns.
             Shortcut: owns</rdfs:comment>
         <rdfs:label xml:lang="en">Ownership Relation</rdfs:label>
@@ -8169,7 +8293,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
     <!-- http://www.ica.org/standards/RiC/ontology#PositionHoldingRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PositionHoldingRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#positionHoldingRelationHasSource"/>
@@ -8184,6 +8308,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R054 and RiC-R054i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a person and a position that the person
             occupies Shortcut : occupies object property</rdfs:comment>
         <rdfs:label xml:lang="en">Position Holding Relation</rdfs:label>
@@ -8194,7 +8319,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
     <!-- http://www.ica.org/standards/RiC/ontology#PositionToGroupRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PositionToGroupRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#positionToGroupRelationHasSource"/>
@@ -8209,6 +8334,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R056 and RiC-R056i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a position and the group in which the
             position exists Shortcut : positionExistsIn</rdfs:comment>
         <rdfs:label xml:lang="en">Position And Group Relation</rdfs:label>
@@ -8226,26 +8352,6 @@ Within the Records created by a Corporate Body, a Position may be used to identi
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#ProfessionalRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#ProfessionalRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#professionalRelationConnects"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A relation that exists between two agents which work together,
-            for example in the course of a business process for fullfilling a function. &quot;works
-            with&quot; relation. Shortcut : hasProfessionalRelationWith object
-            property</rdfs:comment>
-        <rdfs:label xml:lang="en">Professional Relation</rdfs:label>
     </owl:Class>
     
 
@@ -8554,9 +8660,17 @@ Such information may serve a variety of purposes, though it always documents or 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelationHasTarget"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R039 and RiC-039i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a record resource that the agent
             holds|keeps. Shortcut: holds</rdfs:comment>
         <rdfs:label xml:lang="en">Record Resource Holding Relation</rdfs:label>
@@ -9005,6 +9119,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R048 and RiC-R048i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSibling</rdfs:comment>
     </owl:Class>
     
@@ -9036,6 +9151,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R049 and RiC-R049i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSpouse</rdfs:comment>
     </owl:Class>
     
@@ -9044,7 +9160,7 @@ Rule should not be confused with the one or more documentary sources that serve 
     <!-- http://www.ica.org/standards/RiC/ontology#TeachingRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#TeachingRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AcquaintanceRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#teachingRelationHasSource"/>
@@ -9059,6 +9175,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R053 and RiC-R053i relations</RiCConceptuallModelCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a teacher and his/her student Shortcut :
             hasStudent object property</rdfs:comment>
         <rdfs:label xml:lang="en">Teaching Relation</rdfs:label>
@@ -9159,6 +9276,27 @@ Rule should not be confused with the one or more documentary sources that serve 
         <rdfs:comment xml:lang="en">shortcut: hasPart</rdfs:comment>
         <rdfs:label xml:lang="en">Whole Part Relation</rdfs:label>
         <skos:definition xml:lang="en">The relation that holds between a whole and its parts, for example the relation between a Record and its constituent Record Part(s).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#WorkRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#WorkRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#workRelationConnects"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R046 and RiC-R046i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">A relation that exists between two agents which work together,
+            for example in the course of a business process for fullfilling a function. &quot;works
+            with&quot; relation. Shortcut : hasProfessionalRelationWith object
+            property</rdfs:comment>
+        <rdfs:label xml:lang="en">Work Relation</rdfs:label>
     </owl:Class>
     
 
