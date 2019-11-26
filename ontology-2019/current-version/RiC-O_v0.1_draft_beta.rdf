@@ -673,17 +673,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#agentIsSourceOfRelationToMandate -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfRelationToMandate">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRegulationRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToMandateHasSource"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAccumulationRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfAccumulationRelation">
@@ -746,6 +735,17 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#creationRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#agentIsTargetOfMandateRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#agentIsTargetOfMandateRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRuleRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#mandateRelationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
     </owl:ObjectProperty>
     
 
@@ -850,13 +850,34 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#appellationIsTargetOfRelationToAppellation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#appellationIsSourceOfAppellationRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#appellationIsTargetOfRelationToAppellation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToAppellationHasTarget"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#appellationIsSourceOfAppellationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#appellationRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#appellationRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#appellationRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#appellationRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#appellationRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAppellationRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -909,7 +930,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorizedActivity">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
     </owl:ObjectProperty>
     
@@ -946,7 +967,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authorizingAgent">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
@@ -3944,13 +3965,33 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#mandateIsTargetOfRelationToMandate -->
+    <!-- http://www.ica.org/standards/RiC/ontology#mandateIsSourceOfMandateRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#mandateIsTargetOfRelationToMandate">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleIsTargetOfRegulationRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToMandateHasTarget"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#mandateIsSourceOfMandateRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleIsSourceOfRuleRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#mandateRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#mandateRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#mandateRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleRelationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#mandateRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#mandateRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleRelationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MandateRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
 
@@ -4335,13 +4376,34 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#placeIsTargetOfRelationToPlace -->
+    <!-- http://www.ica.org/standards/RiC/ontology#placeIsSourceOfPlaceRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#placeIsTargetOfRelationToPlace">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToPlaceHasTarget"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#placeIsSourceOfPlaceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#placeRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#placeRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#placeRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#placeRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#placeRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfPlaceRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -4885,112 +4947,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToAppellationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToAppellationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToAppellation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToAppellationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToAppellationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToMandateHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToMandateHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToRuleHasSource"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToMandateHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToMandateHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToRuleHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToMandate"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToPlaceHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToPlaceHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToPlace"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToPlaceHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToPlaceHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToRuleHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToRuleHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRegulationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToRule"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToRuleHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToRuleHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleIsTargetOfRegulationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToRule"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToTypeHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToTypeHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToType"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#relationToTypeHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#relationToTypeHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeIsTargetOfCategorizationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#repliesTo -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#repliesTo">
@@ -5028,12 +4984,34 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#ruleIsTargetOfRegulationRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#ruleIsSourceOfRuleRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ruleIsTargetOfRegulationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ruleIsSourceOfRuleRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToRule"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#ruleRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ruleRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#ruleRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#ruleRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRuleRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -5153,52 +5131,12 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRegulationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRegulationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToRule"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToAppellation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToAppellation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToPlace -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToPlace">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToType -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelationToType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToType"/>
     </owl:ObjectProperty>
     
 
@@ -5230,6 +5168,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#wholePartRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#WholePartRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAppellationRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfAppellationRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5273,12 +5221,32 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfPlaceRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfPlaceRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRuleRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRuleRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5303,6 +5271,17 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTypeRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfTypeRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeRelationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#TypeRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfWholePartRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfWholePartRelation">
@@ -5314,12 +5293,33 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#typeIsTargetOfCategorizationRelation -->
+    <!-- http://www.ica.org/standards/RiC/ontology#typeIsSourceOfTypeRelation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#typeIsTargetOfCategorizationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#typeIsSourceOfTypeRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#typeRelationHasSource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToType"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#TypeRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#typeRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#typeRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TypeRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#typeRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#typeRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#TypeRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -6615,6 +6615,30 @@ An Activity Category may be defined globally, or be specific to a particular act
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#AppellationRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AppellationRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#appellationRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#appellationRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The relation between an appellation and a thing</rdfs:comment>
+        <rdfs:label xml:lang="en">Appellation Relation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#AppellationType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#AppellationType">
@@ -7849,6 +7873,46 @@ A Mandate should not be confused with the one or more documentary sources that s
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#MandateRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#MandateRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorizedActivity"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorizingAgent"/>
+                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#mandateRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#mandateRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R067 and RiC-R067i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">The relation between an Agent and the Mandate which authorizes it to act.
+Shortcut : isAuthorizedBy
+May also explicitly involve the authorizing Agent, and the Activities concerned.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mandate Relation</rdfs:label>
+        <skos:note xml:lang="en">close to prov:Delegation</skos:note>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#Mechanism -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Mechanism">
@@ -8195,6 +8259,32 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#PlaceRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PlaceRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#placeRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#placeRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R074 and RiC-R074i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">The relation that connects an entity and a place
+Shortcut: isAssociatedWithPlace</rdfs:comment>
+        <rdfs:label xml:lang="en">Place Relation</rdfs:label>
     </owl:Class>
     
 
@@ -8841,151 +8931,6 @@ Record Set Type may be extended to reflect types of Record Sets that are not arc
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationToAppellation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationToAppellation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToAppellationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToAppellationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between a thing and the appellation that the thing
-            may have at some date and place, or in some context Shortcut:
-            hasAppellation</rdfs:comment>
-        <rdfs:label xml:lang="en">Denomination Relation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationToMandate -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationToMandate">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToRule"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorizedActivity"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authorizingAgent"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToMandateHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToMandateHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between an Agent and the Mandate which authorizes it to act.
-Shortcut : isAuthorizedBy
-May also explicitly involve the authorizing Agent, and the Activities concerned.</rdfs:comment>
-        <rdfs:label xml:lang="en">Relation to Mandate (authorization Relation)</rdfs:label>
-        <skos:note xml:lang="en">close to prov:Delegation</skos:note>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationToPlace -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationToPlace">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToPlaceHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToPlaceHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation that connects an entity and a place
-Shortcut: isAssociatedWithPlace</rdfs:comment>
-        <rdfs:label xml:lang="en">Location Relation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationToRule -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationToRule">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToRuleHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToRuleHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Shortcut: isRegulatedBy</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relation between a Thing and a Rule that regulates
-            it. Shortcut : isRegulatedBy</rdfs:comment>
-        <rdfs:label xml:lang="en">Regulation Relation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#RelationToType -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RelationToType">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToTypeHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#relationToTypeHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between any thing and a category (type) to which
-            the thing may belong at some date, in some place. Shortcut:
-            belongsToCategory</rdfs:comment>
-        <rdfs:label xml:lang="en">Categorization Relation</rdfs:label>
-        <skos:scopeNote xml:lang="en">Useful at least for some categories, since the things
-            categorized may change category (gender, demographic group, legal status, group
-            type....)</skos:scopeNote>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#RepresentationType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RepresentationType">
@@ -9040,6 +8985,32 @@ The source or sources of some Rules are external to the Agent (for example, expr
 The evidence for identifying Rules may be found in their entirety in one documentary source (for example, a law or regulation) or may be found in two or more sources. 
 
 Rule should not be confused with the one or more documentary sources that serve as evidence of its identity.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#RuleRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RuleRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#ruleRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-R062 and RiC-R062i</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:comment xml:lang="en">Shortcut: isRegulatedBy</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between a Rule  and a Thing</rdfs:comment>
+        <rdfs:label xml:lang="en">Rule Relation</rdfs:label>
     </owl:Class>
     
 
@@ -9222,6 +9193,31 @@ Rule should not be confused with the one or more documentary sources that serve 
         <skos:note xml:lang="en">NOT PRESENT IN RiC-CM FOR NOW IMHO we need a superclass for al
             categories</skos:note>
         <skos:prefLabel xml:lang="en">Type</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#TypeRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#TypeRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#typeRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#typeRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Type Relation</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a catrgoery (a Type) and any Thing that belongs to this category at some date or place</skos:definition>
+        <skos:scopeNote xml:lang="en">may be useful at least for some types (e.g. demographic group)</skos:scopeNote>
     </owl:Class>
     
 
