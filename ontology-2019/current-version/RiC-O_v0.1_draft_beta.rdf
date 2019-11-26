@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
@@ -1998,15 +1997,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasLanguage">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isLanguageOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Language"/>
     </owl:ObjectProperty>
     
@@ -2293,7 +2283,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSource">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSourceOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
     </owl:ObjectProperty>
     
 
@@ -3279,15 +3268,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isLanguageOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Language"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3662,7 +3642,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSourceOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
     </owl:ObjectProperty>
     
 
@@ -4567,14 +4546,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#publishedBy"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -4583,14 +4554,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#publishedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
     </owl:ObjectProperty>
     
@@ -5848,16 +5811,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#noteOnLanguage">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#descriptiveNote"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Description"/>
-                    <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -6043,7 +5996,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#source -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#source">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -7044,60 +6996,6 @@ Shortcut: has Derived Instantiation</skos:definition>
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#Description -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Description">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasLanguage"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Language"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasSource"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#Agent"/>
-                            <rdf:Description rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#regulatedBy"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#describes"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#wasLastUpdatedAtDate"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A cluster for the metadata necessary for controlling the
-            description of any entity. Constituent parts : date of creation, date updated, author(),
-            distributor, rule(s) used, evidence May thus be connected to any entity, including
-            relation Certainty concerns the relation itself, not the Description of a relation
-            QUESTIONS :- should we rename this class? is Description clear enough? - should
-            Description be considered a subclass of Dataset (if we keep Dataset) or of Record?</rdfs:comment>
-        <rdfs:label xml:lang="en">Description</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#DocumentaryFormType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
@@ -7307,36 +7205,6 @@ This entity includes:
         </rdfs:subClassOf>
         <RiCConceptuallModelCorrespondingComponent xml:lang="en">RiC-A20 (Family Type attribute)</RiCConceptuallModelCorrespondingComponent>
         <rdfs:label xml:lang="en">Family Type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#FindingAid -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#FindingAid">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasMainSubject"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#authoredBy"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A finding aid is a kind of Record, that usually aggregates and
-            organizes metadata on some record(s) or record set(s). A Finding Aid may be connected to
-            some Description (that provides its date, author, followed rules, etc.), like
-            everything. It describes one to many Record(s) or RecordSet(s).</rdfs:comment>
-        <rdfs:label xml:lang="en">Finding Aid</rdfs:label>
-        <skos:note xml:lang="en">NOT PRESENT IN RIC-CM QUESTION: defining such a class is necesaary
-            for handling existing (printed, PDF, online) finding aids as a whole. Do we agree on
-            specifying that a Finding Aid is a kind of Record?</skos:note>
-        <skos:prefLabel xml:lang="en">Finding Aid</skos:prefLabel>
     </owl:Class>
     
 
@@ -9276,6 +9144,42 @@ Rule should not be confused with the one or more documentary sources that serve 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#AuthorityRecord -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/ontology#AuthorityRecord">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Authority record</rdfs:label>
+        <skos:definition xml:lang="en">This category can be used for records that describe an entity.</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/ontology#documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="en">Authority record</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#FindingAid -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/ontology#FindingAid">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Finding aid</rdfs:label>
+        <skos:definition xml:lang="en">This documentary form type can be used for records that aggregate and
+            organizes metadata on some record(s) or record set(s).</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#documentaryFormTypes -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/ontology#documentaryFormTypes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
+        <skos:definition xml:lang="en">A vocabulary that includes documentary form types</skos:definition>
+    </owl:NamedIndividual>
     
 
 
