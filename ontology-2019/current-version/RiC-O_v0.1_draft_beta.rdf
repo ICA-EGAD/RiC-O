@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
      xml:base="http://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
@@ -1304,6 +1305,37 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#eventIsSourceOfEventRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#eventIsSourceOfEventRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#eventRelationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#EventRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#eventRelationHasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#eventRelationHasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EventRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#eventRelationHasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#eventRelationHasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#EventRelation"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#existsIn -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#existsIn">
@@ -2058,7 +2090,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasOccupationType">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOccupationTypeOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationType"/>
     </owl:ObjectProperty>
     
@@ -3358,7 +3389,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isOccupationTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationType"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
     </owl:ObjectProperty>
     
 
@@ -3843,7 +3873,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#leadershipWithPosition -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#leadershipWithPosition">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#membershipWithPosition"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
     </owl:ObjectProperty>
@@ -3974,38 +4004,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#derivationRelationHasTarget"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#occupationIsTargetOfOccupationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#occupationIsTargetOfOccupationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#activityIsTargetOfPerformanceRelation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#occupationRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#occupationRelationHasSource -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#occupationRelationHasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#performanceRelationHasSource"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#personIsSourceOfOccupationRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#occupationRelationHasTarget -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#occupationRelationHasTarget">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#performanceRelationHasTarget"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
     </owl:ObjectProperty>
     
 
@@ -4243,16 +4241,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentControlRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#personIsSourceOfOccupationRelation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#personIsSourceOfOccupationRelation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#agentIsSourceOfPerformanceRelation"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
     </owl:ObjectProperty>
     
 
@@ -5252,6 +5240,16 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEventRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfEventRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#EventRelation"/>
     </owl:ObjectProperty>
     
 
@@ -7181,6 +7179,30 @@ In particular, archivists, records managers and end users may need to use some m
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#EventRelation -->
+
+    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#EventRelation">
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#eventRelationHasSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#eventRelationHasTarget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <RiCConceptuallModelCorrespondingComponent>RiC-R057 and RiC-R057i relations</RiCConceptuallModelCorrespondingComponent>
+        <rdfs:label xml:lang="en">Event Relation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#EventType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#EventType">
@@ -7947,57 +7969,6 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#Occupation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Occupation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#hasOccupationType"/>
-                <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A profession, trade, or craft pursued by a person in fulfilment
-            of a purpose</rdfs:comment>
-        <rdfs:label xml:lang="en">Occupation</rdfs:label>
-        <skos:note xml:lang="en">Do we get rid of this class (considering that in RiC-CM v2 we ony
-            have Occupation as a concept, and that we have OccupationType for this ?</skos:note>
-        <skos:scopeNote xml:lang="en">The pursuit of an Occupation involves the performance of an Activity. Successful performance of the Activity is based on the ability to perform successfully (a competency  ). This competency may be acquired through education or experience, or a combination of both. The authority of the person to pursue the Occupation may be derived tacitly or explicitly from an external Agent, based on a demonstrated mastery of the competency.
-
-Occupation should not be confused with Position, for example, a lawyer that holds the Position of legal counsel in an agency.
-
-Though Occupation is related to a domain or field of Activity, it should not be confused with this domain, for example, an archivist works in the domain of archival science.
-
-An Occupation may be pursued independently by a person, or pursued within a Corporate Body, contributing to the fulfilment of the objectives of the Corporate Body.</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#OccupationRelation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#OccupationRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#occupationRelationHasSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#occupationRelationHasTarget"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between a Person and an Occupation which the person
-            pursues Shortcut : pursues</rdfs:comment>
-        <rdfs:label xml:lang="en">Occupation Relation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#OccupationType -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#OccupationType">
@@ -8054,7 +8025,7 @@ An Occupation may be pursued independently by a person, or pursued within a Corp
     <!-- http://www.ica.org/standards/RiC/ontology#PerformanceRelation -->
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#PerformanceRelation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#EventRelation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ica.org/standards/RiC/ontology#performanceRelationHasSource"/>
