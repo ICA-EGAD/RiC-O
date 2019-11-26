@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+     xml:base="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rico-vocabs-1="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
+    <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
+        <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
+        <skos:prefLabel>Record Set Types</skos:prefLabel>
+        <skos:hasTopConcept rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+        <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for Record Set Types</dc:title>
+        <skos:hasTopConcept rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
+        <dc:rights xml:lang="en">Copyright International Council on Archives (ICA),
+            2018-....
+            All rights reserved for this preliminary version (contact florence.clavaud@culture.gouv.fr).</dc:rights>
+        <owl:versionInfo xml:lang="en">Preliminary version dated September 4th, 2018.
+        This version only includes the concepts defined in ICA-ISAD(G) glossary.</owl:versionInfo>
+        <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of EGAD</dc:contributor>
+        <skos:hasTopConcept rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+        <skos:hasTopConcept rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
+        <dc:creator xml:lang="en">International Coucil on Archives Expert Group on Archival Description (ICA EGAD)</dc:creator>
+        <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), lead of EGAD RiC-O team</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">An artificial assemblage of documents accumulated on the basis of some common
+characteristic without regard to the provenance of those documents. Not to be confused
+with an archival fonds.
+(From ICA ISAD(G))</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:prefLabel xml:lang="en">collection</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">An organized unit of documents grouped together either for current use by the creator or
+in the process of archival arrangement, because they relate to the same subject, activity, or
+transaction. A file is usually the basic unit within a record series.
+(From ICA ISAD(G))</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:prefLabel xml:lang="en">file</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">The  whole  of  the  records,  regardless  of  form  or  medium,  organically  created  and/or
+accumulated  and used by a particular person, family, or corporate body in the course of that
+creator&apos;s activities and functions.</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:prefLabel xml:lang="en">fonds</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">Documents arranged in accordance with a filing system or maintained as a unit because
+they result from the same accumulation or filing process, or the same activity; have a
+particular form; or because of some other relationship arising out of their creation, receipt,
+or use. A series is also known as a records series.</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:prefLabel xml:lang="en">series</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds -->
+
+    <owl:NamedIndividual rdf:about="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+        <skos:definition xml:lang="en">A subdivision of a fonds containing a body of related records corresponding to
+administrative subdivisions in the originating agency or organization or, when that is not
+possible, to geographical, chronological, functional, or similar groupings of the material
+itself. When the creating body has a complex hierarchical structure, each sub-fonds has as
+many subordinate sub-fonds as are necessary to reflect the levels of the hierarchical
+structure of the primary subordinate administrative unit.</skos:definition>
+        <skos:inScheme rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:prefLabel xml:lang="en">sub-fonds</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
