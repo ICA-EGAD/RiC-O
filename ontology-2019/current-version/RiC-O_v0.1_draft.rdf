@@ -1787,17 +1787,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasDateAppellation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasDateAppellation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAppellation"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasDeathDate -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasDeathDate">
@@ -2973,16 +2962,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R027i (&apos;is creator of &apos;relation&apos;)</RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the archival vague provenance relation For the
             moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#isDateAppellationOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isDateAppellationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAppellationOf"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
     </owl:ObjectProperty>
     
 
@@ -5466,7 +5445,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#calendar">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#referenceSystem"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#DateAppellation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -5644,6 +5622,18 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ica.org/standards/RiC/ontology#geographicalCoordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute) (see also the Coordinates class)</RiCCMCorrespondingComponent>
+        <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use PhysicalLocation and Coordinates classes with Place.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5878,15 +5868,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-A33 (Production Technique attribute)</RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">production technique</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#projectedCoordinates -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#projectedCoordinates">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Coordinates"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -6644,7 +6625,7 @@ An Activity Category may be defined globally, or be specific to a particular act
             </owl:Restriction>
         </rdfs:subClassOf>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute)</RiCCMCorrespondingComponent>
-        <rdfs:label>Geographical Coordinates</rdfs:label>
+        <rdfs:label xml:lang="en">Coordinates</rdfs:label>
     </owl:Class>
     
 
@@ -6806,15 +6787,6 @@ This entity includes:
         <skos:scopeNote xml:lang="en">Date includes both single dates, a date range, or a set of non-contiguous single dates or date ranges. A date may be represented in natural language, based on a digital standard, or both. 
 
 Digital standard dates will typically be based on ISO 8601, or Extended Date-Time Format (EDTF).</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#DateAppellation -->
-
-    <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#DateAppellation">
-        <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <rdfs:label xml:lang="en">Date Appellation</rdfs:label>
     </owl:Class>
     
 
