@@ -8,6 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ric-dft="http://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
      xmlns:ric-rst="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+     xmlns:skos1="skos:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -1719,7 +1720,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#hasContentOfType -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasContentOfType">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isContentTypeOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
@@ -2276,7 +2277,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#hasSource -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSourceOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -2906,7 +2907,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#isContentTypeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isContentTypeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#ContentType"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
     </owl:ObjectProperty>
@@ -3654,7 +3655,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#isSourceOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#isSourceOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
     </owl:ObjectProperty>
@@ -4982,16 +4983,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#thingIsTargetOfRuleRelation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RuleRelation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#sequenceIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#sequenceIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasContext"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Set"/>
     </owl:ObjectProperty>
     
 
