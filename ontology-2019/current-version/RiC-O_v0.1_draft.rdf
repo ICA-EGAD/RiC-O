@@ -5274,6 +5274,18 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#accrual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accrual">
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
+        <rdfs:label xml:lang="en">accrual</rdfs:label>
+        <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#accrualStatus -->
 
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accrualStatus">
@@ -5281,18 +5293,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">accrual status</rdfs:label>
         <skos:scopeNote xml:lang="en">See also accruals</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.ica.org/standards/RiC/ontology#accruals -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accruals">
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A01 (Accruals attribute)</RiCCMCorrespondingComponent>
-        <rdfs:label xml:lang="en">accruals</rdfs:label>
-        <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5317,9 +5317,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#authenticity -->
+    <!-- http://www.ica.org/standards/RiC/ontology#authenticityNote -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authenticity">
+    <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#authenticityNote">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -5329,8 +5329,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity attribute)</RiCCMCorrespondingComponent>
-        <rdfs:label xml:lang="en">authenticity</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity Note attribute)</RiCCMCorrespondingComponent>
+        <rdfs:label xml:lang="en">authenticity note</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6831,7 +6831,6 @@ Shortcut: has Derived Instantiation</skos:definition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Event</rdfs:label>
-        <rdfs:label xml:lang="fr">Evénement</rdfs:label>
         <skos:definition xml:lang="en">An event is something that happens in time and space.</skos:definition>
         <skos:historyNote xml:lang="en">August 23; removed some restrictions (state and certainty),
             added resultedIn (new subproperty)
@@ -8452,7 +8451,6 @@ Rule should not be confused with the one or more documentary sources that serve 
             </owl:Restriction>
         </rdfs:subClassOf>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R062 and RiC-R062i</RiCCMCorrespondingComponent>
-        <rdfs:comment xml:lang="en">Shortcut: isRegulatedBy</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation between a Rule  and a Thing</rdfs:comment>
         <rdfs:label xml:lang="en">Rule Relation</rdfs:label>
     </owl:Class>
