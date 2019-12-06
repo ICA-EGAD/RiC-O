@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ica.org/standards/RiC/ontology#"
-     xml:base="http://www.ica.org/standards/RiC/ontology"
+<rdf:RDF xmlns="https://www.ica.org/standards/RiC/ontology#"
+     xml:base="https://www.ica.org/standards/RiC/ontology"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ric-dft="http://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
-     xmlns:ric-rst="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+     xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
+     xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.ica.org/standards/RiC/ontology">
+    <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology">
         <owl:versionInfo xml:lang="en">This is a non public, beta version, of v0.1 draft 
             
             WARNING: This
@@ -367,7 +367,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R028 (&apos;accumulated by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R028 (&apos;accumulated by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">accumulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -386,7 +386,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R028i (accumulates relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R028i (accumulates relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">accumulates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -496,7 +496,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#affects"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R059i (&apos;affected by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R059i (&apos;affected by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">affected by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -508,7 +508,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#involves"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R059 (&apos;affects&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R059 (&apos;affects&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">affects</rdfs:label>
     </owl:ObjectProperty>
     
@@ -953,7 +953,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#authorizes"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R067i (&apos;authorizedBy&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R067i (&apos;authorizedBy&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">authorized by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -965,7 +965,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Mandate"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R067 (&apos;authorizes&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R067 (&apos;authorizes&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the Authorization Relation. Directly connects an
             agent and the mandate which gives authority to it.</rdfs:comment>
         <rdfs:label xml:lang="en">authorizes</rdfs:label>
@@ -1045,7 +1045,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R030 (&apos;collected by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R030 (&apos;collected by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">collected by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1064,7 +1064,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R030i (collects relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R030i (collects relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">collects</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1079,7 +1079,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#contains"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R007i (contained by relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R007i (contained by relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">contained by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1093,7 +1093,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R007 (contains relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R007 (contains relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">contains</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1107,7 +1107,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#controls"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R041i (&apos;controlled by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R041i (&apos;controlled by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the AuthorityRelation</rdfs:comment>
         <rdfs:label xml:lang="en">controlled by</rdfs:label>
     </owl:ObjectProperty>
@@ -1121,7 +1121,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isHierarchicallySuperiorTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R041 (&apos;controls&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R041 (&apos;controls&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">controls</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1152,7 +1152,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R027 (&apos;created by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R027 (&apos;created by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for CreationRelation</rdfs:comment>
         <rdfs:label xml:lang="en">created by</rdfs:label>
     </owl:ObjectProperty>
@@ -1166,7 +1166,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isMigratedIntoInstantiation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R015i (created by migration from instantiation relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R015i (created by migration from instantiation relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">created by migration from instantiation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1286,7 +1286,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#describes"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R021i (described by relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R021i (described by relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">described by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1298,7 +1298,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasSubject"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R021 (describes)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R021 (describes)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">connects a Description to the entity it describes</rdfs:comment>
         <rdfs:label xml:lang="en">describes</rdfs:label>
     </owl:ObjectProperty>
@@ -1319,7 +1319,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R033i (&apos;documented by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R033i (&apos;documented by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the Evidence Relation</rdfs:comment>
         <rdfs:label xml:lang="en">documented by</rdfs:label>
     </owl:ObjectProperty>
@@ -1333,7 +1333,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isResponsibleForEnforcing"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R066 (&apos;enforced by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R066 (&apos;enforced by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">enforced by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1377,7 +1377,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasPosition"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R056 (&apos;exists in&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R056 (&apos;exists in&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">exists in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1390,7 +1390,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#expresses"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R064 (&apos;expressed by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R064 (&apos;expressed by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">expressed by</rdfs:label>
         <skos:historyNote>&quot;instantiatedBy&quot; changed to &quot;expressedIn&quot; on 2019, July 17</skos:historyNote>
     </owl:ObjectProperty>
@@ -1403,7 +1403,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWithRule"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R064i (&apos;expresses&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R064i (&apos;expresses&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">expresses</rdfs:label>
         <skos:historyNote>&quot;instantiates&quot; changed to &quot;expresses&quot; 2019, July 17</skos:historyNote>
     </owl:ObjectProperty>
@@ -1428,7 +1428,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#precedes"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R008i (follows relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R008i (follows relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1441,7 +1441,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#precedesInTime"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R009i (follows in time relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R009i (follows in time relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the Succession Relation. Connects a thing and the
             thing that precedes it in time.</rdfs:comment>
         <rdfs:label xml:lang="en">follows in time</rdfs:label>
@@ -1566,7 +1566,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R032 (&apos;has addressee&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R032 (&apos;has addressee&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has addressee</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1583,6 +1583,20 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
+    <!-- http://www.ica.org/standards/RiC/ontology#hasAncestor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasAncestor">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSuccessorOf"/>
+        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDescendant"/>
+        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R017i (has ancestor relation)</ontology:RiCCMCorrespondingComponent>
+        <rdfs:label xml:lang="en">has ancestor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ica.org/standards/RiC/ontology#hasAppellation -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasAppellation">
@@ -1595,20 +1609,6 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#hasAscendant -->
-
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasAscendant">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSuccessorOf"/>
-        <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDescendant"/>
-        <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R017i (has ascendant relation)</RiCCMCorrespondingComponent>
-        <rdfs:label xml:lang="en">has ascendant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ica.org/standards/RiC/ontology#hasAuthorityOver -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasAuthorityOver">
@@ -1616,7 +1616,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isUnderAuthorityOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R036 (&apos;has authority over&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R036 (&apos;has authority over&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has authority over</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1629,7 +1629,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R069i (&apos;has beginning date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R069i (&apos;has beginning date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has beginning date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1642,7 +1642,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isBirthDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R070i (&apos;has birth date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R070i (&apos;has birth date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has birth date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1666,7 +1666,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasParent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R018 (has child relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R018 (has child relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has child</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1680,7 +1680,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isComponentOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent>RiC-R004 (has component relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent>RiC-R004 (has component relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label>has component</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1694,7 +1694,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isConstituentOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
-        <RiCCMCorrespondingComponent>RiC-R003 (has constituent relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent>RiC-R003 (has constituent relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label>has constituent</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1730,7 +1730,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isCopyOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R012 (has copy relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R012 (has copy relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has copy</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1754,7 +1754,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R052 (&apos;has correspondent&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R052 (&apos;has correspondent&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has correspondent</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1767,7 +1767,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDeathDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R072i (&apos;has death date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R072i (&apos;has death date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has death date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1781,7 +1781,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDerivedFromInstantiation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R014 (has derived instantiation relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R014 (has derived instantiation relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has derived instantiation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1794,7 +1794,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAntecedentOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R017 (has descendant relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R017 (has descendant relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has descendant</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1826,7 +1826,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDraftOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-011i (has draft relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-011i (has draft relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has draft</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1839,7 +1839,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R071i (&apos;has end date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R071i (&apos;has end date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has end date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1863,7 +1863,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R047 (&apos;has family link with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R047 (&apos;has family link with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has family link with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1887,7 +1887,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R023 (&apos;has genetic link to record resource&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R023 (&apos;has genetic link to record resource&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has genetic link to record resource</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1900,7 +1900,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#instantiates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R025 (&apos;has instantiation&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R025 (&apos;has instantiation&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label>has Instantiation</rdfs:label>
         <skos:definition>Ths shortcut for the InstantiationRelation</skos:definition>
     </owl:ObjectProperty>
@@ -1929,7 +1929,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R040 (&apos;has intellectual property rights on&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R040 (&apos;has intellectual property rights on&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has intellectual property rights on</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1942,7 +1942,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isJurisdictionOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R076i (&apos;has jurisdiction&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R076i (&apos;has jurisdiction&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has jurisdiction</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1991,7 +1991,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isLocationOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R075i (&apos;has location&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R075i (&apos;has location&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has location</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2004,7 +2004,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isMainSubjectOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R020 (has main subject relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R020 (has main subject relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has main subject</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2017,7 +2017,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isMemberOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R055 (&apos;has member&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R055 (&apos;has member&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for a mmebership relation (some thing has member
             another one)</rdfs:comment>
         <rdfs:label xml:lang="en">has member</rdfs:label>
@@ -2032,7 +2032,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isModificationDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R073i (&apos;has modification date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R073i (&apos;has modification date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has modification date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2068,7 +2068,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isOriginalOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R010i (is original of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R010i (is original of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has original</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2077,10 +2077,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#hasParent">
-        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAscendant"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasAncestor"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R018i (has parent relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R018i (has parent relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has parent</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2093,7 +2093,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPartOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R002 (has part relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R002 (has part relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for the WholePartRelation</rdfs:comment>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
@@ -2139,7 +2139,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R056i (&apos;has position&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R056i (&apos;has position&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has position</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2170,7 +2170,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R026 (&apos;has provenance&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R026 (&apos;has provenance&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for OriginationRelation</rdfs:comment>
         <rdfs:label xml:lang="en">has provenance</rdfs:label>
     </owl:ObjectProperty>
@@ -2224,7 +2224,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R031 (&apos;has sender&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R031 (&apos;has sender&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has sender</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2237,7 +2237,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R048 (&apos;has sibling&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R048 (&apos;has sibling&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has sibling</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2262,7 +2262,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R049 (&apos;has spouse&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R049 (&apos;has spouse&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has spouse</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2275,7 +2275,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasTeacher"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R053i (&apos;has student&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R053i (&apos;has student&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has student</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2290,7 +2290,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSubEventOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R006 (has subevent relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R006 (has subevent relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has subevent</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2304,7 +2304,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSubdivisionOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <RiCCMCorrespondingComponent>RiC-R005 (has subdivision relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent>RiC-R005 (has subdivision relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for GroupSubdivisionRelation</rdfs:comment>
         <rdfs:label>has subdivision</rdfs:label>
     </owl:ObjectProperty>
@@ -2318,7 +2318,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSubjectOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R019 (has subject relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R019 (has subject relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has subject</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2330,7 +2330,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knows"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R053 (&apos;has teacher&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R053 (&apos;has teacher&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has teacher</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2362,7 +2362,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R046 (&apos;has work relation with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R046 (&apos;has work relation with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">has work relation with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2382,7 +2382,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R039i (&apos;held by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R039i (&apos;held by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">held by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2425,7 +2425,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R024i (&apos;included in&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R024i (&apos;included in&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">included in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2444,7 +2444,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R024 (includes relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R024 (includes relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">includes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2456,7 +2456,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R025i (instantiates relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R025i (instantiates relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">instantiates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2571,7 +2571,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R040i (&apos;intellectual property rights held by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R040i (&apos;intellectual property rights held by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">intellectual property rights held by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2620,7 +2620,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#involves"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R058i (&apos;involvedIn&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R058i (&apos;involvedIn&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">involved In</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2632,7 +2632,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEventAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R058 (&apos;involves&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R058 (&apos;involves&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">involves</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2661,7 +2661,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-032i (&apos;is addressee of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-032i (&apos;is addressee of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is addressee of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2675,7 +2675,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R077 (&apos;is adjacent to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R077 (&apos;is adjacent to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is adjacent to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2688,7 +2688,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R044 (&apos;is agent associated with agent&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R044 (&apos;is agent associated with agent&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for any Social Relation</rdfs:comment>
         <rdfs:label xml:lang="en">is agent associated with agent</rdfs:label>
     </owl:ObjectProperty>
@@ -2713,7 +2713,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSuccessorOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RIC-R016 (is antecedent of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RIC-R016 (is antecedent of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is antecedent of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2736,7 +2736,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R068i (&apos;is associated with date&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R068i (&apos;is associated with date&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is associated with date</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2749,7 +2749,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEventAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R057i (&apos;is associated with event&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R057i (&apos;is associated with event&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is associated with event</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2762,7 +2762,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R074i (&apos;is associated with place&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R074i (&apos;is associated with place&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortuct for a location relation</rdfs:comment>
         <rdfs:label xml:lang="en">is associated with place</rdfs:label>
     </owl:ObjectProperty>
@@ -2776,7 +2776,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R062i (&apos;is associated with rule&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R062i (&apos;is associated with rule&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is associated with rule</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2798,7 +2798,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R069 (&apos;is beginning date of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R069 (&apos;is beginning date of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is beginning date of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2810,7 +2810,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R070 (&apos;is birth date of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R070 (&apos;is birth date of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is birth date of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2843,7 +2843,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPartOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R004i (is component of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R004i (is component of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is component of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2856,7 +2856,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordPart"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R003i (is constituent of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R003i (is constituent of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is constituent of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2889,7 +2889,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R012i (is copy of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R012i (is copy of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is copy of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2918,7 +2918,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R027i (&apos;is creator of &apos;relation&apos;)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R027i (&apos;is creator of &apos;relation&apos;)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the archival vague provenance relation For the
             moment, uses ISAD(G) vocabulary (creator)</rdfs:comment>
     </owl:ObjectProperty>
@@ -2931,7 +2931,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R068 (&apos;is date associated with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R068 (&apos;is date associated with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is date associated with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2943,7 +2943,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R072 (&apos;is death date of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R072 (&apos;is death date of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is death date of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2966,7 +2966,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R014i (is derived from instantiation relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R014i (is derived from instantiation relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is derived from instantiation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3002,7 +3002,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R033 (&apos;is documentation of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R033 (&apos;is documentation of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The shortcut for EvidenceRelation</rdfs:comment>
         <rdfs:label xml:lang="en">is documentation of</rdfs:label>
     </owl:ObjectProperty>
@@ -3016,7 +3016,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#precedesInTime"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R011 (is draft of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R011 (is draft of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is draft of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3028,7 +3028,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R071 (&apos;is end date of&apos;)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R071 (&apos;is end date of&apos;)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is end date of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3062,7 +3062,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R057 (&apos;is event associated with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R057 (&apos;is event associated with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is event associated with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3107,7 +3107,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R035 (&apos;is functionally equivalent to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R035 (&apos;is functionally equivalent to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is functionally equivalent to</rdfs:label>
         <skos:definition>Connects two record resource instantiations which, from some point of view, in some
             context and for some users at least, may be considered as equivalent, so that one of
@@ -3124,7 +3124,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isHierarchicallySuperiorTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R045i (&apos;is hierarchically inferior to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R045i (&apos;is hierarchically inferior to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is hierarchically inferior to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3136,7 +3136,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R045 (&apos;is hierarchically superior to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R045 (&apos;is hierarchically superior to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is hierarchically superior to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3155,7 +3155,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R039 (&apos;is holder of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R039 (&apos;is holder of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is holder of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3168,7 +3168,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSuperiorTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R043i (&apos;is inferior to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R043i (&apos;is inferior to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is inferior to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3181,7 +3181,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R034 (&apos;is instantiation associated with instantiation&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R034 (&apos;is instantiation associated with instantiation&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is instantiation associated with instantiation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3193,7 +3193,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R076 (&apos;is jurisdiction of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R076 (&apos;is jurisdiction of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is jurisdiction of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3234,7 +3234,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#leadBy"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R042 (&apos;is leader of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R042 (&apos;is leader of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is leader of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3263,7 +3263,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R075 (&apos;is location of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R075 (&apos;is location of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is location of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3275,7 +3275,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isSubjectOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R020i (is main subject of)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R020i (is main subject of)</ontology:RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -3294,7 +3294,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R038 (&apos;is manager of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R038 (&apos;is manager of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is manager of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3306,7 +3306,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R055i (&apos;is member of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R055i (&apos;is member of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is member of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3318,7 +3318,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#hasDerivedInstantiation"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R015 (is migrated into instantiation relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R015 (is migrated into instantiation relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is migrated into instantiation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3330,7 +3330,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R073 (&apos;is modification date of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R073 (&apos;is modification date of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is modification date of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3363,7 +3363,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#precedesInTime"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R010 (is original of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R010 (is original of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is original of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3384,7 +3384,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R037 (&apos;is owner of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R037 (&apos;is owner of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is owner of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3396,7 +3396,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R002i (is part of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R002i (is part of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3418,7 +3418,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R074 (&apos;is place associated with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R074 (&apos;is place associated with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is place associated with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3467,7 +3467,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R026i (&apos;is provenance of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R026i (&apos;is provenance of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is provenance of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3480,7 +3480,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R022 (is record resource associated with record resource relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R022 (is record resource associated with record resource relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is record resource associated with record resource</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3512,7 +3512,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R001 (is related to relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R001 (is related to relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A generic object property, that can connect any instance of any
             RiC-CM entity to an instance of any RiC-CM entity.</rdfs:comment>
         <rdfs:label xml:lang="en">is related to</rdfs:label>
@@ -3528,7 +3528,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#repliesTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R013 (is replied to by relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R013 (is replied to by relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is replied to by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3550,7 +3550,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAssociatedWithRule"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R066i (&apos;is responsible for enforcing&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R066i (&apos;is responsible for enforcing&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is responsible for enforcing</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3563,7 +3563,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#issuedBy"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R065i (&apos;is responsible for issuing&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R065i (&apos;is responsible for issuing&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is responsible for issuing</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3575,7 +3575,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R062 (&apos;is rule associated with&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R062 (&apos;is rule associated with&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is rule associated with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3594,7 +3594,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R031i (&apos;is sender of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R031i (&apos;is sender of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is sender of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3619,7 +3619,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPartOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R006i (is subevent of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R006i (is subevent of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is subevent of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3632,7 +3632,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isPartOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R005i (is subdivision relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R005i (is subdivision relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is subdivision of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3644,7 +3644,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RIc-R019i (is subject of relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RIc-R019i (is subject of relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is subject of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3657,7 +3657,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R016i (is successor of)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R016i (is successor of)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is successor of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3669,7 +3669,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#controls"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R043 (&apos;is superior to&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R043 (&apos;is superior to&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is superior to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3710,7 +3710,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R036i (&apos;is under authority of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R036i (&apos;is under authority of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">is under authority of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3722,7 +3722,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R065 (&apos;issued by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R065 (&apos;issued by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">issued by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3763,15 +3763,15 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     
 
 
-    <!-- http://www.ica.org/standards/RiC/ontology#knownOfBy -->
+    <!-- http://www.ica.org/standards/RiC/ontology#knownBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knownOfBy">
+    <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#knownBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#knowsOf"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R050i (&apos;known of by&apos; relation)</RiCCMCorrespondingComponent>
-        <rdfs:label xml:lang="en">known of by</rdfs:label>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R050i (&apos;known by&apos; relation)</ontology:RiCCMCorrespondingComponent>
+        <rdfs:label xml:lang="en">known by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3783,7 +3783,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R051 (&apos;knows&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R051 (&apos;knows&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">knows</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3795,7 +3795,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R050 (&apos;knows of&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R050 (&apos;knows of&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">knows of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3807,7 +3807,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#controlledBy"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R042i (&apos;lead by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R042i (&apos;lead by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">lead by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3858,7 +3858,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R038i (&apos;managed by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R038i (&apos;managed by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">managed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3984,7 +3984,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#occupies"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R054i (&apos;occupied by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R054i (&apos;occupied by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">occupied by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3996,7 +3996,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R054 (&apos;occupies&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R054 (&apos;occupies&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">occupies</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4010,7 +4010,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R078 (&apos;overlaps&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R078 (&apos;overlaps&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4030,7 +4030,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R037i (&apos;owned by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R037i (&apos;owned by&apos; relation)</ontology:RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -4091,7 +4091,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#performs"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R060 (&apos;performed by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R060 (&apos;performed by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">performed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4103,7 +4103,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#involvedIn"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R060i (&apos;performs&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R060i (&apos;performs&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">performs</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4430,7 +4430,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R008 (precedes relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R008 (precedes relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A shortcut for the Sequence Relation. Connects a thing and the
             thing that is next to it in a sequence. May be used, particulary, for connecting proxies
             in the context of a set.</rdfs:comment>
@@ -4445,7 +4445,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#precedes"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R009 (precedes in time relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R009 (precedes in time relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">precedes in time</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4489,6 +4489,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#proxyFor -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#proxyFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Proxy"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:comment xml:lang="en">Question : do we also need a n-ary relation (a relation class)
@@ -4501,6 +4502,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- http://www.ica.org/standards/RiC/ontology#proxyIn -->
 
     <owl:ObjectProperty rdf:about="http://www.ica.org/standards/RiC/ontology#proxyIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Proxy"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
     </owl:ObjectProperty>
@@ -4542,7 +4544,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R029 (&apos;received by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R029 (&apos;received by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">received by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4561,7 +4563,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R029i (receives relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R029i (receives relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">receives</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4811,7 +4813,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#regulates"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R063i &apos;regulated by&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R063i &apos;regulated by&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4823,7 +4825,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R063 (&apos;regulates&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R063 (&apos;regulates&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">regulates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4881,7 +4883,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R013i (replies to relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R013i (replies to relation)</ontology:RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -4893,7 +4895,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <owl:inverseOf rdf:resource="http://www.ica.org/standards/RiC/ontology#resultsIn"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R061i (&apos;resultsFrom&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R061i (&apos;resultsFrom&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">results from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4905,7 +4907,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#isEventAssociatedWith"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R061 (&apos;results in&apos; relation)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R061 (&apos;results in&apos; relation)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">results in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -5319,7 +5321,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#accrual">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A01 (Accrual attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">accrual</rdfs:label>
         <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5369,7 +5371,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity Note attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity Note attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">authenticity note</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5424,7 +5426,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A04 (Carrier Extent attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A04 (Carrier Extent attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">carrier extent</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5443,7 +5445,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A06 (Certainty attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A06 (Certainty attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">certainty</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5454,7 +5456,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#classification">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A07 (Classification attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A07 (Classification attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">classification</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5472,7 +5474,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A08 (Conditions of Access attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A08 (Conditions of Access attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">conditions of access</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5490,7 +5492,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A09 (Conditions of Use attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A09 (Conditions of Use attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">conditions of use</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5512,7 +5514,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#dateQualifier">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A13 (Date Qualifier attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A13 (Date Qualifier attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">date qualifier</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5524,7 +5526,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A14 (Date Standard attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">date standard</rdfs:label>
         <skos:note>A date might refer to other time reference systems than Gregorian, eg. Hellenic Julian, Unix-Time,</skos:note>
     </owl:DatatypeProperty>
@@ -5556,7 +5558,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#descriptiveNote">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A16 (Descriptive Note attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A16 (Descriptive Note attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">descriptive note</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5578,7 +5580,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#textualValue"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A19 (Expressed Date attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A19 (Expressed Date attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">expressed date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5599,7 +5601,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute) (see also the Coordinates class)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute) (see also the Coordinates class)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use PhysicalLocation and Coordinates classes with Place.</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5634,7 +5636,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A21 (History attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A21 (History attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">history</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5646,7 +5648,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A22 (Identifier attribute) (see also Identifier class)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A22 (Identifier attribute) (see also Identifier class)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">NOTE : kept for the moment in order to handle identifiers as pure strings</rdfs:comment>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Identifier class for handling identifiers.</skos:scopeNote>
@@ -5660,7 +5662,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A23 (Instantiation Extent attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A23 (Instantiation Extent attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Instantiation extent</rdfs:label>
         <skos:historyNote>added 2019, July 17</skos:historyNote>
     </owl:DatatypeProperty>
@@ -5689,7 +5691,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A24 (Integrity attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A24 (Integrity attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">integrity</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5720,7 +5722,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#location">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A27 &apos;Location&apos; attribute</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A27 &apos;Location&apos; attribute</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">location</rdfs:label>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use PhysicalLocation class with Place.</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5762,7 +5764,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A28 (Name attribute) (see also RiC-O Name class)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A28 (Name attribute) (see also RiC-O Name class)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">name</rdfs:label>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Name class for handling names.</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5775,7 +5777,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#normalizedValue"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A29 (Normalized Date attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A29 (Normalized Date attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">An ISO 8601 form of a Date</rdfs:comment>
         <rdfs:label xml:lang="en">normalized date value</rdfs:label>
     </owl:DatatypeProperty>
@@ -5804,7 +5806,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#physicalCharacteristics">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A31 (Physical Characteristics attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A31 (Physical Characteristics attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5833,7 +5835,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#productionTechnique">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A33 (Production Technique attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A33 (Production Technique attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">production technique</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5854,7 +5856,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#qualityOfRepresentation">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A34 (Quality of Representation attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A34 (Quality of Representation attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">quality of representation</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5866,7 +5868,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A35 (Record Resource extent attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A35 (Record Resource extent attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
         <skos:historyNote>added 2019, July 17</skos:historyNote>
     </owl:DatatypeProperty>
@@ -5919,7 +5921,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#scopeAndContent">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A38 (Scope and Content attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A38 (Scope and Content attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">scope and content</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5946,7 +5948,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A40 (Structure attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A40 (Structure attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">structure</rdfs:label>
         <skos:scopeNote xml:lang="en">Use only if you cannot use the subproperties (particularly if the same free text is being used in your current metadata for describing the record resource and the instantiation structure).</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5958,7 +5960,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="http://www.ica.org/standards/RiC/ontology#technicalCharacteristics">
         <rdfs:domain rdf:resource="http://www.ica.org/standards/RiC/ontology#Mechanism"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A41 (Technical Characteristics attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A41 (Technical Characteristics attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">technical characteristics</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6178,7 +6180,7 @@ An Activity may be composed of other Activities.</skos:scopeNote>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A02 (Activity Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A02 (Activity Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">QUESTION : or Activity (abstract) ?</rdfs:comment>
         <rdfs:label xml:lang="en">Activity Type</rdfs:label>
         <skos:definition xml:lang="en">A kind or category of Activity independent of the instances of the Activity that are specific to particular social and cultural contexts.</skos:definition>
@@ -6234,7 +6236,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R041 and RiC-R041i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R041 and RiC-R041i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects an agent and another agent which the
             former has under its control, to which it gives orders, whose activity it supervises.
             Shortcut: controls</rdfs:comment>
@@ -6261,7 +6263,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R045 and RiC-R045i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R045 and RiC-R045i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The vague agent hierarchical relation, between two agents of any
             kind. Same as in EAC-CPF Shortcut: isHierarchicallySuperiorTo</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Hierarchical Relation</rdfs:label>
@@ -6326,7 +6328,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R043 and RiC-R043i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R043 and RiC-R043i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects a person and another person which the
             former is superior of. Shortcut: isSuperiorOf</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Subordination Relation</rdfs:label>
@@ -6379,7 +6381,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R044 and RiC-R044i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R044 and RiC-R044i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between two agents Shortcut :
             hasInteractionWith object property</rdfs:comment>
         <rdfs:label xml:lang="en">Agent Relation</rdfs:label>
@@ -6437,7 +6439,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">Management relations group</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">Management relations group</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a thing on which the agent has some power
             or authority, including other agents. Shortcut: hasAuthorityOver</rdfs:comment>
         <rdfs:label xml:lang="en">Authority Relation</rdfs:label>
@@ -6457,7 +6459,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A05 (Carrier Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A05 (Carrier Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Carrier Type</rdfs:label>
     </owl:Class>
     
@@ -6508,7 +6510,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A10 (Content Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A10 (Content Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Content Type</rdfs:label>
     </owl:Class>
     
@@ -6554,7 +6556,7 @@ An Activity Category may be defined globally, or be specific to a particular act
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Coordinates</rdfs:label>
     </owl:Class>
     
@@ -6619,7 +6621,7 @@ This entity includes:
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A12 (Corporate Body Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A12 (Corporate Body Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">In some projects or countries, an accurate classification for
             categorizing groups and corporate bodies may exist. It may include such concepts as
             &quot;private company&quot;, &quot;ministry&quot;, &quot;court&quot;,
@@ -6645,7 +6647,7 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R052 and RiC-R052i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R052 and RiC-R052i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between two persons who correspond with each other
             Shortcut : hasCorrespondent</rdfs:comment>
         <rdfs:label xml:lang="en">Correspondence Relation</rdfs:label>
@@ -6754,7 +6756,7 @@ Digital standard dates will typically be based on ISO 8601, or Extended Date-Tim
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A15 (Demographic Group attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A15 (Demographic Group attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Demographic Group</rdfs:label>
         <skos:definition xml:lang="en">A social or cultural category used in the description of Agents, in particular Persons and Families.</skos:definition>
         <skos:scopeNote xml:lang="en">Demographic Group is intended as a form of identifying Agents based on membership in a social or cultural group. Thus Demographic Group should be differentiated into demographic classification categories such as gender, religion, demonyms (nationality or place), ethnicity, and others. 
@@ -6831,7 +6833,7 @@ Shortcut: has Derived Instantiation</skos:definition>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A17 (Documentary Form Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A17 (Documentary Form Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Documentary Form Type</rdfs:label>
     </owl:Class>
     
@@ -6936,7 +6938,7 @@ In particular, archivists, records managers and end users may need to use some m
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent>RiC-R057 and RiC-R057i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent>RiC-R057 and RiC-R057i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Event Relation</rdfs:label>
     </owl:Class>
     
@@ -6952,7 +6954,7 @@ In particular, archivists, records managers and end users may need to use some m
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A18 (Event Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A18 (Event Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Event Type</rdfs:label>
     </owl:Class>
     
@@ -7002,7 +7004,7 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R047 and RiC-R047i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R047 and RiC-R047i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A family relation between two persons. Shortcut :
             hasFamilyLinkWith</rdfs:comment>
         <rdfs:label xml:lang="en">Family Relation</rdfs:label>
@@ -7020,7 +7022,7 @@ This entity includes:
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A20 (Family Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A20 (Family Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Family Type</rdfs:label>
     </owl:Class>
     
@@ -7088,7 +7090,7 @@ Complex, large groups may be subdivided into other groups</skos:scopeNote>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R005 and RiC-R005i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R005 and RiC-R005i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSubdivision</rdfs:comment>
         <rdfs:label xml:lang="en">Group Subdivision Relation</rdfs:label>
     </owl:Class>
@@ -7099,7 +7101,7 @@ Complex, large groups may be subdivided into other groups</skos:scopeNote>
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Identifier">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A22 (Identifier attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A22 (Identifier attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">an identifier may have a type (local, unique, ISNI, ISBN,
             ...)</rdfs:comment>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
@@ -7266,7 +7268,7 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R040 and RiC-R040i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R040 and RiC-R040i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a record resource on which the agent has
             some intellectual property rights. Shortcut:
             hasIntellectualPropertyRightsOn</rdfs:comment>
@@ -7296,7 +7298,7 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Knowing Of Relation</rdfs:label>
     </owl:Class>
     
@@ -7313,7 +7315,7 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R050 and RiC-R050i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between two persons who know (have met, have
             corresponded with...) each other. Shortcut : hasAcquaintance</rdfs:comment>
         <rdfs:label xml:lang="en">Knowing Relation</rdfs:label>
@@ -7325,7 +7327,7 @@ Shortcut: nstantationIsAssociatedWithInstantiation</skos:definition>
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Language">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Concept"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A25 (Language attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A25 (Language attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Language</rdfs:label>
         <skos:definition xml:lang="en">A human language that is spoken or written by a community.</skos:definition>
         <skos:historyNote xml:lang="en">Former definition and scope note :
@@ -7388,7 +7390,7 @@ Any given Record Resource may be represented in more than one language, and any 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R042 and RiC-R042i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R042 and RiC-R042i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects a person and a group which the person
             leads Shortcut: isLeaderOf</rdfs:comment>
         <rdfs:label xml:lang="en">Leadership Relation</rdfs:label>
@@ -7400,7 +7402,7 @@ Any given Record Resource may be represented in more than one language, and any 
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#LegalStatus">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A26 (Legal Status attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A26 (Legal Status attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Legal Status</rdfs:label>
         <skos:note xml:lang="en">NOT PRESENT IN RiC-CM Do we keep it ? I am not sure QUESTION : is
             legal status a characteristic for agents only ?
@@ -7427,7 +7429,7 @@ Left as it is, waiting for a decision about the definition and domain of the Leg
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R038 and RiC-R038i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R038 and RiC-R038i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Curatorial or management relation. Connects an agent and a
             record resource that the agent manages. Shortcut: manages</rdfs:comment>
         <rdfs:label xml:lang="en">Management Relation</rdfs:label>
@@ -7495,7 +7497,7 @@ A Mandate should not be confused with the one or more documentary sources that s
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R067 and RiC-R067i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R067 and RiC-R067i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation between an Agent and the Mandate which authorizes it to act.
 Shortcut : isAuthorizedBy
 May also explicitly involve the authorizing Agent, and the Activities concerned.</rdfs:comment>
@@ -7551,7 +7553,7 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R055 and RiC-R055i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R055 and RiC-R055i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Simply connects a group and a person, when the first one has member the second one
             Possibly related to the position that the agent occupies within the group of which it is
             a member</rdfs:comment>
@@ -7588,7 +7590,7 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#Name">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Appellation"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A28 (Name attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Name</rdfs:label>
         <skos:definition xml:lang="en">A label, title or term designating the entity.</skos:definition>
     </owl:Class>
@@ -7605,7 +7607,7 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A30 (Occupation Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A30 (Occupation Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Occupation Type</rdfs:label>
     </owl:Class>
     
@@ -7637,7 +7639,7 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R037 and RiC-R037bis relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R037 and RiC-R037bis relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a thing (of any kind) that the agent owns.
             Shortcut: owns</rdfs:comment>
         <rdfs:label xml:lang="en">Ownership Relation</rdfs:label>
@@ -7801,7 +7803,7 @@ This entity includes:
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R074 and RiC-R074i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R074 and RiC-R074i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation that connects an entity and a place
 Shortcut: isAssociatedWithPlace</rdfs:comment>
         <rdfs:label xml:lang="en">Place Relation</rdfs:label>
@@ -7819,7 +7821,7 @@ Shortcut: isAssociatedWithPlace</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A32 (Place Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A32 (Place Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Place Type</rdfs:label>
         <skos:definition xml:lang="en">Specification of the type or kind of Place.</skos:definition>
         <skos:scopeNote xml:lang="en">Broadly, a Place may be a member of three broad categories: jurisdiction, manmade structure, or a natural feature. Each of these three categories can subdivided into narrower categories.</skos:scopeNote>
@@ -7883,7 +7885,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R054 and RiC-R054i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R054 and RiC-R054i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a person and a position that the person
             occupies Shortcut : occupies object property</rdfs:comment>
         <rdfs:label xml:lang="en">Position Holding Relation</rdfs:label>
@@ -7909,7 +7911,7 @@ Within the Records created by a Corporate Body, a Position may be used to identi
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R056 and RiC-R056i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R056 and RiC-R056i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a position and the group in which the
             position exists Shortcut : positionExistsIn</rdfs:comment>
         <rdfs:label xml:lang="en">Position And Group Relation</rdfs:label>
@@ -8219,7 +8221,7 @@ Such information may serve a variety of purposes, though it always documents or 
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R039 and RiC-039i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R039 and RiC-039i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Connects an agent and a record resource that the agent
             holds|keeps. Shortcut: holds</rdfs:comment>
         <rdfs:label xml:lang="en">Record Resource Holding Relation</rdfs:label>
@@ -8231,7 +8233,7 @@ Such information may serve a variety of purposes, though it always documents or 
 
     <owl:Class rdf:about="http://www.ica.org/standards/RiC/ontology#RecordResourceState">
         <rdfs:subClassOf rdf:resource="http://www.ica.org/standards/RiC/ontology#Type"/>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A39 (State attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A39 (State attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Record Resource State</rdfs:label>
     </owl:Class>
     
@@ -8343,7 +8345,7 @@ Shortcut : has Instantiation</skos:definition>
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A36 (Record Set Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A36 (Record Set Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">e.g. fonds, series, subseries, collection, file, etc. Users are
             strongly recommended to use concepts from a SKOS vocabulary for populating this class,
             and first of all the SKOS vocabulary we provide. NOTE : for the moment I have cerated a
@@ -8419,7 +8421,7 @@ Record Set Type may be extended to reflect types of Record Sets that are not arc
                 <owl:allValuesFrom rdf:resource="http://www.ica.org/standards/RiC/ontology#Instantiation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A37 (Representation Type attribute)</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-A37 (Representation Type attribute)</ontology:RiCCMCorrespondingComponent>
         <rdfs:label xml:lang="en">Representation Type</rdfs:label>
         <skos:definition xml:lang="en">Specific characteristics for types of representation (e.g., script for textual, bit rate for audio, resolution for image, encoding format for digital records etc.)</skos:definition>
         <skos:historyNote xml:lang="en">Added 2019, July 17</skos:historyNote>
@@ -8479,7 +8481,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R062 and RiC-R062i</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R062 and RiC-R062i</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">The relation between a Rule  and a Thing</rdfs:comment>
         <rdfs:label xml:lang="en">Rule Relation</rdfs:label>
     </owl:Class>
@@ -8521,7 +8523,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R048 and RiC-R048i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R048 and RiC-R048i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSibling</rdfs:comment>
     </owl:Class>
     
@@ -8547,7 +8549,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R049 and RiC-R049i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R049 and RiC-R049i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">Shortcut : hasSpouse</rdfs:comment>
     </owl:Class>
     
@@ -8571,7 +8573,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R053 and RiC-R053i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R053 and RiC-R053i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation between a teacher and his/her student Shortcut :
             hasStudent object property</rdfs:comment>
         <rdfs:label xml:lang="en">Teaching Relation</rdfs:label>
@@ -8697,7 +8699,7 @@ Rule should not be confused with the one or more documentary sources that serve 
                 <owl:onClass rdf:resource="http://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-R046 and RiC-R046i relations</RiCCMCorrespondingComponent>
+        <ontology:RiCCMCorrespondingComponent xml:lang="en">RiC-R046 and RiC-R046i relations</ontology:RiCCMCorrespondingComponent>
         <rdfs:comment xml:lang="en">A relation that exists between two agents which work together,
             for example in the course of a business process for fullfilling a function. &quot;works
             with&quot; relation. Shortcut : hasProfessionalRelationWith object
