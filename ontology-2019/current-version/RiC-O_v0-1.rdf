@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
      xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
      xmlns:dcterms="http://purl.org/dc/terms/"
@@ -2256,7 +2256,14 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3610,7 +3617,14 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isSourceOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -5333,9 +5347,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accrual">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information on the anticipated accession(s) to the Record Set.</rdfs:comment>
         <rdfs:label xml:lang="en">accrual</rdfs:label>
         <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">corresponds to RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5345,8 +5360,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accrualStatus">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information on the status of an Accrual</rdfs:comment>
         <rdfs:label xml:lang="en">accrual status</rdfs:label>
-        <skos:scopeNote xml:lang="en">See also accruals</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">See also accrual</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">corresponds to RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5357,6 +5374,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Reference system used for altitude</rdfs:comment>
+        <rdfs:label xml:lang="en">altimetric system</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5367,6 +5386,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The height of a Place above a reference level, especially above sea level.</rdfs:comment>
+        <rdfs:label xml:lang="en">altitude</rdfs:label>
+        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don&apos;t use this class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5383,8 +5405,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Description of evidences that the Record Resource or Instantiation is what it purports to be, was created or sent by the said Agent, at the said time and has not been tampered or corrupted. </rdfs:comment>
         <rdfs:label xml:lang="en">authenticity note</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A03 (Authenticity Note attribute)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">For electronic records, it may include results from automated means of checking the validity of signatures and timestamp.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A03 (Authenticity Note attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5395,8 +5419,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#ruleFollowed"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information on a Mandate that authorizes an Agent to perform an Activity.</rdfs:comment>
         <rdfs:label xml:lang="en">authorizing mandate</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Mandate class for handling mandates.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use the Mandate class for handling mandates.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5407,7 +5432,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Date at which something began.</rdfs:comment>
+        <rdfs:label xml:lang="en">beginning date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5418,6 +5446,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#beginningDate"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which a Person was born.</rdfs:comment>
+        <rdfs:label xml:lang="en">birth date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5428,6 +5460,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#dateStandard"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Used system of reckoning time in which the beginning, length, and divisions of a year are defined, sometimes along with multiyear cycles.</rdfs:comment>
+        <rdfs:label xml:lang="en">calendar</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5438,8 +5473,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of Record Resource carriers.</rdfs:comment>
         <rdfs:label xml:lang="en">carrier extent</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A04 (Carrier Extent attribute)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">For electronic resources, it indicates the size of storage capacity (disk, tape, film etc.). The attribute may be different from the Instantiation Extent data ropertyy. For example, the Carrier Extent of a movie may be 4 GB (as DVD), while Instantiation Extent may be 2 GB.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A04 (Carrier Extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5457,8 +5494,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Used to express the degree of certitude of a Date, an Event or a Relation.</rdfs:comment>
         <rdfs:label xml:lang="en">certainty</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A06 (Certainty attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A06 (Certainty attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5468,8 +5506,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#classification">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information on the criterion or criteria that may be used to identify a Record as a member of a Record Set.</rdfs:comment>
         <rdfs:label xml:lang="en">classification</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A07 (Classification attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A07 (Classification attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5486,8 +5525,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Terms and circumstances affecting the availability of a Record for consultation.</rdfs:comment>
         <rdfs:label xml:lang="en">conditions of access</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A08 (Conditions of Access attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A08 (Conditions of Access attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5504,8 +5544,23 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Terms and circumstances affecting the availability for use after access has been provided.</rdfs:comment>
         <rdfs:label xml:lang="en">conditions of use</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A09 (Conditions of Use attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A09 (Conditions of Use attribute)</RiCCMCorrespondingComponent>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#creationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#beginningDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which an entity was created.</rdfs:comment>
+        <rdfs:label xml:lang="en">creation date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5515,8 +5570,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#date">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Chronological information associated with an entity that contributes to its identification and contextualization.</rdfs:comment>
         <rdfs:label xml:lang="en">date</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be made obsolete later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5526,8 +5583,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#dateQualifier">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Indicates the precision of a date. It specifies if, and to what extent, the value is an estimation.</rdfs:comment>
         <rdfs:label xml:lang="en">date qualifier</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A13 (Date Qualifier attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A13 (Date Qualifier attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5538,9 +5596,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Identifier of the standard of the Normalized date.</rdfs:comment>
         <rdfs:label xml:lang="en">date standard</rdfs:label>
-        <skos:note>A date might refer to other time reference systems than Gregorian, eg. Hellenic Julian, Unix-Time,</skos:note>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5551,6 +5609,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#endDate"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which a Person died.</rdfs:comment>
+        <rdfs:label xml:lang="en">death date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5561,6 +5623,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#endDate"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which an entity was deleted.</rdfs:comment>
+        <rdfs:label xml:lang="en">deletion date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5570,8 +5636,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#descriptiveNote">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Descriptive information about an entity that is not otherwise addressed.</rdfs:comment>
         <rdfs:label xml:lang="en">descriptive note</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A16 (Descriptive Note attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A16 (Descriptive Note attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5582,6 +5649,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which something ended.</rdfs:comment>
+        <rdfs:label xml:lang="en">end date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5592,8 +5663,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#textualValue"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Natural language expression of a Date.</rdfs:comment>
         <rdfs:label xml:lang="en">expressed date</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A19 (Expressed Date attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A19 (Expressed Date attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5604,6 +5676,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Reference system used for geographical coordinates.</rdfs:comment>
+        <rdfs:label xml:lang="en">geodesic system</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5613,9 +5687,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Longitudinal and latitudinal information of an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use PhysicalLocation and Coordinates classes with Place.</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A11 (Coordinates attribute) (see also the Coordinates class)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use PhysicalLocation and Coordinates classes with Place.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A11 (Coordinates attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5626,8 +5701,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Vertical dimension of an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">height</rdfs:label>
-        <owl:versionInfo xml:lang="en">added September 5th</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
@@ -5648,8 +5723,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Summary of the evolution of an entity, since its origin until present time. </rdfs:comment>
         <rdfs:label xml:lang="en">history</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A21 (History attribute)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">History can alternatively be represented by a series of related Events.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A21 (History attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5660,10 +5737,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">NOTE : kept for the moment in order to handle identifiers as pure strings</rdfs:comment>
+        <rdfs:comment xml:lang="en">A word, number, letter, symbol, or any combination of these used to uniquely identify or reference an individual instance of an entity within a specific information domain.</rdfs:comment>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Identifier class for handling identifiers.</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A22 (Identifier attribute) (see also Identifier class)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">Use only if you don&apos;t use Identifier class for handling identifiers.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A22 (Identifier attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5674,9 +5751,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Countable characteristics of the Instantiation expressed as a quantity.</rdfs:comment>
         <rdfs:label xml:lang="en">Instantiation extent</rdfs:label>
-        <skos:historyNote>added 2019, July 17</skos:historyNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A23 (Instantiation Extent attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A23 (Instantiation Extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5687,6 +5764,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#structure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about the physical and intellectual arrangement and composition of an Instantiation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Instantiation structure</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A40 (Structure attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5703,18 +5783,23 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about the completeness of the Record Resource or the Instantiation.</rdfs:comment>
         <rdfs:label xml:lang="en">integrity</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A24 (Integrity attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A24 (Integrity attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology#lastUpdateDate -->
+    <!-- https://www.ica.org/standards/RiC/ontology#lastModificationDate -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#lastUpdateDate">
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#lastModificationDate">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#modificationDate"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which an entity was last updated.</rdfs:comment>
+        <rdfs:label xml:lang="en">last modification date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5725,6 +5810,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Distance in degrees north or south of the equator.</rdfs:comment>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don&apos;t use this class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5734,9 +5822,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#location">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A delimitation of the physical territory of a place.</rdfs:comment>
         <rdfs:label xml:lang="en">location</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use PhysicalLocation class with Place.</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A27 &apos;Location&apos; attribute</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">Use only if you don&apos;t use PhysicalLocation class with Place.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A27 (Location attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5747,6 +5836,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Distance in degrees east or west of a prime meridian.</rdfs:comment>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don&apos;t use this class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5756,6 +5848,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#measure">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The extent, quantity, amount, or degree of an entity, as determined by measurement or calculation.</rdfs:comment>
+        <rdfs:label xml:lang="en">measure</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5766,6 +5860,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date of the modification of an entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">modification date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5776,9 +5874,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A label, title or term designating the entity in order to make it distinguishable from other similar entities.</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Name class for handling names.</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A28 (Name attribute) (see also RiC-O Name class)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">Use only if you don&apos;t use Name class for handling names.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corrresponds to RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5789,9 +5888,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#normalizedValue"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">An ISO 8601 form of a Date</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date representation based on a standard, preferably machine-readable.</rdfs:comment>
         <rdfs:label xml:lang="en">normalized date value</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A29 (Normalized Date attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A29 (Normalized Date attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5809,6 +5908,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Value representation based on a standard, preferably machine-readable.</rdfs:comment>
+        <rdfs:label xml:lang="en">normalized value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5818,8 +5919,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#physicalCharacteristics">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about the physical features of the Instantiation.</rdfs:comment>
         <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A31 (Physical Characteristics attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A31 (Physical Characteristics attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5836,6 +5938,7 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Countable characteristics of the content of an entity expressed as a quantity.</rdfs:comment>
         <rdfs:label xml:lang="en">physical or logical extent</rdfs:label>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. Use only if you cannot use the subproperties (particularly if the same free text is being used in your current metadata for describing the record resource, carrier and instantiation extent).</skos:scopeNote>
     </owl:DatatypeProperty>
@@ -5847,8 +5950,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#productionTechnique">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Method used in the representation of information on the Instantiation.</rdfs:comment>
         <rdfs:label xml:lang="en">production technique</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A33 (Production Technique attribute)</RiCCMCorrespondingComponent>
+        <skos:scopeNote xml:lang="en">Use only if you have free text or don&apos;t have a controlled vocabulary for production techniques (in this case, use the ProductionTechniqueType class)</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A33 (Production Technique attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5857,8 +5962,12 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
 
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#publicationDate">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date of the publication of a Record Resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">publication date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5868,8 +5977,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#qualityOfRepresentation">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Conditions of an Instantiation that impact the legibility or completeness of Record Resource, and thus the viability of its use.</rdfs:comment>
         <rdfs:label xml:lang="en">quality of representation</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A34 (Quality of Representation attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A34 (Quality of Representation attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5880,9 +5990,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Countable characteristics of the content of the Record Resource expressed as a quantity.</rdfs:comment>
         <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
-        <skos:historyNote>added 2019, July 17</skos:historyNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A35 (Record Resource extent attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5893,6 +6003,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#structure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about the physical and intellectual arrangement and composition of a Record Resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Record Resource structure</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A40 (Structure attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5902,6 +6015,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#referenceSystem">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Framework or standard used to represent an information.</rdfs:comment>
+        <rdfs:label xml:lang="en">reference system</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5911,8 +6026,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#relationState">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">for qualifying a relation (&quot;present&quot;,
-            &quot;past&quot;, &quot;unknown&quot;)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Used to qualify the state of a Relation (e. g. present, past, ongoing, unknown).</rdfs:comment>
+        <rdfs:label xml:lang="en">Relation state</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5922,8 +6037,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#ruleFollowed">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label>rule followed</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Rule class for handling rules.</skos:scopeNote>
+        <rdfs:comment xml:lang="en">The rule or conditions that govern the existence or lifecycle of a Thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">rule followed</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use the Rule class for handling rules.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5933,8 +6049,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#scopeAndContent">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Summary of the scope (such as time periods, geography) and content (such as subject matter, administrative processes) of the Record Resource. </rdfs:comment>
         <rdfs:label xml:lang="en">scope and content</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A38 (Scope and Content attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A38 (Scope and Content attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5942,8 +6059,18 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <!-- https://www.ica.org/standards/RiC/ontology#source -->
 
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#source">
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Relation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about a source used to identify or describe an entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+        <skos:scopeNote xml:lang="en">Can be used, in particular, for Records having documentary form type Finding Aid or Authority Record, or for Relations. Use only if you don&apos;t use the hasSource object property.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -5960,9 +6087,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Information about the physical and intellectual arrangement and composition of a Record Resource or Instantiation.</rdfs:comment>
         <rdfs:label xml:lang="en">structure</rdfs:label>
         <skos:scopeNote xml:lang="en">Use only if you cannot use the subproperties (particularly if the same free text is being used in your current metadata for describing the record resource and the instantiation structure).</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A40 (Structure attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A40 (Structure attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5972,8 +6100,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#technicalCharacteristics">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Mechanism"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Describes any relevant physical or software feature of any device involved in the creation or management of a Record Resource.</rdfs:comment>
         <rdfs:label xml:lang="en">technical characteristics</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">RiC-A41 (Technical Characteristics attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A41 (Technical Characteristics attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -5990,7 +6119,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="en">Textual Value</rdfs:label>
+        <rdfs:comment xml:lang="en">A textual expression of an Appellation or Date.</rdfs:comment>
+        <rdfs:label xml:lang="en">textual value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6009,8 +6139,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An identifying name of a Record Resource, Instantiation or Rule.</rdfs:comment>
         <rdfs:label xml:lang="en">title</rdfs:label>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Title class for handling titles.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Use only if you don&apos;t use Title class for handling titles.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -6020,9 +6152,9 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#type">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A term used to characterize an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">type</rdfs:label>
-        <skos:definition xml:lang="en">a category to which the entity belongs</skos:definition>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be made obsolete later on. Use only if you don&apos;t use Type subclasses for handling categories.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Type subclasses for handling categories.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -6033,6 +6165,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date at which an Appellation was first used.</rdfs:comment>
+        <rdfs:label xml:lang="en">used from date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -6043,6 +6179,10 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Date until an Appellation was used.</rdfs:comment>
+        <rdfs:label xml:lang="en">used to date</rdfs:label>
+        <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don&apos;t use Date classes for handling dates.</skos:scopeNote>
+        <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     
 
@@ -6053,8 +6193,8 @@ November 14-15: began to make RiC-O compliant with RiC-CM v0.2. Done for the maj
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label>width</rdfs:label>
-        <owl:versionInfo xml:lang="en">added September 5th</owl:versionInfo>
+        <rdfs:comment xml:lang="en">Horizontal dimension of an entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">width</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6994,7 +7134,7 @@ Corporate Bodies and Families are kinds of groups, though other kinds of groups 
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
         <rdfs:comment xml:lang="en">A word, number, letter, symbol, or any combination of these used to uniquely identify or reference an individual instance of an entity within a specific information domain.</rdfs:comment>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A22 (Identifier attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A22 (Identifier attribute) (see also the identifier data property)</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
@@ -7366,7 +7506,7 @@ A Mechanism may have both mechanical and software components, or may be exclusiv
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
         <rdfs:comment xml:lang="en">A label, title or term designating the entity in order to make it distinguishable from other similar entities.</rdfs:comment>
         <rdfs:label xml:lang="en">Name</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A28 (Name attribute) (see also the name data property)</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
@@ -7860,7 +8000,7 @@ Both designations are supported by RiC, and the significance of the difference f
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects two to more Record Resources when there is a genetic relation between them. Genetic ims sense is as defined by diplomatics, i.e. the process by which a Record Resource is developed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects two to more Record Resources when there is a genetic relation between them. Genetic in this sense is as defined by diplomatics, i.e. the process by which a Record Resource is developed.</rdfs:comment>
         <rdfs:label xml:lang="en">Record Resource Genetic Relation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R023 and RiC-023i relations</RiCCMCorrespondingComponent>
     </owl:Class>
