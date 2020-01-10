@@ -55,7 +55,7 @@
                     comments.</html:p>
                 <html:p>The Git repository that is used for handling RiC-O will soon be made public,
                     so that making pull requests will be possible.</html:p>
-
+<html:p>On January 10, 2020: fixed a bug in the documentation of the object properties of Performance Relation.</html:p>
             </html:div>
         </skos:historyNote>
         <dcterms:abstract rdf:parseType="Literal">
@@ -608,7 +608,7 @@
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#performanceRelationHasSource"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
-        <rdfs:comment xml:lang="en">Connects an Acivity that is performed to a Performance
+        <rdfs:comment xml:lang="en">Connects an Activity that is performed to a Performance
             Relation</rdfs:comment>
         <rdfs:label xml:lang="en">activity is source of performance relation </rdfs:label>
     </owl:ObjectProperty>
@@ -4273,8 +4273,7 @@
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
-        <rdfs:comment xml:lang="en">Connects a Performance Relation to a performing
-            Agent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Performance Relation to a performed Activity.</rdfs:comment>
         <rdfs:label xml:lang="en">performance relation has source </rdfs:label>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#activityIsSourceOfPerformanceRelation"/>
    </owl:ObjectProperty>
@@ -4283,8 +4282,7 @@
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-        <rdfs:comment xml:lang="en">Connects a Performance Relation to a performed
-            Activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Performance Relation to a performing Agent.</rdfs:comment>
         <rdfs:label xml:lang="en">performance relation has target </rdfs:label>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfPerformanceRelation"/>
    </owl:ObjectProperty>
