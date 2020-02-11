@@ -10,11 +10,11 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xml:base="https://www.ica.org/standards/RiC/ontology">
     <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology">
-      <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
         <dcterms:description rdf:parseType="Literal">
             <html:div xml:lang="en" id="introduction">
@@ -368,10 +368,6 @@
             version 0.1</rdfs:label>
         <dcterms:contributor rdf:resource="http://www.isni.org/0000000039584825"/>
         <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD</dc:contributor>
-        <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
-            EGAD</dc:contributor>
-        <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-01-28.</owl:versionInfo>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Version 1. issued 2019-12-12</dcterms:issued>
         <dcterms:abstract rdf:parseType="Literal">
             <html:div xml:lang="en">
                 <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing
@@ -387,7 +383,13 @@
                     using the logic of the ontology.</html:p>
             </html:div>
         </dcterms:abstract>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Version 1. issued 2019-12-12</dcterms:issued>
+        <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
+            EGAD</dc:contributor>
+        <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-01-28.</owl:versionInfo>
         <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
+        <dcterms:creator rdf:resource="https://data.bnf.fr/ark:/12148/cb169702205#about"/>
+        <dc:contributor xml:lang="en">Tobias Wildi (Docuteam GmbH, Switzerland), member of EGAD</dc:contributor>
         <skos:historyNote rdf:parseType="Literal">
             <html:div xml:lang="en">
                 <html:p>A first beta version of RiC-O was developed in 2017 and used by the National
@@ -405,19 +407,20 @@
                     comments.</html:p>
                 <html:p>The Git repository that is used for handling RiC-O will soon be made public,
                     so that making pull requests will be possible.</html:p>
-            <html:p>On January 10, 2020: fixed a bug in the documentation of the object properties of Performance Relation.</html:p>
-                <html:p>On January 28, 2020: renamed the file and updated the ontology metadata.</html:p>
+           
+                    <html:p>The following is a list of the changes made to RiC-O v0.1 since its release in December 2019.</html:p>
+                    <html:ul>
+                        <html:li>Fixed a bug in the documentation of rico:PerformanceRelation and its object properties.</html:li>
+                        
+                        <html:li>Renamed the file and updated the ontology metadata.</html:li>
+                        
+                        <html:li>OccupationType made a subclass of ActivityType.</html:li>
+                        <html:li>Changed the domain and range of rico:hasOriginal and rico:hasDraft (it is now Record or Record Part); same for their inverse properties.</html:li>
+                    </html:ul>
+                
             </html:div>
-            <html:div xml:lang="en">
-                <html:p>The following is a list of the changes made to RiC-O v0.1 since its release in December 2019.</html:p>
-                <html:ul>
-                    <html:li>fixed a bug in the documentation of rico:PerformanceRelation and its object properties.</html:li>
-                    <html:li>OccupationType made a subclass of ActivityType.</html:li>
-                </html:ul>
-            </html:div>
+           
         </skos:historyNote>
-        <dcterms:creator rdf:resource="https://data.bnf.fr/ark:/12148/cb169702205#about"/>
-        <dc:contributor xml:lang="en">Tobias Wildi (Docuteam GmbH, Switzerland), member of EGAD</dc:contributor>
         <dc:rights xml:lang="en">Copyright 2019, International Council on Archives
             (ICA)</dc:rights>
         <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA), member of EGAD</dc:contributor>
@@ -2441,8 +2444,22 @@
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsInTime"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDraftOf"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of 'is draft of' object
             property.</rdfs:comment>
         <rdfs:label xml:lang="en">has draft </rdfs:label>
@@ -2753,8 +2770,22 @@
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsInTime"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOriginalOf"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of 'is original of' object
             property.</rdfs:comment>
         <rdfs:label xml:lang="en">has original </rdfs:label>
@@ -4035,8 +4066,22 @@
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDraftOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesInTime"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Connects a draft to the final version of a
             Record.</rdfs:comment>
         <rdfs:label xml:lang="en">is draft of </rdfs:label>
@@ -4511,8 +4556,22 @@
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOriginalOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesInTime"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Connects the original version of a Record to a copy or a later
             version.</rdfs:comment>
         <rdfs:label xml:lang="en">is original of </rdfs:label>
