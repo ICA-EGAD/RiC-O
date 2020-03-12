@@ -363,9 +363,9 @@
         <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
         <dcterms:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 0.1</dcterms:title>
+            (ICA RiC-O) version 0.2</dcterms:title>
         <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA RiC-O)
-            version 0.1</rdfs:label>
+            version 0.2</rdfs:label>
         <dcterms:contributor rdf:resource="http://www.isni.org/0000000039584825"/>
         <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD</dc:contributor>
         <dcterms:abstract rdf:parseType="Literal">
@@ -386,7 +386,7 @@
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Version 1. issued 2019-12-12</dcterms:issued>
         <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of
             EGAD</dc:contributor>
-        <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-01-28.</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-03-12.</owl:versionInfo>
         <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
         <dcterms:creator rdf:resource="https://data.bnf.fr/ark:/12148/cb169702205#about"/>
         <dc:contributor xml:lang="en">Tobias Wildi (Docuteam GmbH, Switzerland), member of EGAD</dc:contributor>
@@ -403,12 +403,12 @@
                     along with RiC-O v0.1, a preview of RiC-CM v0.2. The goal of the preview release
                     of RiC-CM v0.2 is to provide context for the classes, properties, and overall
                     logic of RiC-O in support of the ontology’s first public release.</html:p>
-                <html:p>This version is a draft, and was released with a public call for
+                <html:p>Version 0.1 is a draft, and was released with a public call for
                     comments.</html:p>
                 <html:p>The Git repository that is used for handling RiC-O will soon be made public,
                     so that making pull requests will be possible.</html:p>
            
-                    <html:p>The following is a list of the changes made to RiC-O v0.1 since its release in December 2019.</html:p>
+                    <html:p>The following is a list of the changes made to RiC-O (this current version being RiC-O v0.2)  since the release of RiC-O v0.1 in December 2019.</html:p>
                     <html:ul>
                         <html:li>Fixed a bug in the documentation of rico:PerformanceRelation and its object properties.</html:li>
                         
@@ -416,6 +416,7 @@
                         
                         <html:li>OccupationType made a subclass of ActivityType.</html:li>
                         <html:li>Changed the domain and range of rico:hasOriginal and rico:hasDraft (it is now Record or Record Part); same for their inverse properties.</html:li>
+                        <html:li>Fixed a bug in the definition of rico:provenanceRelationHasTarget (removed the owl:propertyChainAxiom).</html:li>
                     </html:ul>
                 
             </html:div>
@@ -6117,10 +6118,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfProvenanceRelation"/>
-            <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#provenanceRelationHasTarget"/>
-        </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Connects a Provenance Relation to an Agent or
             Activity.</rdfs:comment>
         <rdfs:label xml:lang="en">provenance relation has target </rdfs:label>
