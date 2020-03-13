@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005061">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005061"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-23</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Catherine MÉROT)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-05</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@ / Elsa Camus, 18 août 2016 : notice modifiée dans le cadre du projet de prototype Linked Data. A enrichir ultérieurement.</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : revu le nom, les fonctions, les liens, l'historique ; ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F.C. : modifié lien vers SIAF ; indexé 2 statuts juridiques</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Notice de plan d'orientation général sur les Archives des Archives</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Archives_nationales_%28France%29</rico:source>
+      <rico:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb11862272t</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Hildesheimer, Françoise, Les archives de France, mémoire de l'Histoire, Paris, Honoré Champion, 1997 (« Histoire et Archives », Hors série n°1).</rico:source>
+      <rico:source xml:lang="fr">Hildesheimer, Françoise, « Échec aux archives : la difficile affirmation d'une administration », dans Bibliothèque de l'École des chartes, 156, 1998, p. 91-106.</rico:source>
+      <rico:source xml:lang="fr">Galland, Bruno, « Archives nationales et Archives de France, de l'an II au rapport Braibant : entre unité et complémentarité », dans Histoire et archives, 10, 2001, p. 61-84.</rico:source>
+      <rico:source xml:lang="fr">Favier, Lucien, La mémoire de l'État. Histoire des archives nationales, Paris, Fayard, 2004.</rico:source>
+      <rico:source xml:lang="fr">Béchu, Claire et Béchu, Philippe [coord.] Les Archives nationales. Des lieux pour l'histoire de France. Bicentenaire d'une installation (1808-2008), Paris, Somogy, 2008.</rico:source>
+      <rico:source xml:lang="fr">Coeuré, Sophie et Duclert, Vincent, Les Archives, Paris, La Découverte, 2011 (2e éd.).</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121589529"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Archives_nationales_%28France%29"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005061">
+            <rico:instantiates rdf:resource="record/005061"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005061</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005061"/>
+            <rico:identifier>5102/AN</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005061">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005061"/>
+      <isni:identifierValid>0000000121589529</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Archives nationales (France ; 1790-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20nationales%20%28France%20%3B%201790-....%29">
+            <rdfs:label xml:lang="fr">Archives nationales (France ; 1790-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives nationales (France ; 1790-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20nationales%20%281790-1794%29">
+            <rdfs:label xml:lang="fr">Archives nationales (1790-1794)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives nationales (1790-1794)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20de%20la%20R%C3%A9publique%20%281794-1805%29">
+            <rdfs:label xml:lang="fr">Archives de la République (1794-1805)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives de la République (1794-1805)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20de%20l%27Empire%20%281805-1815%29">
+            <rdfs:label xml:lang="fr">Archives de l'Empire (1805-1815)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives de l'Empire (1805-1815)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20du%20Royaume%20%281816-1848%29">
+            <rdfs:label xml:lang="fr">Archives du Royaume (1816-1848)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives du Royaume (1816-1848)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20nationales%20%281848-1852%29">
+            <rdfs:label xml:lang="fr">Archives nationales (1848-1852)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives nationales (1848-1852)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20imp%C3%A9riales%20%281853-1871%29">
+            <rdfs:label xml:lang="fr">Archives impériales (1853-1871)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives impériales (1853-1871)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20nationales%20%281871-1897%29">
+            <rdfs:label xml:lang="fr">Archives nationales (1871-1897)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives nationales (1871-1897)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Direction%20des%20Archives%20nationales%20%281897-1936%29">
+            <rdfs:label xml:lang="fr">Direction des Archives nationales (1897-1936)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des Archives nationales (1897-1936)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Direction%20des%20Archives%20de%20France%20%281936-1950%29">
+            <rdfs:label xml:lang="fr">Direction des Archives de France (1936-1950)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des Archives de France (1936-1950)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Direction%20g%C3%A9n%C3%A9rale%20des%20Archives%20de%20France%20%281951-1997%29">
+            <rdfs:label xml:lang="fr">Direction générale des Archives de France (1951-1997)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction générale des Archives de France (1951-1997)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005061-Archives%20nationales%20%282007-....%29">
+            <rdfs:label xml:lang="fr">Archives nationales (2007-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Archives nationales (2007-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005061"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-01-01</rico:beginningDate>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+      <rico:thingIsTargetOfTypeRelation>
+         <rico:TypeRelation rdf:about="relationToType/005061-d5blokqhb2-71c8sqtdbid4-20061224-*">
+            <rico:typeRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:typeRelationHasSource rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9be2dd2a-28eb-4bc5-8e2b-b09bcf02d411"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-24</rico:beginningDate>
+         </rico:TypeRelation>
+      </rico:thingIsTargetOfTypeRelation>
+      <rico:thingIsTargetOfTypeRelation>
+         <rico:TypeRelation rdf:about="relationToType/005061-d5blonaxbw--1mt8t42bokzts-17900101-20061223">
+            <rico:typeRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:typeRelationHasSource rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-23</rico:endDate>
+         </rico:TypeRelation>
+      </rico:thingIsTargetOfTypeRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005061-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005061-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfMandateRelation>
+         <rico:MandateRelation>
+            <rico:mandateRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:mandateRelationHasSource>
+               <rico:Mandate>
+                  <rico:title>Arrêté du 24 décembre 2006 érigeant le service Archives nationales en service à compétence nationale : https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000821615 ;</rico:title>
+               </rico:Mandate>
+            </rico:mandateRelationHasSource>
+         </rico:MandateRelation>
+      </rico:agentIsTargetOfMandateRelation>
+      <rico:agentIsTargetOfMandateRelation>
+         <rico:MandateRelation>
+            <rico:mandateRelationHasTarget rdf:resource="agent/005061"/>
+            <rico:mandateRelationHasSource>
+               <rico:Mandate>
+                  <rico:title>Arrêté du 29 février 2012 relatif à l'organisation du service à compétence nationale Archives nationales : https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000025431543</rico:title>
+               </rico:Mandate>
+            </rico:mandateRelationHasSource>
+         </rico:MandateRelation>
+      </rico:agentIsTargetOfMandateRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Les Archives nationales sont aujourd'hui implantées sur trois sites :</html:p>
+            <html:p>- site de Paris : archives publiques de l'Ancien Régime, minutier des notaires de Paris ;</html:p>
+            <html:p>- site de Pierrefitte-sur-Seine : archives publiques de la Révolution à nos jours, fonds privés (toutes périodes) ;</html:p>
+            <html:p>- site de Fontainebleau : fonds publics spécifiques (dossiers de naturalisation après 1930, dossiers de carrière de fonctionnaires, dossiers de titualires de la Légion d'honneur, dossiers d'homologation des véhicules en particulier) ; archives audiovisuelles et électroniques, archives privées d'architectes.</html:p>
+            <html:p/>
+            <html:p>Les Archives nationales sont organisées en quatre directions :</html:p>
+            <html:ul>
+               <html:li>La direction des publics assure l'ensemble des fonctions d'accueil et d'orientation du public des Archives nationales :</html:li>
+            </html:ul>
+            <html:p>- gestion des salles de lecture et de la bibliothèque,</html:p>
+            <html:p>- orientation des chercheurs,</html:p>
+            <html:p>- communication des documents,</html:p>
+            <html:p>- actions éducatives, culturelles et pédagogiques, qui s'appuient sur le Musée des Archives nationales, les expositions temporaires et le Service éducatif,</html:p>
+            <html:p>- réseaux sociaux.</html:p>
+            <html:p/>
+            <html:ul>
+               <html:li>La direction des fonds est chargée de la collecte, du tri, de l'étude, du classement et de l'inventaire des archives :</html:li>
+            </html:ul>
+            <html:p>- rédaction des instruments de recherche,</html:p>
+            <html:p>- organisation et participation aux colloques et aux journées d'étude,</html:p>
+            <html:p>- animation des partenariats scientifiques, relations avec les centres de recherche spécialisés (Labex),</html:p>
+            <html:p>- suivi et contrôle des opérations de conservation (désinfection, restauration, reconditionnement, numérisation ou microfilmage),</html:p>
+            <html:p>- participation à l'orientation et à l'accueil du public.</html:p>
+            <html:p/>
+            <html:ul>
+               <html:li>La direction de l'appui scientifique est chargée des projets métier transversaux et prospectifs :</html:li>
+            </html:ul>
+            <html:p>- conservation matérielle, préventive et curative des archives,</html:p>
+            <html:p>- système d'information des Archives nationales,</html:p>
+            <html:p>- conduite du projet d'archivage électronique,</html:p>
+            <html:p>- valorisation des archives électroniques et audiovisuelles,</html:p>
+            <html:p>- mise à jour des portails web.</html:p>
+            <html:p/>
+            <html:ul>
+               <html:li>La direction administrative et financière est chargée :</html:li>
+            </html:ul>
+            <html:p>- de la gestion des ressources humaines,</html:p>
+            <html:p>- de la gestion budgétaire et comptable,</html:p>
+            <html:p>- des affaires juridiques et de la commande publique,</html:p>
+            <html:p>- de la gestion immobilière, de la logistique, de la sécurité et de la sûreté.</html:p>
+            <html:p/>
+            <html:p>Le service de la communication et des chargés de mission (diffusion scientifique, relations internationales, partenariats) assistent la directrice.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La politique des archives publiques en France émerge le 12 septembre 1790 lorsque que l’Assemblée constituante donne à ses archives le nom d’Archives nationales. La particularité de cette institution est précisément que l'évolution décisive du contenu de sa fonction au cours du premier siècle de son existence, et son destin, n'ont été réglés que par la jurisprudence administrative, jusqu'à la loi fondatrice du 3 janvier 1979, reprise dans le Code du Patrimoine en 2004 et révisée par la loi du 15 juillet 2008.</html:p>
+            <html:p/>
+            <html:p>Quatre ans après la création des Archives nationales, par la loi du 7 messidor an II (25 juin 1794), la Convention précise leur rôle et institue un « dépôt central des Archives nationales ».</html:p>
+            <html:p>Elle introduit des principes, qui, a posteriori, ont pu apparaître comme fondateurs soit, essentiellement :</html:p>
+            <html:p>- la centralisation des archives et donc la possibilité d'un « réseau » d'archives publiques ;</html:p>
+            <html:p>- le principe d'accessibilité publique des archives (article 37) : elle ne connaît qu'une très faible application, et est même contredite par l'évolution de la pratique : ainsi l'article 12 interdit de conserver aux Archives de la République les documents « historiques », destinés aux bibliothèques, alors que l'article 1 définit un périmètre de conservation (traités internationaux, titre de la dette publique, etc.) qui n'a pratiquement jamais été respecté ;</html:p>
+            <html:p>- la nécessité d'un réseau archivistique national.</html:p>
+            <html:p/>
+            <html:p>Destinées au départ à fonder les titres du nouveau régime en construction, les Archives nationales sont installées dès l'origine auprès de la représentation nationale, en y étant distinguées et ce dès 1790. En tant que conservatoire des titres du domaine national, considérablement augmenté par les biens de l'Église de France, les Archives nationales se trouvent associées à la vaste opération de regroupement et de triage des fonds ecclésiastiques comme de séquestres du bien des émigrés.</html:p>
+            <html:p>Hormis l'attribution de la gestion des assignats, directement liée à cette opération, plus tard reclassée en tête de la sous-série F30, les Archives nationales sont donc dotées au départ d'attributions bien plus vastes que dans la suite de leur existence. C'est par ce biais qu'elles se trouvent ainsi détentrices de documents antérieurs à 1789, non pas considérés alors comme « documents historiques », mais qui servent à l'usage courant de la gestion des biens nationaux et du Domaine national (y compris en avalant littéralement en 1809 le bureau des Domaines de la ville de Paris). La détention de ce « trésor », confirmé par la nationalisation, dès 1798, mais surtout après 1806, auprès des Archives, du vieux « Trésor des chartes » des rois de France, permet à l'institution de se transformer progressivement, et de changer de fonction, jusqu'à devenir une institution scientifique, à partir des années 1850.</html:p>
+            <html:p>En 1808, Napoléon Ier installe les Archives nationales à l'hôtel de Soubise, en attendant la construction d'un bâtiment spécifique, au Champ-de-Mars, qui ne sera jamais construit.</html:p>
+            <html:p>Au cours du XIXe siècle, les Archives nationales commencent à collecter les archives des ministères. Elles s'étendent autour de l'hôtel de Soubise avec la construction des « grands dépôts » sous Louis-Philippe et Napoléon III. Le personnel se spécialise (archivistes formés à l'Ecole des chartes), des inventaires sont publiés.</html:p>
+            <html:p/>
+            <html:p>Vers 1850, la situation administrative des Archives est donc inversée : ayant perdu dès 1801, à la création des Archives du Louvre de la Secrétairerie d'État (dénommées significativement « archives impériales » dès 1804) tout lien avec les archives centrales du gouvernement, les Archives du Royaume peinent encore à instaurer un régime de versements avec les ministères (hormis ceux provenant de son ministère de tutelle d'origine, soit le Ministère de l'Intérieur, assez vite suivi par le Ministère de la Justice). Elles se concentrent sur la valorisation et le traitement des documents devenus pour l'essentiel « historiques », progressivement après 1830, du fait du règlement progressif de l'aliénation des biens nationaux et de la stabilisation de la question du Domaine national (la suppression de la Section domaniale en 1840, constitue ainsi un indice précieux de mutation de fonction. Elle reste toutefois attachée à la Section administrative qui va progressivement concentrer les nouveaux versements).</html:p>
+            <html:p>La Révolution de 1848, en envoyant aux Archives le fonds historique de la Secrétairerie d'Etat (AF) et celui des Archives de la Couronne (série O), fait basculer sous le régime des « documents historiques » une partie conséquente des archives centrales du Premier XIXe siècle.</html:p>
+            <html:p>En ce sens, la période du Second Empire, ouverte par le changement de tutelle auprès du Ministère d'Etat en 1853, ouvre une nouvelle fonction pour les Archives : d'« arsenal » manqué de l'Administration, elle devient le « grenier » imprévu de la Science historique, qui n'est véritablement consacré que par le décret de 1911, organisant l'établissement en une section Ancienne (fonds antérieurs à 1789) et une section Moderne (fonds postérieurs à 1789).</html:p>
+            <html:p>De nouveaux services sont créés, devenus ou non sections autonomes en fonction des périodes :</html:p>
+            <html:p>- Musée des Archives, en 1867, où les documents les plus remarquables sont exposés ;</html:p>
+            <html:p>- Minutier central des notaires de Paris en 1929 à l’hôtel de Rohan jusqu’ici occupé par l’Imprimerie nationale ;</html:p>
+            <html:p>- Section contemporaine en 1947 ;</html:p>
+            <html:p>- Archives privées et archives d'entreprises en 1949, qui bascule au cours de la seconde moitié du XXe siècle du ministère de l'Éducation à celui de la Culture.</html:p>
+            <html:p/>
+            <html:p>Après 1960, les Archives nationales vont avoir tendance à déconcentrer leur services par la création de trois centres spécialisés (Outre-Mer, puis délocalisation de la section des archives d'entreprises), dont un est tout particulièrement dévolu à la collecte des archives contemporaines par le biais du déploiement, après 1952, du réseau des missions en ministères, qui obtiennent la création d'un centre de conservation spécifique.</html:p>
+            <html:p>En 1972, les anciens bâtiments de l'Otan, à Fontainebleau, sont affectés aux Archives nationales. La « cité des archives contemporaines » doit accueillir les versements d'archives des ministères. Un projet ambitieux est élaboré (8 unités de conservation de 80 km.l.). Deux unités seulement sont construites car le site, difficile d'accès pour les chercheurs, ne permet pas suffisamment la mise en valeur des archives contemporaines. Les équipes de Fontainebleau développent une expertise sur les archives contemporaines et notamment, les archives électroniques.</html:p>
+            <html:p/>
+            <html:p>Le public intéressé par les documents d'archives augmente régulièrement. En 1988, à Paris, est inauguré un grand bâtiment dédié au public, le CARAN (centre d'accueil et de recherche des Archives nationales), qui réunit les différentes salles de lecture qui coexistaient jusque-là.</html:p>
+            <html:p/>
+            <html:p>Face à la saturation des sites de Paris et de Fontainebleau, et à l'éloignement du site de Fontainebleau, la construction d'un troisième site est envisagée dès 1995. Une association de chercheurs, d'archivistes et de généalogistes, « Une cité pour les archives », se constitue en 2001 pour obtenir une décision politique. Jacques Chirac, président de la République, et Lionel Jospin, premier ministre, s'engagent sur le projet.</html:p>
+            <html:p>En 2004, le gouvernement choisit le site de Pierrefitte-sur-Seine. Confié à l'architecte Massimiliano Fuksas, le nouveau bâtiment, le plus grand dépôt d'archives d'Europe, est inauguré par François Hollande, Président de la République française, le 11 février 2013.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-005061-19750101-19941231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005061-050312-19580101-19611231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005061-20070101-*"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Archives_nationales_%28France%29"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11862272t#about"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005061-005568-20100113-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055417-005061"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055417-top"/>
+   </rico:Agent>
+</rdf:RDF>

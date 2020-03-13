@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/003552">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/003552"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 6 avril 2017 : revu les liens hiérarchiques et chronologiques</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Richter (Noë), "Histoire de la lecture publique en France", Bulletin des bibliothèques de France, n° 1, 1977. Disponible sur le Web : &lt;http://bbf.enssib.fr/consulter/bbf-1977-01-0001-001&gt;. ISSN 1292-8399.</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/003552">
+            <rico:instantiates rdf:resource="record/003552"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_003552</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003552"/>
+            <rico:identifier>3211/ST</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/003552">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/003552"/>
+      <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Services techniques (1945-1975)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/003552-France.%20Direction%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique.%20Services%20techniques%20%281945-1975%29">
+            <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Services techniques (1945-1975)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Services techniques (1945-1975)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/003552"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/003552-Service%20technique-19640101-19701231">
+            <rdfs:label xml:lang="fr">Service technique</rdfs:label>
+            <rico:textualValue xml:lang="fr">Service technique</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/003552"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003552-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003552"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003552-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003552-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003552"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003552-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003552-d3nyuicsjl-tb7ampjet3iu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003552"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003552-d3nyuicsjl-tb7ampjet3iu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003552-d3nyuhp1um--qolq4osvi6b5">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003552"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003552-d3nyuhp1um--qolq4osvi6b5"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le service technique est dirigé dès 1945 par un conservateur et un conservateur adjoint.</html:p>
+            <html:p/>
+            <html:p>Il se structure à partir de 1965, date à laquelle il est composé de trois sections :</html:p>
+            <html:ul>
+               <html:li>Architecture, équipement mobilier, plan ;</html:li>
+               <html:li>Étude de la réglementation et du fonctionnement des différentes catégories de bibliothèques, bibliothéconomie, Bulletin des bibliothèques de France, Bulletin de documentation bibliographique ;</html:li>
+               <html:li>Achats de livres.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>Les services techniques sont réorganisés en 1971, du fait de l'absorption du service de la lecture publique. Ils se composent alors de trois nouvelles sections :</html:p>
+            <html:ul>
+               <html:li>Affaires communes (qui réunit les deux premières sections) ;</html:li>
+               <html:li>Lecture publique ;</html:li>
+               <html:li>Bibliothèque d'étude et de recherche.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Un service technique apparaît pour la première fois au sein de l'administration des bibliothèques en 1945, avec la création de la direction des bibliothèques de France et de la lecture publique au sein de la direction générale des Arts et Lettres (décret du 18 août 1945 organisant la direction générale des Arts et Lettres). Travaillant en liaison étroite avec l'inspection générale, il promeut une politique d'ensemble en normalisant et en coordonnant l'activité des différentes catégories de bibliothèques.</html:p>
+            <html:p>Il disparaît en 1975 suite à une décision du conseil des ministres du mois de juillet qui supprime la DBLP et répartit ses attributions entre le secrétariat d'État aux Universités et le secrétariat d'État à la Culture (décret du 29 octobre 1975).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Dès l'origine, le service technique est chargé de l'étude de tous les problèmes techniques concernant le classement, l'établissement des catalogues, la conservation et la communication des documents et des livres, ainsi que de l'élaboration et de la diffusion des règlements concernant les bibliothèques. À partir de 1949, il est en outre responsable de l'organisation des services de la lecture publique et des questions relatives à la formation du personnel technique et du personnel scientifique des bibliothèques. En 1951, les souscriptions scientifiques et littéraires, qui dépendaient du bureau du personnel, rejoignent le service technique. À partir de 1958, le service est chargé du Congrès national des sociétés savantes.</html:p>
+            <html:p>Ses prérogatives sont modifiées par sa réorganisation en 1965 : architecture, équipement mobilier, plan, études de la réglementation et du fonctionnement des différentes catégories de bibliothèques, bibliothéconomie, Bulletin des bibliothèques de France, Bulletin de documentation bibliographique, achats de livres. Le service de la lecture publique, qui le rejoint en 1971, lui ajoute une mission de relations avec les bibliothèques municipales et les bibliothèques centrales de prêt. La même année, la troisième section des services techniques est chargée des relations avec les bibliothèques interuniversitaires et d'universités, ainsi que les bibliothèques des grands établissements.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003551-19730101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003549-19730101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003550-19730101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003549-19710101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003550-19710101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003552-003551-19710101-19751231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003552-19450818-19751231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003552-005084-19760101-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054852-003552"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054852-top"/>
+   </rico:Agent>
+</rdf:RDF>

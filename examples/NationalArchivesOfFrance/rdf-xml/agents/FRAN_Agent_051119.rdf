@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051119">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051119"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Pascal RIVIALE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 juillet 2015 : changé nom, ajouté statut, descripteur fonctions, ajouté lien hiérarchique</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-17</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 juillet 2015 : changé nom, ajouté statut, descripteur fonctions, ajouté lien hiérarchique</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 12 avril 2017 : ajouté lien d'identité, revu liens NP</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Journal Officiel de la République française</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Notice BnF n° FRBNF15540183</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051119">
+            <rico:instantiates rdf:resource="record/051119"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051119</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051119"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051119">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051119"/>
+      <rdfs:label xml:lang="fr">Établissement public de maîtrise d'ouvrage des travaux culturels (France)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051119-%C3%89tablissement%20public%20de%20ma%C3%AEtrise%20d%27ouvrage%20des%20travaux%20culturels%20%28France%29">
+            <rdfs:label xml:lang="fr">Établissement public de maîtrise d'ouvrage des travaux culturels (France)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Établissement public de maîtrise d'ouvrage des travaux culturels (France)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051119"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051119-EPMOTC">
+            <rdfs:label xml:lang="fr">EPMOTC</rdfs:label>
+            <rico:textualValue xml:lang="fr">EPMOTC</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051119"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051119-EMOC">
+            <rdfs:label xml:lang="fr">EMOC</rdfs:label>
+            <rico:textualValue xml:lang="fr">EMOC</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051119"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-05-21</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-20</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051119-d3nyugszba-a2wofi2a3sjm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051119"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051119-d3nyugszba-a2wofi2a3sjm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugszba-a2wofi2a3sjm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051119-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051119"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051119-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">construction, aménagement, réhabilitation, restauration, gros entretien, ou réutilisation d’immeubles appartenant à l’Etat et présentant un intérêt culturel.</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>L’établissement public de maîtrise d’ouvrage des travaux culturels (connu aussi sous les sigles EPMOTC et EMOC), établissement public national à caractère administratif issu de la fusion de l’Établissement public du Grand Louvre (EPGL) et de la mission interministérielle des grandes opérations d’architecture et d’urbanisme (MIGT), a été créé par décret du 19 mai 1998 (publié au Journal Officiel le 20 mai). Il est placé sous la tutelle du ministre de la Culture.</html:p>
+            <html:p>Le décret n°2000-1247 du 19 décembre 2000 modifiant le décret de 1998 prévoit que l’établissement peut exercer à l'étranger, et exceptionnellement, avec l’autorisation du ministre de la Culture, peut exercer une mission de conseil en France. Il institue une commission d’appel d’offres au sein de l’établissement. Enfin, il charge l’EMOC de la liquidation de l’établissement public du parc de la Villette.</html:p>
+            <html:p>L'EMOC a fusionné avec le Service National des Travaux (SNT), devenant ainsi l'Opérateur du Patrimoine et des Projets Immobiliers de la Culture, par décret du 14 juillet 2010 (publié au Journal Officiel le 20 juillet).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions de l'EPMOTC sont définies par les articles 2 et 3 du décret du 19 mai 1988 modifié par le décret du 19 décembre 2000 :</html:p>
+            <html:p>"L'établissement a pour mission d'assurer, à la demande et pour le compte de l'État, tout ou partie des attributions, telles qu'elles sont définies par les articles 3 et 6 de la loi du 12 juillet 1985 susvisée, de la maîtrise d'ouvrage des opérations de construction, d'aménagement, de réhabilitation, de restauration, de gros entretien ou de réutilisation d'immeubles appartenant à l'État, y compris d'immeubles remis en dotation à des établissements publics de l'État, et présentant un intérêt culturel ; l'État peut confier à l'établissement la réalisation d'études préalables à ces opérations. L'établissement peut assurer, à titre onéreux, à la demande et pour le compte des collectivités territoriales ou de leurs établissements publics, des prestations de même nature que celles définies au premier alinéa. L'établissement peut exercer à l'étranger une activité de conseil dans les domaines mentionnés au premier alinéa.</html:p>
+            <html:p>Pour l'accomplissement de ses missions, l'établissement peut notamment :</html:p>
+            <html:ul>
+               <html:li>Acquérir des biens, meubles ou immeubles ;</html:li>
+               <html:li>Réaliser ou faire réaliser par des personnes, publiques ou privées, des études, recherches ou travaux ;</html:li>
+               <html:li>Conclure avec l'État ou ses établissements publics des conventions de gestion des biens, meubles ou immeubles, nécessaires à la réalisation des travaux ;</html:li>
+               <html:li>Acquérir ou exploiter tout droit de propriété intellectuelle."</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>Depuis sa création, l’EMOC a participé notamment à la conception et à la réalisation des opérations suivantes :</html:p>
+            <html:p>- restauration du Grand Palais ;</html:p>
+            <html:p>- Cité de l’Architecture et du patrimoine au palais de Chaillot ;</html:p>
+            <html:p>- rénovation du Théâtre de l’Odéon ;</html:p>
+            <html:p>- Immeuble des Bons-enfants pour le ministère de la Culture et de la communication ;</html:p>
+            <html:p>- Musée des arts décoratifs;</html:p>
+            <html:p>- transformation du Palais de Tokyo.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051119-19980521-20100720"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005429-051119-19980521-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051119-051355-19980521-20100720"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051119-005427-20100721-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb15540183b#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054246-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054246-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054247-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054247-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054248-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054248-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055476-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055476-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055477-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055477-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056203-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056203-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057991-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057991-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/027225-051119"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/027225-top"/>
+   </rico:Agent>
+</rdf:RDF>

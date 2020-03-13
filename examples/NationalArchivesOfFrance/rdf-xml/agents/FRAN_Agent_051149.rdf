@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051149">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051149"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 2017 : revu l'historique</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Auduc Arlette, Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940, Comité d'histoire du ministère de la Culture, 2008</rico:source>
+      <rico:source xml:lang="fr">Gourbin Patrice, "Le service des Monuments historiques. Acteur de la construction en France, 1940-1950", in : Living with hirstory, 1914-1964, Louvain, 2011</rico:source>
+      <rico:source xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</rico:source>
+      <rico:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051149">
+            <rico:instantiates rdf:resource="record/051149"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051149</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051149"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051149">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051149"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts. Direction des services d'architecture. Bureau des Monuments historiques et Sites (1940-1944)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051149-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Secr%C3%A9tariat%20g%C3%A9n%C3%A9ral%20des%20Beaux-Arts.%20Direction%20des%20services%20d%27architecture.%20Bureau%20des%20Monuments%20historiques%20et%20Sites%20%281940-1944%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts. Direction des services d'architecture. Bureau des Monuments historiques et Sites (1940-1944)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts. Direction des services d'architecture. Bureau des Monuments historiques et Sites (1940-1944)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051149"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051149-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051149"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051149-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>À la tête du bureau des monuments historiques et Sites, M. Lapeyre, a sous sa direction deux sous-chefs : F. Sorlin, en charge des monuments historiques et Mme Vallée, en charge des sites. S’ajoutent des rédacteurs, des commis et des auxiliaires (soit environ 25 personnes).</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>En décembre 1940, le régime de Vichy reconstitue au sein de l'administration des Beaux-Arts (dirigée par Louis Hautecoeur depuis juillet 1940) la direction des services d'architecture. L'ancienne direction des bâtiments civils et le bureau des Monuments historiques y sont ainsi regroupés.</html:p>
+            <html:p>Deux lois majeures sont instaurées :</html:p>
+            <html:p>- La loi du 27 septembre 1941 est la première à réglementer les fouilles archéologiques et entraîne l'organisation d'un véritable service de l'archéologie.</html:p>
+            <html:p>- En 1943, la loi du 25 février sur les abords des monuments historiques introduit la définition du champ de visibilité et vient instituer un périmètre de protection de 500 mètres.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051126-051149-19400101-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051149-051150-19450818-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051160-051149-19400101-19441231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051149-051164-19400101-19441231"/>
+   </rico:Agent>
+</rdf:RDF>

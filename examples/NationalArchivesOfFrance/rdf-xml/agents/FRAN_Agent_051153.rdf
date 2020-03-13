@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051153">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051153"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:creationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens, ajouté n° notice BnF</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication,</html:i>
+            <html:i>1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">notice d'autorité BnF n° FRBNF15508742</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051153">
+            <rico:instantiates rdf:resource="record/051153"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051153</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051153"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051153">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051153"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des patrimoines. Service du patrimoine. Sous-direction des Monuments historiques et des Espaces protégés (2009-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051153-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20g%C3%A9n%C3%A9rale%20des%20patrimoines.%20Service%20du%20patrimoine.%20Sous-direction%20des%20Monuments%20historiques%20et%20des%20Espaces%20prot%C3%A9g%C3%A9s%20%282009-....%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des patrimoines. Service du patrimoine. Sous-direction des Monuments historiques et des Espaces protégés (2009-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des patrimoines. Service du patrimoine. Sous-direction des Monuments historiques et des Espaces protégés (2009-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051153"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</rico:beginningDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051153-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051153"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051153-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Décret du 13 janvier 2010 créant la direction générale des Patrimoines (disponible sur Légifrance à cette adresse : http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&amp;dateJO=20100115&amp;numTexte=126&amp;pageDebut=&amp;pageFin=) ; Arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des patrimoines : http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&amp;dateJO=20091205&amp;numTexte=40&amp;pageDebut=&amp;pageFin=</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La sous-direction des Monuments historiques et Espaces protégés est rattachée au service du Patrimoine (comprenant la sous-direction de l’Archéologie et la mission de l’Inventaire général du patrimoine culturel) elle-même rattachée à la direction des Patrimoines.</html:p>
+            <html:p>Le service en charge des monuments historiques (avec à sa tête Jean-Michel Loyer-Hascoêt depuis 2009) est composé de cinq bureaux :</html:p>
+            <html:p>-protection des monuments historiques</html:p>
+            <html:p>-protection et de la gestion des espaces</html:p>
+            <html:p>-conservation du patrimoine immobilier</html:p>
+            <html:p>-conservation du patrimoine mobilier et instrumental</html:p>
+            <html:p>-ingénierie et expertise technique</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le service des monuments historiques, qui prend le nom de sous-direction des Monuments historiques et Espaces protégés en 2004, est intégré à la direction de l'architecture et du patrimoine dès 1998.</html:p>
+            <html:p>Le décret du 13 janvier 2010 vient modifier cette organisation avec la création de la direction générale des patrimoines et la suppression de la direction de l'architecture et du patrimoine. La nouvelle direction regroupe quatre services : les archives, l’architecture, les musées et le patrimoine.</html:p>
+            <html:p>C’est à ce dernier service qu’est rattachée la sous-direction des Monuments Historiques et des Espaces protégés.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051151-051153-20090101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005588-051153-20100101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051153-051164-20090101-*"/>
+   </rico:Agent>
+</rdf:RDF>

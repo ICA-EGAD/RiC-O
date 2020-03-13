@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050095">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/050095"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl002"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Raphael BAUMARD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-13</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 décembre 2015 : revu le nom et le lien IR, ajouté ISNI, n° notice BnF, indexation activités</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 217 : revu l'historique, ajouté lien d'association et liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12245110</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000357070766"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/F%C3%A9licien_de_Saulcy"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050095">
+            <rico:instantiates rdf:resource="record/050095"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050095</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050095"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050095">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="record/050095"/>
+      <isni:identifierValid>0000000357070766</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Saulcy, Félicien de (1807-1880)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050095-Saulcy%2C%20F%C3%A9licien%20de%20%281807-1880%29">
+            <rdfs:label xml:lang="fr">Saulcy, Félicien de (1807-1880)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Saulcy, Félicien de (1807-1880)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050095"/>
+            <rico:regulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050095-Saulcy%2C%20F%C3%A9licien%20Caignart%20de%20%281807-1880%29">
+            <rdfs:label xml:lang="fr">Saulcy, Félicien Caignart de (1807-1880)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Saulcy, Félicien Caignart de (1807-1880)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050095"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050095-Saulcy%2C%20Louis%20F%C3%A9licien%20Joseph%20Caignart%20de%20%281807-1880%29">
+            <rdfs:label xml:lang="fr">Saulcy, Louis Félicien Joseph Caignart de (1807-1880)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Saulcy, Louis Félicien Joseph Caignart de (1807-1880)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050095"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-03-19</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1880-11-04</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050095-d699msk5oth-xqvujelh8c39">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050095"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050095-d699msk5oth-xqvujelh8c39"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">numismate et archéologue</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050095-d699msj9l7t-1gb5a09kkzrmp">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050095"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050095-d699msj9l7t-1gb5a09kkzrmp"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Louis-Félicien-Joseph Caignart de Saulcy (1807-1880) est admis en 1826 à l’École polytechnique ; il en sort deux ans plus tard pour entrer à l’École d’application de Metz. C’est là qu’il commence à se passionner pour les médailles et, devenu lieutenant d’artillerie, il réussit à mener de front ses obligations militaires et ses recherches d’archéologue et de numismate. Professeur de mécanique à l’École de Metz, il publie des études sur les monnaies de la ville et de ses évêques et un<html:i>Essai de classification des suites monétaires byzantines</html:i>, résultat de ses travaux de classement d’une précieuse collection de médailles byzantines. En 1841, il devient conservateur du musée d’artillerie à Paris, et, l’année suivante, l’Académie des inscriptions lui ouvre ses portes. Il se spécialise alors dans l’épigraphie orientale et entreprend en 1845 un grand voyage archéologique avec La Saussaye à travers l’Italie, la Grèce, la Turquie et l’Égypte. Cinq ans plus tard, accompagné de son fils et d’Édouard Delessert, il se rend en Palestine. On doit à Saulcy de nombreux travaux de numismatique, des récits de voyages, et l’animation, comme président, de la commission instituée pour publier la carte de l’ancienne Gaule, commission qui donna une impulsion très vive aux recherches d’archéologie gauloise et latine en France.</html:p>
+            <html:p>Veuf de mademoiselle de Brye en 1850, Saulcy épouse en secondes noces le 20 décembre 1852, Mademoiselle de Billing, fille du ministre de France à Copenhague, bientôt dame d’honneur de l’impératrice Eugénie. Fréquentant ainsi la cour et apprécié par Napoléon III, il est nommé en novembre 1859 sénateur. S’intéressant peu à la politique, il consacre tous ses loisirs à ses travaux d’érudition. À deux reprises, en 1863 et en 1869, il se rend en Terre Sainte, et lorsqu’il s’éteint en 1880, il est en train de rédiger une description de sa collection de monnaies françaises de Philippe II à François Ier.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050095-051164-18610101-18691231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12245110d#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/F%C3%A9licien_de_Saulcy"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003467-050095"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/003467-top"/>
+   </rico:Agent>
+</rdf:RDF>

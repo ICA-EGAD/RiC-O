@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/015882short">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:regulatedBy rdf:resource="rule/rl006"/>
+      <rico:regulatedBy rdf:resource="rule/rl007"/>
+      <rico:title xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture : Instrument de recherche sélectif du versement 19980195</rico:title>
+      <rdfs:label xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture : Instrument de recherche sélectif du versement 19980195</rdfs:label>
+      <rico:publishedBy rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</rico:publicationDate>
+      <rico:describes rdf:resource="recordResource/015882short-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-i1">
+            <rico:instantiates rdf:resource="record/015882short"/>
+            <rico:title xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture : Instrument de recherche sélectif du versement 19980195</rico:title>
+            <rdfs:label xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture : Instrument de recherche sélectif du versement 19980195</rdfs:label>
+            <rico:history xml:lang="fr">Cet instrument de recherche a été encodé en EAD en 2016 pour les besoins du projet de prototype Linked Data porté par les Archives nationales, la Bibliothèque nationale de France, le SIAF et l'Université de Montréal.</rico:history>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_015882short</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_015882short"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/015882short-top">
+      <rico:describedBy rdf:resource="record/015882short"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+      <rico:title xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture</rico:title>
+      <rdfs:label xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1976-1990</rico:date>
+      <rico:heldBy rdf:resource="agent/005061"/>
+      <rico:hasProvenance rdf:resource="agent/005084"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+            <html:p>Cet instrument de recherche est dérivé du répertoire numérique détaillé <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_IR_015882">Culture ; Direction du livre et de la lecture ; Service bibliothèques publiques (1975-1985) ; Service bibliothèques publiques, lecture (1986) - Département bibliothèques, lecture (1987-) (1990)</html:a>
+            </html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-top-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-top"/>
+            <rico:identifier>19980195/1-19980195/10</rico:identifier>
+            <rico:title xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture</rico:title>
+            <rdfs:label xml:lang="fr">Archives du département des bibliothèques et de la lecture de la direction du livre et de la lecture</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1976-1990</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">3,1 ml</html:p>
+            </rico:instantiationExtent>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/>
+            <rico:hasProvenance rdf:resource="agent/005084"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/top"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:includes rdf:resource="recordResource/015882short-d_1"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_2"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_2_1"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_2_2"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_2_3"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_3"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_3_1"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_3_2"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_3_3"/>
+      <rico:includes rdf:resource="recordResource/015882short-d_3_4"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_1">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Dossiers de personnel des bibliothèques</rico:title>
+      <rdfs:label xml:lang="fr">Dossiers de personnel des bibliothèques</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1982</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1982-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_1-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_1"/>
+            <rico:identifier>19980195/1-19980195/3</rico:identifier>
+            <rico:title xml:lang="fr">Dossiers de personnel des bibliothèques</rico:title>
+            <rdfs:label xml:lang="fr">Dossiers de personnel des bibliothèques</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1982</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1982-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_1"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_2">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Dossiers de fonctionnement des bibliothèques publiques</rico:title>
+      <rdfs:label xml:lang="fr">Dossiers de fonctionnement des bibliothèques publiques</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1976</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1976-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_2-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_2"/>
+            <rico:identifier>19980195/4-19980195/6</rico:identifier>
+            <rico:title xml:lang="fr">Dossiers de fonctionnement des bibliothèques publiques</rico:title>
+            <rdfs:label xml:lang="fr">Dossiers de fonctionnement des bibliothèques publiques</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1976</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1976-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_2"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_2_1">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Aides financières en faveur du developpement et de l'extension des services dans les bibliothèques ; subvention pour la création d'emplois en bibliothèque : dossiers présentés par commune (1984).Déclarations ministérielles officielles, bilans, synthèses statistiques (1986-1988)</rico:title>
+      <rdfs:label xml:lang="fr">Aides financières en faveur du developpement et de l'extension des services dans les bibliothèques ; subvention pour la création d'emplois en bibliothèque : dossiers présentés par commune (1984).Déclarations ministérielles officielles, bilans, synthèses statistiques (1986-1988)</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1984</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+      <rico:date xml:lang="fr">1984-1988</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_2_1-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_2_1"/>
+            <rico:identifier>19980195/4</rico:identifier>
+            <rico:title xml:lang="fr">Aides financières en faveur du developpement et de l'extension des services dans les bibliothèques ; subvention pour la création d'emplois en bibliothèque : dossiers présentés par commune (1984).Déclarations ministérielles officielles, bilans, synthèses statistiques (1986-1988)</rico:title>
+            <rdfs:label xml:lang="fr">Aides financières en faveur du developpement et de l'extension des services dans les bibliothèques ; subvention pour la création d'emplois en bibliothèque : dossiers présentés par commune (1984).Déclarations ministérielles officielles, bilans, synthèses statistiques (1986-1988)</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1984</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+            <rico:date xml:lang="fr">1984-1988</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_2_1"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_2_2">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Décentralisation des bibliothèques publiques : réunions des groupes de travail ; journée de rencontre avec les élus locaux (3/02/1988) : liste des participants, organisation, programme (1986-1988).CTPI (Comité technique paritaire interministériel) : règlement intérieur, liste des membres, procès- verbal (1976-1988)</rico:title>
+      <rdfs:label xml:lang="fr">Décentralisation des bibliothèques publiques : réunions des groupes de travail ; journée de rencontre avec les élus locaux (3/02/1988) : liste des participants, organisation, programme (1986-1988).CTPI (Comité technique paritaire interministériel) : règlement intérieur, liste des membres, procès- verbal (1976-1988)</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1976</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+      <rico:date xml:lang="fr">1976-1988</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_2_2-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_2_2"/>
+            <rico:identifier>19980195/5</rico:identifier>
+            <rico:title xml:lang="fr">Décentralisation des bibliothèques publiques : réunions des groupes de travail ; journée de rencontre avec les élus locaux (3/02/1988) : liste des participants, organisation, programme (1986-1988).CTPI (Comité technique paritaire interministériel) : règlement intérieur, liste des membres, procès- verbal (1976-1988)</rico:title>
+            <rdfs:label xml:lang="fr">Décentralisation des bibliothèques publiques : réunions des groupes de travail ; journée de rencontre avec les élus locaux (3/02/1988) : liste des participants, organisation, programme (1986-1988).CTPI (Comité technique paritaire interministériel) : règlement intérieur, liste des membres, procès- verbal (1976-1988)</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1976</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+            <rico:date xml:lang="fr">1976-1988</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_2_2"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_2_3">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Conseil d'administration de la Bibliothèque de France (séances de mai 1990 et septembre 1990) : ordres du jour, comptes-rendus de séancesDécentralisation/déconcentration : projet de loi concernant le transfert de l'État aux collectivités territoriales, rédaction du projet de loi : correspondance, notes (1981-1982)Programmation de la Bibliothèque de France : correspondance, notes, rapports du groupe de travail, compte-rendu du groupe politique documentaire et rapport de synthèse (1989-1990)</rico:title>
+      <rdfs:label xml:lang="fr">Conseil d'administration de la Bibliothèque de France (séances de mai 1990 et septembre 1990) : ordres du jour, comptes-rendus de séancesDécentralisation/déconcentration : projet de loi concernant le transfert de l'État aux collectivités territoriales, rédaction du projet de loi : correspondance, notes (1981-1982)Programmation de la Bibliothèque de France : correspondance, notes, rapports du groupe de travail, compte-rendu du groupe politique documentaire et rapport de synthèse (1989-1990)</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1981</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1981-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_2_3-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_2_3"/>
+            <rico:identifier>19980195/6</rico:identifier>
+            <rico:title xml:lang="fr">Conseil d'administration de la Bibliothèque de France (séances de mai 1990 et septembre 1990) : ordres du jour, comptes-rendus de séancesDécentralisation/déconcentration : projet de loi concernant le transfert de l'État aux collectivités territoriales, rédaction du projet de loi : correspondance, notes (1981-1982)Programmation de la Bibliothèque de France : correspondance, notes, rapports du groupe de travail, compte-rendu du groupe politique documentaire et rapport de synthèse (1989-1990)</rico:title>
+            <rdfs:label xml:lang="fr">Conseil d'administration de la Bibliothèque de France (séances de mai 1990 et septembre 1990) : ordres du jour, comptes-rendus de séancesDécentralisation/déconcentration : projet de loi concernant le transfert de l'État aux collectivités territoriales, rédaction du projet de loi : correspondance, notes (1981-1982)Programmation de la Bibliothèque de France : correspondance, notes, rapports du groupe de travail, compte-rendu du groupe politique documentaire et rapport de synthèse (1989-1990)</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1981</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1981-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_2_3"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_3">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">Politique pour le développement de la lecture</rico:title>
+      <rdfs:label xml:lang="fr">Politique pour le développement de la lecture</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1985-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_3-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_3"/>
+            <rico:identifier>19980195/7-19980195/10</rico:identifier>
+            <rico:title xml:lang="fr">Politique pour le développement de la lecture</rico:title>
+            <rdfs:label xml:lang="fr">Politique pour le développement de la lecture</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1985-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_3"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_3_1">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">. Lecture en entreprise : rédaction du rapport "Lecture en entreprise", constitution d'un groupe de travail, travaux de préparation et schèma de rédaction, compte-rendus de réunion du groupe de travail et rapports à la direction de la Direction du Livre et de la Lecture ; documentation sur les activités et le fonctionnement des bibliothèques de comité d'entreprise et assimilés, relations avec les associations, notament l'association des bibliothécaires français et les syndicats : 1982-1987. . Lecture et handicap : dossiers de subventions allouées aux associations des handicapés : . Association des déficients visuels : 1985 . Association des amis de la bibliothèque municipale de Rennes : 1985 . Centre culturel municipal d'Antony : 1984-1985 . Association "Art et Culture" : 1985 . Les amis de la bibliothèque de Caen : 1985 . Association pour les adultes et les jeunes handicapés : 1985 . Association culturelle et sportive d'Ensisheim : 1985 . Groupement des intellectuels aveugles ou Aublyopes : 1985 . Lecture en milieu carcéral : . Actions conjointes Ministère de la justice/Ministère de la culture en faveur du développement de la lecture dans les établissements pénitentiaires : projets des bibliothèques, subventions accordées et dossiers descriptifs des bibliothèques existents : 1986-1987 . Arrêtés de subvention aux associations de soutien au développement culturel dans le . milieu carcéral : 1987 . Application de la convention Justice/Culture pour le développement de la lecture : . bilan de la convention entre la Direction du livre et de la lecture et la Direction de l'administration pénitentiaire : 1986-1988</rico:title>
+      <rdfs:label xml:lang="fr">. Lecture en entreprise : rédaction du rapport "Lecture en entreprise", constitution d'un groupe de travail, travaux de préparation et schèma de rédaction, compte-rendus de réunion du groupe de travail et rapports à la direction de la Direction du Livre et de la Lecture ; documentation sur les activités et le fonctionnement des bibliothèques de comité d'entreprise et assimilés, relations avec les associations, notament l'association des bibliothécaires français et les syndicats : 1982-1987. . Lecture et handicap : dossiers de subventions allouées aux associations des handicapés : . Association des déficients visuels : 1985 . Association des amis de la bibliothèque municipale de Rennes : 1985 . Centre culturel municipal d'Antony : 1984-1985 . Association "Art et Culture" : 1985 . Les amis de la bibliothèque de Caen : 1985 . Association pour les adultes et les jeunes handicapés : 1985 . Association culturelle et sportive d'Ensisheim : 1985 . Groupement des intellectuels aveugles ou Aublyopes : 1985 . Lecture en milieu carcéral : . Actions conjointes Ministère de la justice/Ministère de la culture en faveur du développement de la lecture dans les établissements pénitentiaires : projets des bibliothèques, subventions accordées et dossiers descriptifs des bibliothèques existents : 1986-1987 . Arrêtés de subvention aux associations de soutien au développement culturel dans le . milieu carcéral : 1987 . Application de la convention Justice/Culture pour le développement de la lecture : . bilan de la convention entre la Direction du livre et de la lecture et la Direction de l'administration pénitentiaire : 1986-1988</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+      <rico:date xml:lang="fr">1985-1988</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_3_1-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_3_1"/>
+            <rico:identifier>19980195/7</rico:identifier>
+            <rico:title xml:lang="fr">. Lecture en entreprise : rédaction du rapport "Lecture en entreprise", constitution d'un groupe de travail, travaux de préparation et schèma de rédaction, compte-rendus de réunion du groupe de travail et rapports à la direction de la Direction du Livre et de la Lecture ; documentation sur les activités et le fonctionnement des bibliothèques de comité d'entreprise et assimilés, relations avec les associations, notament l'association des bibliothécaires français et les syndicats : 1982-1987. . Lecture et handicap : dossiers de subventions allouées aux associations des handicapés : . Association des déficients visuels : 1985 . Association des amis de la bibliothèque municipale de Rennes : 1985 . Centre culturel municipal d'Antony : 1984-1985 . Association "Art et Culture" : 1985 . Les amis de la bibliothèque de Caen : 1985 . Association pour les adultes et les jeunes handicapés : 1985 . Association culturelle et sportive d'Ensisheim : 1985 . Groupement des intellectuels aveugles ou Aublyopes : 1985 . Lecture en milieu carcéral : . Actions conjointes Ministère de la justice/Ministère de la culture en faveur du développement de la lecture dans les établissements pénitentiaires : projets des bibliothèques, subventions accordées et dossiers descriptifs des bibliothèques existents : 1986-1987 . Arrêtés de subvention aux associations de soutien au développement culturel dans le . milieu carcéral : 1987 . Application de la convention Justice/Culture pour le développement de la lecture : . bilan de la convention entre la Direction du livre et de la lecture et la Direction de l'administration pénitentiaire : 1986-1988</rico:title>
+            <rdfs:label xml:lang="fr">. Lecture en entreprise : rédaction du rapport "Lecture en entreprise", constitution d'un groupe de travail, travaux de préparation et schèma de rédaction, compte-rendus de réunion du groupe de travail et rapports à la direction de la Direction du Livre et de la Lecture ; documentation sur les activités et le fonctionnement des bibliothèques de comité d'entreprise et assimilés, relations avec les associations, notament l'association des bibliothécaires français et les syndicats : 1982-1987. . Lecture et handicap : dossiers de subventions allouées aux associations des handicapés : . Association des déficients visuels : 1985 . Association des amis de la bibliothèque municipale de Rennes : 1985 . Centre culturel municipal d'Antony : 1984-1985 . Association "Art et Culture" : 1985 . Les amis de la bibliothèque de Caen : 1985 . Association pour les adultes et les jeunes handicapés : 1985 . Association culturelle et sportive d'Ensisheim : 1985 . Groupement des intellectuels aveugles ou Aublyopes : 1985 . Lecture en milieu carcéral : . Actions conjointes Ministère de la justice/Ministère de la culture en faveur du développement de la lecture dans les établissements pénitentiaires : projets des bibliothèques, subventions accordées et dossiers descriptifs des bibliothèques existents : 1986-1987 . Arrêtés de subvention aux associations de soutien au développement culturel dans le . milieu carcéral : 1987 . Application de la convention Justice/Culture pour le développement de la lecture : . bilan de la convention entre la Direction du livre et de la lecture et la Direction de l'administration pénitentiaire : 1986-1988</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</rico:endDate>
+            <rico:date xml:lang="fr">1985-1988</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_3_1"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_3_2">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">. Subventions allouées aux actions menées par les associations en faveur de la coopération des bibliothèques : statut des associations, convention DLL/Associations, arrêtés de subvention, compte- rendu du conseil d'administration, ordonnance de paiement : Dossiers classés par région. . Aquitaine : Association "coppération des bibliothèques en Aquitaine" : 1985-1990 . Alsace : Association de coopération régionale pour la documentation et l'information : 1987-1990 Archives nationales (France) 12 . Auvergne : COBRA (Coopération pour la lecture et la documentation entre les bibliothèques de la région Auvergne) : 1985-1990 . Centre : AGIR (Agence pour la gestion de l'information en réseau) : 1987-1990 - Bretagne : Agence de coopération régionale pour la documentation en Bretagne : 1985-1990 . Bourgogne : ABIDOC (Association régionale pour la coopération, les bibliothèques et les centres de documentation) : 1987-1990 . Champagnes Ardennes : INTERBIBLY : 1986-1990 . Franche-Comté : ACCOLAD (Association de coopération pour la lecture, l'audiovisuel et la documentation) : 1985-1990.</rico:title>
+      <rdfs:label xml:lang="fr">. Subventions allouées aux actions menées par les associations en faveur de la coopération des bibliothèques : statut des associations, convention DLL/Associations, arrêtés de subvention, compte- rendu du conseil d'administration, ordonnance de paiement : Dossiers classés par région. . Aquitaine : Association "coppération des bibliothèques en Aquitaine" : 1985-1990 . Alsace : Association de coopération régionale pour la documentation et l'information : 1987-1990 Archives nationales (France) 12 . Auvergne : COBRA (Coopération pour la lecture et la documentation entre les bibliothèques de la région Auvergne) : 1985-1990 . Centre : AGIR (Agence pour la gestion de l'information en réseau) : 1987-1990 - Bretagne : Agence de coopération régionale pour la documentation en Bretagne : 1985-1990 . Bourgogne : ABIDOC (Association régionale pour la coopération, les bibliothèques et les centres de documentation) : 1987-1990 . Champagnes Ardennes : INTERBIBLY : 1986-1990 . Franche-Comté : ACCOLAD (Association de coopération pour la lecture, l'audiovisuel et la documentation) : 1985-1990.</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1985-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_3_2-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_3_2"/>
+            <rico:identifier>19980195/8</rico:identifier>
+            <rico:title xml:lang="fr">. Subventions allouées aux actions menées par les associations en faveur de la coopération des bibliothèques : statut des associations, convention DLL/Associations, arrêtés de subvention, compte- rendu du conseil d'administration, ordonnance de paiement : Dossiers classés par région. . Aquitaine : Association "coppération des bibliothèques en Aquitaine" : 1985-1990 . Alsace : Association de coopération régionale pour la documentation et l'information : 1987-1990 Archives nationales (France) 12 . Auvergne : COBRA (Coopération pour la lecture et la documentation entre les bibliothèques de la région Auvergne) : 1985-1990 . Centre : AGIR (Agence pour la gestion de l'information en réseau) : 1987-1990 - Bretagne : Agence de coopération régionale pour la documentation en Bretagne : 1985-1990 . Bourgogne : ABIDOC (Association régionale pour la coopération, les bibliothèques et les centres de documentation) : 1987-1990 . Champagnes Ardennes : INTERBIBLY : 1986-1990 . Franche-Comté : ACCOLAD (Association de coopération pour la lecture, l'audiovisuel et la documentation) : 1985-1990.</rico:title>
+            <rdfs:label xml:lang="fr">. Subventions allouées aux actions menées par les associations en faveur de la coopération des bibliothèques : statut des associations, convention DLL/Associations, arrêtés de subvention, compte- rendu du conseil d'administration, ordonnance de paiement : Dossiers classés par région. . Aquitaine : Association "coppération des bibliothèques en Aquitaine" : 1985-1990 . Alsace : Association de coopération régionale pour la documentation et l'information : 1987-1990 Archives nationales (France) 12 . Auvergne : COBRA (Coopération pour la lecture et la documentation entre les bibliothèques de la région Auvergne) : 1985-1990 . Centre : AGIR (Agence pour la gestion de l'information en réseau) : 1987-1990 - Bretagne : Agence de coopération régionale pour la documentation en Bretagne : 1985-1990 . Bourgogne : ABIDOC (Association régionale pour la coopération, les bibliothèques et les centres de documentation) : 1987-1990 . Champagnes Ardennes : INTERBIBLY : 1986-1990 . Franche-Comté : ACCOLAD (Association de coopération pour la lecture, l'audiovisuel et la documentation) : 1985-1990.</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1985-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_3_2"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_3_3">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">. Pays de la Loire : ARCOB (Association régionale de coopération des bibliothèques des Pays de la Loire) : 1984-1987 . Basse Normandie : CORAIL (Coopération régionale pour l'action et l'information) : 1985-1990 . Haute Normandie : AHNCORD (Association Haute Normande pour la coopération régionale des bibliothèques et centre de documentation) : 1985-1990 . Picardie : PICASCO (Picardie association de service de coopération de bibliothèques) . Poitou-Charentes : ABCD (Association pour la coopération des bibliothèques et centre de documentation) : 1985-1989 . La Réunion : ARCIB (Association réunionnaise de coopération interbibliothèque) : 1986-1989 . Rhône-Alpes : ACORD (Agence de coopération régionale sur la documentation) : 1988-1990</rico:title>
+      <rdfs:label xml:lang="fr">. Pays de la Loire : ARCOB (Association régionale de coopération des bibliothèques des Pays de la Loire) : 1984-1987 . Basse Normandie : CORAIL (Coopération régionale pour l'action et l'information) : 1985-1990 . Haute Normandie : AHNCORD (Association Haute Normande pour la coopération régionale des bibliothèques et centre de documentation) : 1985-1990 . Picardie : PICASCO (Picardie association de service de coopération de bibliothèques) . Poitou-Charentes : ABCD (Association pour la coopération des bibliothèques et centre de documentation) : 1985-1989 . La Réunion : ARCIB (Association réunionnaise de coopération interbibliothèque) : 1986-1989 . Rhône-Alpes : ACORD (Agence de coopération régionale sur la documentation) : 1988-1990</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1985-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_3_3-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_3_3"/>
+            <rico:identifier>19980195/9</rico:identifier>
+            <rico:title xml:lang="fr">. Pays de la Loire : ARCOB (Association régionale de coopération des bibliothèques des Pays de la Loire) : 1984-1987 . Basse Normandie : CORAIL (Coopération régionale pour l'action et l'information) : 1985-1990 . Haute Normandie : AHNCORD (Association Haute Normande pour la coopération régionale des bibliothèques et centre de documentation) : 1985-1990 . Picardie : PICASCO (Picardie association de service de coopération de bibliothèques) . Poitou-Charentes : ABCD (Association pour la coopération des bibliothèques et centre de documentation) : 1985-1989 . La Réunion : ARCIB (Association réunionnaise de coopération interbibliothèque) : 1986-1989 . Rhône-Alpes : ACORD (Agence de coopération régionale sur la documentation) : 1988-1990</rico:title>
+            <rdfs:label xml:lang="fr">. Pays de la Loire : ARCOB (Association régionale de coopération des bibliothèques des Pays de la Loire) : 1984-1987 . Basse Normandie : CORAIL (Coopération régionale pour l'action et l'information) : 1985-1990 . Haute Normandie : AHNCORD (Association Haute Normande pour la coopération régionale des bibliothèques et centre de documentation) : 1985-1990 . Picardie : PICASCO (Picardie association de service de coopération de bibliothèques) . Poitou-Charentes : ABCD (Association pour la coopération des bibliothèques et centre de documentation) : 1985-1989 . La Réunion : ARCIB (Association réunionnaise de coopération interbibliothèque) : 1986-1989 . Rhône-Alpes : ACORD (Agence de coopération régionale sur la documentation) : 1988-1990</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1985-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_3_3"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/015882short-d_3_4">
+      <rico:includedIn rdf:resource="recordResource/015882short-top"/>
+      <rico:title xml:lang="fr">. Languedoc : CLLR (Association de coopération pour le livre en Laguedoc-Roussillon) : 1985-1990 . Limousin : ALCOL (Association limousine de coopération pour le livre) : 1987-1990 . Ile de France : AC2L (Agence de coopération pour le livre et la lecture) : 1988-1990 . Idem : 1985-1987 . Midi-Pyrenées : CRL (Centre régional des lettres) : 1987-1989 . Nord-Pas de Calais : ACCES (Agence régionale de services et de coopération de la lecture et de la documentation sonore et audiovisuelle) : 1987-1990 . Arrêtés de nomination en qualité de régisseur d'avances et de recettes auprès des BCP</rico:title>
+      <rdfs:label xml:lang="fr">. Languedoc : CLLR (Association de coopération pour le livre en Laguedoc-Roussillon) : 1985-1990 . Limousin : ALCOL (Association limousine de coopération pour le livre) : 1987-1990 . Ile de France : AC2L (Agence de coopération pour le livre et la lecture) : 1988-1990 . Idem : 1985-1987 . Midi-Pyrenées : CRL (Centre régional des lettres) : 1987-1989 . Nord-Pas de Calais : ACCES (Agence régionale de services et de coopération de la lecture et de la documentation sonore et audiovisuelle) : 1987-1990 . Arrêtés de nomination en qualité de régisseur d'avances et de recettes auprès des BCP</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+      <rico:date xml:lang="fr">1985-1990</rico:date>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/015882short-d_3_4-i1">
+            <rico:instantiates rdf:resource="recordResource/015882short-d_3_4"/>
+            <rico:identifier>19980195/10</rico:identifier>
+            <rico:title xml:lang="fr">. Languedoc : CLLR (Association de coopération pour le livre en Laguedoc-Roussillon) : 1985-1990 . Limousin : ALCOL (Association limousine de coopération pour le livre) : 1987-1990 . Ile de France : AC2L (Agence de coopération pour le livre et la lecture) : 1988-1990 . Idem : 1985-1987 . Midi-Pyrenées : CRL (Centre régional des lettres) : 1987-1989 . Nord-Pas de Calais : ACCES (Agence régionale de services et de coopération de la lecture et de la documentation sonore et audiovisuelle) : 1987-1990 . Arrêtés de nomination en qualité de régisseur d'avances et de recettes auprès des BCP</rico:title>
+            <rdfs:label xml:lang="fr">. Languedoc : CLLR (Association de coopération pour le livre en Laguedoc-Roussillon) : 1985-1990 . Limousin : ALCOL (Association limousine de coopération pour le livre) : 1987-1990 . Ile de France : AC2L (Agence de coopération pour le livre et la lecture) : 1988-1990 . Idem : 1985-1987 . Midi-Pyrenées : CRL (Centre régional des lettres) : 1987-1989 . Nord-Pas de Calais : ACCES (Agence régionale de services et de coopération de la lecture et de la documentation sonore et audiovisuelle) : 1987-1990 . Arrêtés de nomination en qualité de régisseur d'avances et de recettes auprès des BCP</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</rico:endDate>
+            <rico:date xml:lang="fr">1985-1990</rico:date>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_015882short/d_3_4"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>

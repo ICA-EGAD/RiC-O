@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051157">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051157"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 1er décembre 2015 : revu le nom. @protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Almanach impérial, Paris, chez A. Guyot et Scribe, 1853-1870</rico:source>
+      <rico:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051157">
+            <rico:instantiates rdf:resource="record/051157"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051157</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051157"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051157">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051157"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la maison de l'Empereur. Surintendance des Beaux-Arts (1863-1870)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051157-France.%20Minist%C3%A8re%20de%20la%20maison%20de%20l%27Empereur.%20Surintendance%20des%20Beaux-Arts%20%281863-1870%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la maison de l'Empereur. Surintendance des Beaux-Arts (1863-1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la maison de l'Empereur. Surintendance des Beaux-Arts (1863-1870)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051157"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051157-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051157"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051157-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Décret du 29 juin 1863 créant la surintendance des Beaux-Arts</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La surintendance des Beaux-Arts gère trois services : le bureau des Beaux-Arts, le bureau des Monuments historiques (qui retourne au sein des Beaux-Arts après une courte période d'autonomie), le bureau des souscriptions. Les Théâtres ne sont alors plus sous la tutelle des Beaux-Arts et forment une surintendance générale, nouvellement créée.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Une surintendance des Beaux-Arts est créée par décret impérial le 29 juin 1863. Elle est rattachée au ministère de la Maison de l'Empereur et confiée au directeur général des musées, le comte de Nieuwerkerke. Celui-ci conserve ce poste jusqu'en 1870 au moment où les Beaux-Arts quittent le ministère de la Maison de l'Empereur.</html:p>
+            <html:p>En effet, du 2 janvier au 23 août 1870, l’éphémère ministère des Lettres, Sciences et Beaux-Arts récupère notamment les Beaux-Arts. Suite à la suppression du ministère des Lettres, Sciences et Beaux-Arts, la direction des Beaux-Arts rejoint durablement le ministère de l’Instruction publique par décret le 5 septembre 1870.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051156-051157-18630101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051157-051124-18630101-18701231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051157-051158-18700101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051159-051157-18630101-18701231"/>
+   </rico:Agent>
+</rdf:RDF>

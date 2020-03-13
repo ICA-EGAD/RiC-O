@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051164">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051164"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu le nom et les liens</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-10</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 2017 : ajouté lien d'identité, revu liens d'association</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Almanach national, impérial ou royal</rico:source>
+      <rico:source xml:lang="fr">Auduc Arlette, Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940, Comité d'histoire du ministère de la Culture, 2008</rico:source>
+      <rico:source xml:lang="fr">Bercé Françoise, Les premiers travaux de la commission des monuments historiques, 1837-1848, Paris, Éd. A et J Picard, 1979</rico:source>
+      <rico:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</rico:source>
+      <rico:source xml:lang="fr">Hubert Henri, "La commission des monuments préhistoriques", L'Anthropologie, t.XXI, 1909, p.322</rico:source>
+      <rico:source xml:lang="fr">Hubert Henri, "La commission des monuments historiques-Les projets de loi sur les fouilles-La nouvelle loi sur les monuments historiques", L'Anthropologie, t.XXV, 1914, p.345-365</rico:source>
+      <rico:source xml:lang="fr">Listes des monuments historiques établies par la commission. Disponible sur le site de la Médithèque de l'Architecture et du Patrimoine à cette adresse : http://www.mediatheque-patrimoine.culture.gouv.fr/fr/documentation/index.html</rico:source>
+      <rico:source xml:lang="fr">Procès-verbaux de la Commission des Monuments historiques de 1848 à 1950, conservés à la Médiathèque de l'architecture et du patrimoine, édition électronique par Jean-Daniel Pariset. Disponible à cette adresse : http://elec.enc.sorbonne.fr/monumentshistoriques/</rico:source>
+      <rico:source xml:lang="fr">Prosper Mérimée (1803-1870). Disponible à l'adresse suivante : http://www.merimee.culture.fr/</rico:source>
+      <rico:source xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</rico:source>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF11876069</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121517779"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051164">
+            <rico:instantiates rdf:resource="record/051164"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051164</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051164"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051164">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051164"/>
+      <isni:identifierValid>0000000121517779</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Commission des monuments historiques (1837-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Commission%20des%20monuments%20historiques%20%281837-....%29">
+            <rdfs:label xml:lang="fr">France. Commission des monuments historiques (1837-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Commission des monuments historiques (1837-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20Beaux-Arts.%20Bureau%20des%20Beaux-Arts%2C%20des%20Mus%C3%A9es%20et%20des%20Monuments%20historiques.%20Commission%20permanente%20des%20monuments%20historiques%20%281848-1852%29-18480101-18521231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Beaux-Arts, des Musées et des Monuments historiques. Commission permanente des monuments historiques (1848-1852)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Beaux-Arts, des Musées et des Monuments historiques. Commission permanente des monuments historiques (1848-1852)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20Beaux-Arts.%20Bureau%20des%20Monuments%20historiques.%20Commission%20des%20monuments%20historiques%20%281839-1848%29-18390101-18481231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques. Commission des monuments historiques (1839-1848)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques. Commission des monuments historiques (1839-1848)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1839-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20d%E2%80%99%C3%89tat.%20Division%20des%20Beaux-Arts.%20Commission%20permanente%20des%20monuments%20historiques%20%281853-1863%29-18530101-18631231">
+            <rdfs:label xml:lang="fr">France. Ministère d’État. Division des Beaux-Arts. Commission permanente des monuments historiques (1853-1863)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère d’État. Division des Beaux-Arts. Commission permanente des monuments historiques (1853-1863)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1853-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Maison%20de%20l%27Empereur.%20Surintendance%20des%20Beaux-Arts.%20Commission%20des%20monuments%20historiques%20%281863-1870%29-18630101-18701231">
+            <rdfs:label xml:lang="fr">France. Maison de l'Empereur. Surintendance des Beaux-Arts. Commission des monuments historiques (1863-1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Maison de l'Empereur. Surintendance des Beaux-Arts. Commission des monuments historiques (1863-1870)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Commission%20des%20monuments%20historiques%20%281870-1950%29-18700101-19501231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Commission des monuments historiques (1870-1950)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Commission des monuments historiques (1870-1950)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Commission%20sup%C3%A9rieure%20des%20monuments%20historiques%20%281950-1959%29-19500101-19591231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Commission supérieure des monuments historiques (1950-1959)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Commission supérieure des monuments historiques (1950-1959)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Commission%20sup%C3%A9rieure%20des%20monuments%20historiques%20%281959-2007%29-19590101-20071231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Commission supérieure des monuments historiques (1959-2007)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Commission supérieure des monuments historiques (1959-2007)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Commission%20nationale%20des%20monuments%20historiques%20%282007-....%29-20070101-20151231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Commission nationale des monuments historiques (2007-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Commission nationale des monuments historiques (2007-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051164-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20monuments%20publics%20et%20historiques.%20Commission%20des%20monuments%20historiques%20%2829%20septembre%201837-1839%29-18370929-18391231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des monuments publics et historiques. Commission des monuments historiques (29 septembre 1837-1839)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des monuments publics et historiques. Commission des monuments historiques (29 septembre 1837-1839)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051164"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1837-09-29</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1839-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1837-01-01</rico:beginningDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051164-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051164"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051164-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051164-d3nyuhp1um--qolq4osvi6b5">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051164"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051164-d3nyuhp1um--qolq4osvi6b5"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>À sa création en 1837, la Commission des monuments historiques est composée essentiellement d'archéologues et d'historiens. Ils sont remplacés peu à peu par des architectes et des administrateurs (directeurs et conservateurs de musées) à partir des années 1860.</html:p>
+            <html:p>La Commission est composée d'un président, de vice-présidents, de membres et de secrétaires. À partir de 1895, les inspecteurs généraux des bâtiments civils deviennent des membres de droit ainsi que le directeur de l'enseignement supérieur au ministère de l'Instruction publique à partir de 1898.</html:p>
+            <html:p>Placée au sein du service des monuments historiques dans l'objectif de le seconder, la Commission des monuments historiques devient un service extérieur à partir de 1845 d'après les almanachs. Elle reste placée au sein de la division des Beaux-Arts jusqu'en 1870 où elle est un service extérieur du ministère de l'Instruction publique.</html:p>
+            <html:p/>
+            <html:p>Des sous-commissions rattachées à la Commission des monuments historiques voient le jour :</html:p>
+            <html:p>- La sous-commission des monuments mégalithiques, créée en 1879, est un organisme commun de la Commission et de la Société d'anthropologie. Elle est complémentaire de l'Inventaire général des richesses artistiques qui ne couvre que la période historique. Elle intègre la Commission des monuments historiques suite à la réorganisation de 1909 et devient la section des monuments préhistoriques.</html:p>
+            <html:p>- La sous-commission du musée de sculpture comparée est chargée de mettre en oeuvre le projet de Viollet-le-Duc dans l'aile Paris du Palais du Trocadéro (à partir de 1880).</html:p>
+            <html:p>- Le Comité consultatif des monuments historiques créé en 1902 - qui porta aussi le nom de Comité consultatif d'architecture ou Comité des inspecteurs généraux - réunit essentiellement les architectes en chef des Monuments historiques. Il examine l'aspect technique de la restauration, mais aussi l'opportunité de la protection. Il est à l'origine de la délégation permanente de la Commission (1950) ou des chambres ardentes (1967).</html:p>
+            <html:p>- La Commission des orgues est créée en 1933. Elle préfigure la section des orgues qui sera intégrée à la Commission des monuments historiques en 1968.</html:p>
+            <html:p>- Les sous-commissions ponctuelles créées pour suivre des sites particuliers (Versailles, Mont-Saint-Michel) ou des thématiques (vitrail entre 1896 et 1899).</html:p>
+            <html:p/>
+            <html:p>À partir de 1909, la Commission des monuments historiques est organisée en sections :</html:p>
+            <html:p>-1ère section : monuments historiques</html:p>
+            <html:p>-2ème section : monuments préhistoriques (anciennement sous-commission des monuments mégalithiques, alors indépendante de la Commission des monuments historiques)</html:p>
+            <html:p>-3ème section : antiquités et objets d'art (créée en 1891 en application de la loi du 30 mars 1887)</html:p>
+            <html:p>-4ème section : vestiges et souvenirs de guerre (créée en 1920 et supprimée quelques années plus tard)</html:p>
+            <html:p>Les sections sont composées de membres de droit et de membres nommés par le ministre (au maximum 20 membres pour la première section, 15 pour la deuxième, 10 pour la troisième, et 10 pour la quatrième).</html:p>
+            <html:p/>
+            <html:p>Une cinquième section voit le jour à partir du 13 avril 1933, celles des fouilles et antiquités classiques, dont le nombre des membres nommés par le ministre est limité à 10. Elle vient préfigurer l'organisation du service dédié à l'archéologie établie par la loi du 27 septembre 1941.</html:p>
+            <html:p>Une section "collections scientifiques" voit le jour en 1947 et disparaît quelques années plus tard.</html:p>
+            <html:p>Dans les années 1960, la section des monuments préhistoriques est supprimée et une section dédiée aux abors des monuments classés est créée (en 1963). En 1968 c'est au tour d'une section sur les orgues et instruments de musique, héritière de la Commission des orgues créée en 1933, de voir le jour.</html:p>
+            <html:p>La réforme de 1985 introduit une section consacrée au patrimoine mobilier industriel scientifique et technique et supprime des correspondants de la Commission supérieure des monuments historiques (les inspecteurs génréaux ne font désormais plus partie de la Commission).</html:p>
+            <html:p/>
+            <html:p>La loi du 25 avril 2007, codifiée en 2011, réorganise la Commission des monuments historiques en six sections par activité :</html:p>
+            <html:p>-1ère section : classement des immeubles ;</html:p>
+            <html:p>-2ème section : travaux sur les immeubles classés ou inscrits ;</html:p>
+            <html:p>-3ème section : périmètres de protection des immeubles classés ou inscrits et travaux sur les immeubles situés dans ces périmètres ;</html:p>
+            <html:p>-4ème section : classement des objets mobiliers et travaux sur les objets mobiliers classés ;</html:p>
+            <html:p>-5ème section : classement et inscription des orgues, buffets d'orgue et instruments de musique et travaux s'y rapportant ;</html:p>
+            <html:p>-6ème section : classement des grottes ornées et travaux sur les grottes ornées classées.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La Commission des monuments historiques puise ses origines dans une première "commission des monuments" qui se réunit le 8 novembre 1790 : composée de 10 sections, elle regroupe des savants qui donnent leur avis sur la vente ou le recueil des livres, monuments, chartes, et autres objets scientifiques.</html:p>
+            <html:p>Le 29 septembre 1837, Jean Vatout, président du Conseil des bâtiments civils, remet un rapport à Montalivet, ministre de l'Intérieur, dans lequel il propose "de nommer une commission pour l'examen des travaux à faire aux monuments historiques". La Commission des monuments historiques nouvellement créée est placée le 7 octobre 1837 au sein de la direction des monuments publics du ministère de l'Intérieur et Vatout en devient son premier président : elle est chargée d'assister l'Inspecteur général des Monuments historiques et le bureau des Monuments historiques. À sa création, la mission de la Commission est de répartir les subventions au profit des édifices protégés. La circulaire du 9 février 1841 détaille ses activités : la Commission examine les demandes de subventions, liste les édifices, donne son avis, et peut proposer l'achat d'un édifice. Les interventions sont effectuées par des architectes et un réseau de correspondants issus de sociétés savantes.</html:p>
+            <html:p>La Commission se réunit pour la première fois en mars 1838 et une première liste de monuments classés est publiée en 1840.</html:p>
+            <html:p/>
+            <html:p>La Commission des monuments historiques est composée de membres de droit et de membres nommés. Elle prend peu à peu de l'importance et s'agrandit au cours du XIXème siècle. Des sections et sous-commissions sont ponctuellement créées et rattachées à la Commission. La sous-commission des monuments mégalithiques voit le jour en 1879 suite à un arrêté de Jules Ferry. L'arrêté du 9 janvier 1909 la place au sein de la Commission des monuments historiques où elle devient la section des monuments préhistoriques.</html:p>
+            <html:p/>
+            <html:p>La première moitié du XXème siècle est marquée par de nombreuses réformes pour les monuments historiques. Suite à la loi du 9 décembre 1905 relative à la séparation des Églises et de l’État, le service des monuments historiques est réorganisé entre 1906 et 1914. La Commission des monuments historiques se trouve elle aussi réformée par le décret du 17 mai 1909 qui établit trois sections : les monuments historiques (20 membres), les monuments préhistoriques (15 membres), les antiquités et objets d'art (10 membres).</html:p>
+            <html:p>La Commission s'enrichit de nouvelles sections tout au long du siècle, dont certaines n'ont qu'une existence temporaire : vestiges et souvenirs de guerre (1920), fouilles et antiquités classiques (1933), abords des immeubles classés (à partir de 1963), instruments de musique et orgues historiques (à partir de 1968), patrimoine mobilier industriel scientifique et technique (1985).</html:p>
+            <html:p/>
+            <html:p>En 1950, la Commission devient la Commission supérieure des monuments historiques, puis en 2007 elle prend le titre de Commission nationale des monuments historiques. Organisée en six sections depuis 2007, elle est chargée d’émettre un avis sur les propositions de classement, d’inscription parmi les monuments historiques, sur les modifications des périmètres des monuments classés mais également sur les travaux de conservation, de protection et de mise en valeur des monuments historiques et de leurs abords.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051164-19590108-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051161-051164-18530101-18621231"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051164-18700101-19581231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051121-051164-18480101-18521231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051120-051164-18390101-18481231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051123-051164-18580101-18631231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051122-051164-18530101-18581231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051124-051164-18630101-18701231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051125-051164-18700101-19071231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050348-051164-18871209-19810218"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051126-051164-19070101-19391231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051149-051164-19400101-19441231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051150-051164-19450818-19590108"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051151-051164-19590108-20091231"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050095-051164-18610101-18691231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050348-051164-18870101-19681231"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050753-051164-19100101-19141231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051153-051164-20090101-*"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051234-051164-18370101-18481231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11876069j#about"/>
+   </rico:Agent>
+</rdf:RDF>

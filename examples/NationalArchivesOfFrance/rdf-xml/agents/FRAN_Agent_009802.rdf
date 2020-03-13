@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/009802">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/009802"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 19 avril 2017 : version recréée à partir des infos fournies par M. Zelverte ; revu liens NP</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Site du ministère de la Culture et de la Communication (http://www.culturecommunication.gouv.fr/Politiques-ministerielles/Livre-et-Lecture/Service-du-Livre-et-de-la-Lecture/Le-Departement-des-Ressources-et-de-l-Action-territoriale)</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009802">
+            <rico:instantiates rdf:resource="record/009802"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_009802</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009802"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/009802">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/009802"/>
+      <rdfs:label xml:lang="fr">France. Direction générale des Médias et des Industries culturelles. Service du Livre et de la Lecture. Département des ressources et de l'action territoriale (2012-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/009802-France.%20Direction%20g%C3%A9n%C3%A9rale%20des%20M%C3%A9dias%20et%20des%20Industries%20culturelles.%20Service%20du%20Livre%20et%20de%20la%20Lecture.%20D%C3%A9partement%20des%20ressources%20et%20de%20l%27action%20territoriale%20%282012-....%29">
+            <rdfs:label xml:lang="fr">France. Direction générale des Médias et des Industries culturelles. Service du Livre et de la Lecture. Département des ressources et de l'action territoriale (2012-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction générale des Médias et des Industries culturelles. Service du Livre et de la Lecture. Département des ressources et de l'action territoriale (2012-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/009802"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-03-01</rico:beginningDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009802-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009802-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009802-d5bhvii5wk-c5ead6thqj5l">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009802-d5bhvii5wk-c5ead6thqj5l"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvii5wk-c5ead6thqj5l"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009802-d5bhvijq5z-zaaj99p5tmch">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009802-d5bhvijq5z-zaaj99p5tmch"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009802-d5bhvijcl3--1u6l4sy8b51az">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009802-d5bhvijcl3--1u6l4sy8b51az"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009802-d3nyuilwmi-zu0efiq3ap4v">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009802-d3nyuilwmi-zu0efiq3ap4v"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuilwmi-zu0efiq3ap4v"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfMandateRelation>
+         <rico:MandateRelation>
+            <rico:mandateRelationHasTarget rdf:resource="agent/009802"/>
+            <rico:mandateRelationHasSource>
+               <rico:Mandate>
+                  <rico:title>
+                  Arrêté du 19 janvier 2012 modifiant l'arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des médias et des industries culturelles (art. 1) (https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte)
+               </rico:title>
+                  <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte"/>
+               </rico:Mandate>
+            </rico:mandateRelationHasSource>
+         </rico:MandateRelation>
+      </rico:agentIsTargetOfMandateRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Conformément à l'article 1 de l'arrêté du 19 janvier 2012, le département des ressources et de l'action territoriale comprend deux bureaux :</html:p>
+            <html:ul>
+               <html:li>le bureau de la filière des professionnels des bibliothèques ;</html:li>
+               <html:li>le bureau des moyens et des territoires.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique</html:u>:</html:p>
+            <html:p>Le département des ressources et de l'action territoriale est créé au sein du service du Livre et de la Lecture par l'article 1 de l'arrêté du 19 janvier 2012 (publié au Journal Officiel le 29 février) qui modifie l'arrêté du 17 novembre 2009 et réorganise la direction générale des Médias et des Industries culturelles (DGMIC). Il reprend une partie des missions du département de la tutelle et du réseau.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions</html:u>:</html:p>
+            <html:p>Le département des ressources et de l'action territoriale assure les missions et activités principales suivantes :</html:p>
+            <html:ul>
+               <html:li>Budget du programme « livre et industries culturelles » : impulsion et coordination de l'élaboration du budget du service et suivi de son exécution, appui aux départements en matière de dépenses (fonctionnement, interventions, investissement), contrôle de gestion ;</html:li>
+               <html:li>Tutelle (administrative et financière) : suivi de trois établissements publics, la BnF, la Bpi et le CNL (budget, préparation des conseils d'administration, contrats de performance...) ;</html:li>
+               <html:li>Gestion des personnels de la filière des bibliothèques : en lien avec le ministère de l'Enseignement supérieur, gestion des personnels de la filière des bibliothèques affectés au ministère de la Culture et de la Communication (environ 400 agents) ; prise des arrêtés relatifs aux actes de gestion déconcentrés ; préparation des CAP des corps de la filière (mutations, évaluations, promotions...) ; négociation et suivi des conventions de mise à disposition des conservateurs auprès des collectivités territoriales ayant une bibliothèque municipale classée ; suivi des plafonds d'emploi ;</html:li>
+               <html:li>Action territoriale : coordination de l'action des conseillers sectoriels pour le livre et la lecture et animation de leur réseau ; participation à l'animation du réseau des DRAC en lien avec le secrétariat général du ministère de la Culture et de la Communication (Département de l'action territoriale) ; répartition, allocation et suivi des crédits déconcentrés DRAC.</html:li>
+               <html:li>Coordination au sein du Service du Livre et de la Lecture des chantiers liés à la modernisation de l'État.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009802-051355-20120301-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009802-009807-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-009802-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005422-009802-20120301-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009802-009808-20120301-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005628-009802-20120301-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005632-009802-20120301-*"/>
+   </rico:Agent>
+</rdf:RDF>

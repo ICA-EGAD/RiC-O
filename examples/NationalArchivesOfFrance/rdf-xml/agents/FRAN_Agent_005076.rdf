@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005076">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005076"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-10</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 mars 2017 : revu liens d'association</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 19 avril 2017 : recréé liens hiérarchiques, revu liens d'association</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005076">
+            <rico:instantiates rdf:resource="record/005076"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005076</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005076"/>
+            <rico:identifier>5103/AG</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005076">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005076"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des affaires générales (1976-2010)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20des%20affaires%20g%C3%A9n%C3%A9rales%20%281976-2010%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des affaires générales (1976-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des affaires générales (1976-2010)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-Bureau%20des%20affaires%20administratives%20et%20financi%C3%A8res-19760101-19791231">
+            <rdfs:label xml:lang="fr">Bureau des affaires administratives et financières</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau des affaires administratives et financières</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-DL%201-19760101-19791231">
+            <rdfs:label xml:lang="fr">DL 1</rdfs:label>
+            <rico:textualValue xml:lang="fr">DL 1</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-L%201-19800101-19851231">
+            <rdfs:label xml:lang="fr">L 1</rdfs:label>
+            <rico:textualValue xml:lang="fr">L 1</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-Bureau%20du%20personnel%20et%20des%20affaires%20financi%C3%A8res-19800101-19870520">
+            <rdfs:label xml:lang="fr">Bureau du personnel et des affaires financières</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau du personnel et des affaires financières</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-20</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005076-Bureau%20des%20affaires%20g%C3%A9n%C3%A9rales-19870521-20100112">
+            <rdfs:label xml:lang="fr">Bureau des affaires générales</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau des affaires générales</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005076"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-21</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d699mt04l2e-11irz3oq76rim">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d699mt04l2e-11irz3oq76rim"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d699mt04l2e-11irz3oq76rim"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d3nyugzvf8-1nwn3i74v5spq">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d3nyugzvf8-1nwn3i74v5spq"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugzvf8-1nwn3i74v5spq"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d3nyuhebkg-a4o80yedjeb">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d3nyuhebkg-a4o80yedjeb"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhebkg-a4o80yedjeb"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d5bhvii5wk-c5ead6thqj5l">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d5bhvii5wk-c5ead6thqj5l"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvii5wk-c5ead6thqj5l"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d5bhvijq5z-zaaj99p5tmch">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d5bhvijq5z-zaaj99p5tmch"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d5bhvijcl3--1u6l4sy8b51az">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d5bhvijcl3--1u6l4sy8b51az"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d3nyuich4a--1xmt90d5s8n8k">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d3nyuich4a--1xmt90d5s8n8k"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuich4a--1xmt90d5s8n8k"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d3nyuhrig1--3acyzmp9v988-20000101-20100112">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d3nyuhrig1--3acyzmp9v988-20000101-20100112"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005076-d3nyugtbte--13rem7tfg1o1y-19760101-19831231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005076"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005076-d3nyugtbte--13rem7tfg1o1y-19760101-19831231"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Un bureau des affaires administratives et financières apparaît suite au décret du 23 décembre 1975, qui crée à compter du 1er janvier 1976 la direction du Livre (DL). Il fait partie d'une division des affaires générales.</html:p>
+            <html:p>Vers 1980, il change de nom et devient le bureau du personnel et des affaires financières, sans que ses prérogatives évoluent. Avec l'arrêté du 16 février 1987, il prend le nom de bureau des affaires générales.</html:p>
+            <html:p>Il disparaît suite au décret du 11 novembre 2009 (entré en vigueur le 13 janvier 2010) qui redéfinit l'organisation du ministère en réduisant le nombre des directions à trois.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Le bureau des affaires générales gère les moyens humains, financiers et matériels de la direction du livre et de la lecture et contribue au suivi des questions relatives aux personnels des bibliothèques. Il a en charge les questions suivantes :</html:p>
+            <html:ul>
+               <html:li>Affaires financières : préparation et exécution du budget, engagement, ordonnancement et délégation des crédits (rémunération, fonctionnement, équipement, recherche), fonds de concours, missions et déplacements, frais de tournées, affaires financières d'ordre général, contrôle de gestion ;</html:li>
+               <html:li>Personnel : gestion des personnels techniques et spécifiques de bibliothèques (en liaison avec le service des bibliothèques du ministère des Universités, puis la direction des bibliothèques, des musées et de l'information scientifique et technique du ministère de l'Éducation nationale à partir de 1982), suivi des personnels administratifs des services extérieurs et établissements publics sous tutelle (en liaison avec la direction de l'administration générale), recrutements, carrières, secrétariat du comité technique paritaire, suivi des problèmes statutaires, hygiène et sécurité, affaires sociales, gestion prévisionnelle des effectifs, des emplois et des carrières (2007-2010) ;</html:li>
+               <html:li>Documentation administrative (jusqu'en 1986), Centre de documentation à partir de 2008 ;</html:li>
+               <html:li>Contentieux (jusqu'en 1983) ;</html:li>
+               <html:li>Organisation et méthodes (jusqu'en 1983) ;</html:li>
+               <html:li>Distinctions honorifiques (1982-1983).</html:li>
+               <html:li>À partir de 1995 (disparition du bureau de la tutelle et des projets nationaux suite à l'arrêté du 9 mai 1995), suivi administratif et financier des établissements publics placés sous la tutelle de la direction du livre et de la lecture (BnF, CNL, BPI) ;</html:li>
+               <html:li>Formation : suivi de la formation des personnels de bibliothèques, plan de formation de la direction du livre et de la lecture (à partir de 2000).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003530-005076-19760101-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003531-005076-19760101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005076-19760101-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005076-19810606-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005076-005422-19760129-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005076-051355-19940101-20100112"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005099-005076-19870521-20100112"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013530-005076"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/013530-top"/>
+   </rico:Agent>
+</rdf:RDF>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives.strath.ac.uk/">
+   <rico:Record rdf:about="record/P0113">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/wyllie-george-b-1921-artist-and-sculptor"/>
+      <rico:createdBy rdf:resource="agent/GB-249"/>
+      <rico:managedBy rdf:resource="agent/GB-249"/>
+      <rico:ruleFollowed xml:lang="en">ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003)</rico:ruleFollowed>
+      <rico:ruleFollowed xml:lang="en">Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</rico:ruleFollowed>
+      <rico:hasLanguage rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="en">Correcting (by Florence Clavaud (ICA/EGAD member | Archives nationales de France)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:date>
+            <rico:descriptiveNote xml:lang="en">some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/P0113-i1">
+            <rico:instantiates rdf:resource="record/P0113"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>P0113</rico:identifier>
+            <rico:heldBy rdf:resource="agent/GB-249"/>
+            <rdfs:seeAlso rdf:resource="https://atom.lib.strath.ac.uk/wyllie-george-b-1921-artist-and-sculptor"/>
+            <rico:ruleFollowed xml:lang="en">Encoded Archival Context for Corporate Bodies, Persons, Families, 2nd Edition, 2003</rico:ruleFollowed>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/wyllie-george-b-1921-artist-and-sculptor">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="record/P0113"/>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/wyllie-george-b-1921-artist-and-sculptor-Wyllie%2C%20George%20Ralston%2C%201921-2012%2C%20artist%20and%20sculptor">
+            <rdfs:label xml:lang="en">Wyllie, George Ralston, 1921-2012, artist and sculptor</rdfs:label>
+            <rico:textualValue xml:lang="en">Wyllie, George Ralston, 1921-2012, artist and sculptor</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/wyllie-george-b-1921-artist-and-sculptor"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1921</rico:birthDate>
+      <rico:deathDate  rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</rico:deathDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="en">
+            <html:p>George Wyllie was born in Glasgow in 1921. Initially a sailor and then a customs officer, he rapidly acquired a national and international reputation as an artist and sculptor, working in regenerative, performance and public art. The underlying principle of his work was that art can change ideas and is an essential force in society. There was always a question at the heart of his work. He called his art Scul?ture.</html:p>
+            <html:p>Wyllie exhibited widely in the United Kingdom, Europe, India and the United States. His best known works are ‘The Straw Locomotive,’ ‘The Paper Boat,’ ‘A Day Down a Goldmine’, ‘Equilibrium of Spires’ and ‘The Cosmic Voyage.’ He also worked in theatre, writing, installations and film. He lived and worked in Gourock, Scotland.</html:p>
+            <html:p>Wyllie had a long association with the University of Strathclyde, staging his first ever solo exhibition in the University’s Collins Gallery in 1976. In April 1990, the University awarded him the honorary degree of Doctor of Letters.</html:p>
+            <html:p>In 2005, he was awarded an MBE for service to the Arts. He died in 2012.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:isSubjectOf rdf:resource="recordResource/oral-history-interviews-with-george-wyllie"/>
+     
+   
+      <rico:isProvenanceOf rdf:resource="recordResource/george-wyllie-papers"/>
+     
+      <rico:isProvenanceOf rdf:resource="recordResource/oral-history-interviews-with-george-wyllie"/>
+   </rico:Agent>
+</rdf:RDF>

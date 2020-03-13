@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051284">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051284"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl002"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 26 mai 2016 et 3 juin 2016 : ajouté plusieurs activités, revu n° notice BnF, ajouté lien vers notice 237</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-10</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-10</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 mars 2017 : ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb119163966</rico:source>
+      <rico:source xml:lang="fr">Site Internet de l'Académie française (http://www.academie-francaise.fr/les-immortels/pierre-moinot)</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Pierre_Moinot)</rico:source>
+      <rico:source xml:lang="fr">"Pierre Moinot, haut fonctionnaire et écrivain", par Philippe-Jean Catinchi, 9 mars 2007, Le Monde.</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000114505323"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Pierre_Moinot"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051284">
+            <rico:instantiates rdf:resource="record/051284"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051284</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051284"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051284">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="record/051284"/>
+      <isni:identifierValid>0000000114505323</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Moinot, Pierre (1920-2007)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051284-Moinot%2C%20Pierre%20%281920-2007%29">
+            <rdfs:label xml:lang="fr">Moinot, Pierre (1920-2007)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Moinot, Pierre (1920-2007)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051284"/>
+            <rico:regulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-03-29</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-03-06</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d699msizce3-1fkn61hd3lpjw">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d699msizce3-1fkn61hd3lpjw"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d699msj1bp7--sqw9bp2dwte7">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d699msj1bp7--sqw9bp2dwte7"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj1bp7--sqw9bp2dwte7"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d699msj53l0-1180obzunmkm7">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d699msj53l0-1180obzunmkm7"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d699msj3i51--hevk1gms21cg">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d699msj3i51--hevk1gms21cg"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d-1009896yv--378hf9s9l062-19660101-19691231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d-1009896yv--378hf9s9l062-19660101-19691231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-31</rico:endDate>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">directeur des arts et lettres</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d699msixdvh--wgctct8soc1y-19590101-19621231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d699msixdvh--wgctct8soc1y-19590101-19621231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-12-31</rico:endDate>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">membre du cabinet d'André Malraux, ministre des affaires culturelles</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051284-d-2dlouru40-16uts12xdm4zl-19420101-19451231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051284"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051284-d-2dlouru40-16uts12xdm4zl-19420101-19451231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Pierre Moinot naît le 29 mars 1920 en Poitou, dans une famille d’enseignants. Il réalise ses études secondaires à Niort, Ajaccio et Périgueux, et obtient le premier prix de français au Concours général. Il entre en khâgne à Henri IV, puis à Caen en 1940. Mobilisé puis prisonnier, il parvient à s'évader. Il achève en 1942 à l’Institut de phonétique de Grenoble un diplôme d’études supérieures sur les parlers poitevins. Il participe à la constitution d’un réseau de résistance, puis gagne le Maroc, prend part à la campagne d’Italie, débarque en Provence, est blessé sur les Vosges et termine la guerre à Sigmaringen. Il reçoit la légion d’honneur à titre militaire.</html:p>
+            <html:p>Il est reçu en 1946 comme auditeur à la Cour des comptes, qu’il quitte comme procureur général en 1986.</html:p>
+            <html:p>Pierre Moinot est parallèlement romancier et auteur dramantique. Albert Camus fait publier, en 1948, ses premières nouvelles. Il reçoit le prix international du roman de langue française Charles Veillon pour son premier roman (1952), puis le prix Sainte-Beuve (1953), le prix du roman de l’Académie française (1954), le prix des libraires de France (1964), le prix de télévision Albert Ollivier (1979), le prix Femina (1979), le prix du Rotary international (2000), le grand prix Jean Giono (2004). Il fait également du journalisme et du grand reportage (notamment la descente du Niger, en 1956, avec Jules Roy), collabore aux films du cinéaste animalier François Bel sur les animaux d’Afrique, et écrit plusieurs scénarios ou adaptations pour la télévision.</html:p>
+            <html:p>Conseiller au cabinet d’André Malraux en 1959, il accompagne ce dernier dans plusieurs missions en Amérique latine. Il met en place la réglementation d’aide au cinéma, puis organise la direction des théâtres et de l’action culturelle, prépare le premier plan d’équipement culturel, crée la première maison de la culture, et devant la faiblesse du budget culturel, choisit de revenir à la Cour des comptes. Rappelé par André Malraux en 1966 et nommé directeur général des Arts et des Lettres, il est chargé d’une réforme qui l’amènera à proposer la suppression de son poste et à démissionner de ce fait en 1969.</html:p>
+            <html:p>Pierre Moinot est également représentant de l’État au conseil d’administration de l’Union générale cinématographique (jusqu’en 1970), membre puis président de la Commission d’avances sur recettes au cinéma (jusqu’en 1972). Sur le plan international, il est membre de la délégation française à diverses conférences générales et internationales de l’UNESCO, expert de l’UNESCO en Iran et au Brésil, président du Comité des activités culturelles de la commission française (jusqu’en 1974). Il fait partie de la Commission de réforme du statut de l’ORTF (1969), puis devient administrateur de l’ORTF, charge dont il démissionne en 1972 avant l’éclatement de l’Office. Il est membre du comité exécutif de la section française d’Amnesty international (jusqu’en 1977). En 1981, il devient président de la Commission d’orientation et de réflexion sur l’audiovisuel. Il est également membre du Conseil de l’ordre de la Légion d’honneur (1989) et président du Conseil de l’ordre des Arts et des Lettres (jusqu’en 1995).</html:p>
+            <html:p>Il est élu à l’Académie française, le 21 janvier 1982, au fauteuil de René Clair (19e fauteuil). Il est membre du comité d'histoire du ministère de la Culture et de la Communication.</html:p>
+            <html:p>Il meurt le 6 mars 2007 à Paris.</html:p>
+         </html:div>
+      </rico:history>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb119163966#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Pierre_Moinot"/>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/051284-005205-19660101-19691231"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054955-051284"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054955-top"/>
+   </rico:Agent>
+</rdf:RDF>

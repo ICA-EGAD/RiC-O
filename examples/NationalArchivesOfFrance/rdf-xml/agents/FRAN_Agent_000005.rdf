@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/000005">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/000005"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 avril 2017 : création d'une nouvelle version avec les infos réunies par M. Zelverte ; supprimé lien IR ; ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Dardy-Cretin (Michèle), Histoire administrative du ministère de la culture et de la communication (1959-2012). Paris: Collection du Comité d'histoire du ministère de la culture et de la communication, 2012.</rico:source>
+      <rico:source xml:lang="fr">Site Internet du ministère de la Culture et de la Communication.</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF11868511</rico:source>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_%28France%29"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/000005">
+            <rico:instantiates rdf:resource="record/000005"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_000005</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000005"/>
+            <rico:identifier>51</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/000005">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/000005"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication (1959-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication%20%281959-....%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication (1959-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication (1959-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture-19950518-19970602">
+            <rdfs:label xml:lang="fr">Ministère de la Culture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-02</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication-19910516-19920402">
+            <rdfs:label xml:lang="fr">Ministère de la Culture et de la Communication</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture et de la Communication</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-05-16</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-04-02</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%2C%20de%20la%20Communication%2C%20des%20Grands%20Travaux%20et%20du%20Bicentenaire-19880628-19910515">
+            <rdfs:label xml:lang="fr">Ministère de la Culture, de la Communication, des Grands Travaux et du Bicentenaire</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture, de la Communication, des Grands Travaux et du Bicentenaire</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-06-28</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-05-15</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication-19860320-19880622">
+            <rdfs:label xml:lang="fr">Ministère de la Culture et de la Communication</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture et de la Communication</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-03-20</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-06-22</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture-19810522-19860320">
+            <rdfs:label xml:lang="fr">Ministère de la Culture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-05-22</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-03-20</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication-19780405-19810513">
+            <rdfs:label xml:lang="fr">Ministère de la Culture et de la Communication</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture et de la Communication</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-04-05</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-05-13</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%20et%20de%20l%27Environnement-19770330-19780331">
+            <rdfs:label xml:lang="fr">Ministère de la Culture et de l'Environnement</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture et de l'Environnement</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-30</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-03-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Secr%C3%A9tariat%20d%27%C3%89tat%20%C3%A0%20la%20Culture-19740608-19770329">
+            <rdfs:label xml:lang="fr">Secrétariat d'État à la Culture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Secrétariat d'État à la Culture</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-29</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20des%20Affaires%20culturelles-19590108-19740228">
+            <rdfs:label xml:lang="fr">Ministère des Affaires culturelles</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère des Affaires culturelles</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-02-28</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20des%20Affaires%20culturelles%20et%20de%20l%27Environnement-19740301-19740531">
+            <rdfs:label xml:lang="fr">Ministère des Affaires culturelles et de l'Environnement</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère des Affaires culturelles et de l'Environnement</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-03-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-05-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/000005-Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Francophonie-19930330-19950511">
+            <rdfs:label xml:lang="fr">Ministère de la Culture et de la Francophonie</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Culture et de la Francophonie</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/000005"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-30</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-11</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:beginningDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d3nyug261d--1cyxwnocz7hzo">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d3nyug261d--1cyxwnocz7hzo"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d3nyug92d2--81fv3kv7ow8s">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d3nyug92d2--81fv3kv7ow8s"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug92d2--81fv3kv7ow8s"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d3nyugp6nd-1m2amxlhij5ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d3nyugp6nd-1m2amxlhij5ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d3nyugz67a--1w8i06e8b1ck1">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d3nyugz67a--1w8i06e8b1ck1"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugz67a--1w8i06e8b1ck1"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000005-d3nyui03cb-w7bln4jba4fn">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000005"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000005-d3nyui03cb-w7bln4jba4fn"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui03cb-w7bln4jba4fn"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>En 1959, le ministère est composé de la direction de l’Architecture, de la direction des Archives de France, de la direction générale des Arts et Lettres (qui regroupe la direction des Musées de France, la sous-direction des Spectacles et de la Musique, le service des Lettres et le service de l’Enseignement et de la Production artistique) et du CNC. Jacques Jaujard, ancien directeur général des Arts et Lettres au ministère de l’Éducation nationale, est nommé Secrétaire Général, avec une mission de coordination des services ; ce poste disparaît avec son départ en 1967. Un service d’Administration générale est également créé en 1959, qui devient direction de l’Administration générale (DAG) en 1961.</html:p>
+            <html:p>Progressivement, certains secteurs rattachés à la DGAL se voient conférer leur autonomie, comme le bureau des Fouilles et Antiquités en 1964 (année de la création de la Commission nationale chargée de l’Inventaire général des monuments et richesses artistiques de la France, également autonome). En 1969, la DGAL est supprimée et les directions et services qui la composaient deviennent indépendants. En 1970, le service de la Musique, de l’Art lyrique et de la Danse devient une direction autonome (DMALD).</html:p>
+            <html:p>L’Inspection générale de l’administration des affaires culturelles (IGAAC) est dotée d’un statut en 1973.</html:p>
+            <html:p>En 1975 est créée la direction du Livre (DL) grâce à l’absorption de secteurs qui dépendaient des ministères des Affaires étrangères (exportation du livre), de l’Industrie (régulation du marché du livre) et de l’Éducation nationale (tutelle des bibliothèques publiques).</html:p>
+            <html:p>Le rattachement de l’architecture au ministère de l'Environnement en 1978 est l’occasion de créer une direction du Patrimoine (DP), qui rassemble des services jusqu’alors dispersés (notamment le service des fouilles et antiquités). Lorsqu’en 1995 l’architecture revient au sein du ministère, le décret du 22 mars 1996 crée une direction de l’Architecture (DA) indépendante de la direction du Patrimoine.</html:p>
+            <html:p>Le 21 septembre 1998, deux nouvelles directions naissent à la suite de fusions : la direction de l’Architecture et du Patrimoine (DAPA) et la direction de la Musique, de la Danse, du Théâtre et des Spectacles (DMDTS).</html:p>
+            <html:p>Le 26 juillet 2001 intervient une restructuration importante de la Délégation aux arts plastiques.</html:p>
+            <html:p>Un décret du 24 novembre 2006 crée un Secrétariat Général au sein du ministère.</html:p>
+            <html:p>Dans le cadre de la Réforme générale des politiques publiques, le décret du 11 novembre 2009 redéfinit l’organisation du ministère en réduisant le nombre des directions à trois : la direction générale des Patrimoines (DGP), en charge de l’architecture, des archives, des musées et du patrimoine monumental et archéologique ; la direction générale de la Création artistique (DGCA), en charge des arts plastiques et du spectacle vivant ; la direction générale des Médias et Industries culturelles (DGMIC) en charge des industries de programmes, des industries phonographique et musicale, du livre et de la lecture, des médias.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>En 1959, le général de Gaulle décide de créer un ministère d’État chargé des Affaires culturelles, qu’il confie à André Malraux le 22 juillet 1959. L’administration des Beaux-Arts est ainsi détachée du ministère de l’Éducation nationale, et prend une appellation moins académique. À ce ministère sont transférées les attributions de la direction générale des Arts et Lettres (DGAL), de la direction de l’Architecture et de la direction des Archives de France qui quittent alors l’Éducation nationale, ainsi que les activités culturelles auparavant placées sous la tutelle du Commissariat à la Jeunesse et aux Sports et le Centre national de la Cinématographie (CNC), qui relevait du ministère de l’Industrie et du Commerce. Un décret du 24 juillet 1959 officialise cette organisation du ministère qui compte, en outre, un bureau du cabinet et un service d’administration générale.</html:p>
+            <html:p>En 1969, la disparition de la DGAL, qui regroupait la direction des Musées de France, la sous-direction des Spectacles et de la Musique, le service des Lettres et le service de l’Enseignement et de la Production artistique se traduit par l’indépendance de ces secteurs. Les compétences relatives à l’attribution des visas d’exploitation et d’exportation des films, jusqu’alors confiées au ministre de l’Information, sont transférées au ministère des Affaires culturelles.</html:p>
+            <html:p>Le ministère change ensuite à plusieurs reprises de nom et d’attributions. À partir du 8 juin 1974, date de la création d’un Secrétariat d’État à la Culture, l’appellation « affaires culturelles » disparaît définitivement. Le 25 avril 1977, le nouveau ministre de la Culture, Michel d’Ornano, voit ses attributions élargies à l’Environnement et au Tourisme. En 1978, avec la nomination de Jean-Philippe Lecat, le ministère se voit attribuer la Communication. L’architecture en revanche relève du ministère de l’Équipement entre 1978 et 1995.</html:p>
+            <html:p>Les années 1980 sont marquées par l’extension de la notion de culture aux pratiques des amateurs et à de nouveaux secteurs comme le livre, l’audiovisuel, le domaine des nouvelles technologies et de l’Internet au cours des années 2000 ou encore les arts dits « de la rue ». En 1981, la Bibliothèque nationale passe de la tutelle du ministère de l'Éducation nationale à celle du ministère de la Culture. Le ministère confié à Jack Lang perd la compétence de la Communication mais en 1986, avec la nomination de François Léotard, le ministère de la Culture et de la Communication reprend une partie des attributions exercées par le ministre des PTT (gestion des fréquences). En 1993, Jacques Toubon devient ministre de la Culture et de la Francophonie. En 1995, Philippe Douste-Blazy perd la Francophonie mais récupère une partie des prérogatives de la direction de l’architecture. En mars 1996, le Premier Ministre décide de placer la Délégation générale à la langue française sous l'autorité directe du ministre de la Culture. À l’arrivée de Catherine Trautmann en 1997, le ministère redevient ministère de la Culture et de la Communication. En 2002, avec la nomination de Jean-Jaques Aillagon, il gagne de nouvelles attributions (langue française, politique du gouvernement dans le domaine des médias, grandes opérations d’architecture et d’urbanisme…). Depuis 2002, son périmètre est demeuré relativement stable.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Liste des ministres</html:u>:</html:p>
+            <html:p>André Malraux, ministre d'État chargé des affaires culturelles (8 janvier 1959-juin 1969)</html:p>
+            <html:p>Edmond Michelet, ministre d'État chargé des affaires culturelles (22 juin 1969-25 septembre 1970)</html:p>
+            <html:p>André Bettencourt, ministre chargé des affaires culturelles par intérim (19 octobre 1970-janvier 1971)</html:p>
+            <html:p>Jacques Duhamel, ministre des Affaires culturelles (7 janvier 1971-avril 1973)</html:p>
+            <html:p>Maurice Druon, ministre des Affaires culturelles (5 avril 1973-février 1974)</html:p>
+            <html:p>Alain Peyrefitte, ministre des Affaires culturelles et de l'Environnement (1er mars 1974-mai 1974)</html:p>
+            <html:p>Michel Guy, Secrétaire d'État à la Culture (8 juin 1974-août 1976)</html:p>
+            <html:p>Françoise Giroud, Secrétaire d'État à la Culture (27 août 1976-mars 1977)</html:p>
+            <html:p>Michel d'Ornano, ministre de la Culture et de l'Environnement (30 mars 1977-mars 1978)</html:p>
+            <html:p>Jean-Philippe Lecat, ministre de la Culture et de la Communication (5 avril 1978-4 mars 1981)</html:p>
+            <html:p>Jack Lang, ministre de la Culture (22 mai 1981-mars 1983), ministre délégué à la Culture (24 mars 1983-décembre 1984), ministre de la Culture (7 décembre 1984-mars 1986)</html:p>
+            <html:p>François Léotard, ministre de la Culture et de la Communication (20 mars 1986-mai 1988)</html:p>
+            <html:p>Jack Lang, ministre de la Culture et de la Communication (12 mai 1988-juin 1988), ministre de la Culture, de la Communication, des Grands Travauux et du Bicentenaire (28 juin 1988-mai 1991), ministre de la Culture et de la Communication et porte-parole du gouvernement (16 mai 1991-2 avril 1992), ministre d'État, ministre de l'Éducation nationale et de la Culture (2 avril 1992-30 mars 1993)</html:p>
+            <html:p>Jacques Toubon, ministre de la Culture et de la Francophonie (31 mars 1993-18 mai 1995)</html:p>
+            <html:p>Philippe Douste-Blazy, ministre de la Culture et de la Communication (18 mai 1995-4 juin 1997)</html:p>
+            <html:p>Catherine Trautmann, ministre de la Culture et de la Communication (4 juin 1997-27 mars 2000)</html:p>
+            <html:p>Catherine Tasca, ministre de la Culture et de la Communication (27 mars 2000-mai 2002)</html:p>
+            <html:p>Jean-Jacques Aillagon, ministre de la Culture et de la Communication (7 mai 2002-mars 2004)</html:p>
+            <html:p>Renaud Donnedieu de Vabres, ministre de la Culture et de la Communication (31 mars 2004-18 mai 2007)</html:p>
+            <html:p>Christine Albanel, ministre de la Culture et de la Communication (28 mai 2007-juin 2009)</html:p>
+            <html:p>Frédéric Mitterrand, ministre de la Culture et de la Communication (23 juin 2009-mai 2012)</html:p>
+            <html:p>Aurélie Filippetti, ministre de la Culture et de la Communication (16 mai 2012-25 août 2014)</html:p>
+            <html:p>Fleur Pellerin, ministre de la Culture et de la Communication (26 août 2014-11 février 2016)</html:p>
+            <html:p>Audrey Azoulay (11 février 2016-....)</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005437-20100101-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005655-19960101-19981231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005073-19590203-20101231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005205-19590203-19691231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051164-19590108-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-000051-19590108-19781231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005061-20070101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051355-19940101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-005089-19850101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-003971-19920113-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005075-19730622-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-005090-19590108-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005422-19760129-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005074-19810606-19931231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005427-20100721-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-005429-19860120-19980520"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051119-19980521-20100720"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005099-19760101-20100112"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005086-19890101-20011231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005439-20100113-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005170-19780101-19981231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005406-19980101-20101231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11868511w#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Minist%C3%A8re_de_la_Culture_%28France%29"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057991-000005"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057991-top"/>
+   </rico:Agent>
+</rdf:RDF>

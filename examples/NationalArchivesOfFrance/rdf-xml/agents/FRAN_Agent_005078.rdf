@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005078">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005078"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-29</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 avril 2017 : recréé les liens hiérarchiques </rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005078">
+            <rico:instantiates rdf:resource="record/005078"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005078</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005078"/>
+            <rico:identifier>5103/BDL</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005078">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005078"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau du développement de la lecture (1993-2010)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005078-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20du%20d%C3%A9veloppement%20de%20la%20lecture%20%281993-2010%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau du développement de la lecture (1993-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau du développement de la lecture (1993-2010)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005078"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005078-Bureau%20des%20publics%20et%20du%20d%C3%A9veloppement%20de%20la%20lecture-19930322-19941231">
+            <rdfs:label xml:lang="fr">Bureau des publics et du développement de la lecture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau des publics et du développement de la lecture</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005078"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-22</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-22</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le bureau des publics et du développement de la lecture est mis en place suite à l'arrêté du 19 mars 1993 (publié au Journal Officiel le 21 mars) qui crée au sein de la direction du Livre et de la Lecture (DLL) le département de l'action régionale et des bibliothèques territoriales. Il reprend une partie des missions du bureau du patrimoine, de l'informatique et de l'audiovisuel, ainsi que du bureau des établissements, de la formation et de la lecture.</html:p>
+            <html:p>Il est maintenu par l'arrêté du 9 mai 1995 qui supprime le département de l'action régionale et des bibliothèques territoriales, et fait alors partie du département des politiques documentaires et patrimoniales.</html:p>
+            <html:p>Il disparaît avec la DLL en vertu du décret du 11 novembre 2009 (entré en vigueur le 13 janvier 2010) qui redéfinit l'organisation du ministère en réduisant le nombre des directions à trois.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Il est chargé :</html:p>
+            <html:ul>
+               <html:li>du développement de la lecture pour les comités d'entreprise, les prisons, l'armée, les hôpitaux, et pour les handicapés visuels ;</html:li>
+               <html:li>de mener des actions dans le cadre de l'aménagement du territoire (politique de la ville et zones rurales) ;</html:li>
+               <html:li>de mener des actions en direction des jeunes, du milieu scolaire et des universités ;</html:li>
+               <html:li>du développement des collections des bibliothèques publiques et associatives.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005082-005078-19930322-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005083-005078-19930322-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005674-005078-19930322-19950511"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005085-005078-19950512-20100112"/>
+   </rico:Agent>
+</rdf:RDF>

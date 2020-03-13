@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050583">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/050583"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl002"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-01</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-09</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Eric LANDGRAF)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-01</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 1er décembre 2015 : revu dates, ajouté ISNI, descripteurs activités, n° notice BnF. @protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars : revu historique, lien d'association, ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Virginie GREGOIRE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">- Ajout lien IR</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-09</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Archives nationales : fonds Achille Fould (247AP).</rico:source>
+      <rico:source xml:lang="fr">Notice BNf n°FRBNF12459740.</rico:source>
+      <rico:source xml:lang="fr">Article Achille Fould de Wikipédia en français (http://fr.wikipedia.org/wiki/Achille_Fould).</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000061267068"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Achille_Fould"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050583">
+            <rico:instantiates rdf:resource="record/050583"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050583</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050583"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050583">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="record/050583"/>
+      <isni:identifierValid>0000000061267068</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Fould, Achille (1800-1867)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050583-Fould%2C%20Achille%20%281800-1867%29">
+            <rdfs:label xml:lang="fr">Fould, Achille (1800-1867)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Fould, Achille (1800-1867)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050583"/>
+            <rico:regulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050583-Fould%2C%20Achille%20Marcus">
+            <rdfs:label xml:lang="fr">Fould, Achille Marcus</rdfs:label>
+            <rico:textualValue xml:lang="fr">Fould, Achille Marcus</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050583"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1800-11-17</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1867-10-05</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050583-d699msjnw86-64seh0fmw8hj">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050583"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050583-d699msjnw86-64seh0fmw8hj"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050583-d699msj9l7t-1gb5a09kkzrmp">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050583"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050583-d699msj9l7t-1gb5a09kkzrmp"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Mémoires</html:i>, 1861.</html:p>
+      </rico:authorizingMandate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Fils du fondateur de la banque Fould, Oppenheim et Cie et député des Hautes-Pyrénées (1842), Achille Fould (1800-1867) se fait connaître par ses<html:i>Observations sur la question financière</html:i>adressées à l’Assemblée nationale (mai 1848) et est, en octobre 1849, nommé ministre des Finances par Louis Napoléon Bonaparte, fonction qu’il conserve jusqu’en janvier 1852. Fondateur des caisses de retraite et de secours à la vieillesse et du Crédit mobilier (avec Pereire en 1852) et organisateur de l’Exposition universelle de 1855, il est sénateur, ministre d’État du 28 juillet 1852 au 23 novembre 1860, avec la Maison de l’Empereur à partir du 14 décembre 1852, et membre du Conseil privé sous le Second Empire. Partisan du libéralisme économique, il contribue à faire signer le traité de commerce avec la Grande-Bretagne (1860) et, rappelé au ministère des Finances (14 novembre 1861-20 janvier 1867), tente, sans grand succès, de limiter les dépenses du régime. Lors du remaniement ministériel de janvier 1867, Fould, malade, abandonne le ministère et meurt quelques mois plus tard.</html:p>
+         </html:div>
+      </rico:history>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12459740h#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Achille_Fould"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050583-051161-18520728-18601123"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055788-050583"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055788-top"/>
+   </rico:Agent>
+</rdf:RDF>

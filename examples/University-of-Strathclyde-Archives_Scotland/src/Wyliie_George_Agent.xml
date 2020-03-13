@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" xmlns="urn:isbn:1-931666-33-4"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <control>
+    <recordId>P0113</recordId>
+    <!-- added a maintenanceStatus element -->
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyName>GB 249</agencyName>
+    </maintenanceAgency>
+    <conventionDeclaration>
+      <abbreviation>conventionDeclaration</abbreviation>
+      <citation>ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies,
+        Persons and Families, International Council on Archives (2nd edition, 2003); Rules for the
+        construction of personal, place and corporate names, National Council on Archives
+        (1997).</citation>
+    </conventionDeclaration>
+    <localTypeDeclaration>
+      <abbreviation>detailLevel</abbreviation>
+      <citation>http://ica-atom.org/doc/RS-2#5.4</citation>
+    </localTypeDeclaration>
+    <!-- added a maintenanceHistory element-->
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2020-02-28</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Florence Clavaud (ICA/EGAD member | Archives nationales de France)</agent>
+        <eventDescription>some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>person</entityType>
+      <nameEntry>
+        <part>Wyllie, George Ralston, 1921-2012, artist and sculptor</part>
+        <authorizedForm>conventionDeclaration</authorizedForm>
+      </nameEntry>
+    </identity>
+    <description>
+      <existDates>
+        <date>1921-2012</date>
+      </existDates>
+      <!--<biogHist id="md5-f06292ddde43f080da3ff0266b01d5fe">-->
+      <biogHist>
+        <p>George Wyllie was born in Glasgow in 1921. Initially a sailor and then a customs officer,
+          he rapidly acquired a national and international reputation as an artist and sculptor,
+          working in regenerative, performance and public art. The underlying principle of his work
+          was that art can change ideas and is an essential force in society. There was always a
+          question at the heart of his work. He called his art Scul?ture.</p>
+        <p>Wyllie exhibited widely in the United Kingdom, Europe, India and the United States. His
+          best known works are ‘The Straw Locomotive,’ ‘The Paper Boat,’ ‘A Day Down a Goldmine’,
+          ‘Equilibrium of Spires’ and ‘The Cosmic Voyage.’ He also worked in theatre, writing,
+          installations and film. He lived and worked in Gourock, Scotland.</p>
+        <p>Wyllie had a long association with the University of Strathclyde, staging his first ever
+          solo exhibition in the University’s Collins Gallery in 1976. In April 1990, the University
+          awarded him the honorary degree of Doctor of Letters.</p>
+        <p>In 2005, he was awarded an MBE for service to the Arts. He died in 2012.</p>
+      </biogHist>
+    </description>
+    <relations>
+      <resourceRelation resourceRelationType="subjectOf"
+        xlink:href="https://atom.lib.strath.ac.uk/oral-history-interviews-with-george-wyllie"
+        xlink:type="simple">
+        <relationEntry>Interviews with George Wyllie for the National Life Stories project, Artists'
+          Lives</relationEntry>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf"
+        xlink:href="https://atom.lib.strath.ac.uk/george-wyllie-papers" xlink:type="simple">
+        <relationEntry>George Wyllie papers</relationEntry>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf"
+        xlink:href="https://atom.lib.strath.ac.uk/george-wyllie-papers-working" xlink:type="simple">
+        <relationEntry>George Wyllie papers (working)</relationEntry>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf"
+        xlink:href="https://atom.lib.strath.ac.uk/oral-history-interviews-with-george-wyllie"
+        xlink:type="simple">
+        <relationEntry>Interviews with George Wyllie for the National Life Stories project, Artists'
+          Lives</relationEntry>
+      </resourceRelation>
+    </relations>
+  </cpfDescription>
+</eac-cpf>

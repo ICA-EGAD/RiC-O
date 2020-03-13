@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/023643short">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:regulatedBy rdf:resource="rule/rl006"/>
+      <rico:regulatedBy rdf:resource="rule/rl007"/>
+      <rico:title xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970) : Répertoire du versement 19890242</rico:title>
+      <rdfs:label xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970) : Répertoire du versement 19890242</rdfs:label>
+      <rico:publishedBy rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</rico:publicationDate>
+      <rico:describes rdf:resource="recordResource/023643short-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/023643short-i1">
+            <rico:instantiates rdf:resource="record/023643short"/>
+            <rico:title xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970) : Répertoire du versement 19890242</rico:title>
+            <rdfs:label xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970) : Répertoire du versement 19890242</rdfs:label>
+            <rico:history xml:lang="fr">Cet instrument de recherche a été produit en 2016 pour les besoins du projet de prototype Linked Data porté par les Archives nationales, la Bibliothèque nationale de France, le SIAF et l'Université de Montréal.</rico:history>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_023643short</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_023643short"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/023643short-top">
+      <rico:describedBy rdf:resource="record/023643short"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+      <rico:title xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970)</rico:title>
+      <rdfs:label xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970)</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1931-1970</rico:date>
+      <rico:heldBy rdf:resource="agent/005061"/>
+      <rico:hasProvenance rdf:resource="agent/003971"/>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:div xml:lang="fr"> </html:div>
+      </rico:scopeAndContent>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+            <html:p>Cet instrument de recherche est dérivé du répertoire numérique détaillé <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_IR_023643">Éducation nationale ; École nationale supérieure des bibliothèques (1931-1970)</html:a>
+            </html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/023643short-top-i1">
+            <rico:instantiates rdf:resource="recordResource/023643short-top"/>
+            <rico:identifier>19890242/1-19890242/10</rico:identifier>
+            <rico:title xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970)</rico:title>
+            <rdfs:label xml:lang="fr">Archives de l'École nationale supérieure des bibliothèques (1931-1970)</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1931-1970</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">3,1 ml</html:p>
+            </rico:instantiationExtent>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/>
+            <rico:hasProvenance rdf:resource="agent/003971"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_023643short/top"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>

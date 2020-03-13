@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050789">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/050789"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl002"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-14</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Clotilde LE CALVE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 septembre 2015 : ajouté un descripteur activité, revu sources</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-10</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-10</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 mars 2017 : ajouté liens d'identité, revu lien avec la BnF</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-14</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF11908748</rico:source>
+      <rico:source xml:lang="fr">Biographie de Jean-Noël Jeanneney. Europartenaires [en ligne], mars 2014 [consulté le 10 mars 2014]. Disponible sur « http://www.europartenaires.net/pages/francais/jeanneney.php?ID=0&amp;TYPE=2</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000384320062"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean-No%C3%ABl_Jeanneney"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050789">
+            <rico:instantiates rdf:resource="record/050789"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050789</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050789"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050789">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="record/050789"/>
+      <isni:identifierValid>0000000384320062</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Jeanneney, Jean-Noël (1942-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/050789-Jeanneney%2C%20Jean-No%C3%ABl%20%281942-....%29">
+            <rdfs:label xml:lang="fr">Jeanneney, Jean-Noël (1942-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Jeanneney, Jean-Noël (1942-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/050789"/>
+            <rico:regulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-04-02</rico:birthDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050789-d-l0jya1ik6x--16fn7glte863o">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050789"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050789-d-l0jya1ik6x--16fn7glte863o"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050789-d699msj5les--1kxyfzhpd7g0m">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050789"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050789-d699msj5les--1kxyfzhpd7g0m"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj5les--1kxyfzhpd7g0m"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050789-d699msj02xm-19qbb7wdtto3j-19770101-*">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050789"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050789-d699msj02xm-19qbb7wdtto3j-19770101-*"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-01-01</rico:beginningDate>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">professeur à Sciences po</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Jean-Noël Jeanneney est né en avril 1942 à Grenoble. Après des études aux lycées Montaigne et Louis-le-Grand à Paris, il est reçu à l'École normale supérieure de la rue d'Ulm où il est élève de 1961 à 1966. Diplômé de l'Institut d'études politiques de Paris en 1964, agrégé d'histoire en 1965, il consacre une année, avant son service militaire, à faire le tour du monde grâce à une bourse Singer-Polignac. Il enseigne ensuite l'histoire contemporaine à l'université de Nanterre comme assistant puis maître-assistant. Docteur ès-lettres, en 1975, avec une thèse intitulée "François de Wendel en République, l'Argent et le pouvoir", il est nommé professeur des universités à Sciences Po en 1977.</html:p>
+            <html:p/>
+            <html:p>Il y enseigne depuis lors l'histoire politique, l'histoire culturelle et l'histoire des médias, sujets sur lesquels il a publié de multiples ouvrages, parmi divers livres touchant à d'autres domaines. Il est l'auteur de nombreux documentaires historiques pour la télévision, de 1973 à 2009.</html:p>
+            <html:p/>
+            <html:p>Il appartient à l'équipe fondatrice de la revue L'Histoire. Il a été co-président fondateur du Festival international de Radio France et de Montpellier (1985-1986). Il a présidé, entre 1991 et 2000, le Conseil scientifique de l'Institut d'Histoire du temps présent. Il a été chroniqueur au Journal du Dimanche de 1999 à 2001. Il a été membre du Conseil d'administration (1987-1991 puis 1993-1995) puis de surveillance (1995-2002) des éditions du Seuil et président du Conseil d'orientation de la chaîne de télévision câblée « Histoire » de 1997 à 2004, membre du Conseil d'administration de l'École normale supérieure entre 1998 et 2004, membre du Haut Conseil de l'Institut du monde arabe de 2003 à 2008, membre du Conseil d'administration du Fonds d'action SACEM de 1982 à 2013. Il préside le Conseil scientifique des « Rendez-vous de l'Histoire de Blois » depuis 2003. Il est président d'honneur du Festival international du film historique de Pessac depuis 1990. Il préside le jury du Prix du livre d'Histoire du Sénat depuis 2007, les Rencontres de la photographie d'Arles depuis septembre 2009. Depuis mars 1998, il co-préside l'association Europartenaires. Il produit l'émission hebdomadaire « Concordance des temps », sur France Culture, depuis 1999.</html:p>
+            <html:p/>
+            <html:p>Il a exercé diverses activités publiques : président de Radio France et de Radio France Internationale de 1982 à 1986, président de la Mission du Bicentenaire de la Révolution française et de la Déclaration des droits de l'homme et du citoyen (1988-1989), secrétaire d'État au Commerce extérieur (1991-1992) puis à la Communication (1992-1993) sous la seconde présidence de François Mitterrand. Il a été conseiller régional de Franche-Comté de 1992 à 1998.</html:p>
+            <html:p/>
+            <html:p>Il a été enfin président de la Bibliothèque nationale de France de mars 2002 à mars 2007, y conduisant en particulier un combat pour la création d'une bibliothèque numérique européenne.</html:p>
+            <html:p/>
+            <html:p>Il est docteur honoris causa de l'Université libre de Bruxelles.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050789-051355-20020301-20070331"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11908748q#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean-No%C3%ABl_Jeanneney"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050629-050789"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050629-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055604-050789"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055604-top"/>
+   </rico:Agent>
+</rdf:RDF>

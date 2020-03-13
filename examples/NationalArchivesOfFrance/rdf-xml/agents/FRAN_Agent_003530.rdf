@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/003530">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/003530"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-09</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 6 avril 2017 : suppression lien successeur aberrant</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/003530">
+            <rico:instantiates rdf:resource="record/003530"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_003530</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003530"/>
+            <rico:identifier>3211/AG</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/003530">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/003530"/>
+      <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des services administratifs. Bureau des affaires générales (1965-1975)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/003530-France.%20Direction%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique.%20Division%20des%20services%20administratifs.%20Bureau%20des%20affaires%20g%C3%A9n%C3%A9rales%20%281965-1975%29">
+            <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des services administratifs. Bureau des affaires générales (1965-1975)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des services administratifs. Bureau des affaires générales (1965-1975)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/003530"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/003530-DB%203-19710101-19751231">
+            <rdfs:label xml:lang="fr">DB 3</rdfs:label>
+            <rico:textualValue xml:lang="fr">DB 3</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/003530"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/003530-BL%203-19650101-19701231">
+            <rdfs:label xml:lang="fr">BL 3</rdfs:label>
+            <rico:textualValue xml:lang="fr">BL 3</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/003530"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003530-d3nyuhebkg-a4o80yedjeb">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003530"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003530-d3nyuhebkg-a4o80yedjeb"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhebkg-a4o80yedjeb"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003530-d5bhvimbi4--1c33jbciwlk3b">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003530"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003530-d5bhvimbi4--1c33jbciwlk3b"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimbi4--1c33jbciwlk3b"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Un bureau des affaires générales (BL 3 puis DB 3 à partir de 1971) apparaît au sein de la direction des bibliothèques et de la lecture publique (DBLP) en 1965, lorsque sont réunis pour la première fois les services administratifs. La fonction était apparue en 1961 et était alors une composante du deuxième bureau intitulée "Affaires générales - Documentation - Matériel".</html:p>
+            <html:p>Il disparaît en 1975 avec la DBLP, supprimée suite à une décision du conseil des ministres du 2 juillet qui répartit ses attributions entre le secrétariat d'État aux Universités et le secrétariat d'État à la Culture (décret du 29 octobre 1975).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Le bureau des affaires générales est chargé des affaires générales, de la documentation administrative à l'usage des services, des questions immobilières, du parc automobile, du matériel, ainsi que des comités consultatifs des bibliothèques municipales et des bibliothèques centrales de prêt.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003530-005076-19760101-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003532-003530-19650101-19751231"/>
+   </rico:Agent>
+</rdf:RDF>

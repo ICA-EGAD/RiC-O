@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF
+    xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:xl="http://www.w3.org/2008/05/skos-xl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ginco="http://data.culture.fr/thesaurus/ginco/ns/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
+    <!-- this thesaurus is under development -->
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/causeEffet">
+        <rdfs:label>causeEffet</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/actionProduction">
+        <rdfs:label>actionProduction</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/broaderGeneric">
+        <rdfs:label>broaderGeneric</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/narrowerGeneric"/>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/broaderPartitive">
+        <rdfs:label>broaderPartitive</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/narrowerPartitive"/>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/narrowerGeneric">
+        <rdfs:label>narrowerGeneric</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <owl:inverseOf rdf:resource="http://data.culture.fr/thesaurus/ginco/ns/broaderGeneric"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/narrowerPartitive">
+        <rdfs:label>narrowerPartitive</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <owl:inverseOf rdf:resource="http://data.culture.fr/thesaurus/ginco/ns/broaderPartitive"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/narrowerInstantive">
+        <rdfs:label>narrowerInstantive</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/broaderInstantive"/>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/broaderInstantive">
+        <rdfs:label>broaderInstantive</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+        <owl:inverseOf rdf:resource="http://data.culture.fr/thesaurus/ginco/ns/narrowerInstantive"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/TermeAssocie">
+        <rdfs:label>TermeAssocie</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="http://data.culture.fr/thesaurus/ginco/ns/CustomConceptAttribute">
+        <rdfs:label>CustomConceptAttribute</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/iso25964/skos-thes#status">
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0f38d5b1-20ae-49dc-807c-a0ba1a740e32">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:created>2018-07-20T10:00:51+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">Paroisse Sainte-Catherine-du-Val-des-Ecoliers</skos:example>
+        <dct:modified>2018-07-20T10:00:51+02:00</dct:modified>
+        <skos:definition xml:lang="fr-FR">Toute personne ou groupe ayant en charge l’administration d’une portion territoriale de l’Eglise universelle (religion catholique) ou de l’Eglise réformée.</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:prefLabel xml:lang="fr-FR">Administration ou juridiction religieuse séculière</skos:prefLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/3315545f-1c68-4d6a-84f9-ea1703f70bb2"/>
+        </xl:prefLabel>
+        <skos:example xml:lang="fr-FR">Évêché de Paris</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <ginco:id>FRAN_RI_104.xml#d-acqahmcoo--zyzdyoegxv67</ginco:id>
+        <skos:notation>FRAN_RI_104.xml#d-acqahmcoo--zyzdyoegxv67</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/127f9cd7-255d-4020-bb34-282aaa59c387">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d-afvdshcyl--1j2tyrrthai8t</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/e41cc19a-94ed-435c-aff2-97deaa849998"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Corporation ou communauté de métier</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-afvdshcyl--1j2tyrrthai8t</skos:notation>
+        <dct:modified>2018-07-25T17:35:10+02:00</dct:modified>
+        <dct:created>2018-07-23T15:12:00+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c1ddb003-4095-4dc2-954e-e0f6eff413b9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d5blolsbn6--1v8dkhwwncgqp</skos:notation>
+        <skos:prefLabel xml:lang="fr-FR">Présidence de la République</skos:prefLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a24889f4-2f0d-4ff6-bd6e-2ee76d64a1b8"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050006"&gt;​État-major particulier du président de la République&lt;/a&gt;</skos:example>
+        <dct:modified>2018-07-27T11:38:31+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5blolsbn6--1v8dkhwwncgqp</ginco:id>
+        <dct:created>2018-07-27T11:34:34+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c033d74c-6910-46f3-ad3a-d8df307af1e4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d-ags9nq68f--dg6dz8uwnd7u</skos:notation>
+        <dct:modified>2018-07-25T17:38:34+02:00</dct:modified>
+        <skos:example xml:lang="fr-FR">Secrétariat d'Etat</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/02368aa6-ec4a-44a8-9153-9ab28bec1aa1"/>
+        </skos:broader>
+        <ginco:id>FRAN_RI_104.xml#d-ags9nq68f--dg6dz8uwnd7u</ginco:id>
+        <dct:created>2018-07-19T11:47:42+02:00</dct:created>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d8dea604-162b-49dd-9031-01ea2f928aef"/>
+        </xl:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:prefLabel xml:lang="fr-FR">Subdivision d'un organe gouvernemental de la monarchie (Ancien Régime)</skos:prefLabel>
+        <skos:definition xml:lang="fr-FR">Toute subdivision d'une structure ou organisme placé auprès du roi et contribuant au gouvernement du royaume.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/27e6ac89-fbc2-4894-8c93-beda1e639518">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blolsmmx--nvog23grnqxt</ginco:id>
+        <dct:modified>2018-07-26T11:56:40+02:00</dct:modified>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f72c1f75-5918-4393-921c-9fa16b415d91"/>
+        </xl:prefLabel>
+        <dct:created>2018-07-26T11:55:02+02:00</dct:created>
+        <skos:notation>FRAN_RI_104.xml#d5blolsmmx--nvog23grnqxt</skos:notation>
+        <skos:prefLabel xml:lang="fr-FR">Ordre professionnel</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_004558"&gt;​Ordre national des pharmaciens (France)&lt;/a&gt;</skos:example>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f05cc16b-a4d5-49ad-972d-d8b33bdd1b25">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bd5eb895-5cd7-4fd6-b065-37c0f839dd5c"/>
+        </xl:prefLabel>
+        <dct:modified>2018-07-25T17:32:18+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d5blolbbvw--1q92uxfd43c1a</skos:notation>
+        <ginco:id>FRAN_RI_104.xml#d5blolbbvw--1q92uxfd43c1a</ginco:id>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public de santé</skos:prefLabel>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+        </skos:broader>
+        <dct:created>2018-07-25T17:28:21+02:00</dct:created>
+        <skos:definition xml:lang="fr-FR">Établissement régi par le titre IV du livre Ier de la sixième partie du code de la santé publique.</skos:definition>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_004557"&gt;​Centre national d'ophtalmologie des Quinze-Vingt&lt;/a&gt;</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b59781dd-17d4-41a6-8827-2c2b6e224b0f">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Cour supérieure ou souveraine</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Haute juridiction rendant des décisions de justice en dernier ressort.</skos:definition>
+        <skos:example xml:lang="fr-FR">Chambre des comptes</skos:example>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bc1ad107-b84a-4b32-b4e5-108601f35c7d"/>
+        </xl:prefLabel>
+        <skos:example xml:lang="fr-FR">FRAN_NP_XXXX France. Parlement de Paris (1257-1790)</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d-aber4h5pa--t5dltn5cvvo8</ginco:id>
+        <dct:modified>2018-07-25T17:35:42+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d-aber4h5pa--t5dltn5cvvo8</skos:notation>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-18T17:34:50+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b5398f6f-f260-4f45-9cb0-4dc1b2ad1a37">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5bloohyrt--1xjp5y3h0mvzu</skos:notation>
+        <dct:created>2018-07-27T12:24:41+02:00</dct:created>
+        <ginco:id>FRAN_RI_104.xml#d5bloohyrt--1xjp5y3h0mvzu</ginco:id>
+        <skos:prefLabel xml:lang="fr-FR">Service extérieur</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050949"&gt;​Agence d'architecture du Conservatoire national des Arts et Métiers (Paris ; 1798-2000)&lt;/a&gt;</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:scopeNote xml:lang="fr-FR">À partir de 1992, employer : Service déconcentré de l'État.</skos:scopeNote>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2091f946-8da2-40e3-af37-c8e067968d81"/>
+        </xl:prefLabel>
+        <dct:modified>2018-07-27T12:26:46+02:00</dct:modified>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7e15fe54-ff81-4881-9ce4-a4a17dac4011">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:example xml:lang="fr-FR">Prévôté d'Ile-de-France</skos:example>
+        <skos:prefLabel xml:lang="fr-FR">Administration ou juridiction royale locale (Ancien Régime)</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">Prévôté de Paris</skos:example>
+        <dct:modified>2018-07-25T17:32:56+02:00</dct:modified>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-19T12:09:47+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">Élection de Paris</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d-accmz51qn--m68dghr4db08</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/95098966-7f6a-4b2e-aad2-327c91bf9e88"/>
+        </xl:prefLabel>
+        <skos:example xml:lang="fr-FR">Bureau des finances de la généralité de Paris</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d-accmz51qn--m68dghr4db08</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/520d2724-9b80-4bcb-b1c1-7b377c71de9c">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d-afvdshcyl--1j2tyrrthai8t</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/e00ca653-cc58-46ee-b737-f2a59be710ff"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Corps de ville ou communauté d'habitants</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-afvdshcyl--1j2tyrrthai8t</skos:notation>
+        <dct:modified>2018-07-25T17:35:20+02:00</dct:modified>
+        <dct:created>2018-07-23T15:10:12+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5blonaxbw--1mt8t42bokzts</skos:notation>
+        <dct:modified>2018-07-27T11:53:49+02:00</dct:modified>
+        <dct:created>2018-07-27T11:50:47+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005073"&gt;​France. Ministère de la Culture et de la Communication. Direction des Archives de France (1897-2010)&lt;/a&gt;</skos:example>
+        <skos:prefLabel xml:lang="fr-FR">Service d'administration centrale</skos:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blonaxbw--1mt8t42bokzts</ginco:id>
+        <iso-thes:status>1</iso-thes:status>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d248d829-9d02-4b8f-8346-fcf7b5d796ee"/>
+        </xl:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b2a5c7f3-673c-4e4c-91cf-0eb28e6338fb">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:modified>2018-07-25T17:34:49+02:00</dct:modified>
+        <iso-thes:status>1</iso-thes:status>
+        <ginco:id>FRAN_RI_104.xml#d5blomr6mp--rim7dd1ugjeq</ginco:id>
+        <dct:created>2018-07-24T14:13:34+02:00</dct:created>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ab21035a-6d27-411d-a4fd-49779f75831e"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Le terme "Commission juridictionnelle" était utilisé au titre IV du livre 1er du code de l'organisation&amp;nbsp; judiciaire dans sa version antérieure à l'ordonnance du 8 juin 2006 pour désigner les commissions placées auprès de la Cour de Cassation, désormais mentionnées à l'article L.451-1 du même code.&lt;br&gt;Il reste utilisé pour la Cour de Cassation pour désigner les commissions placées auprès d'elle. (Voir, sur le site internet de la Cour de cassation, la page "&lt;a href="https://www.courdecassation.fr/autres_juridictions_commissions_juridictionnelles_3/"&gt;Hautes juridications et commissions juridictionnelles&lt;/a&gt;" :&amp;nbsp;https://www.courdecassation.fr/autres_juridictions_commissions_juridictionnelles_3/).&lt;br&gt;&lt;br&gt;</skos:definition>
+        <skos:prefLabel xml:lang="fr-FR">Commission juridictionnelle</skos:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blomr6mp--rim7dd1ugjeq</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blomrbsy--d2dm41z2xnq2</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8316c28f-0039-46d1-8ece-3c4af9c61f84"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Organisme consultatif</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5blomrbsy--d2dm41z2xnq2</skos:notation>
+        <dct:modified>2018-07-26T12:41:01+02:00</dct:modified>
+        <dct:created>2018-07-26T12:40:52+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/97e2f3de-95cd-40ad-be31-f2224372d940">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:example xml:lang="fr-FR">Abbaye Saint-Denis</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d-ad24j6poo--1aa5oyqbqi4jn</ginco:id>
+        <skos:notation>FRAN_RI_104.xml#d-ad24j6poo--1aa5oyqbqi4jn</skos:notation>
+        <skos:definition xml:lang="fr-FR">Communauté de religieux, réguliers ou séculiers, ou de religieuses, liés par des vœux ou par une promesse d'obéissance, et dépendances.</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:prefLabel xml:lang="fr-FR">Établissement religieux</skos:prefLabel>
+        <dct:modified>2018-07-25T17:37:34+02:00</dct:modified>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7316d667-acf0-49f8-bfab-033c5431cf0c"/>
+        </xl:prefLabel>
+        <skos:example xml:lang="fr-FR">Abbaye Saint-Martin-des-Champs</skos:example>
+        <dct:created>2018-07-23T14:08:52+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0e4404e4-32af-4c22-bb83-52b412f09c05">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d-ad8jimz5u-1vw0irbg3wxst</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/11235494-5f04-4c9d-b1d4-d737904c080b"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Organisation intergouvernementale</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-ad8jimz5u-1vw0irbg3wxst</skos:notation>
+        <dct:modified>2018-07-26T12:39:29+02:00</dct:modified>
+        <dct:created>2018-07-26T12:38:38+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/98e97bbe-a839-4468-9c9a-b6b2ccbd57c5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:modified>2018-07-25T17:37:05+02:00</dct:modified>
+        <dct:created>2018-07-24T15:16:32+02:00</dct:created>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d5f43709-9aa0-4b9c-9774-81e0ccad23e2"/>
+        </xl:altLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bd95e853-d1a3-4c00-b8ac-ee68f8175988"/>
+        </xl:altLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blomr36k--99x29dl50sw1</skos:notation>
+        <skos:altLabel xml:lang="fr-FR">Établissement public de caractère scientifique et technique</skos:altLabel>
+        <skos:exactMatch rdf:resource="https://fr.wikipedia.org/w/index.php?title=%C3%89tablissement_public_%C3%A0_caract%C3%A8re_scientifique_et_technologique&amp;oldid=137588305"/>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Établissement public de recherche régi par le titre Ier du livre III du code de la recherche.</skos:definition>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+        </skos:broader>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public à caractère scientifique et technologique</skos:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blomr36k--99x29dl50sw1</ginco:id>
+        <skos:altLabel xml:lang="fr-FR">EPST</skos:altLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2261d826-bcb6-4f04-abe8-71185379e85b"/>
+        </xl:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b24e0af5-6ce9-426f-818a-898911e44fc2">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">États provinciaux</skos:example>
+        <dct:modified>2018-07-25T17:33:53+02:00</dct:modified>
+        <skos:definition xml:lang="fr-FR">Instance composée de membres délégués ou désignés pour représenter un groupe social, un ordre, une province ou un pays, et administration rattachée.</skos:definition>
+        <skos:example xml:lang="fr-FR">Agence du clergé</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d-aec4bbo0n--pbh0kun35aq6</ginco:id>
+        <skos:notation>FRAN_RI_104.xml#d-aec4bbo0n--pbh0kun35aq6</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c214e2f4-52a2-4da3-b7c2-714cd4f56f42"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Assemblée représentative</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">Assemblée de notables</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-19T11:36:27+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/668e02d2-a285-405c-ac0b-35f3669a0c24">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5bloma6vf-1ggqx7lhcg0rt</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a2f0bd7a-0df7-4da8-9a83-5a9d2cdc98bd"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Parti politique</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5bloma6vf-1ggqx7lhcg0rt</skos:notation>
+        <dct:modified>2018-07-27T11:23:48+02:00</dct:modified>
+        <dct:created>2018-07-27T11:09:49+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/40e86481-1485-442f-a62c-030f53290065">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b757cf74-5537-43da-b3ca-8f35cba290e7"/>
+        </xl:altLabel>
+        <skos:altLabel xml:lang="fr-FR">UMR</skos:altLabel>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051817"&gt;​Centre d'études arctiques (Paris ; 1957-....)&lt;/a&gt;</skos:example>
+        <dct:created>2018-07-27T16:06:39+02:00</dct:created>
+        <skos:notation>FRAN_RI_104.xml#d5blokoeq2--1ahhkzq0zm7zp</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/89261594-140d-48d3-9b35-ffb176b437d1"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Unité mixte de recherche</skos:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blokoeq2--1ahhkzq0zm7zp</ginco:id>
+        <dct:modified>2018-07-27T16:34:16+02:00</dct:modified>
+        <skos:definition xml:lang="fr-FR">Laboratoire de recherche associant le Centre national de recherche scientifique et des établissements supérieur ou d'autres organismes publics de recherche.</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/4c947cfa-1fa0-4181-9977-aac6c3720209">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:modified>2018-07-25T17:35:02+02:00</dct:modified>
+        <dct:created>2018-07-23T14:16:43+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Congrégation religieuse ou ordre militaire</skos:prefLabel>
+        <skos:definition xml:lang="fr-FR">Association d'établissements ou de communautés de religieux, réguliers ou séculiers ; s'entend des instances décisionnelles centrales de ces congrégations.</skos:definition>
+        <skos:example xml:lang="fr-FR">Grand prieuré de l'ordre de France (ordre de Saint-Jean-de-Jérusalem)</skos:example>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8aa0c94b-cba2-4ada-a606-f5fa0c055baa"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d-af76k559m--epwsnopxwiib</ginco:id>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-af76k559m--epwsnopxwiib</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/478d908b-e3e1-4868-ae49-9dee954ebdb5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:prefLabel xml:lang="fr-FR">Assemblée parlementaire</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">Sénat</skos:example>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/cef10c59-010e-4829-8972-db6f0b488268"/>
+        </skos:narrower>
+        <ginco:id>FRAN_RI_104.xml#d5blomqzim--1mkd2xzkct0kh</ginco:id>
+        <iso-thes:status>1</iso-thes:status>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2cdb9ca3-af6c-4714-9dce-3eb4a9da3442"/>
+        </xl:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blomqzim--1mkd2xzkct0kh</skos:notation>
+        <skos:example xml:lang="fr-FR">Assemblée nationale</skos:example>
+        <dct:created>2018-07-23T15:21:17+02:00</dct:created>
+        <dct:modified>2018-07-25T17:33:07+02:00</dct:modified>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/168f4dc3-2a48-4586-be55-86a6024b4c86">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Société d'État</skos:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blolsr5w-1gf48a7lk74c</skos:notation>
+        <skos:definition xml:lang="fr-FR">Société créée en application de l'article 2 de la loi n° 46-860 du 30 avril 1946 tendant à l'établissement, au financement et à l'exécution de plans d'équipement et de développement des territoires relevant du ministère de la France d'Outre-mer.</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:modified>2018-07-27T15:07:25+02:00</dct:modified>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/20e96e94-c1ec-4689-95f6-f197ae3971ea"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blolsr5w-1gf48a7lk74c</ginco:id>
+        <dct:created>2018-07-27T15:04:18+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010125"&gt;France 3​&lt;/a&gt;</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/02368aa6-ec4a-44a8-9153-9ab28bec1aa1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d-afzi3ruci-1s2ujv07ckpsa</skos:notation>
+        <dct:created>2018-07-19T11:51:54+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:prefLabel xml:lang="fr-FR">Organe gouvernemental de la monarchie (Ancien Régime)</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">Département de la Marine</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d-afzi3ruci-1s2ujv07ckpsa</ginco:id>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c033d74c-6910-46f3-ad3a-d8df307af1e4"/>
+        <skos:example xml:lang="fr-FR">Chancellerie</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Toute structure ou organisme placé auprès du roi et contribuant au gouvernement du royaume.</skos:definition>
+        <skos:example xml:lang="fr-FR">Conseil du roi</skos:example>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/56fb5adf-072b-4414-842b-b5934d2ac576"/>
+        </xl:prefLabel>
+        <dct:modified>2018-07-25T17:38:23+02:00</dct:modified>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/cef10c59-010e-4829-8972-db6f0b488268">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:created>2018-07-24T14:28:29+02:00</dct:created>
+        <skos:broader rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/478d908b-e3e1-4868-ae49-9dee954ebdb5"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <ginco:id>FRAN_RI_104.xml#d-aewoka0ac--z6lg7921a3eb</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5b47ea59-0dd9-4be8-bdd3-6f0571f9fce0"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:prefLabel xml:lang="fr-FR">Comité d'assemblée parlementaire</skos:prefLabel>
+        <dct:modified>2018-07-25T17:33:16+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d-aewoka0ac--z6lg7921a3eb</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blonb3ky--u69ytier8ih6</ginco:id>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+        </skos:broader>
+        <skos:altLabel xml:lang="fr-FR">EPA</skos:altLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0f1041e9-658b-4a4d-b524-410feeb04fab"/>
+        </xl:prefLabel>
+        <skos:exactMatch rdf:resource="https://fr.wikipedia.org/w/index.php?title=%C3%89tablissement_public_%C3%A0_caract%C3%A8re_administratif_en_France&amp;oldid=149996143"/>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/aab3b917-3266-44e5-9a5c-5d87171bfd00"/>
+        </xl:altLabel>
+        <dct:modified>2018-07-25T17:36:05+02:00</dct:modified>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public à caractère administratif</skos:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blonb3ky--u69ytier8ih6</skos:notation>
+        <dct:created>2018-07-24T14:52:51+02:00</dct:created>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/9f003401-174a-4882-9d99-d93619ef5c55">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009233"&gt;​Société pour la protection artistique des dessins et modèles&lt;/a&gt;</skos:example>
+        <ginco:id>FRAN_RI_104.xml#d5blokq9z8-le7xc6gt3t2i</ginco:id>
+        <dct:created>2018-07-27T14:34:26+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d5blokq9z8-le7xc6gt3t2i</skos:notation>
+        <skos:prefLabel xml:lang="fr-FR">Société civile</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:modified>2018-07-27T14:37:01+02:00</dct:modified>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1467f3e0-71cb-470c-8218-1b6a639cdd6e"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Société régie par les articles 1845 à 1870-1 du code civil.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/6c06728e-9968-4aa0-90fb-ebe20ffde0a7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/9741eea2-0c3e-40e1-9ba0-e58f5a70b01e"/>
+        </xl:prefLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5d372bf6-35cc-4ac9-b03e-81a6b749ea06"/>
+        </xl:altLabel>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+        </skos:broader>
+        <skos:definition xml:lang="fr-FR">Établissement public national d'enseignement supérieur et de recherche régi par le titre Ier du livre VII du code de l'éducation.&lt;br&gt;Les établissements publics à caractère scientifique, culturel et professionnel sont les universités, les instituts et écoles ne faisant pas partie des universités, les écoles normales supérieures, les "grands établissements" tels que le Collège de France et les écoles françaises à l'étranger.</skos:definition>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:altLabel xml:lang="fr-FR">EPSCP</skos:altLabel>
+        <dct:modified>2018-07-25T17:36:51+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d5bloma37i--zasxhhwa4h0</skos:notation>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-24T16:15:58+02:00</dct:created>
+        <ginco:id>FRAN_RI_104.xml#d5bloma37i--zasxhhwa4h0</ginco:id>
+        <skos:exactMatch rdf:resource="https://fr.wikipedia.org/w/index.php?title=%C3%89tablissement_public_%C3%A0_caract%C3%A8re_scientifique,_culturel_et_professionnel&amp;oldid=147775266"/>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public à caractère scientifique, culturel et professionnel</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/61048104-2df3-4003-804d-466b18347938">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8e82a534-e2d8-4f11-ae04-c18c4ea3d52e"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Groupement de personnes physiques ou morales doté de la personnalité morale régi par le chapitre Ier du titre V du livre II du code du commerce.</skos:definition>
+        <dct:modified>2018-07-25T17:57:36+02:00</dct:modified>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-25T17:53:07+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Groupement d'intérêt économique</skos:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blomaef1--lt4f8tpnjvyf</ginco:id>
+        <skos:notation>FRAN_RI_104.xml#d5blomaef1--lt4f8tpnjvyf</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/6aef9140-e880-4d5e-b2b5-1a7db61f93e9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blonarq5-4915ysawyv52</ginco:id>
+        <dct:modified>2018-07-25T17:52:23+02:00</dct:modified>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/872d5e09-3612-4535-b966-bfcb1c22a7de"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Personne morale créée dans les conditions définies à l'article 18 de la loi n° 87-571 du 23 juillet 1987.</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d5blonarq5-4915ysawyv52</skos:notation>
+        <dct:created>2018-07-25T17:48:16+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Fondation</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1b74f6f3-0a6e-421f-9c51-e73ac06c7834">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/3336c711-7d0b-4349-9107-e423e862be43"/>
+        </skos:narrower>
+        <dct:modified>2018-07-19T11:55:01+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5bloo2lv1--65p8cc56ah9l</ginco:id>
+        <dct:created>2018-07-19T11:54:14+02:00</dct:created>
+        <skos:scopeNote xml:lang="fr-FR">En l'état actuel du référentiel, ce terme s'applique à la Commission centrale d'aide sociale, à la Cour de Cassation, à la Cour des comptes, à la Cour nationale de l'incapacité et de la tarification de l'assurance des accidents du travail, à la Cour nationale du droit d'asile et au Tribunal des conflits. Le Conseil d'État, dont le rôle n'est pas exclusivement juridictionnel, est en revanche qualifié d'Autorité indépendante.</skos:scopeNote>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050996"&gt;France. ​Cour supérieure d'arbitrage (1938-....)&lt;/a&gt;</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:definition xml:lang="fr-FR">Terme utilisé pour l'ensemble des juridictions, administratives et judiciaires, autres que les commissions juridictionnelles.&lt;br&gt;&lt;br&gt;</skos:definition>
+        <skos:prefLabel xml:lang="fr-FR">Juridiction</skos:prefLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c3f11673-a9b7-4cad-b33e-8b51e232b445"/>
+        </xl:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/dcefe1cf-e79a-479c-80eb-ec6b96ae1f99">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:modified>2018-07-27T12:31:23+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d5blokqczv--1ijs4336zzm9y</skos:notation>
+        <skos:prefLabel xml:lang="fr-FR">Service déconcentré de l'État</skos:prefLabel>
+        <dct:created>2018-07-27T12:13:46+02:00</dct:created>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_004005"&gt;​Rectorat de l'Académie de Paris. Service des constructions des académies de la région Île-de-France (19559-1994)&lt;/a&gt;</skos:example>
+        <skos:scopeNote xml:lang="fr-FR">Avant 1992, employer : Service extérieur</skos:scopeNote>
+        <ginco:id>FRAN_RI_104.xml#d5blokqczv--1ijs4336zzm9y</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5aa02772-3172-4fb4-beea-cb3143d9b3f9"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Service de l'État régi par le décret n° 92-604 du 1er juillet 1992 portant charte de la déconcentration et par le décret n° 2004-374 du 29 avril 2004.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1d954407-cb67-4aa9-b37e-75bc713851fd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/655385ce-435a-4df7-855e-e1b95df9a34d"/>
+        </xl:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5bloo2d8n--lnot744delnh</skos:notation>
+        <ginco:id>FRAN_RI_104.xml#d5bloo2d8n--lnot744delnh</ginco:id>
+        <skos:definition xml:lang="fr-FR">Personne morale de droit public régi par le chapitre II de la loi n° 2011-525 du 17 mai 2011 de simplification et d'amélioration du droit. (Depuis 1982, les groupements d'intérêt public peuvent être constitués entre des établissements publics ayant une activité de recherche et de développement technologique ou entre l'un et plusieurs d'entre eux et une ou plusieurs autres personnes morales (loi n° 82-610 du 15 juillet 1982, article 21). Des textes spécifiques ont ensuite étendu cette possibilité à d'autres domaines d'activité. La loi du 17 mai 2011 a unifié le droit des groupements d'intérêt public en se substituant à l'ensemble des textes préexistants.)</skos:definition>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-25T17:58:09+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:modified>2018-07-25T18:05:49+02:00</dct:modified>
+        <skos:prefLabel xml:lang="fr-FR">Groupement d'intérêt public</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/6a1fe8f2-1b81-4bfd-a423-03501c6e04f5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5blonav6b-7jwfyyjh3efl</skos:notation>
+        <dct:modified>2018-07-27T14:49:39+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5blonav6b-7jwfyyjh3efl</ginco:id>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:definition xml:lang="fr-FR">Société régie par les titres Ier à IV du livre II du code du commerce.&lt;br&gt;Les sociétés commerciales sont les sociétés en nom collectif (SNC), les sociétés en commandite simple (SCS), les sociétés à responsabilité limité (SARL), les sociétés par action (sociétés anonymes (SA), sociétés en commandite par actions (SCA), et sociétés par actions simplifiées (SAS)) et les sociétés européennes (régies par le règlement européen du 8 octobre 2001).</skos:definition>
+        <skos:prefLabel xml:lang="fr-FR">Société commerciale</skos:prefLabel>
+        <dct:created>2018-07-27T14:40:56+02:00</dct:created>
+        <iso-thes:status>1</iso-thes:status>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/31849d5f-c38d-4e8c-b61b-f4a47ce654cf"/>
+        </xl:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0b3460a9-be7e-42b3-9c77-d47e2ff91644">
+        <ginco:id>FRAN_RI_104.xml#d-49eyjlm6o-1xcxt93hstyhs</ginco:id>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8e060b54-05f6-4fc4-bc85-351be58c296f"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Organisme parapublics (Ancien Régime)</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-49eyjlm6o-1xcxt93hstyhs</skos:notation>
+        <dct:modified>2018-07-27T10:15:05+02:00</dct:modified>
+        <dct:created>2018-07-27T10:05:00+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a7cccf09-98c6-4892-8f20-79b88d22ba8f">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:definition xml:lang="fr-FR">Direction ou service central de police nationale désigné comme tel dans les textes réglementaires relatifs à l'organisation de la police nationale et service qui en dépend, par opposition aux services dits "administratifs" de la direction générale de la police nationale.</skos:definition>
+        <skos:notation>FRAN_RI_104.xml#d5bloo2j25-1c245l4bneo85</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1e8662c2-a995-438c-8306-840be647fb92"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-27T11:41:29+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Service actif de police</skos:prefLabel>
+        <dct:modified>2018-07-27T11:46:57+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5bloo2j25-1c245l4bneo85</ginco:id>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_001160"&gt;​​France. Ministère de l'Intérieur. Direction générale de la police nationale. Direction de la surveillance du territoire (1899-2008)&lt;/a&gt;</skos:example>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/9be2dd2a-28eb-4bc5-8e2b-b09bcf02d411">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c9820f78-ccaf-4e03-ac98-d95185e47ed4"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Service de l'État régi par le décret n° 92-604 portant charte de la déconcentration (modifié par le décret n° 97-463 du 9 mai 1997).</skos:definition>
+        <ginco:id>FRAN_RI_104.xml#d5blokqhb2-71c8sqtdbid4</ginco:id>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-27T11:25:35+02:00</dct:created>
+        <dct:modified>2018-07-27T11:31:22+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d5blokqhb2-71c8sqtdbid4</skos:notation>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005061"&gt;Archives nationales (France ; 1790-....)&lt;/a&gt;</skos:example>
+        <skos:prefLabel xml:lang="fr-FR">Service à compétence nationale</skos:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/3336c711-7d0b-4349-9107-e423e862be43">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:modified>2018-07-25T17:38:10+02:00</dct:modified>
+        <skos:broader rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1b74f6f3-0a6e-421f-9c51-e73ac06c7834"/>
+        <skos:example xml:lang="fr-FR">Connétablie et maréchaussée</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/59a46f1e-192b-4caa-86e5-1cb7fcea7692"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-abuh97t7a-mzm3fo556v8q</skos:notation>
+        <skos:definition xml:lang="fr-FR">Juridiction non souveraine compétente pour certains types d'infractions ou de justiciables.</skos:definition>
+        <ginco:id>FRAN_RI_104.xml#d-abuh97t7a-mzm3fo556v8q</ginco:id>
+        <skos:prefLabel xml:lang="fr-FR">Juridiction d'exception ou d'attribution</skos:prefLabel>
+        <dct:created>2018-07-19T11:41:18+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">Eaux-et-forêts</skos:example>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/da73c490-6383-45fc-9a74-8bb07d080845">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blolsjma--1vqf43rb8pwnj</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0762dd74-b1fc-4449-9226-fbcac2384ef4"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Comité interministériel</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5blolsjma--1vqf43rb8pwnj</skos:notation>
+        <dct:modified>2018-07-25T17:34:41+02:00</dct:modified>
+        <dct:created>2018-07-24T14:33:08+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8f285767-b5b3-4cd0-8a19-4afb9ad51c8c">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public à caractère industriel et commercial</skos:prefLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/21a6d10f-ee4a-4599-bbe2-c9fd538a4b52"/>
+        </xl:altLabel>
+        <dct:created>2018-07-24T15:12:49+02:00</dct:created>
+        <skos:altLabel xml:lang="fr-FR">EPIC</skos:altLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blokqfd8--191myac7ayrnr</skos:notation>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f468655f-260e-4450-b788-16c3414d33e0"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blokqfd8--191myac7ayrnr</ginco:id>
+        <dct:modified>2018-07-25T17:36:30+02:00</dct:modified>
+        <skos:broader>
+            <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+        </skos:broader>
+        <skos:exactMatch rdf:resource="https://fr.wikipedia.org/w/index.php?title=%C3%89tablissement_public_%C3%A0_caract%C3%A8re_industriel_et_commercial_en_France&amp;oldid=149500565"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/14001ead-ff53-4031-8fba-9b5f78932843">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c6b937dc-e4a2-49c3-b442-ac0c597d5b1a"/>
+        </xl:prefLabel>
+        <skos:notation>FRAN_RI_104.xml#d5blolbi4x--nvtz7sypvml4</skos:notation>
+        <ginco:id>FRAN_RI_104.xml#d5blolbi4x--nvtz7sypvml4</ginco:id>
+        <skos:prefLabel xml:lang="fr-FR">Société d'économie mixte</skos:prefLabel>
+        <dct:modified>2018-07-27T15:01:16+02:00</dct:modified>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005426"&gt;​Société d'économie mixte de la Villette&lt;/a&gt;</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-27T15:00:51+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/718f289f-a1b3-4e9f-bde3-9816dae08a87">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Autorité seigneuriale laïque</skos:prefLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8dd72b7a-c737-4f82-9130-d5d629b972a6"/>
+        </xl:prefLabel>
+        <dct:modified>2018-07-25T17:34:24+02:00</dct:modified>
+        <skos:example xml:lang="fr-FR">Seigneurie de Puy-Paulin</skos:example>
+        <dct:created>2018-07-20T11:08:18+02:00</dct:created>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Toute personne physique ou morale exerçant une autorité de nature politique, administrative ou judiciaire sur un ensemble de terres ou d'hommes, souveraine ou non. Regroupe les juridictions seigneuriales et l'administration territoriale, qui peut être le fait d'une personne, d'un groupe de personnes ou d'agents délégués.</skos:definition>
+        <ginco:id>FRAN_RI_104.xml#d-ae4onrcse--1ecw731ui6kom</ginco:id>
+        <skos:example xml:lang="fr-FR">Comté de Montbéliard</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d-ae4onrcse--1ecw731ui6kom</skos:notation>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b13484df-5a40-41de-97e0-4b55ae8f7521">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5blolbf4a--bqca3bgt33m2</skos:notation>
+        <dct:created>2018-07-27T15:22:06+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Syndicat profesionnel</skos:prefLabel>
+        <dct:modified>2018-07-27T16:03:20+02:00</dct:modified>
+        <skos:definition xml:lang="fr-FR">Association d'employeurs de droit privé ou de salariés régie par le livre 1er de la deuxième partie du code du travail.</skos:definition>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <ginco:id>FRAN_RI_104.xml#d5blolbf4a--bqca3bgt33m2</ginco:id>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009297"&gt;​Fédération française des syndicats professionnels de marins&lt;/a&gt;</skos:example>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1d86d56a-83a1-4730-b1d1-cad9dfb9efa7"/>
+        </xl:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-24T14:08:24+02:00</dct:created>
+        <skos:notation>FRAN_RI_104.xml#d5blonb04s-1nqrprwwl75h0</skos:notation>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:modified>2018-07-25T17:34:33+02:00</dct:modified>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7c57c2a8-0178-47d2-af20-5a0ff89539e4"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blonb04s-1nqrprwwl75h0</ginco:id>
+        <skos:definition xml:lang="fr-FR">Le terme Cabinet ministériel est utilisé pour les cabinets du Premier ministre, des ministres et des secrétaires d'État, ainsi que pour les membres de ces cabinets, désignés par leur fonction.</skos:definition>
+        <skos:prefLabel xml:lang="fr-FR">Cabinet ministériel</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/cd35d91d-2541-45e7-bd04-41e0532d5e75">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Organisme de sécurité sociale</skos:prefLabel>
+        <dct:created>2018-07-27T09:59:25+02:00</dct:created>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b3c95212-018f-41c2-91d5-0d2b479bb83b"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5blooi3ij--n2hur9uc3des</skos:notation>
+        <skos:definition xml:lang="fr-FR">Organisme de droit privé régi par le code de la sécurité sociale (autre que les institutions de prévoyance).</skos:definition>
+        <dct:modified>2018-07-27T10:03:26+02:00</dct:modified>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <ginco:id>FRAN_RI_104.xml#d5blooi3ij--n2hur9uc3des</ginco:id>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1ddfa008-e02e-4ec4-b857-ffd34308672a">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f16cd628-dfca-4365-a6f9-818a27091c17"/>
+        </xl:prefLabel>
+        <dct:modified>2018-07-25T18:15:59+02:00</dct:modified>
+        <skos:prefLabel xml:lang="fr-FR">Groupement d'intérêt scientifique</skos:prefLabel>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003832"&gt;​Centre national d'études et de recommandation sur la nutrition et l'alimentation&lt;/a&gt;</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d5blomaa3u-ng98vm7dkbnq</skos:notation>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:definition xml:lang="fr-FR">Contrat de coopération scientifique entre le Centre national de recherche scientifique et un organisme tiers, régi par les dispositions internes du CNRS.</skos:definition>
+        <skos:altLabel xml:lang="fr-FR">Groupement scientifique</skos:altLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blomaa3u-ng98vm7dkbnq</ginco:id>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/76a4a520-a56d-4e20-b125-470b2db31cd0"/>
+        </xl:altLabel>
+        <dct:created>2018-07-25T18:08:18+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ccd8bd98-fd5b-4074-ad5a-0c7431fe4910">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010198"&gt;​Etude LXXI&lt;/a&gt;</skos:example>
+        <skos:notation>FRAN_RI_104.xml#d5blomr902-13lmns87apgev</skos:notation>
+        <dct:created>2018-07-26T11:51:55+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Office notarial</skos:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <iso-thes:status>1</iso-thes:status>
+        <ginco:id>FRAN_RI_104.xml#d5blomr902-13lmns87apgev</ginco:id>
+        <dct:modified>2018-07-26T11:53:50+02:00</dct:modified>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/32f52732-c417-4c43-bb64-026957d9c2d3"/>
+        </xl:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/22e96bfb-39e2-43e5-8bc9-c4d07854da5f">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5blolb44i--1thq2t5vh65yl</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1b12090d-bddc-4a19-a65f-b1b44a2e3d5a"/>
+        </xl:prefLabel>
+        <skos:altLabel xml:lang="fr-FR">Société coopérative ouvrière de production</skos:altLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c21fd117-f08c-45a1-996f-729196ce75be"/>
+        </xl:altLabel>
+        <ginco:id>FRAN_RI_104.xml#d5blolb44i--1thq2t5vh65yl</ginco:id>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009208"&gt;​Compagnie d'études industrielles et d'aménagement du territoire&lt;/a&gt;</skos:example>
+        <skos:prefLabel xml:lang="fr-FR">Société coopérative et participative</skos:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-27T14:50:25+02:00</dct:created>
+        <dct:modified>2018-07-27T14:58:58+02:00</dct:modified>
+        <skos:definition xml:lang="fr-FR">Terme générique permettant de conserver l'acronyme "SCOP" utilisé par la Confédération générale des SCOP pour désigner les sociétés coopératives ouvrières de production et les sociétés coopératives d'intérêt collectif.&lt;br&gt;&lt;br&gt;Les sociétés coopératives ouvrières de production (SCOP) sont des sociétés régies par la loi n° 78-763 du 19 juillet 1978.&lt;br&gt;&lt;br&gt;Les sociétés coopératives d'intérêt collectif (SCIC) sont de sociétés régies par le titre II ter de la loi n° 47-1775 du 10 septembre 1947 portant statut de la coopération (titre créé par l'article 36 de la loi n° 2001-624 du 17 juillet 2001).</skos:definition>
+        <skos:altLabel xml:lang="fr-FR">Société coopérative d'intérêt collectif</skos:altLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/01663c43-6411-47dd-9071-14ee4e69822b"/>
+        </xl:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:modified>2018-07-26T11:51:05+02:00</dct:modified>
+        <skos:notation>FRAN_RI_104.xml#d5bloo2gwk-sgl3fc00gzgl</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b93577e3-2606-4bfe-9e44-92e56e5b7e44"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5bloo2gwk-sgl3fc00gzgl</ginco:id>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051231"&gt;France. Ministère des prisonniers, réfugiés et déportés&lt;/a&gt;</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+        <dct:created>2018-07-26T11:47:27+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Ministère</skos:prefLabel>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b8c38c1c-b5dc-44f9-b5ba-2fbc54f4dce7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d5blolsg64--1n2krc0n6p77x</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ca7fb8b2-e08a-4afc-baac-e1516476da02"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Service technique central</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d5blolsg64--1n2krc0n6p77x</skos:notation>
+        <dct:modified>2018-07-27T14:34:55+02:00</dct:modified>
+        <dct:created>2018-07-27T14:13:31+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5bloo28po-1bei6cefdzkj</skos:notation>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/94d7c5ca-1a33-41b0-bddf-2e7f26ada54d"/>
+        </xl:prefLabel>
+        <ginco:id>FRAN_RI_104.xml#d5bloo28po-1bei6cefdzkj</ginco:id>
+        <skos:altLabel xml:lang="fr-FR">Autorité publique indépendante</skos:altLabel>
+        <skos:altLabel xml:lang="fr-FR">Autorité constitutionnelle indépendante</skos:altLabel>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/4510b6e2-7cfb-4e31-8549-63c738e64739"/>
+        </xl:altLabel>
+        <dct:created>2018-07-24T11:21:38+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:definition xml:lang="fr-FR">Il n'existe pas de définition officielle des autorités administratives indépendantes.&lt;br&gt;En 2006, le rapport parlementaire "Les autorités administratives indépendantes : un objet juridique non identifié", rédigé par M. Patrice Gélard, sénateur, au nom de l'Office parlementaire d'évaluation de la législation, après avoir rappelé que la dénomination d'autorité administrative indépendante, appliquée par le législateur à différents organismes à partir de 1978 (historiquement, l'expression "Autorité administrative indépendante" est appliquée pour la première fois à la Commission nationale de l'informatique et des libertés (loi n°78-17 du 6 janvier 1978, article8.)), a été étendue à d'autres entités par la jurisprudence ou la doctrine, propose, en s'appuyant sur un précédent rapport rendu par le Conseil d'État en 2001, une liste de 39 instances qualifiées d'autorités administratives indépendantes, ou, pour quatre d'entre elles, d'autorités publiques indépendantes (ce rapport peut être consulté sur le site internet du Sénat à l'adresse : http://www.senat.fr/rap/r05-404-1/r05-404-1.html).&lt;br&gt;Une version mise à jour, comprenant actuellement 38 entités, est disponible sur le site Legifrance (https://www.legifrance.gouv.fr/Sites/Autorites-independantes2).&lt;br&gt;Une autorité publique indépendante est une autorité indépendante dotée de la personnalité morale, qualifiée ainsi par la loi (l'expression "Autorité publique indépendante"est appliquée pour la première fois, en 2003, à l'Autorité des marchés financiers (loi n°2003-706 du 1er août 2003, article 2).&lt;br&gt;Le Défenseur des droits est qualifié d'autorité constitutionnelle indépendante par la loi organique du 29 mars 2011 (article 2).</skos:definition>
+        <skos:scopeNote xml:lang="fr-FR">Dans le cadre du référentiel des producteurs des Archives nationales, le terme générique "Autorité indépendante" est utilisé pour :&lt;br&gt;- les autorités administratives indépendantes,&lt;br&gt;- les autorités publiques indépendantes,&lt;br&gt;- les entités dont l'existence est prévue par la Constitution autres que le Président de la République, le Gouvernement, le Parlement et les cours de justice, à savoir le Conseil constitutionnel, le Conseil supérieur de la magistrature, le Conseil économique, social et environnemental et le Défenseur des droits,&lt;br&gt;- le Conseil d'État.</skos:scopeNote>
+        <skos:altLabel xml:lang="fr-FR">Autorité administrative indépendante</skos:altLabel>
+        <dct:modified>2018-07-25T17:34:15+02:00</dct:modified>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b7c1dd9c-1ecc-4512-ace1-46aebe360a75"/>
+        </xl:altLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/90f617f9-358a-40e6-a7dd-ccefadf7c160"/>
+        </xl:altLabel>
+        <skos:prefLabel xml:lang="fr-FR">Autorité indépendante</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5blom9zjl-l45jh5o3uznu</skos:notation>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:altLabel xml:lang="fr-FR">Fédération sportive</skos:altLabel>
+        <dct:modified>2018-07-25T17:34:03+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5blom9zjl-l45jh5o3uznu</ginco:id>
+        <xl:altLabel>
+            <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/02d54979-f684-4a72-b4c3-f9b14efa2aed"/>
+        </xl:altLabel>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/10441a96-826d-4773-a237-c392fc2d1d85"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Association</skos:prefLabel>
+        <skos:definition xml:lang="fr-FR">Groupement de personnes régi par la loi du 1er juillet 1901.</skos:definition>
+        <dct:created>2018-07-23T15:30:10+02:00</dct:created>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0da15059-e045-434a-98c1-1f581521fd15">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <dct:modified>2018-07-25T17:35:51+02:00</dct:modified>
+        <skos:example xml:lang="fr-FR">Université de Paris</skos:example>
+        <skos:example xml:lang="fr-FR">École militaire</skos:example>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <skos:notation>FRAN_RI_104.xml#d-ad3kibdxz--tui6dsh7iiwm</skos:notation>
+        <ginco:id>FRAN_RI_104.xml#d-ad3kibdxz--tui6dsh7iiwm</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ce1e1be1-dcd3-44d9-8f11-6cb73621f0b3"/>
+        </xl:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:prefLabel xml:lang="fr-FR">Établissement d'enseignement</skos:prefLabel>
+        <dct:created>2018-07-23T14:32:01+02:00</dct:created>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5448e759-9b58-4236-9ee6-65a159dbe0e3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:prefLabel xml:lang="fr-FR">Institution de prévoyance</skos:prefLabel>
+        
+        <skos:notation>FRAN_RI_104.xml#d5blolb807--17l0i3bi6sxd8</skos:notation>
+        <dct:modified>2018-07-26T11:51:12+02:00</dct:modified>
+        <ginco:id>FRAN_RI_104.xml#d5blolb807--17l0i3bi6sxd8</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1a6e30cc-5a00-4db8-8aa7-3f7460d9cd29"/>
+        </xl:prefLabel>
+        <skos:definition xml:lang="fr-FR">Personne morale de droit privé à but non lucratif régie par le titre 3 du livre 9 du code de la sécurité sociale.&amp;nbsp;</skos:definition>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:created>2018-07-26T11:40:49+02:00</dct:created>
+        <skos:example xml:lang="fr-FR">&lt;a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000149"&gt;​Institut de prévoyance des agents contractuels et&amp;nbsp; temporaires de l'État&lt;/a&gt;</skos:example>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <skos:notation>FRAN_RI_104.xml#d5blok7do7--is93h066w4ha</skos:notation>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+        <dct:modified>2018-07-25T17:33:29+02:00</dct:modified>
+        <dct:created>2018-07-24T14:37:17+02:00</dct:created>
+        <skos:prefLabel xml:lang="fr-FR">Établissement public</skos:prefLabel>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/8f285767-b5b3-4cd0-8a19-4afb9ad51c8c"/>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/98e97bbe-a839-4468-9c9a-b6b2ccbd57c5"/>
+        <ginco:id>FRAN_RI_104.xml#d5blok7do7--is93h066w4ha</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/26439b69-6d57-4ba1-8f91-e2f5ff7f213c"/>
+        </xl:prefLabel>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f05cc16b-a4d5-49ad-972d-d8b33bdd1b25"/>
+        <skos:narrower rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6c06728e-9968-4aa0-90fb-ebe20ffde0a7"/>
+        <iso-thes:status>1</iso-thes:status>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7b01d591-b921-4fd1-8ee3-79c46c0e3da3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
+        <ginco:id>FRAN_RI_104.xml#d-ag32u6afy--108479wtqgzzn</ginco:id>
+        <xl:prefLabel>
+            <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b96f53cc-195e-4b25-b234-6f129316a9f6"/>
+        </xl:prefLabel>
+        <skos:prefLabel xml:lang="fr-FR">Hôpitaux et organisme d'assistance publique</skos:prefLabel>
+        <iso-thes:status>1</iso-thes:status>
+        <skos:notation>FRAN_RI_104.xml#d-ag32u6afy--108479wtqgzzn</skos:notation>
+        <dct:modified>2018-07-25T17:37:53+02:00</dct:modified>
+        <dct:created>2018-07-23T15:08:42+02:00</dct:created>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92"/>
+        </skos:inScheme>
+    </skos:Concept>
+    <skos:ConceptScheme rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/74a055e8-1b76-466a-af5d-86d33d41aa92">
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0da15059-e045-434a-98c1-1f581521fd15"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b8c38c1c-b5dc-44f9-b5ba-2fbc54f4dce7"/>
+        <dct:issued>Nouveau thesaurus</dct:issued>
+        <dc:type>Thésaurus</dc:type>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b13484df-5a40-41de-97e0-4b55ae8f7521"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/22e96bfb-39e2-43e5-8bc9-c4d07854da5f"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/40e86481-1485-442f-a62c-030f53290065"/>
+        <dc:relation></dc:relation>
+        <dc:description>Transposition, enrichissement et normalisation du référentiel des statuts juridiques des Archives nationales (utilisé dans le système d'information archivistique des AN) en thésaurus. 
+Il sert pour l'indexation des notices d'autorité de producteurs d'archives conservées aux Archives nationales.
+Il concerne les statuts juridiques des entités productrices d'archives (collectivités).</dc:description>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/718f289f-a1b3-4e9f-bde3-9816dae08a87"/>
+        <dct:created>2018-07-12T12:12:23+02:00</dct:created>
+        <dct:modified>2018-07-27T16:34:16+02:00</dct:modified>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/da73c490-6383-45fc-9a74-8bb07d080845"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a7cccf09-98c6-4892-8f20-79b88d22ba8f"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1b74f6f3-0a6e-421f-9c51-e73ac06c7834"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9be2dd2a-28eb-4bc5-8e2b-b09bcf02d411"/>
+        <dc:rights>CC-BY</dc:rights>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/520d2724-9b80-4bcb-b1c1-7b377c71de9c"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0b3460a9-be7e-42b3-9c77-d47e2ff91644"/>
+        <dc:contributor>Archives nationales</dc:contributor>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/5448e759-9b58-4236-9ee6-65a159dbe0e3"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c1ddb003-4095-4dc2-954e-e0f6eff413b9"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9f003401-174a-4882-9d99-d93619ef5c55"/>
+        <dc:source></dc:source>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7b01d591-b921-4fd1-8ee3-79c46c0e3da3"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/14001ead-ff53-4031-8fba-9b5f78932843"/>
+        <dc:subject></dc:subject>
+        <dc:creator>
+            <foaf:Organization>
+                <foaf:mbox>referentiels.archives-nationales@culture.gouv.fr</foaf:mbox>
+                <foaf:homepage>http://www.archives-nationales.culture.gouv.fr/</foaf:homepage>
+                <foaf:name>Archives nationales (France). Mission référentiels</foaf:name>
+            </foaf:Organization>
+        </dc:creator>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b5398f6f-f260-4f45-9cb0-4dc1b2ad1a37"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b59781dd-17d4-41a6-8827-2c2b6e224b0f"/>
+        <dc:coverage>du Moyen Âge à nos jours</dc:coverage>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6a1fe8f2-1b81-4bfd-a423-03501c6e04f5"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c947cfa-1fa0-4181-9977-aac6c3720209"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/ccd8bd98-fd5b-4074-ad5a-0c7431fe4910"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0f38d5b1-20ae-49dc-807c-a0ba1a740e32"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7e15fe54-ff81-4881-9ce4-a4a17dac4011"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b2a5c7f3-673c-4e4c-91cf-0eb28e6338fb"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/27e6ac89-fbc2-4894-8c93-beda1e639518"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b24e0af5-6ce9-426f-818a-898911e44fc2"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/dcefe1cf-e79a-479c-80eb-ec6b96ae1f99"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0e4404e4-32af-4c22-bb83-52b412f09c05"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6aef9140-e880-4d5e-b2b5-1a7db61f93e9"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/478d908b-e3e1-4868-ae49-9dee954ebdb5"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/02368aa6-ec4a-44a8-9153-9ab28bec1aa1"/>
+        <dc:title>Vocabulaire des statuts juridiques des collectivités liées aux documents d'archives conservés aux Archives nationales</dc:title>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/127f9cd7-255d-4020-bb34-282aaa59c387"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1ddfa008-e02e-4ec4-b857-ffd34308672a"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/61048104-2df3-4003-804d-466b18347938"/>
+        <dc:coverage>France</dc:coverage>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1d954407-cb67-4aa9-b37e-75bc713851fd"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/168f4dc3-2a48-4586-be55-86a6024b4c86"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/668e02d2-a285-405c-ac0b-35f3669a0c24"/>
+        <dc:language>fr-FR</dc:language>
+        <dc:publisher>Ministère chargé de la culture</dc:publisher>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/97e2f3de-95cd-40ad-be31-f2224372d940"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/cd35d91d-2541-45e7-bd04-41e0532d5e75"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+        <skos:hasTopConcept rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"/>
+    </skos:ConceptScheme>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1d86d56a-83a1-4730-b1d1-cad9dfb9efa7">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Syndicat profesionnel</xl:literalForm>
+        <dct:modified>2018-07-27T16:03:20+02:00</dct:modified>
+        <dct:created>2018-07-27T15:22:06+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2091f946-8da2-40e3-af37-c8e067968d81">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service extérieur</xl:literalForm>
+        <dct:modified>2018-07-27T12:26:46+02:00</dct:modified>
+        <dct:created>2018-07-27T12:18:32+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a24889f4-2f0d-4ff6-bd6e-2ee76d64a1b8">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Présidence de la République</xl:literalForm>
+        <dct:modified>2018-07-27T11:38:31+02:00</dct:modified>
+        <dct:created>2018-07-27T11:34:34+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d248d829-9d02-4b8f-8346-fcf7b5d796ee">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service d'administration centrale</xl:literalForm>
+        <dct:modified>2018-07-27T11:53:49+02:00</dct:modified>
+        <dct:created>2018-07-27T11:50:47+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b96f53cc-195e-4b25-b234-6f129316a9f6">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Hôpitaux et organisme d'assistance publique</xl:literalForm>
+        <dct:modified>2018-07-25T17:37:53+02:00</dct:modified>
+        <dct:created>2018-07-23T15:08:42+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0762dd74-b1fc-4449-9226-fbcac2384ef4">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Comité interministériel</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:41+02:00</dct:modified>
+        <dct:created>2018-07-24T14:33:08+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ca7fb8b2-e08a-4afc-baac-e1516476da02">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service technique central</xl:literalForm>
+        <dct:modified>2018-07-27T14:34:55+02:00</dct:modified>
+        <dct:created>2018-07-27T14:13:31+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8e82a534-e2d8-4f11-ae04-c18c4ea3d52e">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Groupement d'intérêt économique</xl:literalForm>
+        <dct:modified>2018-07-25T17:57:36+02:00</dct:modified>
+        <dct:created>2018-07-25T17:53:07+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b3c95212-018f-41c2-91d5-0d2b479bb83b">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Organisme de sécurité sociale</xl:literalForm>
+        <dct:modified>2018-07-27T10:03:26+02:00</dct:modified>
+        <dct:created>2018-07-27T09:59:25+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1e8662c2-a995-438c-8306-840be647fb92">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service actif de police</xl:literalForm>
+        <dct:modified>2018-07-27T11:46:57+02:00</dct:modified>
+        <dct:created>2018-07-27T11:41:29+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/e41cc19a-94ed-435c-aff2-97deaa849998">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Corporation ou communauté de métier</xl:literalForm>
+        <dct:modified>2018-07-25T17:35:10+02:00</dct:modified>
+        <dct:created>2018-07-23T15:12:00+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/31849d5f-c38d-4e8c-b61b-f4a47ce654cf">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société commerciale</xl:literalForm>
+        <dct:modified>2018-07-27T14:49:39+02:00</dct:modified>
+        <dct:created>2018-07-27T14:40:56+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bd5eb895-5cd7-4fd6-b065-37c0f839dd5c">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public de santé</xl:literalForm>
+        <dct:modified>2018-07-25T17:32:18+02:00</dct:modified>
+        <dct:created>2018-07-25T17:28:21+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f16cd628-dfca-4365-a6f9-818a27091c17">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Groupement d'intérêt scientifique</xl:literalForm>
+        <dct:modified>2018-07-25T18:15:59+02:00</dct:modified>
+        <dct:created>2018-07-25T18:08:18+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c9820f78-ccaf-4e03-ac98-d95185e47ed4">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service à compétence nationale</xl:literalForm>
+        <dct:modified>2018-07-27T11:31:22+02:00</dct:modified>
+        <dct:created>2018-07-27T11:25:35+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/9741eea2-0c3e-40e1-9ba0-e58f5a70b01e">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public à caractère scientifique, culturel et professionnel</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:51+02:00</dct:modified>
+        <dct:created>2018-07-24T16:15:58+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/e00ca653-cc58-46ee-b737-f2a59be710ff">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Corps de ville ou communauté d'habitants</xl:literalForm>
+        <dct:modified>2018-07-25T17:35:20+02:00</dct:modified>
+        <dct:created>2018-07-23T15:10:12+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2cdb9ca3-af6c-4714-9dce-3eb4a9da3442">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Assemblée parlementaire</xl:literalForm>
+        <dct:modified>2018-07-25T17:33:07+02:00</dct:modified>
+        <dct:created>2018-07-23T15:21:17+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/26439b69-6d57-4ba1-8f91-e2f5ff7f213c">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public</xl:literalForm>
+        <dct:modified>2018-07-25T17:33:29+02:00</dct:modified>
+        <dct:created>2018-07-24T14:37:17+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/95098966-7f6a-4b2e-aad2-327c91bf9e88">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Administration ou juridiction royale locale (Ancien Régime)</xl:literalForm>
+        <dct:modified>2018-07-25T17:32:56+02:00</dct:modified>
+        <dct:created>2018-07-19T12:09:47+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8aa0c94b-cba2-4ada-a606-f5fa0c055baa">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Congrégation religieuse ou ordre militaire</xl:literalForm>
+        <dct:modified>2018-07-25T17:35:02+02:00</dct:modified>
+        <dct:created>2018-07-23T14:16:43+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b93577e3-2606-4bfe-9e44-92e56e5b7e44">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Ministère</xl:literalForm>
+        <dct:modified>2018-07-26T11:51:05+02:00</dct:modified>
+        <dct:created>2018-07-26T11:47:27+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5aa02772-3172-4fb4-beea-cb3143d9b3f9">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Service déconcentré de l'État</xl:literalForm>
+        <dct:modified>2018-07-27T12:31:23+02:00</dct:modified>
+        <dct:created>2018-07-27T12:13:46+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c6b937dc-e4a2-49c3-b442-ac0c597d5b1a">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société d'économie mixte</xl:literalForm>
+        <dct:modified>2018-07-27T15:01:16+02:00</dct:modified>
+        <dct:created>2018-07-27T15:00:51+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c3f11673-a9b7-4cad-b33e-8b51e232b445">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Juridiction</xl:literalForm>
+        <dct:modified>2018-07-19T11:55:01+02:00</dct:modified>
+        <dct:created>2018-07-19T11:54:14+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8316c28f-0039-46d1-8ece-3c4af9c61f84">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Organisme consultatif</xl:literalForm>
+        <dct:modified>2018-07-26T12:41:01+02:00</dct:modified>
+        <dct:created>2018-07-26T12:40:52+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1467f3e0-71cb-470c-8218-1b6a639cdd6e">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société civile</xl:literalForm>
+        <dct:modified>2018-07-27T14:37:01+02:00</dct:modified>
+        <dct:created>2018-07-27T14:34:26+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/56fb5adf-072b-4414-842b-b5934d2ac576">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Organe gouvernemental de la monarchie (Ancien Régime)</xl:literalForm>
+        <dct:modified>2018-07-25T17:38:23+02:00</dct:modified>
+        <dct:created>2018-07-19T11:51:54+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ce1e1be1-dcd3-44d9-8f11-6cb73621f0b3">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement d'enseignement</xl:literalForm>
+        <dct:modified>2018-07-25T17:35:51+02:00</dct:modified>
+        <dct:created>2018-07-23T14:32:01+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bc1ad107-b84a-4b32-b4e5-108601f35c7d">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Cour supérieure ou souveraine</xl:literalForm>
+        <dct:modified>2018-07-25T17:35:42+02:00</dct:modified>
+        <dct:created>2018-07-18T17:34:50+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/a2f0bd7a-0df7-4da8-9a83-5a9d2cdc98bd">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Parti politique</xl:literalForm>
+        <dct:modified>2018-07-27T11:23:48+02:00</dct:modified>
+        <dct:created>2018-07-27T11:09:49+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/3315545f-1c68-4d6a-84f9-ea1703f70bb2">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Administration ou juridiction religieuse séculière</xl:literalForm>
+        <dct:modified>2018-07-20T10:00:51+02:00</dct:modified>
+        <dct:created>2018-07-20T10:00:51+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f468655f-260e-4450-b788-16c3414d33e0">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public à caractère industriel et commercial</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:30+02:00</dct:modified>
+        <dct:created>2018-07-24T15:12:49+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1b12090d-bddc-4a19-a65f-b1b44a2e3d5a">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société coopérative et participative</xl:literalForm>
+        <dct:modified>2018-07-27T14:58:58+02:00</dct:modified>
+        <dct:created>2018-07-27T14:50:25+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d8dea604-162b-49dd-9031-01ea2f928aef">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Subdivision d'un organe gouvernemental de la monarchie (Ancien Régime)</xl:literalForm>
+        <dct:modified>2018-07-25T17:38:34+02:00</dct:modified>
+        <dct:created>2018-07-19T11:47:42+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/20e96e94-c1ec-4689-95f6-f197ae3971ea">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société d'État</xl:literalForm>
+        <dct:modified>2018-07-27T15:07:25+02:00</dct:modified>
+        <dct:created>2018-07-27T15:04:18+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5b47ea59-0dd9-4be8-bdd3-6f0571f9fce0">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Comité d'assemblée parlementaire</xl:literalForm>
+        <dct:modified>2018-07-25T17:33:16+02:00</dct:modified>
+        <dct:created>2018-07-24T14:28:29+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/1a6e30cc-5a00-4db8-8aa7-3f7460d9cd29">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Institution de prévoyance</xl:literalForm>
+        <dct:modified>2018-07-26T11:51:12+02:00</dct:modified>
+        <dct:created>2018-07-26T11:40:49+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/0f1041e9-658b-4a4d-b524-410feeb04fab">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public à caractère administratif</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:05+02:00</dct:modified>
+        <dct:created>2018-07-24T14:52:51+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/872d5e09-3612-4535-b966-bfcb1c22a7de">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Fondation</xl:literalForm>
+        <dct:modified>2018-07-25T17:52:23+02:00</dct:modified>
+        <dct:created>2018-07-25T17:48:16+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8dd72b7a-c737-4f82-9130-d5d629b972a6">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Autorité seigneuriale laïque</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:24+02:00</dct:modified>
+        <dct:created>2018-07-20T11:08:18+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/10441a96-826d-4773-a237-c392fc2d1d85">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Association</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:03+02:00</dct:modified>
+        <dct:created>2018-07-23T15:30:10+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c214e2f4-52a2-4da3-b7c2-714cd4f56f42">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Assemblée représentative</xl:literalForm>
+        <dct:modified>2018-07-25T17:33:53+02:00</dct:modified>
+        <dct:created>2018-07-19T11:36:27+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/89261594-140d-48d3-9b35-ffb176b437d1">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Unité mixte de recherche</xl:literalForm>
+        <dct:modified>2018-07-27T16:34:16+02:00</dct:modified>
+        <dct:created>2018-07-27T16:06:39+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/8e060b54-05f6-4fc4-bc85-351be58c296f">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Organisme parapublics (Ancien Régime)</xl:literalForm>
+        <dct:modified>2018-07-27T10:15:05+02:00</dct:modified>
+        <dct:created>2018-07-27T10:05:00+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7316d667-acf0-49f8-bfab-033c5431cf0c">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement religieux</xl:literalForm>
+        <dct:modified>2018-07-25T17:37:34+02:00</dct:modified>
+        <dct:created>2018-07-23T14:08:52+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/655385ce-435a-4df7-855e-e1b95df9a34d">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Groupement d'intérêt public</xl:literalForm>
+        <dct:modified>2018-07-25T18:05:49+02:00</dct:modified>
+        <dct:created>2018-07-25T17:58:09+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/11235494-5f04-4c9d-b1d4-d737904c080b">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Organisation intergouvernementale</xl:literalForm>
+        <dct:modified>2018-07-26T12:39:29+02:00</dct:modified>
+        <dct:created>2018-07-26T12:35:32+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/f72c1f75-5918-4393-921c-9fa16b415d91">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Ordre professionnel</xl:literalForm>
+        <dct:modified>2018-07-26T11:56:40+02:00</dct:modified>
+        <dct:created>2018-07-26T11:55:02+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/32f52732-c417-4c43-bb64-026957d9c2d3">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Office notarial</xl:literalForm>
+        <dct:modified>2018-07-26T11:53:50+02:00</dct:modified>
+        <dct:created>2018-07-26T11:51:55+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/94d7c5ca-1a33-41b0-bddf-2e7f26ada54d">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Autorité indépendante</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:15+02:00</dct:modified>
+        <dct:created>2018-07-24T11:21:38+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/2261d826-bcb6-4f04-abe8-71185379e85b">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public à caractère scientifique et technologique</xl:literalForm>
+        <dct:modified>2018-07-25T17:37:05+02:00</dct:modified>
+        <dct:created>2018-07-24T15:16:32+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/7c57c2a8-0178-47d2-af20-5a0ff89539e4">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Cabinet ministériel</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:33+02:00</dct:modified>
+        <dct:created>2018-07-24T14:07:41+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/ab21035a-6d27-411d-a4fd-49779f75831e">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Commission juridictionnelle</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:49+02:00</dct:modified>
+        <dct:created>2018-07-24T14:13:34+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:PreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/59a46f1e-192b-4caa-86e5-1cb7fcea7692">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Juridiction d'exception ou d'attribution</xl:literalForm>
+        <dct:modified>2018-07-25T17:38:10+02:00</dct:modified>
+        <dct:created>2018-07-19T11:41:18+02:00</dct:created>
+    </iso-thes:PreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/5d372bf6-35cc-4ac9-b03e-81a6b749ea06">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">EPSCP</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:51+02:00</dct:modified>
+        <dct:created>2018-07-24T16:51:37+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/76a4a520-a56d-4e20-b125-470b2db31cd0">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Groupement scientifique</xl:literalForm>
+        <dct:modified>2018-07-25T18:15:59+02:00</dct:modified>
+        <dct:created>2018-07-25T18:15:59+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b757cf74-5537-43da-b3ca-8f35cba290e7">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">UMR</xl:literalForm>
+        <dct:modified>2018-07-27T16:34:16+02:00</dct:modified>
+        <dct:created>2018-07-27T16:26:34+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/90f617f9-358a-40e6-a7dd-ccefadf7c160">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Autorité administrative indépendante</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:15+02:00</dct:modified>
+        <dct:created>2018-07-24T11:28:14+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/4510b6e2-7cfb-4e31-8549-63c738e64739">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Autorité constitutionnelle indépendante</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:15+02:00</dct:modified>
+        <dct:created>2018-07-24T11:28:44+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/21a6d10f-ee4a-4599-bbe2-c9fd538a4b52">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">EPIC</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:30+02:00</dct:modified>
+        <dct:created>2018-07-24T15:20:57+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/01663c43-6411-47dd-9071-14ee4e69822b">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société coopérative d'intérêt collectif</xl:literalForm>
+        <dct:modified>2018-07-27T14:58:58+02:00</dct:modified>
+        <dct:created>2018-07-27T14:51:45+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/aab3b917-3266-44e5-9a5c-5d87171bfd00">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">EPA</xl:literalForm>
+        <dct:modified>2018-07-25T17:36:05+02:00</dct:modified>
+        <dct:created>2018-07-24T15:21:40+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/c21fd117-f08c-45a1-996f-729196ce75be">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Société coopérative ouvrière de production</xl:literalForm>
+        <dct:modified>2018-07-27T14:58:58+02:00</dct:modified>
+        <dct:created>2018-07-27T14:51:45+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/02d54979-f684-4a72-b4c3-f9b14efa2aed">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Fédération sportive</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:03+02:00</dct:modified>
+        <dct:created>2018-07-24T11:25:56+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/b7c1dd9c-1ecc-4512-ace1-46aebe360a75">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Autorité publique indépendante</xl:literalForm>
+        <dct:modified>2018-07-25T17:34:15+02:00</dct:modified>
+        <dct:created>2018-07-24T11:29:17+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/d5f43709-9aa0-4b9c-9774-81e0ccad23e2">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">EPST</xl:literalForm>
+        <dct:modified>2018-07-25T17:37:05+02:00</dct:modified>
+        <dct:created>2018-07-24T15:18:55+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <iso-thes:SimpleNonPreferredTerm rdf:about="http://data.culture.fr/thesaurus/resource/ark:/67717/bd95e853-d1a3-4c00-b8ac-ee68f8175988">
+        <iso-thes:status>1</iso-thes:status>
+        <xl:literalForm xml:lang="fr-FR">Établissement public de caractère scientifique et technique</xl:literalForm>
+        <dct:modified>2018-07-25T17:37:05+02:00</dct:modified>
+        <dct:created>2018-07-24T15:23:27+02:00</dct:created>
+    </iso-thes:SimpleNonPreferredTerm>
+    <ginco:CustomConceptAttribute rdf:about="http://data.culture.fr/thesaurus/ginco/ns/id">
+        <rdfs:label>id</rdfs:label>
+    </ginco:CustomConceptAttribute>
+</rdf:RDF>

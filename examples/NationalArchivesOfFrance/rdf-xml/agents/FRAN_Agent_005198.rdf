@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005198">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005198"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 2017 : ajouté lien vers successeur</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005198">
+            <rico:instantiates rdf:resource="record/005198"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005198</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005198"/>
+            <rico:identifier>5107/S</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005198">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005198"/>
+      <rdfs:label xml:lang="fr">France. Ministère des Affaires culturelles. Direction de l'architecture. Sous-direction des sites et des espaces protégés (1968-1978)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005198-France.%20Minist%C3%A8re%20des%20Affaires%20culturelles.%20Direction%20de%20l%27architecture.%20Sous-direction%20des%20sites%20et%20des%20espaces%20prot%C3%A9g%C3%A9s%20%281968-1978%29">
+            <rdfs:label xml:lang="fr">France. Ministère des Affaires culturelles. Direction de l'architecture. Sous-direction des sites et des espaces protégés (1968-1978)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère des Affaires culturelles. Direction de l'architecture. Sous-direction des sites et des espaces protégés (1968-1978)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005198"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005198-France.%20Secr%C3%A9tariat%20d%27%C3%89tat%20%C3%A0%20la%20culture.%20Direction%20de%20l%27architecture.%20Sous-direction%20des%20sites%20et%20des%20espaces%20prot%C3%A9g%C3%A9s%20%288%20juin%201974-29%20mars%201977%29-19740608-19770329">
+            <rdfs:label xml:lang="fr">France. Secrétariat d'État à la culture. Direction de l'architecture. Sous-direction des sites et des espaces protégés (8 juin 1974-29 mars 1977)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Secrétariat d'État à la culture. Direction de l'architecture. Sous-direction des sites et des espaces protégés (8 juin 1974-29 mars 1977)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005198"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-29</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005198-France.%20Minist%C3%A8re%20de%20la%20culture%20et%20de%20l%27environnement.%20Direction%20de%20l%27architecture.%20Sous-direction%20des%20sites%20et%20des%20espaces%20prot%C3%A9g%C3%A9s%20%2830%20mars%201977%20-%2031%20mars%201978%29-19770330-19780331">
+            <rdfs:label xml:lang="fr">France. Ministère de la culture et de l'environnement. Direction de l'architecture. Sous-direction des sites et des espaces protégés (30 mars 1977 - 31 mars 1978)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la culture et de l'environnement. Direction de l'architecture. Sous-direction des sites et des espaces protégés (30 mars 1977 - 31 mars 1978)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005198"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-30</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-03-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La sous-direction des sites et des espaces protégés est créée suite à la réorganisation de la direction de l'architecture en 1968. Cette dernière, placée au sein du ministère des Affaires culturelles depuis sa création le 8 janvier 1959, est restructurée en quatre sous-directions en 1968 : la sous-direction du personnel, de l'organisation et des programmes, la sous-direction des monuments historiques et des palais nationaux, la sous-direction des sites et des espaces protégés et enfin la sous-direction de la création architecturale et des constructions publiques.</html:p>
+            <html:p>La sous-direction des sites et des espaces protégés gère les sites, la protection de la nature, les abords des monuments historiques et les secteurs sauvegardés.</html:p>
+            <html:p>Suite à la création du ministère de l'Environnement et du Cadre de vie en 1978, la direction de l'architecture est éclatée et les compétences en matière d'architecture et d'espaces protégés rejoignent le nouveau ministère. La sous-direction des sites et espaces protégés rejoint la nouvelle direction de l'urbanisme et des paysages.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000051-005198-19680101-19781231"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/021768-005198"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/021768-top"/>
+   </rico:Agent>
+</rdf:RDF>

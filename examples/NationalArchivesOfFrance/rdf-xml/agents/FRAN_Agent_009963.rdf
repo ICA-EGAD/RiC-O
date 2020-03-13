@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/009963">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/009963"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-30</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Emmanuelle GIRY)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-17</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : revu le nom, ajouté fonctions, liens d'identité, qques liens d'association</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">École nationale des chartes, Livre du centenaire (1821-1921), Paris, Picard, 1921, 398 p., 2v.</rico:source>
+      <rico:source xml:lang="fr">L'École des chartes et la guerre (1914-1918) : livre d'or orné de 51 portraits, Paris, Société de l'École des chartes, 1921, VIII-169 p</rico:source>
+      <rico:source xml:lang="fr">Babelon (Jean-Pierre), Bancquart (Marie-Claire), Barbiche (Bernard), L'École nationale des chartes : histoire de l'École depuis 1821, THionville, G. Klopp, 1997, 326 p.</rico:source>
+      <rico:source xml:lang="fr">Leniaud (Jean-Michel), "L'École des chartes et la formation des élites (xXIXe siècle)", dans La Revue administrative, t. 46, 1993, p. 618-624.</rico:source>
+      <rico:source xml:lang="fr">Leniaud (Jean-Michel), ZINC (Michel) éd., L'Histoire en mutation : l'École nationale des chartes aujourd'hui et demain : actes du colloque international tenu le 13 novembre 2015 à l'Institut de France, Paris, Éditions de Boccard, 120 p.</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Bibliothèque de l'École des chartes : revue d'érudition…, Paris, Société de l'École des chartes, 1839-. Version numérisée accessible sur le site www.persee.fr à partir de l'année 1840. La revue permet notamment de suivre la scolarité et la carrière des élèves et anciens élèves, par la publication des résultats des concours, des sujets et des résultats des examens, des nécrologies.</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Notice BnF n°FRBNF11863474</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000122893514"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/%C3%89cole_nationale_des_chartes"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009963">
+            <rico:instantiates rdf:resource="record/009963"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_009963</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009963"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/009963">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/009963"/>
+      <isni:identifierValid>0000000122893514</isni:identifierValid>
+      <rdfs:label xml:lang="fr">École nationale des chartes (Paris ; 1821-....)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/009963-%C3%89cole%20nationale%20des%20chartes%20%28Paris%20%3B%201821-....%29">
+            <rdfs:label xml:lang="fr">École nationale des chartes (Paris ; 1821-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">École nationale des chartes (Paris ; 1821-....)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/009963"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/009963-%C3%89cole%20imp%C3%A9riale%20des%20chartes-18520101-18711231">
+            <rdfs:label xml:lang="fr">École impériale des chartes</rdfs:label>
+            <rico:textualValue xml:lang="fr">École impériale des chartes</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/009963"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1871-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/009963-%C3%89cole%20royale%20des%20chartes-18220101-18481231">
+            <rdfs:label xml:lang="fr">École royale des chartes</rdfs:label>
+            <rico:textualValue xml:lang="fr">École royale des chartes</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/009963"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1822-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1821-02-22</rico:beginningDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6c06728e-9968-4aa0-90fb-ebe20ffde0a7"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009963-d5bhvihxhx--1dol4k5w0lb2i">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009963"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009963-d5bhvihxhx--1dol4k5w0lb2i"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihxhx--1dol4k5w0lb2i"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009963-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009963"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009963-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009963-d3nyuic5p0-ktmsglhlnhvr">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009963"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009963-d3nyuic5p0-ktmsglhlnhvr"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">recherche en SHS</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Contexte général</h4>
+            <html:p>L'évolution des enseignements proposés à l'École des chartes suit également, notamment pour le XXe siècle, l'évolution des métiers des bibliothèques et des archives. La création de l'École nationale du patrimoine en 1990, devenue Institut national du patrimoine en 2001, comme celle de l'École nationale supérieure des sciences de l'information et des bibliothèques en 1992, influe sur le cursus proposé.</html:p>
+            <html:p>Deux organismes sont rattachés à l'École des chartes. L'arrêté du 12 juin 2007 porte ainsi création à l'École nationale des chartes d'un institut dénommé Comité des travaux historiques et scientifiques (CTHS), institut qui s'inscrit dans la continuité du comité des travaux historiques et scientifiques créé en 1834. De même la convention du 16 septembre 2002 a rattaché l'unité régionale de Formation à l'Information Scientifique et Technique (l'URFIST) à l'École des chartes qui en assure la gestion.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>L'École des chartes est créée par ordonnance du 22 février 1821 signée par Louis XVIII : cette ordonnance s'inscrit dans la lignée du projet porté par le baron Joseph-Marie de Gérando depuis 1807 de reconstituer un corps capable de "ranimer un genre d’études indispensable à la gloire de la France et fournir à notre Académie des inscriptions et belles-lettres tous les moyens nécessaires pour l’avancement des travaux confiés à ses soins". Ce projet convainct le ministre de l'Intérieur Joseph-Jérôme Siméon, qui établit un rapport adressé au roi daté également du 22 février 1821 présentant son projet d'ordonnance.</html:p>
+            <html:p>Cette ordonnance porte le nombre d'élèves à 12 et indique qu'"on apprendra aux élèves de l'École des chartes à lire les divers manuscrits et à appliquer les dialectes français du Moyen Âge". Cette ordonnance de 1821 est complétée par celle du 16 juillet 1823 qui fixe notamment la durée des cours.</html:p>
+            <html:p/>
+            <html:p>Tombée en sommeil, l'École fut remise en activité par l'ordonnance du 11 novembre 1829, qui prévoyait un cours élémentaire d'une année aux Archives du royaume, pour " apprendre à déchiffrer et lire les chartes ", puis deux années à la Bibliothèque royale, pour l'étude des langues romanes et de la diplomatique. Cette ordonnance de 1829 est permise par l'action de Rives, nommé en août 1829 directeur du personnel au ministère de l'Intérieur. L'ordonnance de 1829 inscrit l'École des chartes durablement dans la logique de poursuite des grandes entreprises d'éditions en établissant la<html:i>Bibliothèque de l'école royale des chartes</html:i>, pensée comme un recueil des documents traduits par les élèves (et jugés dignes d'être publiés) avec le texte originel en regard. Enfin, cette ordonnance de 1829 institue une commission chargée de sélectionner les documents publiés dans la<html:i>Bibliothèque de l'école royale des chartes</html:i>d'une part et d'autre part de choisir les élèves pensionnaires de l'institution.</html:p>
+            <html:p/>
+            <html:p>L'ordonnance du 31 décembre 1846 marque de profonds changements pour l'École des chartes. Ces changements sont d'une part d'ordre administratif (l'ordonnance lui attribue en effet des locaux distincts, aux Archives du royaume, une bibliothèque et un budget propre, et la place sous l'autorité d'un directeur et d'un conseil de perfectionnement, qui succédait à la commission créée par l'ordonnance de 1829) mais également d'ordre scolaire (un examen d'entrée est institué, le nombre de professeurs est fixé à 7). L'examen d'entrée, supprimé par décret du 18 octobre 1849, est rétabli par arrêté du 24 juillet 1872</html:p>
+            <html:p>L'enseignement comprend désormais la paléographie, la sigillographie, la numismatique, la philologie, le classement des archives et des bibliothèques, la géographie historique, le système des monnaies et des poids et mesures, l'histoire des institutions politiques de la France, l'archéologie, les éléments du droit civil, du droit canonique et du droit féodal.</html:p>
+            <html:p>La formation que propose ainsi l'École des chartes conduit à l'instauration règlementaire d'une préférence pour ses élèves pour les postes en bibliothèques et en archives. Les élèves diplômés ont désormais priorité pour un tiers des postes dans toutes les bibliothèques, y compris la Bibliothèque royale, et pour la moitié des places aux Archives nationales. Par la suite, des décrets réservèrent aux chartistes les places d'archivistes départementaux (4 février 1850) et toutes les places aux Archives nationales, celles de commis exceptées (14 mai 1887).</html:p>
+            <html:p/>
+            <html:p>La formation proposée connaît quelques évolutions et le décret du 30 janvier 1869 fixe ainsi de façon durable la liste des disciplines enseignées. L'École compte alors sept chaires : paléographie ; langues romanes ; bibliographie, classement des bibliothèques et des archives ; diplomatique ; institutions politiques, administratives et judiciaires de la France ; droit civil et droit canonique du Moyen Âge ; archéologie du Moyen Âge. En 1882 est adjoint un enseignement d' " étude critique des sources de l'histoire de France ". La chaire de bibliographie, à la mort d'Anatole de Montaiglon en 1895, est partagée en deux disciplines confiées à deux chargés de cours, l'un pour les bibliothèques, l'autre pour les archives. Elles deviennent ensuite des chaires à part entière. L'organisation de l'enseignement ne connaît pas de modification notable avant 1955. Le lien entre enseignement professeionnel et formation théorique est fondamental et justifie en partie le décret du 1er août 1963 créant le statut de fonctionnaire-stagiaire pour les élèves de l'École des chartes "se destinant aux emplois publics".</html:p>
+            <html:p/>
+            <html:p>Transformée en 1967 en établissement public à caractère administratif, l'École des chartes se voit doter d'un conseil d'administration par décret du 23 août 1967. Le décret du 8 octobre 1987 modifie durablement son fonctionnement : l'École devient un établissement public de l'État à caractère scientifique, culturel et professionnel et rejoint la liste des grands établissements. Elle reste dirigée par un directeur mais est dotée d'un conseil d'administration et d'un conseil scientifique, qui reprend les compétences du conseil de perfectionnement précédent et de l'assemblée des professeurs.</html:p>
+            <html:p/>
+            <html:p>Le décret de 2005 rappelle ainsi les missions de l'École des chartes : "L’École nationale des chartes a pour mission la formation de personnels scientifiques des archives et des bibliothèques. Elle concourt à la formation de tous les personnels qui contribuent à la connaissance scientifique et à la mise en valeur du patrimoine national. Elle participe à la formation à et par la recherche des étudiants en sciences de l'homme et de la société, particulièrement dans les disciplines relatives à l'étude critique, l'exploitation, la conservation et la communication des sources historiques. Elle mène des activités de recherche et contribue à la diffusion et à la valorisation des résultats dans ces disciplines".</html:p>
+            <html:p/>
+            <html:p>L'École des chartes a toujours été située à Paris (en dépit de l'expérience éphémère de la création d'une École des chartes à Dijon, qui a existé de 1829 à 1836) : installée de puis 1846 à l'hôtel de Soubise aux Archives nationales, puis en 1866 à l'hôtel de Breteuil, elle rejoint en 1897 la Sorbonne dans les locaux initialement prévus par la faculté de théologie (19, rue de la Sorbonne). En 2014, elle déménage sur le site du 65, rue de Richelieu et se rapproche ainsi de la Bibliothèque nationale de France.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-009963-18280210-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005568-009963-20100101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009963-050312-19320402-20140812"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/003971-009963-19920113-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118634749#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/%C3%89cole_nationale_des_chartes"/>
+   </rico:Agent>
+</rdf:RDF>

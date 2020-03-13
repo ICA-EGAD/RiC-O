@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives.strath.ac.uk/">
+   <rico:Record rdf:about="record/C0477">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/national-life-stories-oral-history-fieldwork-charity"/>
+      <rico:createdBy rdf:resource="agent/GB-249"/>
+      <rico:ruleFollowed xml:lang="en">ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003)</rico:ruleFollowed>
+      <rico:ruleFollowed xml:lang="en">Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</rico:ruleFollowed>
+      <rico:hasLanguage rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+     
+      <rico:createdBy rdf:resource="agent/GB-249"/>
+      <rico:managedBy rdf:resource="agent/GB-249"/>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="en">Correcting (par Florence Clavaud (ICA/EGAD member | Archives nationales de France)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:date>
+            <rico:descriptiveNote xml:lang="en">some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/C0477-i1">
+            <rico:instantiates rdf:resource="record/C0477"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>C0477</rico:identifier>
+            <rico:heldBy rdf:resource="agent/GB-249"/>
+            <rdfs:seeAlso rdf:resource="https://atom.lib.strath.ac.uk/national-life-stories-oral-history-fieldwork-charity"/>
+            <rico:ruleFollowed xml:lang="en">Encoded Archival Context for Corporate Bodies, Persons, Families, 2nd Edition, 2003</rico:ruleFollowed>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/national-life-stories-oral-history-fieldwork-charity">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/C0477"/>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/national-life-stories-oral-history-fieldwork-charity-National%20Life%20Stories%2C%20oral%20history%20fieldwork%20charity">
+            <rdfs:label xml:lang="en">National Life Stories, oral history fieldwork charity</rdfs:label>
+            <rico:textualValue xml:lang="en">National Life Stories, oral history fieldwork charity</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="en">
+            <html:p>National Life Stories (formerly the National Life Stories Collection) is an independent charitable trust within the British Library. It was established in 1987 to record, preserve and make available the first-hand experiences of people from as wide a cross-section of modern-day society as possible.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/national-life-stories-oral-history-fieldwork-charity--simmons-jenny-fl-2004--2000-2008"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/oral-history-interviews-with-george-wyllie"/>
+   </rico:Agent>
+</rdf:RDF>

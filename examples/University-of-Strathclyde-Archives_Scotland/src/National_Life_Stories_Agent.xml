@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" xmlns="urn:isbn:1-931666-33-4"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <control>
+    <recordId>C0477</recordId>
+    <!-- added a maintenanceStatus element -->
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyName>GB 249</agencyName>
+    </maintenanceAgency>
+    <conventionDeclaration>
+      <abbreviation>conventionDeclaration</abbreviation>
+      <citation>ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies,
+        Persons and Families, International Council on Archives (2nd edition, 2003); Rules for the
+        construction of personal, place and corporate names, National Council on Archives
+        (1997).</citation>
+    </conventionDeclaration>
+    <localTypeDeclaration>
+      <abbreviation>detailLevel</abbreviation>
+      <citation>http://ica-atom.org/doc/RS-2#5.4</citation>
+    </localTypeDeclaration>
+    <!-- added a maintenanceHistory element-->
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2020-02-28</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Florence Clavaud (ICA/EGAD member | Archives nationales de France)</agent>
+        <eventDescription>some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>corporateBody</entityType>
+      <nameEntry>
+        <part>National Life Stories, oral history fieldwork charity</part>
+        <authorizedForm>conventionDeclaration</authorizedForm>
+      </nameEntry>
+    </identity>
+    <description>
+      <existDates>
+        <date>1987 to date</date>
+      </existDates>
+      <!-- <biogHist id="md5-9d3d2e956781924d0764a1314dce2e18">-->
+      <biogHist>
+        <p>National Life Stories (formerly the National Life Stories Collection) is an independent
+          charitable trust within the British Library. It was established in 1987 to record,
+          preserve and make available the first-hand experiences of people from as wide a
+          cross-section of modern-day society as possible.</p>
+      </biogHist>
+    </description>
+    <relations>
+      <cpfRelation cpfRelationType="associative"
+        xlink:href="https://atom.lib.strath.ac.uk/simmons-jenny-fl-2004" xlink:type="simple">
+        <relationEntry>Simmons, Jenny, fl. 2000, oral historian</relationEntry>
+        <dateRange>
+          <fromDate standardDate="2000">2000</fromDate>
+          <toDate standardDate="2008">2008</toDate>
+        </dateRange>
+        <descriptiveNote>
+          <p>Jenny Simmons worked as a freelance oral history interviewer for National Life
+            Stories.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <resourceRelation resourceRelationType="creatorOf"
+        xlink:href="https://atom.lib.strath.ac.uk/oral-history-interviews-with-george-wyllie"
+        xlink:type="simple">
+        <relationEntry>Interviews with George Wyllie for the National Life Stories project, Artists'
+          Lives</relationEntry>
+      </resourceRelation>
+    </relations>
+  </cpfDescription>
+</eac-cpf>

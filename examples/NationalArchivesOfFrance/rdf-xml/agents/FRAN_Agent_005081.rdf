@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005081">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005081"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-24</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Journal Officiel de la République française</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005081">
+            <rico:instantiates rdf:resource="record/005081"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005081</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005081"/>
+            <rico:identifier>5103/BPEA</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005081">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005081"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des établissements, du patrimoine et de l'action culturelle (1987-1988)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005081-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20des%20%C3%A9tablissements%2C%20du%20patrimoine%20et%20de%20l%27action%20culturelle%20%281987-1988%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des établissements, du patrimoine et de l'action culturelle (1987-1988)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des établissements, du patrimoine et de l'action culturelle (1987-1988)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005081"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005081-Bureau%20des%20%C3%A9tablissements%20et%20du%20patrimoine-19870521-19871231">
+            <rdfs:label xml:lang="fr">Bureau des établissements et du patrimoine</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau des établissements et du patrimoine</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005081"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-21</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-21</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyug92d2--81fv3kv7ow8s">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyug92d2--81fv3kv7ow8s"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug92d2--81fv3kv7ow8s"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyugszba-a2wofi2a3sjm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyugszba-a2wofi2a3sjm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugszba-a2wofi2a3sjm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyuh17x9-p3lv1gh3hjbu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyuh17x9-p3lv1gh3hjbu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh17x9-p3lv1gh3hjbu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyuh7zxq--5ybh1cuewf1k">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyuh7zxq--5ybh1cuewf1k"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh7zxq--5ybh1cuewf1k"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyuic5p0-ktmsglhlnhvr">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyuic5p0-ktmsglhlnhvr"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005081-d3nyuiihz0-a8ekfbm461kd">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005081"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005081-d3nyuiihz0-a8ekfbm461kd"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuiihz0-a8ekfbm461kd"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Arrêté du 16 février 1987 relatif à l'organisation de la direction du Livre et de la Lecture (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000843367&amp;fastPos=1&amp;fastReqId=881062634&amp;categorieLien=id&amp;oldAction=rechTexte)</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le bureau des établissements, du patrimoine et de l'action culturelle est composé de quatre sous-ensembles :</html:p>
+            <html:ul>
+               <html:li>Établissements : missions institutionnelles concernant la lecture publique ; construction des bibliothèques centrales de prêt ; définition des normes et contrôle technique tant en ce qui concerne le fonctionnement que l'équipement des bibliothèques ; suivi des problèmes législatifs et réglementaires liés à la décentralisation des bibliothèques en liaison avec le ministère de l'Intérieur ; statistiques.</html:li>
+               <html:li>Patrimoine : missions de sauvegarde, d'enrichissement et de mise en valeur des fonds patrimoniaux des bibliothèques ; problèmes juridiques et statutaires liés aux fonds patrimoniaux.</html:li>
+               <html:li>Conservation des fonds : recherche en liaison avec le Centre de recherche sur la conservation des documents graphiques au Muséum national d'histoire naturelle et l'Institut de la conservation ; études, conseils techniques et interventions financières auprès des bibliothèques municipales ; microreproduction en liaison avec l'Institut de recherche et d'histoire des textes ; mise en valeur et accroissement des collections ; aides aux associations ; inventaire photographique et informatisation du catalogue des fonds anciens.</html:li>
+               <html:li>Action culturelle : lutte contre l'illettrisme et la non lecture ; formations spécialisées ; actions avec les associations avec d'autres départements ministériels (Justice) ; élargissement du réseau de lecture (comités d'entreprise...).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le bureau des établissements et du patrimoine est créé au sein du département des bibliothèques et de la lecture par un arrêté du 16 février 1987 (publié au Journal Officiel le 20 mai), qui réorganise la direction du Livre et de la Lecture (DLL). Il devient bureau des établissements, du patrimoine et de l'action culturelle l'année suivante.</html:p>
+            <html:p>Il disparaît en 1988-1989, lorsque les deux bureaux du département des bibliothèques et de la lecture sont refondus en deux nouveaux bureaux.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions du bureau des établissements, du patrimoine et de l'action culturelle sont définies dans l'article 5 de l'arrêté du 16 février 1987 : il "assure l'ensemble des missions institutionnelles concernant la lecture publique et est responsable des questions relatives au développement de la lecture. Il suit les programmes et les opérations de construction des bibliothèques centrales de prêt et contribue à la définition des normes et du contrôle technique tant en ce qui concerne le fonctionnement que l'équipement des bibliothèques. Il assure la sauvegarde, l'enrichissement et la mise en valeur des fonds patrimoniaux des bibliothèques."</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005081-19870521-19881231"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005672-005081-19870521-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005670-005081-19870521-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005671-005081-19870521-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005081-005082-19890101-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005081-005083-19890101-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054852-005081"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054852-top"/>
+   </rico:Agent>
+</rdf:RDF>

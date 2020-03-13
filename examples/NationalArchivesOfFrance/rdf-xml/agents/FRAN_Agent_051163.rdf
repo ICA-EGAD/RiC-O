@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051163">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051163"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 2 décembre 2015 : revu les liens chronologiques et hiérarchique. @protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 mars 2017 : ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Poulain Caroline. "Louis Hautecœur et Vichy : pensée et action politiques d'un historien de l'architecture". In: Livraisons d'histoire de l'architecture. n°3, 1er semestre 2002. pp. 103-111. Disponible à cette adresse : http://www.persee.fr/web/revues/home/prescript/article/lha_1627-4970_2002_num_3_1_901</rico:source>
+      <rico:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</rico:source>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF14851201</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051163">
+            <rico:instantiates rdf:resource="record/051163"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051163</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051163"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051163">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051163"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts (1940-1944)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051163-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Secr%C3%A9tariat%20g%C3%A9n%C3%A9ral%20des%20Beaux-Arts%20%281940-1944%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts (1940-1944)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Secrétariat général des Beaux-Arts (1940-1944)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051163"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051163-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Direction%20g%C3%A9n%C3%A9rale%20des%20Beaux-Arts%20%281940-1941%29-19400101-19411231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction générale des Beaux-Arts (1940-1941)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Direction générale des Beaux-Arts (1940-1941)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051163"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051163-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051163"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051163-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>En juillet 1940, Louis Hautecoeur est nommé directeur général des Beaux-Arts, qui devient un secrétariat général en mars 1941. Il conserve ce poste jusqu'en mars 1944.</html:p>
+            <html:p>Suite à la réorganisation du 1er décembre 1940, la direction des Beaux-Arts est composée :</html:p>
+            <html:p>- d'un service de l'enseignement, des travaux d'art et des spectacles : bureau de l'enseignement, manufactures et mobilier national, bureau des travaux d'art, musées et expositions, services commerciaux, bureau des musiques et spectacles.</html:p>
+            <html:p>- d'une direction des services d'architecture : bureau de l'architecture, bureau des bâtiments civils et palais nationaux, bureau des monuments historiques et sites, bureau de la liquidation des dépenses et contentieux, bureau du contrôle technique. René Perchet est nommé directeur des services d'architecture le 1er décembre 1940.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Sous Vichy, le ministère de l'Education nationale prend de façon temporaire la forme d'un Secrétariat d'État comportant une direction générale des beaux-arts qui devient secrétariat général en 1941. Des sous-structures sont créées par domaine d'intervention pour mettre en place la politique du régime en matière de législation antisémite et de corporatisme, en particulier : Comité d'organisation des entreprises de spectacles (COES) ou Comité d’organisation des industries du cinéma (COIC).</html:p>
+            <html:p>Deux lois majeures sur l'archéologie et les monuments historiques sont instaurées :</html:p>
+            <html:p>- La loi du 27 septembre 1941 est la première à réglementer les fouilles archéologiques et entraîne l'organisation d'un véritable service de l'archéologie.</html:p>
+            <html:p>- En 1943, la loi du 25 février sur les abords des monuments historiques introduit la définition du champ de visibilité et vient instituer un périmètre de protection de 500 mètres.</html:p>
+            <html:p>À la Libération, la direction générale des arts et lettres (DGAL) est mise en place par une ordonnance du Gouvernement provisoire de la République française en date du 20 novembre 1944.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051163-051160-19400101-19441231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051163-005205-19441120-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051158-051163-19400101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051163-19400101-19441231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb148512018#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050306-051163"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050306-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050931-051163"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050931-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054718-051163"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054718-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056460-051163"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056460-top"/>
+   </rico:Agent>
+</rdf:RDF>

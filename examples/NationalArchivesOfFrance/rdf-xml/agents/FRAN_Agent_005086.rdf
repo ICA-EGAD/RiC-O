@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005086">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005086"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-22</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : ajouté liens d'identité, revu le nom</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Conseil_sup%C3%A9rieur_des_biblioth%C3%A8ques)</rico:source>
+      <rico:source xml:lang="fr">Notice de l'ENSSIB (http://www.enssib.fr/le-dictionnaire/conseil-superieur-des-bibliotheques-csb)</rico:source>
+      <rico:source xml:lang="fr">Melot, Michel. « Le conseil supérieur des bibliothèques », Bulletin des bibliothèques de France (BBF), 1990, n° 5, p. 290-295. Disponible en ligne : &lt;http://bbf.enssib.fr/consulter/bbf-1990-05-0290-003&gt;. ISSN 1292-8399.</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF12129299</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012175220X"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Conseil_sup%C3%A9rieur_des_biblioth%C3%A8ques"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005086">
+            <rico:instantiates rdf:resource="record/005086"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005086</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005086"/>
+            <rico:identifier>5103/CSB</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005086">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005086"/>
+      <isni:identifierValid>000000012175220X</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Conseil supérieur des bibliothèques (1989-2001)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005086-France.%20Conseil%20sup%C3%A9rieur%20des%20biblioth%C3%A8ques%20%281989-2001%29">
+            <rdfs:label xml:lang="fr">France. Conseil supérieur des bibliothèques (1989-2001)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Conseil supérieur des bibliothèques (1989-2001)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005086"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005086-CSB">
+            <rdfs:label xml:lang="fr">CSB</rdfs:label>
+            <rico:textualValue xml:lang="fr">CSB</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005086"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005086-d3nyugsjkt--7vpbe5hqjvzi">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005086"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005086-d3nyugsjkt--7vpbe5hqjvzi"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005086-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005086"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005086-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Décret n°89-778 du 23 octobre 1989 instituant un Conseil supérieur des bibliothèques (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000700412&amp;fastPos=3&amp;fastReqId=1293670577&amp;categorieLien=id&amp;oldAction=rechTexte)</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>En vertu de l'article 3 du décret du 23 octobre 1989, le CSB est composé d'un président et de deux vice-présidents nommés par arrêté du Premier Ministre, et de 18 membres nommés par arrêté conjoint du ministre de l'Éducation nationale, du ministre de la Culture et du ministre de la Recherche. Trois élus locaux viennent s'y ajouter, dont un maire, un conseiller général et un conseiller régional, proposés conjointement par le ministre chargé de l'Enseignement supérieur, le ministre chargé de la Culture et le ministre chargé de la Recherche.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le besoin d'un Conseil supérieur des bibliothèques s'est fait sentir dès 1975, lorsque le ministère de l'Éducation nationale et le ministère de la Culture se sont partagé le domaine des bibliothèques : les professionnels des bibliothèques ont alors demandé la création d'un organisme commun pour assurer la cohésion entre les politiques des deux tutelles. De plus, la décentralisation, en donnant naissance à des conflits de compétences entre les niveaux de collectivités et entre les collectivités et l'administration centrale, a accentué le besoin d'une instance supérieure. Dans son rapport sur les bibliothèques (1988), André Miquel souligne l'utilité de « la mise en place urgente d'un Conseil supérieur des bibliothèques [...] chargé de prévoir, de préparer et de suivre la mise en place des pôles et des réseaux de communication, l'évaluation des coûts, des fréquentations et des résultats, la répartition des crédits correspondants et l'établissement de la carte des bibliothèques ».</html:p>
+            <html:p>Le Conseil supérieur des bibliothèques (CSB) a été institué par le décret n° 89-778 du 23 octobre 1989 modifié par le décret n° 93-720 du 29 mars 1993, signé des trois ministres chargés de la Culture, de l'Éducation Nationale et de la Recherche.</html:p>
+            <html:p>À partir de 2001 le CSB ne s'est plus réuni et ses membres n'ont pas été renouvelés. La disparition du CSB a été annoncée à l'occasion du congrès de l'Association des bibliothécaires de France (ABF) en 2006, et les textes le régissant (codifiés dans le Code de l'Éducation) ont été abrogés par défaut suite à la publication des décrets du 7 juin 2009.</html:p>
+            <html:p>Le CSB a été successivement présidé par André Miquel (1989-1993), Michel Melot (1993-1997) et Jean-Claude Groshens (1997-2001).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions du CSB sont fixées par l'article 2 du décret du 23 octobre 1989 : il "est chargé d'émettre des avis et des recommandations sur la situation et les questions qui concernent les bibliothèques et les réseaux documentaires. Il favorise la coordination des politiques documentaires relevant de plusieurs ministres." Il n'a donc pas de rôle exécutif ni contraignant : il est un organe de conseil et de consultation. Il se réunit au moins trois fois par an.</html:p>
+            <html:p>Le CSB n'entre pas en concurrence avec l'Inspection générale des bibliothèques : il n'examine aucun problème particulier à un établissement ou à une personne, sauf par accord avec l'Inspection générale qui considérerait que le cas est d'importance nationale.</html:p>
+            <html:p>Son rapport annuel a été très vite un aiguillon dans la vie des bibliothèques. Ses préconisations sur les bibliothèques scolaires, les bibliothèques musicales, les collections scientifiques ou la coopération entre bibliothèques ont marqué les esprits. Lors de sa brève existence, il a été sollicité pour expertiser le projet de la future Bibliothèque de France. Il a élaboré la charte des bibliothèques, travail préparatoire à l’adoption d’une loi sur les bibliothèques, et la charte du bibliothécaire volontaire. Il accompagne la décentralisation.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005086-19890101-20011231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000016-005086-19890101-20011231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005086-005099-19890101-20011231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12129299n#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Conseil_sup%C3%A9rieur_des_biblioth%C3%A8ques"/>
+   </rico:Agent>
+</rdf:RDF>

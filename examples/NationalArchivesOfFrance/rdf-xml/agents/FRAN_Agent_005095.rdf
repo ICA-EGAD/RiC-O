@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005095">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005095"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-24</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 12 avril 2017 : ajouté lien d'association</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 avril 2017 : recréé lien hiérarchique, revu indexation fonctions</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005095">
+            <rico:instantiates rdf:resource="record/005095"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005095</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005095"/>
+            <rico:identifier>5103/PD</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005095">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005095"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la politique documentaire (1995-2010)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005095-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20de%20la%20politique%20documentaire%20%281995-2010%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la politique documentaire (1995-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la politique documentaire (1995-2010)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005095"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005095-Bureau%20de%20la%20politique%20documentaire%20et%20de%20la%20formation-19950512-20001231">
+            <rdfs:label xml:lang="fr">Bureau de la politique documentaire et de la formation</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau de la politique documentaire et de la formation</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005095"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-12</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-12</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005095-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005095"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005095-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le bureau de la politique documentaire et de la formation est créé au sein du département des politiques documentaires et patrimoniales, au sein de la direction du Livre et de la Lecture (DLL) suite à deux arrêtés du 9 mai 1995 (publiés au Journal Officiel du 11 mai), qui réorganisent la direction. Il reprend en partie les missions du bureau de la tutelle et des projets nationaux (département des bibliothèques de l'État et des affaires générales).</html:p>
+            <html:p>Il disparaît avec la DLL en vertu du décret du 11 novembre 2009 (entré en vigueur le 13 janvier 2010) qui redéfinit l'organisation du ministère en réduisant le nombre des directions à trois.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Il est chargé :</html:p>
+            <html:ul>
+               <html:li>de l'expertise scientifique des projets et activités de la Bibliothèque nationale de France dans les domaines de la bibliothéconomie (enrichissement, signalement et conservation des collections), de la numérisation, de la recherche et de la valorisation ;</html:li>
+               <html:li>du pilotage de politiques documentaires nationales : il veille à la coopération de la Bibliothèque nationale de France avec les bibliothèques françaises en matière de constitution, de signalement et de diffusion de la documentation (Serveur bibliographique national, dépôt légal, pôles associés, catalogue collectif de France, prêt inter bibliothèques et fourniture à distance de documents) ;</html:li>
+               <html:li>des questions liées aux nouvelles technologies : il encourage le développement des projets de numérisation relatifs aux collections des bibliothèques de lecture publique françaises, coordonne la participation des bibliothèques de lecture publique françaises aux programmes internationaux en matière de nouvelles technologies ;</html:li>
+               <html:li>du dépôt légal ;</html:li>
+               <html:li>de la formation du personnel des bibliothèques. Il perd sa mission de formation en 2000, au profit du bureau des affaires générales.</html:li>
+            </html:ul>
+            <html:p>Ce bureau participe aussi aux activités de l'Association française de normalisation (AFNOR).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005675-005095-19950512-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005095-051355-19950512-20100112"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005097-005095-19950512-20100112"/>
+   </rico:Agent>
+</rdf:RDF>

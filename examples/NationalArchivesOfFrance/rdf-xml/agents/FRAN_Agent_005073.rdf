@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005073">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005073"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-05</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@ / Elsa Camus, 18 août 2016 : notice modifiée dans le cadre du projet de prototype Linked Data. A enrichir ultérieurement.</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-08</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : ajouté lien d'identité, lien d'association, revu les liens hiérarchiques</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Michèle Dardy, Histoire administrative du ministère de la Culture, 1959-2012 : Les services de l'administration centrale, Paris, Comité d'histoire du ministère de la Culture / La Documentation française, coll. « Travaux et documents »,‎ 2012.</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb11868250z</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121582116"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005073">
+            <rico:instantiates rdf:resource="record/005073"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005073</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005073"/>
+            <rico:identifier>5102</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005073">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005073"/>
+      <isni:identifierValid>0000000121582116</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction des Archives de France (1897-2010)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20des%20Archives%20de%20France%20%281897-2010%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction des Archives de France (1897-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction des Archives de France (1897-2010)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-France.%20Minist%C3%A8re%20de%20l%27%C3%A9ducation%20nationale.%20Direction%20des%20archives%20%281932-1974%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'éducation nationale. Direction des archives (1932-1974)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'éducation nationale. Direction des archives (1932-1974)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-France.%20Minist%C3%A8re%20de%20la%20Culture.%20Direction%20des%20archives%20de%20France%20%281981-1986%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture. Direction des archives de France (1981-1986)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture. Direction des archives de France (1981-1986)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20DAF%20%281897-2009%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. DAF (1897-2009)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. DAF (1897-2009)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-Direction%20des%20archives%20de%20France%20%281897-2009%29">
+            <rdfs:label xml:lang="fr">Direction des archives de France (1897-2009)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des archives de France (1897-2009)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005073-Direction%20g%C3%A9n%C3%A9rale%20des%20archives%20de%20France">
+            <rdfs:label xml:lang="fr">Direction générale des archives de France</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction générale des archives de France</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005073"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1897-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-31</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005073-d5bhvikvro-1p99atu7o3qwy">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005073"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005073-d5bhvikvro-1p99atu7o3qwy"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005073-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005073"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005073-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005073-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005073"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005073-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005073-d5bhviji6u--xgq7ld5a4qvr">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005073"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005073-d5bhviji6u--xgq7ld5a4qvr"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviji6u--xgq7ld5a4qvr"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Jusqu’en 1979 l’organisation de la direction des Archives de France est la suivante :</html:p>
+            <html:p>- un service technique ;</html:p>
+            <html:p>- un bureau du personnel ;</html:p>
+            <html:p>- un bureau de gestion, du contrôle financier et du matériel.</html:p>
+            <html:p/>
+            <html:p>A partir du 23 octobre 1979, la DAF est composée de :</html:p>
+            <html:p>- une inspection générale ;</html:p>
+            <html:p>- une sous-direction des services administratifs ;</html:p>
+            <html:p>- un service technique et scientifique concernant les archives nationales et les archives des collectivités territoriales ;</html:p>
+            <html:p>- une délégation aux célébrations nationales</html:p>
+            <html:p/>
+            <html:p>Suite à l’arrêté du 24 décembre 2006, la composition de la DAF est la suivante :</html:p>
+            <html:p>- une inspection générale ;</html:p>
+            <html:p>- un service des missions ;</html:p>
+            <html:p>- une délégation aux célébrations nationales ;</html:p>
+            <html:p>- un bureau des affaires générales et de la documentation ;</html:p>
+            <html:p>- quatre départements :</html:p>
+            <html:p>-- le département du réseau institutionnel et professionnel,</html:p>
+            <html:p>--le département de la politique archivistique et de la coordination interministérielle,</html:p>
+            <html:p>--le département de l’innovation technologique et de la normalisation,</html:p>
+            <html:p>--le département des publics,</html:p>
+            <html:p>--le Centre national du microfilm et de la numérisation.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>C’est au sein du ministère de l'Instruction publique en 1897 que la direction des Archives naît, issue de la fusion des archives nationales et du bureau des archives du ministère de l’Intérieur.</html:p>
+            <html:p>La direction des Archives devient en 1936 la direction des Archives de France, dont les attributions sont redéfinies et augmentées en 1951.</html:p>
+            <html:p>La Direction générale des Archives de France devient l'une des directions du ministère des Affaires culturelles à sa création en 1959.</html:p>
+            <html:p/>
+            <html:p>L'arrêté du 23 octobre 1979 énumère les missions et l'organisation de la direction des Archives de France (DAF).</html:p>
+            <html:p>Selon les termes du décret n°79-1037 du 3 décembre 1979, seules les archives des ministères de la Défense, des Affaires étrangères et des services qui en dépendent ne sont pas soumises au contrôle de la DAF (qui gère les Archives nationales).</html:p>
+            <html:p>Le 1er janvier 1986, dans le cadre des transferts de compétence induits par les lois de décentralisation, les archives départementales passent sous l'autorité des présidents des conseils généraux et les services extérieurs correspondants disparaissent.</html:p>
+            <html:p>L’arrêté du 21 janvier 1988 modifié met en place le conseil supérieur des archives, consulté par le ministre chargé de la culture en matière d’archives publiques et privées.</html:p>
+            <html:p>La mission et l’organisation de la DAF sont redéfinies par deux arrêtés du 25 mars 2002, modifiés par l’arrêté du 24 décembre 2006 : elle conçoit, anime et contrôle l'action menée en matière d'archives publiques à des fins administratives, civiques et scientifiques et oriente leur mise en valeur culturelle. Son champ d'action s'étend aux Archives nationales, aux services d'archives régionaux, départementaux et communaux ainsi qu'aux organismes autorisés à gérer leurs archives définitives. Elle veille à la sauvegarde des archives privées présentant, du point de vue de l'histoire, un intérêt public.</html:p>
+            <html:p>La réorganisation de la DAF telle que revue par les arrêtés du 25 mars 2002 et du 24 décembre 2006 peut être perçue comme une nouvelle séparation entre deux producteurs distincts, dans la mesure où, sous le nom de CHAN, les Archives nationales se trouvent distinguées dès 1997 de la DAF proprement dite (avant de devenir service à compétence nationale par le même arrêté du 24 décembre 2006).</html:p>
+            <html:p/>
+            <html:p>Le 13 janvier 2010, à la suite de la publication du décret n°2009-1393 du 11 novembre 2009, l’ancienne direction des Archives de France est intégrée dans la nouvelle direction générale des patrimoines et est transformée en Service interministériel des Archives de France.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005073-005568-20100101-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000016-005073-18970101-19590202"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005073-19590203-20101231"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-005073-19750101-19941231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11868250z#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057785-005073"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057785-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057786-005073"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057786-top"/>
+   </rico:Agent>
+</rdf:RDF>

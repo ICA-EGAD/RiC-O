@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005429">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/005429"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-27</rico:lastModificationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-22</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : revu liens IR, nom, ajouté lien d'identité et lien hiérarchique</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-27</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 27 avril 2017 : revu lien chronologique et identifiant ISNI</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF12046227</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121656357"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005429">
+            <rico:instantiates rdf:resource="record/005429"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005429</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005429"/>
+            <rico:identifier>5192</rico:identifier>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005429">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/005429"/>
+      <isni:identifierValid>0000000121656357</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Mission interministérielle de coordination des grandes opérations d'architecture et d'urbanisme (1986-1998)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005429-France.%20Mission%20interminist%C3%A9rielle%20de%20coordination%20des%20grandes%20op%C3%A9rations%20d%27architecture%20et%20d%27urbanisme%20%281986-1998%29">
+            <rdfs:label xml:lang="fr">France. Mission interministérielle de coordination des grandes opérations d'architecture et d'urbanisme (1986-1998)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Mission interministérielle de coordination des grandes opérations d'architecture et d'urbanisme (1986-1998)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005429"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005429-Mission%20des%20grands%20travaux">
+            <rdfs:label xml:lang="fr">Mission des grands travaux</rdfs:label>
+            <rico:textualValue xml:lang="fr">Mission des grands travaux</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005429"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005429-MIGT">
+            <rdfs:label xml:lang="fr">MIGT</rdfs:label>
+            <rico:textualValue xml:lang="fr">MIGT</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005429"/>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-20</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-05-20</rico:endDate>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005429-d3nyugszba-a2wofi2a3sjm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005429"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005429-d3nyugszba-a2wofi2a3sjm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugszba-a2wofi2a3sjm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005429-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005429"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005429-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005429-d3nyuimm9z--1tz0n2jqoofo0">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005429"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005429-d3nyuimm9z--1tz0n2jqoofo0"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuimm9z--1tz0n2jqoofo0"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>En octobre 1981, François Mitterrand, Président de la République, confie à un groupe de quatre personnalités une mission d'étude sur la réalisation d'équipements culturels à Paris et en province, dénommée le « Groupe des 4 ». Les quatre personnalités désignées sont :</html:p>
+            <html:p>- M. Jack Lang, ministre de la Culture ;</html:p>
+            <html:p>- M. Roger Quilliot, ministre de l'urbanisme et du logement ;</html:p>
+            <html:p>- M. Paul Guimard, conseiller du Président ;</html:p>
+            <html:p>- M. Robert Lion, directeur de cabinet du Premier Ministre.</html:p>
+            <html:p>À partir de 1984, une cinquième personne, M. Paul Quilès, participe aux réunions du Groupe des 4 qui devient alors « Groupe des 5 ». La coordination de ces études et le secrétariat général sont assurés par la Mission de coordination des grandes opérations d'architecture et d'urbanisme.</html:p>
+            <html:p/>
+            <html:p>Par un communiqué de presse daté du 8 mars 1982, la Présidence de la République annonce le lancement d'une série de grands projets d'architecture à Paris et en province, avec pour objectif le renouveau de la création architecturale française. Le 9 mars 1982, le Premier Ministre nomme les responsables des principales opérations. Yves Dauge est nommé par décret du 30 avril 1982 directeur de l'urbanisme et des paysages au ministère de l'Urbanisme et du logement et assure la coordination des grands projets d'urbanisme relavant de l'État à Paris. Ses missions sont précisées par une lettre du Président de la République du 13 juillet 1983.</html:p>
+            <html:p>La mission de coordination a notamment pour responsabilités :</html:p>
+            <html:ul>
+               <html:li>de proposer au gouvernement toute décision et arbitrage nécessaire au bon déroulement des grandes opérations</html:li>
+               <html:li>d'assurer les liaisons interministérielles nécessaires</html:li>
+               <html:li>de veiller au respect des coûts</html:li>
+               <html:li>d'assurer la cohérence des opérations.</html:li>
+            </html:ul>
+            <html:p>Pour cela elle intervient aux divers stades de réalisation des projets pour assister les équipes de maîtrise d'ouvrage dans :</html:p>
+            <html:ul>
+               <html:li>la définition des programmes et l'organisation des concours d'architecture</html:li>
+               <html:li>les procédures d'urbanisme opérationnelles et les décisions administratives correspondantes</html:li>
+               <html:li>la mise en place et la gestion des équipes de maîtrise d'ouvrage.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>Le 19 janvier 1986, la Mission de coordination des grandes opérations d'architecture et d'urbanisme (Mission Dauge) est dotée de ses premiers statuts et devient par décret la Mission interministérielle de coordination des grands opérations d'architecture et d'urbanisme (MIGT), sous la présidence d'Yves Dauge. Les principales opérations sont définies dans l'article 2 du décret du 16 janvier (publié au Journal Officiel le 19 janvier) : musée d'Orsay, Grand Louvre, Opéra de la Bastille, Cité des Sciences et de l'Industrie, Parc de La Villette, Carrefour international de la Communication, ensemble immobilier de la Tête-Défense, transfert du ministère de l'Économie, des Finances et du Budget, Institut du Monde arable, rénovation des musées relevant du ministère de l'Éducation nationale)</html:p>
+            <html:p>L'article 3 précise l'objet de ses missions :</html:p>
+            <html:ul>
+               <html:li>assurer la maîtrise des coûts et des délais des opérations</html:li>
+               <html:li>préparer les décisions budgétaires jusqu'à l'année suivant leur achèvement</html:li>
+               <html:li>veiller à la mise en place du statut juridique et des modalités de gestion future des équipements</html:li>
+               <html:li>coordonner les actions communes des maîtres d'ouvrage dans les domaines de l'information et des relations publiques.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>Le 13 mai 1988 un Secrétariat d'Etat aux Grands Travaux (SEGT) est créé et rattaché le 3 juin 1988 au Ministère de l'Équipement et du Logement puis au Ministère de la Culture le 18 juillet 1988. Dans ses attributions, confirmées par le dcret du 12 mai 1992, le Secrétaire d'État, Émile Biasini, est en charge de la réalisation des grands travaux. Les projets d'architecture jusque là appelés communément « grands projets » portent désormais l'appellation « grands travaux ». Durant l'existence du SEGT de 1988 à 1993, la MIGT n'a plus de président et est mise à la disposition du Secrétaire d'État (par décret du 8 mai 1988).</html:p>
+            <html:p/>
+            <html:p>Le décret du 11 janvier 1990 étend les attributions de la MIGT à la maîtrise d'ouvrage directe de toute opération d'architecture dont la demande est faite par le Premier Ministre. À partir de cette date, de plus en plus de maîtrises d'ouvrage ont été confiées à la Mission.</html:p>
+            <html:p/>
+            <html:p>À la disparition du SEGT en mai 1993, un nouveau président de la MIGT, Jean-Claude Moreno, est nommé en Conseil des Ministres.</html:p>
+            <html:p/>
+            <html:p>Par le décret du 19 mai 1998 (publié au Journal Officiel le 20 mai), un Etablissement Public de Maîtrise d'Ouvrage des Travaux Culturels (EPMOTC) est créé et le décret du 16 janvier 1986 portant création de la MIGT est abrogé. Cet établissement public administratif, rattaché au ministère de la Culture, est issu de la fusion de la MIGT et de l'Etablissement Public du Grand Louvre (EPGL).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000005-005429-19860120-19980520"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-005429-19860120-19931231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005429-051355-19940101-19980520"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb120462279#about"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005429-051119-19980521-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023179-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/023179-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023180-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/023180-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013585-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/013585-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013601-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/013601-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013641-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/013641-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056204-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056204-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057175-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057175-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057277-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057277-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057991-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057991-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/027225-005429"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/027225-top"/>
+   </rico:Agent>
+</rdf:RDF>

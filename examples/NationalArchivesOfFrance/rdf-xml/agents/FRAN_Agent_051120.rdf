@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051120">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/051120"/>
+      <rico:createdBy rdf:resource="agent/005061"/>
+      <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:regulatedBy rdf:resource="rule/rl001"/>
+      <rico:regulatedBy rdf:resource="rule/rl003"/>
+      <rico:regulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:affectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette,<html:i>Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940</html:i>, Comité d'histoire du ministère de la Culture, 2008</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette, "Le budget des Monuments historiques 1830-1920 : les moyens d'une politique de protection". In :<html:i>Livraisons d'histoire de l'architecture</html:i>. n°3, 1er semestre 2002. pp. 75-102. Disponible à cette adresse : http://www.persee.fr/web/revues/home/prescript/article/lha_1627-4970_2002_num_3_1_900</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bercé Françoise,<html:i>Les premiers travaux de la commission des monuments historiques, 1837-1848</html:i>, Paris, Éd. A et J Picard, 1979</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach royal et national</html:i>, Paris, chez A. Guyot et Scribe, 1839-1848</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Voir l'ensemble de cotes conservées aux Archives nationales : F/21/7669 à 7971. Personnel : dossiers individuels du personnel des services des monuments historiques, bâtiments civils et palais nationaux (architectes, inspecteurs, simples employés, etc.)</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051120">
+            <rico:instantiates rdf:resource="record/051120"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051120</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051120"/>
+            <rico:regulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051120">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="record/051120"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques (1839-1848)</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/051120-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20Beaux-Arts.%20Bureau%20des%20Monuments%20historiques%20%281839-1848%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques (1839-1848)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques (1839-1848)</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/051120"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1839-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051120-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051120"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051120-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le bureau des Monuments historiques est le deuxième bureau de la direction des Beaux-Arts.</html:p>
+            <html:p>Il est composé d’un chef (M. Grille de Beuzelin puis M. de Courmont et enfin Eugène Viollet-le-Duc), d’une Inspection des Monuments historiques (constitué du seul inspecteur-général Prosper Mérimée) et de la Commission des Monuments historiques.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La fonction de conservation des monuments historiques est assurée par le département Beaux-Arts, qui voit le jour dès 1789 avec la nomination de François-Emmanuel Guignard de Saint-Priest comme ministre de la Maison du roi.</html:p>
+            <html:p>Aucun service n’est véritablement dédié aux monuments historiques, mais dès 1819 le ministère de l’Intérieur consacre un budget à "la conservation des anciens monuments".</html:p>
+            <html:p>Le 23 octobre 1830, un poste d’inspecteur général des monuments historiques est créé sur ordonnance royale au sein du bureau des Beaux-Arts. François Guizot, ministre et secrétaire d’État au département de l’Intérieur, propose au roi Louis-Philippe de nommer Ludovic Vitet comme premier inspecteur. Il est remplacé en 1834 par Prosper Mérimée. L'inspecteur général a pour mission de veiller à la conservation des monuments historiques.</html:p>
+            <html:p>Le 29 septembre 1837, une commission des Monuments historiques est créée au ministère de l’Intérieur. Elle est chargée de sélectionner les monuments à entretenir et à restaurer, et répartit les crédits alloués à la sauvegarde. Elle publie en 1840 la première liste des monuments classés.</html:p>
+            <html:p>Le bureau en charge des monuments historiques est créé le 19 février 1839 au sein de la direction des Monuments publics et historiques au ministère de l'Intérieur. Il est transféré à la direction des Beaux-Arts le 25 septembre de la même année pour y rester durablement. À sa création, le bureau regroupe l’inspecteur général ainsi que la commission des Monuments historiques.</html:p>
+            <html:p>Ce premier bureau se maintient de 1839 à 1848, puis il est supprimé provisoirement. La fonction administrative continue à être exercée au sein de la division des Beaux-Arts (au bureau des Beaux-Arts, des Musées et des Monuments historiques) jusqu’à ce que le bureau en charge des monuments historiques soit rétabli en 1853.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051154-051120-18390101-18481231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051120-051121-18480101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051120-051164-18390101-18481231"/>
+   </rico:Agent>
+</rdf:RDF>
