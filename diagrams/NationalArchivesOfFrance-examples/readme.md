@@ -1,0 +1,3 @@
+# Diagrams: real world examples from the Archives nationales de France
+
+The diagrams included in this folder have been used for illustrating a presentation on RiC-O done on January 20, 2020 at the Archives nationales de France (see the slides [here](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_2_RecordsInContexts_englishVersionAdded1003.pdf).
