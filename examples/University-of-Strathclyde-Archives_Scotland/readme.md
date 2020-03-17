@@ -13,6 +13,7 @@ For any question, please contact: Victoria Peters (victoria.peters@strath.ac.uk
 [mailto:florence.clavaud@culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
 
 The 'src' folder contains :
+
 - 5 authority records that conform to ICA ISAAR(CPF) standard and are encoded in XML/EAC-CPF. The names of these files end with "Agent". Each of the authority records describes a person or a corporate body which created some archival resources held by the University of Strathclyde Archives.
 
 - 4 small finding aids that conform to ICA ISAD(G) standard and are encoded in XML/EAD2002. They describe record sets created by the persons or corporate bodies mentioned above.
@@ -28,7 +29,7 @@ Apart from these RDF files, the folder also contains two files about two agents 
 The base URI defined for the RDF resources is: http://data.archives.strath.ac.uk/. It is fictitious: the URIs are not dereferencable. The RDF dataset is provided only as an example RiC-O archival dataset.
 
 You will also find  a JPEG image in the folder. It is a snapshot from a visual graph generated from the RDF dataset, by a GraphDB Free local instance, about the following URI:
-http://data.archives.strath.ac.uk/recordResource/greater-manchester-asbestos-victims-support-group-oral-history-project
+http://data.archives.strath.ac.uk/recordResource/greater-manchester-asbestos-victims-support-group-oral-history-project.
 This URI identifies the Greater Manchester Asbestos Victims Support Group oral history project in the dataset. This collection is described by the GMAVSG_oral_history_project.xml EAD file, whose RDF version is the GMAVSG_oral_history_project.rdf file.
 
 
