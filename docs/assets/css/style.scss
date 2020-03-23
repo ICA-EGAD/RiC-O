@@ -1,0 +1,54 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+
+.wrapper {
+ width:1100px;
+/*  width:100%;*/
+margin:50px;
+}
+
+header {
+margin-right:5px;
+}
+
+section {
+width:800px;
+padding-left:10px;
+border-left: 1px dotted #727272;
+}
+
+p {
+
+text-align:justify;
+}
+
+footer p {
+text-align:left;
+}
+
+img {
+width:100px;
+display:inline;
+
+}
+
+h1+ul {
+list-style-type: none;
+padding:0px;
+margin-left:0px;
+margin-bottom:20px;
+}
+
+h1+ul li {
+display: inline;
+font-size:110%;
+font-variant:small-caps;
+font-weight:bold;
+}
+
+h1+ul li::after {
+ content: " | ";
+}
