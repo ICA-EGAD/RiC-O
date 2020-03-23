@@ -10,7 +10,9 @@
 * [Projects and tools](projects-and-tools.html)
 
 
-The RiC-O GitHub repository includes [**some example files**](https://github.com/ICA-EGAD/RiC-O/tree/master/examples).
+The RiC-O GitHub repository includes **some example files**.
+
+You can find them [there](https://github.com/ICA-EGAD/RiC-O/tree/master/examples).
 
 For now, they consist of **existing, "real world", archival metadata sets (all of them being EAD and EAC-CPF files), and their RDF/RiC-O version**. All have been prepared by ICA EGAD. 
 
