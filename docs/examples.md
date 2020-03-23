@@ -10,7 +10,7 @@
 * [Projects and tools](projects-and-tools.html)
 
 
-The RiC-O GitHub repository includes some example files (TODO LINK to the giTHUb folder). 
+The RiC-O GitHub repository includes [some example files](https://github.com/ICA-EGAD/RiC-O/tree/master/examples).
 
 For now, they consist of existing, "real world", archival metadata sets (all of them being EAD and EAC-CPF files), and their RDF/RiC-O version. All have been prepared by ICA EGAD. 
 
@@ -19,7 +19,7 @@ They come along with:
 
 * a few introductory notes for each set (in Readme files), including some warnings on the fact that the files are not to be considered uptodate nor representative
 * a CC BY 4.0 license
-* some additional files, e.g. screenshots of some parts of the graphs obtained, examples of SPARQL queries you can use on these RDF datasets.
+* some additional files, e.g. screenshots of some parts of the graphs obtained, and as soon as possible, examples of SPARQL queries you can use on these RDF datasets.
 
 
 
