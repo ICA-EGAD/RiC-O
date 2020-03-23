@@ -9,11 +9,13 @@
 * [Events and presentations](events.html)
 * [Projects and tools](projects-and-tools.html)
 
-EGAD has begun to draw some diagrams, hoping that they can help understanding RiC-O as a domain ontology.
+EGAD has begun to draw some **diagrams**, hoping that they can help understanding RiC-O as a domain ontology.
 
-You can find them here (TODO LINK to the ad hoc folder in the repo).
+You can find them [here](https://github.com/ICA-EGAD/RiC-O/tree/master/diagrams).
 
-They may concern the ontology itself. They also may concern real world examples; in such a case, they represent small graphs (or an overview of them) produced from some existing archival metadata. The diagrams coming from the Archives nationales de France have been used for illustrating a presentation on RiC-O done on January 28, 2020 at the Archives nationales de France. The  [slides that were used](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_2_RecordsInContexts_englishVersionAdded1003.pdf), and are in French and English, provide more information of what the diagrams display.
+They may concern **the ontology itself**. They also may concern **real world examples**; in such a case, they represent small graphs (or an overview of them) produced from some existing archival metadata. 
+
+The diagrams coming from the Archives nationales de France have been used for illustrating a presentation on RiC-O done on January 28, 2020 at the Archives nationales de France. The  [slides that were used](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_2_RecordsInContexts_englishVersionAdded1003.pdf), and are in French and English, provide more information of what the diagrams display.
 
 The diagrams are under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
