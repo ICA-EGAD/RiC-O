@@ -9,7 +9,7 @@ Language(s) used: English
 These example files are under CC BY 4.0 license ([https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)).
 
 For any question, please contact: Victoria Peters (
-[mailto:victoria.peters@strath.ac.uk](mailto:victoria.peters@strath.ac.uk)) and Florence Clavaud ([mailto:florence.clavaud@culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
+[victoria.peters@strath.ac.uk](mailto:victoria.peters@strath.ac.uk)) and Florence Clavaud ([florence.clavaud@culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
 
 **The 'src' folder contains** :
 
@@ -27,7 +27,7 @@ Apart from these RDF files, the folder also contains two files about two agents 
 
 **The base URI defined for the RDF resources is: http://data.archives.strath.ac.uk/. It is fictitious**: the URIs are not dereferencable. The RDF dataset is provided only as an example RiC-O archival dataset.
 
-You will also find  a JPEG image in the folder. It is a snapshot from a visual graph generated from the RDF dataset, by a GraphDB Free local instance, about the following URI:
+You will also find  a JPEG image in the folder. It is **a screenshot from a visual graph generated from the RDF dataset**, by a GraphDB Free local instance, about the following URI:
 http://data.archives.strath.ac.uk/recordResource/greater-manchester-asbestos-victims-support-group-oral-history-project.
 This URI identifies the Greater Manchester Asbestos Victims Support Group oral history project in the dataset. This collection is described by the GMAVSG_oral_history_project.xml EAD file, whose RDF version is the GMAVSG_oral_history_project.rdf file.
 
