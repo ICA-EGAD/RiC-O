@@ -14,6 +14,7 @@
       <rico:regulatedBy rdf:resource="rule/rl006"/>
       <rico:regulatedBy rdf:resource="rule/rl007"/>
       <rico:regulatedBy rdf:resource="rule/rl008"/>
+      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:title xml:lang="fr">Bibliothèque publique d'information, expositions : diapositives et négatifs : Répertoire numérique détaillé du versement n° 20150635</rico:title>
       <rdfs:label xml:lang="fr">Bibliothèque publique d'information, expositions : diapositives et négatifs : Répertoire numérique détaillé du versement n° 20150635</rdfs:label>
       <rico:createdBy rdf:resource="agent/005061"/>
@@ -30,7 +31,6 @@
          </html:div>
       </rico:history>
       <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
-      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:describes rdf:resource="recordResource/054639-top"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/054639-i1">
@@ -114,14 +114,16 @@
                </html:div>
             </rico:structure>
             <rico:history rdf:parseType="Literal">
-               <html:div xml:lang="fr">
-                  <html:h4>Historique de la conservation</html:h4>
-                  <html:p>Jusqu'en 2007, la Bpi prenait en charge l'archivage intermédiaire des archives qu'elle produisait. Ces différents documents ont fait l'objet de plusieurs versements à la mission des Archives du ministère de la Culture et de la communication entre 2007 et 2013 puisque les espaces de la bibliothèque étaient saturées. Depuis 2014, la Bpi prend à nouveau en charge ces archives intermédiaires.</html:p>
-                  <html:p>Ce fonds a été versé à la Mission des archives du ministère de la Culture et de la communication sous les numéros de versement 07V134 et 11V0139.</html:p>
-               </html:div>
-               <html:div xml:lang="fr">
-                  <html:h4>Informations sur les modalités d’entrée</html:h4>
-                  <html:p>Versement, 2015</html:p>
+               <html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Historique de la conservation</html:h4>
+                     <html:p>Jusqu'en 2007, la Bpi prenait en charge l'archivage intermédiaire des archives qu'elle produisait. Ces différents documents ont fait l'objet de plusieurs versements à la mission des Archives du ministère de la Culture et de la communication entre 2007 et 2013 puisque les espaces de la bibliothèque étaient saturées. Depuis 2014, la Bpi prend à nouveau en charge ces archives intermédiaires.</html:p>
+                     <html:p>Ce fonds a été versé à la Mission des archives du ministère de la Culture et de la communication sous les numéros de versement 07V134 et 11V0139.</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur les modalités d’entrée</html:h4>
+                     <html:p>Versement, 2015</html:p>
+                  </html:div>
                </html:div>
             </rico:history>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_054639/top"/>

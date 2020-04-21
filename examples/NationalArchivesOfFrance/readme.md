@@ -14,7 +14,7 @@ For any question, please contact: Florence Clavaud ([florence.clavaud@culture.go
 
 - in an 'eac-cpf' folder, **101 authority records that conform to ICA ISAAR(CPF) standard and are encoded in XML/EAC-CPF**. Each of the authority records describes a person, a corporate body or a family which created some archival resources held by the ANF. You will also find in this folder a tsv file that provides a list of these authority records.
  
-- in an 'ead' subdfolder, **17 finding aids that conform to ICA ISAD(G) standard and are encoded in XML/EAD2002**. They describe record sets created by the agents mentioned above.
+- in an 'ead' subdfolder, **15 finding aids that conform to ICA ISAD(G) standard and are encoded in XML/EAD2002**. They describe record sets created by the agents mentioned above.
 
 These source files have been published online. You can access an HTML version of these files at 
 [https://www.siv.archives-nationales.culture.gouv.fr](https://www.siv.archives-nationales.culture.gouv.fr). The only official, uptodate version of the source files is to be found there.

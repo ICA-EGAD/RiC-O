@@ -12,6 +12,7 @@
       <rico:regulatedBy rdf:resource="rule/rl004"/>
       <rico:regulatedBy rdf:resource="rule/rl006"/>
       <rico:regulatedBy rdf:resource="rule/rl007"/>
+      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:title xml:lang="fr">Culture ; Direction du patrimoine ; Sous-direction monuments historiques, palais nationaux (1978-1989) ; Sous-direction monuments historiques (1990-) (1876-1980) : Répertoire (19970460/1-19970460/4)</rico:title>
       <rdfs:label xml:lang="fr">Culture ; Direction du patrimoine ; Sous-direction monuments historiques, palais nationaux (1978-1989) ; Sous-direction monuments historiques (1990-) (1876-1980) : Répertoire (19970460/1-19970460/4)</rdfs:label>
       <rico:publishedBy rdf:resource="agent/005061"/>
@@ -23,6 +24,7 @@
             <rico:title xml:lang="fr">Culture ; Direction du patrimoine ; Sous-direction monuments historiques, palais nationaux (1978-1989) ; Sous-direction monuments historiques (1990-) (1876-1980) : Répertoire (19970460/1-19970460/4)</rico:title>
             <rdfs:label xml:lang="fr">Culture ; Direction du patrimoine ; Sous-direction monuments historiques, palais nationaux (1978-1989) ; Sous-direction monuments historiques (1990-) (1876-1980) : Répertoire (19970460/1-19970460/4)</rdfs:label>
             <rico:history xml:lang="fr">Cet instrument de recherche a été encodé en 2011 par l'entreprise diadeis dans le cadre du chantier de dématérialisation des instruments de recherche des Archives Nationales sur la base d'une DTD conforme à la DTD EAD (encoded archival description) et créée par le service de dématérialisation des instruments de recherche des Archives Nationales</rico:history>
+            <rico:regulatedBy rdf:resource="rule/rl010"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_009659</rico:identifier>
             <rico:heldBy rdf:resource="agent/005061"/>
@@ -46,7 +48,16 @@
          </html:div>
       </rico:structure>
       <rico:scopeAndContent rdf:parseType="Literal">
-         <html:div xml:lang="fr"> </html:div>
+         <html:div xml:lang="fr">
+            <html:div>
+               <html:p>La direction du patrimoine a pour mission d'inventorier, protéger, conserver et faire connaître le patrimoine archéologique, architectural, urbain, ethnologique, photographique et les richesses artistiques de la France. L'un des départements de la sous-direction des monuments historiques est chargé de la protection du patrimoine mobilier et instrumental ainsi que de la protection des monuments et jardins.</html:p>
+               <html:p>Ce fonds est essentiellement constitué de dossiers de personnel jardinier.</html:p>
+            </html:div>
+            <html:div>
+               <html:h5>Sommaire</html:h5>
+               <html:p>Art 1 : Registres spéciaux d’inscription des ouvriers du jardin des tuileries, 1876-1882 Art 1 (suite)-4 : Dossiers de carrière de personnel, 1930-1980</html:p>
+            </html:div>
+         </html:div>
       </rico:scopeAndContent>
       <rico:hasSubject rdf:resource="thing/FRAN_RI_004-d3m010mtvly-1dru7hcarnv6d"/>
       <rico:hasSubject rdf:resource="thing/FRAN_RI_004-d3ndfe4l79--1j4nzm3jaq5nr"/>

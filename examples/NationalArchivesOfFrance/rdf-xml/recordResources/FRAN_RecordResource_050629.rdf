@@ -14,6 +14,7 @@
       <rico:regulatedBy rdf:resource="rule/rl006"/>
       <rico:regulatedBy rdf:resource="rule/rl007"/>
       <rico:regulatedBy rdf:resource="rule/rl008"/>
+      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:title xml:lang="fr">Archives papier de Jean-Noël Jeanneney président-directeur général de Radio France et de Radio France Internationale de 1982 à 1986 (1964-1986) : Répertoire numérique détaillé du versement 20140048</rico:title>
       <rdfs:label xml:lang="fr">Archives papier de Jean-Noël Jeanneney président-directeur général de Radio France et de Radio France Internationale de 1982 à 1986 (1964-1986) : Répertoire numérique détaillé du versement 20140048</rdfs:label>
       <rico:createdBy rdf:resource="agent/005061"/>
@@ -30,7 +31,6 @@
          </html:div>
       </rico:history>
       <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
-      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:describes rdf:resource="recordResource/050629-top"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/050629-i1">
@@ -104,7 +104,7 @@
             <html:p>La mise en œuvre de RFI et sa production radiophonique au cours de cette période fait l'objet aussi d'une convention annuelle avec le ministère des Relations extérieures. Cette convention encadre et rappelle à nouveau les quatre domaines principaux d'activités de RFI à savoir : les émissions radiophoniques en direct vers l'étranger ; l'élaboration et la fourniture à l'extérieur d'éléments enregistrés ; les programmes de coopération et les activités de formation, d'études et de missions et, enfin, la fourniture d'informations par l'Agence MFI. En dehors des documents directement liés à la production radiophonique, les archives sont principalement issues des instances, de la direction générale, du service financier, du service du personnel et des services techniques. Les rapports des missions effectuées à l'étranger par les directeurs généraux ou par des chargés de mission nous renseignent sur la place et le fonctionnement de la radiodiffusion un peu partout dans le monde. L'analyse de l'audience et du courrier d'auditeurs est très suivie entre 1984 et 1986 avec notamment les études et les notes du Service d'étude de l'auditoire, qui complète cet état des lieux.</html:p>
             <html:p>Sous la présidence de Jean-Noël Jeanneney, RFI prend un nouvel élan et cherche à s'étendre à l'échelle internationale en s'appuyant sur ses nouveaux émetteurs, avec une extension progressive de ses programmes et de ses équipes de rédaction.</html:p>
             <html:p>L'activité de Radio France et de Radio France Internationale, deux radios à l'identité et au périmètre bien marqués, mais placées sous l'autorité du même président-directeur général, s'inscrit dans une complémentarité administrative et radiophonique jusqu'en septembre 1986. En effet, la nouvelle loi créant la Commission nationale de la communication et des libertés fait de RFI une société nationale indépendante de Radio France le 30 septembre 1986. Depuis, chacune de ces deux institutions reconnues évoluent parallèlement dans la sphère des médias.</html:p>
-            <html:p> Introduction par Jean-Noël Jeanneney<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_011873.pdf">FRAN_ANX_011873.pdf</html:a>
+            <html:p>Introduction par Jean-Noël Jeanneney<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_011873.pdf">FRAN_ANX_011873.pdf</html:a>
             </html:p>
          </html:div>
       </rico:scopeAndContent>
@@ -237,19 +237,21 @@
                </html:div>
             </rico:structure>
             <rico:history rdf:parseType="Literal">
-               <html:div xml:lang="fr">
-                  <html:h4>Historique de la conservation</html:h4>
-                  <html:p>Ce fonds a fait l'objet de trois versements successifs : le 34 W (3,70 ml) en 1992, le 78 W (31 ml) en 1994 et le 129 W (0,80 ml) en 1995. Ils ont été collectés à Radio France et au domicile de Jean-Noël Jeanneney.</html:p>
-               </html:div>
-               <html:div xml:lang="fr">
-                  <html:h4>Informations sur les modalités d’entrée</html:h4>
-                  <html:p>Versement (2014)</html:p>
-               </html:div>
-               <html:div xml:lang="fr">
-                  <html:h4>Informations sur l'évaluation</html:h4>
-                  <html:p>Les éliminations effectuées portent essentiellement sur les lettres de candidature reçues et les cartes de vœux échangées représentant un certain volume dans le fonds. Les lettres de candidature ont fait l'objet d'un échantillonnage. Seules celles dont le nom des expéditeurs commençant par la lettre B ou T ont été conservées. Parmi les cartes de vœux échangées, ont été conservées celles émanant des responsables des radios locales et celles adressées par les organismes du monde de l'audiovisuel et de la presse.</html:p>
-                  <html:p>Le reste des éliminations concerne les documents en doublon, les publications et documentations reçus pour information dépourvus d'intérêt pour la compréhension du fonds.</html:p>
-                  <html:p>Sur les 35,50 ml d'archives collectées, 7,50 ml ont été éliminées.</html:p>
+               <html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Historique de la conservation</html:h4>
+                     <html:p>Ce fonds a fait l'objet de trois versements successifs : le 34 W (3,70 ml) en 1992, le 78 W (31 ml) en 1994 et le 129 W (0,80 ml) en 1995. Ils ont été collectés à Radio France et au domicile de Jean-Noël Jeanneney.</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur les modalités d’entrée</html:h4>
+                     <html:p>Versement (2014)</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur l'évaluation</html:h4>
+                     <html:p>Les éliminations effectuées portent essentiellement sur les lettres de candidature reçues et les cartes de vœux échangées représentant un certain volume dans le fonds. Les lettres de candidature ont fait l'objet d'un échantillonnage. Seules celles dont le nom des expéditeurs commençant par la lettre B ou T ont été conservées. Parmi les cartes de vœux échangées, ont été conservées celles émanant des responsables des radios locales et celles adressées par les organismes du monde de l'audiovisuel et de la presse.</html:p>
+                     <html:p>Le reste des éliminations concerne les documents en doublon, les publications et documentations reçus pour information dépourvus d'intérêt pour la compréhension du fonds.</html:p>
+                     <html:p>Sur les 35,50 ml d'archives collectées, 7,50 ml ont été éliminées.</html:p>
+                  </html:div>
                </html:div>
             </rico:history>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_050629/top"/>

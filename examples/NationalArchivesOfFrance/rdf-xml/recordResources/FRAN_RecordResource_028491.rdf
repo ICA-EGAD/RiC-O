@@ -14,6 +14,7 @@
       <rico:regulatedBy rdf:resource="rule/rl006"/>
       <rico:regulatedBy rdf:resource="rule/rl007"/>
       <rico:regulatedBy rdf:resource="rule/rl008"/>
+      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:title xml:lang="fr">Service national des travaux (ministère de la Culture et de la Communication). Archives du service national des travaux du ministère de la Culture. Bâtiments publics (1979-1996) : Répertoire numérique du versement 20080324 (20080324/1-20080324/996)</rico:title>
       <rdfs:label xml:lang="fr">Service national des travaux (ministère de la Culture et de la Communication). Archives du service national des travaux du ministère de la Culture. Bâtiments publics (1979-1996) : Répertoire numérique du versement 20080324 (20080324/1-20080324/996)</rdfs:label>
       <rico:createdBy rdf:resource="agent/005061"/>
@@ -30,7 +31,6 @@
          </html:div>
       </rico:history>
       <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name4"/>
-      <rico:regulatedBy rdf:resource="rule/rl009"/>
       <rico:describes rdf:resource="recordResource/028491-top"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/028491-i1">
@@ -72,7 +72,7 @@
          <html:div xml:lang="fr">
             <html:p>Ce répertoire traite exclusivement du suivi budgétaire et financier des travaux effectués principalement sur les édifices nationaux parisiens et franciliens avec quelques exceptions en province. Il s'agit de travaux d'aménagement et de restauration des bâtiments appartenant à l'Etat, effectués et terminés entre 1979 et 1996, suivi des dossiers techniques présentés par localisation et opération.</html:p>
             <html:p>La typologie que l'on retrouve dans chaque dossier est la suivante : procès-verbaux d'ouverture des plis, cahiers des clauses techniques particulières, cahiers des clauses administratives particulières, acte de notification du marché, certificats de réception de travaux, devis, factures, plans, photographies, notes. Certaines typologies apparaissent dans l'analyse, il s'agit de pièces particulières (telles que plans, études) qui ne figurent pas systématiquement dans tous les dossiers d'opérations.</html:p>
-            <html:p> Consulter les documents annexes ci-joint<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_012619.pdf">Index</html:a>
+            <html:p>Consulter les documents annexes ci-joint<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_012619.pdf">Index</html:a>
             </html:p>
          </html:div>
       </rico:scopeAndContent>
@@ -112,14 +112,16 @@
                </html:div>
             </rico:structure>
             <rico:history rdf:parseType="Literal">
-               <html:div xml:lang="fr">
-                  <html:h4>Historique de la conservation</html:h4>
-                  <html:p>Ce fonds traite des versements 05V54, 05V55, 05V71, 06V75, 06V76, 07V133 effectués par le SNT. Avant leur versement actuel à la Mission des archives du ministère, les dossiers de travaux du SNT, à la fin d'une période de 10 ans après clôture comptable, font l'objet d'un premier tri dans le service versant lui-même. Ils sont versés annuellement, par année de clôture comptable. Les pièces comptables sont classées et les dossiers organisés par ordre alphabétique d'édifice. Le fonds 20020452 (sorti définitivement des Archives nationales) a également été fondu dans ce nouveau répertoire.</html:p>
-                  <html:p>Les éliminations de la Mission des archives ont porté sur les doubles, les décomptes de pénalités, les décomptes des intérêts moratoires et les ordres de services.</html:p>
-               </html:div>
-               <html:div xml:lang="fr">
-                  <html:h4>Informations sur les modalités d’entrée</html:h4>
-                  <html:p>Versé aux Archives nationales</html:p>
+               <html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Historique de la conservation</html:h4>
+                     <html:p>Ce fonds traite des versements 05V54, 05V55, 05V71, 06V75, 06V76, 07V133 effectués par le SNT. Avant leur versement actuel à la Mission des archives du ministère, les dossiers de travaux du SNT, à la fin d'une période de 10 ans après clôture comptable, font l'objet d'un premier tri dans le service versant lui-même. Ils sont versés annuellement, par année de clôture comptable. Les pièces comptables sont classées et les dossiers organisés par ordre alphabétique d'édifice. Le fonds 20020452 (sorti définitivement des Archives nationales) a également été fondu dans ce nouveau répertoire.</html:p>
+                     <html:p>Les éliminations de la Mission des archives ont porté sur les doubles, les décomptes de pénalités, les décomptes des intérêts moratoires et les ordres de services.</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur les modalités d’entrée</html:h4>
+                     <html:p>Versé aux Archives nationales</html:p>
+                  </html:div>
                </html:div>
             </rico:history>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_028491/top"/>
