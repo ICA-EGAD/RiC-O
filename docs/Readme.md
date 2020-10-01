@@ -16,3 +16,7 @@ The **latest public release of RiC-O, RiC-O v0.1**, is available here: [https://
 
 The **latest public release of Records in Contexts-Conceptual Model (RiC-CM)**, on which RiC-O is based, is RiC-CM v0.2 preview. It is available here: [https://www.ica.org/sites/default/files/ric-cm-0.2_preview.pdf](https://www.ica.org/sites/default/files/ric-cm-0.2_preview.pdf).
 
+A **new version of RiC-O, RiC-O v0.2, should be released in October or November 2020**, along with RiC-CM v0.2 full draft.
+
+
+

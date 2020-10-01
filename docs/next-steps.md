@@ -17,8 +17,8 @@ You can also simply contact us and send comments and questions, using either ([e
 
 The global schedule is the following:
 
-* **preparing and releasing RiC v0.2**. Apart from fixing the possibly remaining bugs in v0.1, this will mainly imply making RiC-O compliant with RiC-CM v0.2 complete version. In this future CM version, some definitions of the already existing components may change, and some new components (attributes and relations) may too. **RiC-O v0.2 should be released this spring**.
-* **preparing and releasing RiC-0 v1.0**. This version will not be a draft, but the first official version. **It will be released this fall**, along with RiC-CM v1.0, **hopefully in November 2020, by the end of 2020 at the latest**.
+* **preparing and releasing RiC v0.2**. Apart from fixing the possibly remaining bugs in v0.1, this will mainly imply making RiC-O compliant with RiC-CM v0.2 full draft. In this future CM version, some definitions of the already existing components may change, and some other components (attributes and relations) may too. **RiC-O v0.2 should be released in October or November 2020, along with RiC-CM v0.2 full draft**.
+* **preparing and releasing RiC-0 v1.0**. This version will not be a draft, but the first official version. **It will be released in 2021**, along with RiC-CM v1.0.
 
 The following is a non exhaustive list of topics, tasks and known issues on which EGAD RiC-O development team will work in the next months, after having released RiC-O v0.2:
 
