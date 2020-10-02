@@ -9,6 +9,7 @@ Once everything necessary is done, the next-version branch will be merged into t
 It has been decided that RiC-O v0.2 will have the following features that make it different from RiC-O v0.1:
 
 * it will be compliant with RiC-CM v0.2 full draft, that should be released the same time. In RiC-CM v0.2 full draft, ICA/EGAD has introduced various updates from RiC-CM v0.2 preview:
+
     ** most of the textual definitions and scope notes of the classes, attributes and relations have been rephrased;
     ** some of the attributes have changed domain and other features (e.g. value schema or specifications)
     ** few relations have been removed, some may still be added
