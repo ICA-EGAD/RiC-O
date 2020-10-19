@@ -9,8 +9,8 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:skos1="skos:"
          xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:vann="http://purl.org/vocab/vann/"
          xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
          xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
          xml:base="https://www.ica.org/standards/RiC/ontology">
@@ -25,7 +25,7 @@
       <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
       <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
-      <dc:rights xml:lang="en">Copyright 2019, International Council on Archives
+      <dc:rights xml:lang="en">Copyright 2019-...., International Council on Archives
             (ICA)</dc:rights>
       <dcterms:abstract rdf:parseType="Literal">
          <html:div xml:lang="en">
@@ -378,7 +378,9 @@
             (ICA RiC-O) version 0.2</dcterms:title>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA RiC-O)
             version 0.2</rdfs:label>
-      <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-03-12.</owl:versionInfo>
+      <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
+      <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
+      <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2020-10-19.</owl:versionInfo>
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:p>A first beta version of RiC-O was developed in 2017 and used by the National
@@ -404,6 +406,7 @@
                <html:li>Changed the domain and range of rico:hasOriginal and rico:hasDraft (it is now Record or Record Part); same for their inverse properties.</html:li>
                <html:li>Fixed a bug in the definition of rico:provenanceRelationHasTarget (removed the owl:propertyChainAxiom).</html:li>
                <html:li>Changed the name of rico:leadBy object property (grammatical mistake)  to rico:ledBy. </html:li>
+               <html:li>Added a vann:preferredNamespaceUri and vann:preferredNamespacePrefix property to the ontology metadata</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
