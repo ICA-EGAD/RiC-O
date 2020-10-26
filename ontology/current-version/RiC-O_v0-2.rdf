@@ -8490,27 +8490,6 @@
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#IdentifierType -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#IdentifierType">
-      <rdfs:label xml:lang="en">Identifier Type</rdfs:label>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty
-               rdf:resource="https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"
-            />
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Categorization of an Identifier.</rdfs:comment>
-      <skos:scopeNote xml:lang="en">For example, 'old identifier' ; 'ISNI' (for a person or
-         corporate body), etc.</skos:scopeNote>
-      <skos:changeNote rdf:parseType="Resource">
-         <rdf:value>Class added along with hasIdentifierType and isIdentifierTypeOf object
-            properties.</rdf:value>
-         <dc:date>2020-10-19</dc:date>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#IdentifierType -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#IdentifierType">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
       <rdfs:subClassOf>
          <owl:Restriction>
@@ -9929,23 +9908,6 @@
       <skos:changeNote rdf:parseType="Resource">
          <rdf:value>Class added along with hasRuleType and isRuleTypeOf object
             properties.</rdf:value>
-         <dc:date>2020-10-19</dc:date>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#RuleType -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RuleType">
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#isRuleTypeOf"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Categorization of a Rule.</rdfs:comment>
-      <rdfs:label xml:lang="en">Rule Type</rdfs:label>
-      <skos:scopeNote xml:lang="en">For example, for rules that can be applied to record resources : access rule, use rule, etc.</skos:scopeNote>
-      <skos:changeNote rdf:parseType="Resource">
-         <rdf:value>Class added along with hasRuleType and isRuleTypeOf object properties.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:Class>
