@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns="https://www.ica.org/standards/RiC/ontology#"
-   xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:owl="http://www.w3.org/2002/07/owl#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:html="http://www.w3.org/1999/xhtml"
-   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-   xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-   xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:vann="http://purl.org/vocab/vann/"
-   xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
-   xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
-   xml:base="https://www.ica.org/standards/RiC/ontology">
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
+         xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
+         xml:base="https://www.ica.org/standards/RiC/ontology">
    <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology">
       <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
       <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA),
@@ -26,8 +29,7 @@
       <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
          Description (ICA EGAD)</dc:creator>
       <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
-      <dc:rights xml:lang="en">Copyright 2019-...., International Council on Archives
-         (ICA)</dc:rights>
+      <dc:rights xml:lang="en">Copyright 2019-...., International Council on Archives (ICA)</dc:rights>
       <dcterms:abstract rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing archival
@@ -2337,6 +2339,19 @@
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasIdentifierType -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasIdentifierType">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+      <rdfs:comment xml:lang="en">Connects an Identifier and an Identifier Type that categorizes it.</rdfs:comment>
+      <rdfs:label xml:lang="en">has identifier type</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property added along with IdentifierType class and isIdentifierTypeOf object property.</rdf:value>
+         <dc:date>2020-10-19</dc:date>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasInstantiation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasInstantiation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
@@ -2697,16 +2712,14 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasRuleType -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasRuleType">
-      <rdfs:subPropertyOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRuleTypeOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
       <rdfs:comment xml:lang="en">Connects a Rule to a Rule Type that categorizes it.</rdfs:comment>
       <rdfs:label xml:lang="en">has rule type</rdfs:label>
       <skos:changeNote rdf:parseType="Resource">
-         <rdf:value>Object property added along with RuleType class and isRuleTypeOf object
-            property.</rdf:value>
+<rdf:value>Object property added along with RuleType class and isRuleTypeOf object property.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -3881,12 +3894,10 @@
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
-      <rdfs:comment xml:lang="en">Connects an Identifier Type and an Identifier that it
-         categorizes.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects an Identifier Type and an Identifier that it categorizes.</rdfs:comment>
       <rdfs:label xml:lang="en">is identifier type of</rdfs:label>
       <skos:changeNote rdf:parseType="Resource">
-         <rdf:value>Object property added along with IdentifierType class and hasIdentifierType
-            object property.</rdf:value>
+         <rdf:value>Object property added along with IdentifierType class and hasIdentifierType object property.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasIdentifierType"/>
@@ -4420,6 +4431,19 @@
       <skos:changeNote rdf:parseType="Resource">
          <rdf:value>Object property added along with RuleType class and hasRuleType object
             property.</rdf:value>
+         <dc:date>2020-10-19</dc:date>
+      </skos:changeNote>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasRuleType"/>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isRuleTypeOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isRuleTypeOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
+      <rdfs:comment xml:lang="en">connects a Rule Type to a Rule that it categorizes.</rdfs:comment>
+      <rdfs:label xml:lang="en">is rule type of</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property added along with RuleType class and hasRuleType object property.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasRuleType"/>
@@ -8454,10 +8478,8 @@
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
       <rdfs:subClassOf>
          <owl:Restriction>
-            <owl:onProperty
-               rdf:resource="https://www.ica.org/standards/RiC/ontology#hasIdentifierType"/>
-            <owl:allValuesFrom
-               rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasIdentifierType"/>
+            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
          </owl:Restriction>
       </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">A word, number, letter, symbol, or any combination of these used
@@ -8484,6 +8506,23 @@
       <skos:changeNote rdf:parseType="Resource">
          <rdf:value>Class added along with hasIdentifierType and isIdentifierTypeOf object
             properties.</rdf:value>
+         <dc:date>2020-10-19</dc:date>
+      </skos:changeNote>
+   </owl:Class>
+   <!-- https://www.ica.org/standards/RiC/ontology#IdentifierType -->
+   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#IdentifierType">
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf"/>
+            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">Categorization of an Identifier.</rdfs:comment>
+      <rdfs:label xml:lang="en">Identifier Type</rdfs:label>
+      <skos:scopeNote xml:lang="en">For example, 'old identifier' ; 'ISNI' (for a person or corporate body), etc.</skos:scopeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added along with hasIdentifierType and isIdentifierTypeOf object properties.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:Class>
@@ -9890,6 +9929,23 @@
       <skos:changeNote rdf:parseType="Resource">
          <rdf:value>Class added along with hasRuleType and isRuleTypeOf object
             properties.</rdf:value>
+         <dc:date>2020-10-19</dc:date>
+      </skos:changeNote>
+   </owl:Class>
+   <!-- https://www.ica.org/standards/RiC/ontology#RuleType -->
+   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RuleType">
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#isRuleTypeOf"/>
+            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">Categorization of a Rule.</rdfs:comment>
+      <rdfs:label xml:lang="en">Rule Type</rdfs:label>
+      <skos:scopeNote xml:lang="en">For example, for rules that can be applied to record resources : access rule, use rule, etc.</skos:scopeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added along with hasRuleType and isRuleTypeOf object properties.</rdf:value>
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:Class>
