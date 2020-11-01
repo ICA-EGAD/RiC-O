@@ -2475,6 +2475,32 @@
     
 
 
+    <!-- https://www.ica.org/standards/RiC/ontology#hasExtent -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasExtent">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isExtentOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+        <rdfs:comment>Connects a Record Resource or Instantiation to an Extent</rdfs:comment>
+        <rdfs:label>has extent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasExtentType -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasExtentType">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#belongsToCategory"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
+        <rdfs:comment>Connects an Extent to an Extent Type that categorizes, what is being measured.</rdfs:comment>
+        <rdfs:label>has extent type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith">
@@ -4125,6 +4151,31 @@
         <rdfs:comment xml:lang="en">Connects an Event Type to an Event that is
          categorizes.</rdfs:comment>
         <rdfs:label xml:lang="en">is event type of </rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isExtentOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isExtentOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:comment>Connects an Extent to a Record Resource or Instantiation</rdfs:comment>
+        <rdfs:label>is extent of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isExtentTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isExtentTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCategoryOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#typeIsSourceOfTypeRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+        <rdfs:label>is extent type of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7833,7 +7884,9 @@
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#quantity">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#textualValue"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Machine-readable quantity.</rdfs:comment>
+        <rdfs:label>quantity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8043,6 +8096,7 @@
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#unitOfMeasurement">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. Can be spacial units (cm, m), weigt (g, kg), time (s, h), storage (MB, TB) or more informal units used in the archival context like number of boxes, pages or words.</rdfs:comment>
         <rdfs:label>unit of measurement</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -8175,19 +8229,25 @@
             compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Activity is a kind of Event. Activity is specifically used
-         to designate purposeful human activity. Activity may be understood from two
+        <skos:scopeNote xml:lang="en">Activity is a kind of Event.
+ Activity is specifically used
+         to designate purposeful human activity.
+ Activity may be understood from two
          perspectives. First it can be understood as leading to an end. The end is the purpose of
          the Activity, or why the Activity is performed. Second, it can be understood in terms of
          the processes that lead to achieving the end, how the end is realized through coordinated
-         actions. Purpose and process are complementary understandings of Activity. Together
+         actions.
+ Purpose and process are complementary understandings of Activity. Together
          the two perspectives address why the Activity is performed, the expected ends or outcomes;
-         and how the Activity fulfills the purpose.  While activity has an intended end, it
+         and how the Activity fulfills the purpose. 
+ While activity has an intended end, it
          also has unintended consequences and results, or side-effects. By and large, these may not
          be the focus of the description, but they are, unquestionably, context. |In a corporate or
-         government context an Activity may also be called a &apos;function&apos;. An Activity exists in
+         government context an Activity may also be called a &apos;function&apos;.
+ An Activity exists in
          a specific social and cultural context, and within that context is subject to change over
-         time.  An Activity may be composed of other Activities.</skos:scopeNote>
+         time. 
+ An Activity may be composed of other Activities.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E15 (Activity
          entity)</RiCCMCorrespondingComponent>
     </owl:Class>
@@ -8290,10 +8350,12 @@
          Group commonly has one identity, though each also may have one or more alternative
          identities. Such alternative identities may be shared by more than one Person or Group.
          Alternative identities include but are not limited to pseudonyms, heteronyms, DBA (Doing
-         Business As), and trade identities.  An alternative identity should not be confused
+         Business As), and trade identities. 
+ An alternative identity should not be confused
          with a Position in a Group, for example, presidents, prime ministers, governors, popes,
          royalty, or bishops. Nor should an alternative identity be confused with a variant name or
-         identifier of the same identity. Agent also includes entities created by a Person or
+         identifier of the same identity.
+ Agent also includes entities created by a Person or
          Group that act on behalf of the creating Agent in an autonomous or semi-autonomous manner.
          Examples of a Mechanism include software agents, robots, and space and underwater probes
          that generate data (records) in the course of Activity assigned to and in conformance with
@@ -8560,6 +8622,7 @@
         <rdfs:comment>Number of physical units and/or physical dimensions of Record Resource carriers.</rdfs:comment>
         <rdfs:label>Carrier Extent</rdfs:label>
         <skos:scopeNote>For electronic resources, it indicates the size of storage capacity (disk, tape, film etc.). The attribute may be different from the Instantiation Extent data ropertyy. For example, the Carrier Extent of a movie may be 4 GB (as DVD), while Instantiation Extent may be 2 GB.</skos:scopeNote>
+        <RiCCMCorrespondingComponent>Corresponds to RiC-A04 (Carrier Extent)</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
@@ -8587,7 +8650,8 @@
         <skos:scopeNote xml:lang="en">Carrier Type information is essential for assessing
          authenticity, conservation needs and the availability, access and use of Record Resources.
          Carrier Type determines the environmental conditions of storage and the prerequisites and
-         possible ways to access and use of the records. Should not be confused with Content
+         possible ways to access and use of the records.
+ Should not be confused with Content
          Type, that categorizes a Record Resource, nor with Representation Type that categorizes an
          Instantiation. The Carrier Type depends on the media type that is required to access the
          records and is independent of its content</skos:scopeNote>
@@ -8829,8 +8893,10 @@
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Date includes both single dates, a date range, or a set of
-         non-contiguous single dates or date ranges.  A date may be represented in natural
-         language, based on a digital standard, or both.  Digital standard dates will typically
+         non-contiguous single dates or date ranges. 
+ A date may be represented in natural
+         language, based on a digital standard, or both. 
+ Digital standard dates will typically
          be based on ISO 8601, or Extended Date-Time Format (EDTF).</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E18 (Date
          entity)</RiCCMCorrespondingComponent>
@@ -8909,8 +8975,10 @@
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Can be extended with any number of subclasses, e.g. Age or
-         Religion. A demographic group may be defined as a subset of the general
-         population. Individuals may belong to several demographic groups</skos:scopeNote>
+         Religion.
+ A demographic group may be defined as a subset of the general
+         population.
+ Individuals may belong to several demographic groups</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A15 (Demographic Group
          attribute)</RiCCMCorrespondingComponent>
     </owl:Class>
@@ -9003,7 +9071,8 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Documentary Form Type plays an important role in determining the
          type of information a Record may comprise, its status of perfection, and its authenticity
-         and reliability. Documentary form types exist in a specific social and cultural
+         and reliability.
+ Documentary form types exist in a specific social and cultural
          context, and within that context, are subject to change over time</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A17 (Documentary Form Type
          attribute)</RiCCMCorrespondingComponent>
@@ -9031,10 +9100,12 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">An event may be natural, human, or a combination of natural and
          human. Events have temporal and spatial boundaries. An event may actively involve some
-         agent(s) and affect any entity.  An event may be discrete, happening at a specific
+         agent(s) and affect any entity. 
+ An event may be discrete, happening at a specific
          moment in time, or may occur over an extended period of time. Events may have events as
          parts, and events may precede or follow one another. Multiple agents may participate in the
-         same event, and in different roles.  </skos:scopeNote>
+         same event, and in different roles. 
+ </skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E14 (Event
          entity)</RiCCMCorrespondingComponent>
         <closeTo xml:lang="en">LODE Event class
@@ -9089,7 +9160,8 @@
             compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Events of all kinds can be categorized. Curation event
+        <skos:scopeNote xml:lang="en">Events of all kinds can be categorized.
+ Curation event
          types include creation; acquisition; transfer; arrangement; description; digitization, etc.
          Biographical event types include birth, marriage, death, etc.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A18 (Event Type
@@ -9110,7 +9182,29 @@
         </rdfs:subClassOf>
         <rdfs:comment>Countable characteristics of the content of an entity expressed as a quantity.</rdfs:comment>
         <rdfs:label>Extent</rdfs:label>
-        <skos:scopeNote>Physical or logical extent</skos:scopeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2020-10-28</dc:date>
+                <rdf:value>Class added together with three subclasses and hasExtent and isExtentOf Object properties</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote>Physical or logical extent of a resource</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#ExtentType -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ExtentType">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:comment>Categorization of the extent that is being measured</rdfs:comment>
+        <rdfs:label>Extent Type</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value>Added to specify the dimension that is being measured</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:Class>
     
 
@@ -9129,12 +9223,15 @@
                 <rdf:value>Scope note: made separate paragraphs and some changes.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Family is a kind of Group.  “Family” is used here as a
+        <skos:scopeNote xml:lang="en">Family is a kind of Group. 
+ “Family” is used here as a
          general term that encompasses a wide variety of familial groups. Other types of familial
-         groups include Dynasty, Clan, House, Tribe and others. Though family may be a
+         groups include Dynasty, Clan, House, Tribe and others.
+ Though family may be a
          recognized legal group in specific contexts, the term may also be used for groups that are
          socially recognized as families. A family may be a group of persons related either by
-         consanguinity or affinity or cohabitation or other social conventions. In some
+         consanguinity or affinity or cohabitation or other social conventions.
+ In some
          context, a Family may be legally recognized as Corporate Body. For example, certain North
          American peoples (tribes) retain self-government rights and have jurisdiction over defined
          tribal lands.</skos:scopeNote>
@@ -9230,11 +9327,14 @@
             enriched.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Group is a kind of Agent. A Group has a socially recognized
+        <skos:scopeNote xml:lang="en">Group is a kind of Agent.
+ A Group has a socially recognized
          identity. Each member of the Group plays a particular role or roles (that is has a
-         particular Position) in the coordinated activity of the Group. Corporate bodies and
+         particular Position) in the coordinated activity of the Group.
+ Corporate bodies and
          families are kinds of groups, though other kinds of groups are possible. For example, the
-         “electorate” -- all of the voters in a given election. Complex, large groups may be
+         “electorate” -- all of the voters in a given election.
+ Complex, large groups may be
          subdivided into other groups.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E09 (Group
          Entity)</RiCCMCorrespondingComponent>
@@ -9350,11 +9450,15 @@
          once, though this instantiation may no longer exist at the moment of description. An
          instantiation might also exist at the moment of description, but be destroyed at a later
          moment in time, when, for example, a derived instantiation might become the only remaining
-         instantiation.  A Record Set may have an instantiation, which is to say that it is not
-         a necessary condition. An Instantiation may be derived from another Instantiation.
-          A Record Resource may have many Instantiations simultaneously (for instance, a record
+         instantiation. 
+ A Record Set may have an instantiation, which is to say that it is not
+         a necessary condition.
+ An Instantiation may be derived from another Instantiation.
+         
+ A Record Resource may have many Instantiations simultaneously (for instance, a record
          printed and saved in the same time as DOCX and PDF/A would have 3 concurrent
-         instantiations) or through time (for example, copy of a record).  Depending on the
+         instantiations) or through time (for example, copy of a record). 
+ Depending on the
          context, a new instantiation may be seen as a new or as the same record resource. During in
          the process of re-instantiation something is lost and something is preserved, but it is up
          to the context and the Agent that produces or uses that Instantiation to assess whether the
@@ -9363,7 +9467,8 @@
          (Instantiation 2). The digital copy may be considered as instantiating the &quot;same&quot; Record by
          an Agent considering the information transmitted by the Record (e.g., the urban landscape
          displayed), but as a&quot; different&quot; Record by an antiquarian more focused on the materiality
-         of the carrier. Successive instantiations may change the perceivable boundaries of a
+         of the carrier.
+ Successive instantiations may change the perceivable boundaries of a
          Record Resource. For instance, a case file comprising many records may be digitized and
          saved as one single PDF file, which, from management perspective, may be treated as one
          Record. Similarly, a large Record Set (a fonds or a series) may be maintained as one
@@ -9374,12 +9479,14 @@
          the information, a vinyl recording, a video cassette or a digital file needs a device
          (mediator) to codify or decodify the information conveyed. This mediator may imply simple
          physical components (a turntable needle, for example), or a complex gallery of software and
-         hardware elements. Instantiations are more than the mere informational content of
+         hardware elements.
+ Instantiations are more than the mere informational content of
          Record Resource and may be the focus of preservation and physical management of records.
          The use of particular document types for records, such as a medieval charter, may have
          implications for the authenticity of the records. Hence, the way a Record Resource is
          instantiated contributes to the contextualizing of the content.record resource is
-         instantiated contributes to the contextualizing the content.  Distinguishing the
+         instantiated contributes to the contextualizing the content. 
+ Distinguishing the
          message conveyed (Record Resource) and its physical representations (Instantiation) allows
          for the efficient management of their descriptions, and preserve information about a Record
          Resource even when no physical representation of it exists or is known to exist anymore.
@@ -9398,7 +9505,8 @@
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:comment>Countable characteristics of the Instantiation expressed as a quantity.</rdfs:comment>
         <rdfs:label>Instantiation Extent</rdfs:label>
-        <skos:scopeNote>Corresponds to RiC-A23 (Instantiation Extent attribute)</skos:scopeNote>
+        <skos:scopeNote>Countable characteristics of the Instantiation expressed as a quantity.</skos:scopeNote>
+        <RiCCMCorrespondingComponent>Corresponds to RiC-A23 (Instantiation Extent attribute)</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
@@ -9503,7 +9611,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Persons that directly know each other during
-         their existence.  This relation is symmetric.</rdfs:comment>
+         their existence. 
+ This relation is symmetric.</rdfs:comment>
         <rdfs:label xml:lang="en">Knowing Relation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">Cass implementation of RiC-R051 and RiC—R051i
          relations</RiCCMCorrespondingComponent>
@@ -9630,17 +9739,23 @@
             compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Mandate is a kind of Rule.  A Mandate confers the authority
-         or competencies of Agents to perform a specified Activity. In addition to assigning an
+        <skos:scopeNote xml:lang="en">Mandate is a kind of Rule. 
+ A Mandate confers the authority
+         or competencies of Agents to perform a specified Activity.
+ In addition to assigning an
          Activity and delegating authority to perform the Activity to an Agent, a Mandate commonly
          limits the Place (jurisdiction) and Date (time period) within which an Agent may perform
-         the Activity (where and when).  Mandates exist in a specific social and cultural
-         context, and within that context are subject to change over time.  While a Mandate may
+         the Activity (where and when). 
+ Mandates exist in a specific social and cultural
+         context, and within that context are subject to change over time. 
+ While a Mandate may
          be tacit, in whole or part, it may be explicitly expressed in a variety of documentary
          sources (for example, constitutions, legislation, (legal) acts, statutes, legal codes,
-         ordinances, charges, charters, or mission statements).  The evidence for identifying a
+         ordinances, charges, charters, or mission statements). 
+ The evidence for identifying a
          Mandate may be found in its entirety in one documentary source (for example, a law or
-         regulation), or may be found in two or more sources.  A Mandate should not be confused
+         regulation), or may be found in two or more sources. 
+ A Mandate should not be confused
          with the one or more documentary sources that serve as evidence of its identity. A
          documentary source is a Record.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E17 (Mandate
@@ -9681,7 +9796,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Mandate, and at least one Agent, when the
-         first gives the second one the authority or competencies to act.  May also involve one
+         first gives the second one the authority or competencies to act. 
+ May also involve one
          to many Activities that the Mandate(s) assign(s) to the Agent(s).</rdfs:comment>
         <rdfs:label xml:lang="en">Mandate Relation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R067 and RiC-R067i
@@ -9705,7 +9821,8 @@
                 <rdf:value>scope note: made separate paragraphs. Disjoint with: enriched.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Mechanism is a kind of Agent. A Mechanism may have both
+        <skos:scopeNote xml:lang="en">Mechanism is a kind of Agent.
+ A Mechanism may have both
          mechanical and software components, or may be exclusively software. A Mechanism acts in the
          world producing physical or social effects, and frequently generates or modifies
          Records.</skos:scopeNote>
@@ -9811,9 +9928,11 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Occupation Type should not be confused with Position where, for
          example, an Agent with the Occupation Type “lawyer” holds the Position of “legal counsel”
-         in an agency. Occupation Type is related to, but should not be confused with the
+         in an agency.
+ Occupation Type is related to, but should not be confused with the
          domain or field of Activity (Actvitity Type), such as an archivist who works in the domain
-         of archival science.  Occupation Type is a kind of Demographic Group.</skos:scopeNote>
+         of archival science. 
+ Occupation Type is a kind of Demographic Group.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A30 (Occupation Type
          attribute)</RiCCMCorrespondingComponent>
     </owl:Class>
@@ -9911,15 +10030,19 @@
             Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Person is a kind of Agent.  Most commonly, a human being
+        <skos:scopeNote xml:lang="en">Person is a kind of Agent. 
+ Most commonly, a human being
          (biological person) has a single coeval social identity or persona. In everyday discourse,
-         this is the “real person.” Less common though not rare, over the course of a lifetime,
+         this is the “real person.”
+ Less common though not rare, over the course of a lifetime,
          personae in addition to the coeval (or “original”) persona may be associated with the human
          being. Such “alternative personae” are most often created by the original person for
-         specific purposes. Under some circumstances, an alternative persona might eclipse or
+         specific purposes.
+ Under some circumstances, an alternative persona might eclipse or
          replace the original person (Mark Twain eclipsing Samuel Clemens; John Wayne eclipsing
          Marion Mitchell Morrison), that is, the social (shared) alternative identity becomes the
-         predominate identity. Less common is whentwo or more persons collaborate to create a
+         predominate identity.
+ Less common is whentwo or more persons collaborate to create a
          shared persona. Persona shared by two or more Persons constitute a kind of Group.
          Within the archival context, the original Person generally will be the focus of the
          description, with alternative personae noted. Exceptionally, an alternative persona may
@@ -9977,11 +10100,14 @@
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">A Place may be a jurisdiction, a manmade structure, or a natural
-         feature. A manmade structure or natural feature may also be a jurisdiction.  A Place
+         feature. A manmade structure or natural feature may also be a jurisdiction. 
+ A Place
          may be referenced to a Physical Location on the earth, or (if you don&apos;t want to use the
-         PhysicalLocation class) directly to geographic coordinates. Both jurisdictions and
+         PhysicalLocation class) directly to geographic coordinates.
+ Both jurisdictions and
          natural features are historical entities. A Place thus may have begin and end dates, and
-         changing boundaries that result from human or natural events. A Jurisdiction is the
+         changing boundaries that result from human or natural events.
+ A Jurisdiction is the
          bounded geographic area within which an Agent has the authority to perform specified
          activities constrained by rules.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E22 (Place
@@ -10064,15 +10190,24 @@
             Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Position is a kind of Agent.  Position is the intersection
-         of a Person and a Group. Position exists independently of the Person that holds the
-         Position within a Group. More than one Person may hold a Position. Position is
+        <skos:scopeNote xml:lang="en">Position is a kind of Agent. 
+ Position is the intersection
+         of a Person and a Group.
+ Position exists independently of the Person that holds the
+         Position within a Group.
+ More than one Person may hold a Position.
+ Position is
          commonly defined in a Mandate, often called a position description or job description. The
          Mandate may specify the work to be performed (Activity) as well as the competencies for
-         performing the Activity. A Position is often given a Name. A Position may be tied
-         to a project or to a set of tasks and thus have a defined duration. A Position may
-         change over time, as the Group that establishes it changes over time. Position is not
-         to be confused with Occupation or Activity. Within the records created by a Corporate
+         performing the Activity.
+ A Position is often given a Name.
+ A Position may be tied
+         to a project or to a set of tasks and thus have a defined duration.
+ A Position may
+         change over time, as the Group that establishes it changes over time.
+ Position is not
+         to be confused with Occupation or Activity.
+ Within the records created by a Corporate
          Body, a Position may be used to identify the record sets resulting from activities
          performed by one or more persons holding the Position over time, without necessarily
          identifying or describing the Person or persons, or identifying which records were created
@@ -10256,10 +10391,13 @@
             compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Record is a kind of Record Resource.  A Record must have or
-         have had at least one Instantiation. A Record may have more than one Instantiation.  A
+        <skos:scopeNote xml:lang="en">Record is a kind of Record Resource. 
+ A Record must have or
+         have had at least one Instantiation. A Record may have more than one Instantiation. 
+ A
          re-instantiation of the record may be considered the same record or a new record, depending
-         on the context and of the functions that record serves.  Such information may serve a
+         on the context and of the functions that record serves. 
+ Such information may serve a
          variety of purposes, though it always documents or is evidence of
          Activity.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E04 (Record
@@ -10288,7 +10426,8 @@
             compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Record Part is a kind of Record Resource. A Record Part may
+        <skos:scopeNote xml:lang="en">Record Part is a kind of Record Resource.
+ A Record Part may
          itself have Record Parts.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E05 (Record Part
          entity)</RiCCMCorrespondingComponent>
@@ -10347,29 +10486,36 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Producing a record resource may imply either its newly creation
          or a reuse of previous existing information by combination, rearrangement, selecting,
-         reformatting etc. Records, Record Sets, and Record Parts are all evidence of the
+         reformatting etc.
+ Records, Record Sets, and Record Parts are all evidence of the
          activities of an Agent. More than one Agent may be involved in the creation of a Record
          Resource. The role of the Agent in creating the Record Resource may take different forms,
          for example, authoring of an individual record, accumulating a set of records, or forming a
-         set of records. Though a Record, Record Set, and Record Part, under most
+         set of records.
+ Though a Record, Record Set, and Record Part, under most
          circumstances, may be easily distinguished from one another, frequently identifying the
          boundary of each and how the “bounded information regions” interrelate, may present
-         particular challenges. Documentary Forms provide the rules governing many Records,
+         particular challenges.
+ Documentary Forms provide the rules governing many Records,
          providing criteria for identifying its boundary, and identifying its essential Record
          Parts. Many Records, though, do not have well-established documentary forms, particularly
          electronic records, where it may be difficult to determine whether individual elements
-         represented in separate bitstreams are record parts, records, or record sets.  For
+         represented in separate bitstreams are record parts, records, or record sets. 
+ For
          example, is a photograph represented independently in a bitstream embedded in a text
          document a Record, or a Record Part ? Or is the same photograph attached to an email,
-         maintaining its independent representation, a Record or a Record Part? When
+         maintaining its independent representation, a Record or a Record Part?
+ When
          information is grouped for some purpose, for example, zip or tar “file compression” for
          saving storage space, presents a further challenge. One file comprises multiple bitstreams
          subjected to techniques that remove bits that can be losslessly recovered when
          decompressed. Under what circumstances is such a compressed bitstream a Record or a Record
-         Set? Determining when an information object is a Record, Record Part, or Record Set is
+         Set?
+ Determining when an information object is a Record, Record Part, or Record Set is
          based on perspective and judgement exercised in a particular context. In one context, the
          Agent describing an information object may designate it a Record, while another Agent in a
-         different context may designate it a Record Part. Both designations are supported by
+         different context may designate it a Record Part.
+ Both designations are supported by
          RiC, and the significance of the difference for users of the records is ameliorated by the
          fact that attributes and relations employed in describing each of the record entities are
          shared.</skos:scopeNote>
@@ -10385,7 +10531,8 @@
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:comment>Countable characteristics of the content of the Record Resource expressed as a quantity.</rdfs:comment>
         <rdfs:label>Record Resource Extent</rdfs:label>
-        <skos:scopeNote>Corresponds to RiC-A35 (Record Resource extent attribute)</skos:scopeNote>
+        <skos:scopeNote>Countable characteristics of the content of the Record Resource expressed as a quantity.</skos:scopeNote>
+        <RiCCMCorrespondingComponent>Corresponds to RiC-A35 (Record Resource extent attribute)</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
@@ -10460,7 +10607,8 @@
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Can in particular refer to a record state of development or its
-         status of transmission once finished (draft, original, copy...).  Specifying that a
+         status of transmission once finished (draft, original, copy...). 
+ Specifying that a
          record resource has state copy usually implies that another record resource existed or
          exists, of which the one described is the copy. In such a case you can also use &apos;is copy
          of&apos; object property.</skos:scopeNote>
@@ -10536,27 +10684,35 @@
             make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Record Set is a kind of Record Resource. The Record members
+        <skos:scopeNote xml:lang="en">Record Set is a kind of Record Resource.
+ The Record members
          in a Record Set may physically reside together, though physical proximity is not
-         essential. In a particular context, an Agent (e.g. administrator, records manager,
+         essential.
+ In a particular context, an Agent (e.g. administrator, records manager,
          archivist, end-user, etc.) may select the Record members of a Record Set based on a shared
          attribute or attributes, or a shared Relation or Relations. The grouping of the Records
-         serves a purpose or purposes specific to the context of the Agent.  All Record members
+         serves a purpose or purposes specific to the context of the Agent. 
+ All Record members
          of a Record Set may share the attribute of having been accumulated by the same Agent, or
          all share the same Documentary Form Type and are created over time by the same
-         Activity. A Record Set may represent the act of classifying the Records in accordance
+         Activity.
+ A Record Set may represent the act of classifying the Records in accordance
          with a formal classification scheme that may be based on Activity, subject, organizational
          structure, or other criteria; an act of archival arrangement (e.g. based on common
          provenance); or some other selection and grouping that fulfils a particular purpose or
          purposes (e.g. a classification that reflects or supports the purposes of a researcher).
-          By exception, some Records are brought together based on their not belonging in the
+         
+ By exception, some Records are brought together based on their not belonging in the
          context of selection to other designated groups: a ‘Miscellaneous’ series, for example.
-          A Record Set accumulated by an Agent in the course of life or work Activity should be
-         kept in a manner that preserves context and evidential value.  Records Sets may also
+         
+ A Record Set accumulated by an Agent in the course of life or work Activity should be
+         kept in a manner that preserves context and evidential value. 
+ Records Sets may also
          contain other Records Sets. Both a Record Set and a Record may simultaneously be a member
          of more than one Record Set, and over the course of its existence, a Record Set or Record
          may be a member of an indeterminate number of Record Sets in an indeterminate number of
-         contexts. Record Sets and Records contained within a Record Set may be ordered into a
+         contexts.
+ Record Sets and Records contained within a Record Set may be ordered into a
          sequence based on a common property or relation, or common properties or relations (e.g.
          alphabetical by Agent or related Place name; chronological order by an allocated Date); or
          some other criterion (e.g. an imposed order by relevance).</skos:scopeNote>
@@ -10659,9 +10815,11 @@
         <skos:scopeNote xml:lang="en">Representation Type can be unmediated (which allows humans to
          receive the message communicated without an intermediation of a device) and mediated (which
          needs a device to decode the message). A lot of contemporary mediated types are digital.
-          Each Representation Type may present specific features: bit rate for audio,
+         
+ Each Representation Type may present specific features: bit rate for audio,
          resolution for digital images, encoding format for video etc. Depending of the type,
-         properties may thus be needed to describe their characteristics.  Not be confused with
+         properties may thus be needed to describe their characteristics. 
+ Not be confused with
          Content Type or Carrier Type since the form of representation can be independent of the
          communication or carrier.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A37 (Representation Type
@@ -10709,13 +10867,16 @@
          or community expectations. Written rules may include though are not limited to the
          following: constitutions, legislation, acts (legal), statutes, legal codes, ordinances,
          charters, mission statements, regulations, policies, procedures, instructions, codes of
-         conduct or ethics, professional standards, work assignments or work plans.  The source
+         conduct or ethics, professional standards, work assignments or work plans. 
+ The source
          or sources of some Rules are external to the Agent (for example, expressed in elections,
          social mores, customs, community expectations, laws, regulations, standards and best
          practice codes), while others are expressed within the Agent’s immediate context (for
-         example, policies, or written or verbal instructions). The evidence for identifying
+         example, policies, or written or verbal instructions).
+ The evidence for identifying
          Rules may be found in their entirety in one documentary source (for example, a law or
-         regulation) or may be found in two or more sources.  Rule should not be confused with
+         regulation) or may be found in two or more sources. 
+ Rule should not be confused with
          the one or more documentary sources that serve as evidence of its identity. A documentary
          source is a Record.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E16 (Rule
@@ -10925,7 +11086,8 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Includes all RiC entities as well as any concept, material
          thing, or event that may be the subject of a Record Resource or associated with an
-         Activity.  Examples of entities not explicitly addressed in RiC includes but is not
+         Activity. 
+ Examples of entities not explicitly addressed in RiC includes but is not
          limited to the following: abstract concepts; cultural movements, named periods and events;
          named things, objects and works; legendary, mythical or fictitious figures, characters or
          beings.</skos:scopeNote>
@@ -10989,7 +11151,7 @@
 
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#UnitOfMeasurement">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
-        <rdfs:comment>A definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity.</rdfs:comment>
+        <rdfs:comment>A definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. Can be spacial units (cm, m), weigt (g, kg), time (s, h), storage (MB, TB) or more informal units used in the archival context like number of boxes, pages or words.</rdfs:comment>
         <rdfs:label>Unit Of Measurement</rdfs:label>
     </owl:Class>
     
