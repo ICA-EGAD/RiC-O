@@ -5675,7 +5675,7 @@
       <rdfs:comment xml:lang="en">Information on the anticipated accession(s) to the Record Set.</rdfs:comment>
       <rdfs:label xml:lang="en">accrual</rdfs:label>
       <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">corresponds to RiC-A01 (Accrual attribute)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">corresponds to RiC-A01 (Accrual attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#accrualStatus -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accrualStatus">
@@ -5761,7 +5761,7 @@
       <rdfs:comment xml:lang="en">Date at which something began.</rdfs:comment>
       <rdfs:label xml:lang="en">beginning date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#birthDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#birthDate">
@@ -5771,7 +5771,7 @@
       <rdfs:comment xml:lang="en">Date at which a Person was born.</rdfs:comment>
       <rdfs:label xml:lang="en">birth date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#calendar -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#calendar">
@@ -5780,7 +5780,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Used system of reckoning time in which the beginning, length, and divisions of a year are defined, sometimes along with multiyear cycles.</rdfs:comment>
       <rdfs:label xml:lang="en">calendar</rdfs:label>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A14 (Date Standard attribute)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#carrierExtent -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#carrierExtent">
@@ -5937,7 +5937,7 @@
       <rdfs:comment xml:lang="en">Date at which an entity was created.</rdfs:comment>
       <rdfs:label xml:lang="en">creation date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#date -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#date">
@@ -5946,7 +5946,7 @@
       <rdfs:comment xml:lang="en">Chronological information associated with an entity that contributes to its identification and contextualization.</rdfs:comment>
       <rdfs:label xml:lang="en">date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Data property implementation of RiC-E18 (Date entity)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Data property implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#dateQualifier -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#dateQualifier">
@@ -5971,7 +5971,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Identifier of the standard of the Normalized date.</rdfs:comment>
       <rdfs:label xml:lang="en">date standard</rdfs:label>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A14 (Date Standard attribute)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A14 (Date Standard attribute)</RiCCMCorrespondingComponent>
       <skos:example xml:lang="en">ISO8601</skos:example>
       <skos:example xml:lang="en">IETF</skos:example>
       <skos:changeNote rdf:parseType="Resource">
@@ -6009,7 +6009,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Descriptive information about an entity that is not otherwise addressed.</rdfs:comment>
       <rdfs:label xml:lang="en">descriptive note</rdfs:label>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A16 (Descriptive Note attribute)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A16 (Descriptive Note attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#endDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#endDate">
@@ -6674,7 +6674,7 @@
       <rdfs:comment xml:lang="en">An identifying name of a Record Resource, Instantiation or Rule.</rdfs:comment>
       <rdfs:label xml:lang="en">title</rdfs:label>
       <skos:scopeNote xml:lang="en">Use only if you don't use Title class for handling titles.</skos:scopeNote>
-      <rico:RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A28 (Name attribute)</rico:RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#type -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#type">
