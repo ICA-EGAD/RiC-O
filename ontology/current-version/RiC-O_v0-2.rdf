@@ -1957,9 +1957,13 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isExtentTypeOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
-      <rdfs:comment>Connects an Extent to an Extent Type that categorizes, what is being
+      <rdfs:comment>Connects an Extent to an Extent Type that categorizes what is being
          measured.</rdfs:comment>
       <rdfs:label>has extent type</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property added along with the Extent Type class.</rdf:value>
+         <dc:date>2020-11-01</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasFamilyLinkWith">
@@ -3313,7 +3317,17 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
       <rdfs:label>is extent type of</rdfs:label>
+      <rdfs:comment xml:lang="en">Connects an Extent Type to an Extent that it
+         categorizes.</rdfs:comment>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasExtentType"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property added along with the Extent Type class.</rdf:value>
+         <dc:date>2020-11-01</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Added a rdfs:comment.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isFamilyTypeOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isFamilyTypeOf">
