@@ -1945,6 +1945,10 @@
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
       <rdfs:comment>Connects a Record Resource or Instantiation to an Extent</rdfs:comment>
       <rdfs:label>has extent</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property created along with the Extent class and its subclasses, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasExtentType -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasExtentType">
@@ -2528,7 +2532,11 @@
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#UnitOfMeasurement"/>
       <rdfs:comment>Connects an Extent to a Unit Of Measurement</rdfs:comment>
       <rdfs:label>has unit of measurement</rdfs:label>
-   </owl:ObjectProperty>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property created along with Extent and UnitOfMeasurement classes, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+     </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasWorkRelationWith -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasWorkRelationWith">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"/>
@@ -3294,6 +3302,10 @@
       <rdfs:comment>Connects an Extent to a Record Resource or Instantiation</rdfs:comment>
       <rdfs:label>is extent of</rdfs:label>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasExtent"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property created along with the Extent class and its subclasses, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isExtentTypeOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isExtentTypeOf">
@@ -4059,7 +4071,11 @@
       <rdfs:label>is unit of measurement of</rdfs:label>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasUnitOfMeasurement"
       />
-   </owl:ObjectProperty>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Object property created along with Extent and UnitOfMeasurement classes, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#issuedBy -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#issuedBy">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"/>
@@ -6415,6 +6431,15 @@
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
       <rdfs:comment>Machine-readable quantity.</rdfs:comment>
       <rdfs:label>quantity</rdfs:label>
+      <skos:scopeNote xml:lang="en">Use if you use the Extent class and its properties for handling an accurate description of the extent of a resource..</skos:scopeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Datatype property created along with unitOfMeasurement, Extent and UnitOfMeasurement classes, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Added a scope note.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
@@ -6435,7 +6460,8 @@
          remains the same even if the information is instantiated in various carriers. For example,
          a file of 1500 words (Record Resource Extent) may have Instantiation Extent 3kb as a Word
          document and 5kb as a PDF file, and instantiations may be represented on a CD of 700mb
-         (Carrier Extent).</skos:scopeNote>
+         (Carrier Extent). Use if you don't use RecordResourceExtent class and its properties for
+         handling such information.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource extent
          attribute)</RiCCMCorrespondingComponent>
       <skos:example xml:lang="en">3 minutes and 24 seconds</skos:example>
@@ -6449,6 +6475,10 @@
          <rdf:value>Text definition and scope note updated. Examples added. Objective: to make RiC-O
             compliant with RiC-CM v0.2.</rdf:value>
          <dc:date>2020-11-01</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Updated the scope note, as a RecordResourceExtent class has been created.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
       </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceStructure -->
@@ -6646,9 +6676,18 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment>A definite magnitude of a quantity, defined and adopted by convention or by law,
          that is used as a standard for measurement of the same kind of quantity. Can be spacial
-         units (cm, m), weigt (g, kg), time (s, h), storage (MB, TB) or more informal units used in
+         units (cm, m), weight (g, kg), time (s, h), storage (MB, TB) or more informal units used in
          the archival context like number of boxes, pages or words.</rdfs:comment>
       <rdfs:label>unit of measurement</rdfs:label>
+      <skos:scopeNote xml:lang="en">Use if you do not use the UnitOfMeasurement class for handling units of measurement along with Extent.</skos:scopeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Datatype property created along with quantity, Extent and UnitOfMeasurement classes, in order to provide methods for handling extent accurately.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Added a scope note.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#usedFromDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#usedFromDate">
@@ -7073,15 +7112,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#CarrierExtent -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CarrierExtent">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
-      <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of Record
-         Resource carriers.</rdfs:comment>
+      <rdfs:comment xml:lang="en">The extent of a Record
+         Resource carrier</rdfs:comment>
       <rdfs:label xml:lang="en">Carrier Extent</rdfs:label>
-      <skos:scopeNote xml:lang="en">For electronic resources, it indicates the size of storage
-         capacity (disk, tape, film etc.). The attribute may be different from the Instantiation
-         Extent data ropertyy. For example, the Carrier Extent of a movie may be 4 GB (as DVD),
-         while Instantiation Extent may be 2 GB.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Class implementation of to RiC-A04 (Carrier Extent)
+      <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A04 (Carrier Extent)
          attribute</RiCCMCorrespondingComponent>
+      <skos:scopeNote xml:lang="en">Countable characteristics of a record resource carrier expressed as a
+         quantity.</skos:scopeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added in order to handle an accurate description of a carrier extent</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Changed a bit the definition and added change notes.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#CarrierType -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CarrierType">
@@ -7790,14 +7835,21 @@
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#InstantiationExtent -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#InstantiationExtent">
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
-      <rdfs:comment xml:lang="en">Countable characteristics of the Instantiation expressed as a
-         quantity.</rdfs:comment>
       <rdfs:label xml:lang="en">Instantiation Extent</rdfs:label>
-      <skos:scopeNote xml:lang="en">Countable characteristics of the Instantiation expressed as a
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+      <rdfs:comment xml:lang="en">The extent of an Instantiation.</rdfs:comment>
+      <skos:scopeNote xml:lang="en">Countable characteristics of an Instantiation expressed as a
          quantity.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A23 (Instantiation
          Extent attribute)</RiCCMCorrespondingComponent>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added in order to handle an accurate description of an instantiation extent</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Changed a bit the definition and added change notes.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation -->
    <owl:Class
@@ -8636,15 +8688,22 @@
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceExtent -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceExtent">
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
-      <rdfs:comment xml:lang="en">Countable characteristics of the content of the Record Resource
-         expressed as a quantity.</rdfs:comment>
       <rdfs:label xml:lang="en">Record Resource Extent</rdfs:label>
-      <skos:scopeNote xml:lang="en">Countable characteristics of the content of the Record Resource
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
+        <rdfs:comment xml:lang="en">The extent of the content of a Record Resource.</rdfs:comment>
+       <skos:scopeNote xml:lang="en">Countable characteristics of the content of the Record Resource
          expressed as a quantity.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A35 (Record Resource
          extent attribute)</RiCCMCorrespondingComponent>
-   </owl:Class>
+       <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added in order to handle an accurate description of a record resource extent</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Changed a bit the definition and added change notes.</rdf:value>
+         <dc:date>2020-11-21</dc:date>
+      </skos:changeNote>
+      </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation">
       <rdfs:label xml:lang="en">Record Resource Genetic Relation</rdfs:label>
@@ -9142,6 +9201,10 @@
          units (cm, m), weigt (g, kg), time (s, h), storage (MB, TB) or more informal units used in
          the archival context like number of boxes, pages or words.</rdfs:comment>
       <rdfs:label>Unit Of Measurement</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>Class added in order to be able to handle units of measurement as full entities.</rdf:value>
+         <dc:date>2020-10-28</dc:date>
+      </skos:changeNote>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#WholePartRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#WholePartRelation">
