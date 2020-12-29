@@ -413,6 +413,7 @@
                  unit of measurement and quantity datatype properties; has Extent, is Extent Of, has Extent Type, is Extent Type Of, has Unit Of Measurement, is Unit of Measurement Of, object properties
                  .</html:li>
                <html:li>2020, December 28: changed the IRIs and definition of RecordResourceState class and of the associated object properties; changed the domain or ranges and textual definitions of properties associated with Language, LegalStatus, ContentType, DocumentaryFormType; added new object properties for handling the description of some or all members of Record Set. Added the corresponding change notes.</html:li>
+               <html:li>2020, December 29: deleted the isSuperiorTo and isInferiorTo object properties, as well as the AgentSubordinationRelation and its object properties (as the RiC-R043 relation has been removed from RiC-CM 0.2). Added the hasAuthor/isAuthorOf object properties, plus an AuthorshipRelation class and its specific object properties (as the RiC-R079 relation has been added to RiC-CM 0.2). Added the corresponding change notes.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -873,6 +874,27 @@
          Relation</rdfs:comment>
       <rdfs:label xml:lang="en">agent is target of agent temporal relation </rdfs:label>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
+      <rdfs:comment xml:lang="en">Connects a Person, Group or Position to an Authorship Relation.</rdfs:comment>
+      <rdfs:label xml:lang="en">agent is target of authorship relation</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfCreationRelation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentOriginationRelation"/>
@@ -953,26 +975,6 @@
       <rdfs:comment xml:lang="en">Connects an Agent Relation to one of the involved
          Agents</rdfs:comment>
       <rdfs:label xml:lang="en">agent relation connects </rdfs:label>
-   </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasSource -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasSource">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentControlRelationHasSource"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentSubordinationRelation"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:comment xml:lang="en">Connects an Agent Subordination Relation to one of the
-         hierarchically superior Persons</rdfs:comment>
-      <rdfs:label xml:lang="en">agent subordination relation has source </rdfs:label>
-   </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasTarget -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasTarget">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentControlRelationHasTarget"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#personIsTargetOfAgentSubordinationRelation"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:comment xml:lang="en">Connects an Agent Subordination Relation to one of the
-         hierarchically inferior Persons</rdfs:comment>
-      <rdfs:label xml:lang="en">agent subordination relation has target </rdfs:label>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasSource">
@@ -1103,6 +1105,40 @@
       <rdfs:comment xml:lang="en">Connects a Mandate Relation to an Agent that assigns the
          Mandate.</rdfs:comment>
       <rdfs:label xml:lang="en">authorizing agent </rdfs:label>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#creationRelationHasSource"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#recordIsSourceOfAuthorshipRelation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+      <rdfs:comment xml:lang="en">Connects an Authorship Relation to one of the Records involved in the relation.</rdfs:comment>
+      <rdfs:label xml:lang="en">authorship relation has source</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#creationRelationHasTarget"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
+      <rdfs:range>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">Connects an Authorship Relation to one of the author Person, Group or Position.</rdfs:comment>
+      <rdfs:label xml:lang="en">authorship relation has target</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#belongsToCategory -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#belongsToCategory">
@@ -1263,6 +1299,10 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfCreationRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelationHasTarget"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Record Resource or an Instantiation to an Agent that is
          either responsible for all or some of the content of the Record Resource or is a
          contributor to the genesis or production of an Instantiation.</rdfs:comment>
@@ -1679,6 +1719,34 @@
       <rdfs:comment xml:lang="en">Connects a Thing to an Appellation that is used for designating
          it.</rdfs:comment>
       <rdfs:label xml:lang="en">has appellation </rdfs:label>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasAuthor -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAuthor">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#createdBy"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAuthorOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+      <rdfs:range>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:range>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordIsSourceOfAuthorshipRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Connects a Record to the Group, Person or Position that is responsible for conceiving and formulating the information contained in the Record.</rdfs:comment>
+      <rdfs:label xml:lang="en">has author</rdfs:label>
+      <skos:scopeNote xml:lang="en">To be used for any contribution to the content of a Record. 
+Includes (of course) the Person, Group or Position in whose name or by whose command the content may have been formulated and first instantiated (e.g. the person who signed it).</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R079 ('has author' relation)</RiCCMCorrespondingComponent>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasAuthorityOver -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAuthorityOver">
@@ -3175,6 +3243,32 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R062i ('is associated with rule'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isAuthorOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAuthorOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreatorOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasAuthor"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAuthorshipRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Inverse of 'has author' object property.</rdfs:comment>
+      <rdfs:label xml:lang="en">is author of</rdfs:label>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R079i ('is author of' relation)</RiCCMCorrespondingComponent>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isAuthorizingAgentInMandateRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAuthorizingAgentInMandateRelation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
@@ -3642,21 +3736,6 @@
          <dc:date>2020-10-19</dc:date>
       </skos:changeNote>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#isInferiorTo -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isInferiorTo">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#controlledBy"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isSuperiorTo"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#personIsTargetOfAgentSubordinationRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasSource"/>
-      </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Inverse of 'is superior to' object property.</rdfs:comment>
-      <rdfs:label xml:lang="en">is inferior to </rdfs:label>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R043i ('is inferior to'
-         relation)</RiCCMCorrespondingComponent>
-   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
@@ -3702,14 +3781,14 @@
       <rdfs:comment xml:lang="en">Connects a Language to An Agent, Record or Record Part that uses it.</rdfs:comment>
       <rdfs:label xml:lang="en">is language of </rdfs:label>
       <skos:changeNote rdf:parseType="Resource">
-          <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant with RiC-CM
+         <rdf:value xml:lang="en">Definition and range changed (removed RecordResource, added Record or RecordPart).</rdf:value>
+         <dc:date>2020-12-28</dc:date>
+      </skos:changeNote>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant with RiC-CM
             v0.2.</rdf:value>
          <dc:date>2020-10-23</dc:date>
       </skos:changeNote>
-      <skos:changeNote rdf:parseType="Resource">
-         <rdf:value xml:lang="en">Definition and range changed (removed RecordResource, added Record or RecordPart).</rdf:value>
-            <dc:date>2020-12-28</dc:date>
-         </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isLastUpdateDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isLastUpdateDateOf">
@@ -4398,21 +4477,6 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R016i (is successor
          of)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#isSuperiorTo -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isSuperiorTo">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#controls"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isInferiorTo"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentSubordinationRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasTarget"/>
-      </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects a Person to a Person they are superior to.</rdfs:comment>
-      <rdfs:label xml:lang="en">is superior to </rdfs:label>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R043 ('is superior to'
-         relation)</RiCCMCorrespondingComponent>
-   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isTitleOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isTitleOf">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isNameOf"/>
@@ -4923,16 +4987,6 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Spouse Relation.</rdfs:comment>
       <rdfs:label xml:lang="en">person has spouse relation </rdfs:label>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentSubordinationRelation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personIsSourceOfAgentSubordinationRelation">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentControlRelation"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasSource"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a Person (who is hierarchically superior) to an Agent
-         Subordination Relation.</rdfs:comment>
-      <rdfs:label xml:lang="en">person is source of agent subordination relation </rdfs:label>
-   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personIsSourceOfChildRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personIsSourceOfChildRelation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#personIsSourceOfDescendanceRelation"/>
@@ -4996,16 +5050,6 @@
       <rdfs:comment xml:lang="en">Connects a Person (as a teacher) to a Teaching
          Relation.</rdfs:comment>
       <rdfs:label xml:lang="en">person is source of teaching relation </rdfs:label>
-   </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#personIsTargetOfAgentSubordinationRelation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personIsTargetOfAgentSubordinationRelation">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsTargetOfAgentControlRelation"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasTarget"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a Person (who is hierarchically inferior) to an Agent
-         Subordination Relation.</rdfs:comment>
-      <rdfs:label xml:lang="en">person is target of agent subordination relation </rdfs:label>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personIsTargetOfChildRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personIsTargetOfChildRelation">
@@ -5323,6 +5367,19 @@
       <rdfs:label xml:lang="en">receives </rdfs:label>
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R029i (receives
          relation)</RiCCMCorrespondingComponent>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#recordIsSourceOfAuthorshipRelation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordIsSourceOfAuthorshipRelation">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceOrInstantiationIsSourceOfCreationRelation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
+      <rdfs:comment xml:lang="en">Connects a Record and an Authorship Relation.</rdfs:comment>
+      <rdfs:label xml:lang="en">record is source of authorship relation</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationConnects -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationConnects">
@@ -7409,29 +7466,6 @@
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R026 and RiC-R026i
          relations</RiCCMCorrespondingComponent>
    </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation">
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentSubordinationRelationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, when the
-         first one is hierarchically superior to the second one.</rdfs:comment>
-      <rdfs:label xml:lang="en">Agent Subordination Relation</rdfs:label>
-      <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R043 and RiC-R043i
-         relations</RiCCMCorrespondingComponent>
-   </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
@@ -7530,6 +7564,39 @@
          sub-categories)</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R036 and RiC-R036i
          relations</RiCCMCorrespondingComponent>
+   </owl:Class>
+   <!-- https://www.ica.org/standards/RiC/ontology#AuthorshipRelation -->
+   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation">
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasSource"/>
+            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#authorshipRelationHasTarget"/>
+            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            <owl:onClass>
+               <owl:Class>
+                  <owl:unionOf rdf:parseType="Collection">
+                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
+                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
+                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
+                  </owl:unionOf>
+               </owl:Class>
+            </owl:onClass>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">Connects at least one Record to at least one Person, Group or Position that is responsible for conceiving and formulating the information contained in the Record.</rdfs:comment>
+      <rdfs:label xml:lang="en">Authorship Relation</rdfs:label>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
+         <dc:date>2020-12-29</dc:date>
+      </skos:changeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R079 and RiC-R079i relations</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#CarrierExtent -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CarrierExtent">
@@ -9794,7 +9861,6 @@
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
       <skos:prefLabel xml:lang="en">series</skos:prefLabel>
    </owl:NamedIndividual>
-  
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
