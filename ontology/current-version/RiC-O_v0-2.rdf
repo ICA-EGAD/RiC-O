@@ -534,6 +534,7 @@
                         each RiC-O class and property and made the last changes to the ontology
                         metadata (mainly in the history note).</html:li>
                     <html:li>2021, February 1: last small changes in the ontology metadata (mainly in the abstract).</html:li>
+                    <html:li>2021, February 1: 'hasOrHadPhysicalLocation' made a subproperty of 'isPlaceAssociatedWith'; 'isOrWasPhysicalLocationOf' made a subproperty of 'isAssociatedWithPlace'.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -3600,7 +3601,7 @@
     <!--https://www.ica.org/standards/RiC/ontology#hasOrHadPhysicalLocation-->
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadPhysicalLocation">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasPhysicalLocationOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
@@ -3613,6 +3614,10 @@
                 definition (the name of this property in RiC-O 0.1 was
                 "hasPhysicalLocation").</rdf:value>
             <dc:date>2021-01-22</dc:date>
+        </skos:changeNote>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value xml:lang="en">Property made a subproperty of 'isPlaceAssociatedWith".</rdf:value>
+            <dc:date>2021-02-01</dc:date>
         </skos:changeNote>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
     </owl:ObjectProperty>
@@ -6080,7 +6085,7 @@
     <!--https://www.ica.org/standards/RiC/ontology#isOrWasPhysicalLocationOf-->
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasPhysicalLocationOf">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithPlace"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadPhysicalLocation"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
@@ -6093,6 +6098,10 @@
                 definition (the name of this property in RiC-O 0.1 was
                 "isPhysicalLocationOf").</rdf:value>
             <dc:date>2021-01-22</dc:date>
+        </skos:changeNote>
+        <skos:changeNote rdf:parseType="Resource">
+            <rdf:value xml:lang="en">Property made a subproperty of 'isAssociatedWithPlace".</rdf:value>
+            <dc:date>2021-02-01</dc:date>
         </skos:changeNote>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
     </owl:ObjectProperty>
