@@ -1,8 +1,7 @@
-﻿# Records in Contexts Ontology (RiC-O) sources repository
+﻿# update-CM-classes-definitions branch
 
-This is the GitHub repository for ICA Records in Contexts-Ontology source files.
+Updating the definitions (rdfs:comment, skos:scopeNote mainly) of RiC-O classes that correspond to RiC-CM entities (see issue #8)
 
-It includes the OWL ontology itself (ontology folder), + some diagrams (diagrams folder), some examples files (examples folder), and a docs folder (source files for some web documentation pages).
+This branch will be  merged into the next-version branch in the end.
 
-The **latest public release of RiC-O, RiC-O v0.1**, is available here, from the ICA website: [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology).
 
