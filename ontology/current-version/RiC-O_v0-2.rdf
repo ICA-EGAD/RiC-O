@@ -408,7 +408,7 @@
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
             (ICA RiC-O) version 0.2</rdfs:label>
       <owl:priorVersion rdf:resource="https://www.ica.org/standards/RiC/RiC-O_v0-1.rdf"/>
-      <owl:versionInfo xml:lang="en">Version 0.2 - last update: 2021-01-23.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 0.2 - 2021-02-15.</owl:versionInfo>
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:p>A first beta version of RiC-O was developed in 2017 and used by the National
@@ -496,6 +496,7 @@
                <html:li>2021, February 1: 'hasOrHadPhysicalLocation' made a subproperty of 'isPlaceAssociatedWith'; 'isOrWasPhysicalLocationOf' made a subproperty of 'isAssociatedWithPlace'.</html:li>
                <html:li>2021, February 1: reordered everything with Protégé without changing the content</html:li>
                <html:li>2021, February 4: checked and fixed the language of the examples.</html:li>
+               <html:li>2021, February 8: removed a few Restriction classes (rdfs:subClassOf/owl:Restriction) in the definition of classes; completed the textual definition and scope note of the Relation class.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -2238,15 +2239,15 @@
       <rdfs:label xml:lang="en">has identifier type</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-01-22</dc:date>
-            <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Object property added along with IdentifierType class and
+                isIdentifierTypeOf object property. </rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Object property added along with IdentifierType class and
-                isIdentifierTypeOf object property. </rdf:value>
+            <dc:date>2021-01-22</dc:date>
+            <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -3159,17 +3160,17 @@
       <rdfs:label xml:lang="en">has or had rule type</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Object property added along with RuleType class and
-                isRuleTypeOf object property. </rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
             <dc:date>2021-01-22</dc:date>
             <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text definition,
                 super property IRI (the name of this property in RiC-O 0.1 was
                 "hasRuleType").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Object property added along with RuleType class and
+                isRuleTypeOf object property. </rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -5843,17 +5844,17 @@
       <rdfs:label xml:lang="en">is or was rule type of</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Object property added along with RuleType class and hasRuleType
-                object property. </rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
             <dc:date>2021-01-22</dc:date>
             <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text definition,
                 super property URI (the name of this property in RiC-O 0.1 was
                 "isRuleTypeOf").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Object property added along with RuleType class and hasRuleType
+                object property. </rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -8930,16 +8931,16 @@
       <rdfs:label>quantity</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Added a scope note.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
             <dc:date>2020-10-28</dc:date>
             <rdf:value xml:lang="en">Datatype property created along with unitOfMeasurement, Extent
                 and UnitOfMeasurement classes, in order to provide methods for handling extent
                 accurately.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Added a scope note.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Use if you use the Extent class and its properties for
@@ -8963,16 +8964,16 @@
       <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Updated the scope note, as a RecordResourceExtent class has
-                been created.</rdf:value>
+            <dc:date>2020-11-01</dc:date>
+            <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
+                Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-01</dc:date>
-            <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
-                Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Updated the scope note, as a RecordResourceExtent class has
+                been created.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:example xml:lang="en">1,500 words</skos:example>
@@ -9422,18 +9423,6 @@
    <!-- https://www.ica.org/standards/RiC/ontology#Agent -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Agent">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadLanguage"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadLegalStatus"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">A Person, or Group, or an entity created by a Person or Group
             (Mechanism), or a Position, that acts in the world.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -9443,6 +9432,12 @@
             <dc:date>2020-10-23</dc:date>
             <rdf:value xml:lang="en">Comment: updated. Scope note: updated and made several
                 paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">removed the Restrictions</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">An Agent may have one or more identities; an identity is a
@@ -9705,16 +9700,16 @@
       <rdfs:label xml:lang="en">Carrier Extent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-28</dc:date>
-            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
-                carrier extent</rdf:value>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Changed a bit the definition and added change
+                notes.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Changed a bit the definition and added change
-                notes.</rdf:value>
+            <dc:date>2020-10-28</dc:date>
+            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
+                carrier extent</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Countable characteristics of a record resource carrier
@@ -9822,40 +9817,16 @@
             <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#PhysicalLocation"/>
          </owl:Restriction>
       </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#geodesicSystem"/>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#latitude"/>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#longitude"/>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#altimetricSystem"/>
-            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#altitude"/>
-            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Longitudinal and latitudinal information of a
             Place.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Coordinates</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date xml:lang="en">2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed the cardinality Restrictions when the range is a datatype property</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A11 (Coordinates
             attribute)</RiCCMCorrespondingComponent>
    </owl:Class>
@@ -10014,17 +9985,17 @@
    <!-- https://www.ica.org/standards/RiC/ontology#DemographicGroup -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DemographicGroup">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDemographicGroupOf"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Categorization of a person according to characteristics such as
             age, gender, education, place of origin, ethnic/cultural identification, religion,
             etc.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Demographic Group</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date xml:lang="en">2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-23</dc:date>
@@ -10959,12 +10930,6 @@
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
       <rdfs:subClassOf>
          <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDemographicGroup"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#DemographicGroup"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
             <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType"/>
             <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#OccupationType"/>
          </owl:Restriction>
@@ -10978,6 +10943,12 @@
             <dc:date>2020-10-23</dc:date>
             <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated. Disjoint
                 with: enriched. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
@@ -11271,17 +11242,17 @@
    <!-- https://www.ica.org/standards/RiC/ontology#Record -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Record">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Information inscribed at least once by any method on any
             physical carrier in any persistent, recoverable form by an Agent in the course of life
             or work Activity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Record</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-23</dc:date>
@@ -11301,16 +11272,16 @@
    <!-- https://www.ica.org/standards/RiC/ontology#RecordPart -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Part of a Record with discrete information content that
             contributes to the Record's physical or intellectual completeness.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Record Part</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-23</dc:date>
@@ -11332,12 +11303,6 @@
             <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
          </owl:Restriction>
       </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadTitle"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">A Record, Record Set, or Record Part produced or acquired and
             retained by an Agent in the course of Activity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -11347,6 +11312,12 @@
             <dc:date>2020-10-23</dc:date>
             <rdf:value xml:lang="en">Scope note: made separate paragraphs plus very few
                 changes.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Producing a record resource may imply either its newly
@@ -11600,39 +11571,22 @@
    <!-- https://www.ica.org/standards/RiC/ontology#Relation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Relation">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasSource"/>
-            <owl:allValuesFrom>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:allValuesFrom>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#certainty"/>
-            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationState"/>
-            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">The top level relation class. It connects at least two Things.
-            An instance of a Relation may have some data and object properties : a descriptive note
-            (data property) like any Thing ; certainty (for 'certain', 'quite probable',
-            'uncertain','unknown'); a date ; a state (relationState) ; a location ; a source of
-            information that can be used as an evidence for it.</rdfs:comment>
+            An instance of a Relation may have some datatype and object properties : a descriptive note
+            (datatype property) like any Thing ; certainty (for 'certain', 'quite probable',
+            'uncertain','unknown'); a date (use either the date datatype property or the Date class and isAssociatedWithDate object property ; a state (relationState) ; a location (use Place class and isAssociatedWithPlace object property) ; a source of
+            information that can be used as an evidence for it (use either source datatype property or hasSource object property).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Relation</rdfs:label>
-      <skos:scopeNote xml:lang="en">it is recommended to use the subclasses of the Relation
+      <skos:changeNote>
+         <rdf:Description>
+          
+                  <dc:date>2021-02-08</dc:date>
+                  
+            <rdf:value xml:lang="en">Removed the restrictions; completed the definition and scope note.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Use when direct, binary object properties are not enough, e.g. when you need to record a date, a location or any other descriptive element for a relation (till RDF-Star becomes a W3C recommendation and provides a lighter method for doing so); or when the relation invloves more than two entities (n-ary relation). It is recommended to use the subclasses of the Relation
             class.</skos:scopeNote>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#RepresentationType -->
