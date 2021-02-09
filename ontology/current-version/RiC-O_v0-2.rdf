@@ -94,8 +94,8 @@
                         implement and maintain RiC-O within its system.</html:p>
                     <html:p>Later on, RiC-O will be aligned with these existing models. This is of
                         course essential for interconnecting RDF datasets conforming to RiC-O with
-                        other datasets, or for using parts of RiC-O in other contexts than th
-                        archival or record management realm.</html:p>
+                        other datasets, or for using parts of RiC-O in other contexts than the
+                        archival or records management realm.</html:p>
                     <html:p>
                         <html:strong>RiC-O must be immediately usable.</html:strong>
                     </html:p>
@@ -143,7 +143,7 @@
                         or subclasses, must exist and be available for handling information, while
                         at the same time more accurate subcomponents must be there for handling more
                         accurate description. Also, RiC-O should provide several methods for
-                        expressing whether relations are well attested and certain or are more vague
+                        expressing whether relations are well attested and certain, or are more vague,
                         as well as direct and short paths between entities alongside more complex
                         ones.</html:p>
                     <html:p>
@@ -152,7 +152,7 @@
                     </html:p>
                     <html:p>This means that Linked Data tools and interfaces should enable end users
                         to go through RDF/RiC-O graphs, to query them using SPARQL in an efficient
-                        way and consulting archives and their contexts in new ways. As an example,
+                        way and to consult archival metadata and their contexts in new ways. As an example,
                         an end user should be able to ask « What are (according to your dataset) the
                         corporate bodies that succeeded to this given entity from its end of
                         existence, by 1840, to nowadays (as concerns this given activity) ?» or «
@@ -203,7 +203,7 @@
                                     href="#rico:Place">Place</html:a> thus comes along with a
                                     <html:a href="#rico:PhysicalLocation">Physical Location
                                     class</html:a>, and with a <html:a href="#rico:Coordinates"
-                                    >Coordinates class</html:a>. A Place is considered a both
+                                    >Coordinates class</html:a>. A Place is considered both a 
                                 geographical and historical entity. As a historical entity, among
                                 other features, it has a history, and may be preceded or succeeded
                                 by other Places. A Place also may have zero to many Physical
@@ -353,8 +353,8 @@
                             considering that they would address current and frequent needs:</html:p>
                         <html:ul>
                             <html:li>Two (<html:a href="#FindingAid">FindingAid</html:a> and <html:a
-                                    href="#AuthorityRecord">AuthorityRecord</html:a>) are both
-                                instances of the Documentary Form Type class, and of skos:Concept.
+                                    href="#AuthorityRecord">AuthorityRecord</html:a>) are 
+                                instances of both RiC-O Documentary Form Type and SKOS Concept.
                                 They can be used for categorizing Records, finding aids and
                                 authority records being considered as Records. A Record that would
                                 have ‘Finding Aid’ as a Documentary Form Type, can be connected to
@@ -468,14 +468,14 @@
                     released on December 2019, 12.</html:p>
                 <html:p>The Git repository that is used for handling RiC-O was made public in March
                     2020 (see <html:a href="https://github.com/ICA-EGAD/RiC-O"
-                        >https://github.com/ICA-EGAD/RiC-O</html:a>, so that creating issues or
+                        >https://github.com/ICA-EGAD/RiC-O</html:a>), so that creating issues or
                     comments, forking and making pull requests was made possible.</html:p>
                 <html:p>In 2020, RiC-CM v0.2 preview was significantly updated: the textual
                     definitions of many entities were changed, as well as the specifications of many
                     attributes; and a lot of relations changed name, in order to take into account
                     past situations and to adopt some simple naming rules. As a consequence, RiC-O
-                    had to be updated in order to remain compliant with RiC-CM. These changes coule
-                    not be made before by the end of 2020, when RiC-CM could be considered stable.
+                    had to be updated in order to remain compliant with RiC-CM. These changes could
+                    not be made before the end of 2020, when RiC-CM could be considered stable.
                     EGAD also decided to make other changes in RiC-O, among which the most important
                     are mentioned in bold in the following list.</html:p>
                 <html:p>RiC-O 0.2 results from these updates and changes. It has been released a few
@@ -549,8 +549,8 @@
                     <html:li>2021, February 8: removed a few Restriction classes
                         (rdfs:subClassOf/owl:Restriction) in the definition of classes; completed
                         the textual definition and scope note of the Relation class.</html:li>
-                    <html:li>2021, February 9: added a link to RiC-CM 0.2 diagram overview in the introduction.</html:li>
-                    
+                    <html:li>2021, February 9: added a link to RiC-CM 0.2 diagram overview in the introduction; fixed some typos.</html:li>
+                  
                 </html:ul>
             </html:div>
         </skos:historyNote>
