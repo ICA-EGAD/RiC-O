@@ -550,7 +550,8 @@
                         (rdfs:subClassOf/owl:Restriction) in the definition of classes; completed
                         the textual definition and scope note of the Relation class.</html:li>
                     <html:li>2021, February 9: added a link to RiC-CM 0.2 diagram overview in the introduction; fixed some typos.</html:li>
-                    <html:li>2021, February 11: added an @xml:lang='en' on a few labels.</html:li>
+                    <html:li>2021, February 11: added an @xml:lang='en' on a few labels; updated the definition (rdfs:comment) and scope note, as they were recently changed in RiC-CM 0.2 full draft.</html:li>
+                    
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -13373,11 +13374,15 @@
                     rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Conditions under which an Activity is performed by an Agent,
-            including the authority to perform the Activity, or specifications with respect to how
-            the Activity is performed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Conditions that govern the existence or authority of an Agent or the performance of an Activity, or that contribute to the distinct characteristics of things created or managed by an Agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Rule</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2021-02-11</dc:date>
+                <rdf:value xml:lang="en">Updated the definition (rdfs:comment) and scope note, as they were recently changed in RiC-CM 0.2 full draft.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
@@ -13385,20 +13390,12 @@
                     Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">A Rule may be unwritten or written or otherwise documented.
-            Unwritten rules may include though are not limited to the following: social mores,
-            customs, or community expectations. Written rules may include though are not limited to
-            the following: constitutions, legislation, acts (legal), statutes, legal codes,
-            ordinances, charters, mission statements, regulations, policies, procedures,
-            instructions, codes of conduct or ethics, professional standards, work assignments or
-            work plans. The source or sources of some Rules are external to the Agent (for example,
-            expressed in elections, social mores, customs, community expectations, laws,
-            regulations, standards and best practice codes), while others are expressed within the
-            Agent’s immediate context (for example, policies, or written or verbal instructions).
-            The evidence for identifying Rules may be found in their entirety in one documentary
-            source (for example, a law or regulation) or may be found in two or more sources. Rule
-            should not be confused with the one or more documentary sources that serve as evidence
-            of its identity. A documentary source is a Record.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Rule can be related directly to Agent, Activity, or anything created or managed by agents, such as a Record Resource or Instantiation.
+            A Rule may be unwritten or written or otherwise documented. Unwritten rules may include though are not limited to the following:  social mores, customs, or community expectations. Written rules may include though are not limited to the following: constitutions, legislation, acts (legal), statutes, legal codes, ordinances, charters, mission statements, regulations, policies, procedures, instructions, codes of conduct or ethics, professional standards, work assignments or work plans.
+            The source or sources of some Rules are external to the Agent (for example, expressed in elections, social mores, customs, community expectations, laws, regulations, standards and best practice codes), while others are expressed within the Agent’s immediate context (for example, policies, or written or verbal instructions).
+            The evidence for identifying Rules may be found in their entirety in one documentary source (for example, a law or regulation) or may be found in two or more sources.
+            Rule should not be confused with the one or more documentary sources that serve as evidence of its identity. A documentary source is a Record.
+           </skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E16 (Rule
             entity)</RiCCMCorrespondingComponent>
     </owl:Class>
