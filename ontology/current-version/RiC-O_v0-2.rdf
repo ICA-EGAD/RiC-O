@@ -550,7 +550,7 @@
                         (rdfs:subClassOf/owl:Restriction) in the definition of classes; completed
                         the textual definition and scope note of the Relation class.</html:li>
                     <html:li>2021, February 9: added a link to RiC-CM 0.2 diagram overview in the introduction; fixed some typos.</html:li>
-                  
+                    <html:li>2021, February 11: added an @xml:lang='en' on a few labels.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -2533,7 +2533,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:comment>Connects a Record Resource or Instantiation to an Extent</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>has extent</rdfs:label>
+        <rdfs:label xml:lang="en">has extent</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -2553,7 +2553,7 @@
         <rdfs:comment>Connects an Extent to an Extent Type that categorizes what is being
             measured.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>has extent type</rdfs:label>
+        <rdfs:label xml:lang="en">has extent type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-11-01</dc:date>
@@ -4412,7 +4412,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#UnitOfMeasurement"/>
         <rdfs:comment>Connects an Extent to a Unit Of Measurement</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>has unit of measurement</rdfs:label>
+        <rdfs:label xml:lang="en">has unit of measurement</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -5201,7 +5201,7 @@
         </rdfs:range>
         <rdfs:comment>Connects an Extent to a Record Resource or Instantiation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>is extent of</rdfs:label>
+        <rdfs:label xml:lang="en">is extent of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -5221,7 +5221,7 @@
         <rdfs:comment xml:lang="en">Connects an Extent Type to an Extent that it
             categorizes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>is extent type of</rdfs:label>
+        <rdfs:label xml:lang="en">is extent type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-11-01</dc:date>
@@ -7282,7 +7282,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:comment>Inverse of 'has unit of measurement' object property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>is unit of measurement of</rdfs:label>
+        <rdfs:label xml:lang="en">is unit of measurement of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -10290,7 +10290,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Machine-readable quantity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>quantity</rdfs:label>
+        <rdfs:label xml:lang="en">quantity</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -10595,7 +10595,7 @@
             spacial units (cm, m), weight (g, kg), time (s, h), storage (MB, TB) or more informal
             units used in the archival context like number of boxes, pages or words.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>unit of measurement</rdfs:label>
+        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
@@ -11714,7 +11714,7 @@
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:comment>Categorization of the extent that is being measured</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>Extent Type</rdfs:label>
+        <rdfs:label xml:lang="en">Extent Type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-11-01</dc:date>
@@ -13674,7 +13674,7 @@
             spacial units (cm, m), weigt (g, kg), time (s, h), storage (MB, TB) or more informal
             units used in the archival context like number of boxes, pages or words.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label>Unit Of Measurement</rdfs:label>
+        <rdfs:label xml:lang="en">Unit Of Measurement</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-10-28</dc:date>
