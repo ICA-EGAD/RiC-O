@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives.strath.ac.uk/">
+   <rico:Record rdf:about="record/P0428">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/simmons-jenny-fl-2004"/>
+      <rico:hasCreator rdf:resource="agent/GB-249"/>
+      <rico:hasOrHadManager rdf:resource="agent/GB-249"/>
+      <rico:ruleFollowed xml:lang="en">ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003)</rico:ruleFollowed>
+      <rico:ruleFollowed xml:lang="en">Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</rico:ruleFollowed>
+      <rico:hasOrHadLanguage rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="en">Correcting (by Florence Clavaud (ICA/EGAD member | Archives nationales de France)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:date>
+            <rico:descriptiveNote xml:lang="en">some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/P0428-i1">
+            <rico:isInstantiationOf rdf:resource="record/P0428"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>P0428</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/GB-249"/>
+            <rdfs:seeAlso rdf:resource="https://atom.lib.strath.ac.uk/simmons-jenny-fl-2004"/>
+            <rico:ruleFollowed xml:lang="en">Encoded Archival Context for Corporate Bodies, Persons, Families, 2nd Edition, 2003</rico:ruleFollowed>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/simmons-jenny-fl-2004">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/P0428"/>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/simmons-jenny-fl-2004-Simmons%2C%20Jenny%2C%20fl.%202000%2C%20oral%20historian">
+            <rdfs:label xml:lang="en">Simmons, Jenny, fl. 2000, oral historian</rdfs:label>
+            <rico:textualValue xml:lang="en">Simmons, Jenny, fl. 2000, oral historian</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/simmons-jenny-fl-2004"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="en">
+            <html:p>Jenny Simmons worked as a freelance oral history interviewer for two National Life Stories projects: Artist's Lives and Book Trade Lives.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/national-life-stories-oral-history-fieldwork-charity--simmons-jenny-fl-2004--2000-2008"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/oral-history-interviews-with-george-wyllie"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/national-life-stories-oral-history-fieldwork-charity"/>
+   </rico:Agent>
+</rdf:RDF>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050218">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/050218"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-15</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-19</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Virginie POTIN)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-15</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 décembre 2015 : revu le nom, ajouté lien
+               IR</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Virginie GREGOIRE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">Ajout IR</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Isabelle ARISTIDE-HASTIR)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-19</rico:date>
+            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 19/11/2019 : modification relation familiale en
+               relation d'asso vers NP 51234, modification forme autorisée du nom</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB/XIX, Paris, Archives nationales, 2004, p. 1053-1504 (notice 572 AP).</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050218">
+            <rico:isInstantiationOf rdf:resource="record/050218"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050218</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050218"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050218">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/050218"/>
+      <rdfs:label xml:lang="fr">Vitet (famille ; 1701-1900)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/050218-Vitet%20%28famille%20%3B%201701-1900%29">
+            <rdfs:label xml:lang="fr">Vitet (famille ; 1701-1900)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Vitet (famille ; 1701-1900)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/050218"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1701-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</rico:endDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Médecin réputé, conventionnel puis député et maire de Lyon à partir de 1792, Louis Vitet (1736-1809) a épousé Marguerite Faulin. Leur fils Pierre-Jean épouse Amélie Arnaudtizon ; ils ont deux enfants : Ludovic, et Amélie, qui devient Madame Eugène Aubry.</html:p>
+            <html:p>Ludovic Vitet (1802-1873), petit-fils de Louis Vitet, normalien et journaliste (il débute dans<html:i>Le Globe</html:i>), est le premier inspecteur des Monuments historiques. Nommé par Guizot en 1830, il laisse son poste à Mérimée en 1834 pour se consacrer à la politique, notamment comme député de Bolbec (Seine-Maritime), mais il continue de suivre de près avec Mérimée les monuments historiques. Outre de nombreux articles dans le<html:i>Journal des savants</html:i>, la<html:i>Revue des Deux-Mondes</html:i>, la<html:i>Revue contemporaine</html:i>, on lui doit un<html:i>Rapport au ministre de l’Intérieur sur les monuments, les bibliothèques, etc. de l’Oise, de l’Aisne</html:i>(1831), une<html:i>Histoire de Dieppe</html:i>(1838), une<html:i>Monographie de Notre-Dame de Noyon</html:i>(1845) et une<html:i>Histoire financière du gouvernement de Juillet</html:i>(1848).</html:p>
+            <html:p>Fils d’Amélie Vitet et d’Eugène Aubry et neveu de Ludovic Vitet, Eugène Aubry-Vitet (1845-1930), archiviste-paléographe, homme de confiance du comte de Paris et écrivain, eut des relations suivies avec tout le Gotha et les milieux économiques (sa femme étant née Darblay) et politiques français, de 1870 environ à sa mort. Une de ses filles, Jeanne (1874-1966), épouse le comte Carl Costa de Beauregard (1867-1915).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/050218-051234-18021018-18730605"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/003500-050218"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/003500-top"/>
+   </rico:Agent>
+</rdf:RDF>

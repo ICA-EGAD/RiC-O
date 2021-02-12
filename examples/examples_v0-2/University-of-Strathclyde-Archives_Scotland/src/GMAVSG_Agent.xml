@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" xmlns="urn:isbn:1-931666-33-4"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <control>
+    <recordId>C0445</recordId>
+    <!-- added a maintenanceStatus element -->
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyName>GB 249</agencyName>
+    </maintenanceAgency>
+    <!--<conventionDeclaration>
+  <abbreviation>conventionDeclaration</abbreviation> 
+  </conventionDeclaration>-->
+    <conventionDeclaration>
+      <abbreviation>conventionDeclaration</abbreviation> 
+      <citation>ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003); Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</citation> 
+    </conventionDeclaration>
+    <localTypeDeclaration>
+      <abbreviation>detailLevel</abbreviation>
+      <citation>http://ica-atom.org/doc/RS-2#5.4</citation>
+    </localTypeDeclaration>
+    <!-- added a maintenanceHistory element-->
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2020-02-28</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Florence Clavaud (ICA/EGAD member | Archives nationales de France)</agent>
+        <eventDescription>some manual additions and corrections (in order to get a valid EAC-CPF
+          file only)</eventDescription>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>corporateBody</entityType>
+      <nameEntry>
+        <part>Greater Manchester Asbestos Victims Support Group</part>
+        <authorizedForm>conventionDeclaration</authorizedForm>
+      </nameEntry>
+    </identity>
+    <description>
+      <!--<biogHist id="md5-7a2781ce0f461e0813de06ccf4ae0b1b">-->
+      <biogHist>
+        <p>The Greater Manchester Asbestos Victims Support Group is a registered charity which
+          provides support to people with asbestos-related diseases and their families. In Britain,
+          asbestos is typically associated with Britain's tradition of heavy industry, due to its
+          widespread use in power stations, shipbuilding, factories, and dockyards, but asbestos was
+          also used in the construction of a wide variety of building types, including shops and
+          schools.</p>
+      </biogHist>
+      <!-- https://atom.lib.strath.ac.uk/greater-manchester-asbestos-victims-support-group-->
+    </description>
+    <relations>
+      <cpfRelation cpfRelationType="associative"
+        xlink:href="https://atom.lib.strath.ac.uk/ingham-nigel" xlink:type="simple">
+        
+        <relationEntry>Ingham, Nigel, historian</relationEntry>
+        <dateRange>
+          <fromDate standardDate="2014">2014</fromDate>
+          <toDate standardDate="2015">2015</toDate>
+        </dateRange>
+        <descriptiveNote>
+          <p>Nigel Ingham was commissioned by the Greater Manchester Asbestos Victims Support Group
+            to conduct an oral history project.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <resourceRelation resourceRelationType="creatorOf"
+        xlink:href="https://atom.lib.strath.ac.uk/greater-manchester-asbestos-victims-support-group-oral-history-project"
+        xlink:type="simple">
+        <relationEntry>Greater Manchester Asbestos Victims Support Group oral history
+          project</relationEntry>
+      </resourceRelation>
+    </relations>
+  </cpfDescription>
+</eac-cpf>

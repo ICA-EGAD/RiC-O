@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/000016">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/000016"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Blandine WAGNER)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-25</rico:date>
+            <rico:descriptiveNote xml:lang="fr">Anciens identifiants : 31, 3100</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Emmanuelle GIRY)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-24</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 17 mars 2017 : supprimé ISNI, ajouté activités, revu nom. LEs liens IR n'ont pas été revus (cela plante...)</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Almanachs</rico:source>
+      <rico:source xml:lang="fr">Bottins administratifs</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n°FRBNF12207399</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/000016">
+            <rico:isInstantiationOf rdf:resource="record/000016"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_000016</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000016"/>
+            <rico:identifier>31</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/000016">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/000016"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale (1828-....)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%20%281828-....%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale (1828-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale (1828-....)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%2C%20de%20la%20Jeunesse%20et%20de%20la%20Vie%20associative-20101114-20120510">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-14</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-10</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale-20070518-20101113">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-05-18</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-13</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%2C%20de%20l%27Enseignement%20sup%C3%A9rieur%20et%20de%20la%20Recherche-20040331-20070515">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur et de la Recherche</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur et de la Recherche</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-03-31</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-05-15</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20la%20Jeunesse%2C%20de%20l%27%C3%89ducation%20nationale%20et%20de%20la%20Recherche-20020507-20040330">
+            <rdfs:label xml:lang="fr">Ministère de la Jeunesse, de l'Éducation nationale et de la Recherche</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de la Jeunesse, de l'Éducation nationale et de la Recherche</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-07</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-03-30</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale-20000327-20020506">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-27</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-06</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%2C%20de%20la%20Recherche%20et%20de%20la%20Technologie-19970604-20000327">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale, de la Recherche et de la Technologie</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale, de la Recherche et de la Technologie</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-04</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-27</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%2C%20de%20l%27Enseignement%20sup%C3%A9rieur%20et%20de%20la%20Recherche-19951107-19970602">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur et de la Recherche</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur et de la Recherche</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-11-07</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-02</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale%2C%20de%20l%27Enseignement%20sup%C3%A9rieur%2C%20de%20la%20Recherche%20et%20de%20l%27Insertion%20professionnelle-19950518-19951107">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur, de la Recherche et de l'Insertion professionnelle</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale, de l'Enseignement supérieur, de la Recherche et de l'Insertion professionnelle</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-11-07</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000016-Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale-19930330-19950511">
+            <rdfs:label xml:lang="fr">Ministère de l'Éducation nationale</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère de l'Éducation nationale</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000016"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-30</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-11</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1828-02-10</rico:beginningDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000016-d5bhvihav4-158rf7kzztoxz">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000016"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000016-d5bhvihav4-158rf7kzztoxz"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihav4-158rf7kzztoxz"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000016-d-5y3g3ef6o-1651r6rgctc85-18280210-19591231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000016"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000016-d-5y3g3ef6o-1651r6rgctc85-18280210-19591231"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d-5y3g3ef6o-1651r6rgctc85"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1828-02-10</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000016-d5bhvil9kb-z13sh6nxqq1z-18280210-19661231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000016"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000016-d5bhvil9kb-z13sh6nxqq1z-18280210-19661231"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvil9kb-z13sh6nxqq1z"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1828-02-10</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000016-d5bhvimp30-1crwo1pfymd1z-18280210-19661231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000016"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000016-d5bhvimp30-1crwo1pfymd1z-18280210-19661231"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimp30-1crwo1pfymd1z"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1828-02-10</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-12-31</rico:endDate>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Ordonnance du 4 janvier 1828 créant un ministère de l'Instruction publique</html:p>
+      </rico:authorizingMandate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>L'administration de l'instruction publique depuis la Révolution française est rattachée aux services du ministère de l'Intérieur créé en 1790. Ce n'est qu'avec la création d'un ministère des Affaires ecclésiastiques et de l'Instruction publique confié à l'évêque Denis Frayssinous en 1824 que l'instruction publique quitte le giron du ministère de l'Intérieur.</html:p>
+            <html:p>C'est l'ordonnance du 4 janvier 1828 qui crée un ministère de l'Instruction publique véritablement autonome. Devenu définitivement ministère de l'Éducation nationale à partir de 1932, ce ministère a un périmètre oscillant au cours du XIXe et du premier XXe siècle.</html:p>
+            <html:p>En effet, les compétences de ce ministère s'étendent sur tous les ordres (puis degrés) d'enseignement, sur le soutien à la recherche et aux Beaux-Arts, sur la gestion des grands établissements scientifiques et littéraires, parfois sur les cultes, et quand ces problématiques émergent sur l'éducation sportive et l'éducation populaire. Ces différents secteurs s'autonomiseront progressivement pour quitter le département ministériel de l'Instruction publique : l'administration des cultes est définitivement rattachée au ministère de l'Intérieur à partir de 1908, la création d'un ministère de la Culture en 1959 autonomise définitivement l'administration liée aux Beaux-Arts et au Patrimoine. De même, l'émergence d'un sous-secrétariat d'État à l'organisation des loisirs et des Sports en 1936 puis l'érection d'un ministère de la Jeunesse et des Sports en 1966 écarte la Jeunesse et les Sports du ministère de l'Éducation nationale. De la même manière, même si les rattachements administratifs successifs ne l'en éloignent pas définitivement, les administrations en charge des questions d'enseignement supérieur et de recherche ont largement pris leur indépendance par rapport au ministère de l'Éducation nationale, recentré dans la seconde moitié du XXe siècle sur les questions scolaires.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051163-19400101-19441231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051164-18700101-19581231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051158-18700101-19401231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/000016-003944-19740608-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000016-005205-19441120-19590202"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000016-005073-18970101-19590202"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-009963-18280210-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000016-009943-19510101-19741231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-005075-19461111-19730621"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-005074-18280210-19751231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000016-005086-19890101-20011231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051182-19450818-19590108"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003944-000016-19810522-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb122073996#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/016801-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/016801-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056401-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056401-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056376-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056376-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056395-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056395-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056402-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056402-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056407-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056407-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056409-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056409-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056410-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056410-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056424-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056424-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056439-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056439-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056458-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056458-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056406-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056406-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056443-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056443-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056445-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056445-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056457-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056457-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056473-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056473-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056475-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056475-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056483-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056483-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056487-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056487-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056490-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056490-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/017743-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/017743-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/005091-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/005091-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058054-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/058054-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058052-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/058052-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/005089-000016"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/005089-top"/>
+   </rico:Agent>
+</rdf:RDF>

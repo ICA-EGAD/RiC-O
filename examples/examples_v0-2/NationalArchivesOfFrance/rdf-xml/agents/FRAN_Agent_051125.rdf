@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051125">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051125"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette,<html:i>Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940</html:i>, Comité d'histoire du ministère de la Culture, 2008</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette, "Le budget des Monuments historiques 1830-1920 : les moyens d'une politique de protection". In :<html:i>Livraisons d'histoire de l'architecture</html:i>. n°3, 1er semestre 2002. pp. 75-102. Disponible à cette adresse : http://www.persee.fr/web/revues/home/prescript/article/lha_1627-4970_2002_num_3_1_900</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bady Jean-Pierre, Cornu Marie, Fromageau Jérôme…,<html:i>1913, genèse d'une loi sur les monuments historiques</html:i>, Paris, la Documentation française, 2013</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach national : annuaire officiel de la République française</html:i>, Paris, Berger-Levrault, 1870-1907</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Voir l'ensemble de cotes conservées aux Archives nationales : F/21/7669 à 7971 : dossiers individuels du personnel des services des monuments historiques, bâtiments civils et palais nationaux (architectes, inspecteurs, simples employés, etc.)</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051125">
+            <rico:isInstantiationOf rdf:resource="record/051125"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051125</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051125"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051125">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051125"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Instruction publique. Direction des Beaux-Arts. Bureau des Monuments historiques (1870-1907)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051125-France.%20Minist%C3%A8re%20de%20l%27Instruction%20publique.%20Direction%20des%20Beaux-Arts.%20Bureau%20des%20Monuments%20historiques%20%281870-1907%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Instruction publique. Direction des Beaux-Arts. Bureau des Monuments historiques (1870-1907)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Instruction publique. Direction des Beaux-Arts. Bureau des Monuments historiques (1870-1907)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051125"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1907-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051125-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051125"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051125-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Les chefs de bureau se succèdent : M. Gasnier, puis M. Viollet-le-Duc fils de 1873 à 1895 (M. Baumgart est le sous-chef du bureau, puis Lucien Paté à partir de 1886). Lucien Paté devient à son tour chef de bureau de 1895 à 1903 et Julien Berr de Turique est sous-chef à partir de 1895. Ce dernier succède à Lucien Paté en 1903 et le nouveau sous-chef du bureau est Parfu.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Après avoir été rattachée à différents ministères depuis sa création en 1800, la direction des Beaux-Arts (comprenant les Monuments historiques à partir de 1839) se stabilise sous la tutelle du ministère de l’Instruction publique dès le 5 septembre 1870.</html:p>
+            <html:p>Toutefois, les Monuments historiques, ainsi que les Beaux-Arts, seront transférés de façon temporaire au ministère des Arts. Ce dernier, créé en le 14 novembre 1881 par Léon Gambetta et confié à Antonin Proust, est supprimé le 26 janvier 1882. Le service des Monuments historiques est alors rattaché à une direction de la Conversation. À partir du 30 janvier 1882, les compétences Beaux-Arts retournent au ministère de l’Instruction publique.</html:p>
+            <html:p/>
+            <html:p>Le service des Monuments historiques prend de l’importance dans les années 1870 à 1890 : la sous-commission des monuments mégalithiques est instituée par Jules Ferry en 1879 et elle est composée de 9 archéologues. Des corps spécialisés apparaissent également : en 1892 avec les architectes en chef des monuments historiques, puis en 1897 avec les architectes ordinaires.</html:p>
+            <html:p/>
+            <html:p>La loi du 30 mars 1887 vient pallier en partie un vide juridique. Elle porte sur la conservation des monuments et des objets d'art qui représentent un intérêt national (d’art ou d’histoire uniquement). La loi officialise le classement qui avait été alors jusque-là pratiqué de façon indicative par la commission des Monuments historiques.</html:p>
+            <html:p/>
+            <html:p>Suite à la loi du 9 décembre 1905 relative à la séparation des Églises et de l’État , le service des monuments historiques se trouve élargi en fusionnant le service des édifices cultuels en 1907. Le service des monuments historiques récupère alors la gestion des édifices cultuels construits avant 1905.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051125-051164-18700101-19071231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051125-051126-19070101-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051124-051125-18700101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051158-051125-18700101-19071231"/>
+   </rico:Agent>
+</rdf:RDF>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051151">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051151"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:creationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu les liens</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051151">
+            <rico:isInstantiationOf rdf:resource="record/051151"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051151</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051151"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051151">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051151"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments Historiques et des Espaces protégés (1959-2009)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20de%20l%27Architecture%20et%20du%20Patrimoine.%20Sous-direction%20des%20Monuments%20Historiques%20et%20des%20Espaces%20prot%C3%A9g%C3%A9s%20%281959-2009%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments Historiques et des Espaces protégés (1959-2009)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments Historiques et des Espaces protégés (1959-2009)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20du%20Patrimoine.%20Sous-direction%20des%20Monuments%20historiques%20et%20des%20Palais%20nationaux%20%281978-1990%29-19780101-19901231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du Patrimoine. Sous-direction des Monuments historiques et des Palais nationaux (1978-1990)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du Patrimoine. Sous-direction des Monuments historiques et des Palais nationaux (1978-1990)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20de%20l%27Architecture%20et%20du%20Patrimoine.%20Sous-direction%20des%20Monuments%20historiques%20%281990-2004%29-19900101-20041231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments historiques (1990-2004)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments historiques (1990-2004)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20de%20l%27Architecture%20et%20du%20Patrimoine.%20Sous-direction%20des%20Monuments%20historiques%20et%20des%20Espaces%20prot%C3%A9g%C3%A9s%20%282004-2009%29-20040101-20091231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments historiques et des Espaces protégés (2004-2009)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Sous-direction des Monuments historiques et des Espaces protégés (2004-2009)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20des%20affaires%20culturelles.%20Direction%20de%20l%27Architecture.%20Sous-direction%20des%20Monuments%20historiques%20et%20des%20Sites%20%281959-1977%29-19590108-19771231">
+            <rdfs:label xml:lang="fr">France. Ministère des affaires culturelles. Direction de l'Architecture. Sous-direction des Monuments historiques et des Sites (1959-1977)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère des affaires culturelles. Direction de l'Architecture. Sous-direction des Monuments historiques et des Sites (1959-1977)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051151-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20de%20l%27Architecture%20et%20du%20Patrimoine.%20Service%20de%20la%20connaissance%2C%20de%20la%20conservation%20et%20de%20la%20cr%C3%A9ation.%20Sous-direction%20des%20Monuments%20historiques%20%281998-2001%29-19980101-20011231">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Service de la connaissance, de la conservation et de la création. Sous-direction des Monuments historiques (1998-2001)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'Architecture et du Patrimoine. Service de la connaissance, de la conservation et de la création. Sous-direction des Monuments historiques (1998-2001)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051151"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051151-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051151"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051151-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La composition interne du service varie beaucoup de 1959 à 2009.</html:p>
+            <html:p>De 1959 à 1963, le service en charge des monuments historiques est composé de quatre bureaux :</html:p>
+            <html:p>- Monuments historiques</html:p>
+            <html:p>- Travaux et classements (supprimé à partir de 1961)</html:p>
+            <html:p>- Documentation générale, Fouilles et Antiquités</html:p>
+            <html:p>- Sites</html:p>
+            <html:p/>
+            <html:p>De 1964 à 1967, un bureau « secteurs sauvegardés » voit le jour.</html:p>
+            <html:p>À partir de 1968, le service des monuments historiques est réorganisé : les sites et secteurs sauvegardés quittent le service pour n’y revenir qu’en 2004. Les fouilles quittent définitivement les monuments historiques, suite à la mise en place d’un service de la recherche archéologique et des antiquités : le bureau de la Documentation générale, des Fouilles et Antiquités devient alors le bureau de la Documentation et des objets d’art.</html:p>
+            <html:p>C’est également en 1968 que les palais nationaux (auparavant à la sous-direction des bâtiments civils) sont rattachés au service des monuments historiques qui est alors composé de trois bureaux :</html:p>
+            <html:p>- La protection des monuments historiques</html:p>
+            <html:p>- La conservation et la restauration des monuments historiques et palais nationaux</html:p>
+            <html:p>- Les œuvres d’art classées et la documentation</html:p>
+            <html:p/>
+            <html:p>À partir de 1971 (le sous-directeur du service des monuments historiques est alors Pierre Dussaule), le bureau de la conservation et de la restauration des monuments historiques et palais nationaux se scinde et deux nouveaux bureaux apparaissent : celui de la conservation des monuments historiques appartenant à l’État et celui de la conservation des monuments historiques n’appartenant pas à l’État.</html:p>
+            <html:p>Suite au changement de tutelle en 1978 (la sous-direction des Monuments historiques passe de la direction de l’Architecture à la direction du Patrimoine), le service est composé de quatre bureaux :</html:p>
+            <html:p>- Protection des monuments historiques et des affaires domaniales (qui devient le bureau des Affaires générales et de la Protection à partir de 1983)</html:p>
+            <html:p>- Conservation</html:p>
+            <html:p>- Patrimoine mobilier</html:p>
+            <html:p>- Documentation et Affaires générales (qui devient le bureau des Affaires générales et de la Protection en 1983)</html:p>
+            <html:p/>
+            <html:p>À partir de 1989, les palais nationaux quittent le service des monuments historiques.</html:p>
+            <html:p>La nouvelle organisation est la suivante :</html:p>
+            <html:p>- bureau des affaires générales</html:p>
+            <html:p>- bureau de la protection des monuments historiques</html:p>
+            <html:p>- bureau de la conservation des monuments historiques appartenant à l’État</html:p>
+            <html:p>- bureau de la conservation des monuments historiques n'appartenant pas à l’État</html:p>
+            <html:p>- bureau du patrimoine mobilier</html:p>
+            <html:p>- bureau des Orgues historiques et des Instruments de musique anciens (il fusionne à partir de 1992 avec le bureau du Patrimoine mobilier).</html:p>
+            <html:p/>
+            <html:p>De 1996 à 1997, le service est composé de trois bureaux :</html:p>
+            <html:p>- Affaires générales</html:p>
+            <html:p>- Patrimoine mobilier et instrumental et Protection</html:p>
+            <html:p>- Monuments et jardins</html:p>
+            <html:p/>
+            <html:p>De 1998 à 2000, la sous-direction des monuments historiques est placée au sein du « service de la connaissance, de la conservation et de la création », lui-même rattaché à la direction du Patrimoine. Il comprend trois bureaux :</html:p>
+            <html:p>- Protection des monuments historiques</html:p>
+            <html:p>- Patrimoine immobilier</html:p>
+            <html:p>- Patrimoine mobilier et instrumental</html:p>
+            <html:p>S'ajoute à partir de 2004 un bureau de la protection des espaces.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le 24 juillet 1959, le ministère des Affaires culturelles est créé par décret et est confié à André Malraux. Il prend au ministère de l'Éducation nationale la direction générale des arts et des lettres, la direction de l'architecture (comprenant notamment le service des monuments historiques) et la direction des Archives de France.</html:p>
+            <html:p>Le 4 août 1962, le service des Monuments historiques se dote d'une loi portant sur la création de secteurs sauvegardés dite Loi « Malraux ».</html:p>
+            <html:p>Par décret n°64-94 du 29 janvier 1964, le bureau des fouilles et antiquités (placé à la sous-direction des monuments historiques et sites) est séparé de la direction de l’architecture et rattaché directement au ministre. Un décret du 23 avril 1964 institue par ailleurs un conseil supérieur de la recherche archéologique. Les circonscriptions des antiquités historiques et des antiquités préhistoriques (services extérieurs) relèvent du bureau (puis du service) des fouilles et antiquités.</html:p>
+            <html:p>Le 30 juin 1965, la caisse nationale des monuments historiques et des sites devient un établissement public à caractère administratif.</html:p>
+            <html:p>Le décret du 2 février 1971 transfère la protection des monuments et des sites à caractère naturel au ministère chargé de l'environnement.</html:p>
+            <html:p>La création du ministère de l'Environnement et du Cadre de vie en 1978 entraîne un partage de missions entre le ministère de la Culture et le ministère nouvellement créé : ce dernier récupère en partie la direction de l'architecture avec les compétences relatives aux sites et abords des monuments historiques.</html:p>
+            <html:p>Le service des monuments historiques est alors placé au sein de la direction du patrimoine qui voit le jour en octobre de la même année au ministère de la Culture.</html:p>
+            <html:p>En juin 1981, la direction du patrimoine récupère la compétence dans la protection des abords des monuments historiques et la direction de l'architecture ne réintègre le ministère de la Culture qu'en 1996.</html:p>
+            <html:p> Le décret n°98-840 du 21 septembre 1998 entraîne la fusion de la direction du patrimoine avec la direction de l'architecture formant ainsi la direction de l'architecture et du patrimoine (DAPA). Elle est composée de deux missions du patrimoine (ethnologique et photographique) et de quatre sous-directions :</html:p>
+            <html:p>- études, documentation et inventaire ;</html:p>
+            <html:p>- qualité des espaces et de l'architecture ;</html:p>
+            <html:p>- monuments historiques ;</html:p>
+            <html:p>- archéologie</html:p>
+            <html:p>Le 13 janvier 2010, la direction de l'architecture et du patrimoine intègre la Direction générale des patrimoines créée par décret. Elle regroupe plusieurs services dont le service du Patrimoine auquel est rattachée la sous-direction des monuments historiques.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000051-051151-19590108-19780412"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005170-051151-19780413-19980920"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005662-051151-19980921-20011128"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051151-051153-20090101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005406-051151-20011129-20091231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051151-051164-19590108-20091231"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051150-051151-19590108-*"/>
+   </rico:Agent>
+</rdf:RDF>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005674">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005674"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Journal Officiel de la République française</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005674">
+            <rico:isInstantiationOf rdf:resource="record/005674"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005674</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005674"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005674">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005674"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Département de l'action régionale et des bibliothèques territoriales (1993-1995)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005674-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20D%C3%A9partement%20de%20l%27action%20r%C3%A9gionale%20et%20des%20biblioth%C3%A8ques%20territoriales%20%281993-1995%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Département de l'action régionale et des bibliothèques territoriales (1993-1995)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Département de l'action régionale et des bibliothèques territoriales (1993-1995)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005674"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-22</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-11</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005674-d3nyuh17x9-p3lv1gh3hjbu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005674"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005674-d3nyuh17x9-p3lv1gh3hjbu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh17x9-p3lv1gh3hjbu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005674-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005674"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005674-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005674-d5bhvihqll-iv6mus5ox250">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005674"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005674-d5bhvihqll-iv6mus5ox250"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihqll-iv6mus5ox250"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le département de l'action régionale et des bibliothèques territoriales est composé de trois bureaux :</html:p>
+            <html:ul>
+               <html:li>le bureau des bibliothèques territoriales ;</html:li>
+               <html:li>le bureau des publics et du développement de la lecture ;</html:li>
+               <html:li>le bureau du patrimoine.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le département de l'action régionale et des bibliothèques territoriales est créé au sein de la direction du Livre et de la Lecture (DLL) par arrêté du 19 mars 1993 (publié au Journal Officiel le 21 mars). Il reprend une partie des missions du département des bibliothèques (bureau des établissements territoriaux, bureau du développement des collections et du patrimoine) ainsi que celles de la Mission au développement de la lecture et à l'action régionale.</html:p>
+            <html:p>Il disparaît avec deux arrêtés du 9 mai 1995 qui réorganisent entièrement la DLL (publiés au Journal Officiel le 11 mai).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions du département de l'action régionale et des bibliothèques territoriales sont fixées par l'article 4 de l'arrêté du 19 mars 1993 :</html:p>
+            <html:ul>
+               <html:li>Il est chargé du développement de la lecture publique sur l’ensemble du territoire national, en relation avec les collectivités locales.</html:li>
+               <html:li>Il suit les opérations d’équipement des établissements de lecture publique, collecte les données nécessaires à l’exercice du contrôle technique et à l’évaluation des politiques publiques dans ce domaine.</html:li>
+               <html:li>Il veille à la conservation et à la mise en valeur des fonds patrimoniaux des bibliothèques territoriales, notamment par l’exercice du droit de préemption.</html:li>
+               <html:li>Il est chargé des actions de développement de la lecture en direction des diverses catégories de publics.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005674-005085-19950512-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005094-005674-19930322-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005674-005096-19930322-19950511"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005674-005097-19950512-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005674-005078-19930322-19950511"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005674-005077-19930322-19950511"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005084-005674-19930322-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005099-005674-19930322-19950511"/>
+   </rico:Agent>
+</rdf:RDF>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005075">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005075"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-10</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-05</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-10</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 avril 2017 : revu liens IR, ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Site officiel du CNL (http://www.centrenationaldulivre.fr/)</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Centre_national_du_livre)</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF11885182</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121757502"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Centre_national_du_livre"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005075">
+            <rico:isInstantiationOf rdf:resource="record/005075"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005075</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005075"/>
+            <rico:identifier>5103/79CNL</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005075">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005075"/>
+      <isni:identifierValid>0000000121757502</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Centre national du livre (France)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005075-Centre%20national%20du%20livre%20%28France%29">
+            <rdfs:label xml:lang="fr">Centre national du livre (France)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Centre national du livre (France)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005075"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005075-CNL">
+            <rdfs:label xml:lang="fr">CNL</rdfs:label>
+            <rico:textualValue xml:lang="fr">CNL</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005075"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005075-Caisse%20nationale%20des%20lettres-19461011-19730621">
+            <rdfs:label xml:lang="fr">Caisse nationale des lettres</rdfs:label>
+            <rico:textualValue xml:lang="fr">Caisse nationale des lettres</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005075"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-10-11</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-06-21</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005075-Centre%20national%20des%20lettres-19730622-19930321">
+            <rdfs:label xml:lang="fr">Centre national des lettres</rdfs:label>
+            <rico:textualValue xml:lang="fr">Centre national des lettres</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005075"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-06-22</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-21</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005075-Centre%20national%20du%20livre-19930322-*">
+            <rdfs:label xml:lang="fr">Centre national du livre</rdfs:label>
+            <rico:textualValue xml:lang="fr">Centre national du livre</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005075"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-22</rico:usedFromDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-10-11</rico:beginningDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005075-d3nyug92d2--81fv3kv7ow8s">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005075"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005075-d3nyug92d2--81fv3kv7ow8s"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug92d2--81fv3kv7ow8s"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005075-d3nyuhqsd2--1a8m2jo9iv12q">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005075"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005075-d3nyuhqsd2--1a8m2jo9iv12q"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhqsd2--1a8m2jo9iv12q"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le CNL est un lieu de rencontres et d'actions interprofessionnelles. Cette caractéristique détermine une organisation administrative particulière : éditeurs, auteurs et traducteurs, bibliothécaires et libraires sont étroitement associés aux actions qu’il met en œuvre ; présents au conseil d’administration, présidé par le directeur du livre et de la lecture, ils interviennent dans la définition des grandes options de la politique du Centre.</html:p>
+            <html:p/>
+            <html:p>La particularité du CNL tient aux commissions de spécialistes. Elles sont au nombre de quinze depuis 2002 et couvrent différents domaines : littératures étrangères, roman, poésie, théâtre, littérature classique, vie littéraire, sciences sociales, arts, philosophie, littérature scientifique et technique, littérature pour la jeunesse, bande dessinée, traduction, revues, bibliothèque. Elles étudient les demandes et émettent un avis sur l’attribution d’aides aux auteurs, éditeurs, bibliothèques et associations de promotion de la vie littéraire.</html:p>
+            <html:p>Réparties par discipline, les commissions sont composées de plus de 200 spécialistes indépendants nommés pour trois ans par le président du Centre national du livre. Écrivains, universitaires, journalistes, chercheurs, artistes, traducteurs, critiques, éditeurs, libraires, conservateurs, animateurs de la vie littéraire se réunissent généralement trois fois par an pour étudier les demandes de subventions, ou de bourses et donner au président du CNL un avis sur l’attribution des aides. L’activité des commissions s’appuie également sur un vaste réseau de collaborateurs extérieurs (lecteurs et rapporteurs) qui compose le troisième cercle d’experts et contribue à la qualité des travaux du CNL.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>La Caisse nationale des lettres est créée par la loi de finances pour 1930. Elle est destinée à attribuer des secours aux écrivains et à leurs familles. Cinq ans plus tard, elle est supprimée par la Commission des économies.</html:p>
+            <html:p>La loi n° 46-2196 du 11 octobre 1946 recrée, avec la même appellation, un établissement public national doté de la personnalité civile et de l’autonomie financière : cette caisse a pour but de soutenir et d’encourager l’activité littéraire des écrivains français (bourses, prêts) ; de favoriser par des subventions, avances de fonds ou tout autre moyen, l’édition ou la réédition par les entreprises françaises d’œuvres littéraires dont il importe d’assurer la publication ; d'allouer des pensions et secours à des écrivains vivants, aux conjoints ou aux enfants d'écrivains décédés et de contribuer au financement d'oeuvres ou d'organismes de solidarité professionnelle ; d'assurer le respect des oeuvres littéraires, quel que soit leur pays d'origine, après la mort de l'auteur et même après leur chute dans le domaine public. L’établissement public est alors placé sous la tutelle du ministre de l’Éducation nationale (service extérieur du service des lettres, au sein de la direction générale des Arts et des Lettres).</html:p>
+            <html:p>Par le décret n° 73-539 du 14 juin 1973 (publié au Journal Officiel le 22 juin), la Caisse prend le nom de Centre national des lettres, et l’établissement est placé sous la tutelle du ministre chargé des Affaires culturelles. Ses activités s'élargissent à l'aide aux auteurs et à la littérature francophone non française. Il reste rattaché au service des lettres.</html:p>
+            <html:p>Suite à la création de la direction du livre et de la lecture par le décret du 23 décembre 1975, le CNL connaît une nouvelle réforme avec le décret n° 76-113 du 30 janvier 1976. Un conseil d'administration y est institué, présidé par le directeur du livre et de la lecture. Les missions sont à nouveau élargies, avec l'aide aux bibliothèques pour leur permettre d'acheter des livres qui risqueraient de se vendre mal, mais aussi l'aide à la traduction (d'auteurs non francophones en français et d'auteurs français dans différentes langues) et le « rayonnement du livre français ».</html:p>
+            <html:p>Par le décret n° 93-397 du 19 mars 1993, le Centre prend le nom de Centre national du livre (CNL) et conserve son statut d’établissement public national à caractère administratif et les missions qui lui incombent. Ce décret est complété par le décret n° 96-421 du 13 mai 1996.</html:p>
+            <html:p>Lors de la réorganisation du ministère de la Culture et de la Communication par le décret du 11 novembre 2009, il est rattaché au service du livre et de la lecture, au sein de la direction générale des médias et des industries culturelles (DGMIC).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions du CNL sont définies par le décret n°93-397 du 19 mars 1993 modifié :</html:p>
+            <html:ul>
+               <html:li>Soutenir et encourager l’activité littéraire des écrivains, des illustrateurs et des traducteurs, par l’attribution de bourses de création et de résidence.</html:li>
+               <html:li>Soutenir l’édition d’oeuvres littéraires jugées primordiales par le biais de subventions à destination des éditeurs français.</html:li>
+               <html:li>Encourager tous les modes d’expression littéraire et concourir à la diffusion, sous toutes ses formes, d’oeuvres littéraires en langue française.</html:li>
+               <html:li>Contribuer, par l’aide aux entreprises d’édition et de librairie, au développement économique du secteur du livre ainsi qu’au maintien et à la qualité des réseaux de diffusion du livre et de la lecture.</html:li>
+               <html:li>Participer à la défense et à l’illustration de la langue et de la culture françaises.</html:li>
+               <html:li>Favoriser la traduction d’oeuvres étrangères en français et d’oeuvres françaises en langues étrangères.</html:li>
+               <html:li>Accompagner les manifestations construites autour d’un projet littéraire permettant la rencontre et la rémunération des auteurs en s’adressant au plus large public.</html:li>
+               <html:li>Intensifier les échanges littéraires en France et à l’étranger, et concourir à toutes les actions de promotion du livre et de la lecture susceptibles de contribuer à la diffusion et au rayonnement du livre français.</html:li>
+               <html:li>Soutenir les bibliothèques, les établissements culturels et les librairies, en France et à l’étranger, qui commandent des ouvrages de langue française présentant un intérêt culturel, scientifique, technique ou touchant à la francophonie.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>
+               <html:u>Fonctionnement :</html:u>
+            </html:p>
+            <html:p>Actuellement les recettes du CNL sont alimentées par deux taxes fiscales : une redevance de 3 % sur la vente du matériel de reprographie et une redevance de 0,20 % sur le chiffre d’affaires de l’édition.</html:p>
+            <html:p>Le budget d’intervention du CNL est consacré à l’ensemble de la chaîne du livre : auteurs, éditeurs de livres et de revues, libraires, bibliothèques, associations littéraires. Son mode d’intervention principal est la subvention, mais le CNL accorde aussi aux éditeurs et aux libraires des avances remboursables sans intérêt.</html:p>
+            <html:p>Le CNL attribue des prêts, avances ou subventions. Il peut assurer des prestations de service à titre onéreux, acquérir et exploiter tout droit de propriété littéraire ou artistique et valoriser de la façon la plus appropriée les apports intellectuels liés à ces activités.</html:p>
+            <html:p>Outre ses fonctions traditionnelles, le conseil d’administration du CNL détermine les conditions de remboursement des différentes aides accordées (subventions, prêts et avances). Il fixe le nombre, les compétences et les modalités de fonctionnement des commissions spécialisées chargées de donner un avis sur l’attribution de ces aides.</html:p>
+            <html:p/>
+            <html:p>Le directeur du livre et de la lecture du ministère de la Culture préside de droit le conseil d’administration et dirige le CNL. Un secrétaire général nommé par arrêté du ministre de la Culture après avis du président de l’établissement est chargé de la gestion et de l’administration.</html:p>
+            <html:p>Directeurs successifs :</html:p>
+            <html:ul>
+               <html:li>1975 - 1980 : Jean-Claude Groshens</html:li>
+               <html:li>1980 - 1981 : Pierre Vandevoorde</html:li>
+               <html:li>1981 - 1989 : Jean Gattégno</html:li>
+               <html:li>1989 - 1993 : Évelyne Pisier</html:li>
+               <html:li>1993 - 2003 : Jean-Sébastien Dupuit</html:li>
+               <html:li>2003 - 2005 : Éric Gross</html:li>
+               <html:li>2005 - 2009 : Benoît Yvert</html:li>
+               <html:li>2010 - 2013 : Jean-François Colosimo</html:li>
+               <html:li>depuis 2013 : Vincent Monadé</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-005075-19461111-19730621"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005075-19730622-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-009808-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-009802-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-009807-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005673-19930322-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005675-19930322-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005076-19760101-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005205-19461011-19691231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005099-19760101-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005628-20100113-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb118851820#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Centre_national_du_livre"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009663-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/009663-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/014471-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/014471-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008558-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008558-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056080-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056080-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056081-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056081-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057087-005075"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057087-top"/>
+   </rico:Agent>
+</rdf:RDF>

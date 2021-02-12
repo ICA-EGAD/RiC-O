@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051159">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051159"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-01</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-01</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 1er décembre 2015 : revu dates, ISNI, statut, ajouté n° notice BnF. Historique de la notice rédigée par Martine PLOUVIER (Brigitte LABAT-POUSSIN, M. PRINET, R. ANCHEL, Ch. LOPEZ) / @protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 mars 2017 : ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Granger Catherine, L’Empereur et les Arts. La liste civile de Napoléon III, Paris, École nationale des chartes, 2005, 874 p.</rico:source>
+      <rico:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : O/5 ministère de la maison de l'empereur (Second Empire). Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/O5-maison-empereur.pdf</rico:source>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF13324748</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000107260727"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051159">
+            <rico:isInstantiationOf rdf:resource="record/051159"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051159</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051159"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051159">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051159"/>
+      <isni:identifierValid>0000000107260727</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère de la maison de l'Empereur (1852-1870)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051159-France.%20Minist%C3%A8re%20de%20la%20maison%20de%20l%27Empereur%20%281852-1870%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la maison de l'Empereur (1852-1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la maison de l'Empereur (1852-1870)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051159"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051159-France.%20Maison%20de%20l%E2%80%99empereur%20et%20minist%C3%A8re%20des%20Beaux-Arts%20%282%20janvier%201870-9%20ao%C3%BBt%201870%29-18700102-18700809">
+            <rdfs:label xml:lang="fr">France. Maison de l’empereur et ministère des Beaux-Arts (2 janvier 1870-9 août 1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Maison de l’empereur et ministère des Beaux-Arts (2 janvier 1870-9 août 1870)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051159"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-01-02</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-08-09</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051159-France.%20Minist%C3%A8re%20de%20la%20Maison%20de%20l%E2%80%99empereur%20et%20minist%C3%A8re%20de%20l%E2%80%99Instruction%20publique%20et%20des%20Beaux-Arts%20%289%20ao%C3%BBt%201870-4%20septembre%201870%29-18700809-18700904">
+            <rdfs:label xml:lang="fr">France. Ministère de la Maison de l’empereur et ministère de l’Instruction publique et des Beaux-Arts (9 août 1870-4 septembre 1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Maison de l’empereur et ministère de l’Instruction publique et des Beaux-Arts (9 août 1870-4 septembre 1870)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051159"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-08-09</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-09-04</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051159-France.%20Minist%C3%A8re%20de%20la%20Maison%20de%20l%E2%80%99empereur%20et%20des%20Beaux-Arts%20%2817%20juillet%201869-2%20janvier%201870%29-18690717-18700102">
+            <rdfs:label xml:lang="fr">France. Ministère de la Maison de l’empereur et des Beaux-Arts (17 juillet 1869-2 janvier 1870)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Maison de l’empereur et des Beaux-Arts (17 juillet 1869-2 janvier 1870)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051159"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1869-07-17</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-01-02</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-12-31</rico:endDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Après le régime très économe de Louis-Philippe qui avait supprimé les services d’honneur, Napoléon III souhaite rétablir les fastes d’antan et crée un ministère de la Maison de l’empereur, sur le modèle de celle du Premier Empire.</html:p>
+            <html:p>Le ministère de la Maison de l’empereur est chargé de la présentation du budget, de l’administration des revenus de la Couronne, de la proposition à tous les emplois du ministère (sauf ceux des grands officiers nommés par l’empereur), de l’ordonnancement des dépenses, de la révision et de l’approbation des marchés, de l’administration de la dotation de la Couronne et du domaine privé de l’empereur et de l’impératrice, des encouragements aux arts et de la proposition à l’empereur des pensions à prendre sur les fonds de la Liste civile.</html:p>
+            <html:p>Le ministère de la Maison de l’empereur est logé dans le Louvre, à proximité de l’empereur.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051159-051157-18630101-18701231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051159-051161-18520722-18690717"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb13324748d#about"/>
+   </rico:Agent>
+</rdf:RDF>

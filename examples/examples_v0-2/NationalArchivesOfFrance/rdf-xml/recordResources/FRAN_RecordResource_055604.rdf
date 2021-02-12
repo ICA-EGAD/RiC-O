@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/055604">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl005"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl008"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:title xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, Président-directeur général. : Répertoire numérique détaillé du versement 20140143</rico:title>
+      <rdfs:label xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, Président-directeur général. : Répertoire numérique détaillé du versement 20140143</rdfs:label>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasPublisher rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</rico:publicationDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div>
+            <html:h4>auteur(s)</html:h4>
+            <html:p xml:lang="fr">Établi par Anne Briqueler Service Archives écrites et Musée - Direction générale déléguée - Radio France. Revu par Sandrine Gill, Archives nationales, département de l'archivage électronique et des archives audiovisuelles.</html:p>
+         </html:div>
+         <html:div>
+            <html:h4>mention d’édition</html:h4>
+            <html:p xml:lang="fr">Première édition électronique</html:p>
+         </html:div>
+      </rico:history>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/055604-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/055604-i1">
+            <rico:isInstantiationOf rdf:resource="record/055604"/>
+            <rico:title xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, Président-directeur général. : Répertoire numérique détaillé du versement 20140143</rico:title>
+            <rdfs:label xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, Président-directeur général. : Répertoire numérique détaillé du versement 20140143</rdfs:label>
+            <rico:history xml:lang="fr">Cet instrument de recherche a été rédigé avec un logiciel de traitement de texte.</rico:history>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_055604</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_055604"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/055604-top">
+      <rico:isOrWasDescribedBy rdf:resource="record/055604"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:title xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, président-directeur général de 1982 à 1986 (1982-1984).</rico:title>
+      <rdfs:label xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, président-directeur général de 1982 à 1986 (1982-1984).</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1982-1984</rico:date>
+      <!-- <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>-->
+      <rico:hasOrHadAllMembersWithLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+      <rico:hasProvenance rdf:resource="agent/005419"/>
+      <rico:hasProvenance>
+         <rico:Agent>
+            <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+            <rdfs:label xml:lang="fr">Radio France Internationale</rdfs:label>
+            <rico:hasOrHadAgentName>
+               <rico:AgentName>
+                  <rdfs:label xml:lang="fr">Radio France Internationale</rdfs:label>
+                  <rico:textualValue xml:lang="fr">Radio France Internationale</rico:textualValue>
+               </rico:AgentName>
+            </rico:hasOrHadAgentName>
+         </rico:Agent>
+      </rico:hasProvenance>
+      <rico:hasProvenance rdf:resource="agent/050789"/>
+      <rico:conditionsOfAccess rdf:parseType="Literal">
+         <html:p xml:lang="fr">L'ensemble de ce fonds est soumis au régime des archives publiques. Il est communicable de plein droit, en application des dispositions des articles L. 213-1 à L. 213-8 du Code du Patrimoine.</html:p>
+      </rico:conditionsOfAccess>
+      <rico:conditionsOfUse rdf:parseType="Literal">
+         <html:p xml:lang="fr">Librement communicable</html:p>
+      </rico:conditionsOfUse>
+      <rico:accrual rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Fonds clos</html:p>
+         </html:div>
+      </rico:accrual>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:p xml:lang="fr">Les archives sonores, succinctes, comprennent des enregistrements d'émissions diffusées sur France Inter et des productions de Radio France Internationale, dans le cadre des activités de Radio France et de Radio France Internationale durant les mandats de Jean-Noël Jeanneney, président directeur-général des deux institutions de 1982 à 1986. Elles sont indissociables des archives papier du fonds Jean-Noël Jeanneney. Ces dernières, plus complètes, s'articulent autour de deux sous-fonds. Le premier, le plus volumineux, regroupe les archives de Radio France et le second, celles de Radio France Internationale. Les archives couvrent les années 1964 à 1986 et comprennent des documents antérieurs aux mandats de Jean-Noël Jeanneney liés à certaines affaires lancées par ses prédécesseurs à la tête de Radio France, Jacqueline Baudrier et Michèle Cotta.</html:p>
+      </rico:scopeAndContent>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Document(s) séparé(s)</html:h4>
+            <html:ul>
+               <html:li>
+                  <html:b>20140048</html:b>: archives papier de Jean-Noël Jeanneney, président-directeur général de Radio France et de Radio France Internationale de 1982 à 1986 (1964-1986)</html:li>
+            </html:ul>
+            <html:p>Lien vers les archives papier du fonds Jeanneney<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_050629">Archives papier de Jean-Noël Jeanneney président-directeur général de Radio France et de Radio France Internationale de 1982 à 1986 (1964-1986)</html:a>
+            </html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/050629-top"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Document(s) en relation</html:h4>
+            <html:p>Archives et publications conservées au Service Archives écrites et Musée de Radio France</html:p>
+            <html:p>- France Inter, grilles de programmes :</html:p>
+            <html:ul>
+               <html:li>865 W (fonds ouvert)</html:li>
+            </html:ul>
+            <html:p>- RFI :</html:p>
+            <html:ul>
+               <html:li>
+                  <html:i>Multiplex</html:i>n°1 à 40, revue du bureau des missions de programmes de RFI (novembre 1977-mars 1989)</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Informations sur l'évaluation</html:h4>
+            <html:p>Le fonds n'a fait l'objet d'aucune élimination. Les dossiers papier ont été séparés des archives audiovisuelles pour une conservation adaptée et sont décrits dans le cadre d'un autre répertoire.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/055604-top-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/055604-top"/>
+            <rico:identifier>20140143/1-20140143/7</rico:identifier>
+            <rico:title xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, président-directeur général de 1982 à 1986 (1982-1984).</rico:title>
+            <rdfs:label xml:lang="fr">Culture, Radio France et Radio France Internationale, archives sonores du fonds Jean-Noël Jeanneney, président-directeur général de 1982 à 1986 (1982-1984).</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1982-1984</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">Le versement comporte 6 cassettes audio et 1 bande magnétique.</html:p>
+            </rico:instantiationExtent>
+            <rico:hasRepresentationType rdf:resource="representationType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0"/>
+            <rico:hasProvenance rdf:resource="agent/005419"/>
+            <rico:hasProvenance>
+               <rico:Agent>
+                  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                  <rdfs:label xml:lang="fr">Radio France Internationale</rdfs:label>
+                  <rico:hasOrHadAgentName>
+                     <rico:AgentName>
+                        <rdfs:label xml:lang="fr">Radio France Internationale</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Radio France Internationale</rico:textualValue>
+                     </rico:AgentName>
+                  </rico:hasOrHadAgentName>
+               </rico:Agent>
+            </rico:hasProvenance>
+            <rico:hasProvenance rdf:resource="agent/050789"/>
+            <rico:conditionsOfAccess rdf:parseType="Literal">
+               <html:p xml:lang="fr">L'ensemble de ce fonds est soumis au régime des archives publiques. Il est communicable de plein droit, en application des dispositions des articles L. 213-1 à L. 213-8 du Code du Patrimoine.</html:p>
+            </rico:conditionsOfAccess>
+            <rico:conditionsOfUse rdf:parseType="Literal">
+               <html:p xml:lang="fr">Librement communicable</html:p>
+            </rico:conditionsOfUse>
+            <rico:history rdf:parseType="Literal">
+               <html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Historique de la conservation</html:h4>
+                     <html:p>Ces documents sonores ont été extraits des archives papier de Jean-Noël Jeanneney (versement aux Archives nationales n° 20140048)</html:p>
+                     <html:p>Le fonds Jean-Noël Jeanneney a fait l'objet de trois versements successifs : le 34 W (3,70 ml) en 1992, le 78 W (31 ml) en 1994 et le 129 W (0,80 ml) en 1995. Ils ont été collectés à Radio France et au domicile de Jean-Noël Jeanneney.</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur les modalités d’entrée</html:h4>
+                     <html:p>Versement (2014)</html:p>
+                  </html:div>
+                  <html:div xml:lang="fr">
+                     <html:h4>Informations sur l'évaluation</html:h4>
+                     <html:p>Le fonds n'a fait l'objet d'aucune élimination. Les dossiers papier ont été séparés des archives audiovisuelles pour une conservation adaptée et sont décrits dans le cadre d'un autre répertoire.</html:p>
+                  </html:div>
+               </html:div>
+            </rico:history>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/top"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:includesOrIncluded rdf:resource="recordResource/055604-c2ndr7pqq40f-apgtw5rvvdos"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/055604-c2ndr7pqqhdz-1b9nbz25cnqnr"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/055604-c2ndr7pqqoix--i0lypel8t4il"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqq40f-apgtw5rvvdos">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-top"/>
+      <rico:title xml:lang="fr">Emissions de Radio France</rico:title>
+      <rdfs:label xml:lang="fr">Emissions de Radio France</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1984</rico:date>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Document(s) séparé(s)</html:h4>
+            <html:p>Cassettes extraites de la boîte initialement cotée 78W90 (le versement 78W a fait l'objet d'un classement et est actuellement conservé aux Archives nationales sous le n° 20140048)</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqq40f-apgtw5rvvdos-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqq40f-apgtw5rvvdos"/>
+            <rico:identifier>20140143/1-20140143/2</rico:identifier>
+            <rico:title xml:lang="fr">Emissions de Radio France</rico:title>
+            <rdfs:label xml:lang="fr">Emissions de Radio France</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1984</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">2 cassettes audio</html:p>
+            </rico:instantiationExtent>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqq40f-apgtw5rvvdos"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:includesOrIncluded>
+         <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqeer-1udj6amnpdxui">
+            <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqq40f-apgtw5rvvdos"/>
+            <rico:title xml:lang="fr">France Inter « Soirée antillaise », diffusée le 14 novembre 1984</rico:title>
+            <rdfs:label xml:lang="fr">France Inter « Soirée antillaise », diffusée le 14 novembre 1984</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1984</rico:date>
+            <rico:hasInstantiation>
+               <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqeer-1udj6amnpdxui-i1">
+                  <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqeer-1udj6amnpdxui"/>
+                  <rico:identifier>20140143/1</rico:identifier>
+                  <rico:title xml:lang="fr">France Inter « Soirée antillaise », diffusée le 14 novembre 1984</rico:title>
+                  <rdfs:label xml:lang="fr">France Inter « Soirée antillaise », diffusée le 14 novembre 1984</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">1984</rico:date>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqeer-1udj6amnpdxui"/>
+               </rico:Instantiation>
+            </rico:hasInstantiation>
+         </rico:RecordResource>
+      </rico:includesOrIncluded>
+      <rico:includesOrIncluded>
+         <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqgas-1w9ch4ic3urjv">
+            <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqq40f-apgtw5rvvdos"/>
+            <rico:title xml:lang="fr">France Inter « Boulevard de l'étrange », par Jacques Pradel</rico:title>
+            <rdfs:label xml:lang="fr">France Inter « Boulevard de l'étrange », par Jacques Pradel</rdfs:label>
+            <rico:hasInstantiation>
+               <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqgas-1w9ch4ic3urjv-i1">
+                  <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqgas-1w9ch4ic3urjv"/>
+                  <rico:identifier>20140143/2</rico:identifier>
+                  <rico:title xml:lang="fr">France Inter « Boulevard de l'étrange », par Jacques Pradel</rico:title>
+                  <rdfs:label xml:lang="fr">France Inter « Boulevard de l'étrange », par Jacques Pradel</rdfs:label>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqgas-1w9ch4ic3urjv"/>
+               </rico:Instantiation>
+            </rico:hasInstantiation>
+         </rico:RecordResource>
+      </rico:includesOrIncluded>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqhdz-1b9nbz25cnqnr">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-top"/>
+      <rico:title xml:lang="fr">Emissions de Radio France Internationale</rico:title>
+      <rdfs:label xml:lang="fr">Emissions de Radio France Internationale</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1983-1984</rico:date>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Document(s) séparé(s)</html:h4>
+            <html:p>Cassettes extraites de la boîte initialement cotée 78W132 (le versement 78W a fait l'objet d'un classement et est actuellement conservé aux Archives nationales sous le n° 20140048)</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqhdz-1b9nbz25cnqnr-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqhdz-1b9nbz25cnqnr"/>
+            <rico:identifier>20140143/3- 20140143/6</rico:identifier>
+            <rico:title xml:lang="fr">Emissions de Radio France Internationale</rico:title>
+            <rdfs:label xml:lang="fr">Emissions de Radio France Internationale</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1983-1984</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">4 cassettes</html:p>
+            </rico:instantiationExtent>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqhdz-1b9nbz25cnqnr"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:includesOrIncluded>
+         <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqium--1mqdiww2g3pp7">
+            <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqqhdz-1b9nbz25cnqnr"/>
+            <rico:title xml:lang="fr">Programmes de coopération</rico:title>
+            <rdfs:label xml:lang="fr">Programmes de coopération</rdfs:label>
+            <rico:date xml:lang="fr">Sans date</rico:date>
+            <rico:hasInstantiation>
+               <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqium--1mqdiww2g3pp7-i1">
+                  <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqium--1mqdiww2g3pp7"/>
+                  <rico:identifier>20140143/3-20140143/5</rico:identifier>
+                  <rico:title xml:lang="fr">Programmes de coopération</rico:title>
+                  <rdfs:label xml:lang="fr">Programmes de coopération</rdfs:label>
+                  <rico:date xml:lang="fr">Sans date</rico:date>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqium--1mqdiww2g3pp7"/>
+               </rico:Instantiation>
+            </rico:hasInstantiation>
+            <rico:includesOrIncluded>
+               <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqk1w--nsja3ovf6f2i">
+                  <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqqium--1mqdiww2g3pp7"/>
+                  <rico:title xml:lang="fr">« Mémoire d'un continent » et « Mille Soleils »</rico:title>
+                  <rdfs:label xml:lang="fr">« Mémoire d'un continent » et « Mille Soleils »</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">1984</rico:date>
+                  <rico:scopeAndContent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">Face A : « Mémoire d'un continent », à l'occasion du 15ème anniversaire de l'émission consacrée à l'histoire africaine à Dakar en 1984. Face B : « Mille Soleils »</html:p>
+                  </rico:scopeAndContent>
+                  <rico:hasInstantiation>
+                     <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqk1w--nsja3ovf6f2i-i1">
+                        <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqk1w--nsja3ovf6f2i"/>
+                        <rico:identifier>20140143/3</rico:identifier>
+                        <rico:title xml:lang="fr">« Mémoire d'un continent » et « Mille Soleils »</rico:title>
+                        <rdfs:label xml:lang="fr">« Mémoire d'un continent » et « Mille Soleils »</rdfs:label>
+                        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-01-01</rico:beginningDate>
+                        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-31</rico:endDate>
+                        <rico:date xml:lang="fr">1984</rico:date>
+                        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqk1w--nsja3ovf6f2i"/>
+                     </rico:Instantiation>
+                  </rico:hasInstantiation>
+               </rico:RecordResource>
+            </rico:includesOrIncluded>
+            <rico:includesOrIncluded>
+               <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqql6w-5zzuh18do96f">
+                  <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqqium--1mqdiww2g3pp7"/>
+                  <rico:title xml:lang="fr">« Magazine des jeunes » et « Le Monde à la carte »</rico:title>
+                  <rdfs:label xml:lang="fr">« Magazine des jeunes » et « Le Monde à la carte »</rdfs:label>
+                  <rico:scopeAndContent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">Face A : « Magazine des jeunes ». Face B : « Le Monde à la carte »</html:p>
+                  </rico:scopeAndContent>
+                  <rico:hasInstantiation>
+                     <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqql6w-5zzuh18do96f-i1">
+                        <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqql6w-5zzuh18do96f"/>
+                        <rico:identifier>20140143/4</rico:identifier>
+                        <rico:title xml:lang="fr">« Magazine des jeunes » et « Le Monde à la carte »</rico:title>
+                        <rdfs:label xml:lang="fr">« Magazine des jeunes » et « Le Monde à la carte »</rdfs:label>
+                        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqql6w-5zzuh18do96f"/>
+                     </rico:Instantiation>
+                  </rico:hasInstantiation>
+               </rico:RecordResource>
+            </rico:includesOrIncluded>
+            <rico:includesOrIncluded>
+               <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqmfo--axpr9wdlp1gg">
+                  <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqqium--1mqdiww2g3pp7"/>
+                  <rico:title xml:lang="fr">« Terre en question »</rico:title>
+                  <rdfs:label xml:lang="fr">« Terre en question »</rdfs:label>
+                  <rico:scopeAndContent rdf:parseType="Literal">
+                     <html:div xml:lang="fr">
+                        <html:p>Face A : « Le Niger »</html:p>
+                        <html:p>Face B : « L'Irlande »</html:p>
+                     </html:div>
+                  </rico:scopeAndContent>
+                  <rico:hasInstantiation>
+                     <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqmfo--axpr9wdlp1gg-i1">
+                        <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqmfo--axpr9wdlp1gg"/>
+                        <rico:identifier>20140143/5</rico:identifier>
+                        <rico:title xml:lang="fr">« Terre en question »</rico:title>
+                        <rdfs:label xml:lang="fr">« Terre en question »</rdfs:label>
+                        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqmfo--axpr9wdlp1gg"/>
+                     </rico:Instantiation>
+                  </rico:hasInstantiation>
+               </rico:RecordResource>
+            </rico:includesOrIncluded>
+         </rico:RecordResource>
+      </rico:includesOrIncluded>
+      <rico:includesOrIncluded>
+         <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqngt--1c8ib0b2amivz">
+            <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-c2ndr7pqqhdz-1b9nbz25cnqnr"/>
+            <rico:title xml:lang="fr">Les dossiers sonores de la revue Multiplex</rico:title>
+            <rdfs:label xml:lang="fr">Les dossiers sonores de la revue Multiplex</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1983</rico:date>
+            <rico:scopeAndContent rdf:parseType="Literal">
+               <html:p xml:lang="fr">Supplément sonore de la revue Multiplex n°22 éditée par le bureau des missions de programmes de Radio France Internationale Multiplex à partir de 1977. Conception : Guy Robert. Réalisation : Jacques Charreaux. Face A : « Ils savent raconter l'histoire ». Face B : « D'une mer à l'autre : Antelim »</html:p>
+            </rico:scopeAndContent>
+            <rico:hasInstantiation>
+               <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqngt--1c8ib0b2amivz-i1">
+                  <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqngt--1c8ib0b2amivz"/>
+                  <rico:identifier>20140143/6</rico:identifier>
+                  <rico:title xml:lang="fr">Les dossiers sonores de la revue Multiplex</rico:title>
+                  <rdfs:label xml:lang="fr">Les dossiers sonores de la revue Multiplex</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">1983</rico:date>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqngt--1c8ib0b2amivz"/>
+               </rico:Instantiation>
+            </rico:hasInstantiation>
+         </rico:RecordResource>
+      </rico:includesOrIncluded>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/055604-c2ndr7pqqoix--i0lypel8t4il">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/055604-top"/>
+      <rico:title xml:lang="fr">Reportage consacré à Radio France Internationale</rico:title>
+      <rdfs:label xml:lang="fr">Reportage consacré à Radio France Internationale</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1982</rico:date>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:p xml:lang="fr">« Radio France Internationale écoutée en Pologne », émission de Stéphane Magnier diffusée le 10 octobre 1982 sur TF1</html:p>
+      </rico:scopeAndContent>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Document(s) séparé(s)</html:h4>
+            <html:p>Bande extraite de la boîte initialement cotée 78W247 (le versement 78W a fait l'objet d'un classement et est actuellement conservé aux Archives nationales sous le n° 20140048)</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/055604-c2ndr7pqqoix--i0lypel8t4il-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/055604-c2ndr7pqqoix--i0lypel8t4il"/>
+            <rico:identifier>20140143/7</rico:identifier>
+            <rico:title xml:lang="fr">Reportage consacré à Radio France Internationale</rico:title>
+            <rdfs:label xml:lang="fr">Reportage consacré à Radio France Internationale</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1982</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">1 bande</html:p>
+            </rico:instantiationExtent>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055604/c2ndr7pqqoix--i0lypel8t4il"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>

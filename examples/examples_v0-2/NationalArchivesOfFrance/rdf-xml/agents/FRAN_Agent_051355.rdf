@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051355">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051355"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-08</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-08</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF12381002</rico:source>
+      <rico:source xml:lang="fr">Dictionnaire de la BnF</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Site Internet de la BnF (http://www.bnf.fr/fr/la_bnf/connaitre_bnf.html)</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France)</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121751303"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051355">
+            <rico:isInstantiationOf rdf:resource="record/051355"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051355</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051355"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051355">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051355"/>
+      <isni:identifierValid>0000000121751303</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Bibliothèque nationale de France (1994-....)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051355-Biblioth%C3%A8que%20nationale%20de%20France%20%281994-....%29">
+            <rdfs:label xml:lang="fr">Bibliothèque nationale de France (1994-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bibliothèque nationale de France (1994-....)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051355"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051355-BnF">
+            <rdfs:label xml:lang="fr">BnF</rdfs:label>
+            <rico:textualValue xml:lang="fr">BnF</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051355"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</rico:beginningDate>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Décret n° 94-3 du 3 janvier 1994 portant création de la Bibliothèque nationale de France (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000545891&amp;fastPos=2&amp;fastReqId=893217420&amp;categorieLien=id&amp;oldAction=rechTexte)</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le président du conseil d'administration, assisté du directeur général, dirige la BnF. Le conseil scientifique est consulté sur la politique scientifique.</html:p>
+            <html:p>À sa création, la BnF est composée de 10 directions :</html:p>
+            <html:p>1°) Direction des collections spécialisées :</html:p>
+            <html:ul>
+               <html:li>Bibliothèque de l'Arsenal</html:li>
+               <html:li>Département des arts du spectacle</html:li>
+               <html:li>Département des cartes et plans</html:li>
+               <html:li>Département des estampes et de la photographie</html:li>
+               <html:li>Département des manuscrits</html:li>
+               <html:li>Département des monnaies, médailles et antiques</html:li>
+               <html:li>Département de la musique</html:li>
+            </html:ul>
+            <html:p>2°) Direction de l'imprimé et de l'audiovisuel :</html:p>
+            <html:ul>
+               <html:li>Département des livres imprimés</html:li>
+               <html:li>Département des périodiques</html:li>
+               <html:li>Département de la phonothèque et de l'audiovisuel</html:li>
+               <html:li>Service de la constitution des collections en magasin</html:li>
+               <html:li>Service de la constitution des collections en libre accès</html:li>
+            </html:ul>
+            <html:p>3°) Direction du développement scientifique et des réseaux :</html:p>
+            <html:ul>
+               <html:li>Agence bibliographique nationale</html:li>
+               <html:li>Service de la coordination bibliographique</html:li>
+               <html:li>Service des chantiers de conversion rétrospective</html:li>
+               <html:li>Service de l'accueil</html:li>
+               <html:li>Mission pour la politique scientifique de numérisation</html:li>
+               <html:li>Service de la coopération et des réseaux documentaires</html:li>
+               <html:li>Mission pour la politique documentaire</html:li>
+               <html:li>Mission de la recherche</html:li>
+            </html:ul>
+            <html:p>4°) Direction des services de la conservation :</html:p>
+            <html:ul>
+               <html:li>Services de restauration</html:li>
+               <html:li>Service de la reproduction</html:li>
+               <html:li>Centre André-François Poncet de conservation et de reproduction de la presse (Provins)</html:li>
+               <html:li>Centre Joël Le Theule pour la conservation et la restauration des documents imprimés et manuscrits (Sablé-sur-Sarthe)</html:li>
+            </html:ul>
+            <html:p>5°) Direction de l'informatique et des nouvelles technologies :</html:p>
+            <html:ul>
+               <html:li>Service de la gestion informatique de la communication et de la conservation</html:li>
+               <html:li>Service d'informatique bibliographique</html:li>
+               <html:li>Service de l'exploitation</html:li>
+               <html:li>Mission des techniques de numérisation et des nouvelles technologies</html:li>
+               <html:li>Mission pour les liaisons télématiques</html:li>
+            </html:ul>
+            <html:p>6°) Direction des travaux et des équipements :</html:p>
+            <html:ul>
+               <html:li>Service de la conduite des lots techniques</html:li>
+               <html:li>Service de la programmation architecturale des aménagements</html:li>
+               <html:li>Service des marchés</html:li>
+            </html:ul>
+            <html:p>7°) Direction administrative et financière :</html:p>
+            <html:ul>
+               <html:li>Mission de l'organisation et de la prospective</html:li>
+               <html:li>Service financier</html:li>
+               <html:li>Service des moyens généraux</html:li>
+               <html:li>Service informatique</html:li>
+               <html:li>Service juridique</html:li>
+            </html:ul>
+            <html:p>8°) Direction du personnel et des relations sociales :</html:p>
+            <html:ul>
+               <html:li>Service des qualifications et de la formation</html:li>
+               <html:li>Mission de l'organisation et de la prospective</html:li>
+               <html:li>Service de la gestion du personnel et des carrières</html:li>
+               <html:li>Service des recrutements</html:li>
+            </html:ul>
+            <html:p>9°) Direction du développement culturel :</html:p>
+            <html:ul>
+               <html:li>Service de la communication</html:li>
+               <html:li>Service de la coordination des services au public</html:li>
+               <html:li>Service de l'action pédagogique</html:li>
+               <html:li>Service des expositions internes</html:li>
+               <html:li>Service des expositions externes</html:li>
+               <html:li>Service des éditions</html:li>
+               <html:li>Service des produits dérivés</html:li>
+               <html:li>Service des manifestations orales</html:li>
+               <html:li>Service de l'action commerciale</html:li>
+               <html:li>Production audiovisuelle</html:li>
+            </html:ul>
+            <html:p>10°) Mission centrale de coordination et de planification</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>Le 14 juillet 1988, lors de son traditionnel entretien télévisé dans le parc de l'Élysée, le Président de la République François Mitterrand annonce « la construction et l'aménagement de l'une ou de la plus grande et la plus moderne bibliothèque du monde [...] [qui] devra couvrir tous les champs de la connaissance, être à la disposition de tous, utiliser les technologies les plus modernes de transmission de données, pouvoir être consultée à distance et entrer en relation avec d'autres bibliothèques européennes ». À l’issue de ce discours, un rapport est commandé au directeur des monnaies et médailles Patrice Cahart et au directeur de la Bibliothèque publique d’information Michel Melot. Il est remis au Premier Ministre le 30 novembre 1988, sous le nom de « Propositions pour une grande bibliothèque ». Il préconise une bibliothèque très largement ouverte, qui accueillerait les imprimés à partir de 1945. Et, pour conduire le projet de nouvelle bibliothèque annoncée par le Président de la République le 14 juillet 1988, l’Établissement public de la Bibliothèque de France (EPBF) est créé par le décret n° 89-777 du 13 octobre 1989. Au sein de la Bibliothèque nationale, existante depuis 1792, des grands chantiers préparatoires au déménagement des collections sont lancés, passant notamment par des récolements, des inventaires et l'informatisation générale des catalogues au sein de la Bibliothèque nationale dès 1990. Ces deux établissements fusionnent pour donner naissance à la Bibliothèque nationale de France, officiellement créée par le décret du 3 janvier 1994.</html:p>
+            <html:p/>
+            <html:p>Le projet de création de la Bibliothèque prévoit la construction du site François Mitterrand, également appelé Tolbiac, en plus de la reprise des sites de la Bibliothèque nationale : sites Richelieu, de l’Arsenal, de la Bibliothèque-musée de l’Opéra, de la Maison Jean Vilar à Avignon et le site de conservation de Joël-le-Theule à Sablé-sur-Sarthe. Le site finalement retenu pour la construction de la BnF est situé en bordure de Seine dans le XIIIe arrondissement de Paris. En août 1989, le projet de l’architecte Dominique Perrault est choisi par le président de la République au terme d’une procédure de sélection de projets par un jury international. Les travaux de construction commencent en mars 1992. Le 30 mars 1995, le Président François Mitterrand inaugure les locaux de la Bibliothèque du site de Tolbiac, avant que s’achève son mandat. Le Haut-de-jardin (la bibliothèque d’étude pour le grand public) est inauguré le 17 décembre 1996 par Jacques Chirac et ouvre au public trois jours plus tard. Le Rez-de-jardin est quant à lui inauguré par Lionel Jospin, qui est alors Premier Ministre, le 8 octobre 1998. Les salles de lecture sont destinées aux chercheurs pouvant justifier de leurs recherches. L'ouverture de la bibliothèque de recherche scelle l'achèvement de ce grand projet.</html:p>
+            <html:p/>
+            <html:p>Parallèlement, une réflexion sur l’organisation du nouvel établissement public est engagée, sur sa structure interne et le déménagement des collections vers le site François Mitterrand. Dès mars 1998, le processus est entamé. Les départements des Imprimés, des Périodiques (Paris et Versailles), la Phonothèque et celui de l’Audiovisuel installent leurs collections dans le nouveau bâtiment. Le nouveau département de l’audiovisuel résulte de la fusion en janvier 1994 du département de l’audiovisuel de la Bibliothèque nationale et du département de l’audiovisuel de l’EPBF. Le service des Acquisitions de l’EPBF est regroupé avec les Livres imprimés, périodiques et phonothèque de la Bibliothèque nationale. Les Entrées françaises sont confiées à la Direction des Services et des réseaux. Les Entrées étrangères le sont à la Direction des collections. Les collections spécialisées, c’est-à-dire « manuscrits, estampes et photographies, cartes et plans, monnaies et médailles, documents du département de la musique » restent dans le quadrilatère Richelieu. Cette période est celle d’une forte augmentation en nombre et en qualification des effectifs ainsi que de l’émergence d’une nouvelle vocation dans le domaine culturel grâce à l’ouverture d’équipements ouverts à tout public.</html:p>
+            <html:p/>
+            <html:p>L’évolution technologique a modifié et créé de nouvelles missions tant dans le domaine de la conservation que dans celui de l'accès aux documents. En particulier, les outils informatiques et les progrès des télécommunications renouvellent les moyens donnés à la gestion des collections et à leur repérage. En avril 1999, le catalogue en ligne BN Opale plus est accessible sur internet, permettant de consulter des millions de notices. Plus généralement appelé catalogue général de la BnF, il doit à terme être remplacé par le catalogue général labs.</html:p>
+            <html:p>Conjugués à la numérisation des textes et des images, ils enrichissent les pratiques de recherche et de lecture et ouvrent sur la transmission des documents à distance. En 1997, la bibliothèque numérique de la Bibliothèque, Gallica, est lancée, accessible gratuitement sur internet. Elle offre l'accès à tous types de documents : imprimés (livres, presse et revues) en mode image et en mode texte, manuscrits, documents sonores, documents iconographiques, cartes et plans. Ils sont issus des collections numérisées par la BnF, dans le cadre de ses programmes de numérisation de masse et/ou de sauvegarde, ainsi que de collections des partenaires publics (bibliothèques, centres de recherches...). Ils ont été sélectionnés pour leur complémentarité scientifique et leur compatibilité technique avec les collections de la BnF. En 2004, Google lance sa bibliothèque numérique. En réponse, la BnF met en place en 2005 le projet d’une Bibliothèque numérique européenne (BNUE), Europeana, qui propose la mise en ligne de près de 39 millions de documents numérisés représentatifs du patrimoine historique et culturel de l’Europe. Le projet est soutenu par l’État et d’autres pays européens.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p/>
+            <html:p>D’après l’article 2 du décret n° 94-3 du 3 janvier 1994 portant création de la Bibliothèque nationale de France :</html:p>
+            <html:p>« La Bibliothèque nationale de France a pour missions :</html:p>
+            <html:p>1°) De collecter, cataloguer, conserver et enrichir dans tous les champs de la connaissance, le patrimoine national dont elle a la garde, en particulier le patrimoine de langue française ou relatif à la civilisation française ;</html:p>
+            <html:p>À ce titre :</html:p>
+            <html:ul>
+               <html:li>elle exerce, en vertu de l'article 5, alinéa 2, de la loi du 20 juin 1992 susvisée, les missions relatives au dépôt légal confiées par cette loi et les décrets pris pour son application à la Bibliothèque nationale ; elle gère, pour le compte de l'État, dans les conditions prévues par la loi du 20 juin 1992 susvisée, le dépôt légal dont elle est dépositaire. Elle en constitue et diffuse la bibliographie nationale ;</html:li>
+               <html:li>elle rassemble, au nom et pour le compte de l'État, et catalogue des collections françaises et étrangères d'imprimés, de manuscrits, de monnaies et médailles, d'estampes, de photographies, de cartes et plans, de musique, de chorégraphies, de documents sonores, audiovisuels et informatiques ;</html:li>
+               <html:li>elle participe à l'activité scientifique nationale et internationale ;</html:li>
+            </html:ul>
+            <html:p>2°) D'assurer l'accès du plus grand nombre aux collections, sous réserve des secrets protégés par la loi, dans des conditions conformes à la législation sur la propriété intellectuelle et compatibles avec la conservation de ces collections ;</html:p>
+            <html:p>À ce titre :</html:p>
+            <html:ul>
+               <html:li>elle conduit des programmes de recherche en relation avec le patrimoine dont elle a la charge, particulièrement sur la bibliothéconomie ;</html:li>
+               <html:li>elle coopère avec d'autres bibliothèques et centres de recherche et de documentation français ou étrangers, notamment dans le cadre des réseaux documentaires ;</html:li>
+               <html:li>elle participe, dans le cadre de la politique définie par l'État, à la mise en commun des ressources documentaires des bibliothèques françaises ;</html:li>
+               <html:li>elle permet la consultation à distance en utilisant les technologies les plus modernes de transmission des données ;</html:li>
+               <html:li>elle mène toutes actions pour mettre en valeur ses collections et, en particulier, pour réaliser les opérations culturelles et commerciales liées à l'exécution de ses missions ;</html:li>
+            </html:ul>
+            <html:p>3°) De poursuivre la construction, l'aménagement et l'équipement des immeubles dont l'État lui confie la réalisation, notamment de ceux dont la construction est entreprise par l'Établissement public de la Bibliothèque de France, ainsi que de préparer leur mise en service et leur ouverture au public ;</html:p>
+            <html:p>4°) De préserver, gérer et mettre en valeur les immeubles dont elle est dotée ».</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Présidents de la BnF :</html:u>
+            </html:p>
+            <html:p/>
+            <html:ul>
+               <html:li>Jean FAVIER (1994-1997)</html:li>
+               <html:li>Jean-Pierre ANGREMY (15 janvier 1997-mars 2002)</html:li>
+               <html:li>Jean-Noël JEANNENEY (22 mars 2002-mars 2007)</html:li>
+               <html:li>Bruno RACINE (avril 2007-mars 2016)</html:li>
+               <html:li>Laurence ENGEL (avril 2016-....)</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-051355-19940101-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005074-051355-19940101-*"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050789-051355-20020301-20070331"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009804-051355-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009808-051355-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005673-051355-19940101-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005632-051355-20100113-20120229"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009801-051355-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005429-051355-19940101-19980520"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005090-051355-19940103-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005095-051355-19950512-20100112"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-051355-19940101-19971231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005427-051355-20100721-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005055-051355-19940101-20100720"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051119-051355-19980521-20100720"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005675-051355-19940101-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009802-051355-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009807-051355-20120301-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005090-051355-19940101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005076-051355-19940101-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005089-051355-19940101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005099-051355-19940101-20100112"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005628-051355-20100113-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12381002j#about"/>
+   </rico:Agent>
+</rdf:RDF>

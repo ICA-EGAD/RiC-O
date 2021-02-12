@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xml:base="http://data.archives.strath.ac.uk/">
+    <rico:Agent rdf:about="agent/scottish-oral-history-centre">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+        <rdfs:label xml:lang="en">University of Strathclyde | Scottish Oral History
+            Centre</rdfs:label>
+        <rico:hasOrHadAgentName>
+            <rico:AgentName>
+                <rdfs:label xml:lang="en">University of Strathclyde | Scottish Oral History
+                    Centre</rdfs:label>
+                <rico:textualValue xml:lang="en">University of Strathclyde | Scottish Oral History
+                    Centre</rico:textualValue>
+            </rico:AgentName>
+        </rico:hasOrHadAgentName>
+        <rico:history rdf:parseType="Literal">
+            <div xml:lang="en">
+                <p>The Scottish Oral History Centre (SOHC) was set up within the Department of History at
+                    the University of Strathclyde in 1995. Since its foundation the SOHC has been involved in
+                    a wide range of teaching, research and outreach activities designed primarily to encourage
+                    the use of ‘best practice’ oral history methodology in Scotland. Until 2005, the SOHC was
+                    directed by Professor Callum Brown, since then by Professor Arthur McIvor.</p>
+            </div>
+        </rico:history>
+        <rico:isProvenanceOf rdf:resource="recordResource/sohc-archive"/>
+    </rico:Agent>
+</rdf:RDF>

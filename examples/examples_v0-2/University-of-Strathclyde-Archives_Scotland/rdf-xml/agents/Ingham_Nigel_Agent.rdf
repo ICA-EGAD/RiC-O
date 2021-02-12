@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives.strath.ac.uk/">
+   <rico:Record rdf:about="record/P0395">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/ingham-nigel"/>
+      <rico:hasCreator rdf:resource="agent/GB-249"/>
+      <rico:hasOrHadManager rdf:resource="agent/GB-249"/>
+      <rico:ruleFollowed xml:lang="en">ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003)</rico:ruleFollowed>
+      <rico:ruleFollowed xml:lang="en">Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</rico:ruleFollowed>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:lastModificationDate>
+      <rico:hasOrHadLanguage rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="en">Correcting (by Florence Clavaud (ICA/EGAD member | Archives
+               nationales de France)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-28</rico:date>
+            <rico:descriptiveNote xml:lang="en">some manual additions and corrections (in order to
+               get a valid EAC-CPF file only)</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/P0395-i1">
+            <rico:isInstantiationOf rdf:resource="record/P0395"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>P0395</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/GB-249"/>
+            <rdfs:seeAlso rdf:resource="https://atom.lib.strath.ac.uk/ingham-nigel"/>
+            <rico:ruleFollowed xml:lang="en">Encoded Archival Context for Corporate Bodies, Persons, Families, 2nd Edition, 2003</rico:ruleFollowed>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/ingham-nigel">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/P0395"/>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/ingham-nigel-Ingham%2C%20Nigel%2C%20historian">
+            <rdfs:label xml:lang="en">Ingham, Nigel, historian</rdfs:label>
+            <rico:textualValue xml:lang="en">Ingham, Nigel, historian</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/ingham-nigel"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="en">
+            <html:p>Nigel Ingham is a researcher with a particular interest in community oral
+               history and the social history of learning disability.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/ingham-nigel--greater-manchester-asbestos-victims-support-group--2014-2015"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/greater-manchester-asbestos-victims-support-group-oral-history-project"/>
+   </rico:Agent>
+</rdf:RDF>

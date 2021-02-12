@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/003532">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/003532"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-06</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 6 avril 2017 : vérifications rapides</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/003532">
+            <rico:isInstantiationOf rdf:resource="record/003532"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_003532</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003532"/>
+            <rico:identifier>3211/A</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/003532">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/003532"/>
+      <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des affaires administratives (1965-1975)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/003532-France.%20Direction%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique.%20Division%20des%20affaires%20administratives%20%281965-1975%29">
+            <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des affaires administratives (1965-1975)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction des bibliothèques et de la lecture publique. Division des affaires administratives (1965-1975)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/003532"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/003532-Services%20administratifs-19650101-19741231">
+            <rdfs:label xml:lang="fr">Services administratifs</rdfs:label>
+            <rico:textualValue xml:lang="fr">Services administratifs</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/003532"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/003532-Division%20des%20affaires%20administratives-19740101-19751231">
+            <rdfs:label xml:lang="fr">Division des affaires administratives</rdfs:label>
+            <rico:textualValue xml:lang="fr">Division des affaires administratives</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/003532"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d3nyugzvf8-1nwn3i74v5spq">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d3nyugzvf8-1nwn3i74v5spq"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugzvf8-1nwn3i74v5spq"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d3nyuhebkg-a4o80yedjeb">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d3nyuhebkg-a4o80yedjeb"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhebkg-a4o80yedjeb"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d5bhvii5wk-c5ead6thqj5l">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d5bhvii5wk-c5ead6thqj5l"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvii5wk-c5ead6thqj5l"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d5bhvijq5z-zaaj99p5tmch">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d5bhvijq5z-zaaj99p5tmch"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d5bhvimbi4--1c33jbciwlk3b">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d5bhvimbi4--1c33jbciwlk3b"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimbi4--1c33jbciwlk3b"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003532-d5bhvijcl3--1u6l4sy8b51az">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003532"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003532-d5bhvijcl3--1u6l4sy8b51az"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Les services administratifs sont composés de trois bureaux :</html:p>
+            <html:ul>
+               <html:li>le bureau du personnel (BL 1) ;</html:li>
+               <html:li>le bureau de la gestion et du contrôle financiers (BL 2) ;</html:li>
+               <html:li>le bureau des affaires générales (BL 3).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Les services administratifs sont réunis pour la première fois au sein de la direction des Bibliothèques et de la Lecture publique en 1965. Ils étaient auparavant constitués en deux bureaux indépendants, le bureau du personnel et le bureau de la comptabilité (devenu bureau de la gestion et du contrôle financiers).</html:p>
+            <html:p>La division des affaires administratives disparaît en 1975 avec la DBLP, supprimée suite à une décision du conseil des ministres du 2 juillet qui répartit ses attributions entre le secrétariat d'État aux Universités et le secrétariat d'État à la Culture (décret du 29 octobre 1975).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les services administratifs sont chargés des questions liées au personnel des bibliothèques publiques (administration du personnel, statuts, examens et concours...), de la gestion et du contrôle financiers (établissement des budgets, engagement des crédits, contrôle financier...) ainsi que d'affaires générales liées au fonctionnement des bibliothèques (documentation administrative, questions immobilières et mobilières...).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003532-003529-19650101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003532-003531-19650101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003532-003530-19650101-19751231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003532-19650101-19751231"/>
+   </rico:Agent>
+</rdf:RDF>

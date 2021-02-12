@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005568">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005568"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par null MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@ / Elsa Camus, 22 août 2016 : notice modifiée dans le cadre du projet de prototype Linked Data. A enrichir ultérieurement.</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-20</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 20 mars 2017 : revu et enrichi les liens, ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Michèle Dardy, Histoire administrative du ministère de la Culture, 1959-2012 : Les services de l'administration centrale, Paris, Comité d'histoire du ministère de la Culture / La Documentation française, coll. « Travaux et documents »,‎ 2012.</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Site institutionnel des Archives de France : http://www.archivesdefrance.culture.gouv.fr/</rico:source>
+      <rico:source xml:lang="fr"/>
+      <rico:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb16242064w</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005568">
+            <rico:isInstantiationOf rdf:resource="record/005568"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005568</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005568"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005568">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005568"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Service interministériel des Archives de France (2009-….)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005568-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Service%20interminist%C3%A9riel%20des%20Archives%20de%20France%20%282009-%E2%80%A6.%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Service interministériel des Archives de France (2009-….)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Service interministériel des Archives de France (2009-….)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005568"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005568-SIAF%20%282009-....%29">
+            <rdfs:label xml:lang="fr">SIAF (2009-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">SIAF (2009-....)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005568"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005568-Service%20interminist%C3%A9riel%20des%20Archives%20de%20France%20%282009-%E2%80%A6.%29">
+            <rdfs:label xml:lang="fr">Service interministériel des Archives de France (2009-….)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Service interministériel des Archives de France (2009-….)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005568"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</rico:beginningDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005568-d5bhvikvro-1p99atu7o3qwy">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005568"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005568-d5bhvikvro-1p99atu7o3qwy"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005568-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005568"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005568-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005568-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005568"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005568-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005568-d3nyui3ce2-byd3yisqum1a">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005568"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005568-d3nyui3ce2-byd3yisqum1a"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3ce2-byd3yisqum1a"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>L'organisation du Service interministériel des archives de France est fixée par l’article 3 de l’arrêté du 17 novembre 2009 :</html:p>
+            <html:p>- la sous-direction de la politique interministérielle et territoriale pour les archives traditionnelles et numériques ;</html:p>
+            <html:p>- la sous-direction de l’accès aux archives et de la coordination du réseau ;</html:p>
+            <html:p>- la mission aux célébrations nationales</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Suite à la publication du décret n°2009-1393 du 11 novembre 2009, le Service interministériel des Archives de France vient remplacer l’ancienne direction des Archives de France. Il est intégré à la nouvelle direction générale des patrimoines du ministère de la Culture.</html:p>
+            <html:p/>
+            <html:p>Le Service interministériel des archives de France est chargé de proposer au ministre de la Culture les choix stratégiques à opérer en matière d’archives et de les mettre en œuvre. Il exerce un rôle de conseil, d'incitation, de réglementation, d'évaluation et de contrôle en ce qui concerne la collecte, le tri, le classement, la description, la conservation et la communication des archives publiques autres que celles des ministères des Affaires étrangères et de la Défense.</html:p>
+            <html:p>Afin de garantir le respect de la légalité et l’application de normes scientifiques et techniques uniformes, il exerce son contrôle sur les Archives nationales, sur les services d’archives des collectivités territoriales et sur ceux des organismes autorisés, à titre dérogatoire, à gérer eux-mêmes leurs archives définitives.</html:p>
+            <html:p>Il concourt à la sauvegarde des archives privées qui présentent un intérêt pour l’histoire, soit en faisant classer certains fonds comme archives historiques, ce qui permet de contrôler leurs conditions de conservation et d’assurer leur maintien sur le territoire national, soit en subventionnant l’acquisition de documents par des services d’archives publics.</html:p>
+            <html:p>Il coordonne la diffusion et la mise en valeur du patrimoine archivistique sur l’ensemble du territoire et fournit son expertise à près de 800 services d’archives publics, au moyen notamment de journées d’études, de réunions interrégionales et de cycles de formation. Son action est soutenue, en région, par les directions régionales des affaires culturelles (DRAC).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005073-005568-20100101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005061-005568-20100113-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb16242064w#about"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005437-005568-20100101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005568-009963-20100101-*"/>
+   </rico:Agent>
+</rdf:RDF>

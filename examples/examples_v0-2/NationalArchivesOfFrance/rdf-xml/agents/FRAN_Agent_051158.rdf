@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051158">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051158"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 22 mars 2017 : ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette,<html:i>Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940</html:i>, Comité d'histoire du ministère de la Culture, 2008.</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Genet-Delacroix Marie-Claude. "Histoire et fonction de la direction des Beaux-Arts (1870-1905)". In :<html:i>Romantisme</html:i>, 1996, n°93. Arts et institutions. pp. 39-50. doi : 10.3406/roman.1996.3125url : http://www.persee.fr/web/revues/home/prescript/article/roman_0048-8593_1996_num_26_93_3125 Consulté le 04 août 2015)</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach national</html:i>, Paris, Berger-Levrault, 1870-1919</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000106638265"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051158">
+            <rico:isInstantiationOf rdf:resource="record/051158"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051158</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051158"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051158">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051158"/>
+      <isni:identifierValid>0000000106638265</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction des Beaux-Arts (1870-1940)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051158-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Direction%20des%20Beaux-Arts%20%281870-1940%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction des Beaux-Arts (1870-1940)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Direction des Beaux-Arts (1870-1940)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051158"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051158-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051158"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051158-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La composition de la division des Beaux-Arts se stabilise avec son rattachement au ministère de l'Instruction publique en 1870. Elle composée d'un bureau des Beaux-Arts, d'un bureau des monuments historiques, et d'un bureau des théâtres. Les bâtiments civils rejoignent les Beaux-Arts en 1895.</html:p>
+            <html:p/>
+            <html:p>De 1870 à 1905, la division des Beaux-Arts est dirigée successivement par : Charles Blanc, Philippe de Chennevières, Edmond Turquet, Eugène Guillaume, Albert Kaempfen, Paul Mantz, Jules-Antoine Castagnary, Gustave Larroumet, Henri Roujon et Henri Marcel.</html:p>
+            <html:p>En 1905, date à laquelle est créé le sous-secrétariat des Beaux-Arts, Étienne Dujardin-Beaumetz est nommé chef et il supprime alors le poste de directeur des Beaux-Arts. La fonction est recréée en 1919 lorsque Paul Léon est nommé directeur des Beaux-Arts, et ce jusqu'en 1933.</html:p>
+            <html:p>Suite à la réorganisation de 1934, Georges Huisman est placé à la tête de la direction des Beaux-Arts jusqu'à sa révocation en 1940.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Après avoir été rattachée à différents ministères depuis sa création en 1800, la direction des Beaux-Arts se stabilise en intégrant le ministère de l’Instruction publique le 5 septembre 1870.</html:p>
+            <html:p>Toutefois, les Beaux-Arts seront transférés de façon temporaire au ministère des Arts créé le 14 novembre 1881 par Léon Gambetta et confié à Antonin Proust. Pour la première fois sont réunis : les bâtiments civils, les édifices diocésains, l'enseignement technique des arts et métiers et l'enseignement du dessin. Le ministère des Arts est supprimé le 26 janvier 1882 et à partir du 30 janvier les compétences Beaux-Arts retournent au ministère de l’Instruction publique, à l'exception des bâtiments civils et palais nationaux qui, en 1870-1881 et 1890-1895, sont à nouveau rattachés au ministère des Travaux publics.</html:p>
+            <html:p/>
+            <html:p>Après 1895, l’administration des Beaux-Arts – tantôt direction, tantôt sous-secrétariat – se stabilise avec l’ensemble de ses secteurs d’intervention (beaux-arts, théâtre et musique) au sein du ministère de l’Instruction publique.</html:p>
+            <html:p/>
+            <html:p>Les lois réformant la direction des Beaux-Arts se succèdent dans les années 1905-1907 :</html:p>
+            <html:p>- le 25 janvier 1905 est créé le sous-secrétariat d'État aux beaux-arts dirigé par Étienne Dujardin-Beaumetz ;</html:p>
+            <html:p>- la loi du 9 décembre 1905 relative à la séparation des Églises et de l’État a pour conséquence la fusion du service des Monuments historiques avec le service des édifices cultuels. En effet, la loi de finances du 17 avril 1906 transfère aux beaux-arts le service des édifices diocésains avec ses crédits et son personnel administratif et technique : la liquidation des cultes, les édifices paroissiaux et diocésains sont réunis et transférés à l'administration des beaux-arts sous la dénomination provisoire de bureau des édifices cultuels.</html:p>
+            <html:p>- en juillet 1907, les deux services fusionnés (monuments historiques et édifices cultuels) rejoignent la nouvelle division des services d’architecture créée au sein des Beaux-Arts et dirigée par Paul Léon.</html:p>
+            <html:p>- le décret du 26 avril 1907 porte sur l’organisation d'un service des antiquités et objets d'art.</html:p>
+            <html:p/>
+            <html:p>Deux réformes viennent encore modifier l'organisation des Beaux-Arts qui subsiste jusqu'à la Seconde guerre mondiale :</html:p>
+            <html:p>- l'article 95 de la loi de finances du 27 décembre 1927 transforme la direction des Beaux-Arts en direction générale. Le directeur général, nommé par décret du président de la République, est à la tête de six services.</html:p>
+            <html:p>- le décret du 23 janvier 1934 réorganisant le fonctionnement de la direction générale des beaux-arts : le bureau de la liquidation des dépenses et du contentieux est notamment supprimé.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000016-051158-18700101-19401231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051158-051163-19400101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051158-051125-18700101-19071231"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051158-051126-19070101-19391231"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051157-051158-18700101-*"/>
+      <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050753-051158-19060101-19331231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12238953d#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050924-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050924-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050913-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050913-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050925-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050925-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052750-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/052750-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053381-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/053381-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/050931-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/050931-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054718-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054718-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/027067-051158"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/027067-top"/>
+   </rico:Agent>
+</rdf:RDF>

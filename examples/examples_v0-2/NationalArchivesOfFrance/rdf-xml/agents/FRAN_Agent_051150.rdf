@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051150">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051150"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:creationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@. F. Clavaud, 3 décembre 2015 : revu la description et les liens</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051150">
+            <rico:isInstantiationOf rdf:resource="record/051150"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051150</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051150"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051150">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051150"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction de l'architecture. Sous-direction des Monuments Historiques et des Sites (18 août 1945-8 janvier 1959)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051150-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Direction%20de%20l%27architecture.%20Sous-direction%20des%20Monuments%20Historiques%20et%20des%20Sites%20%2818%20ao%C3%BBt%201945-8%20janvier%201959%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction de l'architecture. Sous-direction des Monuments Historiques et des Sites (18 août 1945-8 janvier 1959)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Direction de l'architecture. Sous-direction des Monuments Historiques et des Sites (18 août 1945-8 janvier 1959)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051150"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051150-France.%20Minist%C3%A8re%20de%20la%20Jeunesse%2C%20des%20Arts%20et%20des%20Lettres.%20Direction%20g%C3%A9n%C3%A9rale%20de%20l%27architecture.%20Direction%20des%20Monuments%20historiques%20et%20des%20Sites%20%28janvier%201947-octobre%201947%29-19470101-19471031">
+            <rdfs:label xml:lang="fr">France. Ministère de la Jeunesse, des Arts et des Lettres. Direction générale de l'architecture. Direction des Monuments historiques et des Sites (janvier 1947-octobre 1947)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Jeunesse, des Arts et des Lettres. Direction générale de l'architecture. Direction des Monuments historiques et des Sites (janvier 1947-octobre 1947)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051150"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-10-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051150-France.%20Minist%C3%A8re%20de%20l%27%C3%89ducation%20nationale.%20Direction%20g%C3%A9n%C3%A9rale%20de%20l%27architecture.%20Direction%20des%20Monuments%20historiques%20%281945-d%C3%A9cembre%201946%29-19450818-19461231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction générale de l'architecture. Direction des Monuments historiques (1945-décembre 1946)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Éducation nationale. Direction générale de l'architecture. Direction des Monuments historiques (1945-décembre 1946)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051150"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051150-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051150"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051150-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>De 1945 à 1946, la direction des Monuments historiques est composée d’un directeur (André Lapeyre) et de quatre bureaux :</html:p>
+            <html:p>- Travaux et classements (chef de bureau : François Sorlin)</html:p>
+            <html:p>- Documentation, Fouilles et Antiquités (chef de bureau : Joëlle Bromberger)</html:p>
+            <html:p>- Marchés et la liquidation (chef de bureau : Pierre Decieux)</html:p>
+            <html:p>- Contrôle technique (contrôleur général : Charles de Saint Jean)</html:p>
+            <html:p>Un service des Sites, perspectives et paysages (chef : Mme Vallée) existe par ailleurs au sein de la direction de l'architecure.</html:p>
+            <html:p/>
+            <html:p>De 1947 à 1959, la sous-direction des monuments historiques et des sites est composée de trois bureaux :</html:p>
+            <html:p>- Travaux et classements (Raymond Boquet)</html:p>
+            <html:p>- Documentation générale, Fouilles et Antiquités (chef de bureau : Joëlle Bromberger, puis M. Brichet)</html:p>
+            <html:p>- Sites (chef de bureau : Mme Vallée, puis Colette Meynier)</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le 18 août 1945 est créée au sein du ministère de l’Éducation nationale la direction générale de l’architecture (anciennement direction des services d'architecture sous le régime de Vichy). Elle a en charge les monuments historiques et les sites, mais aussi les bâtiments civils et palais nationaux, les fouilles archéologiques et l’architecture.</html:p>
+            <html:p>En janvier 1947, la direction générale de l'architecture rejoint temporairement le ministère de la Jeunesse, des Arts et des Lettres, nouvellement créé. Ce dernier prend au ministère de l'Éducation nationale les compétences en Beaux-Arts et en architecture. Après le remaniement d'octobre 1947, le ministère de la Jeunesse, des Arts et des Lettres est supprimé et le ministère de l’Éducation nationale retrouve ses attributions antérieures : les directions des arts, des lettres et de l'architecture.</html:p>
+            <html:p>La sous-direction ou direction des monuments historiques restera au sein du ministère de l'Éducation nationale jusqu'à la création du ministère des Affaires culturelles le 26 juillet 1959.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051149-051150-19450818-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051150-051151-19590108-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051182-051150-19450818-19590108"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051150-051164-19450818-19590108"/>
+   </rico:Agent>
+</rdf:RDF>

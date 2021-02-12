@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051155">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051155"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach national</html:i>, Paris, chez A. Guyot et Scribe, 1848-1852</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Pierre Vaisse, « Considérations sur la Seconde République et les beaux-arts »,<html:i>Revue d'histoire du XIXe siècle</html:i>[En ligne], 1 | 1985, mis en ligne le 20 juin 2005, consulté le 05 août 2015. URL : http://rh19.revues.org/6 ; DOI : 10.4000/rh19.6</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr"/>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051155">
+            <rico:isInstantiationOf rdf:resource="record/051155"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051155</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051155"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051155">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051155"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1848-1852)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051155-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20Beaux-Arts%20%281848-1852%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1848-1852)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1848-1852)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051155"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051155-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Division%20des%20Beaux-Arts%20%281848-1852%29-18480101-18521231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Division des Beaux-Arts (1848-1852)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Division des Beaux-Arts (1848-1852)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051155"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051155-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051155"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051155-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La division des Beaux-Arts est dirigée par Charles Blanc qui est remplacé par de Guizard à partir de 1850.</html:p>
+            <html:p>Elle ne compte plus que deux bureaux, au lieu de quatre (le bureau Imprimeries et Librairies ayant rejoint la division de la Surêté générale) : le bureau des Beaux-Arts qui fusionne avec les Monuments historiques et le bureau des Théâtres.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Placée depuis 1834 au sein du ministère de l'Intérieur, la direction des Beaux-Arts voit ses attributions modifiées en 1848. Avec la proclamation de la Seconde République, les Beaux-Arts récupèrent en effet la gestion des musées nationaux.</html:p>
+            <html:p/>
+            <html:p>D'octobre 1848 à décembre 1851, deux commissions permanentes sont créées : la commission des Beaux-Arts et la commission des théâtres. La commission permanente des Beaux-Arts est chargée de donner son avis sur l’emploi et la répartition des crédits, sur les répartitions d’ouvrages d’art, sur les écoles d’art et sur les expositions. La commission permanente des théâtres est chargée des affaires relatives aux théâtres (législation, administration, exécution des lois et des cahiers des charges).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051154-051155-18480101-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051155-051156-18530101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051155-051121-18480101-18521231"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054745-051155"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054745-top"/>
+   </rico:Agent>
+</rdf:RDF>

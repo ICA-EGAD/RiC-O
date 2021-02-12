@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/009943">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/009943"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-29</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-29</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-29</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 29 mars 2017 : revu les liens, ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Richter (Noë), "Histoire de la lecture publique en France", Bulletin des bibliothèques de France, n° 1, 1977. Disponible sur le Web : &lt;http://bbf.enssib.fr/consulter/bbf-1977-01-0001-001&gt;. ISSN 1292-8399.</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF12429252 (http://catalogue.bnf.fr/ark:/12148/cb12429252h)</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012195512X"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009943">
+            <rico:isInstantiationOf rdf:resource="record/009943"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_009943</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009943"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/009943">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/009943"/>
+      <isni:identifierValid>000000012195512X</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique (1945-1975)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-France.%20Direction%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique%20%281945-1975%29">
+            <rdfs:label xml:lang="fr">France. Direction des bibliothèques et de la lecture publique (1945-1975)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction des bibliothèques et de la lecture publique (1945-1975)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-DBLP">
+            <rdfs:label xml:lang="fr">DBLP</rdfs:label>
+            <rico:textualValue xml:lang="fr">DBLP</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-Direction%20des%20biblioth%C3%A8ques%20de%20France%20et%20de%20la%20lecture%20publique-19450818-19491231">
+            <rdfs:label xml:lang="fr">Direction des bibliothèques de France et de la lecture publique</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des bibliothèques de France et de la lecture publique</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-Services%20des%20biblioth%C3%A8ques%20de%20France%20et%20de%20la%20lecture%20publique-19490101-19531231">
+            <rdfs:label xml:lang="fr">Services des bibliothèques de France et de la lecture publique</rdfs:label>
+            <rico:textualValue xml:lang="fr">Services des bibliothèques de France et de la lecture publique</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-Direction%20des%20biblioth%C3%A8ques%20de%20France-19530101-19651231">
+            <rdfs:label xml:lang="fr">Direction des bibliothèques de France</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des bibliothèques de France</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-Direction%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique-19650101-19721231">
+            <rdfs:label xml:lang="fr">Direction des bibliothèques et de la lecture publique</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction des bibliothèques et de la lecture publique</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/009943-Direction%20charg%C3%A9e%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20publique-19720101-19741231">
+            <rdfs:label xml:lang="fr">Direction chargée des bibliothèques et de la lecture publique</rdfs:label>
+            <rico:textualValue xml:lang="fr">Direction chargée des bibliothèques et de la lecture publique</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/009943"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-12-31</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyugsjkt--7vpbe5hqjvzi">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyugsjkt--7vpbe5hqjvzi"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugsjkt--7vpbe5hqjvzi"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d5bhvijq5z-zaaj99p5tmch">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d5bhvijq5z-zaaj99p5tmch"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyui3ce2-byd3yisqum1a">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyui3ce2-byd3yisqum1a"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui3ce2-byd3yisqum1a"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyuich4a--1xmt90d5s8n8k">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyuich4a--1xmt90d5s8n8k"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuich4a--1xmt90d5s8n8k"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/009943-d3nyuhp1um--qolq4osvi6b5">
+            <rico:performanceRelationHasTarget rdf:resource="agent/009943"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/009943-d3nyuhp1um--qolq4osvi6b5"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La direction des bibliothèques et de la lecture publique est constituée :</html:p>
+            <html:ul>
+               <html:li>d'un service technique dirigé par un conservateur ;</html:li>
+               <html:li>d'un bureau du personnel (premier bureau, bureau du personnel et des affaires générales à partir de 1952) ;</html:li>
+               <html:li>d'un bureau de la comptabilité (deuxième bureau, bureau de la gestion et du contrôle financier à partir de 1949). En 1965, le deuxième bureau se divise en un deuxième bureau chargé de la gestion et du contrôle financier, et un troisième bureau chargé des affaires générales, de la documentation et du matériel. Les premier, deuxième et troisième bureaux forment les services administratifs ;</html:li>
+               <html:li>d'une Commission supérieure des bibliothèques et d'un Comité consultatif provisoire de la lecture publique (puis Inspection générale) où siègent trois inspecteurs généraux (jusqu'en 1949) ;</html:li>
+               <html:li>à partir de 1961 s'ajoutent le Comité des travaux historiques et scientifiques et la Commission d'histoire économique et sociale de la Révolution française ;</html:li>
+               <html:li>en 1968 apparaît un service de la lecture publique, rapidement incorporé aux services techniques.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>La direction des bibliothèques de France et de la lecture publique (DBLP) est créée par le décret du 18 août 1945 organisant la direction générale des Arts et Lettres (DGAL) au sein du ministère de l'Éducation nationale.</html:p>
+            <html:p>La création d'une direction des bibliothèques avait été une revendication constante des associations professionnelles entre les deux guerres. Certes, il y avait toujours eu dans l'administration centrale, depuis la Révolution, des services spécialisés qui règlementaient et contrôlaient l'activité des bibliothèques. En 1897, ils avaient été regroupés au sein de la direction de l'enseignement supérieur du ministère de l'Instruction publique, et le gouvernement de Vichy les avait réunis en un unique « Bureau des Bibliothèques ». Mais ces services et ce bureau n'étaient que des services administratifs. Le décret du 18 août 1945, qui crée la Direction des bibliothèques et de la lecture publique leur adjoint un service technique. Travaillant en liaison étroite avec l'inspection générale, ce service promeut une politique d'ensemble en normalisant et en coordonnant l'activité des différentes catégories de bibliothèques. L'action de la direction des bibliothèques est considérable dans tous les domaines : reconstruction des bibliothèques sinistrées, modernisation et réorganisation des bibliothèques universitaires, élaboration des statuts des différentes catégories du personnel, organisation de la formation, de l'information et de la documentation professionnelles, développement des relations internationales.</html:p>
+            <html:p>La DBLP est placée sous l'autorité de la DGAL jusqu'en 1950, date à partir de laquelle elle devient autonome au sein du ministère de l'Éducation nationale. En 1975, elle est brièvement placée sous l'autorité du Secrétariat d'État aux Universités.</html:p>
+            <html:p>Le 2 juillet 1975, une décision du conseil des ministres supprime la DBLP et répartit ses attributions entre le secrétariat d'État aux Universités et le secrétariat d'État à la Culture. Le partage est précisé par le décret n° 75-10003 du 29 octobre 1975, effectif le 1er janvier 1976. Un décret du 23 décembre 1975 crée à partir du 1er janvier 1976 une direction du livre au sein du Secrétariat d'État à la Culture.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Fonctions :</html:u>
+            </html:p>
+            <html:p>La DBLP, par l'intermédiaire de son service technique, est chargée de l'étude des problèmes techniques concernant le classement, l'établissement des catalogues, la conservation et la communication des documents et des livres, l'élaboration et de la diffusion des règlements concernant les bibliothèques, la normalisation. Elle a également en charge les questions relatives à la formation du personnel technique et scientifique des bibliothèques, ainsi qu'aux stages pour les étrangers. Elle est responsable des souscriptions scientifiques et littéraires et des relations avec les sociétés savantes. À partir de 1967, son service de la lecture publique gère les relations avec les bibliothèques municipales et les bibliothèques centrales de prêt. Son service du personnel est chargé du personnel des bibliothèques nationales, universitaires, scientifiques et des bibliothèques municipales classées. Enfin, ses services administratifs sont chargés de la gestion budgétaire, des statistiques et de la documentation, ou encore de la gestion du matériel.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Directeurs :</html:u>
+            </html:p>
+            <html:ul>
+               <html:li>Marcel Bouteron (1945)</html:li>
+               <html:li>Julien Cain (1946-1964)</html:li>
+               <html:li>Étienne Dennery (1964-1975)</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-009943-19450818-19501231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000016-009943-19510101-19741231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003551-19680101-19701231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003532-19650101-19751231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003944-009943-19750101-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003552-19450818-19751231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003529-19450818-19641231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/009943-003531-19450818-19641231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-009943-19450818-19751231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/009943-005099-19760101-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005090-009943-19450818-19751231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12429252h#about"/>
+   </rico:Agent>
+</rdf:RDF>

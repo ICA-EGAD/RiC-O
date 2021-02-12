@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051154">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051154"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr"/>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach royal et national</html:i>, Paris, chez A. Guyot et Scribe, 1839-1848</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051154">
+            <rico:isInstantiationOf rdf:resource="record/051154"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051154</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051154"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051154">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051154"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1834-1848)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051154-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Direction%20des%20Beaux-Arts%20%281834-1848%29">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1834-1848)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts (1834-1848)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051154"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051154-France.%20Minist%C3%A8re%20de%20l%27Int%C3%A9rieur.%20Division%20des%20Beaux-Arts%20%281834-1848%29-18340101-18481231">
+            <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Division des Beaux-Arts (1834-1848)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de l'Intérieur. Division des Beaux-Arts (1834-1848)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051154"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051154-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051154"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051154-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Ordonnance du 6 avril 1834 règlant les nouvelles attributions des ministères de l'Intérieur et du Commerce : http://gallica.bnf.fr/ark:/12148/bpt6k486412q/f196.image</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La division des Beaux-Arts (dirigée par Cavé) comprend un bureau des Beaux-Arts, un bureau des Théâtres, un bureau Imprimeries et Librairies et un bureau des Monuments historiques (à partir de 1839).</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>En 1834, la direction des Beaux-Arts quitte le ministère du Commerce et des Travaux publics pour rejoindre le ministère de l'Intérieur où elle avait vu le jour dès 1789.</html:p>
+            <html:p>Les Beaux-Arts prennent de l'importance et forment une division à part entière en changeant de ministère. La fonction était exercée jusqu'alors par un bureau des Beaux-Arts placé au sein d’une division regroupant les Beaux-Arts, les Sciences et les Belles-Lettres.</html:p>
+            <html:p>Le nom du service change peu : il devient tour à tour « direction » et « division ».</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051154-051155-18480101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051154-051120-18390101-18481231"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054745-051154"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054745-top"/>
+   </rico:Agent>
+</rdf:RDF>

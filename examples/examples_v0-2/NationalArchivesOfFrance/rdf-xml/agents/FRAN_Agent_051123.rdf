@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051123">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051123"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:creationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-08</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette,<html:i>Quand les monuments construisaient la nation : le service des monuments historiques de 1830 à 1940</html:i>, Comité d'histoire du ministère de la Culture, 2008</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Auduc Arlette, "Le budget des Monuments historiques 1830-1920 : les moyens d'une politique de protection". In :<html:i>Livraisons d'histoire de l'architecture</html:i>. n°3, 1er semestre 2002. pp. 75-102. Disponible à cette adresse : http://www.persee.fr/web/revues/home/prescript/article/lha_1627-4970_2002_num_3_1_900</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Almanach impérial</html:i>, Paris, chez A. Guyot et Scribe, 1858-1863</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://culturecommunication.gouv.fr/Politiques-ministerielles/Monuments-historiques/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051123">
+            <rico:isInstantiationOf rdf:resource="record/051123"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051123</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051123"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051123">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051123"/>
+      <rdfs:label xml:lang="fr">France. Ministère d'État. Bureau des Monuments historiques (1858-1863)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051123-France.%20Minist%C3%A8re%20d%27%C3%89tat.%20Bureau%20des%20Monuments%20historiques%20%281858-1863%29">
+            <rdfs:label xml:lang="fr">France. Ministère d'État. Bureau des Monuments historiques (1858-1863)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère d'État. Bureau des Monuments historiques (1858-1863)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051123"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051123-France.%20Minist%C3%A8re%20d%27%C3%89tat.%20Service%20des%20Monuments%20historiques%20%281858-1863%29-18580101-18631231">
+            <rdfs:label xml:lang="fr">France. Ministère d'État. Service des Monuments historiques (1858-1863)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère d'État. Service des Monuments historiques (1858-1863)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051123"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1858-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1858-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-12-31</rico:endDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051123-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051123"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051123-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Arrêté ministériel du 3 juillet 1858 faisant entrer le service des monuments historiques dans les attributions du secrétaire général du ministère d'État ; Décret du 23 juin 1863 transférant les attributions relatives aux Beaux-Arts à la Maison de l'Empereur</html:p>
+      </rico:authorizingMandate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le bureau est composé d’un chef (Henry Courmont puis M. Gasnier), d’une inspection des Monuments historiques (comprenant trois inspecteurs) et de la Commission des Monuments historiques.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Créé en 1839 au sein du ministère de l'Intérieur, le bureau des Monuments historiques est transféré au ministère d’État avec le décret du 14 février 1853.</html:p>
+            <html:p>Les Monuments historiques (ainsi que le bureau des théâtres) sont rattachés à l'administration des Beaux-Arts de façon durable dès 1839. L’arrêté ministériel du 3 juillet 1858 leur fait quitter les Beaux-Arts et les érige en divisions. Les trois nouvelles divisions (Beaux-Arts, Monuments historiques, Théâtres) sont placées sous l’autorité directe du secrétariat général du ministère d’État.</html:p>
+            <html:p>Le service des Monuments historiques ne réintégre l’administration des Beaux-Arts qu'en 1863, lorsqu'il quitte le ministère d'État pour rejoindre la Maison de l'Empereur.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051122-051123-18580101-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051123-051124-18630101-*"/>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/051161-051123-18580101-18631231"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/051123-051164-18580101-18631231"/>
+   </rico:Agent>
+</rdf:RDF>

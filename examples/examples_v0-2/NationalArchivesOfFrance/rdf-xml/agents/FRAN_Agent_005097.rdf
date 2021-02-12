@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005097">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005097"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 avril 2017 : révision en fonction des données réunies par Marine Zelverte ; revision des liens NP</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005097">
+            <rico:isInstantiationOf rdf:resource="record/005097"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005097</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005097"/>
+            <rico:identifier>5103/P</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005097">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005097"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Département des politiques documentaires et patrimoniales (1995-2010)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005097-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20D%C3%A9partement%20des%20politiques%20documentaires%20et%20patrimoniales%20%281995-2010%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Département des politiques documentaires et patrimoniales (1995-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Département des politiques documentaires et patrimoniales (1995-2010)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005097"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-12</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-12</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005097-d3nyuh17x9-p3lv1gh3hjbu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005097"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005097-d3nyuh17x9-p3lv1gh3hjbu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh17x9-p3lv1gh3hjbu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005097-d3nyuhebkg-a4o80yedjeb">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005097"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005097-d3nyuhebkg-a4o80yedjeb"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhebkg-a4o80yedjeb"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005097-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005097"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005097-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Conformément à l'article 1 de l'arrêté du 9 mai 1995 relatif à l'organisation de la DLL, le département des politiques documentaires et patrimoniales est composé de deux bureaux :</html:p>
+            <html:p>- le bureau de la politique documentaire et de la formation (qui devient le bureau de la politique documentaire en 2000) ;</html:p>
+            <html:p>- le bureau du patrimoine.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique</html:u>:</html:p>
+            <html:p>Le département des politiques documentaires et patrimoniales est créé au sein de la direction du Livre et de la Lecture (DLL) suite à deux arrêtés du 9 mai 1995 (publiés au Journal Officiel du 11 mai), qui réorganisent la direction. Il reprend une partie des missions du département de l'action régionale et des bibliothèques territoriales (bureau du patrimoine) et du département des bibliothèques de l'État et des affaires générales (bureau de la tutelle et des projets nationaux).</html:p>
+            <html:p>Il disparaît avec la DLL en vertu du décret du 11 novembre 2009 (entré en vigueur le 13 janvier 2010) qui redéfinit l'organisation du ministère en réduisant le nombre des directions à trois.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions</html:u>:</html:p>
+            <html:p>Le département des politiques documentaires et patrimoniales coordonne les actions menées dans le domaine de l'information documentaire et scientifique à travers les réseaux de la Bibliothèque nationale et les grands projets de numérisation. Il agit également en faveur de l'enrichissement des collections patrimoniales des bibliothèques municipales, de leur mise en valeur et de leur conservation.</html:p>
+            <html:p>Il est chargé de missions documentaires et de formation : suivi scientifique de la Bibliothèque nationale de France, pilotage de politiques documentaires nationales (pôles associés, Catalogue Collectif de France, Serveur bibliographique national), questions liées aux nouvelles technologies, dépôt légal, formation du personnel des bibliothèques. Il perd sa mission de formation en 2000, au profit du bureau des affaires générales.</html:p>
+            <html:p>En matière patrimoniale, il évalue et gère des collections patrimoniales, aide aux acquisitions et préemptions, définit une politique de microfilmage, restauration, conservation préventive, et contrôle la circulation des ouvrages rares et précieux.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005674-005097-19950512-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005673-005097-19950512-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005097-005095-19950512-20100112"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005097-005096-19950512-20100112"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005097-005629-20100113-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005097-005628-20100113-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005099-005097-19950512-20100112"/>
+   </rico:Agent>
+</rdf:RDF>

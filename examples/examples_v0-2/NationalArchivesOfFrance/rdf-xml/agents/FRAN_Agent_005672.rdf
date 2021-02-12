@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005672">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005672"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-24</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-22</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-10</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005672">
+            <rico:isInstantiationOf rdf:resource="record/005672"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005672</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005672"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005672">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005672"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des études et des actions communes (1976-1987)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20des%20%C3%A9tudes%20et%20des%20actions%20communes%20%281976-1987%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des études et des actions communes (1976-1987)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau des études et des actions communes (1976-1987)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-Bureau%20de%20la%20documentation%20et%20de%20la%20recherche-19760101-19771231">
+            <rdfs:label xml:lang="fr">Bureau de la documentation et de la recherche</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau de la documentation et de la recherche</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-Bureau%20de%20la%20coop%C3%A9ration%20et%20de%20la%20recherche-19770101-19791231">
+            <rdfs:label xml:lang="fr">Bureau de la coopération et de la recherche</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau de la coopération et de la recherche</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-Bureau%20des%20%C3%A9tudes%20et%20des%20actions%20communes-19800101-19861231">
+            <rdfs:label xml:lang="fr">Bureau des études et des actions communes</rdfs:label>
+            <rico:textualValue xml:lang="fr">Bureau des études et des actions communes</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-DL%207-19760101-19791231">
+            <rdfs:label xml:lang="fr">DL 7</rdfs:label>
+            <rico:textualValue xml:lang="fr">DL 7</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005672-L%207-19800101-19861231">
+            <rdfs:label xml:lang="fr">L 7</rdfs:label>
+            <rico:textualValue xml:lang="fr">L 7</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005672"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-20</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005672-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005672"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005672-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005672-d3nyuhebkg-a4o80yedjeb">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005672"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005672-d3nyuhebkg-a4o80yedjeb"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhebkg-a4o80yedjeb"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005672-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005672"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005672-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005672-d3nyuhp1um--qolq4osvi6b5">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005672"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005672-d3nyuhp1um--qolq4osvi6b5"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le bureau de la documentation et de la recherche apparaît suite au décret du 23 décembre 1975 qui crée la direction du Livre (DL). Il en constitue le septième bureau, au sein du service des bibliothèques publiques. Vers 1977, il devient le bureau de la coopération et de la recherche, puis le bureau des études et des actions communes vers 1979.</html:p>
+            <html:p>Il disparaît dans les faits dès 1986, lorsque l'organisation du service des bibliothèques publiques et de la lecture est refondue dans le contexte des lois de décentralisation.</html:p>
+            <html:p>Sa disparition est entérinée par l'arrêté du 16 février 1987 (publié au Journal Officiel le 20 mai) qui fixe la nouvelle organisation du département des bibliothèques et de la lecture.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Il a en charge :</html:p>
+            <html:ul>
+               <html:li>la documentation générale ;</html:li>
+               <html:li>les listes bibliographiques ;</html:li>
+               <html:li>les achats centralisés de livres et de disques ;</html:li>
+               <html:li>la recherche ;</html:li>
+               <html:li>la coopération inter-bibliothèques ;</html:li>
+               <html:li>la formation professionnelle, l'organisation des stages ;</html:li>
+               <html:li>les techniques bibliothéconomiques ;</html:li>
+               <html:li>les études générales relatives à la lecture publique ;</html:li>
+               <html:li>l'audiovisuel ;</html:li>
+               <html:li>l'automatisation ;</html:li>
+               <html:li>les actions pour le développement de la lecture dans les milieux défavorisés (à partir de 1984 environ).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005672-005094-19870521-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005672-19760101-19870520"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003550-005672-19760101-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005672-005080-19870521-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005672-005081-19870521-*"/>
+   </rico:Agent>
+</rdf:RDF>

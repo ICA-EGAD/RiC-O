@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/000051">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/000051"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-10</rico:date>
+            <rico:descriptiveNote xml:lang="fr">@protoLinkedData@ / Modification du nom, des liens entre producteurs. Ajout de l'historique, du texte de référence, et des sources. F. Clavaud, 10 décembre 2015 : revu tous les liens.</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Pascal RIVIALE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-15</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 avril 2017 : ajouté lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012.</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Bottin administratif</html:i>, Paris, 1959-1978.</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000123588976"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/000051">
+            <rico:isInstantiationOf rdf:resource="record/000051"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_000051</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/>
+            <rico:identifier>5107</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/000051">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/000051"/>
+      <isni:identifierValid>0000000123588976</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère des affaires culturelles. Direction de l'architecture (1959-1978)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000051-France.%20Minist%C3%A8re%20des%20affaires%20culturelles.%20Direction%20de%20l%27architecture%20%281959-1978%29">
+            <rdfs:label xml:lang="fr">France. Ministère des affaires culturelles. Direction de l'architecture (1959-1978)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère des affaires culturelles. Direction de l'architecture (1959-1978)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000051"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000051-France.%20Minist%C3%A8re%20de%20la%20culture%20et%20de%20l%27environnement.%20Direction%20de%20l%27architecture-19770330-19780331">
+            <rdfs:label xml:lang="fr">France. Ministère de la culture et de l'environnement. Direction de l'architecture</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la culture et de l'environnement. Direction de l'architecture</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000051"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-30</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-03-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/000051-France.%20Secr%C3%A9tariat%20d%27%C3%89tat%20%C3%A0%20la%20culture.%20Direction%20de%20l%27architecture-19740608-19770329">
+            <rdfs:label xml:lang="fr">France. Secrétariat d'État à la culture. Direction de l'architecture</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Secrétariat d'État à la culture. Direction de l'architecture</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/000051"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-29</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-12-31</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000051-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000051"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000051-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000051-d3nyuimm9z--1tz0n2jqoofo0">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000051"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000051-d3nyuimm9z--1tz0n2jqoofo0"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuimm9z--1tz0n2jqoofo0"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/000051-d5bhvihej1--l9t3vj6pa9aa">
+            <rico:performanceRelationHasTarget rdf:resource="agent/000051"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/000051-d5bhvihej1--l9t3vj6pa9aa"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihej1--l9t3vj6pa9aa"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>En 1959, la direction de l'architecture est transférée au ministère des Affaires culturelles nouvellement créé. Elle comprend alors trois sous-directions :</html:p>
+            <html:p>- la sous-direction du personnel, des marchés et de la liquidation des dépenses (qui devient la sous-direction du personnel, de l'organisation et des programmes en 1964) ;</html:p>
+            <html:p>- la sous-direction des monuments historiques et des sites ;</html:p>
+            <html:p>- la sous-direction des bâtiments civils.</html:p>
+            <html:p>Par décret n°64-94 du 29 janvier 1964, le bureau des fouilles et antiquités (de la sous-direction des monuments historiques et des sites) est séparé de la direction de l’architecture et rattaché directement au ministre. Un décret du 23 avril 1964 institue par ailleurs un conseil supérieur de la recherche archéologique. Les circonscriptions des antiquités historiques et des antiquités préhistoriques (services extérieurs) relèvent du bureau (puis du service) des fouilles et antiquités.</html:p>
+            <html:p>Suite à la réorganisation de 1968, la direction de l'architecture est composée de quatre sous-directions :</html:p>
+            <html:p>- la sous-direction du personnel, de l'organisation et des programmes ;</html:p>
+            <html:p>- la sous-direction des monuments historiques et des palais nationaux (qui intègre le service concernant les bâtiments civils) ;</html:p>
+            <html:p>- la sous-direction de la création architecturale et des constructions publiques ;</html:p>
+            <html:p>- la sous-direction des sites et des espaces protégés.</html:p>
+            <html:p>Cette dernière perd en 1971 son bureau de la protection de la nature, lorsque la protection des monuments et sites à caractère naturel est transférée au ministère de l'Environnement.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>La direction de l'architecture trouve ses origines dans le service des bâtiments civils qui a eu une histoire mouvementée de 1793 à 1940, date à laquelle elle devient la direction des services de l'architecture. Elle reste placée au sein de l'administration des Beaux-Arts au ministère de l'Éducation nationale jusqu'à la fin de la Seconde guerre mondiale.</html:p>
+            <html:p>À la Libération, la politique de l'architecture est individualisée au sein du ministère de l'Éducation nationale avec la création de la direction générale (1945-1947) puis direction de l'architecture. Celle-ci est constituée de trois grands pôles : bâtiments civils et palais nationaux ; monuments historiques ; sites, perspectives et paysages. L'enseignement de l'architecture reste du ressort de la direction générale des Arts et lettres, au sein du même ministère de l'Éducation nationale.</html:p>
+            <html:p>La direction de l'architecture et la direction générale des Arts et lettres intègrent le ministère des Affaires culturelles lors de sa création en 1959.</html:p>
+            <html:p>À un moment où, la période de la Reconstruction étant achevée, le ministère de la Construction développe une politique d'urbanisme et de construction active, André Malraux entame une série de transformations importantes de la politique et de l'administration de l'architecture : ouverture à la création contemporaine ; réorganisation de l'enseignement de l'architecture (décret de 1969 et création des Unités pédagogiques d'architecture, devenus en 1983 écoles nationales supérieures d'architecture) ; soutien à la qualité architecturale et à la promotion de l'architecture.</html:p>
+            <html:p>La direction de l'architecture est réorganisée en 1968 avec la disparition du service des bâtiments civils et palais nationaux et la création de la sous-direction de la création architecturale et des constructions publiques aux côtés de la sous-direction des monuments historiques et des palais nationaux et de la sous-direction des sites et espaces protégés.</html:p>
+            <html:p>La loi du 3 janvier 1977 sur l'architecture constitue une étape importante avec : la réorganisation de la profession d'architecte ; l'obligation de recourir à un architecte pour tous travaux soumis à une autorisation de construire ; la création des Conseils d'architecture, d'urbanisme et de l'environnement (CAUE). La même année est créée la Mission interministérielle pour la qualité des constructions publiques (MIQCP), chargée de coordonner, d'informer et de former les services responsables de la maîtrise d'ouvrage publique.</html:p>
+            <html:p>L'année 1978 constitue une étape importante dans la politique de l'architecture, avec la séparation de l'architecture et du patrimoine. La réglementation de la profession, l'enseignement de l'architecture, la création, la qualité et la recherche architecturale, la gestion des abords des monuments historiques et celle des sites et espaces protégés sont transférés au ministère de l'Environnement (1978) puis de l'Équipement (1981), tandis que les monuments historiques et les palais nationaux restent du ressort du ministère de la Culture et sont regroupés, avec l'archéologie, l'Inventaire général des richesses artistiques de la France et l'ethnologie au sein d'une nouvelle direction du patrimoine.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000051-051151-19590108-19780412"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000051-005198-19680101-19781231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/000051-005170-19780101-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-000051-19590108-19781231"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051182-000051-19590101-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb161793834#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/007517-000051"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/007517-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008705-000051"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008705-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008706-000051"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008706-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023465-000051"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/023465-top"/>
+   </rico:Agent>
+</rdf:RDF>

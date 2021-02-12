@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/003944">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/003944"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-16</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Emmanuelle GIRY)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-24</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-17</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 17 mars 2017 : ajouté lien d'identité, lien chronologique, fonction</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Bousquet (Pierre), Histoire de l'administration de l'enseignement en France (1789-1981), Institut français des sciences administratives, Paris Droz, 158 p.</rico:source>
+      <rico:source xml:lang="fr">"Mutations de la science et des universités en France depuis 1945", Le Mouvement social, Paris, La Découverte, n°233, 2010/4, 224 p.</rico:source>
+      <rico:source xml:lang="fr">Bottins administratifs</rico:source>
+      <rico:source xml:lang="fr">Notice BnF n° FRBNF11864090</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000107200935"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/003944">
+            <rico:isInstantiationOf rdf:resource="record/003944"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_003944</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003944"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/003944">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/003944"/>
+      <isni:identifierValid>0000000107200935</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère des Universités (1974-1981)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/003944-France.%20Minist%C3%A8re%20des%20Universit%C3%A9s%20%281974-1981%29">
+            <rdfs:label xml:lang="fr">France. Ministère des Universités (1974-1981)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère des Universités (1974-1981)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/003944"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/003944-Secr%C3%A9tariat%20d%27%C3%89tat%20aux%20Universit%C3%A9s-19740608-19780110">
+            <rdfs:label xml:lang="fr">Secrétariat d'État aux Universités</rdfs:label>
+            <rico:textualValue xml:lang="fr">Secrétariat d'État aux Universités</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/003944"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-10</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-05-13</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/003944-d5bhvihxhx--1dol4k5w0lb2i">
+            <rico:performanceRelationHasTarget rdf:resource="agent/003944"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/003944-d5bhvihxhx--1dol4k5w0lb2i"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihxhx--1dol4k5w0lb2i"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Outre les organes directement rattachés au cabinet du secrétaire d'État puis du ministre des Universités et le secrétariat administratif du Conseil national de l'Enseignement supérieur et de la Recherche, l'administration centrale du ministère (située au 61-65 rue Dutot à Paris dans le 15e arrondissement) comprend les cinq composantes suivantes :</html:p>
+            <html:p>- la délégation aux relations universitaires internationales</html:p>
+            <html:p>- la mission de la recherche</html:p>
+            <html:p>- la direction des affaires générales et financières</html:p>
+            <html:p>- la direction de l'administration des personnels enseignants et techniques</html:p>
+            <html:p>- le service des bibliothèques.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Contexte général</h4>
+            <html:p>L'accession de Valéry Giscard d'Estaing et la création du premier gouvernement Jacques Chirac marque l'apparition d'un secrétariat d'État aux Universités : c'est alors Jean-Pierre Soisson qui est nommé secrétaire d'État aux Universités, fonction qu'il occupe du 8 juin 1974 au 12 janvier 1976. Alice Saunier-Seïté, alors recteur de l'académie de Reims, lui succède. Elle est nommée ministre des Universités par décret du 10 janvier 1978 portant nomination des membres du gouvernement. Elle occupe cette fonction jusqu'à la démission du gouvernement publié au journal officiel le 14 mai 1981 à la suite de l'élection présidentielle de François Mitterrand.</html:p>
+            <html:p>L'action du secrétariat d'État puis du ministère reste très présente dans les mémoires des milieux de l'enseignement supérieur : la période de ce ministère a été marquée par plusieurs mouvements étudiants (agitation étudiante de 1976 sur la réforme des seconds cycles universitaires) et universitaires (grève des personnels enseignants sur l'organisation du recrutement et du travail des assistants, transfert du centre expérimental de Vincennes à Saint-Denis). L'action du ministère sera marquée par un travail sur la gestion administrative des personnels enseignants.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le secrétariat d'État aux Universités, puis ministère des Universités, est organisé à partir de 1974 à partir d'organismes relevant précédemment du ministère de l'Éducation nationale. Sa compétence s'étend sur les politiques d'enseignement supérieur et sur les questions de recherche uniquement lorsque celles-ci rejoignent les problématiques de l'enseignement supérieur. C'est ainsi la Délégation générale à la recherche scientifique et technique (DGRST), créée en 1958, rattachée au premier ministre de 1958 à 1969 puis de 1977 à 1981 et au ministère de l'Industrie de 1969 à 1977, qui est chargée de ces questions durant cette période.</html:p>
+            <html:p>S'il est distinct du ministère de l'Éducation nationale, le ministère des Universités recourt à plusieurs de ses services, qualifiés de services communs aux deux ministères ; il s'agit de la direction des personnels administratifs, de la direction de l'administration générale et du service des études informatiques et statistiques du ministère de l'Éducation nationale.</html:p>
+            <html:p>Parmi les organismes placés sous tutelle du ministère des Universités, on compte la Bibliothèque nationale de France, le Centre national de la Recherche scientifique, l'Institut national de physique nucléaire, l'Institut national d'astronomie et de géophysique, le Centre national des oeuvres universitaires et sociales, la Fondation santé des étudiants de France, l'Union nationale du sport scolaire, l'Office national des universités et écoles françaises et l'Organisation pour le tourisme universitaire.</html:p>
+            <html:p>La nomination d'Alice Saunier-Seïté comme ministre des Universités et le passage du secrétariat d'État aux Universités au ministère des Universités ne change en profondeur ni l'organisation générale de la structure ni son champ de compétences. C'est le changement politique de 1981 qui marque la reconfiguration et la disparition de ce ministère.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/003944-005074-19760101-19810513"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/003944-009943-19750101-19751231"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003944-000016-19810522-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11864090p#about"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056322-003944"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056322-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055742-003944"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055742-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/058054-003944"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/058054-top"/>
+   </rico:Agent>
+</rdf:RDF>

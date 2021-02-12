@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives.strath.ac.uk/">
+<rico:Agent rdf:about="agent/GB-249">
+    <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+    <rdfs:label xml:lang="en">University of Strathclyde Archives and Special Collections
+        (United Kingdom)</rdfs:label>
+    <rico:name xml:lang="en">University of Strathclyde Archives and Special
+        Collections (United Kingdom)</rico:name>
+    <rico:hasOrHadLocation>
+        <rico:Place>
+            <rdfs:label xml:lang="en">Andersonian Library Curran Building</rdfs:label>
+            <rico:name xml:lang="en">Andersonian Library Curran Building</rico:name>
+            <rico:location rdf:parseType="Literal">
+                <html:p xml:lang="en">
+                    <html:span>101 St James Road</html:span>
+                    <html:span>Glasgow</html:span>
+                    <html:span>United Kingdom</html:span>
+                    <html:span>G4 ONS</html:span>
+                </html:p>
+            </rico:location>
+            <rico:descriptiveNote rdf:parseType="Literal">
+                <html:div xml:lang="en">
+                    <html:p>Telephone: +44 (0)141 548 2497</html:p>
+                    <html:p>Fax: +44 (0)141 552 3304</html:p>
+                    <html:p>Email: archives@strath.ac.uk</html:p>
+                </html:div>
+            </rico:descriptiveNote>
+            <rdfs:seeAlso rdf:resource="http://www.strath.ac.uk/archives"/>
+        </rico:Place>
+    </rico:hasOrHadLocation>
+    
+</rico:Agent>
+</rdf:RDF>

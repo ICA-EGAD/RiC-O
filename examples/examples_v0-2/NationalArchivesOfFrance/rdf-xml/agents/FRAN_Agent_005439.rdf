@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005439">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005439"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 28 avril 2017 : création d'une nouvelle version avec les infos fournies par Marine Zelverte ; révision des liens NP ; ajout lien d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Dardy-Cretin (Michèle), Histoire administrative du ministère de la culture et de la communication (1959-2012). Paris: Collection du Comité d'histoire du ministère de la culture et de la communication, 2012</rico:source>
+      <rico:source xml:lang="fr">Site Internet du ministère de la Culture et de la Communication (http://www.culturecommunication.gouv.fr/Ministere/Directions/La-direction-generale-des-medias-et-des-industries-culturelles)</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia : https://fr.wikipedia.org/wiki/Direction_g%C3%A9n%C3%A9rale_des_M%C3%A9dias_et_des_Industries_culturelles</rico:source>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Direction_g%C3%A9n%C3%A9rale_des_M%C3%A9dias_et_des_Industries_culturelles"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005439">
+            <rico:isInstantiationOf rdf:resource="record/005439"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005439</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005439"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005439">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005439"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des Médias et des Industries culturelles (2010-....)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005439-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20g%C3%A9n%C3%A9rale%20des%20M%C3%A9dias%20et%20des%20Industries%20culturelles%20%282010-....%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des Médias et des Industries culturelles (2010-....)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction générale des Médias et des Industries culturelles (2010-....)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005439"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005439-DGMIC">
+            <rdfs:label xml:lang="fr">DGMIC</rdfs:label>
+            <rico:textualValue xml:lang="fr">DGMIC</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005439"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-13</rico:beginningDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyug92d2--81fv3kv7ow8s">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyug92d2--81fv3kv7ow8s"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug92d2--81fv3kv7ow8s"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuh17x9-p3lv1gh3hjbu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuh17x9-p3lv1gh3hjbu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh17x9-p3lv1gh3hjbu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuh38s6-1lg9onn879oxm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuh38s6-1lg9onn879oxm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuh38s6-1lg9onn879oxm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d5bhvijq5z-zaaj99p5tmch">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d5bhvijq5z-zaaj99p5tmch"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijq5z-zaaj99p5tmch"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyui1pz3--1xo3byar8jzxv">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyui1pz3--1xo3byar8jzxv"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d5bhvijcl3--1u6l4sy8b51az">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d5bhvijcl3--1u6l4sy8b51az"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvijcl3--1u6l4sy8b51az"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuic5p0-ktmsglhlnhvr">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuic5p0-ktmsglhlnhvr"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuidsbr-1umshw9gnudo9">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuidsbr-1umshw9gnudo9"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuicsjl-tb7ampjet3iu">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuicsjl-tb7ampjet3iu"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuicsjl-tb7ampjet3iu"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuilwmi-zu0efiq3ap4v">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuilwmi-zu0efiq3ap4v"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuilwmi-zu0efiq3ap4v"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d3nyuhp1um--qolq4osvi6b5">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d3nyuhp1um--qolq4osvi6b5"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005439-d5bhvihqll-iv6mus5ox250">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005439"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005439-d5bhvihqll-iv6mus5ox250"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvihqll-iv6mus5ox250"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>La direction générale des médias et des industries culturelles est organisée par l'arrêté du 17 novembre 2009. Elle comprend :</html:p>
+            <html:ul>
+               <html:li>le service du livre et de la lecture ;</html:li>
+               <html:li>le service des médias ;</html:li>
+               <html:li>la sous-direction du développement de l'économie culturelle ;</html:li>
+               <html:li>le département des affaires financières et générales.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>Le directeur général est assisté d'un chef de service, adjoint au directeur général, et d'un directeur adjoint.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique</html:u>:</html:p>
+            <html:p>Dans le cadre de la révision générale des politiques publiques lancée le 10 juillet 2007 par le Premier Ministre afin de repréciser le périmètre des politiques publiques et de les adapter aux exigences du début du XXIe siècle, le ministère de la Culture et de la Communication a réorganisé son administration centrale autour d’un Secrétariat général et de trois directions générales : la direction générale des patrimoines, la direction générale de la création artistique et la direction générale des médias et des industries culturelles.</html:p>
+            <html:p>La direction générale des Médias et des Industries culturelles (DGMIC) est créée par le décret du 11 novembre 2009 relatif aux missions et à l'organisation de l'administration centrale du ministère de la Culture et de la Communication (entré en vigueur le 13 janvier 2010) : "Elle définit, met en oeuvre et évalue la politique de l'État en faveur du développement et du pluralisme des médias, de l'industrie publicitaire, de l'ensemble des services de communication au public par voie électronique, de l'industrie phonographique, du livre et de la lecture et de l'économie culturelle. Elle suit les activités du Centre national de la Cinématographie." (article 5). Elle résulte de la fusion de la direction du développement des médias (DDM), qui dépendait du Premier Ministre, et de la direction du Livre et de la Lecture (DLL).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions</html:u>:</html:p>
+            <html:p>Ses prérogatives sont fixées par l'article 5 du décret du 11 novembre 2009 :</html:p>
+            <html:ul>
+               <html:li>Elle contribue à définir, mettre en œuvre et évaluer les conditions du développement des industries de diffusion et de production de contenus culturels. Elle participe à l'élaboration et à la mise en œuvre de la politique de l'État en faveur de l'action audiovisuelle extérieure de la France. Elle contribue aux travaux d'étude et d'évaluation économiques et de recherche, ainsi que de veille et d'expertise sur l'évolution des technologies numériques, dans son champ d'activités. Elle veille à l'équilibre entre les différents acteurs qui interviennent dans le domaine du livre et, à ce titre, au développement de l'économie du livre, en France et à l'étranger. Elle favorise le développement de la lecture et procède à l'évaluation des politiques dans le domaine de la lecture publique. Elle contribue à la modernisation des bibliothèques et des médiathèques, et notamment au renforcement des réseaux et services de coopération, ainsi qu'à la formation de leurs personnels. Elle veille à la conservation, à l'enrichissement et à la valorisation du patrimoine des bibliothèques et des médiathèques. Elle exerce le contrôle technique de l'État sur les bibliothèques et les médiathèques des collectivités territoriales.</html:li>
+               <html:li>En lien avec le Secrétariat général, elle élabore la législation et la réglementation relatives à la presse écrite, à la collecte de l'information, à la communication audiovisuelle et aux autres services de communication destinés au public. Dans ces différents secteurs, elle suit les négociations relatives aux professions concernées, elle gère des aides financières attribuées aux entreprises, participe à la mise en œuvre des procédures relevant du droit de la concurrence et contribue au suivi des questions sociales relevant de ces secteurs. Elle instruit les contentieux dans ses domaines de compétence. En lien avec le Secrétariat général, elle contribue à l'élaboration de la position française pour les négociations européennes et internationales touchant à la réglementation et à la régulation des médias, des industries culturelles, du livre et des services en ligne. Elle assure le secrétariat de la commission paritaire des publications et agences de presse. Elle suit l'activité des organismes des secteurs de la presse et de la collecte de l'information soumis à statut particulier ou liés à l'Etat par convention. Elle veille, dans son champ de compétence, à la collecte, à la production et à la diffusion des documents et des données scientifiques, notamment sous forme numérique, et au développement de l'action européenne et internationale. Elle exerce le droit de préemption prévu par le code du patrimoine. Elle propose des mesures destinées à favoriser le développement du mécénat et du marché de l'art et coordonne leur mise en œuvre.</html:li>
+               <html:li>Elle contribue, pour ce qui la concerne, à la politique et à la gestion des ressources humaines, à la stratégie et à la gestion budgétaire, à la tutelle des organismes relevant du ministère, au pilotage des opérations d'équipement, à l'animation des services déconcentrés, aux travaux d'étude, d'observation et de recherche, à la conception et à l'organisation des événements culturels. Elle gère, pour le compte du Premier Ministre, les crédits relatifs à l'action audiovisuelle extérieure.</html:li>
+            </html:ul>
+            <html:p/>
+            <html:p>
+               <html:u>Directeurs</html:u>:</html:p>
+            <html:ul>
+               <html:li>Laurence Franceschini (2010-2015) ;</html:li>
+               <html:li>Martin Adjari (2015-....).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005439-005628-20100113-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005099-005439-20100113-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005089-005439-20100113-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005439-20100113-*"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Direction_g%C3%A9n%C3%A9rale_des_M%C3%A9dias_et_des_Industries_culturelles"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055453-005439"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055453-top"/>
+   </rico:Agent>
+</rdf:RDF>

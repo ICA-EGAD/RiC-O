@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005084">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005084"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-10</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-10</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 10 avril 2017 : version recréée avec nouvelles données fournies par M. Zelverte ; revu les liens IR</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-19</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 19 avril 2017 : recréé lien hiérarchique</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Bottin administratif</rico:source>
+      <rico:source xml:lang="fr">Journal Officiel de la République française</rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005084">
+            <rico:isInstantiationOf rdf:resource="record/005084"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005084</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005084"/>
+            <rico:identifier>5103/BP</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005084">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005084"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du Livre et de la Lecture. Département des bibliothèques et de la lecture (1976-1993)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005084-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20D%C3%A9partement%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture%20%281976-1993%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du Livre et de la Lecture. Département des bibliothèques et de la lecture (1976-1993)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du Livre et de la Lecture. Département des bibliothèques et de la lecture (1976-1993)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005084"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005084-Service%20des%20biblioth%C3%A8ques%20publiques%20et%20de%20la%20lecture-19860101-19871231">
+            <rdfs:label xml:lang="fr">Service des bibliothèques publiques et de la lecture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Service des bibliothèques publiques et de la lecture</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005084"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005084-D%C3%A9partement%20des%20biblioth%C3%A8ques%20et%20de%20la%20lecture-19880101-19921231">
+            <rdfs:label xml:lang="fr">Département des bibliothèques et de la lecture</rdfs:label>
+            <rico:textualValue xml:lang="fr">Département des bibliothèques et de la lecture</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005084"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005084-D%C3%A9partement%20des%20biblioth%C3%A8ques-19930101-19930321">
+            <rdfs:label xml:lang="fr">Département des bibliothèques</rdfs:label>
+            <rico:textualValue xml:lang="fr">Département des bibliothèques</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005084"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-21</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005084-Service%20des%20biblioth%C3%A8ques%20publiques-19760101-19851231">
+            <rdfs:label xml:lang="fr">Service des bibliothèques publiques</rdfs:label>
+            <rico:textualValue xml:lang="fr">Service des bibliothèques publiques</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005084"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-21</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>De 1975 à 1986, le service des bibliothèques publiques est composé de trois bureaux :</html:p>
+            <html:p>- Bureau DL 5 : bibliothèques municipales ;</html:p>
+            <html:p>- Bureau DL 6 : bibliothèques centrales de prêt ;</html:p>
+            <html:p>- Bureau DL 7 : documentation et recherche. En 1977, ce bureau prend le nom de "coopération et recherche", puis "études et actions communes" en 1979.</html:p>
+            <html:p/>
+            <html:p>L'organisation du service est refondue en 1986, dans le contexte des lois de décentralisation qui transfèrent aux départements la gestion des bibliothèques centrales de prêt (qui deviennent bibliothèques départementales de prêt). Le service devient brièvement le<html:b>service des bibliothèques publiques et de la lecture</html:b>et comporte alors deux bureaux et deux cellules :</html:p>
+            <html:p>- Bureau du développement de la lecture ;</html:p>
+            <html:p>- Bureau de la coopération ;</html:p>
+            <html:p>- Cellule Patrimoine ;</html:p>
+            <html:p>- Cellule Formation.</html:p>
+            <html:p/>
+            <html:p>Le<html:b>département des bibliothèques et de la lecture</html:b>est ensuite composé de deux bureaux (arrêté du 16 février 1987) :</html:p>
+            <html:p>- Bureau des établissements et du patrimoine, qui devient Bureau des établissements, du patrimoine et de l'action culturelle ;</html:p>
+            <html:p>- Bureau de la coopération et de la formation.</html:p>
+            <html:p/>
+            <html:p>Ces deux bureaux sont refondus en 1989 :</html:p>
+            <html:p>- Bureau des établissements, de la formation et de la lecture ;</html:p>
+            <html:p>- Bureau du patrimoine, de l'informatique et de l'audiovisuel.</html:p>
+            <html:p/>
+            <html:p>Peu avant sa disparition en 1993, le département des bibliothèques et de la lecture devient brièvement<html:b>département des bibliothèques</html:b>. Il est alors composé de quatre bureaux :</html:p>
+            <html:p>- Bureau des établissements territoriaux ;</html:p>
+            <html:p>- Bureau du développement des collections et du patrimoine ;</html:p>
+            <html:p>- Bureau des formations et des qualifications ;</html:p>
+            <html:p>- Bureau des projets nationaux et des Grands Établissements.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique</html:u>:</html:p>
+            <html:p>Le service des bibliothèques publiques apparaît suite au décret du 23 décembre 1975, qui crée à compter du 1er janvier 1976 la direction du Livre (DL).</html:p>
+            <html:p>Il est réorganisé par l'arrêté du 16 février 1987 relatif à l'organisation de la direction du Livre et de la Lecture (DLL).</html:p>
+            <html:p>Il disparaît avec l'arrêté du 19 mars 1993 (publié au Journal Officiel le 21 mars), qui réorganise entièrement la direction du Livre et de la Lecture.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions</html:u>:</html:p>
+            <html:p>Son domaine d'action est la lecture publique. Il est chargé du contrôle des bibliothèques municipales (subventions pour l'équipement et le fonctionnement, contrôle sur les bâtiments et le matériel, crédits pour l'achat de livres, statistiques...), de la gestion des bibliothèques centrales de prêt (fonctionnement, équipement, bibliobus, plans départementaux de lecture publique...), ainsi que d'une mission d'animation du réseau des bibliothèques (documentation générale, recherche, achats centralisés de livres, puis coopération inter-bibliothèques, formation continue, études générales relatives à la lecture publique...).</html:p>
+            <html:p>Ses fonctions évoluent avec les lois de décentralisation et le transfert de la gestion des bibliothèques centrales de prêt aux départements en 1986 (les bibliothèques centrales de prêt deviennent alors bibliothèques départementales de prêt) : la mission de contrôle et de coopération inter-bibliothèques devient alors primordiale. Les actions de formation prennent également de l'ampleur.</html:p>
+            <html:p>À partir de 1986, le domaine patrimonial rejoint les préoccupations relatives à la lecture publique, avec la création d'une cellule Patrimoine, qui aborde des questions de conservation matérielle, d'acquisitions, de valorisation... Le périmètre des politiques de lecture publique s'élargit (comités d'entreprise, prisons, armée par exemple) et s'ouvre vers la notion d'action culturelle. Le service des bibliothèques publiques et de la lecture est également amené à accompagner le changement technologique : ses missions comprennent progressivement les domaines de l'audiovisuel et de l'informatisation. Le département s'oriente de plus en plus vers des missions d'expertise et de formation dans les domaines du bâtiment, de la conservation préventive, des nouvelles technologies...</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005084-005674-19930322-*"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005671-19760101-19870520"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005080-19870521-19881231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005081-19870521-19881231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005672-19760101-19870520"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005082-19890101-19930321"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005083-19890101-19930321"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005084-005670-19760101-19870520"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005084-005673-19930322-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/003552-005084-19760101-*"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005099-005084-19760101-19930321"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/016323-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/016323-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/022115-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/022115-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008315-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008315-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/014717-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/014717-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023335-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/023335-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/018533-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/018533-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/013663-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/013663-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/023059-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/023059-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/015881-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/015881-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/015882-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/015882-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/019351-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/019351-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/026576-005084"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/026576-top"/>
+   </rico:Agent>
+</rdf:RDF>

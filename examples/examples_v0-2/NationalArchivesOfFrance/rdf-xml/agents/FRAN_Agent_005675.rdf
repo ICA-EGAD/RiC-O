@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005675">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005675"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-22</rico:date>
+            <rico:descriptiveNote xml:lang="fr"/>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-14</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 14 avril 2017 : revu les liens NP</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Bottin administratif</html:p>
+      </rico:source>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005675">
+            <rico:isInstantiationOf rdf:resource="record/005675"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005675</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005675"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005675">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005675"/>
+      <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la tutelle et des projets nationaux (1993-1995)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005675-France.%20Direction%20du%20Livre%20et%20de%20la%20Lecture.%20Bureau%20de%20la%20tutelle%20et%20des%20projets%20nationaux%20%281993-1995%29">
+            <rdfs:label xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la tutelle et des projets nationaux (1993-1995)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Direction du Livre et de la Lecture. Bureau de la tutelle et des projets nationaux (1993-1995)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005675"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-22</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-11</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005675-d3nyuhrig1--3acyzmp9v988">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005675"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005675-d3nyuhrig1--3acyzmp9v988"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuhrig1--3acyzmp9v988"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005675-d3nyuilwmi-zu0efiq3ap4v">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005675"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005675-d3nyuilwmi-zu0efiq3ap4v"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyuilwmi-zu0efiq3ap4v"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Le bureau de la tutelle et des projets nationaux constitue l'un des deux bureaux du département des bibliothèques de l'État et des affaires générales, qui remplace le département des bibliothèques et de la lecture au sein de la direction du Livre et de la Lecture (DLL) en 1993 (arrêté du 19 mars 1993 publié au Journal Officiel le 21 mars). Il reprend une partie des missions du bureau des établissements, de la formation et de la lecture, ainsi que de celles du bureau du patrimoine, de l'informatique et de l'audiovisuel.</html:p>
+            <html:p>Il disparaît avec deux arrêtés du 9 mai 1995 qui réorganisent entièrement la DLL (publiés au Journal Officiel le 11 mai).</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Il est chargé :</html:p>
+            <html:ul>
+               <html:li>du suivi de la tutelle des établissements publics (Bibliothèque nationale puis BnF, Bibliothèque publique d'information, Centre national du Livre), du suivi des projets Bibliothèque de France, du Serveur bibliographique national, de la bibliothèque nationale des arts ;</html:li>
+               <html:li>du suivi des statuts et de la formation (évaluation nationale des politiques de formation, évaluation des compétences dans les bibliothèques, coordination de la formation continue des personnels d'État).</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005082-005675-19930322-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005083-005675-19930322-*"/>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005675-005095-19950512-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005675-051355-19940101-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005075-005675-19930322-19950511"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005422-005675-19930322-19950511"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005673-005675-19930322-19950511"/>
+   </rico:Agent>
+</rdf:RDF>

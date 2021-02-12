@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/009555">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:title xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF) (1932-1990) : Répertoire (19970352/1-19970352/65)</rico:title>
+      <rdfs:label xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF) (1932-1990) : Répertoire (19970352/1-19970352/65)</rdfs:label>
+      <rico:hasPublisher rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1997</rico:publicationDate>
+      <rico:describesOrDescribed rdf:resource="recordResource/009555-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-i1">
+            <rico:isInstantiationOf rdf:resource="record/009555"/>
+            <rico:title xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF) (1932-1990) : Répertoire (19970352/1-19970352/65)</rico:title>
+            <rdfs:label xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF) (1932-1990) : Répertoire (19970352/1-19970352/65)</rdfs:label>
+            <rico:history xml:lang="fr">Cet instrument de recherche a été encodé en 2011 par l'entreprise diadeis dans le cadre du chantier de dématérialisation des instruments de recherche des Archives Nationales sur la base d'une DTD conforme à la DTD EAD (encoded archival description) et créée par le service de dématérialisation des instruments de recherche des Archives Nationales</rico:history>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_009555</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_009555"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/009555-top">
+      <rico:isOrWasDescribedBy rdf:resource="record/009555"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+      <rico:title xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF)</rico:title>
+      <rdfs:label xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF)</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
+      <rico:date xml:lang="fr">1932-1990</rico:date>
+      <rico:hasProvenance rdf:resource="agent/005074"/>
+      <rico:structure rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Classement nominatif</html:p>
+         </html:div>
+      </rico:structure>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:p xml:lang="fr">Art 1-65 : Minutiers chronologiques, 1932-1990</html:p>
+      </rico:scopeAndContent>
+      <rico:hasOrHadSubject rdf:resource="thing/FRAN_RI_004-d3ndfrp3mg--1guedvf9xuow2"/>
+      <rico:hasOrHadSubject rdf:resource="thing/FRAN_RI_004-d3ndfmcq4l--5h20v5l4qu7n"/>
+    <!--  <genreform authfilenumber="d699mmxhwr0-4f15mrcy9b9z" source="FRAN_RI_001"
+         >correspondance</genreform>
+      <genreform authfilenumber="d3nd8bmfh4-mfggewbaaxe9" source="FRAN_RI_001">chrono</genreform>-->
+      <!-- corrected manually -->
+      <!--<rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d699mmxhwr0-4f15mrcy9b9z"/>-->
+      <rico:hasOrHadAllMembersWithDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d699mmxhwr0-4f15mrcy9b9z"/>
+      <!--<rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bmfh4-mfggewbaaxe9"/>-->
+      <rico:hasRecordSetType/>
+      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-top-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-top"/>
+            <rico:identifier>19970352/1-19970352/65</rico:identifier>
+            <rico:title xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF)</rico:title>
+            <rdfs:label xml:lang="fr">Culture ; Bibliothèque nationale de France (BNF)</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</rico:endDate>
+            <rico:date xml:lang="fr">1932-1990</rico:date>
+            <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0"/>
+            <rico:hasProvenance rdf:resource="agent/005074"/>
+            <rico:structure rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:p>Classement nominatif</html:p>
+               </html:div>
+            </rico:structure>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/top"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_1"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_2"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_3"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_4"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_5"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_6"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_7"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_8"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_9"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_10"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_11"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_12"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_13"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_14"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_15"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_16"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_17"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_18"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_19"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_20"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_21"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_22"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_23"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_24"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_25"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_26"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_27"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_28"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_29"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_30"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_31"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_32"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_33"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_34"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_35"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_36"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_37"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_38"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_39"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_40"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_41"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_42"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_43"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_44"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_45"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_46"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_47"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_48"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_49"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_50"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_51"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_52"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_53"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_54"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_55"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_56"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_57"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_58"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_59"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_60"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_61"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_62"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_63"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_64"/>
+      <rico:includesOrIncluded rdf:resource="recordResource/009555-d_65"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_1">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1932-1933</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1932-1933</rdfs:label>
+      <rico:title xml:lang="fr">courrier recommandation. 1932-1938</rico:title>
+      <rdfs:label xml:lang="fr">courrier recommandation. 1932-1938</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_1-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_1"/>
+            <rico:identifier>19970352/1</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1932-1933</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1932-1933</rdfs:label>
+            <rico:title xml:lang="fr">courrier recommandation. 1932-1938</rico:title>
+            <rdfs:label xml:lang="fr">courrier recommandation. 1932-1938</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_1"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_2">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1934</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1934</rdfs:label>
+      <rico:title xml:lang="fr">courrier divers. 1933-1939</rico:title>
+      <rdfs:label xml:lang="fr">courrier divers. 1933-1939</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_2-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_2"/>
+            <rico:identifier>19970352/2</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1934</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1934</rdfs:label>
+            <rico:title xml:lang="fr">courrier divers. 1933-1939</rico:title>
+            <rdfs:label xml:lang="fr">courrier divers. 1933-1939</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_2"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_3">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1935-1936</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1935-1936</rdfs:label>
+      <rico:title xml:lang="fr">doubles jaunes). 1936-1938</rico:title>
+      <rdfs:label xml:lang="fr">doubles jaunes). 1936-1938</rdfs:label>
+      <rico:title xml:lang="fr">courrier divers. 1936-1938</rico:title>
+      <rdfs:label xml:lang="fr">courrier divers. 1936-1938</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_3-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_3"/>
+            <rico:identifier>19970352/3</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1935-1936</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1935-1936</rdfs:label>
+            <rico:title xml:lang="fr">doubles jaunes). 1936-1938</rico:title>
+            <rdfs:label xml:lang="fr">doubles jaunes). 1936-1938</rdfs:label>
+            <rico:title xml:lang="fr">courrier divers. 1936-1938</rico:title>
+            <rdfs:label xml:lang="fr">courrier divers. 1936-1938</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_3"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_4">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1936-1937</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1936-1937</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_4-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_4"/>
+            <rico:identifier>19970352/4</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1936-1937</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1936-1937</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_4"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_5">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1938-1939</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1938-1939</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_5-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_5"/>
+            <rico:identifier>19970352/5</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1938-1939</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1938-1939</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_5"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_6">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances avec le ministère. 1938-1939</rico:title>
+      <rdfs:label xml:lang="fr">correspondances avec le ministère. 1938-1939</rdfs:label>
+      <rico:title xml:lang="fr">doubles jaunes). 1940-1943</rico:title>
+      <rdfs:label xml:lang="fr">doubles jaunes). 1940-1943</rdfs:label>
+      <rico:title xml:lang="fr">correspondances générales. -1939</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. -1939</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_6-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_6"/>
+            <rico:identifier>19970352/6</rico:identifier>
+            <rico:title xml:lang="fr">correspondances avec le ministère. 1938-1939</rico:title>
+            <rdfs:label xml:lang="fr">correspondances avec le ministère. 1938-1939</rdfs:label>
+            <rico:title xml:lang="fr">doubles jaunes). 1940-1943</rico:title>
+            <rdfs:label xml:lang="fr">doubles jaunes). 1940-1943</rdfs:label>
+            <rico:title xml:lang="fr">correspondances générales. -1939</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. -1939</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_6"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_7">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1940-1941</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1940-1941</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_7-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_7"/>
+            <rico:identifier>19970352/7</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1940-1941</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1940-1941</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_7"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_8">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">courrier administrateur. 1941-1943</rico:title>
+      <rdfs:label xml:lang="fr">courrier administrateur. 1941-1943</rdfs:label>
+      <rico:title xml:lang="fr">correspondance générale</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_8-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_8"/>
+            <rico:identifier>19970352/8</rico:identifier>
+            <rico:title xml:lang="fr">courrier administrateur. 1941-1943</rico:title>
+            <rdfs:label xml:lang="fr">courrier administrateur. 1941-1943</rdfs:label>
+            <rico:title xml:lang="fr">correspondance générale</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_8"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_9">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondance générale. 1942-1943</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale. 1942-1943</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_9-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_9"/>
+            <rico:identifier>19970352/9</rico:identifier>
+            <rico:title xml:lang="fr">correspondance générale. 1942-1943</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale. 1942-1943</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_9"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_10">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondance générale. 1943-1945</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale. 1943-1945</rdfs:label>
+      <rico:title xml:lang="fr">correspondance ministère. 1943-1945</rico:title>
+      <rdfs:label xml:lang="fr">correspondance ministère. 1943-1945</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_10-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_10"/>
+            <rico:identifier>19970352/10</rico:identifier>
+            <rico:title xml:lang="fr">correspondance générale. 1943-1945</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale. 1943-1945</rdfs:label>
+            <rico:title xml:lang="fr">correspondance ministère. 1943-1945</rico:title>
+            <rdfs:label xml:lang="fr">correspondance ministère. 1943-1945</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_10"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_11">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondance générale. 1944</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale. 1944</rdfs:label>
+      <rico:title xml:lang="fr">courrier administrateur. 1944</rico:title>
+      <rdfs:label xml:lang="fr">courrier administrateur. 1944</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_11-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_11"/>
+            <rico:identifier>19970352/11</rico:identifier>
+            <rico:title xml:lang="fr">correspondance générale. 1944</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale. 1944</rdfs:label>
+            <rico:title xml:lang="fr">courrier administrateur. 1944</rico:title>
+            <rdfs:label xml:lang="fr">courrier administrateur. 1944</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_11"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_12">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondance générale. 1945-1946</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale. 1945-1946</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_12-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_12"/>
+            <rico:identifier>19970352/12</rico:identifier>
+            <rico:title xml:lang="fr">correspondance générale. 1945-1946</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale. 1945-1946</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_12"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_13">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondance générale (doubles jaunes). 1946-1947</rico:title>
+      <rdfs:label xml:lang="fr">correspondance générale (doubles jaunes). 1946-1947</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_13-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_13"/>
+            <rico:identifier>19970352/13</rico:identifier>
+            <rico:title xml:lang="fr">correspondance générale (doubles jaunes). 1946-1947</rico:title>
+            <rdfs:label xml:lang="fr">correspondance générale (doubles jaunes). 1946-1947</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_13"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_14">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">doubles jaune(correspondance générale). 1947-1948</rico:title>
+      <rdfs:label xml:lang="fr">doubles jaune(correspondance générale). 1947-1948</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_14-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_14"/>
+            <rico:identifier>19970352/14</rico:identifier>
+            <rico:title xml:lang="fr">doubles jaune(correspondance générale). 1947-1948</rico:title>
+            <rdfs:label xml:lang="fr">doubles jaune(correspondance générale). 1947-1948</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_14"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_15">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1948-1949</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1948-1949</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_15-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_15"/>
+            <rico:identifier>19970352/15</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1948-1949</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1948-1949</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_15"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_16">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales. 1949-1950</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales. 1949-1950</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_16-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_16"/>
+            <rico:identifier>19970352/16</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales. 1949-1950</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales. 1949-1950</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_16"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_17">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1950-1951</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1950-1951</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_17-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_17"/>
+            <rico:identifier>19970352/17</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1950-1951</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1950-1951</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_17"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_18">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1951-1952</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1951-1952</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_18-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_18"/>
+            <rico:identifier>19970352/18</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1951-1952</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1951-1952</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_18"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_19">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1952-1953</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1952-1953</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_19-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_19"/>
+            <rico:identifier>19970352/19</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1952-1953</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1952-1953</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_19"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_20">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1953-1954</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1953-1954</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_20-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_20"/>
+            <rico:identifier>19970352/20</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1953-1954</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1953-1954</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_20"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_21">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1954-1955</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1954-1955</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_21-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_21"/>
+            <rico:identifier>19970352/21</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1954-1955</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1954-1955</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_21"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_22">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1955</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1955</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_22-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_22"/>
+            <rico:identifier>19970352/22</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1955</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1955</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_22"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_23">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1956</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1956</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_23-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_23"/>
+            <rico:identifier>19970352/23</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1956</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1956</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_23"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_24">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1956-1957</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1956-1957</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_24-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_24"/>
+            <rico:identifier>19970352/24</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1956-1957</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1956-1957</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_24"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_25">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1957-1958</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1957-1958</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_25-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_25"/>
+            <rico:identifier>19970352/25</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1957-1958</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1957-1958</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_25"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_26">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1958-1959</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1958-1959</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_26-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_26"/>
+            <rico:identifier>19970352/26</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1958-1959</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1958-1959</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_26"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_27">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1959</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1959</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_27-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_27"/>
+            <rico:identifier>19970352/27</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1959</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1959</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_27"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_28">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1960</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1960</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_28-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_28"/>
+            <rico:identifier>19970352/28</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1960</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1960</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_28"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_29">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1960-1961</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1960-1961</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_29-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_29"/>
+            <rico:identifier>19970352/29</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1960-1961</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1960-1961</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_29"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_30">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1961-1962</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1961-1962</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_30-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_30"/>
+            <rico:identifier>19970352/30</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1961-1962</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1961-1962</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_30"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_31">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1962</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1962</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_31-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_31"/>
+            <rico:identifier>19970352/31</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1962</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1962</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_31"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_32">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1963</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1963</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_32-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_32"/>
+            <rico:identifier>19970352/32</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1963</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1963</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_32"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_33">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1963-1964</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1963-1964</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_33-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_33"/>
+            <rico:identifier>19970352/33</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1963-1964</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1963-1964</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_33"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_34">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1964-1965</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1964-1965</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_34-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_34"/>
+            <rico:identifier>19970352/34</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1964-1965</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1964-1965</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_34"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_35">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1965</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1965</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_35-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_35"/>
+            <rico:identifier>19970352/35</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1965</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1965</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_35"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_36">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1965-1966</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1965-1966</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_36-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_36"/>
+            <rico:identifier>19970352/36</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1965-1966</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1965-1966</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_36"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_37">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1966</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1966</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_37-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_37"/>
+            <rico:identifier>19970352/37</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1966</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1966</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_37"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_38">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1967</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1967</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_38-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_38"/>
+            <rico:identifier>19970352/38</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1967</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1967</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_38"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_39">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1967</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1967</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_39-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_39"/>
+            <rico:identifier>19970352/39</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1967</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1967</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_39"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_40">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1968</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1968</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_40-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_40"/>
+            <rico:identifier>19970352/40</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1968</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1968</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_40"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_41">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1968</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1968</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_41-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_41"/>
+            <rico:identifier>19970352/41</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1968</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1968</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_41"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_42">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1969</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1969</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_42-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_42"/>
+            <rico:identifier>19970352/42</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1969</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1969</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_42"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_43">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1969-1970</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1969-1970</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_43-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_43"/>
+            <rico:identifier>19970352/43</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1969-1970</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1969-1970</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_43"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_44">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1970</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1970</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_44-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_44"/>
+            <rico:identifier>19970352/44</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1970</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1970</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_44"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_45">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1970-1971</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1970-1971</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_45-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_45"/>
+            <rico:identifier>19970352/45</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1970-1971</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1970-1971</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_45"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_46">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1971</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1971</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_46-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_46"/>
+            <rico:identifier>19970352/46</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1971</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1971</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_46"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_47">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1971-1972</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1971-1972</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_47-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_47"/>
+            <rico:identifier>19970352/47</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1971-1972</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1971-1972</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_47"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_48">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1972</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1972</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_48-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_48"/>
+            <rico:identifier>19970352/48</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1972</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1972</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_48"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_49">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1972</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1972</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_49-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_49"/>
+            <rico:identifier>19970352/49</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1972</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1972</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_49"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_50">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_50-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_50"/>
+            <rico:identifier>19970352/50</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_50"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_51">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_51-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_51"/>
+            <rico:identifier>19970352/51</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_51"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_52">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973-1974</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973-1974</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_52-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_52"/>
+            <rico:identifier>19970352/52</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1973-1974</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1973-1974</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_52"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_53">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1974</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1974</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_53-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_53"/>
+            <rico:identifier>19970352/53</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1974</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1974</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_53"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_54">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1974-1975</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1974-1975</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_54-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_54"/>
+            <rico:identifier>19970352/54</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1974-1975</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1974-1975</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_54"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_55">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1975</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1975</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_55-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_55"/>
+            <rico:identifier>19970352/55</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1975</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1975</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_55"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_56">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1975-1976</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1975-1976</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_56-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_56"/>
+            <rico:identifier>19970352/56</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1975-1976</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1975-1976</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_56"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_57">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_57-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_57"/>
+            <rico:identifier>19970352/57</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_57"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_58">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_58-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_58"/>
+            <rico:identifier>19970352/58</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_58"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_59">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_59-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_59"/>
+            <rico:identifier>19970352/59</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1976</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1976</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_59"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_60">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1982-1983</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1982-1983</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_60-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_60"/>
+            <rico:identifier>19970352/60</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1982-1983</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1982-1983</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_60"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_61">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1983-1984</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1983-1984</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_61-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_61"/>
+            <rico:identifier>19970352/61</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1983-1984</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1983-1984</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_61"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_62">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1985-1986</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1985-1986</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_62-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_62"/>
+            <rico:identifier>19970352/62</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1985-1986</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1985-1986</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_62"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_63">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1986-1987</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1986-1987</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_63-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_63"/>
+            <rico:identifier>19970352/63</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1986-1987</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1986-1987</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_63"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_64">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1988-1989</rico:title>
+      <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1988-1989</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_64-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_64"/>
+            <rico:identifier>19970352/64</rico:identifier>
+            <rico:title xml:lang="fr">correspondances générales (doubles jaunes). 1988-1989</rico:title>
+            <rdfs:label xml:lang="fr">correspondances générales (doubles jaunes). 1988-1989</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_64"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/009555-d_65">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/009555-top"/>
+      <rico:title xml:lang="fr">doubles jaunes). 1990</rico:title>
+      <rdfs:label xml:lang="fr">doubles jaunes). 1990</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/009555-d_65-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/009555-d_65"/>
+            <rico:identifier>19970352/65</rico:identifier>
+            <rico:title xml:lang="fr">doubles jaunes). 1990</rico:title>
+            <rdfs:label xml:lang="fr">doubles jaunes). 1990</rdfs:label>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_009555/d_65"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>

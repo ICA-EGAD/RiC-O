@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050753">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/050753"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-18</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-18</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 18 mars 2014 : crétion sur demande de Benjamin Paradis, mission des archives au MCC.</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 18 mars 2014 : création sur demande de Benjamin Paradis, mission des archives au MCC. 3 décembre 2015 : ajouté activités</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Florence CLAVAUD)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-10</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 2017 : revu description des liens, ajouté liens d'identité</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Paul LEON, Du Palais-Royal au Palais Bourbon, Souvenirs (1947).</rico:source>
+      <rico:source xml:lang="fr">Françoise Bercé, « L’oeuvre de Paul Léon (1874-1962) dans Philippe Poirrier, Loïc Vadelorge (dir.), Pour une histoire des politiques du patrimoine, Comité d’histoire du ministère de la culture, Fondation Maison des sciences de l’homme, Paris, 2003.</rico:source>
+      <rico:source xml:lang="fr">notice d'autorité BnF n°FRBNF12238141</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000108780222"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Paul_L%C3%A9on"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050753">
+            <rico:isInstantiationOf rdf:resource="record/050753"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050753</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050753"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050753">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/050753"/>
+      <isni:identifierValid>0000000108780222</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Léon, Paul (1874-1962)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/050753-L%C3%A9on%2C%20Paul%20%281874-1962%29">
+            <rdfs:label xml:lang="fr">Léon, Paul (1874-1962)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Léon, Paul (1874-1962)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/050753"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1874-10-02</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-08-01</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050753-d-1009896yv--378hf9s9l062">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050753"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050753-d-1009896yv--378hf9s9l062"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050753-d699msixdvh--wgctct8soc1y">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050753"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050753-d699msixdvh--wgctct8soc1y"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">attaché au cabinet du ministre des travaux publics (1901-1902) ; chef de cabinet du sous-secrétaire d'etat aux Beaux-Arts (1905)</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050753-d699msj02xm-19qbb7wdtto3j-19010101-19401231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050753"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050753-d699msj02xm-19qbb7wdtto3j-19010101-19401231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-31</rico:endDate>
+            <rico:descriptiveNote rdf:parseType="Literal">
+               <html:p xml:lang="fr">professeur</html:p>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Paul Léon est successivement :</html:p>
+            <html:p>- professeur au Collège Chaptal de Paris (1901-1902) ;</html:p>
+            <html:p>- attaché au cabinet du ministre des Travaux Publics (1901-1902) ;</html:p>
+            <html:p>- professeur aux collèges Turgot et Lavoisier (1902) ;</html:p>
+            <html:p>- chef du cabinet du sous-secrétaire d’Etat aux Beaux-arts, Etienne Dujardin-Beaumetz (1905) ;</html:p>
+            <html:p>- professeur au lycée Carnot (1906) ;</html:p>
+            <html:p>- chef de division du service d’architecture au sous-secrétariat d’Etat aux Beaux-arts (1906-1918) ;</html:p>
+            <html:p>- directeur des Beaux-Arts (1919 -1928) ;</html:p>
+            <html:p>- directeur général des Beaux-arts (1928-1933) ;</html:p>
+            <html:p>- professeur d’histoire de l’Art monumental au Collège de France (1933-1940) ;</html:p>
+            <html:p>- conservateur du musée Condé à Chantilly (1955) ;</html:p>
+            <html:p>- commissaire général de l’Exposition internationale des Arts décoratifs et industriels modernes (1925) ;</html:p>
+            <html:p>- commissaire général adjoint de l’Exposition internationale des arts et techniques dans la vie moderne (1937).</html:p>
+         </html:div>
+      </rico:history>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050753-051164-19100101-19141231"/>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050753-051158-19060101-19331231"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Paul_L%C3%A9on"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb122381416#about"/>
+   </rico:Agent>
+</rdf:RDF>

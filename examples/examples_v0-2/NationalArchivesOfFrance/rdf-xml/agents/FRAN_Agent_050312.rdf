@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/050312">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/050312"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-02</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Zénaïde ANDRIEU-ROMANEIX)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 3 décembre 2013 : ajout n° notice d'autorité BnF</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-02</rico:date>
+            <rico:descriptiveNote xml:lang="fr">P. Charbonnier, 02 mars 2018 : ajout liens d'identité vers notices BnF et Wikipédia</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Archives nationales, fonds Jean Favier (501 AP)</rico:source>
+      <rico:source xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Jean_Favier)</rico:source>
+      <rico:source xml:lang="fr">Notice d'autorité BnF n° FRBNF11996420</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000120991284"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean_Favier"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/050312">
+            <rico:isInstantiationOf rdf:resource="record/050312"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_050312</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050312"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/050312">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/050312"/>
+      <isni:identifierValid>0000000120991284</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Favier, Jean (1932-2014)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/050312-Favier%2C%20Jean%20%281932-2014%29">
+            <rdfs:label xml:lang="fr">Favier, Jean (1932-2014)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Favier, Jean (1932-2014)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/050312"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-04-02</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-08-12</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d-1axy38anu-1ua8su5ef37p1">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d-1axy38anu-1ua8su5ef37p1"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d699msirr1g-3naumnfaswc">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d699msirr1g-3naumnfaswc"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d-1009896yv--378hf9s9l062">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d-1009896yv--378hf9s9l062"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d3m0bl6u27z--1eg4fqfkrzwxv">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d3m0bl6u27z--1eg4fqfkrzwxv"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3m0bl6u27z--1eg4fqfkrzwxv"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d699msj02xm-19qbb7wdtto3j">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d-l0jya1ik6x--16fn7glte863o">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d-l0jya1ik6x--16fn7glte863o"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/050312-d699msj3i51--hevk1gms21cg">
+            <rico:performanceRelationHasTarget rdf:resource="agent/050312"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/050312-d699msj3i51--hevk1gms21cg"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Archiviste-paléographe, agrégé d’histoire, docteur ès lettres, Jean Favier (né en 1932) est successivement membre de l’École française de Rome (1956-1958) et maître de conférences dans les facultés des lettres de Rennes (1964) et de Rouen (1966-1969). Professeur d’histoire économique du Moyen Age à l’université de Paris-Sorbonne (1969-1997), il occupe aussi les fonctions de directeur d’études à l’École pratique des hautes études (depuis 1965) et de directeur de l’Institut d’histoire de l’université de Paris-Sorbonne (1971-1975).</html:p>
+            <html:p>Directeur général des Archives de France et président de la Conférence internationale de la table ronde des archives et du Conseil international des archives (1975-1994), Jean Favier préside ensuite la Bibliothèque nationale de France (1994-1997).</html:p>
+            <html:p>Directeur de la Revue historique (1973-1997) et membre de l’Institut (Académie des inscriptions et belles-lettres) depuis 1985, il est administrateur de TF1 (1985-1987), administrateur de l’Institut national de l’audiovisuel (1989-1996), président du conseil d’administration de l’École normale supérieure (1988-1997), président de l’Association des lauréats du concours général (1990-2001) et président de la Commission nationale française pour l’Unesco (1997-2009). Il est conservateur du château de Langeais (depuis 1995) et président du Haut comité des célébrations nationales (depuis 2008).</html:p>
+            <html:p>Jean Favier est l’auteur de nombreux ouvrages historiques :<html:i>Un conseiller de Philippe le Bel : Enguerran de Marigny</html:i>(1963),<html:i>les</html:i>
+               <html:i>Finances pontificales à l’époque du grand schisme d’Occident</html:i>(1966),<html:i>De Marco Polo à Christophe Colomb</html:i>(1968),<html:i>les Contribuables parisiens à la fin de la guerre de Cent Ans</html:i>(1970),<html:i>Finance et fiscalité au bas Moyen Age</html:i>(1971),<html:i>Paris au XVe siècle</html:i>(1975),<html:i>Philippe le Bel</html:i>(1978),<html:i>la Guerre de Cent Ans</html:i>(1980),<html:i>François Villon</html:i>(1982),<html:i>le Temps des principautés</html:i>(1984),<html:i>De l’or et des épices</html:i>(1987),<html:i>Chronique de la Révolution</html:i>(sous sa direction, 1988),<html:i>l’Univers de Chartres</html:i>(1988),<html:i>les Grandes découvertes, d’Alexandre à Magellan</html:i>(1991),<html:i>les Archives de la France</html:i>(sous sa direction, 1992),<html:i>Dictionnaire de la France médiévale</html:i>(1993),<html:i>Paris, deux mille ans d’histoire</html:i>(1997),<html:i>Charlemagne</html:i>(1999),<html:i>Louis XI</html:i>(2001),<html:i>les Plantagenêts</html:i>(2004),<html:i>les papes d’Avignon</html:i>(2006),<html:i>le Roi René</html:i>(2008),<html:i>Pierre Cauchon : comment on devient le juge de Jeanne d’Arc</html:i>(2010).</html:p>
+            <html:p>Il meurt le 12 août 2014.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/009963-050312-19320402-20140812"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005061-050312-19580101-19611231"/>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-005073-19750101-19941231"/>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-005061-19750101-19941231"/>
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/050312-051355-19940101-19971231"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean_Favier"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11996420w#about"/>
+   </rico:Agent>
+</rdf:RDF>

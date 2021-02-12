@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         
+         xml:base="http://data.archives.strath.ac.uk/">
+         <rico:AgentToAgentRelation 
+                  rdf:about="agentToAgentRelation/ingham-nigel--greater-manchester-asbestos-victims-support-group--2014-2015">
+                  <rico:agentRelationConnects rdf:resource="agent/ingham-nigel"/>
+                  <rico:agentRelationConnects rdf:resource="agent/greater-manchester-asbestos-victims-support-group"/>
+                  <rdfs:label xml:lang="fr">Associative relation between the person "Ingham, Nigel, historian" and the corporate body "Greater Manchester Asbestos Victims Support Group"; beginning date: 2014, end date: 2015</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</rico:endDate>
+                  <rico:descriptiveNote xml:lang="en">Nigel Ingham was commissioned by the Greater Manchester Asbestos Victims Support Group to conduct an oral history project.</rico:descriptiveNote>
+         </rico:AgentToAgentRelation>
+         <rico:AgentToAgentRelation rdf:about="agentToAgentRelation/national-life-stories-oral-history-fieldwork-charity--simmons-jenny-fl-2004--2000-2008">
+                  <rico:agentRelationConnects rdf:resource="agent/national-life-stories-oral-history-fieldwork-charity"/>
+                  <rico:agentRelationConnects rdf:resource="agent/simmons-jenny-fl-2004"/>
+                  <rdfs:label xml:lang="fr">Associative relation between the  corporate body "National Life Stories, oral history fieldwork charity" and the person "Simmons, Jenny, fl. 2000, oral historian"; beginning date: 2000, end date: 2008</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2000</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</rico:endDate>
+                  <rico:descriptiveNote xml:lang="en">Jenny Simmons worked as a freelance oral history interviewer for National Life Stories.</rico:descriptiveNote>  
+         </rico:AgentToAgentRelation>
+</rdf:RDF>

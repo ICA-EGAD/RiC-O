@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005427">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005427"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-18</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 12 avril 2017 : ajouté liens d'identité. NOTA : les liens IR sont à revoir et probablement à redistribuer vers d'autres notices</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Journal Officiel de la République française</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site officiel de l'OPPIC (http://www.oppic.fr/pages/presentation.php)</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Notice Wikipédia (https://fr.wikipedia.org/wiki/Op%C3%A9rateur_du_patrimoine_et_des_projets_immobiliers_de_la_culture)</html:p>
+      </rico:source>
+      <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Op%C3%A9rateur_du_patrimoine_et_des_projets_immobiliers_de_la_culture"/>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Notice BnF n° FRBNF16530757</html:p>
+      </rico:source>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Op%C3%A9rateur_du_patrimoine_et_des_projets_immobiliers_de_la_culture"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005427">
+            <rico:isInstantiationOf rdf:resource="record/005427"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005427</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005427"/>
+            <rico:identifier>5190</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005427">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005427"/>
+      <rdfs:label xml:lang="fr">Opérateur du patrimoine et des projets immobiliers de la culture (France)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005427-Op%C3%A9rateur%20du%20patrimoine%20et%20des%20projets%20immobiliers%20de%20la%20culture%20%28France%29">
+            <rdfs:label xml:lang="fr">Opérateur du patrimoine et des projets immobiliers de la culture (France)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Opérateur du patrimoine et des projets immobiliers de la culture (France)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005427"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005427-OPPIC">
+            <rdfs:label xml:lang="fr">OPPIC</rdfs:label>
+            <rico:textualValue xml:lang="fr">OPPIC</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005427"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-21</rico:beginningDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005427-d3nyugszba-a2wofi2a3sjm">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005427"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005427-d3nyugszba-a2wofi2a3sjm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugszba-a2wofi2a3sjm"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005427-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005427"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005427-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005427-d5bhvimbi4--1c33jbciwlk3b">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005427"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005427-d5bhvimbi4--1c33jbciwlk3b"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimbi4--1c33jbciwlk3b"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:authorizingMandate rdf:parseType="Literal">
+         <html:p xml:lang="fr">Décret n° 2010-818 du 14 juillet 2010 relatif à l'Opérateur du patrimoine et des projets immobiliers de la culture (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000022497544&amp;fastPos=4&amp;fastReqId=1037663746&amp;categorieLien=id&amp;oldAction=rechTexte)</html:p>
+      </rico:authorizingMandate>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>En application d'une décision du Conseil de modernisation des politiques publiques de juin 2008, le Service national des travaux (SNT) et l'Établissement public de maîtrise d'ouvrage des travaux culturels (EMOC), chargés de missions voisines, fusionnent dans un établissement public à caractère administratif, l'Opérateur du patrimoine et des projets immobiliers de la Culture (OPPIC), créé par décret n° 2010-818 du 14 juillet 2010 (publié au Journal Officiel le 20 juillet). Il est placé sous la tutelle du ministre de la Culture.</html:p>
+            <html:p/>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les misssions de l'OPPIC sont fixées par l'article 2 du décret du 14 juillet 2010 :</html:p>
+            <html:p>"I. L'établissement a pour mission, pour le compte de l'État ou des établissements publics nationaux :</html:p>
+            <html:ul>
+               <html:li>1° De réaliser toute étude et analyse préalable relatives :</html:li>
+            </html:ul>
+            <html:p>a) Aux investissements immobiliers du ministère chargé de la culture ou des établissements publics placés sous sa tutelle ;</html:p>
+            <html:p>b) À l'entretien et à la mise en valeur du patrimoine immobilier mis à disposition de ce ministère ou de ces établissements publics, qu'il appartienne à l'État ou que l'État détienne sur lui un droit réel ;</html:p>
+            <html:ul>
+               <html:li>2° D'assurer la réalisation d'opérations de construction, de restauration, de réhabilitation, d'aménagement ou de maintenance de ces immeubles ;</html:li>
+               <html:li>3° De mener à bien toute mission d'assistance et de conseil dans le domaine de la gestion et de la mise en valeur de ces immeubles ;</html:li>
+               <html:li>4° De participer à l'organisation de cérémonies nationales et au transfert au Panthéon de cendres illustres ;</html:li>
+               <html:li>5° À titre accessoire, d'accomplir pour d'autres ministères ou pour les établissements publics placés sous leur tutelle les missions prévues aux 1°, 2° et 3°.</html:li>
+            </html:ul>
+            <html:p>II. À titre accessoire et onéreux, l'établissement peut en outre :</html:p>
+            <html:ul>
+               <html:li>1° Accomplir les missions mentionnées aux 1°, 2° et 3° du I pour le compte des collectivités territoriales, de leurs établissements publics ou d'autres personnes publiques ;</html:li>
+               <html:li>2° Exercer à l'étranger des missions dans les domaines relevant de son champ de compétence.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:history>
+      <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/000005-005427-20100721-*"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005427-051355-20100721-*"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb16530757c#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Op%C3%A9rateur_du_patrimoine_et_des_projets_immobiliers_de_la_culture"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/051119-005427-20100721-*"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005055-005427-20100721-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/054637-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/054637-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/053707-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/053707-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055671-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055671-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/055504-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/055504-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/056203-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/056203-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/052910-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/052910-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057991-005427"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/057991-top"/>
+   </rico:Agent>
+</rdf:RDF>

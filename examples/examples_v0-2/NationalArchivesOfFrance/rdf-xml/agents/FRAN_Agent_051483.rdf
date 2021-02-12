@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051483">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/051483"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Création (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 4 avril 2017 : création sur la base des éléments fournis par V. de Wulf ; ajout liens d'identité et d'association, activité, source</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-04</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source xml:lang="fr">Renée Plouin, Henri Labrouste : sa vie, son oeuvre (thèse de doctorat), Université de Paris,‎ 1965.</rico:source>
+      <rico:source xml:lang="fr">Pierre Saddy, Henri Labrouste, architecte : 1801-1875 (catalogue d'exposition), Paris, C.N.M.H.S.,‎ 1977.</rico:source>
+      <rico:source xml:lang="fr">Jean-Pierre Roze, Catalogue sommaire des dessins d'Henri Labrouste, relatifs à la Bibliothèque Sainte-Geneviève, conservés à la Bibliothèque nationale de France, Paris, Bibliothèque Sainte-Geneviève,‎ 1997.</rico:source>
+      <rico:source xml:lang="fr">Renzo Dubbini (dir.), Henri Labrouste, 1801-1875, Milano, Electa,‎ 2001.</rico:source>
+      <rico:source xml:lang="fr">Visions : Bibliothèque Sainte-Genevière (catalogue de l'exposition "Voir et revoir l'oeuvre de Labrouste", octobre-novembre 2001), Paris, Bibliothèque Sainte-Geneviève,‎ 2001.</rico:source>
+      <rico:source xml:lang="fr">Jean-Michel Leniaud (dir.), Des palais pour les livres : Labrouste, Sainte-Geneviève et les bibliothèques, Paris, Bibliothèque Sainte-Genevière/Maisonneuve et Larose,‎ 2002.</rico:source>
+      <rico:source xml:lang="fr">Corinne Bélier, Barry Bergdoll, Marc Le Coeur (dir.), Labrouste, 1801-1875, architecte : la structure mise en lumière (catalogue de l'exposition, Cité de l'Architecture et du Patrimoine, octobre 2012-janvier 2013), Paris, N. Chaudun/Cité de l'Architecture et du Patrimoine,‎ 2012.</rico:source>
+      <rico:source xml:lang="fr">Fonds de la famille Labrouste aux Archives nationales (453 AP)</rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000123197166"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Henri_Labrouste"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051483">
+            <rico:isInstantiationOf rdf:resource="record/051483"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_051483</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051483"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/051483">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/051483"/>
+      <isni:identifierValid>0000000123197166</isni:identifierValid>
+      <rdfs:label xml:lang="fr">Labrouste, Henri (1801-1875)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/051483-Labrouste%2C%20Henri%20%281801-1875%29">
+            <rdfs:label xml:lang="fr">Labrouste, Henri (1801-1875)</rdfs:label>
+            <rico:textualValue xml:lang="fr">Labrouste, Henri (1801-1875)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/051483"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1801-05-11</rico:birthDate>
+      <rico:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1875-06-24</rico:deathDate>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/051483-d3nyu9yq7p-8zx3tnvrcpf0">
+            <rico:performanceRelationHasTarget rdf:resource="agent/051483"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/051483-d3nyu9yq7p-8zx3tnvrcpf0"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyu9yq7p-8zx3tnvrcpf0"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Henri Labrouste a trois frères, dont un autre architecte, Théodore, né en 1804, et Alexandre, né en 1796, célèbre directeur du Collège Sainte-Barbe (Paris).</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Henri Labrouste, né à Paris sous le consulat est issu d’une famille de juristes bordelais favorables aux idées révolutionnaires modérées. Son père, François-Marie Labrouste, membre du Conseil des Cinq-Cents en 1796 puis du Tribunat jusqu’en 1807, sera un soutien de l’Empire. Parmi ses trois frères, Henri comptera un autre architecte, Théodore, né en 1804, et Alexandre, né en 1796, célèbre directeur du Collège Sainte-Barbe (Paris).</html:p>
+            <html:p>Henri Labrouste entre dans ce dernier établissement comme élève en 1809. Il est admis à la deuxième classe de l'École royale des beaux-arts dans l'atelier Lebas-Vaudoyer en 1819. En 1820, il accède en première classe. En compétition pour le grand prix, Labrouste arrive en deuxième position derrière le projet de Palais de Justice de Guillaume Abel Blouet en 1821. En 1823, vainqueur du prix départemental, il travaille comme sous-inspecteur sous la direction d'Étienne-Hippolyte Godde sur le chantier de l'église Saint-Pierre-du-Gros-Caillou.</html:p>
+            <html:p>L'année 1824 est un tournant dans sa vie. Il remporte le grand prix de Rome sur le thème d'une Cour de cassation. Il quitte en novembre Paris pour l'Italie. Il y restera assez longtemps et s'occupera entre autre de la restauration des temples de Paestum. À son retour à Paris en 1830, sa restauration est vivement critiquée et la polémique prend de l'ampleur.</html:p>
+            <html:p>Durant l'été, il ouvre son atelier le 1er août 1830 (professeur libre d'architecture). En 1834, Labrouste travaille avec Duban sur le nouvel aspect à donner à l'École des Beaux-Arts. Inspecteur à l'École des Beaux-Arts, l'année même où il se marie (1836), il reçoit le programme pour la compétition pour un asile d'aliénés à Lausanne. Nommé architecte de la décoration du pont de la Concorde, il fournit avec son frère Théodore plus de dix projets dont aucun ne sera retenu. Le projet qu'il soumet à Lausanne en 1837 remporte le premier prix, mais il ne sera pas réalisé pour autant. Labrouste concentre son activité sur les tombes du Baron de Ridèle et de la famille Brunet pour le cimetière parisien de Montparnasse.</html:p>
+            <html:p>Nommé en janvier 1838 architecte des Monuments historiques, Labrouste entreprend ses premiers travaux de restauration. Il est en même temps relevé de sa fonction d'inspecteur à l'École des Beaux-Arts dont les travaux ont bien avancé. Le 6 juin, Labrouste est nommé architecte du Dépôt des marbres sur l'île des Cygnes et le 18 juin architecte de la bibliothèque Sainte-Geneviève.</html:p>
+            <html:p>En octobre de la même année, l'architecte reçoit la commande du nouveau bâtiment destiné aux collections de la bibliothèque Sainte-Geneviève. En décembre 1839, le projet est soumis au Conseil des bâtiments civils. Labrouste conçoit le frontispice de la Revue générale de l'Architecture et des Travaux Publics. Le projet pour la nouvelle bibliothèque Sainte-Geneviève est soumis et approuvé en 1840 par le Conseil des bâtiments civils à la fin du mois de janvier, mais sa présentation devant les chambres est en revanche ajournée. Labrouste est au même moment déclaré vainqueur dans la compétition pour la prison d'Alexandrie en Italie, qui ne fut pas réalisée. Architecte de la cérémonie de la Translation des cendres de Napoléon en collaboration avec Visconti, Labrouste donne les dessins de l'embarcadère de Courbevoie, du bateau Catafalque-Char, des Champs-Élysées, du pont de la Concorde et de l'Esplanade des Invalides.</html:p>
+            <html:p>Tandis que le projet pour la nouvelle bibliothèque Sainte-Geneviève est ajourné, Labrouste est déclaré vainqueur de la compétition des abattoirs de Provins en 1841. Il reçoit la légion d'honneur pour sa participation à la Translation des cendres napoléoniennes. Jugé l'un des meilleurs de dix projets, son dessin pour le Tombeau de Napoléon aux Invalides remporte la médaille d'or. L'année suivante, le projet original de la bibliothèque Sainte-Geneviève est de nouveau soumis et approuvé par le Conseil des bâtiments civils. Labrouste rejoint la Société centrale des Architectes, fondée deux ans auparavant.</html:p>
+            <html:p>Labrouste est successivement nommé architecte du séminaire de Rennes et de la Bibliothèque impériale, chantier pour lequel il succède à Visconti en 1854. Deux ans plus tard, le projet approuvé, la construction du séminaire de Rennes commence ; entre-temps, l'architecte a choisi de fermer son atelier parisien. Labrouste propose un projet d'agrandissement pour la Bibliothèque impériale dont la réalisation est entreprise à l'automne 1857. C'est le moment que l'architecte choisit pour séjourner à Londres où il visite longuement la British Library. Le projet est approuvé en 1859, la construction de la nouvelle salle de lecture de la Bibliothèque impériale commence. Labrouste édifie l'Hôtel Vilgruy sur la place François-Ier à Paris en 1865. C'est en remplacement d'Hittorff que Labrouste est finalement élu à l'Académie en 1867. La nouvelle salle de lecture de la Bibliothèque impériale ouvre au public le 2 juin 1868. Durant le mois de mai, Labrouste a été élu membre du Royal Institute of British Architects. Cinq ans plus tard, il est aussi élu président de la Société centrale des architectes et membre de l'American Institute of Architecture. Il installe en 1874, sur le palier de la nouvelle bibliothèque Sainte-Geneviève, un monument rendant hommage à Ulrich Gering, l'un des premiers imprimeurs parisiens. Labrouste meurt le 24 juin 1875 à Fontainebleau.</html:p>
+         </html:div>
+      </rico:history>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb12127997d#about"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Henri_Labrouste"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005074-051483-18540101-18681231"/>
+   </rico:Agent>
+</rdf:RDF>

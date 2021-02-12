@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="http://isni.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005170">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005170"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Elsa CAMUS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-09</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 2 décembre 2015 : revu liens IR, ajouté n° notice BnF</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-23</rico:date>
+            <rico:descriptiveNote xml:lang="fr">F. Clavaud, 23 mars 2017 : ajout lien d'identité et lien chronologique vers le prédécesseur</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Dardy-Cretin Michèle,<html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>Bottin administratif</html:i>, Paris, 1978-1998.</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">
+            <html:i>État général des fonds des Archives nationales : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</html:p>
+      </rico:source>
+      <rico:source rdf:parseType="Literal">
+         <html:p xml:lang="fr">Notice d'autorité BnF n° FRBNF11863935</html:p>
+      </rico:source>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121563687"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005170">
+            <rico:isInstantiationOf rdf:resource="record/005170"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005170</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005170"/>
+            <rico:identifier>5105</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005170">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005170"/>
+      <isni:identifierValid>0000000121563687</isni:identifierValid>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du patrimoine (1978-1998)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005170-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Direction%20du%20patrimoine%20%281978-1998%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du patrimoine (1978-1998)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction du patrimoine (1978-1998)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005170"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005170-France.%20Minist%C3%A8re%20de%20la%20culture.%20Direction%20du%20patrimoine%20%281981-1986%29-19810101-19861231">
+            <rdfs:label xml:lang="fr">France. Ministère de la culture. Direction du patrimoine (1981-1986)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la culture. Direction du patrimoine (1981-1986)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005170"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005170-France.%20Minist%C3%A8re%20de%20la%20culture%20et%20de%20la%20communication.%20Direction%20du%20patrimoine%20%281986-1988%29-19860101-19881231">
+            <rdfs:label xml:lang="fr">France. Ministère de la culture et de la communication. Direction du patrimoine (1986-1988)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la culture et de la communication. Direction du patrimoine (1986-1988)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005170"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005170-France.%20Minist%C3%A8re%20de%20la%20culture%2C%20de%20la%20communication%2C%20des%20grands%20travaux%20et%20du%20Bicentenaire.%20Direction%20du%20patrimoine%20%281988-1991%29-19880101-19911231">
+            <rdfs:label xml:lang="fr">France. Ministère de la culture, de la communication, des grands travaux et du Bicentenaire. Direction du patrimoine (1988-1991)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la culture, de la communication, des grands travaux et du Bicentenaire. Direction du patrimoine (1988-1991)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005170"/>
+            <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:usedFromDate>
+            <rico:usedToDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-12-31</rico:usedToDate>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-12-31</rico:endDate>
+      <rico:hasOrHadLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005170-d5bhviikk9--y6te63k761ib">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005170"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005170-d5bhviikk9--y6te63k761ib"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>À sa création en 1978, la direction du patrimoine comprend quatre sous-directions :</html:p>
+            <html:p>- la sous-direction des affaires générales et constructions publiques ;</html:p>
+            <html:p>- la sous-direction des monuments historiques et palais nationaux ;</html:p>
+            <html:p>- la sous-direction des fouilles et antiquités (qui devient la sous-direction de l'archéologie en 1981) ;</html:p>
+            <html:p>- la sous-direction de l'inventaire général des monuments et des richesses artistiques de la France.</html:p>
+            <html:p>À ces quatre sous-directions s'ajoutent quatre inspections générales (une pour chaque sous-direction) ainsi qu'un service de la photographie.</html:p>
+            <html:p/>
+            <html:p>En 1980, la direction du patrimoine intègre une division du Patrimoine mobilier et une mission du Patrimoine ethnologique. Le service de la photographie devient la mission du patrimoine photographique.</html:p>
+            <html:p>En 1981, la sous-direction des monuments historiques et palais nationaux devient la sous-direction des monuments historiques et une mission des relations extérieures est créée.</html:p>
+            <html:p>En 1986, s'ajoute la mission économique et patrimoine qui devient la mission technique et économique en 1987.</html:p>
+            <html:p>Suite à la réforme du 11 juillet 1990, les constructions publiques forment un nouveau service (le service national des travaux) et la sous-direction des affaires générales et constructions publiques devient la sous-direction de l'administration et de l'action culturelle. À cette même date, la mission technique et économique est rattachée à la sous-direction des monuments historiques et la mission des relations extérieures devient la mission des relations publiques et des affaires internationales.</html:p>
+            <html:p/>
+            <html:p>Entre 1991 et 1994, le bureau de la protection des monuments historiques est provisoirement transféré de la sous-direction des monuments historiques à la sous-direction de l'inventaire général des monuments et des richesses artistiques de la France. Cette dernière change alors de nom et devient la sous-direction de l'inventaire général, de la documentation et de la protection du patrimoine.</html:p>
+            <html:p>C'est également en 1994 que le service de l'inspection générale est placé auprès du directeur du patrimoine et regroupe l'ensemble des services d'inspection du patrimoine.</html:p>
+            <html:p/>
+            <html:p>De 1996 à 1998 la composition de la direction du patrimoine est la suivante :</html:p>
+            <html:p>- service de l'inspection générale du patrimoine ;</html:p>
+            <html:p>- sous-direction de l'administration et de l'action culturelle ;</html:p>
+            <html:p>- sous-direction de l'archéologie ;</html:p>
+            <html:p>- sous-direction des monuments historiques ;</html:p>
+            <html:p>- sous-direction de l'inventaire général et de documentation du patrimoine ;</html:p>
+            <html:p>- mission du patrimoine ethnologique ;</html:p>
+            <html:p>- mission du patrimoine photographique ;</html:p>
+            <html:p>- mission des relations publiques et des affaires internationales.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le 13 octobre 1978, la direction du patrimoine est créée par décret au sein du ministère de la Culture et de la Communication par le ministre Jean-Philippe Lecat avec l'objectif de "protéger, conserver et faire connaître le patrimoine archéologique et architectural et les richesses artistiques de la France".</html:p>
+            <html:p>La nouvelle direction du patrimoine récupère certaines compétences de la direction de l'architecture qui quitte en avril 1978 le ministère de la Culture pour rejoindre le ministère de l’Environnement (puis en 1981 celui de l’Équipement) : les missions sont partagées entre les ministères. Le ministère de l'Environnement gère les abords des monuments et les sites protégés, tandis que le ministère de la Culture garde la responsabilité sur les monuments classés ou inscrits ainsi que sur les bâtiments civils via la direction du patrimoine (via une sous-direction des monuments historiques et palais nationaux et une sous-direction des affaires générales et des constructions publiques). Les deux ministères exercent une autorité conjointe sur les conservations régionales des monuments historiques et les agences des bâtiments de France.</html:p>
+            <html:p/>
+            <html:p>Le décret du 5 juin 1981 a pour conséquence l'éclatement du ministère de l'Environnement et du Cadre de vie et le transfert de certaines attributions au ministère de la Culture : les abords des monuments historiques (mais non les sites qui restent gérés par le ministère de l'Environnement), la totalité de la compétence dans la procédure de classement et d'inscription à l'inventaire au titre des monuments historiques, et une compétence consultative dans le domaine de la création architecturale. Les services centraux et déconcentrés restent cependant à l’Équipement et sont mis à la disposition de ces deux ministres pour la mise en œuvre de ces compétences.</html:p>
+            <html:p/>
+            <html:p>En 1996, la direction de l'architecture revient au ministère de la culture et entraîne une redéfinition des missions de la direction du patrimoine qui incluent la protection des espaces protégés et des sites.</html:p>
+            <html:p/>
+            <html:p>La direction du patrimoine et la direction de l'architecture fusionnent le 21 septembre 1998 par décret pour créer la direction de l'architecture et du patrimoine.</html:p>
+         </html:div>
+      </rico:history>
+      <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005170-005406-19980101-*"/>
+      <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005170-051151-19780413-19980920"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/000005-005170-19780101-19981231"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11863935s#about"/>
+      <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/000051-005170-19780101-*"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/018324-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/018324-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/018322-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/018322-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008863-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008863-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008897-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008897-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/008857-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/008857-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/009393-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/009393-top"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/010437-005170"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/010437-top"/>
+   </rico:Agent>
+</rdf:RDF>
