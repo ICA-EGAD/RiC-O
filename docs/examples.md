@@ -14,7 +14,7 @@ The RiC-O GitHub repository includes **some example files**.
 
 You can find them [there](https://github.com/ICA-EGAD/RiC-O/tree/master/examples).
 
-For now, they consist of **existing, "real world", archival metadata sets (all of them being EAD and EAC-CPF files), and their RDF/RiC-O version**. All have been prepared by ICA EGAD. 
+For now, they consist of **existing, "real world", archival metadata sets (all of them being EAD, EAC-CPF or METS files), and their RDF/RiC-O version**. All have been prepared by ICA EGAD. 
 
 
 They come along with:
@@ -25,4 +25,4 @@ They come along with:
 
 
 
-If you have some, or would like to discuss testing RiC-O on a small subset of your own archival metadata and give free access to the outcomes, contact us ([egad at ica.org](mailto:egad@ica.org))!
+If you have some examples, or would like to discuss testing RiC-O on a small subset of your own archival metadata and give free access to the outcomes, contact us ([egad at ica.org](mailto:egad@ica.org))!
