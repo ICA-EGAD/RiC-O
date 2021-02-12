@@ -26,7 +26,7 @@ RiC-O v0.2 is compliant with the **latest version of Records in Contexts-Concept
 
 RiC-O sources are available on GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O)), along with some [examples](examples.html) and [diagrams](diagrams.html). You will also find there both the latest version of RiC-O, and its previous versions.
 
-If you want to get the latests news on RiC-O, this website is the place where you can find them! You can also get the main information from [the ICA website](https://www.ica.org/en).
+If you want to get the latest news on RiC-O, this website is the place where you can find them! You can also get the main information from [the ICA website](https://www.ica.org/en).
 
 If you want to contact us, or send comments and questions, use either [egad at ica.org mailbox](mailto:egad@ica.org), or RiC-O users discussion list (if you would like to subscribe to this list,  simply email to Florence Clavaud ([florence.clavaud at culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
 
