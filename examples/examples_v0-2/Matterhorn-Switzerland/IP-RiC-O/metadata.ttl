@@ -7,16 +7,17 @@
 @prefix relSubType:  <http://id.loc.gov/vocabulary/preservation/relationshipSubType> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/> .
+@prefix ex: <http:www.example.com/> .
 
 # ====== Record
-<_20201118115821577> a rico:Record ;
+ex:20201118115821577 a rico:Record ;
     rico:title "Logo docuteam" ;
-    rico:hasOrHadIdentifier <501>, <502>, <503>, <504> ;
-	rico:isDateAssociatedWith [ a               rico:SingleDate ;
+    rico:hasOrHadIdentifier ex:501, ex:502, ex:503, ex:504 ;
+	rico:isAssociatedWithDate [ a               rico:SingleDate ;
 								rico:date       "20030501" ;
 								rico:type       "from" ;
 								] ;
-	rico:isDateAssociatedWith [ a               rico:SingleDate ;
+	rico:isAssociatedWithDate [ a               rico:SingleDate ;
 								rico:date       "20201231" ;
 								rico:type       "to" ;
 								] ;
@@ -25,32 +26,32 @@
 						rico:unitOfMeasurement "Einheit(en)" ;
 						] ;
 	rico:scopeAndContent "Enthält eine Logo-Datei" ;		
-	rico:isOrWasRegulatedBy <700>, <701>, <702>;
-	rico:creationRelationHasTarget   [ a rico:CreationRelation ;
+	rico:isOrWasRegulatedBy ex:700, ex:701, ex:702;
+	rico:recordResourceOrInstantiationIsSourceOfCreationRelation   [ a rico:CreationRelation ;
 										rico:type  "archivist" ;
-										rico:agentIsTargetOfCreationRelation <101> ;
+										rico:creationRelationHasTarget ex:101 ;
 										] ;
 	rico:hasOrHadLanguage				[a 		rico:Language ;
 											rico:name "deutsch";
 									] ;
 	rico:descriptiveNote              "Notes abc" ;
-	rico:isEventAssociatedWith [ a               rico:Activity ;
+	rico:isAssociatedWithEvent [ a               rico:Activity ;
 							rico:name       "Komplettübernahme" ;
 							rico:type       "Appraisal" ;
 							] ; 
-	rico:isEventAssociatedWith [ a               rico:Activity ;
+	rico:isAssociatedWithEvent [ a               rico:Activity ;
 							rico:name       "Direktübernahme" ;
 							rico:type       "Acquisition" ;
 							] ;
-	rico:hasInstantiation <_20201118115820159> .
+	rico:hasInstantiation ex:20201118115820159 .
 
 # ====== Representation
-<_20201118115820159> a premis:Representation ;
-	rico:hasOrHadIdentifier <_20201118115820159> ;
-	relSubType:inc <_20201118115821547>.
+ex:20201118115820159 a premis:Representation ;
+	rico:hasOrHadIdentifier ex:20201118115820159 ;
+	relSubType:inc ex:20201118115821547.
 
 # ====== File
-<_20201118115821547> a premis:File ;
+ex:20201118115821547 a premis:File ;
 	premis:storedAt "file:///logo.png" ;
 	premis:hasCompositionLevel "0" ;
 	premis:fixity	[ a crypHashFunc:md5 ;
@@ -58,74 +59,70 @@
 	] ;
 	premis:size "39552" ;
 	premis:orginalName "logo.png" ;
-	dct:format <png> .
+	dct:format ex:PNG .
 
 # ====== Event
-<_20201118115821558> a premis:Event ;
-	rico:SingleDate "2020-11-18T11:58:21" ;
-	rico:isOrWasPerformedBy <100> ;
-	rico:hasEventType <creation> ;
+ex:20201118115821558 a premis:Event ;
+	rico:date "2020-11-18T11:58:21" ;
+	rico:isOrWasPerformedBy ex:100 ;
+	rico:hasEventType ex:creation ;
 	premis:OutcomeStatus "Success" ;
 	premis:hasOutcomeNote "Performed by: 'Jane Doe'" ;
-	rico:affectsOrAffected <_20201118115821547> .
+	rico:affectsOrAffected ex:20201118115821547 .
 
 # ====== Identifiers
-<501> a rico:Identifier ;
+ex:501 a rico:Identifier ;
 	rico:type "refCode" ;
 	rico:name "ABC" .
 
-<502> a rico:Identifier ;
+ex:502 a rico:Identifier ;
 	rico:type "refCodeOld" ; 
 	rico:name "DEF" .
 
-<503> a rico:Identifier ;
+ex:503 a rico:Identifier ;
 	rico:type "separator" ;
 	rico:name "-" .
 
-<504> a rico:Identifier ;
+ex:504 a rico:Identifier ;
 	rico:type "isVisible" ;
 	rico:name "true" .
 
-<505> a rico:Identifier ;
+ex:505 a rico:Identifier ;
 	rico:type "dao" ;
 	rico:name "xyz:1001" .
 
-<_20201118115820159> a rico:Identifier ;
-	rico:type "Docuteam" ;
-	rico:name "_20201118115820159" .
-
-<_20201118115821558> a rico:Identifier ;
+ex:20201118115820159 a rico:Identifier ;
 	rico:type "Docuteam" ;
 	rico:name "_20201118115820159" .
 
 # ====== Rule
-<700> a rico:Rule ;
+ex:700 a rico:Rule ;
 	rico:type "accessRestrictionsClosureYear" ;
 	rico:endDate "2025" .
 
-<701> a rico:Rule ;
+ex:701 a rico:Rule ;
 	rico:type "accessRestrictionsPrivacy" ;
 	rico:name "Schützenswerte Personendaten" .
 
-<702> a rico:Rule ;
+ex:702 a rico:Rule ;
 	rico:type "retentionPeriod" ;
 	rico:name "15 Jahre" .
 
 # ====== Agent
-<100> a rico:Mechanism ;
+ex:100 a rico:Mechanism ;
 	rico:name "docuteam-packer";
 	premis:version "5.8.0".
 
-<101> a  rico:Person ;
+ex:101 a  rico:Person ;
 	rico:name "Tobias Wildi" .
 
 # ====== File Format
-<PNG> a dct:FileFormat ;
+ex:PNG a dct:FileFormat ;
 	rico:name "Portable Network Graphics" ;
 	skos:exactMatch <http://www.nationalarchives.gov.uk/pronom/fmt/13> ;
 	ebucore:hasMimeType "image/png" .
 
 # ====== Event types
-<creation> a evtype:cre ;
+ex:creation a evtype:cre ;
 	rico:name "creation" ;
 	rico:descriptiveNote "The process of creating a new object." .
