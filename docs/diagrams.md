@@ -15,7 +15,7 @@ You can find them [here](https://github.com/ICA-EGAD/RiC-O/tree/master/diagrams)
 
 They may concern **the ontology itself**. They also may concern **real world examples**; in such a case, they represent small graphs (or an overview of them) produced from some existing archival metadata. 
 
-The diagrams folder now includes diagrams about RiC-O v0.1 and RiC-0 v0.2.
+The diagrams folder now includes diagrams about RiC-O 0.1 and RiC-0 0.2.
 
 The diagrams are under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
