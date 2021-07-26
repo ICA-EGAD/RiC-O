@@ -22,7 +22,7 @@ Records in Contexts standard is developed by [International Council on Archives 
 
 The **latest public release of RiC-O, RiC-O 0.2**, was published in February 2021. It is fully documented in English and available here: [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology). It replaces RiC-O 0.1, which was released in December 2019.
 
-RiC-O 0.2 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 0.2, which was released in July 2021** (see [the announcement](https://www.ica.org/en/public-release-of-records-in-contexts-conceptual-model-02))and is available here:[https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf](https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf).
+RiC-O 0.2 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 0.2, which was released in July 2021** (see [the announcement](https://www.ica.org/en/public-release-of-records-in-contexts-conceptual-model-02)) and is available here: [https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf](https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf).
 
 RiC-O sources are available on GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O)), along with some [examples](examples.html) and [diagrams](diagrams.html). You will also find there both the latest version of RiC-O, and its previous versions.
 
