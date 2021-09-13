@@ -9,7 +9,7 @@
 * [Events and presentations](events.html)
 * **Projects and tools**
 
-Last updated on July 13, 2021
+Last updated on September 13, 2021
 
 Since RiC is a recent standard, and remains a draft (version 1.0 will be released at the end of 2021), there are still few concrete uses for it. In addition, RiC-CM and RiC-O are freely usable, so it is impossible to know all the uses. The list below has been drawn up on the basis of a survey carried out mainly among all members of the EGAD group. We invite people with knowledge of other projects to contact us ([egad at ica.org](mailto:egad@ica.org)) to have them listed.
 
@@ -40,6 +40,8 @@ It will probably take the FranceArchives team two years to develop the web appli
 All this work fits more broadly into the strategic plan of the National Archives for the years 2021-2025. It is closely linked to metadata quality improvement programs, and to actions aiming to break down the barriers between the internal metadata repositories, to build shared authority data. The final target is to publish the ANF RDF/RiC-O metadata sets as Linked Open Data. See also (in French): [a presentatio dated 2020, January 28](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_3_RiCauxAN_EnjeuxPremieresRealisations.pdf); this article written by Florence Clavaud: Transformer les métadonnées des Archives nationales en graphe de données : enjeux et premières réalisations, in _Les Archives nationales, une refondation pour le XXIe siècle_, _La Gazette des Archives_, n°254 (2019-2), Association des Archivistes Français, Paris, 2019, p. 59-88.
 
 - At the French National Library (BnF): the [2020-2024 roadmap](https://data.bnf.fr/fr/roadmap) of the BnF Linked Data web application, [data.bnf.fr](https://data.bnf.fr/en/), includes the integration of RiC-O, in order to better represent the metadata coming from the institution's [Archives and Manuscripts Database (BAM)](https://archivesetmanuscrits.bnf.fr/).
+
+In **the Netherlands**, the **Amsterdam City Archives** ([https://amsterdam.nl/stadsarchief](https://amsterdam.nl/stadsarchief)) is working together with developer Picturae (https://picturae.com/en/) in **developing a new version of its collection management system called Memorix, based on Linked Data. The City Archives uses RiC-O to turn its descriptive metadata into Linked Open Data**, a step-by-step process. The City Archives publishes about RiC and the status of the implementation on its website (Dutch only): [https://www.amsterdam.nl/stadsarchief/organisatie/blog-bronnen-bytes/](https://www.amsterdam.nl/stadsarchief/organisatie/blog-bronnen-bytes/).
 
 In **Switzerland**, a **new version of the Memobase portal ([http://memobase.ch](http://memobase.ch)) was released in May 2021**. This portal, a flagship achievement of **Memoriav**, the Association for the Safeguarding of Swiss Audiovisual Memory, aggregates metadata on the audiovisual archives of more than 80 Swiss organizations. The University Library Basel ([https://ub.unibas.ch/](https://ub.unibas.ch/)) and docuteam company ([https://www.docuteam.ch/fr/](https://www.docuteam.ch/fr/)) were commissioned to produce the new version of Memobase, **whose data model uses RiC-O (for descriptive metadata)**, and the more specialized ontologies (PREMIS, [http://www.loc.gov/standards/premis/ontology/index.html](http://www.loc.gov/standards/premis/ontology/index.html); and Ebucore, [https://www.ebu.ch/metadata/ontologies/ebucore/](https://www.ebu.ch/metadata/ontologies/ebucore/)) for the technical metadata of audiovisual documents.
 
