@@ -18,7 +18,7 @@ You can also simply contact us and send comments and questions, using either ([e
 The global schedule is the following:
 
 * **preparing and releasing RiC 0.2**. Apart from fixing the possibly remaining bugs in 0.1, this will mainly imply making RiC-O compliant with RiC-CM 0.2. In this CM version, some definitions of the already existing components have changed. A few additions have also be done. **This has been done: RiC-O 0.2 was released in February 2021.** The issues and pull requests made in the GitHub repository provide more information on the main changes. The internal documentation of RiC-0 0.2 also includes a detailed history note (see the ontology metadata); besides, any change in the definition of a class or property, since December 2019, is documented in the ontology file, using a skos:changeNote property in the description of the resource updated.
-* **preparing and releasing RiC-0 1.0**. This version will not be a draft, but the first official recommendation. **It will be released in 2022**, along with RiC-CM 1.0.
+* **preparing and releasing RiC-0 1.0**. This version will not be a draft, but the first official recommendation. **It will be released in 2022 or by the beginning of 2023**, along with RiC-CM 1.0.
 
 The following is a non exhaustive list of topics, tasks and known issues on which EGAD RiC-O development team will work in the next months, the milestone being RiC-O 1.0:
 
