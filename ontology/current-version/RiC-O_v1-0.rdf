@@ -443,13 +443,14 @@
         </dcterms:description>
         <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
         <dcterms:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 0.2</dcterms:title>
+            (ICA RiC-O) version 1.0</dcterms:title>
         <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 0.2</rdfs:label>
+            (ICA RiC-O) version 1.0</rdfs:label>
         <owl:priorVersion rdf:resource="https://www.ica.org/standards/RiC/RiC-O_v0-1.rdf"/>
-        <owl:versionInfo xml:lang="en">Version 0.2 - 2021-02-12.</owl:versionInfo>
+        <!-- TODO here add a new priorVersion property when possible-->
+        <owl:versionInfo xml:lang="en">Version 1.0 - 2023.</owl:versionInfo>
         <skos:historyNote rdf:parseType="Literal">
             <html:div xml:lang="en">
                 <html:p>A first beta version of RiC-O was developed in 2017 and used by the National
@@ -551,6 +552,7 @@
                         the textual definition and scope note of the Relation class.</html:li>
                     <html:li>2021, February 9: added a link to RiC-CM 0.2 diagram overview in the introduction; fixed some typos.</html:li>
                     <html:li>2021, February 11: added an @xml:lang='en' on a few labels; updated the definition (rdfs:comment) and scope note of the Rule class, as they were recently changed in RiC-CM 0.2 full draft.</html:li>
+                    <html:li>2023, April 17: renamed the file (moving to RiC-O 1.0) and started to update  the ontology metadata.</html:li>
                     
                 </html:ul>
             </html:div>
