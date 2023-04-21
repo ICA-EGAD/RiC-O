@@ -10938,12 +10938,6 @@
    <!-- https://www.ica.org/standards/RiC/ontology#Mandate -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Mandate">
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#authorizes"/>
-            <owl:allValuesFrom rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Delegation of authority by an Agent to another Agent to perform
             an Activity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -10955,7 +10949,13 @@
                     Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Mandate is a kind of Rule. A Mandate confers the authority or
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-04-21</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+            <skos:scopeNote xml:lang="en">Mandate is a kind of Rule. A Mandate confers the authority or
             competencies of Agents to perform a specified Activity. In addition to assigning an
             Activity and delegating authority to perform the Activity to an Agent, a Mandate
             commonly limits the Place (jurisdiction) and Date (time period) within which an Agent
