@@ -79,7 +79,7 @@
                         archives, at this time no generic domain ontology exists for the specific
                         needs of the archival community. This is why EGAD decided to develop RiC-O
                         as the second part of RiC standard.</html:p>
-               <html:p>Apart this first, main target, RiC-O also can help archival institutions
+               <html:p>Apart from this first, main target, RiC-O also can help archival institutions
                         and engineers to design and develop other technical implementations of
                         RiC-CM that represent record resources and their layers of contexts as
                         oriented, interconnected graphs. Of course, other technical implementations
@@ -110,8 +110,8 @@
                         standards can be processed successfully.</html:p>
                <html:p>During the ongoing development process, a lot of successful testing has
                         been made, using XML/EAD finding aids and XML/EAC-CPF authority records,
-                        that have been converted to RDF datasets, either by hand or using scripts. A
-                        conversion software is being developed and will soon be available.</html:p>
+                        that have been converted to RDF datasets, either by hand or using scripts.
+                       A conversion software is being developed and will soon be available.</html:p>
                <html:p>While some existing metadata sets may have a very fine level of
                         granularity and accuracy, already using, for example, controlled
                         vocabularies, or describing curation events separately, often these metadata
@@ -165,12 +165,12 @@
                         implement RiC-O will get new insight into the content and context of their
                         archives that wasn't visible with the existing ICA-standards. It should be
                         even more interesting if you can infer new assertions from the RDF datasets
-                        you built, and of course link your datasets to other ressources outside of
+                        you built, and of course link your datasets to other resources outside of
                         your institution.</html:p>
                <html:p>
                   <html:strong>RiC-O should be extensible</html:strong>.</html:p>
                <html:p>Institutions are free to extend the ontology by adding new subclasses or
-                        subproperties if needed. RiC-O has also the potential to be useable in other
+                        subproperties if needed. RiC-O has also the potential to be usable in other
                         contexts than purely archival ones. This implies that hierarchies of classes
                         and properties are defined and that mappings are developed with other
                         ontologies as mentioned above. It may also imply that RiC-O should provide
@@ -213,7 +213,7 @@
                                 example of such an addition is the <html:a href="#rico:Proxy">Proxy
                                     class</html:a>, that represents (stands for) a Record Resource
                                 as it exists in a specific Record Set.</html:li>
-                     <html:li>finally, a system of classes helps to implement the Relations
+                     <html:li>Finally, a system of classes helps to implement the Relations
                                 section of RiC-CM.<html:br/> While these relations also are
                                 represented as simple, binary object properties (e.g. <html:a href="#rico:hasProvenance">‘hasProvenance’</html:a> that
                                 corresponds to RiC-R026 relation), you may need to assign different
@@ -297,7 +297,7 @@
                             methods may be used in parallel within the same dataset by an
                             institution that, for example, would decide to emphasize only the
                             accession, appraisal and description events among the whole history of
-                            Record resources.</html:p>
+                            Record Resources.</html:p>
                   <html:p>These datatype properties have the same kind of skos:scopeNote as
                             above.</html:p>
                   <html:p>Finally, we have introduced a few datatype properties that do not
@@ -360,7 +360,7 @@
                             rdfs:comment, for handling:</html:p>
                   <html:ul>
                      <html:li>Information about the corresponding RiC-CM component when
-                                appliable (<html:a href="#rico:RiCCMCorrespondingComponent">rico:RiCCMCorrespondingComponent</html:a>). Various phrasings
+                                applicable (<html:a href="#rico:RiCCMCorrespondingComponent">rico:RiCCMCorrespondingComponent</html:a>). Various phrasings
                                 are used in this property depending on the rule applied for defining
                                 the RiC-CM component.</html:li>
                      <html:li>Information, most often in prose text for now, about possible
@@ -517,6 +517,7 @@
                <html:li>2023, April 17: renamed the file (moving to RiC-O 1.0) and started to update  the ontology metadata.</html:li>
                <html:li>2023, April 19: removed the unnecessary restrictions specified for a significant number of classes, among which most of the subclasses of Type, plus Activity, AgentTemporalRelation,  Coordinates, CreationRelation, Event,  Identifier, Instantiation, MandateRelation, Person, PhysicalLocation, Place, RecordResource, RecordSet, Rule.</html:li>
                <html:li>2023, April 21: removed an unnecessary restriction that remained on Mandate class.</html:li>
+               <html:li>2023, end of May-June 5: fixed some typos in the introduction and definition of entities, including the use of "data property" term instead of the correct "datatype property" one.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -3665,7 +3666,7 @@
       <rdfs:comment xml:lang="en">Connects a Record resource to an Agent who published
             it.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">hasPublisher</rdfs:label>
+      <rdfs:label xml:lang="en">has publisher</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -6284,7 +6285,7 @@
       <rdfs:comment xml:lang="en">Connects an Agent to a Record Resource that it
             published.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">isPublisherOf</rdfs:label>
+      <rdfs:label xml:lang="en">is publisher of</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8413,7 +8414,7 @@
       <rdfs:label xml:lang="en">beginning date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#birthDate -->
@@ -8426,7 +8427,7 @@
       <rdfs:label xml:lang="en">birth date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#calendar -->
@@ -8616,7 +8617,7 @@
       <rdfs:label xml:lang="en">creation date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#date -->
@@ -8630,7 +8631,7 @@
       <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be
             deprecated and removed later on. Use only if you don't use Date classes for handling
             dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property implementation of RiC-E18 (Date
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property implementation of RiC-E18 (Date
             entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#dateQualifier -->
@@ -8685,7 +8686,7 @@
       <rdfs:label xml:lang="en">death date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#deletionDate -->
@@ -8698,7 +8699,7 @@
       <rdfs:label xml:lang="en">deletion date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#descriptiveNote -->
@@ -8722,7 +8723,7 @@
       <rdfs:label xml:lang="en">end date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#expressedDate -->
@@ -8956,7 +8957,7 @@
       <rdfs:label xml:lang="en">last modification date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#latitude -->
@@ -9027,7 +9028,7 @@
       <rdfs:label xml:lang="en">modification date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#name -->
@@ -9177,7 +9178,7 @@
       <rdfs:label xml:lang="en">publication date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#qualityOfRepresentation -->
@@ -9535,7 +9536,7 @@
       <rdfs:label xml:lang="en">used from date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#usedToDate -->
@@ -9548,7 +9549,7 @@
       <rdfs:label xml:lang="en">used to date</rdfs:label>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Data property specialized implementation of
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#width -->
@@ -10630,7 +10631,7 @@
          </rdf:Description>
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A22 (Identifier
-            attribute) (see also the identifier data property)</RiCCMCorrespondingComponent>
+            attribute) (see also the identifier datatype property)</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#IdentifierType -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#IdentifierType">
@@ -11096,7 +11097,7 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Name</rdfs:label>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A28 (Name attribute)
-            (see also the name data property)</RiCCMCorrespondingComponent>
+            (see also the name datatype property)</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#OccupationType -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#OccupationType">
