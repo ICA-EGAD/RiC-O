@@ -519,7 +519,8 @@
                <html:li>2023, April 19: removed the unnecessary restrictions specified for a significant number of classes, among which most of the subclasses of Type, plus Activity, AgentTemporalRelation,  Coordinates, CreationRelation, Event,  Identifier, Instantiation, MandateRelation, Person, PhysicalLocation, Place, RecordResource, RecordSet, Rule.</html:li>
                <html:li>2023, April 21: removed an unnecessary restriction that remained on Mandate class.</html:li>
                <html:li>2023, end of May-June 5: fixed some typos in the introduction and definition of entities, including the use of "data property" term instead of the correct "datatype property" one.</html:li>
-              <html:li>2023, June 5: made includesOrIncluded object property a subproperty of hasOrHadPart in addition to isRecordResourceAssociatedToRecordResource.</html:li>
+               <html:li>2023, June 5: made includesOrIncluded object property a subproperty of hasOrHadPart in addition to isRecordResourceAssociatedToRecordResource.</html:li>
+               <html:li>2023, June 21: added two object properties, sub-properties of hasSuccessor: wasMergedInto and wasSplitInto, with Corporate Body as domain and range, and their inverse ones.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -753,7 +754,7 @@
             Agents</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">agent control relation has target </rdfs:label>
-        </owl:ObjectProperty>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentHasWorkRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentHasWorkRelation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentIsConnectedToAgentRelation"/>
@@ -3118,17 +3119,17 @@
       <rdfs:label xml:lang="en">has or had physical location</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-01-22</dc:date>
-            <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (the name of this property in RiC-O 0.1 was
-                    "hasPhysicalLocation").</rdf:value>
+            <dc:date>2021-02-01</dc:date>
+            <rdf:value xml:lang="en">Property made a subproperty of
+                    'isPlaceAssociatedWith".</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-02-01</dc:date>
-            <rdf:value xml:lang="en">Property made a subproperty of
-                    'isPlaceAssociatedWith".</rdf:value>
+            <dc:date>2021-01-22</dc:date>
+            <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (the name of this property in RiC-O 0.1 was
+                    "hasPhysicalLocation").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -3204,17 +3205,17 @@
       <rdfs:label xml:lang="en">has or had rule type</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-01-22</dc:date>
-            <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition, super property IRI (the name of this property in RiC-O 0.1 was
-                    "hasRuleType").</rdf:value>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Object property added along with RuleType class and
+                    isRuleTypeOf object property. </rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Object property added along with RuleType class and
-                    isRuleTypeOf object property. </rdf:value>
+            <dc:date>2021-01-22</dc:date>
+            <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition, super property IRI (the name of this property in RiC-O 0.1 was
+                    "hasRuleType").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -5930,17 +5931,17 @@
       <rdfs:label xml:lang="en">is or was rule type of</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Object property added along with RuleType class and
-                    hasRuleType object property. </rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
             <dc:date>2021-01-22</dc:date>
             <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property URI (the name of this property in RiC-O 0.1 was
                     "isRuleTypeOf").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Object property added along with RuleType class and
+                    hasRuleType object property. </rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -7647,6 +7648,38 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">relation has target </rdfs:label>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#resultedFromTheMergerOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#resultedFromTheMergerOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isSuccessorOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#wasMergedInto"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:comment xml:lang="en">inverse of 'was merged into' object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">resulted from the merger of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-06-21</dc:date>
+            <rdf:value xml:lang="en">Object property created in order to enable an accurate representation of mergers between corporate bodies.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#resultedFromTheSplitOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#resultedFromTheSplitOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isSuccessorOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#wasSplitInto"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:comment xml:lang="en">Inverse of 'was split into' object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">resulted from the split of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date xml:lang="en">2023-06-21</dc:date>
+            <rdf:value xml:lang="en">Object property created in order to enable an accurate representation of the split of a corporate body into two or more new corporate bodies.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#resultsOrResultedFrom -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#resultsOrResultedFrom">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithEvent"/>
@@ -8049,6 +8082,38 @@
             modified.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">was last updated at date </rdfs:label>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#wasMergedInto -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wasMergedInto">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasSuccessor"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#resultedFromTheMergerOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:comment xml:lang="en">Connects a Corporate Body to another Corporate Body that is the result of a merger of the previous one with one to many other corporate bodies.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">was merged into</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-06-21</dc:date>
+            <rdf:value xml:lang="en">Object property created in order to enable an accurate representation of mergers between corporate bodies.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#wasSplitInto -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wasSplitInto">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasSuccessor"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#resultedFromTheSplitOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:comment xml:lang="en">Connects a Corporate Body to one of the Corporate Bodies that results from the split of the previous one into two to many corporate bodies.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">was split into</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-06-21</dc:date>
+            <rdf:value xml:lang="en">Object property created in order to enable an accurate representation of the split of a corporate body into two or more new corporate bodies.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#wasUsedFromDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wasUsedFromDate">
@@ -9062,16 +9127,16 @@
       <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Updated the scope note, as a RecordResourceExtent class has
-                    been created.</rdf:value>
+            <dc:date>2020-11-01</dc:date>
+            <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
+                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-01</dc:date>
-            <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
-                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Updated the scope note, as a RecordResourceExtent class has
+                    been created.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:example xml:lang="en">1,500 words</skos:example>
@@ -9521,15 +9586,15 @@
       <rdfs:label xml:lang="en">Agent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-02-08</dc:date>
-            <rdf:value xml:lang="en">removed the Restrictions</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">Comment: updated. Scope note: updated and made several
+                    paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">Comment: updated. Scope note: updated and made several
-                    paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">removed the Restrictions</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">An Agent may have one or more identities; an identity is a
@@ -9792,16 +9857,16 @@
       <rdfs:label xml:lang="en">Carrier Extent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-28</dc:date>
-            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
-                    carrier extent</rdf:value>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Changed a bit the definition and added change
+                    notes.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Changed a bit the definition and added change
-                    notes.</rdf:value>
+            <dc:date>2020-10-28</dc:date>
+            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
+                    carrier extent</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Countable characteristics of a record resource carrier
@@ -10453,15 +10518,15 @@
       <rdfs:label xml:lang="en">Identifier Type</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-19</dc:date>
-            <rdf:value xml:lang="en">Class added along with hasIdentifierType and
-                    isIdentifierTypeOf object properties.</rdf:value>
+            <dc:date>2023-04-19</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2023-04-19</dc:date>
-            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+            <dc:date>2020-10-19</dc:date>
+            <rdf:value xml:lang="en">Class added along with hasIdentifierType and
+                    isIdentifierTypeOf object properties.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">For example, 'old identifier' ; 'ISNI' (for a person or
@@ -10758,15 +10823,15 @@
       <rdfs:label xml:lang="en">Mandate</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2023-04-21</dc:date>
-            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated.
+                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated.
-                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2023-04-21</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Mandate is a kind of Rule. A Mandate confers the authority or
@@ -11008,8 +11073,8 @@
       <rdfs:label xml:lang="en">Person</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-02-08</dc:date>
-            <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
+            <dc:date>2023-04-19</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -11021,8 +11086,8 @@
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2023-04-19</dc:date>
-            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
@@ -11317,15 +11382,15 @@
       <rdfs:label xml:lang="en">Record</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2021-02-08</dc:date>
-            <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">Scope note: updated and made several paragraphs. Objective:
+                    to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">Scope note: updated and made several paragraphs. Objective:
-                    to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2021-02-08</dc:date>
+            <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Record is a kind of Record Resource. A Record must have or
@@ -11377,15 +11442,15 @@
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">Scope note: made separate paragraphs plus very few
-                    changes.</rdf:value>
+            <dc:date>2023-04-19</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2023-04-19</dc:date>
-            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">Scope note: made separate paragraphs plus very few
+                    changes.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Producing a record resource may imply either its newly
@@ -11427,16 +11492,16 @@
       <rdfs:label xml:lang="en">Record Resource Extent</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-28</dc:date>
-            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
-                    record resource extent</rdf:value>
+            <dc:date>2020-11-21</dc:date>
+            <rdf:value xml:lang="en">Changed a bit the definition and added change
+                    notes.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-11-21</dc:date>
-            <rdf:value xml:lang="en">Changed a bit the definition and added change
-                    notes.</rdf:value>
+            <dc:date>2020-10-28</dc:date>
+            <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
+                    record resource extent</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Countable characteristics of the content of the Record
@@ -11542,15 +11607,15 @@
       <rdfs:label xml:lang="en">Record Set</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">comment: updated. Scope note: updated and made several
-                    paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+            <dc:date>2023-04-19</dc:date>
+            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2023-04-19</dc:date>
-            <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary restriction.</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">comment: updated. Scope note: updated and made several
+                    paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Record Set is a kind of Record Resource. The Record members in
@@ -11616,16 +11681,16 @@
       <rdfs:label xml:lang="en">Record State</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-10-23</dc:date>
-            <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
-                    with RiC-CM v0.2.</rdf:value>
+            <dc:date>2020-12-28</dc:date>
+            <rdf:value xml:lang="en">IRI and label changed (RecordResourceState to RecordState),
+                    as well as textual definition.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>2020-12-28</dc:date>
-            <rdf:value xml:lang="en">IRI and label changed (RecordResourceState to RecordState),
-                    as well as textual definition.</rdf:value>
+            <dc:date>2020-10-23</dc:date>
+            <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
+                    with RiC-CM v0.2.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Can in particular refer to a record state of development or
