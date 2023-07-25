@@ -521,6 +521,7 @@
                <html:li>2023, end of May-June 5: fixed some typos in the introduction and definition of entities, including the use of "data property" term instead of the correct "datatype property" one.</html:li>
                <html:li>2023, June 5: made includesOrIncluded object property a subproperty of hasOrHadPart in addition to isRecordResourceAssociatedToRecordResource.</html:li>
                <html:li>2023, June 21: added two object properties, sub-properties of hasSuccessor: wasMergedInto and wasSplitInto, with Corporate Body as domain and range, and their inverse ones.</html:li>
+               <html:li>2023, July 25: adjusted definition of hasOrHadLanguage</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -2820,8 +2821,8 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
-      <rdfs:comment xml:lang="en">Connects an Agent or Record Resource to a Language that it uses
-            or used.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects an Agent, Record or Record Part to a Language that uses
+            or used it.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had language</rdfs:label>
       <skos:changeNote>
@@ -2830,6 +2831,12 @@
             <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
                     definition (the name of this property in RiC-O 0.1 was
                     "hasLanguage").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-07-25</dc:date>
+            <rdf:value xml:lang="en">changed the definition to be consistent with the inverse relation.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
