@@ -2874,12 +2874,12 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasCreationDate -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCreationDate">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2897,6 +2897,136 @@
         <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
 
+    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is creation date of</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>    
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasAllMembersWithCreationDate -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAllMembersWithCreationDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCreationDateOfAllMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has all members with creation date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOfAllMembersOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOfAllMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is creation date of all members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasMostMembersWithCreationDate -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMostMembersWithCreationDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOfMostMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has most members with creation date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOfMostMembersOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOfMostMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is creation date of most members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasSomeMembersCreationDate -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasSomeMembersWithCreationDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOfSomeMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has some members with creation date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOfSomeMembersOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOfSomeMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is creation date of some members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
 
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName -->
 
@@ -5769,28 +5899,6 @@
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOf -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOf">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
-                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is creation date of</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
-    </owl:ObjectProperty>    
-
-
 
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAdjacentTo -->
 
