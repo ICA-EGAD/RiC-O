@@ -521,6 +521,7 @@
                <html:li>2023, June 5: made includesOrIncluded object property a subproperty of hasOrHadPart in addition to isRecordResourceAssociatedToRecordResource.</html:li>
                <html:li>2023, June 21: added two object properties, sub-properties of hasSuccessor: wasMergedInto and wasSplitInto, with Corporate Body as domain and range, and their inverse ones.</html:li>
                <html:li>2023, July 25: adjusted definition of hasOrHadLanguage</html:li>
+               <html:li>2023, TBD = Placeholder for changes to dates</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -749,7 +750,7 @@
         <rdfs:comment xml:lang="en">Connects an Accumulation Relation to one of the accumulated
             Record Resources or Instantiations</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">accumulation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">accumulation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -764,7 +765,7 @@
         <rdfs:comment xml:lang="en">Connects an Accumulation Relation to one of the accumulating
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">accumulation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">accumulation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -786,7 +787,7 @@
         <rdfs:comment xml:lang="en">Connects an Activity Documentation Relation to one of the
             resulting Record Resources or Instantiations</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">activity documentation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">activity documentation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -801,7 +802,7 @@
         <rdfs:comment xml:lang="en">Connects an Activity Documentation Relation to one of the
             documented Activities</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">activity documentation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">activity documentation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -824,7 +825,7 @@
             Activity is transferred from an Agent to another one) or a Mandate Relation (the Mandate
             assigns the Activity to the Agent or defines it).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">activity is context of relation </rdfs:label>
+        <rdfs:label xml:lang="en">activity is context of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -839,7 +840,7 @@
         <rdfs:comment xml:lang="en">Connects an Activity that is performed to a Performance
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">activity is source of performance relation </rdfs:label>
+        <rdfs:label xml:lang="en">activity is source of performance relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -854,7 +855,7 @@
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">activity is target of activity documentation relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -896,7 +897,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Control Relation to one of the controlling
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent control relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">agent control relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -912,7 +913,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Control Relation to one of the controlled
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent control relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">agent control relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -926,7 +927,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#WorkRelation"/>
         <rdfs:comment xml:lang="en">Connects an Agent to a Work Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent has work relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent has work relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -942,7 +943,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Hierarchical Relation to one of the
             hierarchically superior Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent hierarchical relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">agent hierarchical relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -958,7 +959,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Hierarchical Relation to one of the
             hierarchically inferior Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent hierarchical relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">agent hierarchical relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -972,7 +973,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
         <rdfs:comment xml:lang="en">Connects an Agent to an Agent Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is connected to agent relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is connected to agent relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -986,7 +987,7 @@
         <rdfs:comment xml:lang="en">Connects a controlling Agent to an Agent Control
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of agent control relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of agent control relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1001,7 +1002,7 @@
         <rdfs:comment xml:lang="en">Connects a hierarchically superior Agent to an Agent
             Hierarchical Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of agent hierarchical relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of agent hierarchical relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1017,7 +1018,7 @@
         <rdfs:comment xml:lang="en">Connects a predecessor Agent to an Agent Temporal
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of agent temporal relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of agent temporal relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1032,7 +1033,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent thas has the authority, to an Authority
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of authority relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of authority relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1056,7 +1057,7 @@
             Intellectual Property Rights Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">agent is source of intellectual property rights relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1070,7 +1071,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
         <rdfs:comment xml:lang="en">Connects a manager Agent to a Management Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of management relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of management relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1092,7 +1093,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#OwnershipRelation"/>
         <rdfs:comment xml:lang="en">Connects an owner Agent to an Ownership Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of ownership relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of ownership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1107,7 +1108,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent that holds a Record Resource or Instantiation,
             to a Record Resource Holding Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is source of record resource holding relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is source of record resource holding relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1121,7 +1122,7 @@
         <rdfs:comment xml:lang="en">Connects one of the accumulating Agents to an Accumulation
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of accumulation relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of accumulation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1136,7 +1137,7 @@
         <rdfs:comment xml:lang="en">Connects one of the controlled Agents to an Agent Control
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of agent control relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of agent control relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1151,7 +1152,7 @@
         <rdfs:comment xml:lang="en">Connects one of the hierarchically inferior Agents to an Agent
             Hierarchical Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of agent hierarchical relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of agent hierarchical relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1166,7 +1167,7 @@
         <rdfs:comment xml:lang="en">Connects one of the Agents that created or accumulated the
             Record resource or Instantiation, to an Agent Origination Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of agent origination relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of agent origination relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1182,7 +1183,7 @@
         <rdfs:comment xml:lang="en">Connects a successor Agent to an Agent Temporal
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of agent temporal relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of agent temporal relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1226,7 +1227,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
         <rdfs:comment xml:lang="en">Connects a creator Agent to a Creation Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of creation relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of creation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1240,7 +1241,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#MandateRelation"/>
         <rdfs:comment xml:lang="en">Connects a mandated Agent to a Mandate Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of mandate relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of mandate relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1254,7 +1255,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
         <rdfs:comment xml:lang="en">Connects an Agent to a Performance Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent is target of performance relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent is target of performance relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1276,7 +1277,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent or Activity that is the provenance of a Record
             resource or Instantiation, to a Provenance Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent or activity is target of provenance relation </rdfs:label>
+        <rdfs:label xml:lang="en">agent or activity is target of provenance relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1298,7 +1299,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Origination Relation to one of the resulting
             Record Resource or Instantiation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent origination relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">agent origination relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1312,7 +1313,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Origination Relation to one of the creating or
             accumulating Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent origination relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">agent origination relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1326,7 +1327,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Relation to one of the involved
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">agent relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1341,7 +1342,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Temporal Relation to one of the predecessor
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent temporal relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">agent temporal relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1356,7 +1357,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent Temporal Relation to one of the successor
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">agent temporal relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">agent temporal relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1371,7 +1372,7 @@
         <rdfs:comment xml:lang="en">Connects an Appellation to an Appellation
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">appellation is source of appellation relation </rdfs:label>
+        <rdfs:label xml:lang="en">appellation is source of appellation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1385,7 +1386,7 @@
         <rdfs:comment xml:lang="en">Connects an Appellation Relation to the concerned
             Appellation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">appellation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">appellation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1400,7 +1401,7 @@
         <rdfs:comment xml:lang="en">Connects an Appellation Relation to one of the designated
             Things</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">appellation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">appellation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1422,7 +1423,7 @@
             Activity that is, either transferred from an Agent to another one, or assigned by a
             Mandate to an Agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">as concerns activity </rdfs:label>
+        <rdfs:label xml:lang="en">as concerns activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1436,7 +1437,7 @@
         <rdfs:comment xml:lang="en">Connects an Authority Relation to an Agent that has the
             authority</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">authority relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">authority relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1451,7 +1452,7 @@
         <rdfs:comment xml:lang="en">Connects an Authority Relation to a Thing over which the
             Authority is performed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">authority relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">authority relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1469,7 +1470,7 @@
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Inverse of &apos;authorizes&apos; object property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">authorized by </rdfs:label>
+        <rdfs:label xml:lang="en">authorized by</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R067i (&apos;authorizedBy&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -1512,7 +1513,7 @@
         <rdfs:comment xml:lang="en">Connects a Mandate Relation to an Agent that assigns the
             Mandate.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">authorizing agent </rdfs:label>
+        <rdfs:label xml:lang="en">authorizing agent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1577,7 +1578,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:comment xml:lang="en">Connects a Child Relation to a parent Person</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">child relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">child relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1591,7 +1592,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:comment xml:lang="en">Connects a Child Relation to a child Person</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">child relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">child relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1636,7 +1637,7 @@
         <rdfs:comment xml:lang="en">Connects a Correspondence Relation to one of the Persons
             involved</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">correspondence relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">correspondence relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1658,7 +1659,7 @@
         <rdfs:comment xml:lang="en">Connects a Creation Relation to one of the created Record
             Resources or Instantiations</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">creation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">creation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1672,7 +1673,7 @@
         <rdfs:comment xml:lang="en">Connects a Creation Relation to one of the creator
             Agents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">creation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">creation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1687,7 +1688,7 @@
         <rdfs:comment xml:lang="en">Connects a Creation Relation to the Role Type that the creator
             Agent(s) has in the creation process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">creation with role </rdfs:label>
+        <rdfs:label xml:lang="en">creation with role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1703,7 +1704,7 @@
         <rdfs:comment xml:lang="en">Connects a Derivation Relation to the Instantiation from which
             one or more Instantiations is derived.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">derivation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">derivation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1719,7 +1720,7 @@
         <rdfs:comment xml:lang="en">Connects a Derivation Relation to one of the derived
             Instantiations</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">derivation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">derivation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1735,7 +1736,7 @@
         <rdfs:comment xml:lang="en">Connects a Descendance Relation to one of the ancestor
             Persons</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">descendance relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">descendance relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1751,7 +1752,7 @@
         <rdfs:comment xml:lang="en">Connects a Descendance Relation to one of the descendant
             Persons</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">descendance relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">descendance relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1859,7 +1860,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#EventRelation"/>
         <rdfs:comment xml:lang="en">Connects an Event to an Event Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">event is source of event relation </rdfs:label>
+        <rdfs:label xml:lang="en">event is source of event relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1872,7 +1873,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:comment xml:lang="en">Connects an Event Relation to an Event</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">event relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">event relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1886,7 +1887,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:comment xml:lang="en">Connects an Event Relation to an associated Thing</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">event relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">event relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1956,7 +1957,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
         <rdfs:comment xml:lang="en">Connects a Family Relation to a Person.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">family relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">family relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2026,7 +2027,7 @@
         <rdfs:comment xml:lang="en">Connects a Functional Equivalence Relation to one of the
             functionally equivalent Instantiations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">functional equivalence relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">functional equivalence relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2042,7 +2043,7 @@
         <rdfs:comment xml:lang="en">Connects the Group that has at least a subdivision, to a Group
             Subdivision Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group is source of group subdivision relation </rdfs:label>
+        <rdfs:label xml:lang="en">group is source of group subdivision relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2058,7 +2059,7 @@
         <rdfs:comment xml:lang="en">Connects the Group (that has one to many members) to a
             Membership Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group is source of membership relation </rdfs:label>
+        <rdfs:label xml:lang="en">group is source of membership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2074,7 +2075,7 @@
         <rdfs:comment xml:lang="en">Connects a Group that is a subdivision, to a Group Subdivision
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group is target of group subdivision relation </rdfs:label>
+        <rdfs:label xml:lang="en">group is target of group subdivision relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2089,7 +2090,7 @@
         <rdfs:comment xml:lang="en">Connects a Group (which has a leader) to a Leadership
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group is target of leadership relation </rdfs:label>
+        <rdfs:label xml:lang="en">group is target of leadership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2105,7 +2106,7 @@
         <rdfs:comment xml:lang="en">Connects the Group (in which a Position exists) to a Position To
             Group Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group is target of position to group relation </rdfs:label>
+        <rdfs:label xml:lang="en">group is target of position to group relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2120,7 +2121,7 @@
         <rdfs:comment xml:lang="en">Connects a Group Subdivision Relation to the Group that has
             subdivisions</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group subdivision relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">group subdivision relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2135,7 +2136,7 @@
         <rdfs:comment xml:lang="en">Connects a Group Subdivision Relation to one of the Groups that
             is a subdivision</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">group subdivision relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">group subdivision relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2308,7 +2309,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;is beginning date of&apos; object property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has beginning date </rdfs:label>
+        <rdfs:label xml:lang="en">has beginning date</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R069i (&apos;has beginning date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2324,7 +2325,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;is birth date of&apos; object property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has birth date </rdfs:label>
+        <rdfs:label xml:lang="en">has birth date</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R070i (&apos;has birth date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2451,7 +2452,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource to a copy of that Record
             Resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has copy </rdfs:label>
+        <rdfs:label xml:lang="en">has copy</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R012 (&apos;has copy&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2493,7 +2494,7 @@
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology#hasIdentifierType -->
+    <!-- https://www.ica.org/standards/RiC/ontology#hasDateType -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDateType">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
@@ -2521,7 +2522,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;is death date of&apos; object property</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has death date </rdfs:label>
+        <rdfs:label xml:lang="en">has death date</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R072i (&apos;has death date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2543,7 +2544,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation to an Instantiation that is derived
             from it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has derived instantiation </rdfs:label>
+        <rdfs:label xml:lang="en">has derived instantiation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R014 (&apos;has derived instantiation&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2628,7 +2629,7 @@
         </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of &apos;is draft of&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has draft </rdfs:label>
+        <rdfs:label xml:lang="en">has draft</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-011i (&apos;has draft&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2644,7 +2645,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;is end date of&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has end date </rdfs:label>
+        <rdfs:label xml:lang="en">has end date</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R071i (&apos;has end date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -2784,7 +2785,7 @@
             between them. Genetic in this sense is as defined by diplomatics, i.e. the process by
             which a Record Resource is developed. This relation is symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has genetic link to record resource </rdfs:label>
+        <rdfs:label xml:lang="en">has genetic link to record resource</rdfs:label>
         <skos:scopeNote xml:lang="en">Use to connect two Record Resources only if it is not possible
             to be more accurate and specify a narrower, asymmetric relation, e.g. ‘is original
             of’.</skos:scopeNote>
@@ -2859,11 +2860,42 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;is modification date of&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has modification date </rdfs:label>
+        <rdfs:label xml:lang="en">has modification date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R073i (&apos;has modification date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
+    <!-- https://www.ica.org/standards/RiC/ontology#hasCreationDate -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCreationDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has creation date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>TBD</dc:date>
+                <rdf:value xml:lang="en">TBD</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
 
 
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName -->
@@ -4353,7 +4385,7 @@
         </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of &apos;is original of&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has original </rdfs:label>
+        <rdfs:label xml:lang="en">has original</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R010i (is original of
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -4402,7 +4434,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource or an Instantiation to an Agent that
             creates or accumulates the Record Resource, receives it, or sends it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has provenance </rdfs:label>
+        <rdfs:label xml:lang="en">has provenance</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R026 (&apos;has provenance&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -4578,7 +4610,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource or an Instantiation to the Agent that
             sends it</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has sender </rdfs:label>
+        <rdfs:label xml:lang="en">has sender</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R031 (&apos;has sender&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -4637,7 +4669,7 @@
             Agent that is used as a source of information for identifying or describing
             it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has source </rdfs:label>
+        <rdfs:label xml:lang="en">has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4748,7 +4780,7 @@
             Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">instantiation is connected to functional equivalence relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4763,7 +4795,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation to an Instantiation to Instantiation
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation is connected to instantiation relation </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation is connected to instantiation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4779,7 +4811,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation (from which at least one Instantiation
             is derived) to a Derivation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation is source of derivation relation </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation is source of derivation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4794,7 +4826,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation (from which at least one Instantiation
             is migrated) to a Migration Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation is source of migration relation </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation is source of migration relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4810,7 +4842,7 @@
         <rdfs:comment xml:lang="en">Connects a derived Instantiation to a Derivation
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation is target of derivation relation </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation is target of derivation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4825,7 +4857,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation which results from a migration, to a
             Migration Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation is target of migration relation </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation is target of migration relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4841,7 +4873,7 @@
             Resource to Instantiation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">instantiation is target of record resource to instantiation
-            relation </rdfs:label>
+            relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4855,7 +4887,7 @@
         <rdfs:comment xml:lang="en">Connects an Instantiation to Instantiation Relation to one of
             the related Instantiations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">instantiation to instantiation relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">instantiation to instantiation relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4877,7 +4909,7 @@
         <rdfs:comment xml:lang="en">Connects an IntellectualPropertyRightsRelation to one of the
             Group, Person or Position that holds the rights.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">intellectual property rights relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">intellectual property rights relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4899,7 +4931,7 @@
         <rdfs:comment xml:lang="en">Connects an IintellectualPropertyRightsRelation to one of the
             Record Resource or Instantiation on which the rights are held.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">intellectual property rights relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">intellectual property rights relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4974,7 +5006,7 @@
         </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of &apos;has addressee&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is addressee of </rdfs:label>
+        <rdfs:label xml:lang="en">is addressee of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-032i (&apos;is addressee of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -4995,7 +5027,7 @@
         <rdfs:comment xml:lang="en">Connects two Agents. This object property is
             symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is agent associated with agent </rdfs:label>
+        <rdfs:label xml:lang="en">is agent associated with agent</rdfs:label>
         <skos:scopeNote xml:lang="en">Use to connect two Agents only if it is not possible to be
             more accurate and use a narrower Agent to Agent relation, e.g. ‘has work relation
             with’.</skos:scopeNote>
@@ -5015,7 +5047,7 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;is date associated with&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is associated with date </rdfs:label>
+        <rdfs:label xml:lang="en">is associated with date</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R068i (&apos;is associated with date&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5036,7 +5068,7 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;is event associated with&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is associated with event </rdfs:label>
+        <rdfs:label xml:lang="en">is associated with event</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R057i (&apos;is associated with event&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5057,7 +5089,7 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;is place associated with&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is associated with place </rdfs:label>
+        <rdfs:label xml:lang="en">is associated with place</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R074i (&apos;is associated with place&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5078,7 +5110,7 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;is rule associated with&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is associated with rule </rdfs:label>
+        <rdfs:label xml:lang="en">is associated with rule</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R062i (&apos;is associated with rule&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5128,7 +5160,7 @@
         <rdfs:comment xml:lang="en">Connects an Agent that assigns the Mandate, to a Mandate
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is authorizing agent in mandate relation </rdfs:label>
+        <rdfs:label xml:lang="en">is authorizing agent in mandate relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5142,7 +5174,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Thing that came into existence on that
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is beginning date of </rdfs:label>
+        <rdfs:label xml:lang="en">is beginning date of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R069 (&apos;is beginning date of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5158,7 +5190,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Person that was born on that
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is birth date of </rdfs:label>
+        <rdfs:label xml:lang="en">is birth date of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R070 (&apos;is birth date of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5323,7 +5355,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Thing that the Date is associated with the
             existence and lifecycle of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is date associated with </rdfs:label>
+        <rdfs:label xml:lang="en">is date associated with</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R068 (&apos;is date associated with&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5358,7 +5390,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Person who died on that
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is death date of </rdfs:label>
+        <rdfs:label xml:lang="en">is death date of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R072 (&apos;is death date of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5375,7 +5407,7 @@
         <rdfs:comment xml:lang="en">Inverse of &apos;has derived instantiation&apos; object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is derived from instantiation </rdfs:label>
+        <rdfs:label xml:lang="en">is derived from instantiation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R014i (&apos;is derived from instantiation&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5433,7 +5465,7 @@
         <rdfs:comment xml:lang="en">Connects a draft to the final version of a
             Record.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is draft of </rdfs:label>
+        <rdfs:label xml:lang="en">is draft of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R011 (is draft of
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5449,7 +5481,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Thing whose existence ended on that
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is end date of </rdfs:label>
+        <rdfs:label xml:lang="en">is end date of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R071 (&apos;is end date
             of&apos;)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5466,7 +5498,7 @@
         <rdfs:comment xml:lang="en">Connects two Things that are considered
             equivalent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is equivalent to </rdfs:label>
+        <rdfs:label xml:lang="en">is equivalent to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5484,7 +5516,7 @@
         <rdfs:comment xml:lang="en">Connects an Event to a Thing that is associated with the
             existence and lifecycle of the Event.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is event associated with </rdfs:label>
+        <rdfs:label xml:lang="en">is event associated with</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R057 (&apos;is event associated with&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5596,7 +5628,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to an Appellation, when it is the date at which
             the Appellation was first used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is from use date of </rdfs:label>
+        <rdfs:label xml:lang="en">is from use date of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5674,7 +5706,7 @@
         <rdfs:comment xml:lang="en">Connects two Instantiations. This object property is
             symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is instantiation associated with instantiation </rdfs:label>
+        <rdfs:label xml:lang="en">is instantiation associated with instantiation</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R034 (&apos;is instantiation associated with
             instantiation&apos; relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -5718,7 +5750,7 @@
         <rdfs:comment xml:lang="en">Connects a Date and a Thing that was last modified at this
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is last update date of </rdfs:label>
+        <rdfs:label xml:lang="en">is last update date of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5732,11 +5764,32 @@
         <rdfs:comment xml:lang="en">Connects a Date to a Thing that was modified on that
             Date.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is modification date of </rdfs:label>
+        <rdfs:label xml:lang="en">is modification date of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R073 (&apos;is modification date of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isCreationDateOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCreationDateOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is creation date of</rdfs:label>
+        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>    
+
 
 
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAdjacentTo -->
@@ -7291,7 +7344,7 @@
         <rdfs:comment xml:lang="en">Connects the original version of a Record to a copy or a later
             version.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is original of </rdfs:label>
+        <rdfs:label xml:lang="en">is original of</rdfs:label>
         <skos:scopeNote xml:lang="en">There may be zero to many intermediate Records, ignored or
             unknown, between the two connected Records</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R010 (is original of
@@ -7313,7 +7366,7 @@
         <rdfs:comment xml:lang="en">Connects a Place to a Thing that Place is associated with the
             existence and lifecycle of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is place associated with </rdfs:label>
+        <rdfs:label xml:lang="en">is place associated with</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R074 (&apos;is place associated with&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7359,7 +7412,7 @@
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">inverse of &apos;has provenance&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is provenance of </rdfs:label>
+        <rdfs:label xml:lang="en">is provenance of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R026i (&apos;is provenance of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7431,7 +7484,7 @@
         <rdfs:comment xml:lang="en">Connects two Record Resources. This object property is
             symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is record resource associated with record resource </rdfs:label>
+        <rdfs:label xml:lang="en">is record resource associated with record resource</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R022 (&apos;is record resource associated with
             record resource&apos; relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7495,7 +7548,7 @@
         <rdfs:comment xml:lang="en">The most generic object property. Connects an Thing to any other
             Thing This is a symmetric object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is related to </rdfs:label>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R001 (is related to
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7555,7 +7608,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;issued by&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is responsible for issuing </rdfs:label>
+        <rdfs:label xml:lang="en">is responsible for issuing</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R065i (&apos;is responsible for issuing&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7575,7 +7628,7 @@
         <rdfs:comment xml:lang="en">Connects a Rule to a Thing that is associated with the existence
             and lifecycle of the Rule.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is rule associated with </rdfs:label>
+        <rdfs:label xml:lang="en">is rule associated with</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R062 (&apos;is rule associated with&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7597,7 +7650,7 @@
         </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse of &apos;has sender&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is sender of </rdfs:label>
+        <rdfs:label xml:lang="en">is sender of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R031i (&apos;is sender of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7628,7 +7681,7 @@
             Relation, when the first is used as a source of information for identifying or
             describing the second one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is source of </rdfs:label>
+        <rdfs:label xml:lang="en">is source of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7670,7 +7723,7 @@
         <rdfs:comment xml:lang="en">Connects a Date to an Appellation, when it is the date till
             which the Appellation was used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is to use date of </rdfs:label>
+        <rdfs:label xml:lang="en">is to use date of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7705,7 +7758,7 @@
         <rdfs:comment xml:lang="en">Connects a Rule to the Agent that issued or published the
             Rule.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">issued by </rdfs:label>
+        <rdfs:label xml:lang="en">issued by</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R065 (&apos;issued by&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7723,7 +7776,7 @@
         <rdfs:comment xml:lang="en">Connects a Knowing Of Relation to a &apos;knowing of&apos; Person (a
             Person who has some knowledge of another one.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">knowing of relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">knowing of relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7739,7 +7792,7 @@
         <rdfs:comment xml:lang="en">Connects a Knowing Of Relation to a &apos;known by&apos; Person (a Person
             on which another one has some has some knowledge.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">knowing of relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">knowing of relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7754,7 +7807,7 @@
         <rdfs:comment xml:lang="en">Connects Knowing Relation to any known Person
             involved.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">knowing relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">knowing relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7772,7 +7825,7 @@
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Inverse of &apos;knows of&apos; object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">known by </rdfs:label>
+        <rdfs:label xml:lang="en">known by</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R050i (&apos;known by&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7793,7 +7846,7 @@
         <rdfs:comment xml:lang="en">Connects two Persons that directly know each other during their
             existence. This object property is symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">knows </rdfs:label>
+        <rdfs:label xml:lang="en">knows</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R051 (&apos;knows&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7813,7 +7866,7 @@
         <rdfs:comment xml:lang="en">Connects a Person to another Person they have some knowledge of
             through time or space.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">knows of </rdfs:label>
+        <rdfs:label xml:lang="en">knows of</rdfs:label>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R050 (&apos;knows of&apos;
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
@@ -7830,7 +7883,7 @@
         <rdfs:comment xml:lang="en">Connects a Leadership Relation to a Person who is involved as a
             leader.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">leadership relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">leadership relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7843,7 +7896,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
         <rdfs:comment xml:lang="en">Connects a Leadership Relation to a lead Group.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">leadership relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">leadership relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7858,7 +7911,7 @@
         <rdfs:comment xml:lang="en">Connects a Leadership Relation to the Position occupied by the
             leading Person.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">leadership with position </rdfs:label>
+        <rdfs:label xml:lang="en">leadership with position</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7872,7 +7925,7 @@
         <rdfs:comment xml:lang="en">Connects a Management Relation to an Agent who is involved as a
             manager.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">management relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">management relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7894,7 +7947,7 @@
         <rdfs:comment xml:lang="en">Connects a Management Relation to a Record Resource or
             Instantiation that is involved as a managed thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">management relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">management relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7908,7 +7961,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#MandateRelation"/>
         <rdfs:comment xml:lang="en">Connects a Mandate to a Mandate Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">mandate is source of mandate relation </rdfs:label>
+        <rdfs:label xml:lang="en">mandate is source of mandate relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7921,7 +7974,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Mandate"/>
         <rdfs:comment xml:lang="en">Connects a Mandate Relation to a Mandate.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">mandate relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">mandate relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7935,7 +7988,7 @@
         <rdfs:comment xml:lang="en">Connects a Mandate Relation to an Agent who is given the
             authority or competencies to act.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">mandate relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">mandate relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7950,7 +8003,7 @@
         <rdfs:comment xml:lang="en">Connects a Membership Relation to the Group that has
             member(s).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">membership relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">membership relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7966,7 +8019,7 @@
         <rdfs:comment xml:lang="en">Connects a Membership Relation to a Person who is involved as a
             member.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">membership relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">membership relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -7981,7 +8034,7 @@
         <rdfs:comment xml:lang="en">Connects a Membership Relation to the Position occupied by the
             member Person(s).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">membership with position </rdfs:label>
+        <rdfs:label xml:lang="en">membership with position</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8053,7 +8106,7 @@
         <rdfs:comment xml:lang="en">Connects a Migration Relation to the migrated
             Instantiation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">migration relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">migration relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8067,7 +8120,7 @@
         <rdfs:comment xml:lang="en">Connects a Migration Relation to a resulting
             Instantiation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">migration relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">migration relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8143,7 +8196,7 @@
         <rdfs:comment xml:lang="en">Connects an Ownership Relation to a Person, Group or Position
             that is involved as an owner.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">ownership relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">ownership relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8158,7 +8211,7 @@
         <rdfs:comment xml:lang="en">Connects an Ownership Relation to a Thing that is
             owned.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">owner ship relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">owner ship relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8172,7 +8225,7 @@
         <rdfs:comment xml:lang="en">Connects a Performance Relation to a performed
             Activity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">performance relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">performance relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8186,7 +8239,7 @@
         <rdfs:comment xml:lang="en">Connects a Performance Relation to a performing
             Agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">performance relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">performance relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8228,7 +8281,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation"/>
         <rdfs:comment xml:lang="en">Connects a Person to a Correspondence Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person has correspondence relation </rdfs:label>
+        <rdfs:label xml:lang="en">person has correspondence relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8241,7 +8294,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
         <rdfs:comment xml:lang="en">Connects a Person to a Family Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person has family relation </rdfs:label>
+        <rdfs:label xml:lang="en">person has family relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8254,7 +8307,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
         <rdfs:comment xml:lang="en">Connects a Person to a Knowing Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person has knowing relation </rdfs:label>
+        <rdfs:label xml:lang="en">person has knowing relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8268,7 +8321,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#SiblingRelation"/>
         <rdfs:comment xml:lang="en">Connects a Person to a Sibling Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person has sibling relation </rdfs:label>
+        <rdfs:label xml:lang="en">person has sibling relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8282,7 +8335,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#SpouseRelation"/>
         <rdfs:comment xml:lang="en">Connects a Person to a Spouse Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person has spouse relation </rdfs:label>
+        <rdfs:label xml:lang="en">person has spouse relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8296,7 +8349,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a parent) to a Child
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of child relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of child relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8311,7 +8364,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as an ancestor) to a Descendance
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of descendance relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of descendance relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8326,7 +8379,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (who has some knowledge of another one) to a
             Knowing Of Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of knowing of relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of knowing of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8340,7 +8393,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a leader) to a Leadership
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of leadership relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of leadership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8356,7 +8409,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (who occupies a Position) to a Position
             Holding Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of position holding relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of position holding relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8372,7 +8425,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a teacher) to a Teaching
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is source of teaching relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is source of teaching relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8386,7 +8439,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a child) to a Child
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is target of child relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is target of child relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8401,7 +8454,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a descendant) to a Descendance
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is target of descendance relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is target of descendance relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8416,7 +8469,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (of which another Person has some knowledge)
             to a Knowing Of Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is target of knowing of relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is target of knowing of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8431,7 +8484,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a member of a Group) to a Membership
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is target of membership relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is target of membership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8447,7 +8500,7 @@
         <rdfs:comment xml:lang="en">Connects a Person (as a student) to a Teaching
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">person is target of teaching relation </rdfs:label>
+        <rdfs:label xml:lang="en">person is target of teaching relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8462,7 +8515,7 @@
         <rdfs:comment xml:lang="en">Connects a Place (as associated to a Thing) to a Place
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">place is source of place relation </rdfs:label>
+        <rdfs:label xml:lang="en">place is source of place relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8475,7 +8528,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:comment xml:lang="en">Connects a Place Relation to the Place concerned.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">place relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">place relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8490,7 +8543,7 @@
         <rdfs:comment xml:lang="en">Connects a Place Relation to a Thing that is associated to the
             Place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">place relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">place relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8505,7 +8558,7 @@
         <rdfs:comment xml:lang="en">Connects a Position Holding Relation to a Person (who occupies a
             Position).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position holding relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">position holding relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8521,7 +8574,7 @@
         <rdfs:comment xml:lang="en">Connects a Position Holding Relation to a Position (that is
             occupied).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position holding relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">position holding relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8535,7 +8588,7 @@
         <rdfs:comment xml:lang="en">Connects a Position to a Leadership Relation (the leading Person
             occupies that Position).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position is context of leadership relation </rdfs:label>
+        <rdfs:label xml:lang="en">position is context of leadership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8549,7 +8602,7 @@
         <rdfs:comment xml:lang="en">Connects a Position to a Membership Relation (the member Person
             occupies that Position).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position is context of membership relation </rdfs:label>
+        <rdfs:label xml:lang="en">position is context of membership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8565,7 +8618,7 @@
         <rdfs:comment xml:lang="en">Connects a Position (that exists within a Group) to a Position
             to Group Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position is source of position to group relation </rdfs:label>
+        <rdfs:label xml:lang="en">position is source of position to group relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8580,7 +8633,7 @@
         <rdfs:comment xml:lang="en">Connects a Position (that is occupied by a Person) to a Position
             Holding Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position is target of position holding relation </rdfs:label>
+        <rdfs:label xml:lang="en">position is target of position holding relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8595,7 +8648,7 @@
         <rdfs:comment xml:lang="en">Connects a Position to Group Relation to a Position (that exists
             in a Group).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position to group relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">position to group relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8610,7 +8663,7 @@
         <rdfs:comment xml:lang="en">Connects a Position to Group Relation to a Group (in which a
             Position exists).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">position to group relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">position to group relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8695,7 +8748,7 @@
         <rdfs:comment xml:lang="en">Connects a Provenance Relation to a Record Resource or
             Instantiation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">provenance relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">provenance relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8716,7 +8769,7 @@
         <rdfs:comment xml:lang="en">Connects a Provenance Relation to an Agent or
             Activity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">provenance relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">provenance relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8730,7 +8783,7 @@
         <rdfs:comment xml:lang="en">Connects a Proxy to the Record Resource it stands for in the
             specific context of a Record Set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">proxy for </rdfs:label>
+        <rdfs:label xml:lang="en">proxy for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8744,7 +8797,7 @@
         <rdfs:comment xml:lang="en">Connects a Proxy to the Record Set in which it stands for
             (represents) another Record Resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">proxy in </rdfs:label>
+        <rdfs:label xml:lang="en">proxy in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8779,7 +8832,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource Genetic Relation to one of the
             associated Record Resources.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource genetic relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">record resource genetic relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8793,7 +8846,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource Holding Relation to an Agent (as the
             holder of a Record Resource or Instantiation).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource holding relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">record resource holding relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8815,7 +8868,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource Holding Relation to a Record Resource
             or Instantiation (that is held by an Agent).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource holding relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">record resource holding relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8830,7 +8883,7 @@
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource is connected to record resource genetic relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8846,7 +8899,7 @@
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource is connected to record resource relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8862,7 +8915,7 @@
             Resource To Instantiation Relation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource is source of record resource to instantiation
-            relation </rdfs:label>
+            relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8884,7 +8937,7 @@
             accumulated) to an Accumulation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is source of accumulation
-            relation </rdfs:label>
+            relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8906,7 +8959,7 @@
             Activity) to an Activity Documentation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is source of activity
-            documentation relation </rdfs:label>
+            documentation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8928,7 +8981,7 @@
             sent or accumulated) to an Agent Origination Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is source of agent origination
-            relation </rdfs:label>
+            relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8950,7 +9003,7 @@
             a Creation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is source of creation relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8973,7 +9026,7 @@
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is source of provenance relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8996,7 +9049,7 @@
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is target of intellectual
-            property rights relation </rdfs:label>
+            property rights relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9018,7 +9071,7 @@
             an Agent) to a Management Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is target of management relation
-        </rdfs:label>
+      </rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9040,7 +9093,7 @@
             Agent) to a Record Resource Holding Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">record resource or instantiation is target of record resource
-            holding relation </rdfs:label>
+            holding relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9054,7 +9107,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource relation to one of the related Record
             Resources.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">record resource relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9068,7 +9121,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource To Instantiation Relation to the
             Record Resource (that was instantiated). </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource to instantiation relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">record resource to instantiation relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9082,7 +9135,7 @@
         <rdfs:comment xml:lang="en">Connects a Record Resource To Instantiation Relation to an
             Instantiation of the involved Record Resource. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">record resource to instantiation relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">record resource to instantiation relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9121,7 +9174,7 @@
         <rdfs:comment xml:lang="en">Connects an n-ary Relation to any of the Things
             involved.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9136,7 +9189,7 @@
         <rdfs:comment xml:lang="en">Connects an n-ary Relation to a Thing that is a secondary,
             contextual entity during the existence of the Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">relation has context </rdfs:label>
+        <rdfs:label xml:lang="en">relation has context</rdfs:label>
         <skos:scopeNote xml:lang="en">The secondary entity may be, for instance, a Position or a
             Role Type.</skos:scopeNote>
     </owl:ObjectProperty>
@@ -9153,7 +9206,7 @@
         <rdfs:comment xml:lang="en">Connects an n-ary Relation to a Thing that is its
             source.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9168,7 +9221,7 @@
         <rdfs:comment xml:lang="en">Connects an n-ary Relation to a Thing that is its
             target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9272,7 +9325,7 @@
             being the specific role played by the creating Person in the context of this
             Relation).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">role is context of creation relation </rdfs:label>
+        <rdfs:label xml:lang="en">role is context of creation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9286,7 +9339,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleRelation"/>
         <rdfs:comment xml:lang="en">Connects a Rule to a Rule Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">rule is source of rule relation </rdfs:label>
+        <rdfs:label xml:lang="en">rule is source of rule relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9299,7 +9352,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:comment xml:lang="en">Connects a Rule Relation to a Rule.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">rule relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">rule relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9314,7 +9367,7 @@
         <rdfs:comment xml:lang="en">Connects a Rule Relation to a Thing (that is associated to a
             Rule).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">rule relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">rule relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9329,7 +9382,7 @@
         <rdfs:comment xml:lang="en">Connects a Sequential Relation to a Thing that precedes other
             Thing(s) in the sequence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">sequential relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">sequential relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9344,7 +9397,7 @@
         <rdfs:comment xml:lang="en">Connects a Sequential Relation to a Thing that follows other
             Thing(s) in the sequence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">sequential relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">sequential relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9358,7 +9411,7 @@
         <rdfs:comment xml:lang="en">Connects a Sibling Relation to one of the siblings
             involved.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">sibling relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">sibling relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9372,7 +9425,7 @@
         <rdfs:comment xml:lang="en">Connects a Sibling Relation to one of the spouses
             involved.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">spouse relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">spouse relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9387,7 +9440,7 @@
         <rdfs:comment xml:lang="en">Connects a Teaching Relation to a Person (who is a
             teacher).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">teaching relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">teaching relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9402,7 +9455,7 @@
         <rdfs:comment xml:lang="en">Connects a Teaching Relation to a Person (who is a
             student).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">teaching relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">teaching relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9417,7 +9470,7 @@
         <rdfs:comment xml:lang="en">Connects a Temporal Relation to a Thing that precedes other
             Thing(s) in time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">temporal relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">temporal relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9432,7 +9485,7 @@
         <rdfs:comment xml:lang="en">Connects a Temporal Relation to a Thing that follows other
             Thing(s) in time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">temporal relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">temporal relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9445,7 +9498,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:comment xml:lang="en">Connects a Thing to a n-ary Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is connected to relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is connected to relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9459,7 +9512,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is a secondary, contextual entity during
             the existence of the Relation) to a n-ary Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is context of relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is context of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9473,7 +9526,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is the source of a Relation) to a
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is source of relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is source of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9487,7 +9540,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing to a Sequential Relation, when this Thing
             precedes other Thing(s) in the sequence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is source of sequential relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is source of sequential relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9501,7 +9554,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing to a Temporal Relation, when this Thing
             precedes other Thing(s) in time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is source of temporal relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is source of temporal relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9516,7 +9569,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing to a Whole Part Relation, when this Thing has
             Part other Thing(s).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is source of whole part relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is source of whole part relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9530,7 +9583,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is designated by an Appellation) to an
             Appellation Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of appellation relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of appellation relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9544,7 +9597,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is under authority of an Agent) to an
             Authority Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of authority relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of authority relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9558,7 +9611,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is associated with an Event) to an Event
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of event relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of event relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9572,7 +9625,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is owned by a Group, a Person or a
             Position) to an Ownership Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of ownership relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of ownership relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9586,7 +9639,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is associated with a Place) to a Place
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of place relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of place relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9599,7 +9652,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
         <rdfs:comment xml:lang="en">Connects a Thing to a n-ary Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9613,7 +9666,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is associated with a Rule) to a Rule
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of rule relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of rule relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9627,7 +9680,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that follows other Thing(s) in a sequence) to
             a Sequential Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of sequential relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of sequential relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9641,7 +9694,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that follows other Thing(s) in time) to a
             Temporal Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of temporal relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of temporal relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9656,7 +9709,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing (that is categorized by a Type) to a Type
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of type relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of type relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9671,7 +9724,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing to a Whole Part Relation, when this Thing is
             Part of another Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">thing is target of whole part relation </rdfs:label>
+        <rdfs:label xml:lang="en">thing is target of whole part relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9685,7 +9738,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TypeRelation"/>
         <rdfs:comment xml:lang="en">Connects a Type (a category) to a Type Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">type is source of type relation </rdfs:label>
+        <rdfs:label xml:lang="en">type is source of type relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9699,7 +9752,7 @@
         <rdfs:comment xml:lang="en">Connects a Type Relation to the Type (that categorizes the
             involved Thing(s)).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">type relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">type relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9713,7 +9766,7 @@
         <rdfs:comment xml:lang="en">Connects a Type Relation to a Thing (that is categorized by the
             involved Type).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">type relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">type relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9727,7 +9780,7 @@
         <rdfs:comment xml:lang="en">Connects a Thing to the Date when it was last
             modified.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">was last updated at date </rdfs:label>
+        <rdfs:label xml:lang="en">was last updated at date</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9779,7 +9832,7 @@
         <rdfs:comment xml:lang="en">Connects an Appellation to the Date from which it was
             used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">was used from date </rdfs:label>
+        <rdfs:label xml:lang="en">was used from date</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9793,7 +9846,7 @@
         <rdfs:comment xml:lang="en">Connects an Appellation to the Date till when it was
             used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">was used to date </rdfs:label>
+        <rdfs:label xml:lang="en">was used to date</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9807,7 +9860,7 @@
         <rdfs:comment xml:lang="en">Connects a Whole Part Relation to the Thing that has some
             parts.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">whole part relation has source </rdfs:label>
+        <rdfs:label xml:lang="en">whole part relation has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9821,7 +9874,7 @@
         <rdfs:comment xml:lang="en">Connects a Whole Part Relation to a Thing that is a
             part.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">whole part relation has target </rdfs:label>
+        <rdfs:label xml:lang="en">whole part relation has target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -9834,7 +9887,7 @@
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:comment xml:lang="en">Connects a Work Relation to an Agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">work relation connects </rdfs:label>
+        <rdfs:label xml:lang="en">work relation connects</rdfs:label>
     </owl:ObjectProperty>
     
 
