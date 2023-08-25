@@ -522,6 +522,7 @@
                <html:li>2023, June 5: made includesOrIncluded object property a subproperty of hasOrHadPart in addition to isRecordResourceAssociatedToRecordResource.</html:li>
                <html:li>2023, June 21: added two object properties, sub-properties of hasSuccessor: wasMergedInto and wasSplitInto, with Corporate Body as domain and range, and their inverse ones.</html:li>
                <html:li>2023, July 25: adjusted definition of hasOrHadLanguage</html:li>
+               <html:li>2023, August 25: added French labels to the descriptions of classes and of datatype properties</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -8191,6 +8192,13 @@
             Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">accrual</rdfs:label>
+      <rdfs:label xml:lang="fr">accroissement</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">See also accrualStatus</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">corresponds to RiC-A01 (Accrual
             attribute)</RiCCMCorrespondingComponent>
@@ -8202,6 +8210,13 @@
       <rdfs:comment xml:lang="en">Information on the status of an Accrual</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">accrual status</rdfs:label>
+      <rdfs:label xml:lang="fr">statut de l’accroissement</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8225,6 +8240,13 @@
       <rdfs:comment xml:lang="en">Reference system used for altitude</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">altimetric system</rdfs:label>
+      <rdfs:label xml:lang="fr">système altimétrique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#altitude -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#altitude">
@@ -8235,6 +8257,13 @@
             sea level.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">altitude</rdfs:label>
+      <rdfs:label xml:lang="fr">altitude</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this
             class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
    </owl:DatatypeProperty>
@@ -8254,6 +8283,13 @@
             said time and has not been tampered or corrupted.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authenticity note</rdfs:label>
+      <rdfs:label xml:lang="fr">note sur l’authenticité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8284,6 +8320,13 @@
             Activity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authorizing mandate</rdfs:label>
+      <rdfs:label xml:lang="fr">mandat</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use the Mandate class for handling
             mandates.</skos:scopeNote>
@@ -8296,6 +8339,13 @@
       <rdfs:comment xml:lang="en">Date at which something began.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">beginning date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de début</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8309,6 +8359,13 @@
       <rdfs:comment xml:lang="en">Date at which a Person was born.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">birth date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de naissance</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8324,6 +8381,13 @@
             cycles.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">calendar</rdfs:label>
+      <rdfs:label xml:lang="fr">calendrier</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A14 (Date Standard
             attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
@@ -8339,6 +8403,13 @@
             used in order to characterize the carrier.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">carrier extent</rdfs:label>
+      <rdfs:label xml:lang="fr">mesure du support</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8378,6 +8449,13 @@
             Event or a Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">certainty</rdfs:label>
+      <rdfs:label xml:lang="fr">degré de certitude</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8397,6 +8475,13 @@
             Resource.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">classification</rdfs:label>
+      <rdfs:label xml:lang="fr">classification</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8437,6 +8522,13 @@
             necessary to access the Instantiation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">conditions of access</rdfs:label>
+      <rdfs:label xml:lang="fr">conditions d’accès</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8476,6 +8568,13 @@
             and of the Instantiation, due to conservation status.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">conditions of use</rdfs:label>
+      <rdfs:label xml:lang="fr">conditions d’utilisation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8499,6 +8598,13 @@
       <rdfs:comment xml:lang="en">Date at which an entity was created.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">creation date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de création</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8512,6 +8618,13 @@
             contributes to its identification and contextualization.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">date</rdfs:label>
+      <rdfs:label xml:lang="fr">date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons, like its subproperties. May be
             deprecated and removed later on. Use only if you don't use Date classes for handling
             dates.</skos:scopeNote>
@@ -8526,6 +8639,13 @@
             extent, the value is an estimation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">date qualifier</rdfs:label>
+      <rdfs:label xml:lang="fr">qualificatif de la date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8548,6 +8668,13 @@
             date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">date standard</rdfs:label>
+      <rdfs:label xml:lang="fr">standard de la date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8568,6 +8695,13 @@
       <rdfs:comment xml:lang="en">Date at which a Person died.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">death date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de décès</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8581,6 +8715,13 @@
       <rdfs:comment xml:lang="en">Date at which an entity was deleted.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">deletion date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de suppression</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8594,6 +8735,13 @@
             addressed.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">descriptive note</rdfs:label>
+      <rdfs:label xml:lang="fr">note descriptive</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A16 (Descriptive Note
             attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
@@ -8605,6 +8753,13 @@
       <rdfs:comment xml:lang="en">Date at which something ended.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">end date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de fin</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8618,6 +8773,13 @@
       <rdfs:comment xml:lang="en">Natural language expression of a Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">expressed date</rdfs:label>
+      <rdfs:label xml:lang="fr">date en langage naturel</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8640,6 +8802,13 @@
             coordinates.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">geodesic system</rdfs:label>
+      <rdfs:label xml:lang="fr">système géodésique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#geographicalCoordinates -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
@@ -8649,6 +8818,13 @@
             Place.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
+      <rdfs:label xml:lang="fr">coordonnées géographiques</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8674,6 +8850,13 @@
       <rdfs:comment xml:lang="en">Vertical dimension of an entity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">height</rdfs:label>
+      <rdfs:label xml:lang="fr">hauteur</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#history -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#history">
@@ -8695,6 +8878,13 @@
             present time.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">history</rdfs:label>
+      <rdfs:label xml:lang="fr">histoire</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8729,6 +8919,13 @@
             Identifiers.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">identifier</rdfs:label>
+      <rdfs:label xml:lang="fr">identifiant</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8762,6 +8959,13 @@
             quantity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Instantiation extent</rdfs:label>
+      <rdfs:label xml:lang="fr">mesure de l’instanciation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8789,6 +8993,13 @@
             Instantiation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Instantiation structure</rdfs:label>
+      <rdfs:label xml:lang="fr">structure de l’instanciation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8814,6 +9025,13 @@
             Instantiation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">integrity</rdfs:label>
+      <rdfs:label xml:lang="fr">intégrité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8839,6 +9057,13 @@
       <rdfs:comment xml:lang="en">Date at which an entity was last updated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">last modification date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de dernière modification</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8853,6 +9078,13 @@
             equator.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">latitude</rdfs:label>
+      <rdfs:label xml:lang="fr">latitude</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this
             class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
    </owl:DatatypeProperty>
@@ -8865,6 +9097,13 @@
             cadastral reference, or less precise information found in a record.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">location</rdfs:label>
+      <rdfs:label xml:lang="fr">localisation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8890,6 +9129,13 @@
             meridian.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">longitude</rdfs:label>
+      <rdfs:label xml:lang="fr">longitude</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this
             class, use geographicalCoordinates property, a property of Place class.</skos:scopeNote>
    </owl:DatatypeProperty>
@@ -8901,6 +9147,13 @@
             determined by measurement or calculation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">measure</rdfs:label>
+      <rdfs:label xml:lang="fr">mesure</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#modificationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#modificationDate">
@@ -8910,6 +9163,13 @@
       <rdfs:comment xml:lang="en">Date of the modification of an entity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">modification date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de modification</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -8925,6 +9185,13 @@
             created.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">name</rdfs:label>
+      <rdfs:label xml:lang="fr">nom</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8956,6 +9223,13 @@
             machine-readable.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">normalized date value</rdfs:label>
+      <rdfs:label xml:lang="fr">valeur normalisée de la date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -8984,6 +9258,13 @@
             machine-readable.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">normalized value</rdfs:label>
+      <rdfs:label xml:lang="fr">valeur normalisée</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#physicalCharacteristics -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#physicalCharacteristics">
@@ -8994,6 +9275,13 @@
             status.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
+      <rdfs:label xml:lang="fr">caractéristiques physiques</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9023,6 +9311,13 @@
             as a quantity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">physical or logical extent</rdfs:label>
+      <rdfs:label xml:lang="fr">importance physique ou logique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. Use only if you cannot use the
             subproperties (particularly if the same free text is being used in your current metadata
             for describing the record resource, carrier and instantiation extent).</skos:scopeNote>
@@ -9035,6 +9330,13 @@
             Instantiation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">production technique</rdfs:label>
+      <rdfs:label xml:lang="fr">technique de production</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9060,6 +9362,13 @@
       <rdfs:comment xml:lang="en">Date of the publication of a Record Resource.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">publication date</rdfs:label>
+      <rdfs:label xml:lang="fr">date de publication</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -9076,6 +9385,13 @@
             record over time</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">quality of representation</rdfs:label>
+      <rdfs:label xml:lang="fr">qualité de la représentation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9099,6 +9415,13 @@
       <rdfs:comment>Machine-readable quantity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">quantity</rdfs:label>
+      <rdfs:label xml:lang="fr">quantité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-21</dc:date>
@@ -9132,6 +9455,13 @@
             information.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
+      <rdfs:label xml:lang="fr">mesure de la ressource archivistique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9175,6 +9505,13 @@
             Set</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Record Resource structure</rdfs:label>
+      <rdfs:label xml:lang="fr">structure de la ressource archivistique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9201,6 +9538,13 @@
             information.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">reference system</rdfs:label>
+      <rdfs:label xml:lang="fr">système de référence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#relationState -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#relationState">
@@ -9210,6 +9554,13 @@
             ongoing, unknown).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Relation state</rdfs:label>
+      <rdfs:label xml:lang="fr">statut de la relation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#ruleFollowed -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#ruleFollowed">
@@ -9219,6 +9570,13 @@
             a Thing.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">rule followed</rdfs:label>
+      <rdfs:label xml:lang="fr">règle suivie</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use the Rule class for handling rules.</skos:scopeNote>
    </owl:DatatypeProperty>
@@ -9236,6 +9594,13 @@
             focuses on the origination and subsequence changes to a Record Resource.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">scope and content</rdfs:label>
+      <rdfs:label xml:lang="fr">portée et contenu</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9272,6 +9637,13 @@
             entity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">source</rdfs:label>
+      <rdfs:label xml:lang="fr">source</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Can be used, in particular, for Records having documentary
             form type Finding Aid or Authority Record, or for Relations. Use only if you don't use
             the hasSource object property.</skos:scopeNote>
@@ -9297,6 +9669,13 @@
             elements of the instantiation</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">structure</rdfs:label>
+      <rdfs:label xml:lang="fr">structure</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9318,6 +9697,13 @@
             device involved in the creation or management of a Record Resource.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">technical characteristics</rdfs:label>
+      <rdfs:label xml:lang="fr">caractéristiques techniques</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-01</dc:date>
@@ -9349,6 +9735,13 @@
       <rdfs:comment xml:lang="en">A textual expression of an Appellation or Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">textual value</rdfs:label>
+      <rdfs:label xml:lang="fr">valeur textuelle</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#title -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#title">
@@ -9367,6 +9760,13 @@
             Rule.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">title</rdfs:label>
+      <rdfs:label xml:lang="fr">intitulé</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Use only if you don't use Title class for handling
             titles.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A28 (Name
@@ -9379,6 +9779,13 @@
       <rdfs:comment xml:lang="en">A term used to characterize an entity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">type</rdfs:label>
+      <rdfs:label xml:lang="fr">type</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Type subclasses for handling
             categories.</skos:scopeNote>
@@ -9393,6 +9800,13 @@
             units used in the archival context like number of boxes, pages or words.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
+      <rdfs:label xml:lang="fr">unité de mesure</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-21</dc:date>
@@ -9418,6 +9832,13 @@
       <rdfs:comment xml:lang="en">Date at which an Appellation was first used.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">used from date</rdfs:label>
+      <rdfs:label xml:lang="fr">utilisé à partir de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -9431,6 +9852,13 @@
       <rdfs:comment xml:lang="en">Date until an Appellation was used.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">used to date</rdfs:label>
+      <rdfs:label xml:lang="fr">utilisé jusqu’à</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
@@ -9444,6 +9872,13 @@
       <rdfs:comment xml:lang="en">Horizontal dimension of an entity.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">width</rdfs:label>
+      <rdfs:label xml:lang="fr">largeur</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-25</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:DatatypeProperty>
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
