@@ -523,7 +523,7 @@
                <html:li>2023, June 21: added two object properties, sub-properties of hasSuccessor: wasMergedInto and wasSplitInto, with Corporate Body as domain and range, and their inverse ones.</html:li>
                <html:li>2023, July 25: adjusted definition of hasOrHadLanguage</html:li>
                <html:li>2023, August 25: added French labels to the descriptions of classes and of datatype properties</html:li>
-               <html:li>2023, August 28: added French labels to the descriptions of 250 object properties; added an xml:lang attribute with value 'en' on rdfs:comment when it was missing.</html:li>
+               <html:li>2023, August 28: added French labels to the descriptions of 250 object properties; added an xml:lang attribute with value 'en' on rdfs:comment when it was missing. Also added French labels to the two RiC-O annotation properties and to the few named individuals already defined.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -595,7 +595,14 @@
             component that corresponds to the annotated class or property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">RiC-CM corresponding component</rdfs:label>
+      <rdfs:label xml:lang="fr">composant correspondant dans RiC-CM</rdfs:label>
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:AnnotationProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#closeTo -->
    <owl:AnnotationProperty rdf:about="https://www.ica.org/standards/RiC/ontology#closeTo">
@@ -603,7 +610,14 @@
             component in another model or ontology</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">close to</rdfs:label>
+      <rdfs:label xml:lang="fr">proche de</rdfs:label>
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:AnnotationProperty>
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -15064,9 +15078,16 @@
       <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for
             Documentary Form Types</dc:title>
       <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
-      <skos:definition xml:lang="en">A vocabulary that includes documentary form
+      <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+            <skos:definition xml:lang="en">A vocabulary that includes documentary form
             types</skos:definition>
-   </owl:NamedIndividual>
+        </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes -->
    <owl:NamedIndividual rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -15075,13 +15096,27 @@
       <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for
             Record Set Types</dc:title>
       <rdfs:label xml:lang="en">Record Set Types</rdfs:label>
+      <rdfs:label xml:lang="fr">Types d’ensembles d’objets informationnels</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">A vocabulary on Record Set types</skos:definition>
-   </owl:NamedIndividual>
+    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord -->
    <owl:NamedIndividual rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
       <rdfs:label xml:lang="en">Authority record</rdfs:label>
+      <rdfs:label xml:lang="fr">Notice d’autorité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">This category can be used for records that describe an
             entity.</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
@@ -15092,6 +15127,13 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
       <rdfs:label xml:lang="en">Finding aid</rdfs:label>
+      <rdfs:label xml:lang="fr">Instrument de recherche</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">This documentary form type can be used for records that
             aggregate and organizes metadata on some record(s) or record set(s).</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
@@ -15101,6 +15143,13 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
       <rdfs:label xml:lang="en">collection</rdfs:label>
+      <rdfs:label xml:lang="fr">collection</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">An artificial assemblage of documents accumulated on the
             basis of some common characteristic without regard to the provenance of those documents.
             Not to be confused with an archival fonds. (From ICA ISAD(G))</skos:definition>
@@ -15112,6 +15161,13 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
       <rdfs:label xml:lang="en">file</rdfs:label>
+      <rdfs:label xml:lang="fr">dossier</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">An organized unit of documents grouped together either for
             current use by the creator or in the process of archival arrangement, because they
             relate to the same subject, activity, or transaction. A file is usually the basic unit
@@ -15124,6 +15180,13 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
       <rdfs:label xml:lang="en">fonds</rdfs:label>
+      <rdfs:label xml:lang="fr">fonds</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">The whole of the records, regardless of form or medium,
             organically created and/or accumulated and used by a particular person, family, or
             corporate body in the course of that creator's activities and functions. (From ICA
@@ -15136,6 +15199,13 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
       <rdfs:label xml:lang="en">series</rdfs:label>
+      <rdfs:label xml:lang="fr">série organique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:definition xml:lang="en">Documents arranged in accordance with a filing system or
             maintained as a unit because they result from the same accumulation or filing process,
             or the same activity; have a particular form; or because of some other relationship
