@@ -525,7 +525,7 @@
                <html:li>2023, August 25: added French labels to the descriptions of classes and of datatype properties</html:li>
                <html:li>2023, August 28: added French labels to the descriptions of 250 object properties; added an xml:lang attribute with value 'en' on rdfs:comment when it was missing. Also added French labels to the two RiC-O annotation properties and to the few named individuals already defined.</html:li>
                <html:li>2023, August 28: changed the domain of hasExtent (from Instantiation or RecordResource to Thing), same for the range of isExtentOf; added a length datatype property under measure.</html:li>
-               <html:li>2023, August 29: updated hasInstantiation and hasDeriveeInstantiation, and the inverse properties (changed their IRIs, labels, definitions, inverse properties, according to RiC-CM 1.0). Created four new object properties: hasOrHadDigitalInstantiation, hasOrHadDerivedInstantiation, and the inverse ones.</html:li>
+               <html:li>2023, August 29: updated hasInstantiation and hasDerivedInstantiation, and the inverse properties (changed their IRIs, labels, definitions, inverse properties, according to RiC-CM 1.0). As a consequence, also updated the superproperties of migratedInto and migratedFrom. Created four new object properties: hasOrHadDigitalInstantiation, hasOrHadDerivedInstantiation, and the inverse ones.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
