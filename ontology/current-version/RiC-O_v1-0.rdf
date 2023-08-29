@@ -526,6 +526,7 @@
                <html:li>2023, August 28: added French labels to the descriptions of 250 object properties; added an xml:lang attribute with value 'en' on rdfs:comment when it was missing. Also added French labels to the two RiC-O annotation properties and to the few named individuals already defined.</html:li>
                <html:li>2023, August 28: changed the domain of hasExtent (from Instantiation or RecordResource to Thing), same for the range of isExtentOf; added a length datatype property under measure.</html:li>
                <html:li>2023, August 29: updated hasInstantiation and hasDerivedInstantiation, and the inverse properties (changed their IRIs, labels, definitions, inverse properties, according to RiC-CM 1.0). As a consequence, also updated the superproperties of migratedInto and migratedFrom. Created four new object properties: hasOrHadDigitalInstantiation, hasOrHadAnalogueInstantiation, and the inverse ones.</html:li>
+               <html:li>2023, August 29: fixed some typos in the English labels of a few object properties and added the past tense to the English label of hasOrHadCoordinates.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -2715,7 +2716,7 @@
       <rdfs:comment xml:lang="en">Connects a Record Set and a Content Type that categorizes all
             the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has of had all members with content type</rdfs:label>
+      <rdfs:label xml:lang="en">has or had all members with content type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type de contenu</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -2743,7 +2744,7 @@
             categorizes all the Records or Record Parts that are or were included in the Record
             Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has of had all members with documentary form type</rdfs:label>
+      <rdfs:label xml:lang="en">has or had all members with documentary form type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -2770,7 +2771,7 @@
       <rdfs:comment xml:lang="en">Connects a Record Set and a Language used by all the Records or
             Record Parts that are or were included in the Record Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has of had all members with language</rdfs:label>
+      <rdfs:label xml:lang="en">has or had all members with language</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour langue</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -2797,7 +2798,7 @@
       <rdfs:comment xml:lang="en">Connects a Record Set and a Legal Status that categorizes all
             the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has of had all members with legal status</rdfs:label>
+      <rdfs:label xml:lang="en">has or had all members with legal status</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour statut légal</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -2824,7 +2825,7 @@
       <rdfs:comment xml:lang="en">Connects a Record Set and a Record State that categorizes all
             the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has of had all members with record state</rdfs:label>
+      <rdfs:label xml:lang="en">has or had all members with record state</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour état</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -3053,8 +3054,14 @@
       <rdfs:comment xml:lang="en">Connects a Physical Location to its past or present coordinates
             in a reference system.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has coordinates</rdfs:label>
+      <rdfs:label xml:lang="en">has or had coordinates</rdfs:label>
       <rdfs:label xml:lang="fr">a ou a eu pour coordonnées</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">fixed the English label (added the past tense.)</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
