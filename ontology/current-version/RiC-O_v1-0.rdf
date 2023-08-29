@@ -525,6 +525,7 @@
                <html:li>2023, August 25: added French labels to the descriptions of classes and of datatype properties</html:li>
                <html:li>2023, August 28: added French labels to the descriptions of 250 object properties; added an xml:lang attribute with value 'en' on rdfs:comment when it was missing. Also added French labels to the two RiC-O annotation properties and to the few named individuals already defined.</html:li>
                <html:li>2023, August 28: changed the domain of hasExtent (from Instantiation or RecordResource to Thing), same for the range of isExtentOf; added a length datatype property under measure.</html:li>
+               <html:li>2023, August 29: updated hasInstantiation and hasDerivedInstantiation, and the inverse properties (changed their IRIs, labels, definitions, inverse properties, according to RiC-CM 1.0). As a consequence, also updated the superproperties of migratedInto and migratedFrom. Created four new object properties: hasOrHadDigitalInstantiation, hasOrHadAnalogueInstantiation, and the inverse ones.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -2259,29 +2260,35 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R072i ('has death date'
             relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#hasDerivedInstantiation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDerivedInstantiation">
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation"/>
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesInTime"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDerivedFromInstantiation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDerivedFromInstantiation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelationHasTarget"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects an Instantiation to an Instantiation that is derived
-            from it.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects an instantiation to an instantiation that is derived from it, whether it exists or has been lost or destroyed.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has derived instantiation </rdfs:label>
-      <rdfs:label xml:lang="fr">a pour instanciation dérivée</rdfs:label>
+      <rdfs:label xml:lang="en">has or had derived instantiation </rdfs:label>
+      <rdfs:label xml:lang="fr">a ou a eu pour instanciation dérivée</rdfs:label>
+      <skos:changeNote>
+      <rdf:Description>
+         <dc:date>2023-08-29</dc:date>
+         <rdf:value xml:lang="en">Updated the IRI, inverse property, definition, labels and RiCMCorrespondingComponent, and added a skos:scopeNote; this in order to make the specification compliant with RiC-CM 1.0. The name of the property in RiC-O 0.2 was 'has derived instantiation'.</rdf:value>
+      </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R014 ('has derived instantiation'
+      <skos:scopeNote xml:lang="en">In some situations, it may be useful or necessary to connect an instantiation to an instantiation that was derived from it but no longer exists or or has been lost.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R014 ('has or had derived instantiation'
             relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasDescendant -->
@@ -2589,21 +2596,26 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#hasInstantiation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasInstantiation">
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isInstantiationOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasInstantiationOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceToInstantiationRelation"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasTarget"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects a Record Resource to one of its
-            Instantiations.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects a record resource to one of its  instantiations, whether it exists or has been lost or destroyed.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has instantiation</rdfs:label>
-      <rdfs:label xml:lang="fr">a pour instanciation</rdfs:label>
+      <rdfs:label xml:lang="en">has or had instantiation</rdfs:label>
+      <rdfs:label xml:lang="fr">a ou a eu pour instanciation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Updated the IRI, inverse property, definition, labels and RiCMCorrespondingComponent, and added a skos:scopeNote; this in order to make the specification compliant with RiC-CM 1.0.  The name of the property in RiC-O 0.2 was 'has instantiation'.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2616,7 +2628,8 @@
             <rdf:value xml:lang="en">changed the inverse property IRI.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R025 ('has instantiation'
+      <skos:scopeNote xml:lang="en">In some situations, it may be useful or necessary to connect a record resource to an instantiation that no longer exists or or has been lost, when some of its characteristics are known from some source, like an old finding aid.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R025 ('has or had instantiation'
             relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasModificationDate -->
@@ -2828,6 +2841,24 @@
                     attributes).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAnalogueInstantiation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAnalogueInstantiation">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAnalogueInstantiationOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:comment xml:lang="en">Connects a record resource to one of its analogue instantiations, whether it exists or has been lost or destroyed.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had analogue instantiation</rdfs:label>
+      <rdfs:label xml:lang="fr">a ou a eu pour instanciation analogique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Added the property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">In some situations, it may be useful or necessary to connect a record resource to an analogue instantiation that no longer exists or has been lost.</skos:scopeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAppellation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAppellation">
@@ -3130,6 +3161,24 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDigitalInstantiationOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:comment xml:lang="en">Connects a record resource to one of its digital instantiations, whether it exists or has been lost or destroyed.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had digital instantiation</rdfs:label>
+      <rdfs:label xml:lang="fr">a ou a eu pour instanciation numérique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Added the property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">This property can be used, among other cases, when you want to convert findings aids encoded in EAD/XML and need a simple and accurate migration path to process dao or daogrp EAD elements. Also, in some situations, it may be useful or necessary to connect a record resource to a digital instantiation that no longer exists or or has been lost.</skos:scopeNote>
+    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadHolder -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadHolder">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadManager"/>
@@ -5358,26 +5407,50 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R072 ('is death date of'
             relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#isDerivedFromInstantiation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDerivedFromInstantiation">
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasDerivedFromInstantiation -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasDerivedFromInstantiation">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsInTime"/>
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDerivedInstantiation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-      <rdfs:comment xml:lang="en">Inverse of 'has derived instantiation' object
+      <rdfs:comment xml:lang="en">Inverse of 'has or had derived instantiation' object
             property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">is derived from instantiation </rdfs:label>
-      <rdfs:label xml:lang="fr">est une instanciation dérivée de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was derived from instantiation </rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été une instanciation dérivée de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Updated the IRI, inverse property, definition, labels and RiCMCorrespondingComponent; this in order to make the specification compliant with RiC-CM 1.0.  The name of the property in RiC-O 0.2 was 'is derived from instantiation'.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R014i ('is derived from instantiation'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R014i ('is or was derived from instantiation'
             relation)</RiCCMCorrespondingComponent>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasDigitalInstantiationOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasDigitalInstantiationOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasInstantiationOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had digital instantiation' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">is or was digital instantiation of</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été une instanciation numérique de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Added the property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf">
@@ -5732,20 +5805,26 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R034 ('is instantiation associated with
             instantiation' relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#isInstantiationOf -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isInstantiationOf">
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasInstantiationOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasInstantiationOf">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasInstantiation"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfRecordResourceToInstantiationRelation"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Inverse of 'has instantiation' object property.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had instantiation' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">is instantiation of</rdfs:label>
-      <rdfs:label xml:lang="fr">est une instanciation de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was instantiation of</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été une instanciation de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Updated the IRI, inverse property, definition, labels and RiCMCorrespondingComponent; this in order to make the specification compliant with RiC-CM 1.0. The name of the property in RiC-O 0.2 was 'is instantiation of'.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5760,7 +5839,7 @@
                     "instantiates").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R025i ('is instantiation of'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R025i ('is or was instantiation of'
             relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isLastUpdateDateOf -->
@@ -5881,6 +5960,24 @@
             <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition (the name of this property in RiC-O 0.1 was
                     "isAgentNameOf").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAnalogueInstantiationOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAnalogueInstantiationOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasInstantiationOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAnalogueInstantiation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had analogue instantiation' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">is or was analogue instantiation of</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été une instantiation analogique de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Added the property.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -8326,7 +8423,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#migratedFrom -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migratedFrom">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDerivedFromInstantiation"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDerivedFromInstantiation"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#migratedInto"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -8338,6 +8435,12 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">migrated from</rdfs:label>
       <rdfs:label xml:lang="fr">a été produite par migration de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Updated subpropertyOf; this in order to make the specification compliant with RiC-CM 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8358,7 +8461,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#migratedInto -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migratedInto">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDerivedInstantiation"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#migratedFrom"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -8371,6 +8474,12 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">migrated into</rdfs:label>
       <rdfs:label xml:lang="fr">a été migrée vers</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-29</dc:date>
+            <rdf:value xml:lang="en">Updated subpropertyOf; this in order to make the specification compliant with RiC-CM 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
