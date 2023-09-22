@@ -2715,7 +2715,7 @@
    <!-- https://www.ica.org/standards/RiC/ontology#hasAllMembersWithCreationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAllMembersWithCreationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCreationDateOfAllMembersOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOfAllMembersOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:comment xml:lang="en">TBD</rdfs:comment>
