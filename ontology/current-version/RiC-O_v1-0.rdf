@@ -2393,7 +2393,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R081i</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -2711,7 +2711,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R080i</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -3227,7 +3227,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R083i</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -5307,7 +5307,6 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -5587,7 +5586,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R082i</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -6418,7 +6417,7 @@
         <rdfs:comment xml:lang="en">TBD</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is creation date of</rdfs:label>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R080</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -6438,7 +6437,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R081</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -6458,7 +6457,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R083</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -6478,7 +6477,7 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-R082</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -6532,7 +6531,7 @@
             existence and lifecycle of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">est une date associée a</rdfs:label>
-        <rdfs:label xml:lang="en">is date associated with </rdfs:label>
+        <rdfs:label xml:lang="en">is date associated with</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -9215,7 +9214,6 @@
                 <rdf:value xml:lang="en">TBD</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
 
@@ -12224,7 +12222,7 @@
 
     <!-- https://www.ica.org/standards/RiC/ontology#calendar -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#calendar">
+    <!--owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#calendar">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#dateStandard"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -12242,7 +12240,7 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Specialization of RiC-A14 (Date Standard
             attribute)</RiCCMCorrespondingComponent>
-    </owl:DatatypeProperty>
+    </owl:DatatypeProperty-->
     
 
 
@@ -12294,7 +12292,7 @@
 
     <!-- https://www.ica.org/standards/RiC/ontology#certainty -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#certainty">
+    <!--owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#certainty">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -12325,7 +12323,7 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A06 (Certainty
             attribute)</RiCCMCorrespondingComponent>
-    </owl:DatatypeProperty>
+    </owl:DatatypeProperty-->
     
 
 
@@ -12548,7 +12546,7 @@
 
     <!-- https://www.ica.org/standards/RiC/ontology#dateStandard -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#dateStandard">
+    <!--owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#dateStandard">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#referenceSystem"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -12574,7 +12572,7 @@
         <skos:example xml:lang="en">ISO8601</skos:example>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A14 (Date Standard
             attribute)</RiCCMCorrespondingComponent>
-    </owl:DatatypeProperty>
+    </owl:DatatypeProperty-->
     
 
 
