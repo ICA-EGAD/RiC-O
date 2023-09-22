@@ -2745,6 +2745,44 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+
+
+   <!-- https://www.ica.org/standards/RiC/ontology#hasPublicationDate -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasPublicationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPublicationDateOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has publication date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>TBD</dc:date>
+            <rdf:value xml:lang="en">TBD</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isPublicationDateOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isPublicationDateOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasPublicationDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">is creation date of all members of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>TBD</dc:date>
+            <rdf:value xml:lang="en">TBD</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+   </owl:ObjectProperty>
+
+
    <!-- https://www.ica.org/standards/RiC/ontology#hasMostMembersWithCreationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMostMembersWithCreationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
