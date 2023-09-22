@@ -526,7 +526,7 @@
                <html:li>2023, August 28: changed the domain of hasExtent (from Instantiation or RecordResource to Thing), same for the range of isExtentOf; added a length datatype property under measure.</html:li>
                <html:li>2023, August 29: updated hasInstantiation and hasDerivedInstantiation, and the inverse properties (changed their IRIs, labels, definitions, inverse properties, according to RiC-CM 1.0). As a consequence, also updated the superproperties of migratedInto and migratedFrom. Created four new object properties: hasOrHadDigitalInstantiation, hasOrHadAnalogueInstantiation, and the inverse ones.</html:li>
                <html:li>2023, August 29: fixed some typos in the English labels of a few object properties and added the past tense to the English label of hasOrHadCoordinates.</html:li>
-               <html:li>2023, TBD = Placeholder for changes to dates</html:li>
+               <html:li>2023, September 22: removed SimpleDate, DateRange, DateSet and added DateType and properties for dates.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -2389,10 +2389,11 @@
         <rdfs:label xml:lang="en">has all members with creation date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">TBD</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R081i</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
@@ -2707,8 +2708,8 @@
         <rdfs:label xml:lang="en">has creation date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R080i</RiCCMCorrespondingComponent>
@@ -2770,8 +2771,8 @@
         <rdfs:label xml:lang="en">has date type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -2812,8 +2813,8 @@
         <rdfs:label xml:lang="en">has deletion date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -2831,8 +2832,8 @@
         <rdfs:label xml:lang="en">is deletion date of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3223,8 +3224,8 @@
         <rdfs:label xml:lang="en">has most members with creation date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R083i</RiCCMCorrespondingComponent>
@@ -5303,8 +5304,8 @@
         <rdfs:label xml:lang="en">has publication date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -5582,8 +5583,8 @@
         <rdfs:label xml:lang="en">has some members with creation date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R082i</RiCCMCorrespondingComponent>
@@ -6417,6 +6418,12 @@
         <rdfs:comment xml:lang="en">TBD</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is creation date of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R080</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     
@@ -6433,8 +6440,8 @@
         <rdfs:label xml:lang="en">is creation date of all members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R081</RiCCMCorrespondingComponent>
@@ -6453,8 +6460,8 @@
         <rdfs:label xml:lang="en">is creation date of most members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R083</RiCCMCorrespondingComponent>
@@ -6473,8 +6480,8 @@
         <rdfs:label xml:lang="en">is creation date of some members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R082</RiCCMCorrespondingComponent>
@@ -6555,8 +6562,8 @@
         <rdfs:label xml:lang="en">is date type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -9210,8 +9217,8 @@
         <rdfs:label xml:lang="en">is publication date of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>TBD</dc:date>
-                <rdf:value xml:lang="en">TBD</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -14948,12 +14955,12 @@
         <rdfs:label xml:lang="en">Date Type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date xml:lang="en">2023-08-TBD</dc:date>
-                <rdf:value xml:lang="en">Created</rdf:value>
+                <dc:date xml:lang="en">2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">TBD</skos:scopeNote>
-        <RiCCMCorrespondingComponent xml:lang="en">TBD</RiCCMCorrespondingComponent>
+        <RiCCMCorrespondingComponent xml:lang="en">RiC-A42</RiCCMCorrespondingComponent>
     </owl:Class>
     
 
