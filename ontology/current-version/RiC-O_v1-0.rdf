@@ -532,6 +532,7 @@
                     <html:li>2023, August 29: fixed some typos in the English labels of a few object properties and added the past tense to the English label of hasOrHadCoordinates.</html:li>
                     <html:li>2023, September 13: added 54 new object properties under  &apos;hasorhadpart&apos;, in order to extend the following nine existing properties: &apos;containsOrContained&apos;,  &apos;hasOrHadComponent&apos;, &apos;hasOrHadConstituent&apos;, &apos;includesOrIncluded&apos;, &apos;hasOrHadSubdivision&apos;, &apos;hasOrHadSubevent&apos;. Also did the same for &apos;followsInTime&apos;, &apos;followsOrFollowed&apos;, &apos;isOrWasSubordinateto&apos;. For each listed property, one was added to express past partitive relations, and 2 other ones for present partitive relations, the first one being transitive and the superproperty of the second one. Added the inverse properties as well. Made &apos;hasDescendant&apos; and &apos;hasAncestor&apos; transitive.</html:li>
                     <html:li>2023, September 20: began to review and adjust the object properties added on September 13, starting with the properties under hasOrHadPart, and under the inverse isOrWasPartOf property. Among the changes made: adjusted the chnage notes, added a few &apos;this is a transitive relation&apos; when missing in the rdfs:comment, and fixed the hierarchy of the properties. Also, every past relation (e.g. contained) also made a subproperty of hadPart. Every current transitive relation (e.g. containsTransitive) made a subproperty of hasPartTransitive. Every current direct relation (e.g. directlyContains) made a subproperty of hasDirectPart. Fixed a syntaxic bug on the ontology history note.</html:li>
+                    <html:li>2023, September 22: finished to check and fix the object properties added on September 13, working on hasOrHadSubordinate/isOrWasSubordinateTo subproperties and on precedesOrPreceded/followsOrFollowed subproperties.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -1546,14 +1547,14 @@
         <rdfs:label xml:lang="fr">autorise</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">fixed the CM corresponding component name.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">fixed the CM corresponding component name.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R067 (&apos;authorizes&apos;
@@ -1701,17 +1702,17 @@
         <rdfs:label xml:lang="fr">contient ou a contenu</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name ; added a scope note (changed made
                     in order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
                     RiC-O 0.1 was &quot;contains&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Use for connecting two geographical or administrative
@@ -1897,17 +1898,17 @@
         <rdfs:label xml:lang="fr">décrit ou a décrit</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;describes&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Can be used, among other situations, for specifying that some
@@ -1963,15 +1964,15 @@
         <rdfs:label xml:lang="fr">est documenté par</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the inverse property IRI, the superproperty IRI and
-                    the corresponding CML component name</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the inverse property IRI, the superproperty IRI and
+                    the corresponding CML component name</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R033i (&apos;documented by&apos;
@@ -2004,17 +2005,17 @@
         <rdfs:label xml:lang="en">documents</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, superproperty IRI, corresponding CM
                     component name (changed made in order to make RiC-O compliant with RiC-CM 0.2;
                     the name of this property in RiC-O 0.1 was
                     &quot;isDocumentationOf&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R033 (&apos;documents&apos;
@@ -2082,17 +2083,17 @@
         <rdfs:label xml:lang="en">exists or existed in</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;existsIn&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R056 (&apos;exists or existed in&apos;
@@ -2115,17 +2116,17 @@
         <rdfs:label xml:lang="fr">exprime ou a exprimé</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;expresses&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R064i (&apos;expresses or expressed&apos;
@@ -2151,8 +2152,9 @@
     <!-- https://www.ica.org/standards/RiC/ontology#followsInTime -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#followsInTime">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/followsInTimeTransitive"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsOrFollowed"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesInTime"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -2160,20 +2162,27 @@
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#temporalRelationHasSource"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Inverse of &apos;precedes in time&apos; object
-            property.</rdfs:comment>
+            property.
+This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">follows in time</rdfs:label>
         <rdfs:label xml:lang="fr">suit dans le temps</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Property made transitive.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R009i (&apos;follows in time&apos;
@@ -2391,17 +2400,17 @@
         <rdfs:label xml:lang="en">has accumulator</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition and corresponding CM component (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;accumulatedBy&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R028 (&apos;has accumulator&apos;
@@ -2424,14 +2433,14 @@
         <rdfs:label xml:lang="en">has activity type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -2491,14 +2500,15 @@
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#descendanceRelationHasSource"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Inverse of &apos;has descendant&apos; object
-            property.</rdfs:comment>
+            property.
+This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a pour ancètre</rdfs:label>
         <rdfs:label xml:lang="en">has ancestor</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2023-09-08</dc:date>
+                <rdf:value xml:lang="en">made property transitive</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -2509,8 +2519,8 @@
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">made property transitive</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R017i (has ancestor
@@ -2546,15 +2556,15 @@
         <rdfs:label xml:lang="en">has author</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-12-29</dc:date>
-                <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in
-                    RiC-CM 0.2</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-12-29</dc:date>
+                <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in
+                    RiC-CM 0.2</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">To be used for any contribution to the content of a Record.
@@ -2629,14 +2639,14 @@
         <rdfs:label xml:lang="en">has carrier type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -2697,17 +2707,17 @@
         <rdfs:label xml:lang="en">has collector</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property and super property
                     IRI, text definition, domain (changed made in order to make RiC-O compliant with
                     RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;collectedBy&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R030 (&apos;has collector&apos;
@@ -2737,15 +2747,15 @@
         <rdfs:label xml:lang="en">has content of type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the text definition and superproperty
+                    IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the text definition and superproperty
-                    IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -2799,16 +2809,16 @@
         <rdfs:label xml:lang="en">has creator</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI and label (changed made in order to make
-                    RiC-O compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
-                    &quot;createdBy&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI and label (changed made in order to make
+                    RiC-O compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
+                    &quot;createdBy&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Covers the definition of author in diplomatics, and any
@@ -2884,14 +2894,15 @@
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#personIsSourceOfDescendanceRelation"/>
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#descendanceRelationHasTarget"/>
         </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Connects a Person to one of their descendants.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Person to one of their descendants.
+This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a pour descendant</rdfs:label>
         <rdfs:label xml:lang="en">has descendant</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">made property transitive</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperties IRIs.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -2902,8 +2913,8 @@
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperties IRIs.</rdf:value>
+                <dc:date>2023-09-08</dc:date>
+                <rdf:value xml:lang="en">made property transitive</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R017 (&apos;has descendant&apos;
@@ -2958,14 +2969,14 @@
         <rdfs:label xml:lang="en">has documentary form type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3077,10 +3088,9 @@
         <rdfs:label xml:lang="en">has extent</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-28</dc:date>
-                <rdf:value xml:lang="en">Object property created along with the Extent class and its
-                    subclasses, in order to provide methods for handling extent
-                    accurately.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
+                    attribute to the rdfs:comment.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -3092,9 +3102,10 @@
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
-                    attribute to the rdfs:comment.</rdf:value>
+                <dc:date>2020-10-28</dc:date>
+                <rdf:value xml:lang="en">Object property created along with the Extent class and its
+                    subclasses, in order to provide methods for handling extent
+                    accurately.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3115,16 +3126,16 @@
         <rdfs:label xml:lang="en">has extent type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Object property added along with the Extent Type
-                    class.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
+                    attribute to the rdfs:comment..</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
-                    attribute to the rdfs:comment..</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Object property added along with the Extent Type
+                    class.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3149,16 +3160,16 @@
         <rdfs:label xml:lang="en">has family association with</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, textual definition (changed made in
-                    order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
-                    RiC-O 0.1 was &quot;hasFamilyLinkWith&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, textual definition (changed made in
+                    order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
+                    RiC-O 0.1 was &quot;hasFamilyLinkWith&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R047 (&apos;has family association with&apos;
@@ -3238,15 +3249,15 @@
         <rdfs:label xml:lang="en">has identifier type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-19</dc:date>
-                <rdf:value xml:lang="en">Object property added along with IdentifierType class and
-                    isIdentifierTypeOf object property. </rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+                <dc:date>2020-10-19</dc:date>
+                <rdf:value xml:lang="en">Object property added along with IdentifierType class and
+                    isIdentifierTypeOf object property. </rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -3277,14 +3288,14 @@
         <rdfs:label xml:lang="en">has instantiation</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the inverse property IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the inverse property IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R025 (&apos;has instantiation&apos;
@@ -3363,17 +3374,17 @@
             catégorie</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3458,17 +3469,17 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour langue</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3490,17 +3501,17 @@
             légal</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3521,17 +3532,17 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour état</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3590,17 +3601,17 @@
         <rdfs:label xml:lang="en">has or had authority over</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was
                     &quot;hasAuthorityOver&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R036 (&apos;has or had authority over&apos;
@@ -3627,16 +3638,16 @@
         <rdfs:label xml:lang="en">has or had category</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition (the name of this property in RiC-O 0.1 was
-                    &quot;belongsToCategory&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition (the name of this property in RiC-O 0.1 was
+                    &quot;belongsToCategory&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3698,16 +3709,16 @@
         <rdfs:label xml:lang="en">has or had constituent</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;hasConstituent&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;hasConstituent&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R003 (&apos;has or had constituent&apos;
@@ -3735,17 +3746,17 @@
         <rdfs:label xml:lang="en">has or had controller</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;controlledBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R041i (&apos;has or had controller&apos;
@@ -3768,16 +3779,16 @@
         <rdfs:label xml:lang="en">has coordinates</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition (the name of this property in RiC-O 0.1 was
                     &quot;hasCoordinates&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3798,16 +3809,16 @@
         <rdfs:label xml:lang="en">has or had corporate body type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (the name of this property in RiC-O 0.1 was
-                    &quot;hasCorporateBodyType&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (the name of this property in RiC-O 0.1 was
+                    &quot;hasCorporateBodyType&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3832,16 +3843,16 @@
         <rdfs:label xml:lang="en">has or had correspondent</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, textual definition (changed made in
                     order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
                     RiC-O 0.1 was &quot;hasCorrespondent&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R052 (&apos;has or had correspondent&apos;
@@ -3871,16 +3882,16 @@
         <rdfs:label xml:lang="en">has or had demographic group</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, domain (the name of this property in RiC-O 0.1 was
                     &quot;belongsToDemographicGroup&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3945,16 +3956,16 @@
         <rdfs:label xml:lang="en">has or had identifier</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property IRI (the name of this property in RiC-O 0.1 was
                     &quot;identifiedBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -3995,17 +4006,17 @@
         <rdfs:label xml:lang="en">has or had intellectual property rights holder</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was
                     &quot;intellectualPropertyRightsHeldBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R040i (&apos;has or had intellectual property
@@ -4068,14 +4079,6 @@
         <rdfs:label xml:lang="en">has or had language</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
-                    definition (the name of this property in RiC-O 0.1 was
-                    &quot;hasLanguage&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2023-07-25</dc:date>
                 <rdf:value xml:lang="en">changed the definition to be consistent with the inverse
                     relation.</rdf:value>
@@ -4085,6 +4088,14 @@
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
+                    definition (the name of this property in RiC-O 0.1 was
+                    &quot;hasLanguage&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4150,16 +4161,16 @@
         <rdfs:label xml:lang="en">has or had legal status</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
                     definition (the name of this property in RiC-O 0.1 was
                     &quot;hasLegalStatus&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4180,16 +4191,16 @@
         <rdfs:label xml:lang="en">has or had location</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;hasLocation&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R075i (&apos;has or had location&apos;
@@ -4212,16 +4223,16 @@
         <rdfs:label xml:lang="en">has or had main subject</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;hasMainSubject&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;hasMainSubject&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Use for specifying, for example, that a Record Set of type
@@ -4258,17 +4269,17 @@
         <rdfs:label xml:lang="en">has or had manager</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property IRI (changed made in order to make RiC-O compliant
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;managedBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R038i (&apos;is or was managed by&apos;
@@ -4295,16 +4306,16 @@
         <rdfs:label xml:lang="en">has or had member</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;hasMember&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R055 (&apos;has or had member&apos;
@@ -4327,16 +4338,16 @@
         <rdfs:label xml:lang="en">has or had name</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition, super property IRI (the name of this property in RiC-O 0.1 was
                     &quot;hasName&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4357,16 +4368,16 @@
         <rdfs:label xml:lang="en">has or had occupation of type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition, super property IRI (the name of this property in RiC-O 0.1 was
                     &quot;hasOccupationOfType&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4436,16 +4447,16 @@
         <rdfs:label xml:lang="en">has or had part</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;hasPart&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;hasPart&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">The end of existence of a whole/part relation may affect the
@@ -4470,16 +4481,16 @@
         <rdfs:label xml:lang="en">has or had participant</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;involves&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;involves&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R058 (&apos;has or had participant&apos;
@@ -4502,10 +4513,8 @@
         <rdfs:label xml:lang="en">has or had physical location</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
-                    definition (the name of this property in RiC-O 0.1 was
-                    &quot;hasPhysicalLocation&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -4517,8 +4526,10 @@
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
+                    definition (the name of this property in RiC-O 0.1 was
+                    &quot;hasPhysicalLocation&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4569,16 +4580,16 @@
         <rdfs:label xml:lang="en">has or had place type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property IRI (the name of this property in RiC-O 0.1 was
                     &quot;hasPlaceType&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4598,17 +4609,17 @@
         <rdfs:label xml:lang="fr">occupe ou a occupé le poste</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;hasPosition&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R056i (&apos;has or had position&apos;
@@ -4631,15 +4642,15 @@
         <rdfs:label xml:lang="en">has or had rule type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-19</dc:date>
-                <rdf:value xml:lang="en">Object property added along with RuleType class and
-                    isRuleTypeOf object property. </rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-10-19</dc:date>
+                <rdf:value xml:lang="en">Object property added along with RuleType class and
+                    isRuleTypeOf object property. </rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -4669,17 +4680,17 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4733,17 +4744,17 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour langue</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4766,17 +4777,17 @@
             légal</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4798,17 +4809,17 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour état</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4831,17 +4842,17 @@
             document</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4866,17 +4877,17 @@
         <rdfs:label xml:lang="en">has or had spouse</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property IRI (changed made in order to make RiC-O compliant
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;hasSpouse&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R049 (&apos;has or had spouse&apos;
@@ -4903,16 +4914,16 @@
         <rdfs:label xml:lang="en">has or had student</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;hasStudent&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R053i (&apos;has or had student&apos;
@@ -4975,17 +4986,17 @@
         <rdfs:label xml:lang="en">has or had subevent</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property IRI (changed made in order to make RiC-O compliant
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;hasSubEvent&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Since an Activity is a kind of Event, this Relation can also
@@ -5010,16 +5021,16 @@
         <rdfs:label xml:lang="en">has or had subject</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;hasSubject&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R019 (&apos;has or had subject&apos;
@@ -5046,16 +5057,16 @@
         <rdfs:label xml:lang="en">has or had subordinate</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI (changed made
                     in order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
                     RiC-O 0.1 was &quot;isHierarchicallySuperiorTo&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">The hierarchical relation can be an authority relation, or a
@@ -5083,16 +5094,16 @@
         <rdfs:label xml:lang="en">has or had teacher</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;hasTeacher&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R053 (&apos;has or had teacher&apos;
@@ -5315,15 +5326,15 @@
         <rdfs:label xml:lang="en">has publisher</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI (the name of
+                    this property in RiC-O 0.1 was &quot;publishedBy&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI (the name of
-                    this property in RiC-O 0.1 was &quot;publishedBy&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -5383,14 +5394,14 @@
         <rdfs:label xml:lang="en">has record set type</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the super property IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the super property IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -5418,16 +5429,16 @@
         <rdfs:label xml:lang="en">has record state</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-12-28</dc:date>
-                <rdf:value xml:lang="en">Changed the IRI (hasRecordResourceState changed to
-                    hasRecordState), label, textual definition and domain (RecordResource replaced
-                    by Record or Record Part).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-12-28</dc:date>
+                <rdf:value xml:lang="en">Changed the IRI (hasRecordResourceState changed to
+                    hasRecordState), label, textual definition and domain (RecordResource replaced
+                    by Record or Record Part).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -5689,9 +5700,10 @@
         <rdfs:label xml:lang="fr">inclut ou a inclus</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-06-05</dc:date>
-                <rdf:value xml:lang="en">Made this object property a subproperty of
-                    hasOrHadPart.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;includes&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -5702,10 +5714,9 @@
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;includes&quot;).</rdf:value>
+                <dc:date>2023-06-05</dc:date>
+                <rdf:value xml:lang="en">Made this object property a subproperty of
+                    hasOrHadPart.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">A Record or Record Set can be aggregated in one or many Record
@@ -6146,15 +6157,15 @@
         <rdfs:label xml:lang="en">is author of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-12-29</dc:date>
+                <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in
+                    RiC-CM 0.2</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-12-29</dc:date>
-                <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in
-                    RiC-CM 0.2</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R079i (&apos;is author of&apos;
@@ -6236,14 +6247,14 @@
         <rdfs:label xml:lang="en">is carrier type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">Changed the super property IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">Changed the super property IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -6300,17 +6311,17 @@
         <rdfs:label xml:lang="en">is collector of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property and super property
                     IRI, text definition, domain (changed made in order to make RiC-O compliant with
                     RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;collects&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R030i (&apos;is collector of&apos;
@@ -6749,6 +6760,13 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
+                    attribute to the rdfs:comment.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Changed the range (was Instantiation or RecordResource) to
                     Thing ; changed the definition accordingly</rdf:value>
             </rdf:Description>
@@ -6759,13 +6777,6 @@
                 <rdf:value xml:lang="en">Object property created along with the Extent class and its
                     subclasses, in order to provide methods for handling extent
                     accurately.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French; added an xml:lang
-                    attribute to the rdfs:comment.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -6785,6 +6796,12 @@
         <rdfs:label xml:lang="en">is extent type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-11-21</dc:date>
                 <rdf:value xml:lang="en">Added a rdfs:comment.</rdf:value>
             </rdf:Description>
@@ -6794,12 +6811,6 @@
                 <dc:date>2020-11-01</dc:date>
                 <rdf:value xml:lang="en">Object property added along with the Extent Type
                     class.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -6907,6 +6918,12 @@
         <rdfs:label xml:lang="en">is identifier type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-10-19</dc:date>
                 <rdf:value xml:lang="en">Object property added along with IdentifierType class and
                     hasIdentifierType object property. </rdf:value>
@@ -6916,12 +6933,6 @@
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -7437,17 +7448,17 @@
         <rdfs:label xml:lang="en">is or was controller of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;controls&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R041 (&apos;is or was controller of&apos;
@@ -7498,16 +7509,16 @@
         <rdfs:label xml:lang="en">is or was corporate body type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition (the name of this property in RiC-O 0.1 was
                     &quot;isCorporateBodyTypeOf&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -7563,17 +7574,17 @@
         <rdfs:label xml:lang="en">is or was described by</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, corresponding CM component name (changed made in order to make RiC-O
                     compliant with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;describedBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R021i (&apos;is or was described by&apos;
@@ -7628,17 +7639,17 @@
         <rdfs:label xml:lang="en">is or was documentary form type of some members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -7734,17 +7745,17 @@
         <rdfs:label xml:lang="en">is or was holder of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, super
                     property IRI and text definition (changed made in order to make RiC-O compliant
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;isHolderOf&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R039 (&apos;is or was holder of&apos;
@@ -7786,17 +7797,17 @@
         <rdfs:label xml:lang="en">is or was holder of intellectual property rights of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI and textual
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was
                     &quot;hasIntellectualPropertyRightsOn&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R040 (&apos;is or was holder of intellectual
@@ -7855,14 +7866,6 @@
         <rdfs:label xml:lang="en">is or was included in</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;includedIn&quot;).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2023-06-05</dc:date>
                 <rdf:value xml:lang="en">Made this object property a subproperty of
                     isOrWasPartOf.</rdf:value>
@@ -7872,6 +7875,14 @@
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;includedIn&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R024i (&apos;is or was included in&apos;
@@ -7962,17 +7973,17 @@
         <rdfs:label xml:lang="en">is or was language of all members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -8097,17 +8108,17 @@
         <rdfs:label xml:lang="en">is or was legal status of all members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -8538,12 +8549,6 @@
         <rdfs:label xml:lang="en">is or was physical location of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, textual
                     definition (the name of this property in RiC-O 0.1 was
@@ -8555,6 +8560,12 @@
                 <dc:date>2021-02-01</dc:date>
                 <rdf:value xml:lang="en">Property made a subproperty of
                     &apos;isAssociatedWithPlace&quot;.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -8632,17 +8643,17 @@
         <rdfs:label xml:lang="en">is or was record state of all members of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record
                     Set is described as having all or some members that belong to some category (see
                     RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -8693,16 +8704,16 @@
         <rdfs:label xml:lang="en">is or was regulated by</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI (changed made
                     in order to make RiC-O compliant with RiC-CM 0.2; the name of this property in
                     RiC-O 0.1 was &quot;regulatedBy&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R063i (&apos;is or was regulated by&apos;
@@ -8831,17 +8842,17 @@
         <rdfs:label xml:lang="en">is or was subevent of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition, super property URI (changed made in order to make RiC-O compliant
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was
                     &quot;isSubEventOf&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R006i (&apos;is or was subevent of&apos;
@@ -8863,16 +8874,16 @@
         <rdfs:label xml:lang="en">is or was subject of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
                 <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
                     definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
                     name of this property in RiC-O 0.1 was &quot;isSubjectOf&quot;).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RIc-R019i (&apos;is or was subject of&apos;
@@ -8937,16 +8948,16 @@
         <rdfs:label xml:lang="en">is or was title of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition, super property IRI (the name of this property in RiC-O 0.1 was
-                    &quot;isTitleOf&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition, super property IRI (the name of this property in RiC-O 0.1 was
+                    &quot;isTitleOf&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -9095,14 +9106,14 @@
         <rdfs:label xml:lang="en">is production technique type of</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the super property IRI.</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the super property IRI.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -9335,16 +9346,16 @@
         <rdfs:label xml:lang="en">is reply to</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;repliesTo&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;repliesTo&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R013i (&apos;is reply to&apos;
@@ -10033,16 +10044,16 @@
         <rdfs:label xml:lang="en">occupies or occupied</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
-                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
-                    name of this property in RiC-O 0.1 was &quot;occupies&quot;).</rdf:value>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the IRI, label, inverse property IRI, text
+                    definition (changed made in order to make RiC-O compliant with RiC-CM 0.2; the
+                    name of this property in RiC-O 0.1 was &quot;occupies&quot;).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R054 (&apos;occupies or occupied&apos;
@@ -10583,7 +10594,8 @@
     <!-- https://www.ica.org/standards/RiC/ontology#precedesInTime -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#precedesInTime">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesInTimeTransitive"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -10591,20 +10603,27 @@
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#temporalRelationHasTarget"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it in chronological
-            order.</rdfs:comment>
+            order.
+This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">precedes in time</rdfs:label>
         <rdfs:label xml:lang="fr">précède dans le temps</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-01-22</dc:date>
+                <rdf:value xml:lang="en">changed the superproperty IRI</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-01-22</dc:date>
-                <rdf:value xml:lang="en">changed the superproperty IRI</rdf:value>
+                <dc:date>2023-09-21</dc:date>
+                <rdf:value xml:lang="en">Property made transitive.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">There may actually be zero to many intermediate Entities,
@@ -11964,16 +11983,21 @@
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/directlyFollows -->
+    <!-- https://www.ica.org/standards/RiC/ontology/directlyFollowsInSequence -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/directlyFollows">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/followsTransitive"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/directlyPrecedes"/>
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/directlyFollowsInSequence">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/followsInSequenceTransitive"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/directlyPrecedesInSequence"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that precedes it directly in some
-            sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">directly follows</rdfs:label>
+        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that precedes it directly in some non chronological sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">directly follows in sequence</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from followsInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
@@ -12017,37 +12041,48 @@
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/directlyPrecedes -->
+    <!-- https://www.ica.org/standards/RiC/ontology/directlyPrecedesInSequence -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/directlyPrecedes">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesTransitive"/>
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/directlyPrecedesInSequence">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesInSequenceTransitive"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it directly in some
-            sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">directly precedes</rdfs:label>
+        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it directly in some non chronological sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">directly precedes in sequence</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from precedesInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date xml:lang="en">2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
+                <rdf:value xml:lang="en">Object property added, along with its inverse property, in
+                    order to enable to express current, direct, sequential relations between things (the possibly indirect, transitive relation, superproperty of this one, being
+                    also added).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/followed -->
+    <!-- https://www.ica.org/standards/RiC/ontology/followedInSequence -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followed">
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followedInSequence">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsOrFollowed"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/preceded"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precededInSequence"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that preceded it in some sequence in
+        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that preceded it in some non chronological sequence in
             the past.</rdfs:comment>
-        <rdfs:label xml:lang="en">followed</rdfs:label>
+        <rdfs:label xml:lang="en">followed in sequence</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from followsInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
@@ -12060,84 +12095,23 @@
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/followedInTime -->
+    <!-- https://www.ica.org/standards/RiC/ontology/followsInSequenceTransitive -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followedInTime">
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followsInSequenceTransitive">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsOrFollowed"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precededInTime"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that preceded it in chronological
-            order in the past.</rdfs:comment>
-        <rdfs:label xml:lang="en">followed in time</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/followsDirectlyInTime -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followsDirectlyInTime">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/followsInTimeTransitive"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesDirectlyInTime"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that precedes it directly in
-            chronological order.</rdfs:comment>
-        <rdfs:label xml:lang="en">follows directly in time</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date xml:lang="en">2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/followsInTimeTransitive -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followsInTimeTransitive">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsOrFollowed"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesInTimeTransitive"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that precedes it directly or
-            indirectly in chronological order.</rdfs:comment>
-        <rdfs:label xml:lang="en">follows in time transitive</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/followsTransitive -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/followsTransitive">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#followsOrFollowed"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesTransitive"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesInSequenceTransitive"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that directl or indirectly precedes
-            it in some sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">follows transitive</rdfs:label>
+        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that directly or indirectly precedes
+            it in some non chronological sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows in sequence transitive</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from followsInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
@@ -12890,107 +12864,51 @@ This is a transitive relation.</rdfs:comment>
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/preceded -->
+    <!-- https://www.ica.org/standards/RiC/ontology/precededInSequence -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/preceded">
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precededInSequence">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that followed it in some sequence in
-            the past.</rdfs:comment>
-        <rdfs:label xml:lang="en">preceded</rdfs:label>
+        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that followed it in some non chronological sequence in the past.</rdfs:comment>
+        <rdfs:label xml:lang="en">preceded in sequence</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from precedesInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
+                <rdf:value xml:lang="en">Object property added, along with its inverse property, in order to enable to express past sequential relations between things (the current sequential relations being also added, including a transitive one).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology/precededInTime -->
+    <!-- https://www.ica.org/standards/RiC/ontology/precedesInSequenceTransitive -->
 
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precededInTime">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that followed it in chronological
-            order in the past.</rdfs:comment>
-        <rdfs:label xml:lang="en">preceded in time</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date xml:lang="en">2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/precedesDirectlyInTime -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precedesDirectlyInTime">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology/precedesInTimeTransitive"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it directly in
-            chronological order.</rdfs:comment>
-        <rdfs:label xml:lang="en">precedes directly in time</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <dc:date xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</dc:date>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/precedesInTimeTransitive -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precedesInTimeTransitive">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it directly or
-            indirectly in chronological order.</rdfs:comment>
-        <rdfs:label xml:lang="en">precedes in time transitive</rdfs:label>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology/precedesTransitive -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precedesTransitive">
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology/precedesInSequenceTransitive">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:comment xml:lang="en">Connects a Thing to a Thing that follows it directly or
-            indirectly in some sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">precedes transitive</rdfs:label>
+            indirectly in some non chronological sequence.
+This is a transitive relation.</rdfs:comment>
+        <rdfs:label xml:lang="en">precedes in sequence transitive</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-22</dc:date>
+                <rdf:value xml:lang="en">Renamed the property and modified its definition (rdfs:comment) in order to better distinguish it from precedesInTime.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date xml:lang="en">2023-09-08</dc:date>
-                <rdf:value xml:lang="en">Added transitive super-property and both present direct and
-                    past sequential relations as well as their respective inverse
-                    relations.</rdf:value>
+                <rdf:value xml:lang="en">Object property added, along with its inverse property, in order to enable to express current, direct or indirect, sequential relations between things (the past sequential relation also being added).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -13497,15 +13415,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">classification</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
+                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
-                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">BUD-01-F002 [example of a classification number from a corporate
@@ -13843,15 +13761,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">expressed date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">examples added. Objective: to make RiC-O compliant with
+                    RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">examples added. Objective: to make RiC-O compliant with
-                    RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">1925-1966</skos:example>
@@ -14053,15 +13971,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">mesure de l’instanciation</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Scope note updated. Examples added. Objective: to make
+                    RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Scope note updated. Examples added. Objective: to make
-                    RiC-O compliant with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">Size of PDF-file: 1.5 MB</skos:example>
@@ -14381,15 +14299,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">valeur normalisée de la date</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Examples added. Objective: to make RiC-O compliant with
-                    RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Examples added. Objective: to make RiC-O compliant with
+                    RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example>1789/1815</skos:example>
@@ -14602,19 +14520,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">quantité</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-28</dc:date>
-                <rdf:value xml:lang="en">Added an xml:lang attribute to the
-                    rdfs:comment.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-11-21</dc:date>
                 <rdf:value xml:lang="en">Added a scope note.</rdf:value>
             </rdf:Description>
@@ -14625,6 +14530,19 @@ This is a transitive relation.</rdfs:comment>
                 <rdf:value xml:lang="en">Datatype property created along with unitOfMeasurement,
                     Extent and UnitOfMeasurement classes, in order to provide methods for handling
                     extent accurately.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-28</dc:date>
+                <rdf:value xml:lang="en">Added an xml:lang attribute to the
+                    rdfs:comment.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Use if you use the Extent class and its properties for
@@ -14653,6 +14571,12 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">mesure de la ressource archivistique</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-11-21</dc:date>
                 <rdf:value xml:lang="en">Updated the scope note, as a RecordResourceExtent class has
                     been created.</rdf:value>
@@ -14663,12 +14587,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-11-01</dc:date>
                 <rdf:value xml:lang="en">Text definition and scope note updated. Examples added.
                     Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">1,500 words</skos:example>
@@ -14813,15 +14731,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">scope and content</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Text definition updated. Examples added. Objective: to make
+                    RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Text definition updated. Examples added. Objective: to make
-                    RiC-O compliant with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">Among the witnesses, the duke of Normandy.</skos:example>
@@ -14928,15 +14846,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">technical characteristics</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Scope note and examples added. Objective: to make RiC-O
+                    compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Scope note and examples added. Objective: to make RiC-O
-                    compliant with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:example xml:lang="en">Hubble Space Telescope had until 2002 a flawed mirror that
@@ -15048,6 +14966,14 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">unité de mesure</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2020-10-28</dc:date>
+                <rdf:value xml:lang="en">Datatype property created along with quantity, Extent and
+                    UnitOfMeasurement classes, in order to provide methods for handling extent
+                    accurately.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-11-21</dc:date>
                 <rdf:value xml:lang="en">Added a scope note.</rdf:value>
             </rdf:Description>
@@ -15063,14 +14989,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Added an xml:lang attribute to the
                     rdfs:comment.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2020-10-28</dc:date>
-                <rdf:value xml:lang="en">Datatype property created along with quantity, Extent and
-                    UnitOfMeasurement classes, in order to provide methods for handling extent
-                    accurately.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Use if you do not use the UnitOfMeasurement class for handling
@@ -15231,16 +15149,16 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Activité</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated.
-                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated.
+                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -15754,6 +15672,13 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Mesure d’un support</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2020-11-21</dc:date>
+                <rdf:value xml:lang="en">Changed a bit the definition and added change
+                    notes.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
@@ -15770,13 +15695,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-10-28</dc:date>
                 <rdf:value xml:lang="en">Class added in order to handle an accurate description of a
                     carrier extent</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2020-11-21</dc:date>
-                <rdf:value xml:lang="en">Changed a bit the definition and added change
-                    notes.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Countable characteristics of a record resource carrier
@@ -15895,6 +15813,13 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de contenu</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
@@ -15904,13 +15829,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: added (quite the same as RiC-CM
                     definition).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Should not be confused with Representation Type or Carrier
@@ -15970,15 +15888,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Corporate Body</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
+                    with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
-                    with RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Corporate Body is a kind of Group.</skos:scopeNote>
@@ -16077,14 +15995,14 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Relation de création</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed a 0.2 existing unnecessary restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed a 0.2 existing unnecessary restriction.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R027 and RiC-R027i
@@ -16170,15 +16088,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Ensemble de dates</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">Comment: updated. Objective: to make RiC-O compliant with
+                    RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">Comment: updated. Objective: to make RiC-O compliant with
-                    RiC-CM v0.2.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Primarily used in the description of Record Sets to describe
@@ -16201,6 +16119,12 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Demographic Group</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date xml:lang="en">2021-02-08</dc:date>
+                <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Comment: updated. Scope note: updated and made several
                     paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
@@ -16217,12 +16141,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Comment: updated. Scope note: updated and made several
                     paragraphs. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date xml:lang="en">2021-02-08</dc:date>
-                <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Can be extended with any number of subclasses, e.g. Age or
@@ -16357,12 +16275,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Événement</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: made separate paragraphs and some
                     changes.</rdf:value>
@@ -16373,6 +16285,12 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-04-19</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">An event may be natural, human, or a combination of natural
@@ -16434,6 +16352,13 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type d’événement</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
@@ -16443,13 +16368,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: updated and made several paragraphs. Objective:
                     to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Events of all kinds can be categorized. Curation event types
@@ -16499,15 +16417,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de mesure</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-11-01</dc:date>
+                <rdf:value xml:lang="en">Added to specify the dimension that is being
+                    measured</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-11-01</dc:date>
-                <rdf:value xml:lang="en">Added to specify the dimension that is being
-                    measured</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -16533,15 +16451,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Family</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">Scope note: made separate paragraphs and some
-                    changes.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">Scope note: made separate paragraphs and some
+                    changes.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Family is a kind of Group. “Family” is used here as a general
@@ -16597,12 +16515,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de famille</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Comment: slighty changed.</rdf:value>
             </rdf:Description>
@@ -16619,6 +16531,12 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-04-19</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Family Type encompasses a wide variety of familial groups
@@ -16745,15 +16663,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A22 (Identifier
@@ -17207,19 +17125,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Mandate</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-04-21</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated.
                     Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
@@ -17230,6 +17135,19 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-04-21</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-04-21</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Mandate is a kind of Rule. A Mandate confers the authority or
@@ -17565,6 +17483,13 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Personne</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: made separate paragraphs and updated. Disjoint
                     with: enriched. Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
@@ -17580,13 +17505,6 @@ This is a transitive relation.</rdfs:comment>
             <rdf:Description>
                 <dc:date>2021-02-08</dc:date>
                 <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
@@ -17655,15 +17573,15 @@ This is a transitive relation.</rdfs:comment>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -17894,12 +17812,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de technique de production</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Comment: updated. Objective: to make RiC-O compliant with
                     RiC-CM v0.2.</rdf:value>
@@ -17910,6 +17822,12 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-04-19</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A33 (Production
@@ -18058,13 +17976,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="en">Record Part</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">comment: updated. Scope note: made several paragraphs.
-                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
@@ -18073,6 +17984,13 @@ This is a transitive relation.</rdfs:comment>
             <rdf:Description>
                 <dc:date>2021-02-08</dc:date>
                 <rdf:value xml:lang="en">Removed the Restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">comment: updated. Scope note: made several paragraphs.
+                    Objective: to make RiC-O compliant with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Record Part is a kind of Record Resource. A Record Part may
@@ -18094,6 +18012,18 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Ressource archivistique</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2021-02-08</dc:date>
+                <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Scope note: made separate paragraphs plus very few
                     changes.</rdf:value>
@@ -18104,18 +18034,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2023-04-19</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2021-02-08</dc:date>
-                <rdf:value xml:lang="en">Removed one Restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Producing a record resource may imply either its newly
@@ -18393,13 +18311,6 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type d’ensemble d’objets informationnels</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-23</dc:date>
-                <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
-                    with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
                 <dc:date>2023-04-19</dc:date>
                 <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
                     restriction.</rdf:value>
@@ -18409,6 +18320,13 @@ This is a transitive relation.</rdfs:comment>
             <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2020-10-23</dc:date>
+                <rdf:value xml:lang="en">scope note: updated. Objective: to make RiC-O compliant
+                    with RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Four instances of Record Set Type are included for now in
@@ -18486,15 +18404,15 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Relation</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2021-02-08</dc:date>
-                <rdf:value xml:lang="en">Removed the restrictions; completed the definition and
-                    scope note.</rdf:value>
+                <dc:date>2023-08-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-08-25</dc:date>
-                <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+                <dc:date>2021-02-08</dc:date>
+                <rdf:value xml:lang="en">Removed the restrictions; completed the definition and
+                    scope note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Use when direct, binary object properties are not enough, e.g.
@@ -18517,6 +18435,13 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de représentation</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
@@ -18526,13 +18451,6 @@ This is a transitive relation.</rdfs:comment>
                 <dc:date>2020-10-23</dc:date>
                 <rdf:value xml:lang="en">Comment and scope note: updated. Objective: to make RiC-O
                     compliant with RiC-CM v0.2.</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Representation Type can be unmediated (which allows humans to
@@ -18674,9 +18592,9 @@ This is a transitive relation.</rdfs:comment>
         <rdfs:label xml:lang="fr">Type de règle</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2023-04-19</dc:date>
-                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
-                    restriction.</rdf:value>
+                <dc:date>2020-10-19</dc:date>
+                <rdf:value xml:lang="en">Class added along with hasRuleType and isRuleTypeOf object
+                    properties.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -18687,9 +18605,9 @@ This is a transitive relation.</rdfs:comment>
         </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2020-10-19</dc:date>
-                <rdf:value xml:lang="en">Class added along with hasRuleType and isRuleTypeOf object
-                    properties.</rdf:value>
+                <dc:date>2023-04-19</dc:date>
+                <rdf:value xml:lang="en">Removed the 0.2 existing unnecessary
+                    restriction.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">For example, for rules that can be applied to record resources
@@ -19280,17 +19198,6 @@ This is a transitive relation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">series</skos:prefLabel>
     </owl:NamedIndividual>
     <rdf:Description>
-        <skos:changeNote>
-            <rdf:Description>
-                <dc:date>2023-09-05</dc:date>
-                <rdf:value>Object property added, along with its inverse property, in order to
-                    enable to express current, direct, partitive relations between places (the
-                    possibly indirect, transitive relation, superproperty of this one, being also
-                    added).</rdf:value>
-            </rdf:Description>
-        </skos:changeNote>
-    </rdf:Description>
-    <rdf:Description>
         <rdfs:comment>Connects a Place to a Place that is, directly or indirectly, contained within
             it. This is a transitive relation.</rdfs:comment>
         <rdfs:label>contains transitive</rdfs:label>
@@ -19302,6 +19209,76 @@ This is a transitive relation.</rdfs:comment>
                     relation also being added).</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+    </rdf:Description>
+    <rdf:Description>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-09-05</dc:date>
+                <rdf:value>Object property added, along with its inverse property, in order to
+                    enable to express current, direct, partitive relations between places (the
+                    possibly indirect, transitive relation, superproperty of this one, being also
+                    added).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date xml:lang="en">2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Connects a Place to a Place that is within it. This is a transitive
+            relation.</rdfs:comment>
+        <rdfs:label>contains transitive</rdfs:label>
+        <skos:changeNote></skos:changeNote>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date xml:lang="en">2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive and both past and present direct partitive
+            relations on Record/RecordPart as well as their respective inverse
+            relations.</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-05</dc:date>
+        <rdf:value>Object property added, along with its inverse property, in order to enable to
+            express current partitive relations between places (the past partitive relation also
+            being added).</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-05</dc:date>
+        <rdf:value>Object property added, along with its inverse property, in order to enable to
+            express current, direct, partitive relations between places (the possibly indirect,
+            transitive relation, superproperty of this one, being also added).</rdf:value>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-09-08</dc:date>
+        <dc:date xml:lang="en">Added transitive and both past and present direct partitive relations
+            on Record or RecordSet as well as their respective inverse relations.</dc:date>
+    </rdf:Description>
+    <rdf:Description>
+        <dc:date>2023-07-12</dc:date>
+        <rdf:value xml:lang="en">Object property added in order to enable to express current,
+            possibly indirect, partitive relations between things (the past partitive relation being
+            also added).</rdf:value>
     </rdf:Description>
     <rdf:Description>
         <dc:date>2023-09-08</dc:date>
@@ -19324,39 +19301,16 @@ This is a transitive relation.</rdfs:comment>
         <dc:date>2023-09-08</dc:date>
     </rdf:Description>
     <rdf:Description>
-        <dc:date>2023-09-05</dc:date>
-        <rdf:value>Object property added, along with its inverse property, in order to enable to
-            express current, direct, partitive relations between places (the possibly indirect,
-            transitive relation, superproperty of this one, being also added).</rdf:value>
+        <dc:date xml:lang="en">2023-09-08</dc:date>
+        <rdf:value xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</rdf:value>
     </rdf:Description>
     <rdf:Description>
         <dc:date>2023-09-08</dc:date>
-        <dc:date xml:lang="en">Added transitive and both past and present direct partitive relations
-            on Record or RecordSet as well as their respective inverse relations.</dc:date>
-    </rdf:Description>
-    <rdf:Description>
-        <dc:date>2023-07-12</dc:date>
-        <rdf:value xml:lang="en">Object property added in order to enable to express current,
-            possibly indirect, partitive relations between things (the past partitive relation being
-            also added).</rdf:value>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:comment>Connects a Place to a Place that is within it. This is a transitive
-            relation.</rdfs:comment>
-        <rdfs:label>contains transitive</rdfs:label>
-        <skos:changeNote></skos:changeNote>
-    </rdf:Description>
-    <rdf:Description>
-        <dc:date xml:lang="en">2023-09-08</dc:date>
-        <rdf:value xml:lang="en">Added transitive and both past and present direct partitive
-            relations on Record/RecordPart as well as their respective inverse
-            relations.</rdf:value>
-    </rdf:Description>
-    <rdf:Description>
-        <dc:date>2023-09-05</dc:date>
-        <rdf:value>Object property added, along with its inverse property, in order to enable to
-            express current partitive relations between places (the past partitive relation also
-            being added).</rdf:value>
+        <dc:date xml:lang="en">Added transitive super-property and both present direct and
+                    past sequential relations as well as their respective inverse
+                    relations.</dc:date>
     </rdf:Description>
     <rdf:Description>
         <rdf:value xml:lang="en">Object property added, along with its inverse property, in order to
