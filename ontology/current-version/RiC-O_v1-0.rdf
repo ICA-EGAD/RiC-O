@@ -12609,13 +12609,22 @@ An uncertain date (e.g. when you state that a person was possibly born at some d
     <!-- https://www.ica.org/standards/RiC/ontology#expressedDate -->
 
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#expressedDate">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#name"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#textualValue"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Natural language expression of a Date.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Natural language expression of a Date.
+This datatype property is a specialization of the name datatype property.
+Whenever this attribute is used to store dates, it is recommended that the value comes along with the information needed to understand it; in particular, when needed, it should mention the calendar used or the specific context it is referring to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">date en langage naturel</rdfs:label>
         <rdfs:label xml:lang="en">expressed date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-10</dc:date>
+                <rdf:value xml:lang="en">Updated the rdfs:comment and skos:examples in order to make this property fully compliant with RiC-CM 1.0. Made it a subproperty of rico:name.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
@@ -12629,9 +12638,17 @@ An uncertain date (e.g. when you state that a person was possibly born at some d
                     RiC-CM v0.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:example xml:lang="fr">15 thermidor an IV (calendrier révolutionnaire français)</skos:example>
         <skos:example xml:lang="en">1925-1966</skos:example>
+        <skos:example xml:lang="fr">8 avril 1258 (a. st., style de Pâques)</skos:example>
+        <skos:example xml:lang="en">All of the years 1550, 1151, 1553, 1555</skos:example>
+        <skos:example xml:lang="la">Die jovis ultima mensis martii anno domini millesimo quingentesimo quadragesimo ante Pascha</skos:example>
         <skos:example xml:lang="en">October 24th, 1999</skos:example>
-        <skos:example xml:lang="en">The Sunday before Christmas</skos:example>
+        <skos:example xml:lang="en">One of the years 1550, 1551, 1553, 1555</skos:example>
+        <skos:example xml:lang="en">The Middle Ages</skos:example>
+        <skos:example xml:lang="en">The second semester of 1951 to 1952 (academic reference system)</skos:example>
+        <skos:example xml:lang="fr">XVIIe siècle</skos:example>
+        <skos:example rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1550-1553, 1555</skos:example>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A19 (Expressed Date
             attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
