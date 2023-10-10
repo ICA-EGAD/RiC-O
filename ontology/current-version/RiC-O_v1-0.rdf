@@ -12478,11 +12478,16 @@
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#dateQualifier">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Indicates the precision of a date. It specifies if, and to what
-            extent, the value is an estimation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A human readable qualification of the date, when it is necessary to indicate its level of precision or say if it is an estimation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">date qualifier</rdfs:label>
         <rdfs:label xml:lang="fr">qualificatif de la date</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-10</dc:date>
+                <rdf:value xml:lang="en">Updated the rdfs:comment, skos:scopeNote and examples, in order to make this datatype property fully compliant with RiC-CM 1.0</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2020-11-01</dc:date>
@@ -12496,9 +12501,11 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:example xml:lang="en">approximate</skos:example>
         <skos:example xml:lang="en">circa</skos:example>
-        <skos:example xml:lang="en">during</skos:example>
-        <skos:example xml:lang="en">exact</skos:example>
+        <skos:example xml:lang="en">end unknown</skos:example>
+        <skos:scopeNote xml:lang="en">Most often, this human readable expression of the accuracy of the date is used along with an ISO 8601 representation of the date. The qualifier can also be expressed as a machine-readable value, using the EDTF standard (thus, using the normalizedDateValue datatype property).
+An uncertain date (e.g. when you state that a person was possibly born at some date) should be specified using the relationCertainty datatype property, whose domain is the Relation class).</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A13 (Date Qualifier
             attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
