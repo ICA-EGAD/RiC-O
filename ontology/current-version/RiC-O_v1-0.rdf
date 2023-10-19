@@ -606,6 +606,7 @@
                         date properties.</html:li>
                <html:li>2023, October 16: fixed several bugs while resolving conflicts before merging, including bad IRIs.</html:li>
                <html:li>2023, October 17: made occurredAtDate and isDateOfOccurenceof subproperties of isEventAssociatedWith and isAssociatedWithEvent</html:li>
+               <html:li>2023, October 19: made rico:wasUsedFromDate and rico:wasUsedToDate (and its inverses) sub-properties of rico:hasBeginningDate and rico:hasEndDate (and its inverses) respectively</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -7085,7 +7086,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isFromUseDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isFromUseDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#wasUsedFromDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
@@ -7098,6 +7099,12 @@
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-10-19</dc:date>
+            <rdf:value xml:lang="en">Made this property subPropertyOf isBeginningDateOf.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -9815,7 +9822,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isToUseDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isToUseDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#wasUsedToDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
@@ -9824,6 +9831,12 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date jusqu’à laquelle est utilisé</rdfs:label>
       <rdfs:label xml:lang="en">is to use date of </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-10-19</dc:date>
+            <rdf:value xml:lang="en">Made this property a subPropertyOf isEndDateOf.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11995,7 +12008,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#wasUsedFromDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wasUsedFromDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isFromUseDateOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
@@ -12010,10 +12023,16 @@
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-10-19</dc:date>
+            <rdf:value xml:lang="en">Made this property subPropertyOf hasBeginningDate.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#wasUsedToDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wasUsedToDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasEndDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isToUseDateOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
@@ -12022,6 +12041,12 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a été utilisé jusqu’à la date</rdfs:label>
       <rdfs:label xml:lang="en">was used to date </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-10-19</dc:date>
+            <rdf:value xml:lang="en">Made this property subPropertyOf hasEndDate.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
