@@ -2965,6 +2965,23 @@
     
 
 
+    <!-- https://www.ica.org/standards/RiC/ontology#hasBirthPlace -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasBirthPlace">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithPlace"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isBirthPlaceOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Added for RiC-O 1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.ica.org/standards/RiC/ontology#hasCarrierType -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCarrierType">
@@ -3302,6 +3319,23 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R072i (&apos;has death date&apos;
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasDeathPlace -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDeathPlace">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithPlace"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDeathPlaceOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date xml:lang="en">Added for RiC-O v1.0.</dc:date>
+                <dc:date>2023-10-19</dc:date>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     
 
@@ -4588,7 +4622,7 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-10-19</dc:date>
-                <rdf:value>Added for RiC-O 1.0.</rdf:value>
+                <rdf:value xml:lang="en">Added for RiC-O 1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -4771,7 +4805,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadJurisdiction -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadJurisdiction">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithPlace"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithPlace"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasJurisdictionOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
@@ -4780,6 +4814,12 @@
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a ou a eu pour ressort</rdfs:label>
         <rdfs:label xml:lang="en">has or had jurisdiction</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Made subproperty of new property isAgentAssociatedWithPlace instead of its parent isAssociatedWithPlace.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -7083,6 +7123,23 @@
     
 
 
+    <!-- https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithPlace -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithPlace">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithPlace"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Added for RiC-O v1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate">
@@ -7288,6 +7345,22 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R070 (&apos;is birth date of&apos;
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isBirthPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isBirthPlaceOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Added for RiC-O v1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     
 
@@ -7712,6 +7785,22 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R072 (&apos;is death date of&apos;
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isDeathPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDeathPlaceOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <dc:date>
+            <rdf:Description>
+                <dc:date xml:lang="en">2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Added for RiC-O v1.0.</rdf:value>
+            </rdf:Description>
+        </dc:date>
     </owl:ObjectProperty>
     
 
@@ -9242,7 +9331,7 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-10-19</dc:date>
-                <rdf:value>Adder for RiC-O v1.0.</rdf:value>
+                <rdf:value xml:lang="en">Adder for RiC-O v1.0.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -9531,7 +9620,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasJurisdictionOf -->
 
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasJurisdictionOf">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
         <rdfs:comment xml:lang="en">Connects a Place to an Agent that has or had jurisdiction over
@@ -9539,6 +9628,12 @@
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a ou a été le ressort de</rdfs:label>
         <rdfs:label xml:lang="en">is or was jurisdiction of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <rdf:value xml:lang="en">Made subproperty of new property isPlaceAssociatedWithAgent instead of its parent isPlaceAssociatedWith.</rdf:value>
+                <rdfs:comment>2023-10-19</rdfs:comment>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2021-01-22</dc:date>
@@ -10721,6 +10816,22 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R074 (&apos;is place associated with&apos;
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWithAgent">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isPlaceAssociatedWith"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-19</dc:date>
+                <rdf:value xml:lang="en">Added for RiC-O v1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     
 
