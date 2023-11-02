@@ -595,6 +595,7 @@
                   isPlaceAssociatedWithAgent, isBirthPlaceOf, isDeathPlaceOf,
                   isOrWasLocationOfAgent, and their inverse properties. Fixed a bug in the history
                   note of the ontology. Regenerated the inverse properties.</html:li>
+               <html:li>2023, November 2:  added Spanish labels to 59 datatype properties, 103 classes and 277 object properties.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -774,6 +775,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">activity is context of relation </rdfs:label>
       <rdfs:label xml:lang="fr">activité est le contexte de la relation</rdfs:label>
+      <rdfs:label xml:lang="es">actividad es contexto de relación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -791,6 +799,13 @@
          Relation</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">activity is source of performance relation</rdfs:label>
+      <rdfs:label xml:lang="es">actividad es fuente de relación funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#activityIsTargetOfActivityDocumentationRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#activityIsTargetOfActivityDocumentationRelation">
@@ -814,6 +829,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">affecte ou a affecté</rdfs:label>
       <rdfs:label xml:lang="en">affects or affected</rdfs:label>
+      <rdfs:label xml:lang="es">afecta o afectaba a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -888,6 +910,13 @@
       <rdfs:comment xml:lang="en">Connects an Agent to a Work Relation</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">agent has work relation</rdfs:label>
+      <rdfs:label xml:lang="es">agente tiene relación profesional con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelationHasSource">
@@ -922,6 +951,13 @@
       <rdfs:comment xml:lang="en">Connects an Agent to an Agent Relation</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">agent is connected to agent relation</rdfs:label>
+      <rdfs:label xml:lang="es">agente está conectado a relación entre agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentControlRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentIsSourceOfAgentControlRelation">
@@ -1199,6 +1235,13 @@
          Agents</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">agent relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación entre agentes conecta a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentTemporalRelationHasSource">
@@ -1275,6 +1318,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">as concerns activity </rdfs:label>
       <rdfs:label xml:lang="fr">en ce qui concerne l’activité</rdfs:label>
+      <rdfs:label xml:lang="es">en cuanto a actividad</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1318,6 +1368,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authorized by </rdfs:label>
       <rdfs:label xml:lang="fr">autorisé par</rdfs:label>
+      <rdfs:label xml:lang="es">controlado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1342,6 +1399,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authorizes</rdfs:label>
       <rdfs:label xml:lang="fr">autorise</rdfs:label>
+      <rdfs:label xml:lang="es">controla</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1368,6 +1432,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authorizing agent </rdfs:label>
       <rdfs:label xml:lang="fr">autorisation donnée par l’agent</rdfs:label>
+      <rdfs:label xml:lang="es">agente controlado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1470,6 +1541,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">contains or contained</rdfs:label>
       <rdfs:label xml:lang="fr">contient ou a contenu</rdfs:label>
+      <rdfs:label xml:lang="es">contiene o contenía</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -1561,6 +1639,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">creation with role </rdfs:label>
       <rdfs:label xml:lang="fr">création avec pour rôle</rdfs:label>
+      <rdfs:label xml:lang="es">creación con el rol de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1627,6 +1712,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">describes or described</rdfs:label>
       <rdfs:label xml:lang="fr">décrit ou a décrit</rdfs:label>
+      <rdfs:label xml:lang="es">describe o describía</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1760,6 +1852,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">documented by</rdfs:label>
       <rdfs:label xml:lang="fr">est documenté par</rdfs:label>
+      <rdfs:label xml:lang="es">se documenta en </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -1798,6 +1897,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">documente</rdfs:label>
       <rdfs:label xml:lang="en">documents</rdfs:label>
+      <rdfs:label xml:lang="es">documenta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -1860,6 +1966,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">existe ou a existé dans</rdfs:label>
       <rdfs:label xml:lang="en">exists or existed in</rdfs:label>
+      <rdfs:label xml:lang="es">existe o existía en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -1888,6 +2001,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">expresses or expressed</rdfs:label>
       <rdfs:label xml:lang="fr">exprime ou a exprimé</rdfs:label>
+      <rdfs:label xml:lang="es">expresa o expresaba</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -1914,6 +2034,13 @@
       <rdfs:comment xml:lang="en">Connects a Family Relation to a Person.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">family relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación familiar conecta a </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#followedInSequence -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#followedInSequence">
@@ -1980,6 +2107,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">follows in time</rdfs:label>
       <rdfs:label xml:lang="fr">suit dans le temps</rdfs:label>
+      <rdfs:label xml:lang="es">sigue en el tiempo a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2015,6 +2149,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">follows or followed</rdfs:label>
       <rdfs:label xml:lang="fr">suit ou a suivi</rdfs:label>
+      <rdfs:label xml:lang="es">sigue o seguía a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2042,6 +2183,13 @@
          functionally equivalent Instantiations.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">functional equivalence relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación de equivalencia funcional conecta a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#groupIsSourceOfGroupSubdivisionRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#groupIsSourceOfGroupSubdivisionRelation">
@@ -2284,6 +2432,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est accumulé par</rdfs:label>
       <rdfs:label xml:lang="en">has accumulator</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como acumulador a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2312,6 +2467,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’activité</rdfs:label>
       <rdfs:label xml:lang="en">has activity type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de actividad a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2343,6 +2505,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour destinataire</rdfs:label>
       <rdfs:label xml:lang="en">has addressee</rdfs:label>
+      <rdfs:label xml:lang="es">se dirige a </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2377,6 +2546,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour ancêtre</rdfs:label>
       <rdfs:label xml:lang="en">has ancestor</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como ancestro a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2422,6 +2598,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour responsable intellectuel</rdfs:label>
       <rdfs:label xml:lang="en">has author</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como autor a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-29</dc:date>
@@ -2452,6 +2635,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de début</rdfs:label>
       <rdfs:label xml:lang="en">has beginning date </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha de inicio</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2471,6 +2661,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de naissance</rdfs:label>
       <rdfs:label xml:lang="en">has birth date </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha de nacimiento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2512,6 +2709,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de support</rdfs:label>
       <rdfs:label xml:lang="en">has carrier type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de soporte</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2539,6 +2743,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour enfant</rdfs:label>
       <rdfs:label xml:lang="en">has child</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como hijo o hija a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2572,6 +2783,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est collecté par</rdfs:label>
       <rdfs:label xml:lang="en">has collector</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como coleccionista a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2669,6 +2887,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de contenu</rdfs:label>
       <rdfs:label xml:lang="en">has content of type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de contenido</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2694,6 +2919,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour copie</rdfs:label>
       <rdfs:label xml:lang="en">has copy </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como copia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2747,6 +2979,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour créateur</rdfs:label>
       <rdfs:label xml:lang="en">has creator</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como creador a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -2799,6 +3038,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de décès</rdfs:label>
       <rdfs:label xml:lang="en">has death date </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha de muerte</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -2846,6 +3092,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour descendant</rdfs:label>
       <rdfs:label xml:lang="en">has descendant</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como descendiente a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3055,6 +3308,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’objet informtionnel</rdfs:label>
       <rdfs:label xml:lang="en">has documentary form type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3093,6 +3353,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour ébauche</rdfs:label>
       <rdfs:label xml:lang="en">has draft </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como borrador</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3112,6 +3379,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de fin</rdfs:label>
       <rdfs:label xml:lang="en">has end date </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha final</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3132,6 +3406,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’événement</rdfs:label>
       <rdfs:label xml:lang="en">has event type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de evento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3156,6 +3437,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour mesure</rdfs:label>
       <rdfs:label xml:lang="en">has extent</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como extensión</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3189,6 +3477,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de mesure</rdfs:label>
       <rdfs:label xml:lang="en">has extent type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de extensión</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3219,6 +3514,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a une relation familiale avec</rdfs:label>
       <rdfs:label xml:lang="en">has family association with</rdfs:label>
+      <rdfs:label xml:lang="es">tiene asociación familiar con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3247,6 +3549,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de famille</rdfs:label>
       <rdfs:label xml:lang="en">has family type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de familia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3273,6 +3582,13 @@
       <rdfs:label xml:lang="fr">a une relation génétique avec la ressource
          archivistique</rdfs:label>
       <rdfs:label xml:lang="en">has genetic link to record resource </rdfs:label>
+      <rdfs:label xml:lang="es">tiene vínculo de origen con recurso documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3296,6 +3612,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’identifiant</rdfs:label>
       <rdfs:label xml:lang="en">has identifier type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de identificador </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-19</dc:date>
@@ -3327,6 +3650,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de modification</rdfs:label>
       <rdfs:label xml:lang="en">has modification date </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha de modificación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3347,6 +3677,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour nom d’agent</rdfs:label>
       <rdfs:label xml:lang="en">has or had agent name</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como nombre de agente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3373,6 +3710,13 @@
       <rdfs:label xml:lang="en">has or had all members with category</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour
          catégorie</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como categoría </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -3401,6 +3745,13 @@
       <rdfs:label xml:lang="en">has or had all members with content type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type de
          contenu</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo de contenido</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3462,6 +3813,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with documentary form type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -3489,6 +3847,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with language</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour langue</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como lengua</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3517,6 +3882,13 @@
       <rdfs:label xml:lang="en">has or had all members with legal status</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour statut
          légal</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como status jurídico</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3544,6 +3916,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with record state</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour état</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenían todos sus miembros como estado de documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3596,6 +3975,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour appellation</rdfs:label>
       <rdfs:label xml:lang="en">has or had appellation</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como denominación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3625,6 +4011,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu autorité sur</rdfs:label>
       <rdfs:label xml:lang="en">has or had authority over</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía control sobre</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3657,6 +4050,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour catégorie</rdfs:label>
       <rdfs:label xml:lang="en">has or had category</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como categoría</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3683,6 +4083,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour composant</rdfs:label>
       <rdfs:label xml:lang="en">has or had component</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como componente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -3726,6 +4133,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour constituant</rdfs:label>
       <rdfs:label xml:lang="en">has or had constituent</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como elemento constitutivo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-10-19</dc:date>
@@ -3765,6 +4179,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été contrôlé par</rdfs:label>
       <rdfs:label xml:lang="en">has or had controller</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como controlador</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3793,6 +4214,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour coordonnées</rdfs:label>
       <rdfs:label xml:lang="en">has or had coordinates</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como coordenadas de lugar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3824,6 +4252,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour type de collectivité</rdfs:label>
       <rdfs:label xml:lang="en">has or had corporate body type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como tipo de institucion</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3854,6 +4289,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour correspondant</rdfs:label>
       <rdfs:label xml:lang="en">has or had correspondent</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como correspondiente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -3889,6 +4331,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour catégorie démographique</rdfs:label>
       <rdfs:label xml:lang="en">has or had demographic group</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como categoría demográfica</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4015,6 +4464,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été détenu par</rdfs:label>
       <rdfs:label xml:lang="en">has or had holder</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como conservador a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4043,6 +4499,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour identifiant</rdfs:label>
       <rdfs:label xml:lang="en">has or had identifier</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como identificador</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4131,6 +4594,13 @@
       <rdfs:label xml:lang="fr">a ou a détenu les droits de propriété intellectuelle
          sur</rdfs:label>
       <rdfs:label xml:lang="en">has or had intellectual property rights holder</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como titular de derechos de propiedad intelectual a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4159,6 +4629,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour ressort</rdfs:label>
       <rdfs:label xml:lang="en">has or had jurisdiction</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como jurisdicción</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-10-19</dc:date>
@@ -4202,6 +4679,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour langue</rdfs:label>
       <rdfs:label xml:lang="en">has or had language</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como lengua</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4237,6 +4721,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour dirigeant</rdfs:label>
       <rdfs:label xml:lang="en">has or had leader</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como líder a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4273,6 +4764,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour statut légal</rdfs:label>
       <rdfs:label xml:lang="en">has or had legal status</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como status jurídico</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4297,6 +4795,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour localisation</rdfs:label>
       <rdfs:label xml:lang="en">has or had location</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como localización </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4325,6 +4830,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour sujet principal</rdfs:label>
       <rdfs:label xml:lang="en">has or had main subject</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como matería principal</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4366,6 +4878,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour gestionnaire</rdfs:label>
       <rdfs:label xml:lang="en">has or had manager</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como gestor a </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4398,6 +4917,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour membre</rdfs:label>
       <rdfs:label xml:lang="en">has or had member</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como miembro a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4467,6 +4993,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour nom</rdfs:label>
       <rdfs:label xml:lang="en">has or had name</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como nombre</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4493,6 +5026,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour type d’occupation</rdfs:label>
       <rdfs:label xml:lang="en">has or had occupation of type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como tipo de ocupación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4530,6 +5070,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour propriétaire</rdfs:label>
       <rdfs:label xml:lang="en">has or had owner</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como poseedor a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4562,6 +5109,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour partie</rdfs:label>
       <rdfs:label xml:lang="en">has or had part</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como parte</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4592,6 +5146,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour participant</rdfs:label>
       <rdfs:label xml:lang="en">has or had participant</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como participante</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4620,6 +5181,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour localisation physique</rdfs:label>
       <rdfs:label xml:lang="en">has or had physical location</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como localización física</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-02-01</dc:date>
@@ -4653,6 +5221,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour nom de lieu</rdfs:label>
       <rdfs:label xml:lang="en">has or had place name</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como nombre de lugar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4679,6 +5254,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour type de lieu</rdfs:label>
       <rdfs:label xml:lang="en">has or had place type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como tipo de lugar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4704,6 +5286,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had position</rdfs:label>
       <rdfs:label xml:lang="fr">occupe ou a occupé le poste</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4732,6 +5321,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour type de règle</rdfs:label>
       <rdfs:label xml:lang="en">has or had rule type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como tipo de regla</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -4765,6 +5361,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with category</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como categoría</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4793,6 +5396,13 @@
       <rdfs:label xml:lang="en">has or had some members with content type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
          contenu</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como tipo de contenido</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4854,6 +5464,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with language</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour langue</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como lengua</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -4881,6 +5498,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with legal status</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour statut légal</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como status jurídico</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4908,6 +5532,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with record state</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour état</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como estado de documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -4937,6 +5568,13 @@
       <rdfs:label xml:lang="en">has or had some members with documentary form type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
          document</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como tipo documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -4968,6 +5606,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour conjoint</rdfs:label>
       <rdfs:label xml:lang="en">has or had spouse</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como cónyuge a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -4999,6 +5644,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour étudiant</rdfs:label>
       <rdfs:label xml:lang="en">has or had student</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como estudiante a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5032,6 +5684,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour subdivision</rdfs:label>
       <rdfs:label xml:lang="en">has or had subdivision</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como subdivisión</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5062,6 +5721,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été constitué de l’événement</rdfs:label>
       <rdfs:label xml:lang="en">has or had subevent</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como parte de evento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5092,6 +5758,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour sujet</rdfs:label>
       <rdfs:label xml:lang="en">has or had subject</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como materia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5124,6 +5797,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour subalterne</rdfs:label>
       <rdfs:label xml:lang="en">has or had subordinate</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como subordinado o subordinada a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5158,6 +5838,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour enseignant</rdfs:label>
       <rdfs:label xml:lang="en">has or had teacher</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como profesor(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5194,6 +5881,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour intitulé</rdfs:label>
       <rdfs:label xml:lang="en">has or had title</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como título</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5220,6 +5914,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu une relation professionnelle avec</rdfs:label>
       <rdfs:label xml:lang="en">has or had work relation with</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía relación profesional con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5262,6 +5963,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour original</rdfs:label>
       <rdfs:label xml:lang="en">has original </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como original</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5305,6 +6013,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de technique de production</rdfs:label>
       <rdfs:label xml:lang="en">has production technique type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como técnica de producción</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5340,6 +6055,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour provenance</rdfs:label>
       <rdfs:label xml:lang="en">has provenance </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como productor(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5383,6 +6105,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour éditeur</rdfs:label>
       <rdfs:label xml:lang="en">has publisher</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como editor(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5415,6 +6144,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est reçu par</rdfs:label>
       <rdfs:label xml:lang="en">has receiver</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como receptor(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5449,6 +6185,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’ensemble d’objets informationnels</rdfs:label>
       <rdfs:label xml:lang="en">has record set type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de agrupación documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5480,6 +6223,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour état</rdfs:label>
       <rdfs:label xml:lang="en">has record state</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como estado de documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -5507,6 +6257,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour réponse</rdfs:label>
       <rdfs:label xml:lang="en">has reply</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como contestación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5535,6 +6292,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type de représentation</rdfs:label>
       <rdfs:label xml:lang="en">has representation type</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de grabación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5566,6 +6330,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour expéditeur</rdfs:label>
       <rdfs:label xml:lang="en">has sender </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como remitente a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5590,6 +6361,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour frère ou sœur</rdfs:label>
       <rdfs:label xml:lang="en">has sibling</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como hermano o hermana a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5631,6 +6409,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour source</rdfs:label>
       <rdfs:label xml:lang="en">has source </rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fuente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5715,6 +6500,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour successeur</rdfs:label>
       <rdfs:label xml:lang="en">has successor</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como sucesor(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -5745,6 +6537,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour unité de mesure</rdfs:label>
       <rdfs:label xml:lang="en">has unit of measurement</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como unidad de medida</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-28</dc:date>
@@ -5834,6 +6633,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">includes or included</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -5898,6 +6704,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">instantiation is connected to functional equivalence relation
       </rdfs:label>
+      <rdfs:label xml:lang="es">instanciación está conectada con relación de equivalencia funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToInstantiationRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationIsConnectedToInstantiationRelation">
@@ -5909,6 +6722,13 @@
          Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">instantiation is connected to instantiation relation</rdfs:label>
+      <rdfs:label xml:lang="es">instanciación está conectada con relación de instanciación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationIsSourceOfDerivationRelation">
@@ -5980,6 +6800,13 @@
          related Instantiations.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">instantiation to instantiation relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación entre instanciación conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelationHasSource">
@@ -6067,6 +6894,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">accumule</rdfs:label>
       <rdfs:label xml:lang="en">is accumulator of</rdfs:label>
+      <rdfs:label xml:lang="es">es acumulador(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -6095,6 +6929,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type d’activité de</rdfs:label>
       <rdfs:label xml:lang="en">is activity type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de actividad de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -6125,6 +6966,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le destinataire de</rdfs:label>
       <rdfs:label xml:lang="en">is addressee of </rdfs:label>
+      <rdfs:label xml:lang="es">es destino de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6149,6 +6997,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associé à l’agent</rdfs:label>
       <rdfs:label xml:lang="en">is agent associated with agent </rdfs:label>
+      <rdfs:label xml:lang="es">agente está asociado con agente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6195,6 +7050,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associé à la date</rdfs:label>
       <rdfs:label xml:lang="en">is associated with date </rdfs:label>
+      <rdfs:label xml:lang="es">está asociado con fecha</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6219,6 +7081,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associé à l’événement</rdfs:label>
       <rdfs:label xml:lang="en">is associated with event </rdfs:label>
+      <rdfs:label xml:lang="es">está asociado con evento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6243,6 +7112,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associé au lieu</rdfs:label>
       <rdfs:label xml:lang="en">is associated with place</rdfs:label>
+      <rdfs:label xml:lang="es">está asociado con lugar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6267,6 +7143,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associé à la règle</rdfs:label>
       <rdfs:label xml:lang="en">is associated with rule </rdfs:label>
+      <rdfs:label xml:lang="es">está asociado con regla</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6298,6 +7181,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le responsable intellectuel de</rdfs:label>
       <rdfs:label xml:lang="en">is author of</rdfs:label>
+      <rdfs:label xml:lang="es">es autor(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-29</dc:date>
@@ -6324,6 +7214,13 @@
          Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is authorizing agent in mandate relation</rdfs:label>
+      <rdfs:label xml:lang="es">es agente controlado por relación normativa</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isBeginningDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf">
@@ -6336,6 +7233,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date de début de</rdfs:label>
       <rdfs:label xml:lang="en">is beginning date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha de inicio de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6356,6 +7260,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date de naissance de</rdfs:label>
       <rdfs:label xml:lang="en">is birth date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha de nacimiento de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6397,6 +7308,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de support de</rdfs:label>
       <rdfs:label xml:lang="en">is carrier type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de soporte de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6420,6 +7338,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’enfant de</rdfs:label>
       <rdfs:label xml:lang="en">is child of</rdfs:label>
+      <rdfs:label xml:lang="es">es hijo o hija de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -6454,6 +7379,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">collecte</rdfs:label>
       <rdfs:label xml:lang="en">is collector of</rdfs:label>
+      <rdfs:label xml:lang="es">es coleccionista de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -6570,6 +7502,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de contenu de</rdfs:label>
       <rdfs:label xml:lang="en">is content type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de contenido de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6594,6 +7533,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la copie de</rdfs:label>
       <rdfs:label xml:lang="en">is copy of</rdfs:label>
+      <rdfs:label xml:lang="es">es copia de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6662,6 +7608,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le créateur de</rdfs:label>
       <rdfs:label xml:lang="en">is creator of</rdfs:label>
+      <rdfs:label xml:lang="es">es creador(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6688,6 +7641,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est une date associée a</rdfs:label>
       <rdfs:label xml:lang="en">is date associated with</rdfs:label>
+      <rdfs:label xml:lang="es">es fecha asociada con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -6769,6 +7729,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date de décès de</rdfs:label>
       <rdfs:label xml:lang="en">is death date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha de muerte de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7036,6 +8003,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de document de</rdfs:label>
       <rdfs:label xml:lang="en">is documentary form type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo documental de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7074,6 +8048,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’ébauche de</rdfs:label>
       <rdfs:label xml:lang="en">is draft of </rdfs:label>
+      <rdfs:label xml:lang="es">es borrador de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7094,6 +8075,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date de fin de</rdfs:label>
       <rdfs:label xml:lang="en">is end date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha final de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7113,6 +8101,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’équivalent de</rdfs:label>
       <rdfs:label xml:lang="en">is equivalent to </rdfs:label>
+      <rdfs:label xml:lang="es">equivale a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7135,6 +8130,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est un événement associé a</rdfs:label>
       <rdfs:label xml:lang="en">is event associated with </rdfs:label>
+      <rdfs:label xml:lang="es">es evento asociado con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7155,6 +8157,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type d’événement de</rdfs:label>
       <rdfs:label xml:lang="en">is event type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de evento de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7186,6 +8195,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la mesure de</rdfs:label>
       <rdfs:label xml:lang="en">is extent of</rdfs:label>
+      <rdfs:label xml:lang="es">es extensión de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7219,6 +8235,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de mesure de</rdfs:label>
       <rdfs:label xml:lang="en">is extent type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de extensión de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-11-21</dc:date>
@@ -7250,6 +8273,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de famille de</rdfs:label>
       <rdfs:label xml:lang="en">is family type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de familia de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7274,6 +8304,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date à partir de laquelle est utilisé</rdfs:label>
       <rdfs:label xml:lang="en">is from use date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha desde la que se usa de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7303,6 +8340,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est fonctionnellement équivalente à</rdfs:label>
       <rdfs:label xml:lang="en">is functionally equivalent to</rdfs:label>
+      <rdfs:label xml:lang="es">equivale funcionalmente a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7333,6 +8377,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type d’identifiant de</rdfs:label>
       <rdfs:label xml:lang="en">is identifier type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de identificador de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7395,6 +8446,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associée à l’instanciation</rdfs:label>
       <rdfs:label xml:lang="en">is instantiation associated with instantiation </rdfs:label>
+      <rdfs:label xml:lang="es">se asocia con la instanciación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7415,6 +8473,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date de dernière mise à jour de</rdfs:label>
       <rdfs:label xml:lang="en">is last update date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha de última actualización de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7433,6 +8498,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est une date de modification de</rdfs:label>
       <rdfs:label xml:lang="en">is modification date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha de modificación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7454,6 +8526,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été adjacent à</rdfs:label>
       <rdfs:label xml:lang="en">is or was adjacent to</rdfs:label>
+      <rdfs:label xml:lang="es">es o era un lugar contiguo a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7481,6 +8560,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été affecté par</rdfs:label>
       <rdfs:label xml:lang="en">is or was affected by</rdfs:label>
+      <rdfs:label xml:lang="es">es o era afectado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7509,6 +8595,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le nom de</rdfs:label>
       <rdfs:label xml:lang="en">is or was agent name of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era el nombre de agente de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7552,6 +8645,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été l’appellation de</rdfs:label>
       <rdfs:label xml:lang="en">is or was appellation of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era la denominación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7581,6 +8681,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la catégorie de</rdfs:label>
       <rdfs:label xml:lang="en">is or was category of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era la categoría de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7606,6 +8713,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la catégorie de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was category of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era la categoría de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7633,6 +8747,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la catégorie de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was category of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era la categoría de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7660,6 +8781,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été un composant de</rdfs:label>
       <rdfs:label xml:lang="en">is or was component of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era componente de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7703,6 +8831,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été un constituant de</rdfs:label>
       <rdfs:label xml:lang="en">is or was constituent of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era elemento constitutivo de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-10-26</dc:date>
@@ -7738,6 +8873,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été contenu par</rdfs:label>
       <rdfs:label xml:lang="en">is or was contained by</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba contenido en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7766,6 +8908,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de contenu de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was content type of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de contenido de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7793,6 +8942,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de contenu de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was content type of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de contenido de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7825,6 +8981,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a contrôlé ou contrôle</rdfs:label>
       <rdfs:label xml:lang="en">is or was controller of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era controlador de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -7853,6 +9016,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was coordinates of</rdfs:label>
       <rdfs:label xml:lang="fr">ont ou ont été les coordonnées de</rdfs:label>
+      <rdfs:label xml:lang="es">son o eran coordenadas de lugar de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -7878,6 +9048,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de collectivité de </rdfs:label>
       <rdfs:label xml:lang="en">is or was corporate body type of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de institución de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8019,6 +9196,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la catégorie démographique de</rdfs:label>
       <rdfs:label xml:lang="en">is or was demographic group of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era grupo demográfico de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8075,6 +9259,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été décrit par</rdfs:label>
       <rdfs:label xml:lang="en">is or was described by</rdfs:label>
+      <rdfs:label xml:lang="es">es o fue descrito por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8127,6 +9318,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de document de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was documentary form type of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo documental de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -8154,6 +9352,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de document de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was documentary form type of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo documental de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8212,6 +9417,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été fait appliquer par</rdfs:label>
       <rdfs:label xml:lang="en">is or was enforced by</rdfs:label>
+      <rdfs:label xml:lang="es">es o era una regla aplicada por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8240,6 +9452,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été exprimé par</rdfs:label>
       <rdfs:label xml:lang="en">is or was expressed by</rdfs:label>
+      <rdfs:label xml:lang="es">es o era una regla expresada en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8279,6 +9498,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">détient ou a détenu</rdfs:label>
       <rdfs:label xml:lang="en">is or was holder of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era conservador de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8327,6 +9553,13 @@
       <rdfs:label xml:lang="fr">détient ou a détenu les droits de propriété intellectuelle
          sur</rdfs:label>
       <rdfs:label xml:lang="en">is or was holder of intellectual property rights of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era conservador de derechos de propiedad intelectual de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8355,6 +9588,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été l’identifiant de</rdfs:label>
       <rdfs:label xml:lang="en">is or was identifier of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era identificador de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8388,6 +9628,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été inclus dans</rdfs:label>
       <rdfs:label xml:lang="en">is or was included in</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba incluido en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8464,6 +9711,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été le ressort de</rdfs:label>
       <rdfs:label xml:lang="en">is or was jurisdiction of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era jurisdicción de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8515,6 +9769,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la langue de</rdfs:label>
       <rdfs:label xml:lang="en">is or was language of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era lengua de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8540,6 +9801,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la langue de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was language of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era lengua de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8567,6 +9835,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la langue de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was language of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era lengua de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8598,6 +9873,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le dirigeant de </rdfs:label>
       <rdfs:label xml:lang="en">is or was leader of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era líder de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8634,6 +9916,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le statut légal de</rdfs:label>
       <rdfs:label xml:lang="en">is or was legal status of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era status jurídico de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8662,6 +9951,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le statut légal de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was legal status of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era status jurídico de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -8689,6 +9985,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le statut légal de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was legal status of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era status jurídico de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -8716,6 +10019,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été la localisation de</rdfs:label>
       <rdfs:label xml:lang="en">is or was location of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era localización de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8768,6 +10078,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le sujet principal de</rdfs:label>
       <rdfs:label xml:lang="en">is or was main subject of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era la materia principal de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8807,6 +10124,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le gestionnaire de</rdfs:label>
       <rdfs:label xml:lang="en">is or was manager of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era gestor de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8838,6 +10162,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été membre de</rdfs:label>
       <rdfs:label xml:lang="en">is or was member of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era miembro de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8866,6 +10197,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le nom de</rdfs:label>
       <rdfs:label xml:lang="en">is or was name of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era nombre de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8892,6 +10230,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type d’occupation de</rdfs:label>
       <rdfs:label xml:lang="en">is or was occupation type of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de ocupación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8921,6 +10266,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été occupé par</rdfs:label>
       <rdfs:label xml:lang="en">is or was occupied by</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba ocupado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -8961,6 +10313,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été propriétaire de</rdfs:label>
       <rdfs:label xml:lang="en">is or was owner of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era poseedor(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -8992,6 +10351,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été une partie de</rdfs:label>
       <rdfs:label xml:lang="en">is or was part of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era parte de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9020,6 +10386,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was participant in</rdfs:label>
       <rdfs:label xml:lang="fr">participe ou a participé à</rdfs:label>
+      <rdfs:label xml:lang="es">es o era participante de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9052,6 +10425,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été réalisée par</rdfs:label>
       <rdfs:label xml:lang="en">is or was performed by</rdfs:label>
+      <rdfs:label xml:lang="es">es o fue desarrollado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9080,6 +10460,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été la localisation physique de</rdfs:label>
       <rdfs:label xml:lang="en">is or was physical location of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era localización física de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9113,6 +10500,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été le nom de lieu de</rdfs:label>
       <rdfs:label xml:lang="en">is or was place name of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era nombre de lugar de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9139,6 +10533,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été le type de lieu de</rdfs:label>
       <rdfs:label xml:lang="en">is or was place type of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de lugar de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9165,6 +10566,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été l’état de tous les membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was record state of all members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era estado de documento de todos los miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9192,6 +10600,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a été l’état de certains membres de</rdfs:label>
       <rdfs:label xml:lang="en">is or was record state of some members of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era estado de documento de algunos miembros de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9219,6 +10634,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été régulé par</rdfs:label>
       <rdfs:label xml:lang="en">is or was regulated by</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba regulado por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9246,6 +10668,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a fait ou fait appliquer </rdfs:label>
       <rdfs:label xml:lang="en">is or was responsible for enforcing</rdfs:label>
+      <rdfs:label xml:lang="es">es o era responsable de aplicar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9275,6 +10704,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le type de règle de</rdfs:label>
       <rdfs:label xml:lang="en">is or was rule type of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era tipo de regla de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-10-19</dc:date>
@@ -9313,6 +10749,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été une subdivision de </rdfs:label>
       <rdfs:label xml:lang="en">is or was subdivision of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era subdivisión de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9342,6 +10785,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été un événement constituant de</rdfs:label>
       <rdfs:label xml:lang="en">is or was subevent of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era parte de evento de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9369,6 +10819,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le sujet de</rdfs:label>
       <rdfs:label xml:lang="en">is or was subject of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era materia de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9401,6 +10858,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été le subalterne de</rdfs:label>
       <rdfs:label xml:lang="en">is or was subordinate to</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba subordinado(a) a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9437,6 +10901,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été l’intitulé de</rdfs:label>
       <rdfs:label xml:lang="en">is or was title of</rdfs:label>
+      <rdfs:label xml:lang="es">es o era título de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9467,6 +10938,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été sous l’autorité de</rdfs:label>
       <rdfs:label xml:lang="en">is or was under authority of</rdfs:label>
+      <rdfs:label xml:lang="es">está o estaba bajo control de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9510,6 +10988,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’original de</rdfs:label>
       <rdfs:label xml:lang="en">is original of </rdfs:label>
+      <rdfs:label xml:lang="es">es original de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9559,6 +11044,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est un lieu associé à </rdfs:label>
       <rdfs:label xml:lang="en">is place associated with </rdfs:label>
+      <rdfs:label xml:lang="es">es lugar asociado con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9603,6 +11095,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de technique de production de</rdfs:label>
       <rdfs:label xml:lang="en">is production technique type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de técnica de producción de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9637,6 +11136,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la provenance de</rdfs:label>
       <rdfs:label xml:lang="en">is provenance of </rdfs:label>
+      <rdfs:label xml:lang="es">es producto de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9681,6 +11187,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’éditeur de</rdfs:label>
       <rdfs:label xml:lang="en">is publisher of</rdfs:label>
+      <rdfs:label xml:lang="es">es editor(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9712,6 +11225,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is receiver of</rdfs:label>
       <rdfs:label xml:lang="fr">reçoit</rdfs:label>
+      <rdfs:label xml:lang="es">es receptor(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9744,6 +11264,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est associée avec la ressource archivistique</rdfs:label>
       <rdfs:label xml:lang="en">is record resource associated with record resource </rdfs:label>
+      <rdfs:label xml:lang="es">es recurso documental asociado con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9764,6 +11291,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type d’ensemble d’objets informationnels de</rdfs:label>
       <rdfs:label xml:lang="en">is record set type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de agrupación documental de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9795,6 +11329,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’état de</rdfs:label>
       <rdfs:label xml:lang="en">is record state of</rdfs:label>
+      <rdfs:label xml:lang="es">es estado de documento de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2020-12-28</dc:date>
@@ -9819,6 +11360,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est relié à</rdfs:label>
       <rdfs:label xml:lang="en">is related to </rdfs:label>
+      <rdfs:label xml:lang="es">está relacionado con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9839,6 +11387,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est une réponse à</rdfs:label>
       <rdfs:label xml:lang="en">is reply to</rdfs:label>
+      <rdfs:label xml:lang="es">es contestación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -9867,6 +11422,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le type de représentation de</rdfs:label>
       <rdfs:label xml:lang="en">is representation type of</rdfs:label>
+      <rdfs:label xml:lang="es">es tipo de grabación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9890,6 +11452,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est chargé de rendre publique</rdfs:label>
       <rdfs:label xml:lang="en">is responsible for issuing </rdfs:label>
+      <rdfs:label xml:lang="es">es responsable de emisión de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9914,6 +11483,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est une règle associée à</rdfs:label>
       <rdfs:label xml:lang="en">is rule associated with </rdfs:label>
+      <rdfs:label xml:lang="es">es regla asociada con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9940,6 +11516,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’expéditeur de</rdfs:label>
       <rdfs:label xml:lang="en">is sender of </rdfs:label>
+      <rdfs:label xml:lang="es">es remitente de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -9975,6 +11558,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la source de</rdfs:label>
       <rdfs:label xml:lang="en">is source of </rdfs:label>
+      <rdfs:label xml:lang="es">es fuente de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10057,6 +11647,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est le successeur de</rdfs:label>
       <rdfs:label xml:lang="en">is successor of</rdfs:label>
+      <rdfs:label xml:lang="es">es sucesor(a) de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10084,6 +11681,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est la date jusqu’à laquelle est utilisé</rdfs:label>
       <rdfs:label xml:lang="en">is to use date of </rdfs:label>
+      <rdfs:label xml:lang="es">es fecha hasta la que se usa</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-10-19</dc:date>
@@ -10108,6 +11712,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’unité de mesure de</rdfs:label>
       <rdfs:label xml:lang="en">is unit of measurement of</rdfs:label>
+      <rdfs:label xml:lang="es">es unidad de medida de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10162,6 +11773,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">issued by </rdfs:label>
       <rdfs:label xml:lang="fr">rendue publique par</rdfs:label>
+      <rdfs:label xml:lang="es">emitido por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10205,6 +11823,13 @@
          involved.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">knowing relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación de conocimiento directo entre personas conecta a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#knownBy -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#knownBy">
@@ -10220,6 +11845,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est connue par</rdfs:label>
       <rdfs:label xml:lang="en">known by </rdfs:label>
+      <rdfs:label xml:lang="es">conocido por</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10244,6 +11876,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">connaît</rdfs:label>
       <rdfs:label xml:lang="en">knows </rdfs:label>
+      <rdfs:label xml:lang="es">conoce a </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10268,6 +11907,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a connaissance de la personne</rdfs:label>
       <rdfs:label xml:lang="en">knows of </rdfs:label>
+      <rdfs:label xml:lang="es">conoce indirectamente a </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10309,6 +11955,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">leadership with position </rdfs:label>
       <rdfs:label xml:lang="fr">relation de direction dans le cadre du poste</rdfs:label>
+      <rdfs:label xml:lang="es">liderazgo en puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10411,6 +12064,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">membership with position </rdfs:label>
       <rdfs:label xml:lang="fr">relation d’appartenance dans le cadre du poste</rdfs:label>
+      <rdfs:label xml:lang="es">membresía en puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10432,6 +12092,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a été produite par migration de</rdfs:label>
       <rdfs:label xml:lang="en">migrated from</rdfs:label>
+      <rdfs:label xml:lang="es">migrado desde</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -10472,6 +12139,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a été migrée vers</rdfs:label>
       <rdfs:label xml:lang="en">migrated into</rdfs:label>
+      <rdfs:label xml:lang="es">migrado a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10534,6 +12208,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">occupe ou a occupé</rdfs:label>
       <rdfs:label xml:lang="en">occupies or occupied</rdfs:label>
+      <rdfs:label xml:lang="es">ocupa u ocupaba</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -10592,6 +12273,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">chevauche ou a chevauché</rdfs:label>
       <rdfs:label xml:lang="en">overlaps or overlapped</rdfs:label>
+      <rdfs:label xml:lang="es">se superpone o superponía con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -10676,6 +12364,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">exerce ou a exercé</rdfs:label>
       <rdfs:label xml:lang="en">performs or performed</rdfs:label>
+      <rdfs:label xml:lang="es">desarrolla o desarrollaba</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -10702,6 +12397,13 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Correspondence Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">person has correspondence relation</rdfs:label>
+      <rdfs:label xml:lang="es">persona tiene como relación entre personas por correspondencia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personHasFamilyRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personHasFamilyRelation">
@@ -10712,6 +12414,13 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Family Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">person has family relation</rdfs:label>
+      <rdfs:label xml:lang="es">persona tiene como relación familiar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personHasKnowingRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personHasKnowingRelation">
@@ -10722,6 +12431,13 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Knowing Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">person has knowing relation</rdfs:label>
+      <rdfs:label xml:lang="es">persona tiene como relacion de conocimiento directo entre personas</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personHasSiblingRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personHasSiblingRelation">
@@ -10732,6 +12448,13 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Sibling Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">person has sibling relation</rdfs:label>
+      <rdfs:label xml:lang="es">persona tiene como relación familiar entre hermanos</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personHasSpouseRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personHasSpouseRelation">
@@ -10742,6 +12465,13 @@
       <rdfs:comment xml:lang="en">Connects a Person to a Spouse Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">person has spouse relation</rdfs:label>
+      <rdfs:label xml:lang="es">persona tiene como relación matrimonial entre personas</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#personIsSourceOfChildRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#personIsSourceOfChildRelation">
@@ -10937,6 +12667,13 @@
          occupies that Position).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">position is context of leadership relation</rdfs:label>
+      <rdfs:label xml:lang="es">puesto es contexto de relación de liderazgo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#positionIsContextOfMembershipRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#positionIsContextOfMembershipRelation">
@@ -10948,6 +12685,13 @@
          occupies that Position).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">position is context of membership relation</rdfs:label>
+      <rdfs:label xml:lang="es">puesto es contexto de relación de membresía</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#positionIsSourceOfPositionToGroupRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#positionIsSourceOfPositionToGroupRelation">
@@ -11064,6 +12808,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">precedes in time</rdfs:label>
       <rdfs:label xml:lang="fr">précède dans le temps</rdfs:label>
+      <rdfs:label xml:lang="es">precede en el tiempo a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11103,6 +12854,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">precedes or preceded</rdfs:label>
       <rdfs:label xml:lang="fr">précède ou a précédé</rdfs:label>
+      <rdfs:label xml:lang="es">precede o precedía secuencialmente a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
@@ -11171,6 +12929,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy for </rdfs:label>
       <rdfs:label xml:lang="fr">proxy pour</rdfs:label>
+      <rdfs:label xml:lang="es">es proxy para</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11188,6 +12953,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">proxy dans</rdfs:label>
       <rdfs:label xml:lang="en">proxy in </rdfs:label>
+      <rdfs:label xml:lang="es">es proxy en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11222,6 +12994,13 @@
          associated Record Resources.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">record resource genetic relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación genética entre recursos documentales conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelationHasSource">
@@ -11263,6 +13042,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">record resource is connected to record resource genetic relation
       </rdfs:label>
+      <rdfs:label xml:lang="es">recurso documental está conectado con relación genético entre recursos documentales</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceRelation">
@@ -11275,6 +13061,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">record resource is connected to record resource relation
       </rdfs:label>
+      <rdfs:label xml:lang="es">recurso documental está conectado con relación de recurso documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceToInstantiationRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceIsSourceOfRecordResourceToInstantiationRelation">
@@ -11451,6 +13244,13 @@
          Resources.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">record resource relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación de recurso documental conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelationHasSource">
@@ -11485,6 +13285,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">regulates or regulated</rdfs:label>
       <rdfs:label xml:lang="fr">régule ou a régulé</rdfs:label>
+      <rdfs:label xml:lang="es">regula o regulaba</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11513,6 +13320,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">relation connecte</rdfs:label>
       <rdfs:label xml:lang="en">relation connects </rdfs:label>
+      <rdfs:label xml:lang="es">relación conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11531,6 +13345,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">relation a pour contexte</rdfs:label>
       <rdfs:label xml:lang="en">relation has context </rdfs:label>
+      <rdfs:label xml:lang="es">relación tiene como contexto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11551,6 +13372,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">relation a pour source</rdfs:label>
       <rdfs:label xml:lang="en">relation has source </rdfs:label>
+      <rdfs:label xml:lang="es">relación tiene como fuente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11569,6 +13397,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">relation a pour cible</rdfs:label>
       <rdfs:label xml:lang="en">relation has target </rdfs:label>
+      <rdfs:label xml:lang="es">relación tiene como objetivo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11585,6 +13420,13 @@
       <rdfs:comment xml:lang="en">inverse of 'was merged into' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">resulted from the merger of</rdfs:label>
+      <rdfs:label xml:lang="es">resultado de la fusión de </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-06-21</dc:date>
@@ -11602,6 +13444,13 @@
       <rdfs:comment xml:lang="en">Inverse of 'was split into' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">resulted from the split of</rdfs:label>
+      <rdfs:label xml:lang="es">resultado de la separación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date xml:lang="en">2023-06-21</dc:date>
@@ -11622,6 +13471,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">results or resulted from</rdfs:label>
       <rdfs:label xml:lang="fr">résulte ou a résulté de</rdfs:label>
+      <rdfs:label xml:lang="es">resulta o resultaba</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11650,6 +13506,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu pour résultat</rdfs:label>
       <rdfs:label xml:lang="en">results or resulted in</rdfs:label>
+      <rdfs:label xml:lang="es">tiene o tenía como resultado a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11679,6 +13542,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">role is context of creation relation </rdfs:label>
       <rdfs:label xml:lang="fr">rôle est le contexte de la relation de création</rdfs:label>
+      <rdfs:label xml:lang="es">rol es contexto de relación de creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -11749,6 +13619,13 @@
          involved.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">sibling relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación familiar entre hermanos conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#spouseRelationConnects -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#spouseRelationConnects">
@@ -11760,6 +13637,13 @@
          involved.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">spouse relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación matrimonial entre personas conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#teachingRelationHasSource -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#teachingRelationHasSource">
@@ -11816,6 +13700,13 @@
       <rdfs:comment xml:lang="en">Connects a Thing to a n-ary Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">thing is connected to relation</rdfs:label>
+      <rdfs:label xml:lang="es">cosa está conectada con relación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation">
@@ -11827,6 +13718,13 @@
          the existence of the Relation) to a n-ary Relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">thing is context of relation</rdfs:label>
+      <rdfs:label xml:lang="es">cosa es contexto de relación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation">
@@ -12141,6 +14039,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de dernière mise à jour</rdfs:label>
       <rdfs:label xml:lang="en">was last updated at date </rdfs:label>
+      <rdfs:label xml:lang="es">fue actualizado por última vez en fecha</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -12159,6 +14064,13 @@
          bodies.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">was merged into</rdfs:label>
+      <rdfs:label xml:lang="es">se fusionó en </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-06-21</dc:date>
@@ -12196,6 +14108,13 @@
          bodies.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">was split into</rdfs:label>
+      <rdfs:label xml:lang="es">se separó en</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-06-21</dc:date>
@@ -12274,6 +14193,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a été utilisé à partir de la date</rdfs:label>
       <rdfs:label xml:lang="en">was used from date </rdfs:label>
+      <rdfs:label xml:lang="es">fue usado desde</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-28</dc:date>
@@ -12298,6 +14224,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a été utilisé jusqu’à la date</rdfs:label>
       <rdfs:label xml:lang="en">was used to date </rdfs:label>
+      <rdfs:label xml:lang="es">fue usado hasta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-10-19</dc:date>
@@ -12342,6 +14275,13 @@
       <rdfs:comment xml:lang="en">Connects a Work Relation to an Agent.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">work relation connects</rdfs:label>
+      <rdfs:label xml:lang="es">relación profesional conecta</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
