@@ -596,6 +596,7 @@
                   isOrWasLocationOfAgent, and their inverse properties. Fixed a bug in the history
                   note of the ontology. Regenerated the inverse properties.</html:li>
                <html:li>2023, November 2:  added Spanish labels to 59 datatype properties, 103 classes and 277 object properties.</html:li>
+               <html:li>2023, November 7:  added property chain axioms that were missing, in order to define the following properties as shortcuts: isChildOf, hasOrHadPosition, isOrWasAppellationOf, isOrWasDerivedFromInstantiation, hasOrHadWorkRelationWith and hasGeneticLinkToRecordResource.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -3575,6 +3576,10 @@
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceIsConnectedToRecordResourceGeneticRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelationConnects"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects two Record Resources when there is a genetic link between
          them. Genetic in this sense is as defined by diplomatics, i.e. the process by which a
          Record Resource is developed. This relation is symmetric.</rdfs:comment>
@@ -3583,6 +3588,12 @@
          archivistique</rdfs:label>
       <rdfs:label xml:lang="en">has genetic link to record resource </rdfs:label>
       <rdfs:label xml:lang="es">tiene vínculo de origen con recurso documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5282,11 +5293,21 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#existsOrExistedIn"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#groupIsTargetOfPositionToGroupRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#positionToGroupRelationHasSource"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'exists or existed in' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had position</rdfs:label>
       <rdfs:label xml:lang="fr">occupe ou a occupé le poste</rdfs:label>
       <rdfs:label xml:lang="es">tiene o tenía como puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut (the inverse property already was).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5909,12 +5930,22 @@
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#agentHasWorkRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#workRelationConnects"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects two Agents that have or had some type of work relation in
          the course of their activities. This relation is symmetric.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a ou a eu une relation professionnelle avec</rdfs:label>
       <rdfs:label xml:lang="en">has or had work relation with</rdfs:label>
       <rdfs:label xml:lang="es">tiene o tenía relación profesional con</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -7334,11 +7365,21 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasChild"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#personIsTargetOfChildRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#childRelationHasSource"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'has child' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est l’enfant de</rdfs:label>
       <rdfs:label xml:lang="en">is child of</rdfs:label>
       <rdfs:label xml:lang="es">es hijo o hija de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut (the inverse property already was).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -8640,12 +8681,22 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAppellation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#appellationIsSourceOfAppellationRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#appellationRelationHasTarget"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects an Appellation to a Thing that it designates or
          designated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été l’appellation de</rdfs:label>
       <rdfs:label xml:lang="en">is or was appellation of</rdfs:label>
       <rdfs:label xml:lang="es">es o era la denominación de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut (the inverse property already was).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -9225,11 +9276,21 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationIsTargetOfDerivationRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelationHasSource"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'has or had derived instantiation' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est ou a été une instanciation dérivée de</rdfs:label>
       <rdfs:label xml:lang="en">is or was derived from instantiation </rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-07</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom so that this property is formally defined as a shortcut (the inverse property already was).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-08-29</dc:date>
