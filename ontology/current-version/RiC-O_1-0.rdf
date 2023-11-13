@@ -706,6 +706,7 @@
                         them compliant with RiC-CM 1.0 relations. Added labels or modified
                         rdfs:comment of 65 other object properties. Added hasOrHadMandateType and
                         isOrWasMandateType of.</html:li>
+                    <html:li>2023, November 13: added or modified a few French or Spanish labels.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -1290,7 +1291,13 @@
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">authorizing agent </rdfs:label>
         <rdfs:label xml:lang="fr">autorisation donnée par l’agent</rdfs:label>
-        <rdfs:label xml:lang="es">agente controlado por</rdfs:label>
+        <rdfs:label xml:lang="es">autorización dada por el agente</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-13</dc:date>
+                <rdf:value xml:lang="en">Fixed the rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -4998,8 +5005,14 @@
         <rdfs:comment xml:lang="en">Inverse of 'is or was employer of' object
             property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">a ou a eu pour employeur</rdfs:label>
+        <rdfs:label xml:lang="fr">a ou a eu pour employeur</rdfs:label>
         <rdfs:label xml:lang="en">has or had employer</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-10-13</dc:date>
+                <rdf:value xml:lang="en">Fixed the lang of the French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-10-26</dc:date>
@@ -7757,6 +7770,13 @@
             included in the past.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">included</rdfs:label>
+        <rdfs:label xml:lang="fr">a inclus</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-13</dc:date>
+                <rdf:value xml:lang="en">Added a French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
@@ -8396,7 +8416,14 @@
             Relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is authorizing agent in mandate relation</rdfs:label>
-        <rdfs:label xml:lang="es">es agente controlado por relación normativa</rdfs:label>
+        <rdfs:label xml:lang="fr">est l’agent donnant l’autorisation dans la relation impliquant un mandat</rdfs:label>
+        <rdfs:label xml:lang="es">es el agente autorizador en la relación normativa</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-13</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in French and fixed the Spanish label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -9878,6 +9905,13 @@
             directly or indirectly included. This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is included in transitive</rdfs:label>
+        <rdfs:label xml:lang="fr">est inclus dans transitif</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-13</dc:date>
+                <rdf:value xml:lang="en">Added a French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-09-08</dc:date>
@@ -13049,6 +13083,13 @@
             component part, directly or indirectly. This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is part of transitive</rdfs:label>
+        <rdfs:label xml:lang="fr">est une partie de transitif</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-13</dc:date>
+                <rdf:value xml:lang="en">Added a French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-07-12</dc:date>
