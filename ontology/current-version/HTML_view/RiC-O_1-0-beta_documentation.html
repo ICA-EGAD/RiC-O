@@ -203,14 +203,14 @@
             <dd>Aaron Rubinstein (University of Massachusetts Amherst, USA),
             member of EGAD and EGAD RiC-O team from 2012 to 2022</dd>
             <dd>Tobias Wildi (University of Applied Sciences of the Grisons,
-            Switzerland), member of EGAD and EGAD RiC-O team from 2023</dd>
+            Switzerland), member of EGAD and EGAD RiC-O team from 2019</dd>
             <dd>Ivo Zandhuis (Consultant Digital Cultural Heritage, The
             Netherlands), member of EGAD and EGAD RiC-O team from 2023</dd>
          </dl>
          <p>
             <span class="metadata_label">Publisher</span>: International Council on Archives</p>
          <p>
-            <span class="metadata_label">Rights</span>: Copyright 2019-...., International Council on Archives
+            <span class="metadata_label">Rights</span>: Copyright 2019-, International Council on Archives
             (ICA)</p>
          <p>
             <span class="metadata_label">License</span>: <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
@@ -220,10 +220,11 @@
             <p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing
                     archival record resources. As the second part of Records in Contexts standard,
                     it is a formal representation of Records in Contexts Conceptual Model (RiC-CM). </p>
-            <p>The current version is <strong>v1.0-beta</strong>; it is compliant
-                    with RiC-CM 1.0 that will be published in November 2023. It is released for
-                    testing; it is nevertheless very close to version 1.0, which ICA/EGAD will
-                    release by tne end of November 2023, as an official ICA recommendation.</p>
+            <p>The current version is <strong>v1.0-beta</strong>; <strong>it
+                        is compliant with RiC-CM 1.0, which will be published in November 2023. It
+                        is released for testing; it is nevertheless very close to version
+                        1.0</strong>, which ICA/EGAD will release by the end of November 2023,
+                    as an official ICA recommendation.</p>
             <p>RiC-O provides a generic vocabulary and formal rules for creating RDF
                     datasets (or generating them from existing archival metadata) that describe in a
                     consistent way any kind of archival record resource. It can support publishing
@@ -244,53 +245,110 @@
                     along with RiC-O v0.1, a preview of RiC-CM v0.2. The goal of the preview release
                     of RiC-CM v0.2 is to provide context for the classes, properties, and overall
                     logic of RiC-O in support of the ontology’s first public release. RiC-O v0.1 was
-                    released on December 2019, 12.</p>
+                    released on December 2019.</p>
                <p>The Git repository that is used for handling RiC-O was made public in March
                     2020 (see <a href="https://github.com/ICA-EGAD/RiC-O" target="_blank">https://github.com/ICA-EGAD/RiC-O</a>), so that creating issues or
                     comments, forking and making pull requests was made possible.</p>
                <p>In 2020, RiC-CM v0.2 preview was significantly updated: the textual
                     definitions of many entities were changed, as well as the specifications of many
-                    attributes; and a lot of relations changed name, in order to take into account
-                    past situations and to adopt some simple naming rules. As a consequence, RiC-O
-                    had to be updated in order to remain compliant with RiC-CM. These changes could
-                    not be made before the end of 2020, when RiC-CM could be considered stable. EGAD
-                    also decided to make other changes in RiC-O, among which the most important are
-                    mentioned in bold in the following list.</p>
+                    attributes; and the IRIs of lot of relations were changed, in order to take into
+                    account past situations and to adopt some simple naming rules. As a consequence,
+                    RiC-O had to be updated in order to remain compliant with RiC-CM. These changes
+                    could not be made before the end of 2020, when RiC-CM could be considered
+                    stable. EGAD also decided to make other changes in RiC-O, among which the most
+                    important are mentioned in bold in the following list.</p>
                <p>RiC-O 0.2 results from these updates and changes. It was released a few
                     weeks before RiC-CM 0.2 full draft, and is fully compliant with it.</p>
                <p>
-                  <strong>At the end of 2022</strong>, while the EGAD group, as part of the development of
-                    version 1.0 of RiC-CM, was working on analyzing and taking into account the very
-                    numerous comments relating to RiC-CM 0.2 received, <strong>a new active phase of
-                    development has started for RiC-O. A team of no longer three, but six people
-                    prepared this version.</strong> It was then absolutely not a question of breaking with
-                    the principles and methods already used; the work was a continuation of what had
-                    already been done. It was a matter of <strong>improving what had already been done, by
-                    simplifying where necessary the specifications of certain components, by adding
-                    some properties and taking into account the needs that a growing community of
-                    users was expressing</strong>. On the other hand, it was obviously a question of <strong>making
-                    RiC-O 1.0 compliant with RiC-CM 1.0</strong>.</p>
+                  <strong>At the end of 2022</strong>, while the EGAD group, as part
+                    of the development of version 1.0 of RiC-CM, was working on analyzing and taking
+                    into account the very numerous comments relating to RiC-CM 0.2 received,
+                        <strong>a new active phase of development started for RiC-O. A team of
+                        no longer three, but six people prepared this version.</strong> It was
+                    then absolutely not a question of breaking with the principles and methods
+                    already used; the work was a continuation of what had already been done. It was
+                    a matter of <strong>improving what had already been done, by simplifying
+                        where necessary the specifications of certain components, by adding some
+                        properties and taking into account the needs that a growing community of
+                        users was expressing</strong>. On the other hand, it was obviously a
+                    question of <strong>making RiC-O 1.0 compliant with RiC-CM
+                        1.0</strong>.</p>
                <p>At the end of this work, RiC-O 1.0-beta defines:</p>
                <ul>
                   <li>
-                     <strong>105 classes</strong>, one class less than version 0.2. In fact, as in RiC-CM 1.0, the modeling of dates has been modified, this led to the removal of the three  subclasses of <a href="#Date">rico:Date</a>. However, it was necessary to add a <a href="#MandateType">rico:MandateType</a> class, corresponding to the new RiC-A44 Mandate Type attribute of RiC-CM 1.0. A generic <a href="#OrganicOrFunctionalProvenanceRelation">rico:OrganicOrFunctionalProvenanceRelation</a> class has also been created.</li>
+                     <strong>105 classes</strong>, one class less than version
+                        0.2. In fact, as in RiC-CM 1.0, the modeling of dates has been modified,
+                        this led to the removal of the three subclasses of <a href="#Date">rico:Date</a>. However, it was necessary to add a <a href="#MandateType">rico:MandateType</a> class, corresponding
+                        to the new RiC-A44 Mandate Type attribute of RiC-CM 1.0. A generic <a href="#OrganicOrFunctionalProvenanceRelation">rico:OrganicOrFunctionalProvenanceRelation</a> class has also been
+                        created.</li>
                   <li>
-                     <strong>61 datatype properties</strong>, one less than version 0.2. Several properties have been renamed, to make the ontology compliant with RiC-CM 1.0 (so rico:descriptiveNote has become <a href="#generalDescription">rico:generalDescription</a>, whose definition is a little different). A <a href="#length">rico:length</a> property has also been added; rico:calendar and rico:dateStandard have been removed. The hierarchy of <a href="#date">rico:date</a> subproperties has been revised. Some properties have become subproperties of others (like <a href="#scopeAndContent">rico:scopeAndContent</a>, now a subproperty of <a href="#generalDescription">rico:generalDescription</a>).</li>
+                     <strong>61 datatype properties</strong>, one less than
+                        version 0.2. Several properties have been renamed, to make the ontology
+                        compliant with RiC-CM 1.0 (so rico:descriptiveNote has become <a href="#generalDescription">rico:generalDescription</a>, whose
+                        definition is a little different). A <a href="#length">rico:length</a> property has also been added; rico:calendar and
+                        rico:dateStandard have been removed. The hierarchy of <a href="#date">rico:date</a> subproperties has been revised.
+                        Some properties have become subproperties of others (like <a href="#scopeAndContent">rico:scopeAndContent</a>, now a
+                        subproperty of <a href="#generalDescription">rico:generalDescription</a>).</li>
                   <li>
-                     <strong>400 object properties</strong>, compared to 423 in RiC-O 0.2. This simple count poorly accounts for <strong>the significant modifications that have been made to the object properties of RiC-O 0.2</strong>.
-                        <br/>On the one hand, <strong>a certain number of properties have been added to make RiC-O compliant with RiC-CM 1.0</strong>: addition of properties whose domain or range are <a href="#Date">rico:Date</a>, <a href="#Event">rico:Event</a> or <a href="#Place">rico:Place</a>; addition of <a href="#hasOrHadMandateType">rico:hasOrHadMandateType</a> and <a href="#isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</a>, properties related to the new <a href="#MandateType">rico:MandateType</a> class. On the other hand, <strong>to meet the needs expressed by RiC-O users, some other properties have been added</strong>; in particular, <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a>, <a href="#isOrWasEmployerOf">rico:isOrWasEmployerOf</a>, <a href="#wasMergedInto">rico:wasMergedInto</a>, <a href="#wasSplitInto">rico:wasSplitInto</a>, <a href="#hasDeathPlace">rico:hasDeathPlace</a>, <a href="#hasBirthPlace">rico:hasBirthPlace</a>, <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a>, <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a>, and their inverse properties. <br/>Furthermore, <strong>a significant number of properties have been added to allow the expression of indirect relationships</strong>. Thus, it is now possible, for instance, to specify that a <a href="#Record">rico:Record</a> is included indirectly in a <a href="#RecordSet">rico:RecordSet</a> such as a fonds, using <a href="#isIncludedInTransitive">rico:isIncludedInTransitive</a>, or to infer this relation, which is the super property of the new <a href="#isDirectlyIncludedIn">rico:isDirectlyIncludedIn</a> property. <strong>The addition of such transitive properties concerned partitive (sub-properties of rico:hasOrHadPart), sequential (sub-properties of rico:precedesOrPreceded) and authority (sub-properties of rico:hasOrHadSubordinate) relations</strong>. It was accompanied by the creation of properties specifying past relations.
-                        <br/>
-                        Finally, <strong>in order to simplify their maintenance a little, the n-ary Relation classes have been rolified</strong>. 48 new reflexive object properties have been created to do this, such as for example <a href="#leadershipRelation_role">rico:leadershipRelation_role</a>; the definition of n-ary Relation classes (such as <a href="#LeadershipRelation">rico:LeadershipRelation</a>) has been revised to introduce an equivalence with these properties when they have the same source and the same target, and the chain property axioms of the corresponding binary properties (such as <a href="#hasOrHadLeader">rico:hasOrHadLeader</a>) have been revised. 166 object properties, which existed in RiC-O 0.2 and were specific to each of the n-ary relations, could then be deleted. We will provide less technical explanations of this work in the RiC-O 1.0 documentation. In the meantime, it is possible to consult the thread of the corresponding issue on GitHub, which includes many details and images illustrating hat has been done (<a href="https://github.com/ICA-EGAD/RiC-O/issues/67" target="_blank">https://github.com/ICA-EGAD/RiC-O/issues/67</a>).</li>
+                     <strong>400 object properties</strong>, compared to 423 in
+                        RiC-O 0.2. This simple count poorly accounts for <strong>the
+                            significant modifications that have been made to the object properties
+                            of RiC-O 0.2</strong>. <br/>On the one hand, <strong>a
+                            certain number of properties have been added to make RiC-O compliant
+                            with RiC-CM 1.0</strong>: addition of properties whose domain or
+                        range are <a href="#Date">rico:Date</a>, <a href="#Event">rico:Event</a> or <a href="#Place">rico:Place</a>; addition of <a href="#hasOrHadMandateType">rico:hasOrHadMandateType</a> and
+                            <a href="#isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</a>, properties related to the new
+                            <a href="#MandateType">rico:MandateType</a> class. On the
+                        other hand, <strong>to meet the needs expressed by RiC-O users, some
+                            other properties have been added</strong>; in particular, <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a>, <a href="#isOrWasEmployerOf">rico:isOrWasEmployerOf</a>, <a href="#wasMergedInto">rico:wasMergedInto</a>, <a href="#wasSplitInto">rico:wasSplitInto</a>, <a href="#hasDeathPlace">rico:hasDeathPlace</a>, <a href="#hasBirthPlace">rico:hasBirthPlace</a>, <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a>, <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a>, and their inverse
+                        properties. <br/>Furthermore, <strong>a significant number of
+                            properties have been added to allow the expression of indirect
+                            relationships</strong>. Thus, it is now possible, for instance, to
+                        specify that a <a href="#Record">rico:Record</a> is included
+                        indirectly in a <a href="#RecordSet">rico:RecordSet</a> such
+                        as a fonds, using <a href="#isIncludedInTransitive">rico:isIncludedInTransitive</a>, or to infer this relation, which
+                        is the super property of the new <a href="#isDirectlyIncludedIn">rico:isDirectlyIncludedIn</a> property. <strong>The addition
+                            of such transitive properties concerned partitive (sub-properties of
+                            rico:hasOrHadPart), sequential (sub-properties of
+                            rico:precedesOrPreceded) and authority (sub-properties of
+                            rico:hasOrHadSubordinate) relations</strong>. It was accompanied by
+                        the creation of properties specifying past relations. <br/> Finally,
+                            <strong>in order to simplify their maintenance a little, the n-ary
+                            Relation classes have been rolified</strong>. 48 new reflexive
+                        object properties have been created to do this, such as for example <a href="#leadershipRelation_role">rico:leadershipRelation_role</a>; the definition of n-ary Relation
+                        classes (such as <a href="#LeadershipRelation">rico:LeadershipRelation</a>) has been revised to introduce an
+                        equivalence with these properties when they have the same source and the
+                        same target, and the chain property axioms of the corresponding binary
+                        properties (such as <a href="#hasOrHadLeader">rico:hasOrHadLeader</a>) have been revised. 166 object properties,
+                        which existed in RiC-O 0.2 and were specific to each of the n-ary relations,
+                        could then be deleted. We will provide less technical explanations of this
+                        work in the RiC-O 1.0 documentation. In the meantime, it is possible to
+                        consult the thread of the corresponding issue on GitHub, which includes many
+                        details and images illustrating what has been done (<a href="https://github.com/ICA-EGAD/RiC-O/issues/67" target="_blank">https://github.com/ICA-EGAD/RiC-O/issues/67</a>).</li>
                </ul>
-               <p>RiC-O 1.0-beta therefore presents itself as an ontology that is <strong>a little more quantitatively compact than RiC-O 0.2., while being richer, technically opening up new possibilities (with transitive relations) and preserving the semantics defined previously</strong>.</p>
-               <p>Besides, an effort has been made regarding the documentation of the ontology. <strong>The labels of each class and property (rdfs:label annotations) are now available, not only in English, but in French and Spanish</strong>. We would like to thank our French-speaking and Spanish-speaking colleagues, members or not of the ICA/EGAD group, who contributed to this translation work.</p>
+               <p>RiC-O 1.0-beta therefore presents itself as an ontology that is
+                        <strong>a little more quantitatively compact than RiC-O 0.2., while
+                        being richer, technically opening up new possibilities (with transitive
+                        relations) and preserving the semantics defined
+                    previously</strong>.</p>
+               <p>Besides, an effort has been made regarding the documentation of the
+                    ontology. <strong>The labels of each class and property (rdfs:label
+                        annotations) are now available in French and Spanish as well as in
+                        English</strong>. We would like to thank our French-speaking and
+                    Spanish-speaking colleagues, members or not of the ICA/EGAD group, who
+                    contributed to this translation work.</p>
                <p>The following is a list of the changes made to RiC-O (this current version
                     being RiC-O v0.2) since the release of RiC-O v0.1 in December 2019. The most
                     important changes are mentioned in bold. Note that from October 2020 any change
                     on a component is described and dated in the specification of this component,
                     using skos:changeNote.</p>
-               <p>Various bugs have been fixed and the OWL file has been systematically reread many times.</p>
-               <p>The following is a list of the changes made to RiC-O since the release of RiC-O v0.1 in December 2019. The most important changes are mentioned in bold. <strong>Note that from October 2020 any change on a component is described and dated in the specification of this component, using skos:changeNote</strong>.</p>
+               <p>Various bugs have been fixed and the OWL file has been systematically reread
+                    many times.</p>
+               <p>The following is a list of the changes made to RiC-O since the release of
+                    RiC-O v0.1 in December 2019. The most important changes are mentioned in bold.
+                        <strong>Note that from October 2020 any change on a component is
+                        described and dated in the specification of this component, using
+                        skos:changeNote</strong>.</p>
                <ul>
                   <li>Fixed a bug in the documentation of rico:PerformanceRelation and its
                         object properties.</li>
@@ -362,22 +420,23 @@
                         recently changed in RiC-CM 0.2 full draft.</li>
                   <li>2023, April 17: renamed the file (moving to RiC-O 1.0) and started to
                         update the ontology metadata.</li>
-                  <li>2023, April 19: <strong>removed the unnecessary restrictions specified for a
-                        significant number of classes</strong>, among which most of the subclasses of Type,
-                        plus Activity, AgentTemporalRelation, Coordinates, CreationRelation, Event,
-                        Identifier, Instantiation, MandateRelation, Person, PhysicalLocation, Place,
-                        RecordResource, RecordSet, Rule.</li>
+                  <li>2023, April 19: <strong>removed the unnecessary restrictions
+                            specified for a significant number of classes</strong>, among which
+                        most of the subclasses of Type, plus Activity, AgentTemporalRelation,
+                        Coordinates, CreationRelation, Event, Identifier, Instantiation,
+                        MandateRelation, Person, PhysicalLocation, Place, RecordResource, RecordSet,
+                        Rule.</li>
                   <li>2023, April 21: removed an unnecessary restriction that remained on
                         Mandate class.</li>
                   <li>2023, end of May-June 5: fixed some typos in the introduction and
                         definition of entities, including the use of "data property" term instead of
                         the correct "datatype property" one.</li>
-                  <li>2023, June 5: <strong>made includesOrIncluded object property a subproperty of
-                        hasOrHadPart in addition to
-                        isRecordResourceAssociatedToRecordResource</strong>.</li>
-                  <li>2023, June 21: <strong>added two object properties, sub-properties of
-                        hasSuccessor: wasMergedInto and wasSplitInto</strong>, with Corporate Body as domain
-                        and range, and their inverse ones.</li>
+                  <li>2023, June 5: <strong>made includesOrIncluded object property a
+                            subproperty of hasOrHadPart in addition to
+                            isRecordResourceAssociatedToRecordResource</strong>.</li>
+                  <li>2023, June 21: <strong>added two object properties, sub-properties
+                            of hasSuccessor: wasMergedInto and wasSplitInto</strong>, with
+                        Corporate Body as domain and range, and their inverse ones.</li>
                   <li>2023, July 25: adjusted definition of hasOrHadLanguage</li>
                   <li>2023, August 25: added French labels to the descriptions of classes and
                         of datatype properties</li>
@@ -388,12 +447,13 @@
                   <li>2023, August 28: changed the domain of hasExtent (from Instantiation or
                         RecordResource to Thing), same for the range of isExtentOf; added a length
                         datatype property under measure.</li>
-                  <li>2023, August 29: <strong>updated hasInstantiation and hasDerivedInstantiation</strong>,
-                        and the inverse properties (changed their IRIs, labels, definitions, inverse
-                        properties, according to RiC-CM 1.0). As a consequence, also updated the
-                        superproperties of migratedInto and migratedFrom. <strong>Created four new object
-                        properties: hasOrHadDigitalInstantiation, hasOrHadAnalogueInstantiation, and
-                        the inverse ones</strong>.</li>
+                  <li>2023, August 29: <strong>updated hasInstantiation and
+                            hasDerivedInstantiation</strong>, and the inverse properties
+                        (changed their IRIs, labels, definitions, inverse properties, according to
+                        RiC-CM 1.0). As a consequence, also updated the superproperties of
+                        migratedInto and migratedFrom. <strong>Created four new object
+                            properties: hasOrHadDigitalInstantiation, hasOrHadAnalogueInstantiation,
+                            and the inverse ones</strong>.</li>
                   <li>2023, August 29: fixed some typos in the English labels of a few object
                         properties and added the past tense to the English label of
                         hasOrHadCoordinates.</li>
@@ -407,36 +467,37 @@
                         transitive and the superproperty of the second one. Added the inverse
                         properties as well. Made 'hasDescendant' and 'hasAncestor'
                         transitive.</li>
-                  <li>2023, September 20: <strong>began to review and adjust the object properties
-                        added on September 13, starting with the properties under hasOrHadPart, and
-                        under the inverse isOrWasPartOf property. Among the changes made: adjusted
-                        the change notes, added a few 'this is a transitive relation' when missing
-                        in the rdfs:comment, and fixed the hierarchy of the properties. Also, every
-                        past relation (e.g. contained) also made a subproperty of hadPart. Every
-                        current transitive relation (e.g. containsTransitive) made a subproperty of
-                        hasPartTransitive. Every current direct relation (e.g. directlyContains)
-                        made a subproperty of hasDirectPart</strong>. Fixed a syntaxic bug on the ontology
+                  <li>2023, September 20: <strong>began to review and adjust the object
+                            properties added on September 13, starting with the properties under
+                            hasOrHadPart, and under the inverse isOrWasPartOf property. Among the
+                            changes made: adjusted the change notes, added a few 'this is a
+                            transitive relation' when missing in the rdfs:comment, and fixed the
+                            hierarchy of the properties. Also, every past relation (e.g. contained)
+                            also made a subproperty of hadPart. Every current transitive relation
+                            (e.g. containsTransitive) made a subproperty of hasPartTransitive. Every
+                            current direct relation (e.g. directlyContains) made a subproperty of
+                            hasDirectPart</strong>. Fixed a syntaxic bug on the ontology
                         history note.</li>
                   <li>2023, September 22: finished to check and fix the object properties
                         added on September 13, working on hasOrHadSubordinate/isOrWasSubordinateTo
                         subproperties and on precedesOrPreceded/followsOrFollowed
                         subproperties.</li>
-                  <li>2023, September 22: <strong>
-                        <strong>removed DateSingle, DateRange, DateSet</strong> and added
-                        datatype and properties for dates</strong>.</li>
+                  <li>2023, September 22: <strong>removed DateSingle,
+                                DateRange, DateSet and added datatype and properties
+                            for dates</strong>.</li>
                   <li>2023, October 10: began to complete the updates made for date and its
                         properties. work done for Date Type, hasDateType, is dateTypeOf,
                         expressedDate, normalizedDateValue and dateQualifier. Also made
                         isCreationDateOfMostMembersOf a subproperty of
                         isCreationDateOfSomeMembersOf; same for the inverse object
                         properties.</li>
-                  <li>2023, October 12: <strong>finished to complete the updates made for date and
-                        its properties</strong>. updated isCreationDateOf, isCreationDateOfSomeMembersOf,
-                        isCreationDateOfMostMembersOf, isCreationDateOfAllMembersOf,
-                        isPublicationDateOf and the inverse properties. Also, renamed
-                        isDeletionDateOf into isDestructionDateOf, and applied the same change to
-                        hasDeletiondate. Created isOccurrenceOf, isWithin, intersects ant the
-                        inverse properties.</li>
+                  <li>2023, October 12: <strong>finished to complete the updates made
+                            for date and its properties</strong>. updated isCreationDateOf,
+                        isCreationDateOfSomeMembersOf, isCreationDateOfMostMembersOf,
+                        isCreationDateOfAllMembersOf, isPublicationDateOf and the inverse
+                        properties. Also, renamed isDeletionDateOf into isDestructionDateOf, and
+                        applied the same change to hasDeletiondate. Created isOccurrenceOf,
+                        isWithin, intersects ant the inverse properties.</li>
                   <li>2023, October 13: adjusted a few details on date object properties
                         (renamed some of them to correct the spelling or take past members of record
                         sets into account; added a few subPropertyOf; adjusted the annotations
@@ -455,9 +516,9 @@
                   <li>2023, October 19: added RecordPart to domain of hasOrHadConstituent and
                         to the range of the inverse property as well.</li>
                   <li>2023, October 20: <strong>created the following new properties
-                        isAgentAssociatedWithPlace, hasDeathPlace, hasBirthPlace,
-                        agentHasOrHadLocation, hasOrHadEmployer and their inverse properties</strong> as
-                        well.</li>
+                            isAgentAssociatedWithPlace, hasDeathPlace, hasBirthPlace,
+                            agentHasOrHadLocation, hasOrHadEmployer and their inverse
+                            properties</strong> as well.</li>
                   <li>2023, October 26: added Record Part to the domain of
                         hadOrhadConstituent subproperties, and RecordPart to the range of the
                         inverse ones. Changed the definitions of these properties accordingly. Fixed
@@ -471,8 +532,9 @@
                         isBirthPlaceOf, isDeathPlaceOf, isOrWasLocationOfAgent, and their inverse
                         properties. Fixed a bug in the history note of the ontology. Regenerated the
                         inverse properties.</li>
-                  <li>2023, November 2: <strong>added Spanish labels to 59 datatype properties, 103
-                        classes and 277 object properties</strong>.</li>
+                  <li>2023, November 2: <strong>added Spanish labels to 59 datatype
+                            properties, 103 classes and 277 object
+                        properties</strong>.</li>
                   <li>2023, November 7: added property chain axioms that were missing, in
                         order to define the following properties as shortcuts: isChildOf,
                         hasOrHadPosition, isOrWasAppellationOf, isOrWasDerivedFromInstantiation,
@@ -484,36 +546,40 @@
                         OrganicProvenanceRelation (new name of AgentOriginationRelation) and
                         ActivityDocumentationRelation; created the needed object properties.
                         Adjusted the names of the properties of OrganicProvenanceRelation.</li>
-                  <li>2023, November 8: <strong>rolifying the Relation classes, step 1</strong>: created 48
-                        reflexive object properties that rolify the classes; modified the
-                        specifications of the Relation classes; modified the chain property axioms
-                        of the corresponding shortcuts. Fixed the range of isExtentOf.</li>
-                  <li>2023, November 8, later: rolifying the Relation classes, step 2:
-                        deleted 166 object properties that had become unnecessary.</li>
-                  <li>2023, November 12: <strong>updated the datatype properties in order to make
-                        them compliant with RiC-CM 1.0 attributes</strong>. Changed the IRIS of accrual (to
-                        accruals), accrualStatus (to accrualsStatus), descriptiveNote (to
-                        generalDescription), integrity (to integrityNote), physicalCharacteristics
-                        (to physicalCharacteristicsNote), qualityOfRepresentation (to
-                        qualityOfRepresentationNote). Made scopeAndContent a subproperty of
-                        generalDescription, and expressedDate a subproperty of name. Updated or
-                        added a few domains and many rdfs:comment, skos:scopeNote, skos:example.
-                        Also made usedFromDate a subproperty of beginningDate, and usedToDate a
-                        subproperty of endDate.</li>
-                  <li>2023, November 12: <strong>updated the classes in order to make them compliant
-                        with RiC-CM 1.0 entities and attributes</strong>. Updated or added many rdfs:comment
-                        and skos:scopeNote, taking into account, as concerns the Relation classes,
-                        the fact that they are n-ary. Created a new MandateType class, corresponding
-                        to RiC-A44 attribute in RiC-CM 1.0. Also added a rdfs:isDefinedBy to
-                        skos:Concept, skos:ConceptScheme and voaf:Vocabulary.</li>
-                  <li>2023, November 12 and 13: <strong>updated 35 object properties in order to make
-                        them compliant with RiC-CM 1.0 relations. Added labels or modified
-                        rdfs:comment of 65 other object properties. Added hasOrHadMandateType and
-                        isOrWasMandateType of.</strong>
+                  <li>2023, November 8: <strong>rolifying the Relation classes, step
+                            1</strong>: created 48 reflexive object properties that rolify the
+                        classes; modified the specifications of the Relation classes; modified the
+                        chain property axioms of the corresponding shortcuts. Fixed the range of
+                        isExtentOf.</li>
+                  <li>2023, November 8, later: <strong>rolifying the Relation classes,
+                            step 2</strong>: deleted 166 object properties that had become
+                        unnecessary.</li>
+                  <li>2023, November 12: <strong>updated the datatype properties in
+                            order to make them compliant with RiC-CM 1.0 attributes</strong>.
+                        Changed the IRIS of accrual (to accruals), accrualStatus (to
+                        accrualsStatus), descriptiveNote (to generalDescription), integrity (to
+                        integrityNote), physicalCharacteristics (to physicalCharacteristicsNote),
+                        qualityOfRepresentation (to qualityOfRepresentationNote). Made
+                        scopeAndContent a subproperty of generalDescription, and expressedDate a
+                        subproperty of name. Updated or added a few domains and many rdfs:comment,
+                        skos:scopeNote, skos:example. Also made usedFromDate a subproperty of
+                        beginningDate, and usedToDate a subproperty of endDate.</li>
+                  <li>2023, November 12: <strong>updated the classes in order to make
+                            them compliant with RiC-CM 1.0 entities and attributes</strong>.
+                        Updated or added many rdfs:comment and skos:scopeNote, taking into account,
+                        as concerns the Relation classes, the fact that they are n-ary. Created a
+                        new MandateType class, corresponding to RiC-A44 attribute in RiC-CM 1.0.
+                        Also added a rdfs:isDefinedBy to skos:Concept, skos:ConceptScheme and
+                        voaf:Vocabulary.</li>
+                  <li>2023, November 12 and 13: <strong>updated 35 object properties in
+                            order to make them compliant with RiC-CM 1.0 relations. Added labels or
+                            modified rdfs:comment of 65 other object properties. Added
+                            hasOrHadMandateType and isOrWasMandateType of.</strong>
                   </li>
                   <li>2023, November 13: added or modified a few French or Spanish
                         labels.</li>
                   <li>2023, November 13: updated the ontology metadata.</li>
+                  <li>2023, November 14: fixed some typos in the ontology metadata.</li>
                </ul>
                <p>
                   <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -641,10 +707,10 @@
          <p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing
                     archival record resources. As the second part of Records in Contexts standard,
                     it is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
-                    This version, which is v1.0-beta, is the latest official release. It is compliant
-                    with RiC-CM v1.0, that will be published in November 2023.</p>
-         <p>The following diagram shows the main RiC-CM 1.0 entities and a few
-                    relations between them: <a target="_blank"
+                    This version, which is v1.0-beta, is the latest official release. It is
+                    compliant with RiC-CM v1.0, that will be published in November 2023.</p>
+         <p>The following diagram shows the main RiC-CM 1.0 entities and a few relations
+                    between them: <a target="_blank"
                href="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg"
                title="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg">
                <img src="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg"
@@ -657,26 +723,29 @@
             <p>The following design principles were followed when developing RiC-O. </p>
             <p>
                <strong>RiC-O is a domain or reference ontology</strong>.</p>
-            <p>It provides <strong>a generic vocabulary and formal rules for creating RDF
-                        datasets (or generating them from existing archival metadata) that describe
-                        in a consistent way any kind of archival record resource</strong>. It can support
-                        publishing RDF datasets as Linked Data, querying them using SPARQL, and
-                        making inferences using the logic of the ontology.</p>
+            <p>It provides <strong>a generic vocabulary and formal rules for
+                            creating RDF datasets (or generating them from existing archival
+                            metadata) that describe in a consistent way any kind of archival record
+                            resource</strong>. It can support publishing RDF datasets as Linked
+                        Data, querying them using SPARQL, and making inferences using the logic of
+                        the ontology.</p>
             <p>While some projects have built some specific ontologies for describing
                         archives, at this time no generic domain ontology exists for the specific
                         needs of the archival community. This is why EGAD decided to develop RiC-O
                         as the second part of RiC standard.</p>
-            <p>Apart from this first, main target, <strong>RiC-O also can help archival
-                        institutions and engineers to design and develop other technical
-                        implementations of RiC-CM that represent record resources and their layers
-                        of contexts as oriented, interconnected graphs</strong>. Of course, other technical
-                        implementations may be developed later on, including XML models, or
-                        (hopefully) new versions of EAD and EAC-CPF XML models.</p>
-            <p>As RiC-O is a generic, domain ontology, <strong>it does not address by itself
-                        every specific need or expectation</strong> that may occur in every archival
-                        institution or project. It is rather <strong>a high level framewor</strong>k and a project
-                        can either limit itself to the use of a selection of components, or can add
-                        more subcomponents and therefore extend RiC-O where needed.</p>
+            <p>Apart from this first, main target, <strong>RiC-O also can help
+                            archival institutions and engineers to design and develop other
+                            technical implementations of RiC-CM that represent record resources and
+                            their layers of contexts as oriented, interconnected
+                            graphs</strong>. Of course, other technical implementations may be
+                        developed later on, including XML models, or (hopefully) new versions of EAD
+                        and EAC-CPF XML models.</p>
+            <p>As RiC-O is a generic, domain ontology, <strong>it does not address
+                            by itself every specific need or expectation</strong> that may
+                        occur in every archival institution or project. It is rather <strong>a
+                            high level framewor</strong>k and a project can either limit itself
+                        to the use of a selection of components, or can add more subcomponents and
+                        therefore extend RiC-O where needed.</p>
             <p>As a domain ontology, RiC-O, at this stage at least, does not borrow any
                         component from other existing ontologies (such as the cultural heritage
                         models – IFLA-LRM and CIDOC-CRM, PREMIS, or PROV-O). It should therefore be
@@ -692,9 +761,10 @@
             <p>This is a key feature for a new model. In particular, it is very
                         important that existing archival metadata, that are created or generated in
                         current information systems, can be converted to RDF conforming to RiC-O,
-                        without losing any data, structural or partially implicit information. <strong>What
-                        is at stake here is that metadata conforming to the previous existing ICA
-                        standards can be processed successfully</strong>.</p>
+                        without losing any data, structural or partially implicit information.
+                            <strong>What is at stake here is that metadata conforming to the
+                            previous existing ICA standards can be processed
+                            successfully</strong>.</p>
             <p>During the ongoing development process, a lot of successful testing has
                         been made, using XML/EAD finding aids and XML/EAC-CPF authority records,
                         that have been converted to RDF datasets, either by hand or using scripts. A
@@ -705,12 +775,12 @@
                         don’t have the very precise structure that RiC-CM recommends. Even then,
                         such a conversion process should remain possible. In order to allow this,
                         RiC-O sometimes provides several methods for representing information (as
-                        described below). From this point of view, the current version of
-                        RiC-O may be considered a transitional ontology, in which some components
-                        may be deprecated later on.</p>
+                        described below). From this point of view, the current version of RiC-O may
+                        be considered a transitional ontology, in which some components may be
+                        deprecated later on.</p>
             <p> The usability of a model also depends on its documentation. That’s why
-                        the current release has been fully documented (this documentation
-                        will be continously improved).</p>
+                        the current release has been fully documented (this documentation will be
+                        continously improved).</p>
             <p>RiC-O will also soon be acompanied with examples (RDF datasets). Some
                         tutorials should also be written, and EGAD will organize practical
                         workshops.</p>
@@ -718,9 +788,10 @@
                <strong>RiC-O has to provide a flexible
                         framework</strong>.</p>
             <p>
-               <strong>This is a very important principle too</strong>. It is related with the usability
-                        principle quoted above. Moreover, <strong>archival description is flexible by
-                        essence</strong>. It is quite commonly noted that today the level of granularity of
+               <strong>This is a very important principle too</strong>. It is
+                        related with the usability principle quoted above. Moreover,
+                            <strong>archival description is flexible by essence</strong>.
+                        It is quite commonly noted that today the level of granularity of
                         information varies from one finding aid to another (or from one authority
                         record to another), or even within the same finding aid. Some series or
                         agents are described summarily because little is known about them and there
@@ -741,20 +812,21 @@
                <strong>RiC-O opens new potential for archival
                             description.</strong>
             </p>
-            <p>This means that <strong>Linked Data tools and interfaces should enable end users
-                        to go through RDF/RiC-O graphs, to query them using SPARQL in an efficient
-                        way and to consult archival metadata and their contexts in new ways</strong>. As an
-                        example, an end user should be able to ask « What are (according to your
-                        dataset) the corporate bodies that succeeded to this given entity from its
-                        end of existence, by 1840, to nowadays (as concerns this given activity) ?»
-                        or « tell me what instantiations of this photograph exist? » « what are the
-                        existing copies of this original charter?», and get a list of these
-                        entities. In other words, institutions or projects that make the effort to
-                        implement RiC-O will get new insight into the content and context of their
-                        archives that wasn't visible with the existing ICA-standards. It should be
-                        even more interesting if you can infer new assertions from the RDF datasets
-                        you built, and of course link your datasets to other resources outside of
-                        your institution.</p>
+            <p>This means that <strong>Linked Data tools and interfaces should
+                            enable end users to go through RDF/RiC-O graphs, to query them using
+                            SPARQL in an efficient way and to consult archival metadata and their
+                            contexts in new ways</strong>. As an example, an end user should be
+                        able to ask « What are (according to your dataset) the corporate bodies that
+                        succeeded to this given entity from its end of existence, by 1840, to
+                        nowadays (as concerns this given activity) ?» or « tell me what
+                        instantiations of this photograph exist? » « what are the existing copies of
+                        this original charter?», and get a list of these entities. In other words,
+                        institutions or projects that make the effort to implement RiC-O will get
+                        new insight into the content and context of their archives that wasn't
+                        visible with the existing ICA-standards. It should be even more interesting
+                        if you can infer new assertions from the RDF datasets you built, and of
+                        course link your datasets to other resources outside of your
+                        institution.</p>
             <p>
                <strong>RiC-O should be extensible</strong>.</p>
             <p>Institutions are free to extend the ontology by adding new subclasses or
@@ -806,24 +878,26 @@
                                 as it exists in a specific Record Set.</li>
                   <li>Finally, a system of classes helps to implement the Relations
                                 section of RiC-CM.<br/> While these relations also are
-                                represented as simple, binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a> that
-                                corresponds to RiC-R026 relation), you may need to assign different
-                                attributes to a relation, e.g. a date, certainty or description, as
-                                it is already possible, and quite often done, in a XML/EAC-CPF file.
-                                One of the standard available methods for representing such a
-                                documented relation in RDF for now is to use a class. RDF* and
-                                SPARQL* specification, which is being developed by the W3C RDF-DEV
-                                Community Group, provides a far simpler method (allowing to consider
-                                a triple as the subject or object of another triple; see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being
+                                represented as simple, binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a>
+                                that corresponds to RiC-R026 relation), you may need to assign
+                                different attributes to a relation, e.g. a date, certainty or
+                                description, as it is already possible, and quite often done, in a
+                                XML/EAC-CPF file. One of the standard available methods for
+                                representing such a documented relation in RDF for now is to use a
+                                class. RDF* and SPARQL* specification, which is being developed by
+                                the W3C RDF-DEV Community Group, provides a far simpler method
+                                (allowing to consider a triple as the subject or object of another
+                                triple; see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being
                                 used by some tools; however it is not yet a W3C standard. Thus, for
                                 example, in RiC-O a <a href="#OrganicProvenanceRelation">OrganicProvenanceRelation class</a> exists. This class may
                                 connect one to many Agents to one to many created or accumulated
                                 Record Resources or Instantiations, and has some specific object
                                 properties (certainty, date, description, source). Back to the
-                                <a href="#hasOrganicProvenance">hasOrganicProvenance</a> object property, let us add that it is formally
-                                defined in RiC-O, using OWL 2 property chain axiom (see <a href="https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion"
-                        target="_blank">https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion</a>, as a
-                                ‘shortcut’ for the longer path
+                                    <a href="#hasOrganicProvenance">hasOrganicProvenance</a> object property, let us add that
+                                it is formally defined in RiC-O, using OWL 2 property chain axiom
+                                (see <a href="https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion"
+                        target="_blank">https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion</a>,
+                                as a ‘shortcut’ for the longer path
                                 ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
                                 where the intermediate node is an instance of OrganicProvenanceRelation:<br/>
                      <code> &lt;owl:propertyChainAxiom
@@ -835,8 +909,8 @@
                                     rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
                                     <br/> &lt;/owl:propertyChainAxiom&gt; </code>
                      <br/>A triplestore, with the appropriate configuration, may
-                                thus infer the direct ‘hasOrganicProvenance’ assertion from this long
-                                path.</li>
+                                thus infer the direct ‘hasOrganicProvenance’ assertion from this
+                                long path.</li>
                </ul>
                <p>Most of the <strong>datatype properties in RiC-O
                             </strong>correspond to RiC-CM attributes that contain free, plain
@@ -944,8 +1018,10 @@
             </div>
             <div id="RiCO-documentation">
                <h5>RiC-O documentation and annotation properties</h5>
-               <p>Each class or property has an English, a French and a Spanish label label (rdfs:label), apart from 95 properties, added recently, and which will get a Spanish label in RiC-O 1.0, and a description (rdfs:comment). Some have a skos:scopeNote or a
-                            skos:example.</p>
+               <p>Each class or property has an English, a French and a Spanish label
+                            label (rdfs:label), apart from 95 properties, added recently, and which
+                            will get a Spanish label in RiC-O 1.0, and a description (rdfs:comment).
+                            Some have a skos:scopeNote or a skos:example.</p>
                <p>When a RiC-O class or property corresponds in a way to a RiC-CM
                             component, its description and scope note are, either the same as, or
                             derived from, their definition and scope note in RiC-CM.</p>
@@ -960,8 +1036,8 @@
                                 mappings with other models or ontologies (<a href="#closeTo">rico:closeTo</a>, rarely used in this
                                 0.1 version)).</li>
                </ul>
-               <p>Finally, in this release, any change in the definition
-                            of a class or property, since December 2019, is documented using a
+               <p>Finally, in this release, any change in the definition of a class or
+                            property, since December 2019, is documented using a
                             skos:changeNote.</p>
                <p>
                   <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -973,7 +1049,10 @@
             <p>The following is a non exhaustive list of known issues, topics or tasks
                         on which EGAD has begun to work and will continue to work in the next
                         months.</p>
-            <p>Before releasing RiC-O 1.0: solving the issues that are still open on GitHub, particularly completing the translation of labels to Spanish, providing examples, and releasing, along with the current OWL unique file, a modularized version of RiC-O.</p>
+            <p>Before releasing RiC-O 1.0: solving the issues that are still open on
+                        GitHub, particularly completing the translation of labels to Spanish,
+                        providing examples, and releasing, along with the current OWL unique file, a
+                        modularized version of RiC-O.</p>
             <p>Then:</p>
             <ul>
                <li>updating the RiC-O information website</li>
@@ -981,8 +1060,9 @@
                             system of classes</li>
                <li>adding suggestions of mappings (in rico:closeTo) and OWL
                             equivalences between some classes or properties and components in other
-                            models (among which - this is not an exhaustive list- PREMIS, Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or documenting how these models can be used together.
-                         </li>
+                            models (among which - this is not an exhaustive list- PREMIS,
+                            Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or documenting how
+                            these models can be used together. </li>
             </ul>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>

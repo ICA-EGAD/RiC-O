@@ -30,23 +30,22 @@
             Switzerland), member of EGAD and EGAD RiC-O team from 2019</dc:contributor>
         <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
             Netherlands), member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
-        <!-- <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), member of EGAD,
-            lead of EGAD RiC-O team</dc:creator>-->
+        <!-- <dc:creator xml:lang="en">Florence Clavaud (Archives nationales de France), member of EGAD, lead of EGAD RiC-O team</dc:creator>-->
         <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
-        <dc:rights xml:lang="en">Copyright 2019-...., International Council on Archives
+        <dc:rights xml:lang="en">Copyright 2019-, International Council on Archives
             (ICA)</dc:rights>
         <dcterms:abstract rdf:parseType="Literal">
             <html:div xml:lang="en">
                 <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing
                     archival record resources. As the second part of Records in Contexts standard,
                     it is a formal representation of Records in Contexts Conceptual Model (RiC-CM). </html:p>
-                <html:p>The current version is <html:strong>v1.0-beta</html:strong>;
-                        <html:sgtrong>it is compliant with RiC-CM 1.0 that will be published in
-                        November 2023. It is released for testing; it is nevertheless very close to
-                        version 1.0</html:sgtrong>, which ICA/EGAD will release by tne end of
-                    November 2023, as an official ICA recommendation.</html:p>
+                <html:p>The current version is <html:strong>v1.0-beta</html:strong>; <html:strong>it
+                        is compliant with RiC-CM 1.0, which will be published in November 2023. It
+                        is released for testing; it is nevertheless very close to version
+                        1.0</html:strong>, which ICA/EGAD will release by the end of November 2023,
+                    as an official ICA recommendation.</html:p>
                 <html:p>RiC-O provides a generic vocabulary and formal rules for creating RDF
                     datasets (or generating them from existing archival metadata) that describe in a
                     consistent way any kind of archival record resource. It can support publishing
@@ -262,14 +261,7 @@
                                 as a ‘shortcut’ for the longer path
                                 ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
                                 where the intermediate node is an instance of OrganicProvenanceRelation:<html:br/>
-                                <!-- <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description
-                rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-            <rdf:Description
-                rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
-            <rdf:Description
-                rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-        </owl:propertyChainAxiom>-->
+                                <!-- <owl:propertyChainAxiom rdf:parseType="Collection"> <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/> <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/> <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/> </owl:propertyChainAxiom>-->
                                 <html:code> &lt;owl:propertyChainAxiom
                                     rdf:parseType="Collection"&gt; <html:br/> &lt;rdf:Description
                                     rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
@@ -450,7 +442,6 @@
                             models (among which - this is not an exhaustive list- PREMIS,
                             Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or documenting how
                             these models can be used together. </html:li>
-
                     </html:ul>
                 </html:div>
             </html:div>
@@ -479,27 +470,27 @@
                     along with RiC-O v0.1, a preview of RiC-CM v0.2. The goal of the preview release
                     of RiC-CM v0.2 is to provide context for the classes, properties, and overall
                     logic of RiC-O in support of the ontology’s first public release. RiC-O v0.1 was
-                    released on December 2019, 12.</html:p>
+                    released on December 2019.</html:p>
                 <html:p>The Git repository that is used for handling RiC-O was made public in March
                     2020 (see <html:a href="https://github.com/ICA-EGAD/RiC-O"
                         >https://github.com/ICA-EGAD/RiC-O</html:a>), so that creating issues or
                     comments, forking and making pull requests was made possible.</html:p>
                 <html:p>In 2020, RiC-CM v0.2 preview was significantly updated: the textual
                     definitions of many entities were changed, as well as the specifications of many
-                    attributes; and a lot of relations changed name, in order to take into account
-                    past situations and to adopt some simple naming rules. As a consequence, RiC-O
-                    had to be updated in order to remain compliant with RiC-CM. These changes could
-                    not be made before the end of 2020, when RiC-CM could be considered stable. EGAD
-                    also decided to make other changes in RiC-O, among which the most important are
-                    mentioned in bold in the following list.</html:p>
+                    attributes; and the IRIs of lot of relations were changed, in order to take into
+                    account past situations and to adopt some simple naming rules. As a consequence,
+                    RiC-O had to be updated in order to remain compliant with RiC-CM. These changes
+                    could not be made before the end of 2020, when RiC-CM could be considered
+                    stable. EGAD also decided to make other changes in RiC-O, among which the most
+                    important are mentioned in bold in the following list.</html:p>
                 <html:p>RiC-O 0.2 results from these updates and changes. It was released a few
                     weeks before RiC-CM 0.2 full draft, and is fully compliant with it.</html:p>
                 <html:p><html:strong>At the end of 2022</html:strong>, while the EGAD group, as part
                     of the development of version 1.0 of RiC-CM, was working on analyzing and taking
                     into account the very numerous comments relating to RiC-CM 0.2 received,
-                        <html:strong>a new active phase of development has started for RiC-O. A team
-                        of no longer three, but six people prepared this version.</html:strong> It
-                    was then absolutely not a question of breaking with the principles and methods
+                        <html:strong>a new active phase of development started for RiC-O. A team of
+                        no longer three, but six people prepared this version.</html:strong> It was
+                    then absolutely not a question of breaking with the principles and methods
                     already used; the work was a continuation of what had already been done. It was
                     a matter of <html:strong>improving what had already been done, by simplifying
                         where necessary the specifications of certain components, by adding some
@@ -585,7 +576,7 @@
                         could then be deleted. We will provide less technical explanations of this
                         work in the RiC-O 1.0 documentation. In the meantime, it is possible to
                         consult the thread of the corresponding issue on GitHub, which includes many
-                        details and images illustrating hat has been done (<html:a
+                        details and images illustrating what has been done (<html:a
                             href="https://github.com/ICA-EGAD/RiC-O/issues/67"
                             >https://github.com/ICA-EGAD/RiC-O/issues/67</html:a>).</html:li>
                 </html:ul>
@@ -596,8 +587,8 @@
                     previously</html:strong>.</html:p>
                 <html:p>Besides, an effort has been made regarding the documentation of the
                     ontology. <html:strong>The labels of each class and property (rdfs:label
-                        annotations) are now available, not only in English, but in French and
-                        Spanish</html:strong>. We would like to thank our French-speaking and
+                        annotations) are now available in French and Spanish as well as in
+                        English</html:strong>. We would like to thank our French-speaking and
                     Spanish-speaking colleagues, members or not of the ICA/EGAD group, who
                     contributed to this translation work.</html:p>
                 <html:p>The following is a list of the changes made to RiC-O (this current version
@@ -745,8 +736,8 @@
                         added on September 13, working on hasOrHadSubordinate/isOrWasSubordinateTo
                         subproperties and on precedesOrPreceded/followsOrFollowed
                         subproperties.</html:li>
-                    <html:li>2023, September 22: <html:strong><html:strong>removed DateSingle,
-                                DateRange, DateSet</html:strong> and added datatype and properties
+                    <html:li>2023, September 22: <html:strong>removed DateSingle,
+                                DateRange, DateSet and added datatype and properties
                             for dates</html:strong>.</html:li>
                     <html:li>2023, October 10: began to complete the updates made for date and its
                         properties. work done for Date Type, hasDateType, is dateTypeOf,
@@ -814,8 +805,8 @@
                         classes; modified the specifications of the Relation classes; modified the
                         chain property axioms of the corresponding shortcuts. Fixed the range of
                         isExtentOf.</html:li>
-                    <html:li>2023, November 8, later: <html:sttrong>rolifying the Relation classes,
-                            step 2</html:sttrong>: deleted 166 object properties that had become
+                    <html:li>2023, November 8, later: <html:strong>rolifying the Relation classes,
+                            step 2</html:strong>: deleted 166 object properties that had become
                         unnecessary.</html:li>
                     <html:li>2023, November 12: <html:strong>updated the datatype properties in
                             order to make them compliant with RiC-CM 1.0 attributes</html:strong>.
@@ -841,6 +832,7 @@
                     <html:li>2023, November 13: added or modified a few French or Spanish
                         labels.</html:li>
                     <html:li>2023, November 13: updated the ontology metadata.</html:li>
+                    <html:li>2023, November 14: fixed some typos in the ontology metadata.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
