@@ -24,9 +24,8 @@ The **latest public release of RiC-O, RiC-O 0.2**, was published in February 202
 
 RiC-O 0.2 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 0.2, which was released in July 2021** (see [the announcement](https://www.ica.org/en/public-release-of-records-in-contexts-conceptual-model-02)) and is available here: [https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf](https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf).
 
-RiC-O sources are available on GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O)), along with some [examples](examples.html) and [diagrams](diagrams.html). You will also find there both the latest version of RiC-O, and its previous versions.
+RiC-O sources are available on GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O)), along with some [examples](examples.html) and [diagrams](diagrams.html). You will also find there both the latest version of RiC-O, and its previous versions. You can create or comment issues there.
+The EGAD RiC-O development team has started to work on RiC-O 1.0, that should be released in June 2023, along with RiC-CM 1.0. We are now working on the [https://github.com/ICA-EGAD/RiC-O/tree/version_1-0 branch](https://github.com/ICA-EGAD/RiC-O/tree/version_1-0). This website will also be updated at this date.
 
-If you want to get the latest news on RiC-O, this website is the place where you can find them! You can also get the main information from [the ICA website](https://www.ica.org/en).
-
-If you want to contact us, or send comments and questions, use either [egad at ica.org mailbox](mailto:egad@ica.org), or RiC-O users discussion list (if you would like to subscribe to this list,  simply email to Florence Clavaud ([florence.clavaud at culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
+**If you want to contact us, or send comments and questions, use the new [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users)**.
 
