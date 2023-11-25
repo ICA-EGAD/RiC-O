@@ -833,7 +833,7 @@
                     <html:li>2023, November 14: fixed some typos in the ontology metadata.</html:li>
                     <html:li>2023, November 24: started to work on v1.0, after releasing v 1.0-beta:
                         renamed the file and updated a few metadata.</html:li>
-                    <html:li>2023, November 25: fixed three French labels.</html:li>
+                    <html:li>2023, November 25: fixed three French labels; added Spanish labels to the annotation properties and named individuals.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -901,6 +901,13 @@
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">RiC-CM corresponding component</rdfs:label>
         <rdfs:label xml:lang="fr">composant correspondant dans RiC-CM</rdfs:label>
+        <rdfs:label xml:lang="es">componente correspondiente en RiC-CM</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -916,6 +923,13 @@
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">close to</rdfs:label>
         <rdfs:label xml:lang="fr">proche de</rdfs:label>
+        <rdfs:label xml:lang="es">cerca de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -24981,6 +24995,13 @@
             Documentary Form Types</dc:title>
         <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
         <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
+        <rdfs:label xml:lang="es">Tipos documentales</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -24999,6 +25020,13 @@
             Record Set Types</dc:title>
         <rdfs:label xml:lang="en">Record Set Types</rdfs:label>
         <rdfs:label xml:lang="fr">Types d’ensembles d’objets informationnels</rdfs:label>
+        <rdfs:label xml:lang="es">Tipos de agrupación documental</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25012,8 +25040,15 @@
         rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
-        <rdfs:label xml:lang="en">Authority record</rdfs:label>
-        <rdfs:label xml:lang="fr">Notice d’autorité</rdfs:label>
+        <rdfs:label xml:lang="en">authority record</rdfs:label>
+        <rdfs:label xml:lang="fr">notice d’autorité</rdfs:label>
+        <rdfs:label xml:lang="es">registro de autoridad</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25031,8 +25066,15 @@
         rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
-        <rdfs:label xml:lang="en">Finding aid</rdfs:label>
-        <rdfs:label xml:lang="fr">Instrument de recherche</rdfs:label>
+        <rdfs:label xml:lang="en">finding aid</rdfs:label>
+        <rdfs:label xml:lang="fr">instrument de recherche</rdfs:label>
+        <rdfs:label xml:lang="es">instrumento de descripción</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25051,6 +25093,13 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">collection</rdfs:label>
         <rdfs:label xml:lang="fr">collection</rdfs:label>
+        <rdfs:label xml:lang="es">colección</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25070,6 +25119,13 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="fr">dossier</rdfs:label>
         <rdfs:label xml:lang="en">file</rdfs:label>
+        <rdfs:label xml:lang="es">expediente</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25090,6 +25146,13 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">fonds</rdfs:label>
         <rdfs:label xml:lang="fr">fonds</rdfs:label>
+        <rdfs:label xml:lang="es">fondo</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
@@ -25110,6 +25173,13 @@
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">series</rdfs:label>
         <rdfs:label xml:lang="fr">série organique</rdfs:label>
+        <rdfs:label xml:lang="es">serie</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
