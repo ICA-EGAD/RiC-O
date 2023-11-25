@@ -833,6 +833,7 @@
                     <html:li>2023, November 14: fixed some typos in the ontology metadata.</html:li>
                     <html:li>2023, November 24: started to work on v1.0, after releasing v 1.0-beta:
                         renamed the file and updated a few metadata.</html:li>
+                    <html:li>2023, November 25: fixed three French labels.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -7678,7 +7679,13 @@
             indirect subdivisions. This is a transitive relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">has subdivision transitive</rdfs:label>
-        <rdfs:label xml:lang="fr">a eu pour subdivision transitif</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour subdivision transitif</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Fixed the French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -8251,8 +8258,14 @@
             symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is agent associated with agent </rdfs:label>
-        <rdfs:label xml:lang="fr">est associé à l’agent</rdfs:label>
+        <rdfs:label xml:lang="fr">est un agent associé à l’agent</rdfs:label>
         <rdfs:label xml:lang="es">agente está asociado con agente</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Fixed the French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -13468,8 +13481,14 @@
             symmetric.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is record resource associated with record resource </rdfs:label>
-        <rdfs:label xml:lang="fr">est associée avec la ressource archivistique</rdfs:label>
+        <rdfs:label xml:lang="fr">est une ressource archivistique associée avec la ressource archivistique</rdfs:label>
         <rdfs:label xml:lang="es">es recurso documental asociado con</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-11-25</dc:date>
+                <rdf:value xml:lang="en">Fixed the French label.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
