@@ -140,7 +140,8 @@
                     <html:p>
                         <html:strong>RiC-O has to provide a flexible
                         framework</html:strong>.</html:p>
-                    <html:p><html:strong>This is a very important principle too</html:strong>. It is
+                    <html:p>
+                        <html:strong>This is a very important principle too</html:strong>. It is
                         related with the usability principle quoted above. Moreover,
                             <html:strong>archival description is flexible by essence</html:strong>.
                         It is quite commonly noted that today the level of granularity of
@@ -484,8 +485,9 @@
                     important are mentioned in bold in the following list.</html:p>
                 <html:p>RiC-O 0.2 results from these updates and changes. It was released a few
                     weeks before RiC-CM 0.2 full draft, and is fully compliant with it.</html:p>
-                <html:p><html:strong>At the end of 2022</html:strong>, while the EGAD group, as part
-                    of the development of version 1.0 of RiC-CM, was working on analyzing and taking
+                <html:p>
+                    <html:strong>At the end of 2022</html:strong>, while the EGAD group, as part of
+                    the development of version 1.0 of RiC-CM, was working on analyzing and taking
                     into account the very numerous comments relating to RiC-CM 0.2 received,
                         <html:strong>a new active phase of development started for RiC-O. A team of
                         no longer three, but six people prepared this version.</html:strong> It was
@@ -499,18 +501,20 @@
                         1.0</html:strong>.</html:p>
                 <html:p>At the end of this work, RiC-O 1.0-beta defines:</html:p>
                 <html:ul>
-                    <html:li><html:strong>105 classes</html:strong>, one class less than version
-                        0.2. In fact, as in RiC-CM 1.0, the modeling of dates has been modified,
-                        this led to the removal of the three subclasses of <html:a href="#rico:Date"
+                    <html:li>
+                        <html:strong>105 classes</html:strong>, one class less than version 0.2. In
+                        fact, as in RiC-CM 1.0, the modeling of dates has been modified, this led to
+                        the removal of the three subclasses of <html:a href="#rico:Date"
                             >rico:Date</html:a>. However, it was necessary to add a <html:a
                             href="#rico:MandateType">rico:MandateType</html:a> class, corresponding
                         to the new RiC-A44 Mandate Type attribute of RiC-CM 1.0. A generic <html:a
                             href="#rico:OrganicOrFunctionalProvenanceRelation"
                             >rico:OrganicOrFunctionalProvenanceRelation</html:a> class has also been
                         created.</html:li>
-                    <html:li><html:strong>61 datatype properties</html:strong>, one less than
-                        version 0.2. Several properties have been renamed, to make the ontology
-                        compliant with RiC-CM 1.0 (so rico:descriptiveNote has become <html:a
+                    <html:li>
+                        <html:strong>61 datatype properties</html:strong>, one less than version
+                        0.2. Several properties have been renamed, to make the ontology compliant
+                        with RiC-CM 1.0 (so rico:descriptiveNote has become <html:a
                             href="#rico:generalDescription">rico:generalDescription</html:a>, whose
                         definition is a little different). A <html:a href="#rico:length"
                             >rico:length</html:a> property has also been added; rico:calendar and
@@ -520,21 +524,22 @@
                             href="#rico:scopeAndContent">rico:scopeAndContent</html:a>, now a
                         subproperty of <html:a href="#rico:generalDescription"
                             >rico:generalDescription</html:a>).</html:li>
-                    <html:li><html:strong>400 object properties</html:strong>, compared to 423 in
-                        RiC-O 0.2. This simple count poorly accounts for <html:strong>the
-                            significant modifications that have been made to the object properties
-                            of RiC-O 0.2</html:strong>. <html:br/>On the one hand, <html:strong>a
-                            certain number of properties have been added to make RiC-O compliant
-                            with RiC-CM 1.0</html:strong>: addition of properties whose domain or
-                        range are <html:a href="#rico:Date">rico:Date</html:a>, <html:a
-                            href="#rico:Event">rico:Event</html:a> or <html:a href="#rico:Place"
-                            >rico:Place</html:a>; addition of <html:a
-                            href="#rico:hasOrHadMandateType">rico:hasOrHadMandateType</html:a> and
-                            <html:a href="#rico:isOrWasMandateTypeOf"
-                            >rico:isOrWasMandateTypeOf</html:a>, properties related to the new
-                            <html:a href="#rico:MandateType">rico:MandateType</html:a> class. On the
-                        other hand, <html:strong>to meet the needs expressed by RiC-O users, some
-                            other properties have been added</html:strong>; in particular, <html:a
+                    <html:li>
+                        <html:strong>400 object properties</html:strong>, compared to 423 in RiC-O
+                        0.2. This simple count poorly accounts for <html:strong>the significant
+                            modifications that have been made to the object properties of RiC-O
+                            0.2</html:strong>. <html:br/>On the one hand, <html:strong>a certain
+                            number of properties have been added to make RiC-O compliant with RiC-CM
+                            1.0</html:strong>: addition of properties whose domain or range are
+                            <html:a href="#rico:Date">rico:Date</html:a>, <html:a href="#rico:Event"
+                            >rico:Event</html:a> or <html:a href="#rico:Place">rico:Place</html:a>;
+                        addition of <html:a href="#rico:hasOrHadMandateType"
+                            >rico:hasOrHadMandateType</html:a> and <html:a
+                            href="#rico:isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</html:a>,
+                        properties related to the new <html:a href="#rico:MandateType"
+                            >rico:MandateType</html:a> class. On the other hand, <html:strong>to
+                            meet the needs expressed by RiC-O users, some other properties have been
+                            added</html:strong>; in particular, <html:a
                             href="#rico:isAgentAssociatedWithPlace"
                             >rico:isAgentAssociatedWithPlace</html:a>, <html:a
                             href="#rico:isOrWasEmployerOf">rico:isOrWasEmployerOf</html:a>, <html:a
@@ -826,13 +831,16 @@
                     <html:li>2023, November 12 and 13: <html:strong>updated 35 object properties in
                             order to make them compliant with RiC-CM 1.0 relations. Added labels or
                             modified rdfs:comment of 65 other object properties. Added
-                            hasOrHadMandateType and isOrWasMandateType of.</html:strong></html:li>
+                            hasOrHadMandateType and isOrWasMandateType of.</html:strong>
+                    </html:li>
                     <html:li>2023, November 13: added or modified a few French or Spanish
                         labels.</html:li>
                     <html:li>2023, November 13: updated the ontology metadata.</html:li>
                     <html:li>2023, November 14: fixed some typos in the ontology metadata.</html:li>
                     <html:li>2023, November 24: started to work on v1.0, after releasing v 1.0-beta:
                         renamed the file and updated a few metadata.</html:li>
+                    <html:li>2023, December 6: improved the description (rdfs:comment) of the 48 n-ary Relation classes
+                         by clearly specifying how they are directed.</html:li>
                 </html:ul>
             </html:div>
         </skos:historyNote>
@@ -19137,12 +19145,21 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
-            least one Agent, when the Agent accumulates or accumulated it, be it intentionally
-            (collecting it) or not (receiving it in the course of its activities).</rdfs:comment>
+            least one Agent, when the Record Resource or Instantiation is or was accumulated by the
+            Agent, be it intentionally (collecting it) or not (receiving it in the course of its
+            activities). The Record Resource(s) or Instantiation(s) is the source of the Relation,
+            and the Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Accumulation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’accumulation</rdfs:label>
-        <rdfs:label xml:lang="es">Relación de Acumulación</rdfs:label>
+        <rdfs:label xml:lang="es">Relación de acumulación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19267,12 +19284,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
-            least one Activity, when the Record Resource or Instantiation results from the
-            activity.</rdfs:comment>
+            least one Activity, when the Record Resource or Instantiation results from the Activity.
+            The Record Resource(s) or Instantiation(s) is the source of the Relation, and the
+            Activity(-ies) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Activity Documentation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre activités et ressources archivistiques</rdfs:label>
         <rdfs:label xml:lang="es">Relación de procedencia funcional</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19435,12 +19460,21 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Agent, to at least another Agent, when the
-            first one(s) control(s) or controlled in a way the activities of the second
-            one(s).</rdfs:comment>
+            first one(s) control(s) or controlled in a way the activities of the second one(s). The
+            Relation is oriented from the controlling agent to the controlled one: the controlling
+            Agent(s) is the source of the Relation, and the controlled Agent(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Agent Control Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de contrôle entre agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación de control entre agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19504,11 +19538,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Agent to at least another Agent, when the
-            first one is or was hierarchically superior to the second one.</rdfs:comment>
+            first one is or was hierarchically superior to the second one. The Relation is oriented
+            towards the 'bottom' of the hierarchical tree: the superior Agent(s) is the source of
+            the Relation, and the inferior Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Agent Hierarchical Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation hiérarchique entre agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación jerárquica entre agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19598,13 +19641,22 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Agent, to at least another Agent, that
+        <rdfs:comment xml:lang="en">Connects at least one Agent to at least another Agent that
             succeeds it chronologically for, for instance, fullfilling some functions or performing
-            some activities.</rdfs:comment>
+            some activities. The Relation is oriented chronologically, from the predecessor to the
+            successor: the predecessor Agent(s) is the source of the Relation, and the successor
+            Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Agent Temporal Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation temporelle entre agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación temporal entre agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19666,11 +19718,19 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least two Agents.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least two Agents. This Relation is a generic, not
+            oriented one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Agent Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19756,12 +19816,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The relation between an Appellation and at least one Thing that
-            the Appellation designates or designated.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects an Appellation and at least one Thing that the
+            Appellation designates or designated. The Appellation is the source of the Relation and
+            the Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Appellation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’appellation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de denominación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19821,12 +19889,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Agent, and at least one Thing over which
-            the Agent has or had some authority.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Agent and at least one Thing over which
+            the Agent has or had some authority. The Agent(s) is the source of the relation, and the
+            Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Authority Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’autorité</rdfs:label>
         <rdfs:label xml:lang="es">Relación de control por parte de agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19903,11 +19979,19 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Record to at least one Person, Group or
             Position that is or was responsible for conceiving and formulating the information
-            contained in the Record.</rdfs:comment>
+            contained in the Record. The Record is the source of the Relation and the Person(s),
+            Group(s) or Position(s) is the target. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Authorship Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de responsabilité intellectuelle</rdfs:label>
         <rdfs:label xml:lang="es">Relación de autoría</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -20079,12 +20163,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Person, to at least another Person, when
-            the first has(ave) child(s) the second one(s).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, when
+            the first has(ave) child(s) the second one(s). The Relation is oriented from the parent
+            to the child: the parent is the source of the relation, and the child(ren) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Child Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de filiation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de filiación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -20338,11 +20431,18 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Persons, when they correspond or
-            corresponded to each other.</rdfs:comment>
+            corresponded to each other. This Relation is not oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Correspondence Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation épistolaire</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre personas por correspondencia</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -20418,11 +20518,19 @@
         <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
             least one Agent, when the Agent is either responsible for all or some of the content of
             the Record Resource, or is a contributor to the genesis or production of the
-            Instantiation.</rdfs:comment>
+            Instantiation. The Record Resource or Instantiation is the source of the Relation, and
+            the Agent(s) is the target. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Creation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de création</rdfs:label>
         <rdfs:label xml:lang="es">Relación de creación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -20623,11 +20731,21 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects an Instantiation to at least one Instantiation that is
-            derived from it, whether it exists or has been lost or destroyed.</rdfs:comment>
+            derived from it, whether it exists or has been lost or destroyed. The Relation is
+            oriented chronologically, from the first Instantiation in time to the derived
+            Instantiation: the first Instantiation is the source of the Relation, and the derived
+            Instantiation(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Derivation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de dérivation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de derivación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -20695,11 +20813,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, when
-            the first has/have descendant the second one(s).</rdfs:comment>
+            the first has/have descendant the second one(s). The Relation is oriented from the
+            ascendant to the descendant: the ascendant Person(s) is the source of the Relation, and
+            the descendant Person(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Descendance Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de descendance</rdfs:label>
         <rdfs:label xml:lang="es">Relación de descendencia</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -20858,11 +20985,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Event to at least one Thing, when the
-            first is associated with the existence and lifecycle of the second one.</rdfs:comment>
+            first is associated with the existence and lifecycle of the second one. The Event(s) is
+            the source of the Relation, and the Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Event Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation impliquant un événement</rdfs:label>
         <rdfs:label xml:lang="es">Relación con un evento</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21073,11 +21208,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Persons, when they have some family link,
-            i.e. belong to the same family.</rdfs:comment>
+            i.e. belong to the same family. This Relation is a generic, not oriented
+            one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Family Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation familiale</rdfs:label>
         <rdfs:label xml:lang="es">Relación familiar</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21179,11 +21322,18 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Instantiations which may be considered as
-            equivalent.</rdfs:comment>
+            equivalent. This Relation is not oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Functional Equivalence Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’équivalence fonctionnelle</rdfs:label>
         <rdfs:label xml:lang="es">Relación de equivalencia funcional</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21291,11 +21441,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects a Group and at least another Group, when the first one
-            has or had the second one(s) among its subdivisions.</rdfs:comment>
+            has or had the second one(s) among its subdivisions. The Relation is oriented from the
+            Group to its subdivision(s): the parent Group is the source and the subdivision
+            Group(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Group Subdivision Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de subdivision entre groupes d’agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación de subdivisión entre grupos de agentes</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21555,11 +21714,19 @@
                 />
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least two instantiations</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least two instantiations. This Relation is a
+            generic, not oriented one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Instantiation to Instantiation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre instanciations</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre instanciaciones</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -21635,12 +21802,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Agent and one Record Resource or
-            Instantiation on which the Agent has or had some intellectual property
-            rights.</rdfs:comment>
+            Instantiation on which the Agent has or had some intellectual property rights. The
+            Agent(s) is the source of the Relation and the Record Resource(s) or Instantiation(s) is
+            the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Intellectual Property Rights Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de propriété intellectuelle</rdfs:label>
         <rdfs:label xml:lang="es">Relación de propiedad intelectual</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21707,11 +21882,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Person to at least another one, when the
-            first one has some knowledge of the second one through time or space.</rdfs:comment>
+            first one has some knowledge of the second one through time or space. The first Person
+            is the source of the Relation, and the second one is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Knowing Of Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de connaissance à propos d’une personne</rdfs:label>
         <rdfs:label xml:lang="es">Relación de conocimieto indirecto entre personas</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -21758,11 +21941,18 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Persons who directly know each other
-            during their existence.</rdfs:comment>
+            during their existence. This Relation is not oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Knowing Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de connaissance entre personnes</rdfs:label>
         <rdfs:label xml:lang="es">Relación de conocimiento directo entre personas</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21882,11 +22072,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Person and at least one Group, when the
-            first one(s) lead(s) or led the second one(s).</rdfs:comment>
+            first one(s) lead(s) or led the second one(s). The Relation is oriented from the leading
+            Person to the Group: the leading Person(s) is the source of the Relation, and the
+            Group(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Leadership Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de direction</rdfs:label>
         <rdfs:label xml:lang="es">Relación de liderazgo</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -21981,12 +22180,20 @@
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Agent, and at least one Record Resource or
-            Instantiation that the Agent manages or managed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Agent and at least one Record Resource or
+            Instantiation that the Agent manages or managed. The Agent(s) is the source of the
+            Relation, and the Record Resource(s) or Instantiation(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Management Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de gestion</rdfs:label>
         <rdfs:label xml:lang="es">Relación de gestión</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22116,14 +22323,22 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Mandate, and at least one Agent, when the
+        <rdfs:comment xml:lang="en">Connects at least one Mandate and at least one Agent, when the
             first gives or gave the second one the authority or competencies to act. May also
             involve one to many Activities that the Mandate(s) assign(s) or assigned to the
-            Agent(s).</rdfs:comment>
+            Agent(s). The Mandate(s) is the source of the Relation and the Agent(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Mandate Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation impliquant un mandat</rdfs:label>
         <rdfs:label xml:lang="es">Relación normativa</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22270,11 +22485,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects a Group and at least one Person, when the first one has
-            or had the second one(s) among its members.</rdfs:comment>
+            or had the second one(s) among its members. The Relation is oriented from the Group to
+            its members: the Group(s) is the source of the Relation, and the Person(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Membership Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’appartenance</rdfs:label>
         <rdfs:label xml:lang="es">Relación de membresía</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22340,11 +22564,21 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects an Instantiation and at least another Instantiation it
-            has been migrated into.</rdfs:comment>
+            has been migrated into. The Relation is oriented chronologically, from the first
+            Instantiation in time (the migrated one) to the one which results from its migration:
+            the first Instantiation in time is the source of the Relation, and the resulting
+            Instantiation is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Migration Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de migration</rdfs:label>
         <rdfs:label xml:lang="es">Relación de migración entre instanciaciones</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22517,13 +22751,23 @@
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Specifies the organic or functional provenance of at least one
-            Record Resource or Instantiation, for example the relation between a Record Resource and
-            the Agent which created it or the Activity from which it resulted.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
+            least one Agent or Activity, when the Agent or Activity is the provenance of the Record
+            Resource or Instantiation (i.e. when the Agent created, accumulated or maintained the
+            Record Resource or Instantiation, or when the Activity resulted into them). The Record
+            Resource(s) or Instantiation(s) is the source of the Relation, and the Agent(s) or
+            Activity(-ies) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Organic or functional provenance Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de provenance organique ou fonctionnelle</rdfs:label>
         <rdfs:label xml:lang="es">Relación de procedencia orgánica or funcional</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -22598,11 +22842,19 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least one Record Resource or an Instantiation to at
             least one Agent that creates or accumulates the Record Resource, receives it, or sends
-            it.</rdfs:comment>
+            it. The Record Resource(s) or Instantiation(s) is the source of the Relation, and the
+            Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Organic Provenance Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de provenance organique</rdfs:label>
         <rdfs:label xml:lang="es">Relación de procedencia orgánica</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22686,12 +22938,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Group, Person or Position, and at least a
-            Thing that these Agent(s) own(s) or owned.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Group, Person or Position and at least a
+            Thing that these Agent(s) own(s) or owned. The Group(s), Person(s) or Position(s) is the
+            source of the Relation, and the Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Ownership Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de propriété</rdfs:label>
         <rdfs:label xml:lang="es">Relación de posesión</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -22756,12 +23016,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Activity to at least one Agent, that
-            performs or performed the activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Activity to at least one Agent that
+            performs or performed the activity. The Activity(-ies) is the source of the Relation and
+            the Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Performance Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre activités et agents</rdfs:label>
         <rdfs:label xml:lang="es">Relación de desarrollo funcional</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23016,12 +23284,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects a Place and at least one Thing, when the first is
-            associated with the existence and lifecycle of the second one.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Place and at least one Thing when the first is
+            associated with the existence and lifecycle of the second one. The Place is the source
+            of the Relation and the Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Place Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation impliquant un lieu</rdfs:label>
         <rdfs:label xml:lang="es">Relación con lugar</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -23153,12 +23429,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Person, and at least one Position that the
-            Person(s) occupies or occupied.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Person and at least one Position that the
+            Person(s) occupies or occupied. The Person is the source of the Relation and the
+            Position is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Position Holding Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre une personne et un poste</rdfs:label>
         <rdfs:label xml:lang="es">Relación de ocupación entre una persona y un puesto</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23221,13 +23505,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Position, and a Group, in which the
+        <rdfs:comment xml:lang="en">Connects at least one Position and a Group in which the
             position(s) exist(s) or existed, or that is (are) defined by that group's organizational
-            structure.</rdfs:comment>
+            structure. The Position(s) is the source of the Relation and the Group is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Position to Group Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre un poste et un groupe</rdfs:label>
         <rdfs:label xml:lang="es">Relación de ocupación entre un grupo y un puesto</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23604,12 +23896,20 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects two or more record resources when there is a genetic
             link between them. Genetic in this sense is as defined by diplomatics, i.e., the process
-            by which a record resource is developed.</rdfs:comment>
+            by which a record resource is developed. This Relation is a generic, not oriented
+            one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Record Resource Genetic Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation génétique entre des ressources
             archivistiques</rdfs:label>
         <rdfs:label xml:lang="es">Relación genética entre recursos documentales</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23682,14 +23982,22 @@
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Agent, and one or more Record Resource or
-            Instantiation that the Agent(s) hold(s) or held.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Agent and one or more Record Resource or
+            Instantiation that the Agent(s) hold(s) or held. The Agent(s) is the source of the
+            Relation and the Record Resource(s) or Instantiation is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Record Resource Holding Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre agents et ressources archivistiques ou
             instantiations conservées</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre agentes y recursos documentales que
             conservan</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23755,12 +24063,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects a Record Resource to one or more Instantiations that
-            instantiate it, and which either may exist or may have been lost or
-            destroyed.</rdfs:comment>
+            instantiate it, and which either may exist or may have been lost or destroyed. The
+            Record Resource is the source of the Relation and the Instantiation(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Record Resource to Instantiation Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation d’instanciation</rdfs:label>
         <rdfs:label xml:lang="es">Relación de recurso documental a instanciación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -23818,11 +24134,19 @@
                     rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least two Record Resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least two Record Resources. This Relation is a
+            generic, not oriented one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Record Resource to Record Resource Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre ressources archivistiques</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre recursos documentales</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24035,17 +24359,25 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:comment xml:lang="en">The top level relation class. It connects at least two Things.
-            An instance of a Relation may have some datatype and object properties : a general
-            description (datatype property) like any Thing ; a certainty (for 'certain', 'quite
+            An instance of a Relation may have some datatype and object properties: a general
+            description (datatype property) like any Thing; a certainty (for 'certain', 'quite
             probable', 'uncertain','unknown'); a date (use either the date datatype property or the
-            Date class and isAssociatedWithDate object property ; a state (relationState) ; a
-            location (use Place class and isAssociatedWithPlace object property) ; a source of
+            Date class and isAssociatedWithDate object property); a state (relationState); a
+            location (use the Place class and isAssociatedWithPlace object property); a source of
             information that can be used as an evidence for it (use either source datatype property
-            or hasSource object property).</rdfs:comment>
+            or hasSource object property). This Relation is the most generic one; it is not
+            oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation</rdfs:label>
         <rdfs:label xml:lang="es">Relación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24259,12 +24591,20 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Rule to at least one Thing, when it is
-            associated with existence and lifecycle of the Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Rule to at least one Thing when it is
+            associated with existence and lifecycle of the Thing. The Rule(s) is the source of the
+            Relation, and the Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Rule Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation impliquant une règle</rdfs:label>
         <rdfs:label xml:lang="es">Relación con regla</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -24365,12 +24705,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Thing to at least one Thing that follows
-            or followed it in some sequence.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Thing to at least one other Thing that
+            follows or followed it in some sequence. The Relation is oriented from the first
+            Thing(s) in the sequence to the following one(s): the first Thing(s) is the source, and
+            the following Thing(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Sequential Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation séquentielle</rdfs:label>
         <rdfs:label xml:lang="es">Relación secuencial</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24426,12 +24775,19 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least two Persons, when they are
-            siblings.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least two Persons, when they are siblings. This
+            Relation is not oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Sibling Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de fratrie</rdfs:label>
         <rdfs:label xml:lang="es">Relación familiar entre hermanos</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -24476,12 +24832,19 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least two Persons, when they are
-            spouses.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least two Persons, when they are spouses. This
+            Relation is not oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Spouse Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation matrimoniale</rdfs:label>
         <rdfs:label xml:lang="es">Relación matrimonial entre personas</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -24536,12 +24899,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, who is
-            or was their student.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person who is
+            or was their student. The Relation is oriented from the teacher(s) to the student(s):
+            the teacher Person(s) is the source of the Relation, and the student Person(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Teaching Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation entre enseignants et étudiants</rdfs:label>
         <rdfs:label xml:lang="es">Relación académica entre profesor y alumno</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24604,12 +24976,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects at least one Thing to at least one Thing that follows
-            it in chronological order.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects at least one Thing to at least one other Thing that
+            follows it in chronological order. The Relation is oriented chronologically: the
+            preceding Thing(s) is the source of the Relation, the following Thing(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Temporal Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation temporelle</rdfs:label>
         <rdfs:label xml:lang="es">Relación temporal</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24755,11 +25136,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects a category (a Type) and at least one Thing that belongs
-            to this category.</rdfs:comment>
+            to this category. The Type(s) is the source of the Relation, and the Thing(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Type Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de catégorisation</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de relación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -24853,12 +25242,21 @@
                 <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Connects a Thing to at least one Thing that is or was a portion
-            or division of the whole Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Thing to at least one other Thing that is or was a
+            portion or division of the whole Thing. The Relation is oriented from the Thing to its
+            part(s): the Thing is the source of the Relation, and the part Thing(s) is the
+            target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Whole Part Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation partitive</rdfs:label>
         <rdfs:label xml:lang="es">Relación entre todo y parte</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -24912,11 +25310,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connects at least two Agents that have or had some type of work
-            relation in the course of their activities.</rdfs:comment>
+            relation in the course of their activities. This Relation is not
+            oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Work Relation</rdfs:label>
         <rdfs:label xml:lang="fr">Relation de travail</rdfs:label>
         <rdfs:label xml:lang="es">Relación profesional</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2023-12-06</dc:date>
+                <rdf:value xml:lang="en">Improved the description of the Relation class
+                    (rdfs:comment) by clearly specifying how it is directed.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
