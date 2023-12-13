@@ -144,13 +144,8 @@
                <html:p>
                   <html:strong>RiC-O has to provide a flexible
                         framework</html:strong>.</html:p>
-<<<<<<< HEAD
-               <html:p>
-                  <html:strong>This is a very important principle too</html:strong>. It is
-=======
                     <html:p>
                         <html:strong>This is a very important principle too</html:strong>. It is
->>>>>>> version_1-0
                         related with the usability principle quoted above. Moreover,
                             <html:strong>archival description is flexible by essence</html:strong>.
                         It is quite commonly noted that today the level of granularity of
@@ -455,15 +450,9 @@
                     important are mentioned in bold in the following list.</html:p>
             <html:p>RiC-O 0.2 results from these updates and changes. It was released a few
                     weeks before RiC-CM 0.2 full draft, and is fully compliant with it.</html:p>
-<<<<<<< HEAD
-            <html:p>
-               <html:strong>At the end of 2022</html:strong>, while the EGAD group, as part
-                    of the development of version 1.0 of RiC-CM, was working on analyzing and taking
-=======
                 <html:p>
                     <html:strong>At the end of 2022</html:strong>, while the EGAD group, as part of
                     the development of version 1.0 of RiC-CM, was working on analyzing and taking
->>>>>>> version_1-0
                     into account the very numerous comments relating to RiC-CM 0.2 received,
                         <html:strong>a new active phase of development started for RiC-O. A team of
                         no longer three, but six people prepared this version.</html:strong> It was
@@ -475,7 +464,6 @@
                         users was expressing</html:strong>. On the other hand, it was obviously a
                     question of <html:strong>making RiC-O 1.0 compliant with RiC-CM
                         1.0</html:strong>.</html:p>
-<<<<<<< HEAD
             <html:p>At the end of this work, RiC-O 1.0-beta defines:</html:p>
             <html:ul>
                <html:li>
@@ -504,60 +492,6 @@
                             <html:a href="#rico:MandateType">rico:MandateType</html:a> class. On the
                         other hand, <html:strong>to meet the needs expressed by RiC-O users, some
                             other properties have been added</html:strong>; in particular, <html:a href="#rico:isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</html:a>, <html:a href="#rico:isOrWasEmployerOf">rico:isOrWasEmployerOf</html:a>, <html:a href="#rico:wasMergedInto">rico:wasMergedInto</html:a>, <html:a href="#rico:wasSplitInto">rico:wasSplitInto</html:a>, <html:a href="#rico:hasDeathPlace">rico:hasDeathPlace</html:a>, <html:a href="#rico:hasBirthPlace">rico:hasBirthPlace</html:a>, <html:a href="#rico:hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</html:a>, <html:a href="#rico:hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</html:a>, and their inverse
-=======
-                <html:p>At the end of this work, RiC-O 1.0-beta defines:</html:p>
-                <html:ul>
-                    <html:li>
-                        <html:strong>105 classes</html:strong>, one class less than version 0.2. In
-                        fact, as in RiC-CM 1.0, the modeling of dates has been modified, this led to
-                        the removal of the three subclasses of <html:a href="#rico:Date"
-                            >rico:Date</html:a>. However, it was necessary to add a <html:a
-                            href="#rico:MandateType">rico:MandateType</html:a> class, corresponding
-                        to the new RiC-A44 Mandate Type attribute of RiC-CM 1.0. A generic <html:a
-                            href="#rico:OrganicOrFunctionalProvenanceRelation"
-                            >rico:OrganicOrFunctionalProvenanceRelation</html:a> class has also been
-                        created.</html:li>
-                    <html:li>
-                        <html:strong>61 datatype properties</html:strong>, one less than version
-                        0.2. Several properties have been renamed, to make the ontology compliant
-                        with RiC-CM 1.0 (so rico:descriptiveNote has become <html:a
-                            href="#rico:generalDescription">rico:generalDescription</html:a>, whose
-                        definition is a little different). A <html:a href="#rico:length"
-                            >rico:length</html:a> property has also been added; rico:calendar and
-                        rico:dateStandard have been removed. The hierarchy of <html:a
-                            href="#rico:date">rico:date</html:a> subproperties has been revised.
-                        Some properties have become subproperties of others (like <html:a
-                            href="#rico:scopeAndContent">rico:scopeAndContent</html:a>, now a
-                        subproperty of <html:a href="#rico:generalDescription"
-                            >rico:generalDescription</html:a>).</html:li>
-                    <html:li>
-                        <html:strong>400 object properties</html:strong>, compared to 423 in RiC-O
-                        0.2. This simple count poorly accounts for <html:strong>the significant
-                            modifications that have been made to the object properties of RiC-O
-                            0.2</html:strong>. <html:br/>On the one hand, <html:strong>a certain
-                            number of properties have been added to make RiC-O compliant with RiC-CM
-                            1.0</html:strong>: addition of properties whose domain or range are
-                            <html:a href="#rico:Date">rico:Date</html:a>, <html:a href="#rico:Event"
-                            >rico:Event</html:a> or <html:a href="#rico:Place">rico:Place</html:a>;
-                        addition of <html:a href="#rico:hasOrHadMandateType"
-                            >rico:hasOrHadMandateType</html:a> and <html:a
-                            href="#rico:isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</html:a>,
-                        properties related to the new <html:a href="#rico:MandateType"
-                            >rico:MandateType</html:a> class. On the other hand, <html:strong>to
-                            meet the needs expressed by RiC-O users, some other properties have been
-                            added</html:strong>; in particular, <html:a
-                            href="#rico:isAgentAssociatedWithPlace"
-                            >rico:isAgentAssociatedWithPlace</html:a>, <html:a
-                            href="#rico:isOrWasEmployerOf">rico:isOrWasEmployerOf</html:a>, <html:a
-                            href="#rico:wasMergedInto">rico:wasMergedInto</html:a>, <html:a
-                            href="#rico:wasSplitInto">rico:wasSplitInto</html:a>, <html:a
-                            href="#rico:hasDeathPlace">rico:hasDeathPlace</html:a>, <html:a
-                            href="#rico:hasBirthPlace">rico:hasBirthPlace</html:a>, <html:a
-                            href="#rico:hasOrHadAnalogueInstantiation"
-                            >rico:hasOrHadAnalogueInstantiation</html:a>, <html:a
-                            href="#rico:hasOrHadDigitalInstantiation"
-                            >rico:hasOrHadDigitalInstantiation</html:a>, and their inverse
->>>>>>> version_1-0
                         properties. <html:br/>Furthermore, <html:strong>a significant number of
                             properties have been added to allow the expression of indirect
                             relationships</html:strong>. Thus, it is now possible, for instance, to
@@ -831,22 +765,18 @@
                             order to make them compliant with RiC-CM 1.0 relations. Added labels or
                             modified rdfs:comment of 65 other object properties. Added
                             hasOrHadMandateType and isOrWasMandateType of.</html:strong>
-<<<<<<< HEAD
-               </html:li>
-               <html:li>2023, November 13: added or modified a few French or Spanish
-=======
                     </html:li>
                     <html:li>2023, November 13: added or modified a few French or Spanish
->>>>>>> version_1-0
                         labels.</html:li>
                <html:li>2023, November 13: updated the ontology metadata.</html:li>
                <html:li>2023, November 14: fixed some typos in the ontology metadata.</html:li>
                <html:li>2023, November 24: started to work on v1.0, after releasing v 1.0-beta:
                         renamed the file and updated a few metadata.</html:li>
-<<<<<<< HEAD
                <html:li>2023, November 25: fixed three French labels; added Spanish labels to
                         the annotation properties and named individuals.</html:li>
                <html:li>2023, November 27: added Spanish labels to the 93 object properties which were missing one.</html:li>
+               <html:li>2023, December 6: improved the description (rdfs:comment) of the 48 n-ary Relation classes
+                  by clearly specifying how they are directed.</html:li>
             </html:ul>
          </html:div>
       </skos:historyNote>
@@ -909,73 +839,6 @@
    <!-- https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent -->
    <owl:AnnotationProperty rdf:about="https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent">
       <rdfs:comment xml:lang="en">When it exists, specifies the identifier and name of RiC-CM
-=======
-                    <html:li>2023, December 6: improved the description (rdfs:comment) of the 48 n-ary Relation classes
-                         by clearly specifying how they are directed.</html:li>
-                </html:ul>
-            </html:div>
-        </skos:historyNote>
-    </owl:Ontology>
-    <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Annotation properties // /////////////////////////////////////////////////////////////////////////////////////// -->
-    <!-- http://creativecommons.org/ns#license -->
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    <!-- http://purl.org/dc/elements/1.1/date -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    <!-- http://purl.org/dc/elements/1.1/rights -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    <!-- http://purl.org/dc/elements/1.1/title -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    <!-- http://purl.org/dc/terms/abstract -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
-    <!-- http://purl.org/dc/terms/contributor -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    <!-- http://purl.org/dc/terms/creator -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    <!-- http://purl.org/dc/terms/description -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    <!-- http://purl.org/dc/terms/publisher -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    <!-- http://purl.org/dc/terms/rights -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
-    <!-- http://purl.org/dc/terms/title -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
-    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
-    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
-    </owl:AnnotationProperty>
-    <!-- http://www.w3.org/2004/02/skos/core#definition -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    <!-- http://www.w3.org/2004/02/skos/core#example -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    <!-- http://www.w3.org/2004/02/skos/core#note -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
-    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    <!-- https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent -->
-    <owl:AnnotationProperty
-        rdf:about="https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent">
-        <rdfs:comment xml:lang="en">When it exists, specifies the identifier and name of RiC-CM
->>>>>>> version_1-0
             component that corresponds to the annotated class or property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">RiC-CM corresponding component</rdfs:label>
@@ -18252,30 +18115,6 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Used to qualify the state of a Relation (e. g. present, past,
             ongoing, unknown).</rdfs:comment>
-<<<<<<< HEAD
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Relation state</rdfs:label>
-      <rdfs:label xml:lang="fr">statut de la relation</rdfs:label>
-      <rdfs:label xml:lang="es">estado de la relación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:DatatypeProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#ruleFollowed -->
-   <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#ruleFollowed">
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">The rule or conditions that govern the existence or lifecycle of
-=======
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">relation state</rdfs:label>
         <rdfs:label xml:lang="fr">statut de la relation</rdfs:label>
@@ -18738,86 +18577,6 @@
             later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
             RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:DatatypeProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#width -->
-   <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#width">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">Horizontal dimension of an entity.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">width</rdfs:label>
-      <rdfs:label xml:lang="fr">largeur</rdfs:label>
-      <rdfs:label xml:lang="es">anchura</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:DatatypeProperty>
-   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Classes // /////////////////////////////////////////////////////////////////////////////////////// -->
-   <!-- http://purl.org/vocommons/voaf#Vocabulary -->
-   <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary">
-      <rdfs:isDefinedBy rdf:resource="http://purl.org/vocommons/voaf"/>
-   </owl:Class>
-   <!-- http://www.w3.org/2004/02/skos/core#Concept -->
-   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-   </owl:Class>
-   <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
-   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AccumulationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AccumulationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicProvenanceRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
-            least one Agent, when the Agent accumulates or accumulated it, be it intentionally
-            (collecting it) or not (receiving it in the course of its activities).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Accumulation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’accumulation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de Acumulación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#width -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#width">
@@ -18917,7 +18676,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -18993,63 +18751,6 @@
             time. An Activity may be composed of other Activities.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E15 (Activity
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#activityDocumentationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#EventRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
-            least one Activity, when the Record Resource or Instantiation results from the
-            activity.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Activity Documentation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre activités et ressources archivistiques</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de procedencia funcional</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the .</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">Made this relation a subclass of EventRelation.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation">
@@ -19125,7 +18826,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -19237,44 +18937,6 @@
             Group.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E07 (Agent
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AgentControlRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentControlRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentControlRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent, to at least another Agent, when the
-            first one(s) control(s) or controlled in a way the activities of the second
-            one(s).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Agent Control Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de contrôle entre agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de control entre agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#AgentControlRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentControlRelation">
@@ -19329,7 +18991,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -19355,42 +19016,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R041 and RiC-R041i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent to at least another Agent, when the
-            first one is or was hierarchically superior to the second one.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Agent Hierarchical Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación jerárquica entre agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation">
@@ -19443,7 +19068,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -19495,44 +19119,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of a specialization of
             RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentTemporalRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent, to at least another Agent, that
-            succeeds it chronologically for, for instance, fullfilling some functions or performing
-            some activities.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Agent Temporal Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation temporelle entre agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación temporal entre agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation">
@@ -19587,7 +19173,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -19623,34 +19208,6 @@
             function from the first agent to the second agent.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R016 and RiC-016i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Agents.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Agent Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation">
@@ -19690,7 +19247,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -19724,58 +19280,6 @@
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
       <rdfs:comment xml:lang="en">A concept of any kind that is used for designating an Entity and
             referring to it.</rdfs:comment>
-<<<<<<< HEAD
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Appellation</rdfs:label>
-      <rdfs:label xml:lang="fr">Appellation</rdfs:label>
-      <rdfs:label xml:lang="es">Denominación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AppellationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AppellationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#appellationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Appellation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">The relation between an Appellation and at least one Thing that
-            the Appellation designates or designated.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Appellation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’appellation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de denominación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Appellation</rdfs:label>
         <rdfs:label xml:lang="fr">Appellation</rdfs:label>
@@ -19842,7 +19346,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -19852,56 +19355,6 @@
             <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
-<<<<<<< HEAD
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#AuthorityRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AuthorityRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#authorityRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent, and at least one Thing over which
-            the Agent has or had some authority.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Authority Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’autorité</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de control por parte de agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -19966,7 +19419,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20028,17 +19480,6 @@
       </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Connects at least one Record to at least one Person, Group or
             Position that is or was responsible for conceiving and formulating the information
-<<<<<<< HEAD
-            contained in the Record.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Authorship Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de responsabilité intellectuelle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de autoría</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             contained in the Record. The Record is the source of the Relation and the Person(s),
             Group(s) or Position(s) is the target. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -20056,7 +19497,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20191,42 +19631,6 @@
             and possible ways of accessing and using the record resource.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A05 (Carrier Type
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#ChildRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ChildRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#childRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person, to at least another Person, when
-            the first has(ave) child(s) the second one(s).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Child Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de filiation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de filiación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#ChildRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ChildRelation">
@@ -20279,7 +19683,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20506,35 +19909,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A12 (Corporate Body Type
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#correspondenceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Persons, when they correspond or
-            corresponded to each other.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Correspondence Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation épistolaire</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre personas por correspondencia</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation">
@@ -20574,7 +19948,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20634,17 +20007,6 @@
       <rdfs:comment xml:lang="en">Connects at least one Record Resource or Instantiation to at
             least one Agent, when the Agent is either responsible for all or some of the content of
             the Record Resource, or is a contributor to the genesis or production of the
-<<<<<<< HEAD
-            Instantiation.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Creation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de création</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de creación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
             Instantiation. The Record Resource or Instantiation is the source of the Relation, and
             the Agent(s) is the target. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -20662,7 +20024,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20822,43 +20183,6 @@
             place, ancestry, ethnic/cultural identification, and religion.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A15 (Demographic Group
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#DerivationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DerivationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#derivationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects an Instantiation to at least one Instantiation that is
-            derived from it, whether it exists or has been lost or destroyed.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Derivation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de dérivation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de derivación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#DerivationRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DerivationRelation">
@@ -20915,7 +20239,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -20944,43 +20267,6 @@
             has been lost.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R014 and RiR014i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#DescendanceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DescendanceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#descendanceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, when
-            the first has/have descendant the second one(s).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Descendance Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de descendance</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de descendencia</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#DescendanceRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DescendanceRelation">
@@ -21034,7 +20320,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -21155,43 +20440,6 @@
             participate in the same event, and in different roles.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E14 (Event
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-      <closeTo xml:lang="en">LODE Event class (http://linkedevents.org/ontology/#Event)</closeTo>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#EventRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#EventRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#eventRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Event"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Event to at least one Thing, when the
-            first is associated with the existence and lifecycle of the second one.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Event Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation impliquant un événement</rdfs:label>
-      <rdfs:label xml:lang="es">Relación con un evento</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
         <closeTo xml:lang="en">LODE Event class (http://linkedevents.org/ontology/#Event)</closeTo>
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#EventRelation -->
@@ -21243,7 +20491,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -21426,35 +20673,6 @@
             defined tribal lands.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E10 (Family
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#FamilyRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#FamilyRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#familyRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Persons, when they have some family link,
-            i.e. belong to the same family.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Family Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation familiale</rdfs:label>
-      <rdfs:label xml:lang="es">Relación familiar</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#FamilyRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#FamilyRelation">
@@ -21496,7 +20714,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -21569,35 +20786,6 @@
             consanguinity, affinity, cohabitation, or other social conventions.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A20 (Family Type
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#functionalEquivalenceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Instantiations which may be considered as
-            equivalent.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Functional Equivalence Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’équivalence fonctionnelle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de equivalencia funcional</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation">
@@ -21639,7 +20827,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -21708,43 +20895,6 @@
             subdivided into other groups.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E09 (Group
             Entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#groupSubdivisionRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation"/>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#WholePartRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a Group and at least another Group, when the first one
-            has or had the second one(s) among its subdivisions.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Group Subdivision Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de subdivision entre groupes d’agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de subdivisión entre grupos de agentes</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation">
@@ -21798,7 +20948,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -22030,100 +21179,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-A23 (Instantiation
             Extent attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two instantiations</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Instantiation to Instantiation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre instanciations</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre instanciaciones</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-                    added an equivalentClass object property; replaced the specific object
-                    properties by the generic ones in the subClassOf declarations.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent and one Record Resource or
-            Instantiation on which the Agent has or had some intellectual property
-            rights.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Intellectual Property Rights Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de propriété intellectuelle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de propiedad intelectual</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation -->
     <owl:Class
@@ -22254,7 +21309,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -22283,42 +21337,6 @@
             author(s).</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R040 and RiC-R040i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#KnowingOfRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#KnowingOfRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#knowingOfRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person to at least another one, when the
-            first one has some knowledge of the second one through time or space.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Knowing Of Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de connaissance à propos d’une personne</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de conocimieto indirecto entre personas</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#KnowingOfRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#KnowingOfRelation">
@@ -22370,7 +21388,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -22389,35 +21406,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R050 and RiC-R050i
             relationsi</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#KnowingRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#KnowingRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#knowingRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Persons who directly know each other
-            during their existence.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Knowing Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de connaissance entre personnes</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de conocimiento directo entre personas</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#KnowingRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#KnowingRelation">
@@ -22458,7 +21446,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -22530,49 +21517,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A25 (Language
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#LeadershipRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#LeadershipRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#leadershipRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#leadershipWithPosition"/>
-            <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person and at least one Group, when the
-            first one(s) lead(s) or led the second one(s).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Leadership Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de direction</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de liderazgo</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#LeadershipRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#LeadershipRelation">
@@ -22635,7 +21579,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -22684,49 +21627,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A26 (Legal Status
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#ManagementRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ManagementRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#managementRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent, and at least one Record Resource or
-            Instantiation that the Agent manages or managed.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Management Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de gestion</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de gestión</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#ManagementRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#ManagementRelation">
@@ -22787,7 +21687,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -22871,51 +21770,6 @@
             evidence of its identity. A documentary source is a record.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E17 (Mandate
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#MandateRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MandateRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#mandateRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#asConcernsActivity"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Mandate"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Mandate, and at least one Agent, when the
-            first gives or gave the second one the authority or competencies to act. May also
-            involve one to many Activities that the Mandate(s) assign(s) or assigned to the
-            Agent(s).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Mandate Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation impliquant un mandat</rdfs:label>
-      <rdfs:label xml:lang="es">Relación normativa</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#MandateRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MandateRelation">
@@ -22978,7 +21832,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -23077,49 +21930,6 @@
             creating agent.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E13 (Mechanism
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#MembershipRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MembershipRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#membershipRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#membershipWithPosition"/>
-            <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a Group and at least one Person, when the first one has
-            or had the second one(s) among its members.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Membership Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’appartenance</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de membresía</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#MembershipRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MembershipRelation">
@@ -23182,7 +21992,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -23208,42 +22017,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R055 and RiC-R055i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#MigrationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MigrationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#migrationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects an Instantiation and at least another Instantiation it
-            has been migrated into.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Migration Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de migration</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de migración entre instanciaciones</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#MigrationRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#MigrationRelation">
@@ -23299,7 +22072,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -23416,57 +22188,6 @@
             who works in the domain of archival science.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A30 (Occupation Type
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#organicOrFunctionalProvenanceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Activity"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Specifies the organic or functional provenance of at least one
-            Record Resource or Instantiation, for example the relation between a Record Resource and
-            the Agent which created it or the Activity from which it resulted.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Organic or functional provenance Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de provenance organique ou fonctionnelle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de procedencia orgánica or funcional</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation -->
     <owl:Class
@@ -23540,7 +22261,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -23599,17 +22319,6 @@
       </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Connects at least one Record Resource or an Instantiation to at
             least one Agent that creates or accumulates the Record Resource, receives it, or sends
-<<<<<<< HEAD
-            it.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Organic Provenance Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de provenance organique</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de procedencia orgánica</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             it. The Record Resource(s) or Instantiation(s) is the source of the Relation, and the
             Agent(s) is the target.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -23627,7 +22336,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -23664,50 +22372,6 @@
             Relation.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R026 and RiC-R026i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#OwnershipRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#OwnershipRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#ownershipRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Group"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Person"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Position"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Group, Person or Position, and at least a
-            Thing that these Agent(s) own(s) or owned.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Ownership Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de propriété</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de posesión</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#OwnershipRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#OwnershipRelation">
@@ -23769,7 +22433,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -23798,42 +22461,6 @@
             body owns a mechanism), or between agents and record resources.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R037 and RiC-R037i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#PerformanceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PerformanceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#performanceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#EventRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Activity to at least one Agent, that
-            performs or performed the activity.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Performance Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre activités et agents</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de desarrollo funcional</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#PerformanceRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PerformanceRelation">
@@ -23884,7 +22511,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -24103,42 +22729,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of a specialization of
             RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#PlaceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PlaceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#placeRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a Place and at least one Thing, when the first is
-            associated with the existence and lifecycle of the second one.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Place Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation impliquant un lieu</rdfs:label>
-      <rdfs:label xml:lang="es">Relación con lugar</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#PlaceRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PlaceRelation">
@@ -24189,7 +22779,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -24284,42 +22873,6 @@
             Person.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E12 (Position
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#positionHoldingRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person, and at least one Position that the
-            Person(s) occupies or occupied.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Position Holding Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre une personne et un poste</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de ocupación entre una persona y un puesto</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation">
@@ -24371,7 +22924,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -24397,43 +22949,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R054 and RiC-R054i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#positionToGroupRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Position"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Position, and a Group, in which the
-            position(s) exist(s) or existed, or that is (are) defined by that group's organizational
-            structure.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Position to Group Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre un poste et un groupe</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de ocupación entre un grupo y un puesto</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation">
@@ -24486,7 +23001,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -24847,17 +23361,6 @@
       </rdfs:subClassOf>
       <rdfs:comment xml:lang="en">Connects two or more record resources when there is a genetic
             link between them. Genetic in this sense is as defined by diplomatics, i.e., the process
-<<<<<<< HEAD
-            by which a record resource is developed.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Record Resource Genetic Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation génétique entre des ressources archivistiques</rdfs:label>
-      <rdfs:label xml:lang="es">Relación genética entre recursos documentales</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             by which a record resource is developed. This Relation is a generic, not oriented
             one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -24876,7 +23379,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -24902,49 +23404,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R023 and RiC-023i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass>
-               <owl:Class>
-                  <owl:unionOf rdf:parseType="Collection">
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-                  </owl:unionOf>
-               </owl:Class>
-            </owl:onClass>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Agent, and one or more Record Resource or
-            Instantiation that the Agent(s) hold(s) or held.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Record Resource Holding Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre agents et ressources archivistiques ou instantiations conservées</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre agentes y recursos documentales que conservan</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation">
@@ -25008,7 +23467,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -25034,43 +23492,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R039 and RiC-039i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a Record Resource to one or more Instantiations that
-            instantiate it, and which either may exist or may have been lost or
-            destroyed.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Record Resource to Instantiation Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation d’instanciation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación de recurso documental a instanciación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation -->
     <owl:Class
@@ -25125,7 +23546,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -25155,34 +23575,6 @@
             aid.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R025 and RiC-R025i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceToRecordResourceRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Record Resources.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Record Resource to Record Resource Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre ressources archivistiques</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre recursos documentales</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation -->
     <owl:Class
@@ -25224,7 +23616,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -25420,21 +23811,6 @@
             "copy").</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A39 (State
             attribute)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#Relation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Relation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <rdfs:comment xml:lang="en">The top level relation class. It connects at least two Things.
-            An instance of a Relation may have some datatype and object properties : a general
-            description (datatype property) like any Thing ; a certainty (for 'certain', 'quite
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#Relation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Relation">
@@ -25450,22 +23826,10 @@
         <rdfs:comment xml:lang="en">The top level relation class. It connects at least two Things.
             An instance of a Relation may have some datatype and object properties: a general
             description (datatype property) like any Thing; a certainty (for 'certain', 'quite
->>>>>>> version_1-0
             probable', 'uncertain','unknown'); a date (use either the date datatype property or the
             Date class and isAssociatedWithDate object property); a state (relationState); a
             location (use the Place class and isAssociatedWithPlace object property); a source of
             information that can be used as an evidence for it (use either source datatype property
-<<<<<<< HEAD
-            or hasSource object property).</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation</rdfs:label>
-      <rdfs:label xml:lang="es">Relación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             or hasSource object property). This Relation is the most generic one; it is not
             oriented.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -25483,7 +23847,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -25661,42 +24024,6 @@
             as evidence of its identity. A documentary source is a record.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-E16 (Rule
             entity)</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#RuleRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RuleRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#ruleRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Rule to at least one Thing, when it is
-            associated with existence and lifecycle of the Thing.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Rule Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation impliquant une règle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación con regla</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#RuleRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RuleRelation">
@@ -25747,7 +24074,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -25812,42 +24138,6 @@
             : access rule, use rule, etc.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A45 (Rule Type
             attribute).</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#SequentialRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SequentialRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#sequentialRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Thing to at least one Thing that follows
-            or followed it in some sequence.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Sequential Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation séquentielle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación secuencial</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#SequentialRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SequentialRelation">
@@ -25899,7 +24189,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment), skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -25929,35 +24218,6 @@
             that a record "has next" another record within a record set.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R008 and RiC-R008i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#SiblingRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SiblingRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#siblingRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Persons, when they are
-            siblings.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Sibling Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de fratrie</rdfs:label>
-      <rdfs:label xml:lang="es">Relación familiar entre hermanos</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#SiblingRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SiblingRelation">
@@ -25997,7 +24257,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -26016,35 +24275,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R048 and RiC-R048i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#SpouseRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SpouseRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#spouseRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Persons, when they are
-            spouses.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Spouse Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation matrimoniale</rdfs:label>
-      <rdfs:label xml:lang="es">Relación matrimonial entre personas</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#SpouseRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#SpouseRelation">
@@ -26084,7 +24314,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -26103,42 +24332,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R049 and RiC-R049i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#TeachingRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TeachingRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#teachingRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Person to at least another Person, who is
-            or was their student.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Teaching Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation entre enseignants et étudiants</rdfs:label>
-      <rdfs:label xml:lang="es">Relación académica entre profesor y alumno</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#TeachingRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TeachingRelation">
@@ -26190,7 +24383,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -26216,42 +24408,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R053 and RiC-R053i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#TemporalRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TemporalRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#temporalRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least one Thing to at least one Thing that follows
-            it in chronological order.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Temporal Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation temporelle</rdfs:label>
-      <rdfs:label xml:lang="es">Relación temporal</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#TemporalRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TemporalRelation">
@@ -26304,7 +24460,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the
->>>>>>> version_1-0
                     skos:scopeNote.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -26397,58 +24552,6 @@
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
       <rdfs:comment xml:lang="en">A superclass for any category of some thing. A type
             characterizes an entity.</rdfs:comment>
-<<<<<<< HEAD
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Type</rdfs:label>
-      <rdfs:label xml:lang="fr">Type</rdfs:label>
-      <rdfs:label xml:lang="es">Tipo</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-25</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#TypeRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TypeRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#typeRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a category (a Type) and at least one Thing that belongs
-            to this category.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Type Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de catégorisation</rdfs:label>
-      <rdfs:label xml:lang="es">Tipo de relación</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-08</dc:date>
-            <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
-=======
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Type</rdfs:label>
         <rdfs:label xml:lang="fr">Type</rdfs:label>
@@ -26515,7 +24618,6 @@
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
                 <rdf:value xml:lang="en">In order to get a system of rolified Relation classes:
->>>>>>> version_1-0
                     added an equivalentClass object property; replaced the specific object
                     properties by the generic ones in the subClassOf declarations.</rdf:value>
          </rdf:Description>
@@ -26571,44 +24673,6 @@
             <dc:date>2020-10-28</dc:date>
             <rdf:value xml:lang="en">Class added in order to be able to handle units of
                     measurement as full entities.</rdf:value>
-<<<<<<< HEAD
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#WholePartRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#WholePartRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#wholePartRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
-            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects a Thing to at least one Thing that is or was a portion
-            or division of the whole Thing.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Whole Part Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation partitive</rdfs:label>
-      <rdfs:label xml:lang="es">Relación entre todo y parte</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
             </rdf:Description>
         </skos:changeNote>
     </owl:Class>
@@ -26662,7 +24726,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
@@ -26688,35 +24751,6 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R002 and RiC-R002i
             relations</RiCCMCorrespondingComponent>
-<<<<<<< HEAD
-   </owl:Class>
-   <!-- https://www.ica.org/standards/RiC/ontology#WorkRelation -->
-   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#WorkRelation">
-      <owl:equivalentClass>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#workRelation_role"/>
-            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-         </owl:Restriction>
-      </owl:equivalentClass>
-      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:subClassOf>
-         <owl:Restriction>
-            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationConnects"/>
-            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
-         </owl:Restriction>
-      </rdfs:subClassOf>
-      <rdfs:comment xml:lang="en">Connects at least two Agents that have or had some type of work
-            relation in the course of their activities.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Work Relation</rdfs:label>
-      <rdfs:label xml:lang="fr">Relation de travail</rdfs:label>
-      <rdfs:label xml:lang="es">Relación profesional</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-12</dc:date>
-            <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
-=======
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#WorkRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#WorkRelation">
@@ -26758,7 +24792,6 @@
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description
->>>>>>> version_1-0
                     (rdfs:comment).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
