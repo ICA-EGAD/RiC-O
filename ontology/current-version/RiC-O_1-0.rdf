@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns="https://www.ica.org/standards/RiC/ontology#"
-   xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:html="http://www.w3.org/1999/xhtml"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -798,6 +799,7 @@
                         directed</html:strong>.</html:li>
                   <html:li>2023, December 21: <html:strong>revised and updated the ontology metadata and introduction, and the HTML view.</html:strong>.</html:li>
                   <html:li>2023, December 27: in order to make the ontology clearer and more consistent, renamed the certainty and source datatype properties to relationCertainty and relationSource and reduced their domain to Relation. Renamed the 'hasSource' object property to 'isEvidencedBy' and reduced its domain to Relation and range to RecordResource; same for the inverse property, 'isSourceOf', renamed to 'evidences'. Updated the specifications of these properties accordingly.</html:li>
+                  <html:li>2023, December 27: added rdfs:isDefinedBy to all the properties not defined in RiC-O itself.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -805,59 +807,106 @@
    </owl:Ontology>
    <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Annotation properties // /////////////////////////////////////////////////////////////////////////////////////// -->
    <!-- http://creativecommons.org/ns#license -->
-   <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+   <rdf:Description rdf:about="http://creativecommons.org/ns#license">
+      <rdfs:isDefinedBy rdf:resource="http://creativecommons.org/ns#"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/contributor -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/creator -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/date -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
+   <!-- http://purl.org/dc/elements/1.1/language -->
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/publisher -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/rights -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/elements/1.1/title -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/abstract -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/contributor -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/creator -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/description -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/publisher -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/rights -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/dc/terms/title -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+   <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+   </rdf:Description>
    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+   <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+   </owl:AnnotationProperty>
    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-   <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+   <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+      <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+   </owl:AnnotationProperty>
    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
-   <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+   </rdf:Description>
    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
    </owl:AnnotationProperty>
    <!-- http://www.w3.org/2004/02/skos/core#definition -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:AnnotationProperty>
    <!-- http://www.w3.org/2004/02/skos/core#example -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-   <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
-   <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:AnnotationProperty>
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:AnnotationProperty>
    <!-- http://www.w3.org/2004/02/skos/core#note -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
-   <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:AnnotationProperty>
    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
-   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:AnnotationProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent -->
    <owl:AnnotationProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent">
@@ -904,6 +953,7 @@
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
    </owl:AnnotationProperty>
    <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+   
    <!-- https://www.ica.org/standards/RiC/ontology#accumulationRelation_role -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role">
@@ -7864,6 +7914,11 @@
       <RiCCMCorrespondingComponent xml:lang="en">RIC-R016 ('has successor'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://http://www.w3.org/2004/02/skos/core#hasTopConcept-->
+   <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+      <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasUnitOfMeasurement -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasUnitOfMeasurement">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
@@ -8073,6 +8128,10 @@
                members (the past partitive relation also being added).</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://http://www.w3.org/2004/02/skos/core#inScheme-->
+   <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelation_role -->
    <owl:ObjectProperty
@@ -16228,6 +16287,11 @@
             <rdf:value xml:lang="en">Updated the description (rdfs:comment) and labels.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://http://www.w3.org/2004/02/skos/core#topConceptOf-->
+   <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+      <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#typeRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#typeRelation_role">
@@ -25395,6 +25459,16 @@
       <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
       <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
       <rdfs:label xml:lang="es">Tipos documentales</rdfs:label>
+      <dc:language>en</dc:language>
+      <dc:language>fr</dc:language>
+      <dc:language>es</dc:language>
+      <skos:changeNote
+         >
+         <rdf:Description>
+            <dc:date>2023-12-13</dc:date>
+            <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added dc:language, a history note and a scope note.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-25</dc:date>
@@ -25409,6 +25483,34 @@
       </skos:changeNote>
       <skos:definition xml:lang="en">A vocabulary that includes documentary form
          types</skos:definition>
+      <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts Ontology. When
+         the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
+         would be released: the first one, consisting of a unique large OWL file, would
+         remain the reference one. Meanwhile, RiC-0 1.0 was also provided as a set of
+         files, in order to address specific needs, e.g. using only the core of the
+         ontology, or using only the individuals it defined and defining new individuals,
+         or extending the Relation classes system. So from December 2023, you can find
+         the vocabulary on Documentary Form Types, either in the unique large OWL RiC-O
+         file, or as a separate file.
+      </skos:historyNote>
+      <skos:scopeNote xml:lang="en">For now this vocabulary only defines two top concepts; it should
+         hopefully be completed later. The concepts defined in this vocabulary can be used in
+         combination with RiC-O classes and properties, whenever necessary and appropriate, to
+         assign a documentary form type to a Record or a Record Part, using the
+         rico:hasDocumentaryFormType object property, or its inverse one. They also can be used
+         to specify that a rico:RecordSet included or includes members whose some
+         (rico:hasOrHadSomeMemberswithDocumentaryFormType) or all
+         (rico:hasOrHadAllMembersWithDocumentaryFormType) have some Documentary Form Type. Each
+         concept is both defined as a skos:Concept and a rico:DocumentaryFormType, so that it is
+         possible to extend the classic definition of such concepts using RiC-O properties. For
+         example, you can use rico:history, rico:date, or rico:isAssociatedWithPlace,
+         rico:precedesInTime, if you consider a documentary form type as being a historical
+         entity, known and used in some known space or time region.</skos:scopeNote>
+      <skos:hasTopConcept
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <skos:hasTopConcept
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"
+      />
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes -->
    <owl:NamedIndividual rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
@@ -25420,6 +25522,16 @@
       <rdfs:label xml:lang="en">Record Set Types</rdfs:label>
       <rdfs:label xml:lang="fr">Types d’ensembles d’objets informationnels</rdfs:label>
       <rdfs:label xml:lang="es">Tipos de agrupación documental</rdfs:label>
+      <dc:language>en</dc:language>
+      <dc:language>fr</dc:language>
+      <dc:language>es</dc:language>
+      <skos:changeNote
+         >
+         <rdf:Description>
+            <dc:date>2023-12-13</dc:date>
+            <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added dc:language, a history note and a scope note.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-25</dc:date>
@@ -25432,7 +25544,35 @@
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:definition xml:lang="en">A vocabulary on Record Set types</skos:definition>
+      <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts Ontology. When
+         the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
+         would be released: the first one, consisting of a unique large OWL file, would
+         remain the reference one. Meanwhile, RiC-0 1.0 was also provided as a set of
+         files, in order to address specific needs, e.g. using only the core of the
+         ontology, or using only the individuals it defined and defining new individuals,
+         or extending the Relation classes system. So from December 2023, you can find
+         the vocabulary on Record Set Types, either in the unique large OWL RiC-O
+         file, or as a separate file.
+      </skos:historyNote>
+      <skos:definition xml:lang="en">A vocabulary that provides URIs for describing types
+         of Records in Contexts Record Sets.</skos:definition>
+      <skos:scopeNote xml:lang="en">For now this vocabulary only defines four top concepts; it should
+         hopefully be completed later. The concepts defined in this vocabulary can be used in
+         combination with RiC-O classes and properties, whenever necessary and appropriate, to
+         assign a record set type to a Record Set, using the
+         rico:hasRecordSetType object property, or its inverse one. Each
+         concept is both defined as a skos:Concept and a rico:RecordSetType, so that it is
+         possible to extend the classic definition of such concepts using RiC-O properties. For
+         example, you can use rico:history, rico:date, or rico:isAssociatedWithPlace,
+         rico:precedesInTime, if you consider a record set type as being a historical
+         entity, known and used in some known space or time region.</skos:scopeNote>
+      <skos:hasTopConcept
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
+      <skos:hasTopConcept
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"
+      />
+      <skos:hasTopConcept rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+      <skos:hasTopConcept rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord -->
    <owl:NamedIndividual
@@ -25458,8 +25598,9 @@
          entity.</skos:definition>
       <skos:inScheme
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
-      <skos:prefLabel xml:lang="en">Authority record</skos:prefLabel>
-   </owl:NamedIndividual>
+      <skos:topConceptOf
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+      </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid -->
    <owl:NamedIndividual
       rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid">
@@ -25483,6 +25624,8 @@
       <skos:definition xml:lang="en">This documentary form type can be used for records that
          aggregate and organizes metadata on some record(s) or record set(s).</skos:definition>
       <skos:inScheme
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+      <skos:topConceptOf
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection -->
@@ -25509,7 +25652,8 @@
          of some common characteristic without regard to the provenance of those documents. Not to
          be confused with an archival fonds. (From ICA ISAD(G))</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-      <skos:prefLabel xml:lang="en">collection</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+      
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File -->
    <owl:NamedIndividual
@@ -25536,7 +25680,8 @@
          to the same subject, activity, or transaction. A file is usually the basic unit within a
          record series. (From ICA ISAD(G))</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-      <skos:prefLabel xml:lang="en">file</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+     
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds -->
    <owl:NamedIndividual
@@ -25563,7 +25708,7 @@
          corporate body in the course of that creator's activities and functions. (From ICA
          ISAD(G))</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-      <skos:prefLabel xml:lang="en">fonds</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series -->
    <owl:NamedIndividual
@@ -25591,7 +25736,7 @@
          out of their creation, receipt, or use. A series is also known as a records series. (From
          ICA ISAD(G))</skos:definition>
       <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-      <skos:prefLabel xml:lang="en">series</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
    </owl:NamedIndividual>
 </rdf:RDF>
 <!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
