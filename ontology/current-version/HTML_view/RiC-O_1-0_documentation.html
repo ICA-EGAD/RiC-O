@@ -118,15 +118,16 @@
                     h2,
                     h3,
                     h4,
-                    h5,
-                    h6 {
+                    h5
+                    {
                         text-align: left;
                     }
                     h1,
                     h2,
                     h3,
                     h4,
-                    h5 {
+                    h5,
+                    h6{
                         color: #005A9C;
                     }
                     h1.title {
@@ -146,10 +147,11 @@
                     }
                     h5 {
                         font: italic 100% sans-serif;
-                        font-weight: bold; /*border-bottom: 1px solid #005A9C;*/
+                        font-weight: bold; 
                     }
                     h6 {
-                        font: small-caps 100% sans-serif;
+                    font-weight: bold;
+                    font: normal 100% sans-serif;
                     }
                     .hide {
                         display: none;
@@ -232,7 +234,7 @@
       <div id="metadata">
          <h3>Ontology metadata</h3>
          <p>
-            <span class="metadata_label">This version</span>: <strong>Version 1.0 - 2023-12-28.</strong>
+            <span class="metadata_label">This version</span>: <strong>Version 1.0 - 2023-12-29.</strong>
          </p>
          <p>See also the project on GitHub, where other resources can be
                         found: <a href="https://github.com/ICA-EGAD/RiC-O" target="_blank">https://github.com/ICA-EGAD/RiC-O</a>, and the accompanying website (<a href="https://ica-egad.github.io/RiC-O/" target="_blank">https://ica-egad.github.io/RiC-O/</a>).</p>
@@ -282,7 +284,7 @@
                publishing RDF datasets as Linked Data, querying them using SPARQL, and making
                inferences.</p>
          </div>
-         <div>
+         <div id="history-note">
             <h4>History note</h4>
             <p>A first beta version of RiC-O was developed in 2017 and used by the National
                   Archives of France for building a proof of concept (<a href="https://piaaf.demo.logilab.fr" target="_blank">https://piaaf.demo.logilab.fr</a>).</p>
@@ -352,21 +354,21 @@
                      it is now possible, for instance, to specify that a <a href="#Record">rico:Record</a> is included indirectly in a <a href="#RecordSet">rico:RecordSet</a> such as a fonds, using
                         <a href="#isIncludedInTransitive">rico:isIncludedInTransitive</a>, or to infer this relation, which is
                      the super property of the new <a href="#isDirectlyIncludedIn">rico:isDirectlyIncludedIn</a> property. <strong>The addition of
-                        such transitive properties concerned partitive (sub-properties of
-                           <a href="#hasOrHadPart">rico:hasOrHadPart</a>), sequential (sub-properties of <a href="#precedesOrPreceded">rico:precedesOrPreceded</a>)
-                           and authority (sub-properties of <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>)
-                        relations</strong>, and the inverse properties. It was accompanied by
-                     the creation of properties specifying past relations. <br/> Finally,
-                        <strong>in order to simplify their maintenance, the n-ary Relation
-                        classes were rolified</strong>. 48 new reflexive object properties were
-                     created to do this, such as for example <a href="#leadershipRelation_role">rico:leadershipRelation_role</a>;
-                     the definition of n-ary Relation classes (such as <a href="#LeadershipRelation">rico:LeadershipRelation</a>) was
-                     revised to introduce an equivalence with these properties when they have the
-                     same source and the same target, and the chain property axioms of the
-                     corresponding binary properties (such as <a href="#hasOrHadLeader">rico:hasOrHadLeader</a>) were revised. 166 object properties, which
-                     existed in RiC-O 0.2 and were specific to each of the n-ary relations, could
-                     then be deleted. A full accounting of the rolification of n-ary relations may
-                     be found at <a href="https://github.com/ICA-EGAD/RiC-O/issues/67" target="_blank">https://github.com/ICA-EGAD/RiC-O/issues/67</a>).</li>
+                        such transitive properties concerned partitive (sub-properties of <a href="#hasOrHadPart">rico:hasOrHadPart</a>), sequential
+                        (sub-properties of <a href="#precedesOrPreceded">rico:precedesOrPreceded</a>) and authority (sub-properties of
+                           <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>) relations</strong>, and the
+                     inverse properties. It was accompanied by the creation of properties specifying
+                     past relations. <br/> Finally, <strong>in order to simplify their
+                        maintenance, the n-ary Relation classes were rolified</strong>. 48 new
+                     reflexive object properties were created to do this, such as for example
+                        <a href="#leadershipRelation_role">rico:leadershipRelation_role</a>; the definition of n-ary Relation
+                     classes (such as <a href="#LeadershipRelation">rico:LeadershipRelation</a>) was revised to introduce an equivalence
+                     with these properties when they have the same source and the same target, and
+                     the chain property axioms of the corresponding binary properties (such as
+                        <a href="#hasOrHadLeader">rico:hasOrHadLeader</a>) were
+                     revised. 166 object properties, which existed in RiC-O 0.2 and were specific to
+                     each of the n-ary relations, could then be deleted. A full accounting of the
+                     rolification of n-ary relations may be found at <a href="https://github.com/ICA-EGAD/RiC-O/issues/67" target="_blank">https://github.com/ICA-EGAD/RiC-O/issues/67</a>).</li>
             </ul>
             <p>RiC-O 1.0 therefore presents itself as an ontology that is <strong>more
                      compact than RiC-O 0.2, while being richer, technically opening up new
@@ -380,10 +382,9 @@
                   to this translation work.</p>
             <p>Various bugs have been fixed and the OWL file has been systematically reread
                   many times.</p>
-            <p>A running list of changes since v0.1 may be found in <a href="#appendix-I">Appendix I</a>.
-                     <strong>Note that from October 2020 any change on a component is described
-                     and dated in the specification of this component, using
-                     skos:changeNote</strong>.</p>
+            <p>A running list of changes since v0.1 may be found in <a href="#appendix-I">Appendix I</a>. <strong>Note that from October
+                     2020 any change on a component is described and dated in the specification of
+                     this component, using skos:changeNote</strong>.</p>
          </div>
          <p>
             <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -472,7 +473,7 @@
          </p>
          <div id="design-principles">
             <h4>RiC-O design principles</h4>
-            <p>The following design principles were followed when developing RiC-O. </p>
+            <p>The following design principles were followed when developing RiC-O.</p>
             <p>
                <strong>1. RiC-O is a domain and reference ontology</strong>.</p>
             <p>RiC-O provides <strong>a generic vocabulary and formal rules for
@@ -482,7 +483,7 @@
                   querying them using SPARQL, and making inferences using the logic of the
                   ontology.</p>
             <p>While some projects have built some specific ontologies for describing
-                  archives, at this time no generic domain ontology exists for the specific needs of
+                  archives, in 2013 no generic domain ontology existed for the specific needs of
                   the archival community. This is why EGAD decided to develop RiC-O as a part of RiC
                   standard.</p>
             <p>Apart from this first, main target, <strong>RiC-O, as a technical
@@ -512,7 +513,7 @@
                   RDF datasets conforming to RiC-O with other datasets, or for using parts of RiC-O
                   in other contexts than the archival or records management realm.</p>
             <p>
-               <strong>2. RiC-O must be immediately usable.</strong>
+               <strong>2. RiC-O is immediately usable.</strong>
             </p>
             <p>
                <strong>This is a key feature</strong>. <strong>Metadata
@@ -539,7 +540,7 @@
                   documented extensively. The documentation will be reviewed and updated on a
                   continuing basis.</p>
             <p>
-               <strong>3. RiC-O has to provide a flexible framework</strong>.</p>
+               <strong>3. RiC-O provides a flexible framework</strong>.</p>
             <p>
                <strong>This is a very important principle too</strong>. It is related
                   with the usability principle quoted above. Moreover, <strong>archival
@@ -556,9 +557,8 @@
                   superclass, more general or generic than its subproperties or subclasses, must
                   exist and be available for handling information, while at the same time more
                   accurate subcomponents must be there for handling more accurate description. Also,
-                  RiC-O should provide several methods for expressing whether relations are well
-                  attested and certain, or are more vague, as well as direct and short paths between
-                  entities alongside more complex ones.</p>
+                  RiC-O provides methods for describing relations as full entities, as well as direct and short paths between
+                  entities.</p>
             <p>
                <strong>4. RiC-O opens new potential for archival description.</strong>
             </p>
@@ -574,7 +574,7 @@
                   means that institutions or projects that invest in the implementation of RiC-O
                   will be able to query their data in ways not possible with the previous ICA
                   standards, and will get new insight into the content and context of their archives
-                  that wasn't visible with the existing ICA-standards. What is more, repositories
+                  that wasn’t visible with the existing ICA-standards. What is more, repositories
                   using RiC-O may infer new assertions from the RDF datasets and link them to other
                   resources outside their institution, thereby amplifying the query and inferencing
                   possibilities manifold.</p>
@@ -583,10 +583,15 @@
             </p>
             <p>Institutions with descriptive needs beyond what RiC-O provides out-of-the-box
                   have the option of extending the ontology by adding new subclasses or
-                  subproperties as needed. Also, the concepts defined in existing SKOS vocabularies (e.g. a list of documentary form types) can also be connected to RiC-O based graphs (using the *Type classes and properties which are in the domain or range of these classes).</p>
-            <p>RiC-O has also the potential to be usable in other
-                  contexts than purely archival ones. It can be used to “hook” archival description
-                  to descriptive metadata in other domains (e.g. bibliographic or museum metadata). As said above, alignment with other models will be undertaken by EGAD in a future revision cycle, facilitating such connections.</p>
+                  subproperties as needed. Also, the concepts defined in existing SKOS vocabularies
+                  (e.g. a list of documentary form types) can also be connected to RiC-O based
+                  graphs (using the *Type classes, and properties which are in the domain or range of
+                  these classes).</p>
+            <p>RiC-O has also the potential to be usable in other contexts than purely
+                  archival ones. It can be used to “hook” archival description to descriptive
+                  metadata in other domains (e.g. bibliographic or museum metadata). As said above,
+                  alignment with other models will be undertaken by EGAD in a future revision cycle,
+                  facilitating such connections.</p>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
             </p>
@@ -595,26 +600,31 @@
             <h4>Understanding RiC-O: a quick overview of some features</h4>
             <div id="fromRiCCM-to-RiCO">
                <h5>From RiC-CM to RiC-O</h5>
-               <p>
-                  <strong>1. RiC-O classes</strong>
-               </p>
-               <p>
-                  <strong>Each RiC-CM entity has a corresponding class in RiC-O</strong>. These classes are organized according to the same hierarchy as in RiC-CM. Some projects may need very few of them (e.g. Agent, Record Resource and Activity only), while others may need more (e.g. Corporate Body and Person; Record; Place; Organic Provenance Relation).</p>
-               <p>
-                  <strong>Many classes only exist in RiC-O and not in RiC-CM</strong>. These additional
-                     classes address special needs:</p>
-               <ul>
-                  <li>
-                     <strong>some correspond to RiC-CM attributes</strong>, when it may be considered
-                        necessary to handle them as full entities. This is the case for <a href="#Type">Type</a> and its subclasses, that correspond to
-                        RiC-CM attributes that contain controlled values, and that can help to
-                        articulate RiC-O with external RDF resources like SKOS vocabularies; and
-                        also for <a href="#Language">Language</a>, <a href="#Name">Name</a> and <a href="#Identifier">Identifier</a>, that can be considered as full entities and as key
+               <div id="RiC-O_classes">
+                  <h6>1. RiC-O classes</h6>
+                  <p>
+                     <strong>Each RiC-CM entity has a corresponding class in
+                        RiC-O</strong>. These classes are organized according to the same
+                     hierarchy as in RiC-CM. Some projects may need very few of them (e.g. Agent,
+                     Record Resource and Activity only), while others may need more (e.g. Corporate
+                     Body and Person; Record; Place; Organic Provenance Relation).</p>
+                  <p>
+                     <strong>Many classes only exist in RiC-O and not in
+                        RiC-CM</strong>. These additional classes address special
+                     needs:</p>
+                  <ul>
+                     <li>
+                        <strong>some correspond to RiC-CM attributes</strong>, when
+                        it may be considered necessary to handle them as full entities. This is the
+                        case for <a href="#Type">Type</a> and its subclasses, that
+                        correspond to RiC-CM attributes that contain controlled values, and that can
+                        help to articulate RiC-O with external RDF resources like SKOS vocabularies;
+                        and also for <a href="#Language">Language</a>, <a href="#Name">Name</a> and <a href="#Identifier">Identifier</a>, that can be considered as full entities and as key
                         linking nodes in a RDF graph. All these classes have been grouped under a
                            <a href="#Concept">Concept</a> class. </li>
-                  <li>
-                     <strong>some classes have been added in order to provide a more accurate
-                        definition and model for some entities</strong>. <a href="#Place">Place</a> thus comes along with a <a href="#PhysicalLocation">Physical Location class</a>, and with
+                     <li>
+                        <strong>some classes have been added in order to provide a more
+                           accurate definition and model for some entities</strong>. <a href="#Place">Place</a> thus comes along with a <a href="#PhysicalLocation">Physical Location class</a>, and with
                         a <a href="#Coordinates">Coordinates class</a>. A Place is
                         considered both a geographical and historical entity. As a historical
                         entity, among other features, it has a history, and may be preceded or
@@ -626,28 +636,29 @@
                         of such an addition is the <a href="#Proxy">Proxy class</a>,
                         that represents (stands for) a Record Resource as it exists in a specific
                         Record Set.</li>
-                  <li>
-                     <strong>finally, a system of n-ary classes helps to implement the Relations section
-                        of RiC-CM</strong>. While these relations also are represented as simple,
-                        binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a> that corresponds to RiC-R026 relation),
-                        you may need to assign different attributes to a relation, e.g. a date,
-                        certainty or description, as it is already possible, and quite often done,
-                        in a XML/EAC-CPF file. One of the standard available methods for
-                        representing such a documented relation in RDF for now is to use a class.
-                        The RDF-star specification, which is being developed by the W3C RDF-DEV
-                        Community Group, provides a far simpler method (allowing to consider a
-                        triple as the subject or object of another triple; see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being used by
-                        some tools; however it is not yet a complete W3C standard. Thus, for example, in
-                        RiC-O a <a href="#OrganicProvenanceRelation">OrganicProvenanceRelation class</a> exists. This class may connect
+                     <li>
+                        <strong>finally, a system of n-ary classes helps to implement the
+                           Relations section of RiC-CM</strong>. While these relations also are
+                        represented as simple, binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a> that
+                        corresponds to RiC-R026 relation), you may need to assign different
+                        attributes to a relation, e.g. a date, certainty or description, as it is
+                        already possible, and quite often done, in a XML/EAC-CPF file. One of the
+                        standard available methods for representing such a documented relation in
+                        RDF for now is to use a class. The RDF-star specification, which is being
+                        developed by the W3C RDF-DEV Community Group, provides a far simpler method
+                        (allowing to consider a triple as the subject or object of another triple;
+                        see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being used by
+                        some tools; however it is not yet a complete W3C standard. Thus, for
+                        example, in RiC-O a <a href="#OrganicProvenanceRelation">OrganicProvenanceRelation class</a> exists. This class may connect
                         one to many Agents to one to many created or accumulated Record Resources or
                         Instantiations, and has some specific object properties (certainty, date,
                         description, source). Back to the <a href="#hasOrganicProvenance">hasOrganicProvenance</a> object property, let us add that it is
                         formally defined in RiC-O, using OWL 2 property chain axiom (see <a href="https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion"
-                        target="_blank">https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion</a>),
+                           target="_blank">https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion</a>),
                         as a ‘shortcut’ for the longer path
                         ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
                         where the intermediate node is an instance of OrganicProvenanceRelation:<br/>
-                     <code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
+                        <code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
                            <br/> &lt;rdf:Description
                            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
                            <br/> &lt;rdf:Description
@@ -655,57 +666,62 @@
                            <br/> &lt;rdf:Description
                            rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
                            <br/> &lt;/owl:propertyChainAxiom&gt; </code>
-                     <br/>A triplestore, with the appropriate configuration, may thus infer
+                        <br/>A triplestore, with the appropriate configuration, may thus infer
                         the direct ‘hasOrganicProvenance’ assertion from this long path.</li>
-               </ul>
-               <p>
-                  <strong>2. RiC-O datatype properties (relations whose object is a litteral) and RiC-CM attributes</strong>
-               </p>
-               <p>
-                  <strong>Most of the datatype properties in RiC-O
-                     correspond to RiC-CM attributes that contain free, plain text</strong>.
-                     See for example <a href="#generalDescription">rico:generalDescription</a>, <a href="#history">rico:history</a> and <a href="#scopeAndContent">rico:scopeAndContent</a>.</p>
-               <p>In addition to these datatype properties, <strong>the Name and Identifier RiC-CM
-                     attributes also have corresponding classes</strong> (subclasses of <a href="#Appellation">rico:Appellation</a>). A resource may have
-                     several Identifiers and each comes with different attributes (e.g. archival
-                     reference code, system number, digital object identifier), in this case the
-                     identifiers will be modelled in a class. In many simpler usecases it's
-                     sufficent to just use the <a href="#identifier">identifier datatype
-                        property</a>, typically for the archival reference code.</p>
-               <p>The Location RiC-CM attribute also has a <a href="#PhysicalLocation">rico:Physical Location</a>  corresponding
-                     class (for users who want to use Place, Physical Location and
-                     Coordinates for handling places).</p>
-               <p>As already said too, every RiC-CM attribute that has ‘controlled value’ or
+                  </ul>
+                  <p>
+                     <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+                  </p>
+               </div>
+               <div id="RiC-O_datatype-properties">
+                  <h6>2. RiC-O datatype properties (relations whose object is a
+                        litteral) and RiC-CM attributes</h6>
+                  <p>
+                     <strong>Most of the datatype properties in RiC-O correspond to RiC-CM
+                        attributes that contain free, plain text</strong>. See for example
+                        <a href="#generalDescription">rico:generalDescription</a>,
+                        <a href="#history">rico:history</a> and <a href="#scopeAndContent">rico:scopeAndContent</a>.</p>
+                  <p>In many simple usecases it’s sufficent to just use the <a href="#identifier">rico:identifier</a> or <a href="#name">rico:name</a> datatype properties. However, in
+                     addition to these datatype properties, the Name and Identifier
+                        RiC-CM attributes also have corresponding classes (subclasses
+                     of <a href="#Appellation">rico:Appellation</a>). A resource may
+                     have several Identifiers (e.g. archival reference code, system number, digital
+                     object identifier) or Names and each comes with different attributes; in this
+                     case instances of classes are needed.</p>
+                  <p>The Location RiC-CM attribute also has a <a href="#PhysicalLocation">rico:Physical Location</a> corresponding
+                     class (for users who want to use Place, Physical Location and Coordinates for
+                     handling places).</p>
+                  <p>As already said too, every RiC-CM attribute that has ‘controlled value’ or
                      ‘rule-based’ as a schema value, has a class as corresponding component in
-                     RiC-O. <strong>For these CM attributes that correspond to a RiC-O class, as it is
-                     necessary to provide an immediately usable ontology, two supplementary datatype
-                     properties exist that allow not to use the classes, at least for a while, if
-                     you want to implement RiC-O and create RiC-O/RDF datasets from existing
-                     archival metadata without being able to handle URIs for the information you
-                     have</strong>.</p>
-               <p>For example, you may not be able to handle and maintain URIs for some
+                     RiC-O. <strong>However, for these CM attributes that correspond to a RiC-O
+                        class, as it is necessary to provide an immediately usable ontology, two
+                        supplementary datatype properties exist that allow not to use the classes,
+                        at least for a while, if you want to implement RiC-O and create RiC-O/RDF
+                        datasets from existing archival metadata without being able to handle URIs
+                        for the information you have</strong>.</p>
+                  <p>For example, you may not be able to handle and maintain URIs for some
                      controlled values you use in EAD finding aids for carrier types: maybe your
                      information system does not use a vocabulary for this, and you cannot for a
                      while consider these carrier types as full entities. Nevertheless you want to
                      produce RiC-O datasets where every piece of information is kept, and you want
                      to avoid blank nodes. If RiC-O would only provide the Carrier Type class, it
-                     would be an issue for you. So RiC-O provides a <a href="#type">rico:type datatype property</a>, with range rdfs:literal, which allows
-                     you to move forward.</p>
-               <p>Therefore, for the RiC-CM *Type attributes, you have a corresponding
-                        <a href="#type">rico:type datatype property</a>. For RiC-CM
-                     Coordinates attribute, you also have <a href="#geographicalCoordinates">rico:geographicalCoordinates</a>  datatype
-                     property.</p>
-               <p>These datatype properties have a skos:scopeNote which says (for example)
+                     would be an issue for you.</p>
+                  <p>So RiC-O provides a <a href="#type">rico:type</a> datatype
+                     property, with range rdfs:literal, which allows you to move forward. For RiC-CM
+                     Coordinates attribute, you also have the <a href="#geographicalCoordinates">rico:geographicalCoordinates</a>
+                     datatype property.</p>
+                  <p>These datatype properties have a skos:scopeNote which says (for example)
                      "Provided for usability reasons. May be made deprecated or removed later on.
-                     Use only if you don't use Physical Location and Coordinates classes with
+                     Use only if you don’t use Physical Location and Coordinates classes with
                      Place."</p>
-               <p>
-                  <strong>The same key design principle (RiC-O must be immediately usable) led us to
-                     define some datatype properties that would enable users to use RiC-O in simple
-                     usecases where they do not want to consider dates and rules as full entities</strong>.
-                     Thus, there of course is Date and Rule classes in RiC-O (since there are Date
-                     and Rule entities in RiC-CM). And <strong>you also have 'date' datatype properties;
-                        plus a <a href="#ruleFollowed">rico:ruleFollowed</a>  datatype
+                  <p>
+                     <strong>The same key design principle (RiC-O must be immediately
+                        usable) led us to define some datatype properties that would enable users to
+                        use RiC-O in simple usecases where they do not want to consider dates and
+                        rules as full entities</strong>. Thus, there of course is Date and Rule
+                     classes in RiC-O (since there are Date and Rule entities in RiC-CM). And
+                        <strong>you also have a <a href="#date">rico:date</a>
+                        datatype property, which has several subproperties; plus a <a href="#ruleFollowed">rico:ruleFollowed</a> datatype
                         property</strong>. The same analysis led us to keep the <a href="#history">rico:history</a> datatype property in RiC-O (same
                      as RiC-CM history attribute), while RiC-CM and RiC-O also provide the <a href="#Event">Event</a> class, and using a series of Events may of
                      course be a better method, easier to query, link and display, than simply using
@@ -713,67 +729,104 @@
                      same dataset by an institution that, for example, would decide to emphasize
                      only the accession, appraisal and description events among the whole history of
                      Record Resources.</p>
-               <p>These datatype properties have the same kind of skos:scopeNote as
+                  <p>These datatype properties have the same kind of skos:scopeNote as
                      above.</p>
-               <p>Finally, <strong>we have introduced a few datatype properties that do not
-                     correspond to any RiC-CM attribute</strong>.</p>
-               <p>Some are superproperties, and thus group datatype properties (<a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>,
+                  <p>Finally, <strong>we have introduced a few datatype properties that do
+                        not correspond to any RiC-CM attribute</strong>.</p>
+                  <p>Some are superproperties, and thus group datatype properties: <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>,
                      with rico:carrierExtent, rico:instantiationExtent and rico:recordResourceExtent
-                     as subproperties; <a href="#textualValue">rico:textualValue</a>, with rico:expressedDate and rico:normalizedValue
-                     as subproperties; <a href="#measure">rico:measure</a> (and its
-                     subproperties); <a href="#referenceSystem">rico:referenceSystem</a>.</p>
-               <p>Some are simply more specific properties: <a href="#accrualsStatus">rico:accrualsStatus</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a>
+                     as subproperties; <a href="#textualValue">rico:textualValue</a>,
+                     with rico:expressedDate, rico:normalizedValue and rico:quantity as
+                     subproperties; <a href="#measure">rico:measure</a>; <a href="#referenceSystem">rico:referenceSystem</a>.</p>
+                  <p>Some are simply more specific properties: <a href="#accrualsStatus">rico:accrualsStatus</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a>
                      and <a href="#instantiationStructure">rico:instantiationStructure</a>, subproperties of rico:structure;
                         <a href="#title">rico:title</a> (subproperty of rico:name);
-                     rico:altitude, rico:latitude, rico:longitude (subproperties of <a href="#measure">rico:measure</a>),
-                     rico:geodesicSystem and rico:altimetricSystem (subproperties of
-                     <a href="#referenceSystem">rico:referenceSystem</a>).</p>
-               <p>
-                  <strong>3. RiC-O object properties (relations between two entities)</strong>
-               </p>
-               <p>In order to connect all the classes created, <strong>a significant
-                     number of object properties have been defined, including a number of transitive and reflexive properties as mentioned in the history note above.</strong> While their
-                     'flat' list is a long one, they are grouped hierarchically, so that one can use
-                     the upper to intermediate level ones for simplicity sake, or choose the most
-                     accurate and expressive ones, or extend the system adding a subproperty easily.
-                     It is expected that, in most use cases, a subset of these properties only will
-                     be needed. As already said above, some of the object properties are also
-                     formally defined as shortcuts (they can be inferred if you create triples that include instances of the Relation classes).</p>
-               <p>
-                  <strong>4. Named Individuals</strong>
-               </p>
-               <p>RiC-O adds six individuals to address current and frequent needs</p>
-               <ul>
-                  <li>
-                     <a href="#FindingAid">FindingAid</a> and <a href="#AuthorityRecord">AuthorityRecord</a>, which are instances of both
-                        RiC-O Documentary Form Type and SKOS Concept. They can be used for
+                     rico:altitude, rico:height, rico:latitude, rico:length, rico:longitude,
+                     rico:width (subproperties of <a href="#measure">rico:measure</a>), rico:geodesicSystem and rico:altimetricSystem
+                     (subproperties of <a href="#referenceSystem">rico:referenceSystem</a>).</p>
+                  <p>
+                     <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+                  </p>
+               </div>
+               <div id="RiC-O_object-properties">
+                  <h6>3. RiC-O object properties (relations between two entities)</h6>
+                  <p>In order to connect all the classes created, <strong>a significant
+                        number of object properties have been
+                        defined.</strong>
+                  </p>
+                  <p>While the 'flat' list of object properties is a long one,
+                           <strong>the object properties are grouped hierarchically</strong>, so that one can
+                           use the upper to intermediate level ones for simplicity sake, or choose the
+                           most accurate and expressive ones, or extend the system adding a subproperty
+                           easily. It is expected that, in most use cases, a subset of these properties
+                           only will be needed.</p>
+                  <p>Below we just give a few details on certain specific sets of properties.</p>
+                  <p>While in RiC-CM it was not possible to achieve such a level of precision
+                     with simple attributes, <strong>RiC-O includes object properties to assert
+                        that a <a href="#RecordSet">rico:RecordSet</a> has or had
+                        members (either all of them, or some of them) that share some
+                        characteristics</strong>, i.e. Language, ContentType,
+                     DocumentaryFormType, LegalStatus, or RecordState. See for example <a href="#hasOrHadAllMembersWithCategory">rico:hasOrHadAllMembersWithCategory</a>, and its
+                     subproperties.</p>
+                  <p>
+                     <strong>Some of the object properties are formally defined as
+                        shortcuts</strong>: they can be inferred if you create triples that
+                     include instances of the Relation classes. See the example explained above in
+                     the <a href="#RiC-O_classes">section dedicated to classes</a>.</p>
+                  <p>
+                     <strong>Many properties, new in RiC-O 1.0, are transitive or
+                        reflexive</strong>, as explained in the <a href="#history-note">history note</a> above.</p>
+                  <p>
+                     <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+                  </p>
+               </div>
+               <div id="named-individuals">
+                  <h6>4. Named Individuals</h6>
+                  <p>RiC-O adds six individuals to address current and frequent needs:</p>
+                  <ul>
+                     <li>
+                        <a href="#FindingAid">FindingAid</a> and <a href="#AuthorityRecord">AuthorityRecord</a>, which are instances of
+                        both RiC-O Documentary Form Type and SKOS Concept. They can be used for
                         categorizing Records, finding aids and authority records being considered as
-                        Records. For example, a Record with Documentary Form Type ‘Finding Aid’ may be connected to one to many Record Resources using the 'rico:describes’ object property. </li>
-                  <li>
-                     <a href="#Fonds">Fonds</a>, <a href="#Series">Series</a>, <a href="#File">File</a>, and <a href="#Collection">Collection</a> are instances of both Record
-                        Set Type class and skos:Concept. Their definition is taken from the
-                        ISAD(G) glossary. They can be used for categorizing Record Sets.</li>
-               </ul>
-               <p>We expect other categories to be defined by the archival community as RiC-O matures, forming rich, hopefully multilingual, SKOS vocabularies that support rich description (for example, allowing an instance of the <a href="#DocumentaryFormType">Documentary Form Type class</a> to have a history and temporal relations to other documentary form types).</p>
-               <p>
-                  <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
-               </p>
+                        Records. For example, a Record with Documentary Form Type ‘Finding Aid’ may
+                        be connected to one to many Record Resources using the 'rico:describes’
+                        object property. </li>
+                     <li>
+                        <a href="#Fonds">Fonds</a>, <a href="#Series">Series</a>, <a href="#File">File</a>, and <a href="#Collection">Collection</a> are instances of both Record Set
+                        Type class and skos:Concept. Their definition is taken from the ISAD(G)
+                        glossary. They can be used for categorizing Record Sets.</li>
+                  </ul>
+                  <p>We expect other categories to be defined by the archival community as
+                     RiC-O matures, forming rich, hopefully multilingual, SKOS vocabularies that
+                     support rich description (for example, allowing an instance of the <a href="#DocumentaryFormType">Documentary Form Type class</a> to
+                     have a history and temporal relations to other documentary form
+                     types).</p>
+                  <p>
+                     <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+                  </p>
+               </div>
             </div>
             <div id="RiCO-documentation">
                <h5>RiC-O documentation and annotation properties</h5>
-               <p>Each class or property has an English, a French and a Spanish label (rdfs:label), and a description (rdfs:comment). Some also have a
-                     skos:scopeNote or a skos:example.</p>
-               <p>When a RiC-O class or property corresponds to a RiC-CM component in any way, its description and scope note are either the same as or derived from their RiC-CM  definition and scope note.</p>
-               <p>RiC-O provides two annotation properties (subproperties of rdfs:comment) for handling:</p>
+               <p>Each class or property has an English, a French and a Spanish label
+                     (rdfs:label), and a description (rdfs:comment). Some also have a skos:scopeNote
+                     or a skos:example.</p>
+               <p>When a RiC-O class or property corresponds to a RiC-CM component in any
+                     way, its description and scope note are either the same as or derived from
+                     their RiC-CM definition and scope note.</p>
+               <p>RiC-O provides two annotation properties (subproperties of rdfs:comment)
+                     for handling:</p>
                <ul>
                   <li>information about the corresponding RiC-CM component when applicable
                            (<a href="#RiCCMCorrespondingComponent">rico:RiCCMCorrespondingComponent</a>). Various phrasings are used
                         in this property depending on the rule applied for defining the RiC-CM
                         component.</li>
-                  <li>information about possible mappings
-                        with other models or ontologies (<a href="#closeTo">rico:closeTo</a>, rarely used in this 0.1 version)).</li>
+                  <li>information about possible mappings with other models or ontologies
+                           (<a href="#closeTo">rico:closeTo</a>, rarely used in this
+                        1.0 version)).</li>
                </ul>
-               <p>Any change in the definition of a class or property made since December 2019 is documented using a skos:changeNote.</p>
+               <p>Any change in the definition of a class or property made since December
+                     2019 is documented using a skos:changeNote.</p>
                <p>
                   <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
                </p>
@@ -1207,13 +1260,13 @@
             <dl>
                <dt>Is in domain of</dt>
                <dd>
-                  <a href="#agentHasOrHadLocation">rico:agentHasOrHadLocation</a>; <a href="#authorizedBy">rico:authorizedBy</a>; <a href="#authorizingMandate">rico:authorizingMandate</a>; <a href="#hadSubordinate">rico:hadSubordinate</a>; <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a>; <a href="#hasOrHadAgentName">rico:hasOrHadAgentName</a>; <a href="#hasOrHadAuthorityOver">rico:hasOrHadAuthorityOver</a>; <a href="#hasOrHadController">rico:hasOrHadController</a>; <a href="#hasOrHadJurisdiction">rico:hasOrHadJurisdiction</a>; <a href="#hasOrHadLanguage">rico:hasOrHadLanguage</a>; <a href="#hasOrHadLegalStatus">rico:hasOrHadLegalStatus</a>; <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>; <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a>; <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a>; <a href="#hasSuccessor">rico:hasSuccessor</a>; <a href="#history">rico:history</a>; <a href="#isAccumulatorOf">rico:isAccumulatorOf</a>; <a href="#isAddresseeOf">rico:isAddresseeOf</a>; <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a>; <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a>; <a href="#isAuthorizingAgentInMandateRelation">rico:isAuthorizingAgentInMandateRelation</a>; <a href="#isCollectorOf">rico:isCollectorOf</a>; <a href="#isCreatorOf">rico:isCreatorOf</a>; <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a>; <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a>; <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a>; <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a>; <a href="#isOrWasResponsibleForEnforcing">rico:isOrWasResponsibleForEnforcing</a>; <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a>; <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a>; <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a>; <a href="#isPublisherOf">rico:isPublisherOf</a>; <a href="#isReceiverOf">rico:isReceiverOf</a>; <a href="#isResponsibleForIssuing">rico:isResponsibleForIssuing</a>; <a href="#isSenderOf">rico:isSenderOf</a>; <a href="#isSourceOf">rico:isSourceOf</a>; <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a>; <a href="#isSuccessorOf">rico:isSuccessorOf</a>; <a href="#performsOrPerformed">rico:performsOrPerformed</a>; <a href="#wasSubordinateTo">rico:wasSubordinateTo</a>
+                  <a href="#agentHasOrHadLocation">rico:agentHasOrHadLocation</a>; <a href="#authorizedBy">rico:authorizedBy</a>; <a href="#authorizingMandate">rico:authorizingMandate</a>; <a href="#hadSubordinate">rico:hadSubordinate</a>; <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a>; <a href="#hasOrHadAgentName">rico:hasOrHadAgentName</a>; <a href="#hasOrHadAuthorityOver">rico:hasOrHadAuthorityOver</a>; <a href="#hasOrHadController">rico:hasOrHadController</a>; <a href="#hasOrHadJurisdiction">rico:hasOrHadJurisdiction</a>; <a href="#hasOrHadLanguage">rico:hasOrHadLanguage</a>; <a href="#hasOrHadLegalStatus">rico:hasOrHadLegalStatus</a>; <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>; <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a>; <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a>; <a href="#hasSuccessor">rico:hasSuccessor</a>; <a href="#history">rico:history</a>; <a href="#isAccumulatorOf">rico:isAccumulatorOf</a>; <a href="#isAddresseeOf">rico:isAddresseeOf</a>; <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a>; <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a>; <a href="#isAuthorizingAgentInMandateRelation">rico:isAuthorizingAgentInMandateRelation</a>; <a href="#isCollectorOf">rico:isCollectorOf</a>; <a href="#isCreatorOf">rico:isCreatorOf</a>; <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a>; <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a>; <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a>; <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a>; <a href="#isOrWasResponsibleForEnforcing">rico:isOrWasResponsibleForEnforcing</a>; <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a>; <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a>; <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a>; <a href="#isPublisherOf">rico:isPublisherOf</a>; <a href="#isReceiverOf">rico:isReceiverOf</a>; <a href="#isResponsibleForIssuing">rico:isResponsibleForIssuing</a>; <a href="#isSenderOf">rico:isSenderOf</a>; <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a>; <a href="#isSuccessorOf">rico:isSuccessorOf</a>; <a href="#performsOrPerformed">rico:performsOrPerformed</a>; <a href="#wasSubordinateTo">rico:wasSubordinateTo</a>
                </dd>
             </dl>
             <dl>
                <dt>Is in range of</dt>
                <dd>
-                  <a href="#authorizes">rico:authorizes</a>; <a href="#authorizingAgent">rico:authorizingAgent</a>; <a href="#hadSubordinate">rico:hadSubordinate</a>; <a href="#hasAccumulator">rico:hasAccumulator</a>; <a href="#hasAddressee">rico:hasAddressee</a>; <a href="#hasCollector">rico:hasCollector</a>; <a href="#hasCreator">rico:hasCreator</a>; <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a>; <a href="#hasOrHadController">rico:hasOrHadController</a>; <a href="#hasOrHadHolder">rico:hasOrHadHolder</a>; <a href="#hasOrHadManager">rico:hasOrHadManager</a>; <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>; <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a>; <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a>; <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a>; <a href="#hasPublisher">rico:hasPublisher</a>; <a href="#hasReceiver">rico:hasReceiver</a>; <a href="#hasSender">rico:hasSender</a>; <a href="#hasSource">rico:hasSource</a>; <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a>; <a href="#hasSuccessor">rico:hasSuccessor</a>; <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a>; <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a>; <a href="#isOrWasAgentNameOf">rico:isOrWasAgentNameOf</a>; <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a>; <a href="#isOrWasEnforcedBy">rico:isOrWasEnforcedBy</a>; <a href="#isOrWasJurisdictionOf">rico:isOrWasJurisdictionOf</a>; <a href="#isOrWasLanguageOf">rico:isOrWasLanguageOf</a>; <a href="#isOrWasLegalStatusOf">rico:isOrWasLegalStatusOf</a>; <a href="#isOrWasLocationOfAgent">rico:isOrWasLocationOfAgent</a>; <a href="#isOrWasPerformedBy">rico:isOrWasPerformedBy</a>; <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a>; <a href="#isOrWasUnderAuthorityOf">rico:isOrWasUnderAuthorityOf</a>; <a href="#isPlaceAssociatedWithAgent">rico:isPlaceAssociatedWithAgent</a>; <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a>; <a href="#isSuccessorOf">rico:isSuccessorOf</a>; <a href="#issuedBy">rico:issuedBy</a>; <a href="#wasSubordinateTo">rico:wasSubordinateTo</a>
+                  <a href="#authorizes">rico:authorizes</a>; <a href="#authorizingAgent">rico:authorizingAgent</a>; <a href="#hadSubordinate">rico:hadSubordinate</a>; <a href="#hasAccumulator">rico:hasAccumulator</a>; <a href="#hasAddressee">rico:hasAddressee</a>; <a href="#hasCollector">rico:hasCollector</a>; <a href="#hasCreator">rico:hasCreator</a>; <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a>; <a href="#hasOrHadController">rico:hasOrHadController</a>; <a href="#hasOrHadHolder">rico:hasOrHadHolder</a>; <a href="#hasOrHadManager">rico:hasOrHadManager</a>; <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a>; <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a>; <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a>; <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a>; <a href="#hasPublisher">rico:hasPublisher</a>; <a href="#hasReceiver">rico:hasReceiver</a>; <a href="#hasSender">rico:hasSender</a>; <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a>; <a href="#hasSuccessor">rico:hasSuccessor</a>; <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a>; <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a>; <a href="#isOrWasAgentNameOf">rico:isOrWasAgentNameOf</a>; <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a>; <a href="#isOrWasEnforcedBy">rico:isOrWasEnforcedBy</a>; <a href="#isOrWasJurisdictionOf">rico:isOrWasJurisdictionOf</a>; <a href="#isOrWasLanguageOf">rico:isOrWasLanguageOf</a>; <a href="#isOrWasLegalStatusOf">rico:isOrWasLegalStatusOf</a>; <a href="#isOrWasLocationOfAgent">rico:isOrWasLocationOfAgent</a>; <a href="#isOrWasPerformedBy">rico:isOrWasPerformedBy</a>; <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a>; <a href="#isOrWasUnderAuthorityOf">rico:isOrWasUnderAuthorityOf</a>; <a href="#isPlaceAssociatedWithAgent">rico:isPlaceAssociatedWithAgent</a>; <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a>; <a href="#isSuccessorOf">rico:isSuccessorOf</a>; <a href="#issuedBy">rico:issuedBy</a>; <a href="#wasSubordinateTo">rico:wasSubordinateTo</a>
                </dd>
             </dl>
             <dl>
@@ -2857,7 +2910,7 @@
             <dl>
                <dt>Is in domain of</dt>
                <dd>
-                  <a href="#affectsOrAffected">rico:affectsOrAffected</a>; <a href="#certainty">rico:certainty</a>; <a href="#hadSubevent">rico:hadSubevent</a>; <a href="#hasDirectSubevent">rico:hasDirectSubevent</a>; <a href="#hasEventType">rico:hasEventType</a>; <a href="#hasOrHadParticipant">rico:hasOrHadParticipant</a>; <a href="#hasOrHadSubevent">rico:hasOrHadSubevent</a>; <a href="#hasSubeventTransitive">rico:hasSubeventTransitive</a>; <a href="#history">rico:history</a>; <a href="#isDirectSubeventOf">rico:isDirectSubeventOf</a>; <a href="#isEventAssociatedWith">rico:isEventAssociatedWith</a>; <a href="#isOrWasSubeventOf">rico:isOrWasSubeventOf</a>; <a href="#isSubeventOfTransitive">rico:isSubeventOfTransitive</a>; <a href="#occurredAtDate">rico:occurredAtDate</a>; <a href="#resultsOrResultedIn">rico:resultsOrResultedIn</a>; <a href="#wasSubeventOf">rico:wasSubeventOf</a>
+                  <a href="#affectsOrAffected">rico:affectsOrAffected</a>; <a href="#hadSubevent">rico:hadSubevent</a>; <a href="#hasDirectSubevent">rico:hasDirectSubevent</a>; <a href="#hasEventType">rico:hasEventType</a>; <a href="#hasOrHadParticipant">rico:hasOrHadParticipant</a>; <a href="#hasOrHadSubevent">rico:hasOrHadSubevent</a>; <a href="#hasSubeventTransitive">rico:hasSubeventTransitive</a>; <a href="#history">rico:history</a>; <a href="#isDirectSubeventOf">rico:isDirectSubeventOf</a>; <a href="#isEventAssociatedWith">rico:isEventAssociatedWith</a>; <a href="#isOrWasSubeventOf">rico:isOrWasSubeventOf</a>; <a href="#isSubeventOfTransitive">rico:isSubeventOfTransitive</a>; <a href="#occurredAtDate">rico:occurredAtDate</a>; <a href="#resultsOrResultedIn">rico:resultsOrResultedIn</a>; <a href="#wasSubeventOf">rico:wasSubeventOf</a>
                </dd>
             </dl>
             <dl>
@@ -5912,13 +5965,13 @@
             <dl>
                <dt>Is in domain of</dt>
                <dd>
-                  <a href="#authenticityNote">rico:authenticityNote</a>; <a href="#classification">rico:classification</a>; <a href="#conditionsOfAccess">rico:conditionsOfAccess</a>; <a href="#conditionsOfUse">rico:conditionsOfUse</a>; <a href="#describesOrDescribed">rico:describesOrDescribed</a>; <a href="#documents">rico:documents</a>; <a href="#expressesOrExpressed">rico:expressesOrExpressed</a>; <a href="#hasAccumulator">rico:hasAccumulator</a>; <a href="#hasAddressee">rico:hasAddressee</a>; <a href="#hasCollector">rico:hasCollector</a>; <a href="#hasCopy">rico:hasCopy</a>; <a href="#hasCreationDate">rico:hasCreationDate</a>; <a href="#hasCreator">rico:hasCreator</a>; <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a>; <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a>; <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a>; <a href="#hasOrHadHolder">rico:hasOrHadHolder</a>; <a href="#hasOrHadInstantiation">rico:hasOrHadInstantiation</a>; <a href="#hasOrHadIntellectualPropertyRightsHolder">rico:hasOrHadIntellectualPropertyRightsHolder</a>; <a href="#hasOrHadMainSubject">rico:hasOrHadMainSubject</a>; <a href="#hasOrHadManager">rico:hasOrHadManager</a>; <a href="#hasOrHadSubject">rico:hasOrHadSubject</a>; <a href="#hasOrHadTitle">rico:hasOrHadTitle</a>; <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a>; <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a>; <a href="#hasPublicationDate">rico:hasPublicationDate</a>; <a href="#hasPublisher">rico:hasPublisher</a>; <a href="#hasReceiver">rico:hasReceiver</a>; <a href="#hasReply">rico:hasReply</a>; <a href="#hasSender">rico:hasSender</a>; <a href="#hasSource">rico:hasSource</a>; <a href="#history">rico:history</a>; <a href="#integrityNote">rico:integrityNote</a>; <a href="#isCopyOf">rico:isCopyOf</a>; <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a>; <a href="#isReplyTo">rico:isReplyTo</a>; <a href="#isSourceOf">rico:isSourceOf</a>; <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>; <a href="#publicationDate">rico:publicationDate</a>; <a href="#recordResourceExtent">rico:recordResourceExtent</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a>; <a href="#scopeAndContent">rico:scopeAndContent</a>; <a href="#source">rico:source</a>; <a href="#structure">rico:structure</a>; <a href="#title">rico:title</a>
+                  <a href="#authenticityNote">rico:authenticityNote</a>; <a href="#classification">rico:classification</a>; <a href="#conditionsOfAccess">rico:conditionsOfAccess</a>; <a href="#conditionsOfUse">rico:conditionsOfUse</a>; <a href="#describesOrDescribed">rico:describesOrDescribed</a>; <a href="#documents">rico:documents</a>; <a href="#evidences">rico:evidences</a>; <a href="#expressesOrExpressed">rico:expressesOrExpressed</a>; <a href="#hasAccumulator">rico:hasAccumulator</a>; <a href="#hasAddressee">rico:hasAddressee</a>; <a href="#hasCollector">rico:hasCollector</a>; <a href="#hasCopy">rico:hasCopy</a>; <a href="#hasCreationDate">rico:hasCreationDate</a>; <a href="#hasCreator">rico:hasCreator</a>; <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a>; <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a>; <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a>; <a href="#hasOrHadHolder">rico:hasOrHadHolder</a>; <a href="#hasOrHadInstantiation">rico:hasOrHadInstantiation</a>; <a href="#hasOrHadIntellectualPropertyRightsHolder">rico:hasOrHadIntellectualPropertyRightsHolder</a>; <a href="#hasOrHadMainSubject">rico:hasOrHadMainSubject</a>; <a href="#hasOrHadManager">rico:hasOrHadManager</a>; <a href="#hasOrHadSubject">rico:hasOrHadSubject</a>; <a href="#hasOrHadTitle">rico:hasOrHadTitle</a>; <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a>; <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a>; <a href="#hasPublicationDate">rico:hasPublicationDate</a>; <a href="#hasPublisher">rico:hasPublisher</a>; <a href="#hasReceiver">rico:hasReceiver</a>; <a href="#hasReply">rico:hasReply</a>; <a href="#hasSender">rico:hasSender</a>; <a href="#history">rico:history</a>; <a href="#integrityNote">rico:integrityNote</a>; <a href="#isCopyOf">rico:isCopyOf</a>; <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a>; <a href="#isReplyTo">rico:isReplyTo</a>; <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>; <a href="#publicationDate">rico:publicationDate</a>; <a href="#recordResourceExtent">rico:recordResourceExtent</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a>; <a href="#scopeAndContent">rico:scopeAndContent</a>; <a href="#structure">rico:structure</a>; <a href="#title">rico:title</a>
                </dd>
             </dl>
             <dl>
                <dt>Is in range of</dt>
                <dd>
-                  <a href="#documentedBy">rico:documentedBy</a>; <a href="#hasCopy">rico:hasCopy</a>; <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a>; <a href="#hasReply">rico:hasReply</a>; <a href="#hasSource">rico:hasSource</a>; <a href="#isAccumulatorOf">rico:isAccumulatorOf</a>; <a href="#isAddresseeOf">rico:isAddresseeOf</a>; <a href="#isCollectorOf">rico:isCollectorOf</a>; <a href="#isCopyOf">rico:isCopyOf</a>; <a href="#isCreationDateOf">rico:isCreationDateOf</a>; <a href="#isCreatorOf">rico:isCreatorOf</a>; <a href="#isOrWasAnalogueInstantiationOf">rico:isOrWasAnalogueInstantiationOf</a>; <a href="#isOrWasDescribedBy">rico:isOrWasDescribedBy</a>; <a href="#isOrWasDigitalInstantiationOf">rico:isOrWasDigitalInstantiationOf</a>; <a href="#isOrWasExpressedBy">rico:isOrWasExpressedBy</a>; <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a>; <a href="#isOrWasHolderOfIntellectualPropertyRightsOf">rico:isOrWasHolderOfIntellectualPropertyRightsOf</a>; <a href="#isOrWasInstantiationOf">rico:isOrWasInstantiationOf</a>; <a href="#isOrWasMainSubjectOf">rico:isOrWasMainSubjectOf</a>; <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a>; <a href="#isOrWasSubjectOf">rico:isOrWasSubjectOf</a>; <a href="#isOrWasTitleOf">rico:isOrWasTitleOf</a>; <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a>; <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a>; <a href="#isPublicationDateOf">rico:isPublicationDateOf</a>; <a href="#isPublisherOf">rico:isPublisherOf</a>; <a href="#isReceiverOf">rico:isReceiverOf</a>; <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a>; <a href="#isReplyTo">rico:isReplyTo</a>; <a href="#isSenderOf">rico:isSenderOf</a>; <a href="#isSourceOf">rico:isSourceOf</a>; <a href="#proxyFor">rico:proxyFor</a>
+                  <a href="#documentedBy">rico:documentedBy</a>; <a href="#hasCopy">rico:hasCopy</a>; <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a>; <a href="#hasReply">rico:hasReply</a>; <a href="#isAccumulatorOf">rico:isAccumulatorOf</a>; <a href="#isAddresseeOf">rico:isAddresseeOf</a>; <a href="#isCollectorOf">rico:isCollectorOf</a>; <a href="#isCopyOf">rico:isCopyOf</a>; <a href="#isCreationDateOf">rico:isCreationDateOf</a>; <a href="#isCreatorOf">rico:isCreatorOf</a>; <a href="#isEvidencedBy">rico:isEvidencedBy</a>; <a href="#isOrWasAnalogueInstantiationOf">rico:isOrWasAnalogueInstantiationOf</a>; <a href="#isOrWasDescribedBy">rico:isOrWasDescribedBy</a>; <a href="#isOrWasDigitalInstantiationOf">rico:isOrWasDigitalInstantiationOf</a>; <a href="#isOrWasExpressedBy">rico:isOrWasExpressedBy</a>; <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a>; <a href="#isOrWasHolderOfIntellectualPropertyRightsOf">rico:isOrWasHolderOfIntellectualPropertyRightsOf</a>; <a href="#isOrWasInstantiationOf">rico:isOrWasInstantiationOf</a>; <a href="#isOrWasMainSubjectOf">rico:isOrWasMainSubjectOf</a>; <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a>; <a href="#isOrWasSubjectOf">rico:isOrWasSubjectOf</a>; <a href="#isOrWasTitleOf">rico:isOrWasTitleOf</a>; <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a>; <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a>; <a href="#isPublicationDateOf">rico:isPublicationDateOf</a>; <a href="#isPublisherOf">rico:isPublisherOf</a>; <a href="#isReceiverOf">rico:isReceiverOf</a>; <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a>; <a href="#isReplyTo">rico:isReplyTo</a>; <a href="#isSenderOf">rico:isSenderOf</a>; <a href="#proxyFor">rico:proxyFor</a>
                </dd>
             </dl>
             <dl>
@@ -6506,13 +6559,13 @@
             <dl>
                <dt>Is in domain of</dt>
                <dd>
-                  <a href="#certainty">rico:certainty</a>; <a href="#hasSource">rico:hasSource</a>; <a href="#relationConnects">rico:relationConnects</a>; <a href="#relationHasContext">rico:relationHasContext</a>; <a href="#relationHasSource">rico:relationHasSource</a>; <a href="#relationHasTarget">rico:relationHasTarget</a>; <a href="#relationState">rico:relationState</a>; <a href="#relation_role">rico:relation_role</a>; <a href="#source">rico:source</a>
+                  <a href="#isEvidencedBy">rico:isEvidencedBy</a>; <a href="#relationCertainty">rico:relationCertainty</a>; <a href="#relationConnects">rico:relationConnects</a>; <a href="#relationHasContext">rico:relationHasContext</a>; <a href="#relationHasSource">rico:relationHasSource</a>; <a href="#relationHasTarget">rico:relationHasTarget</a>; <a href="#relationSource">rico:relationSource</a>; <a href="#relationState">rico:relationState</a>; <a href="#relation_role">rico:relation_role</a>
                </dd>
             </dl>
             <dl>
                <dt>Is in range of</dt>
                <dd>
-                  <a href="#isSourceOf">rico:isSourceOf</a>; <a href="#relation_role">rico:relation_role</a>; <a href="#thingIsConnectedToRelation">rico:thingIsConnectedToRelation</a>; <a href="#thingIsContextOfRelation">rico:thingIsContextOfRelation</a>; <a href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a>; <a href="#thingIsTargetOfRelation">rico:thingIsTargetOfRelation</a>
+                  <a href="#evidences">rico:evidences</a>; <a href="#relation_role">rico:relation_role</a>; <a href="#thingIsConnectedToRelation">rico:thingIsConnectedToRelation</a>; <a href="#thingIsContextOfRelation">rico:thingIsContextOfRelation</a>; <a href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a>; <a href="#thingIsTargetOfRelation">rico:thingIsTargetOfRelation</a>
                </dd>
             </dl>
             <dl>
@@ -7597,7 +7650,7 @@
       <div id="datatypeProperties">
          <h3>Datatype properties</h3>
          <p id="datatypePropertiesList">
-            <a href="#accruals">rico:accruals</a> | <a href="#accrualsStatus">rico:accrualsStatus</a> | <a href="#altimetricSystem">rico:altimetricSystem</a> | <a href="#altitude">rico:altitude</a> | <a href="#authenticityNote">rico:authenticityNote</a> | <a href="#authorizingMandate">rico:authorizingMandate</a> | <a href="#beginningDate">rico:beginningDate</a> | <a href="#birthDate">rico:birthDate</a> | <a href="#carrierExtent">rico:carrierExtent</a> | <a href="#certainty">rico:certainty</a> | <a href="#classification">rico:classification</a> | <a href="#conditionsOfAccess">rico:conditionsOfAccess</a> | <a href="#conditionsOfUse">rico:conditionsOfUse</a> | <a href="#creationDate">rico:creationDate</a> | <a href="#date">rico:date</a> | <a href="#dateQualifier">rico:dateQualifier</a> | <a href="#deathDate">rico:deathDate</a> | <a href="#destructionDate">rico:destructionDate</a> | <a href="#endDate">rico:endDate</a> | <a href="#expressedDate">rico:expressedDate</a> | <a href="#generalDescription">rico:generalDescription</a> | <a href="#geodesicSystem">rico:geodesicSystem</a> | <a href="#geographicalCoordinates">rico:geographicalCoordinates</a> | <a href="#height">rico:height</a> | <a href="#history">rico:history</a> | <a href="#identifier">rico:identifier</a> | <a href="#instantiationExtent">rico:instantiationExtent</a> | <a href="#instantiationStructure">rico:instantiationStructure</a> | <a href="#integrityNote">rico:integrityNote</a> | <a href="#lastModificationDate">rico:lastModificationDate</a> | <a href="#latitude">rico:latitude</a> | <a href="#length">rico:length</a> | <a href="#location">rico:location</a> | <a href="#longitude">rico:longitude</a> | <a href="#measure">rico:measure</a> | <a href="#modificationDate">rico:modificationDate</a> | <a href="#name">rico:name</a> | <a href="#normalizedDateValue">rico:normalizedDateValue</a> | <a href="#normalizedValue">rico:normalizedValue</a> | <a href="#physicalCharacteristicsNote">rico:physicalCharacteristicsNote</a> | <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a> | <a href="#productionTechnique">rico:productionTechnique</a> | <a href="#publicationDate">rico:publicationDate</a> | <a href="#qualityOfRepresentationNote">rico:qualityOfRepresentationNote</a> | <a href="#quantity">rico:quantity</a> | <a href="#recordResourceExtent">rico:recordResourceExtent</a> | <a href="#recordResourceStructure">rico:recordResourceStructure</a> | <a href="#referenceSystem">rico:referenceSystem</a> | <a href="#relationState">rico:relationState</a> | <a href="#ruleFollowed">rico:ruleFollowed</a> | <a href="#scopeAndContent">rico:scopeAndContent</a> | <a href="#source">rico:source</a> | <a href="#structure">rico:structure</a> | <a href="#technicalCharacteristics">rico:technicalCharacteristics</a> | <a href="#textualValue">rico:textualValue</a> | <a href="#title">rico:title</a> | <a href="#type">rico:type</a> | <a href="#unitOfMeasurement">rico:unitOfMeasurement</a> | <a href="#usedFromDate">rico:usedFromDate</a> | <a href="#usedToDate">rico:usedToDate</a> | <a href="#width">rico:width</a>
+            <a href="#accruals">rico:accruals</a> | <a href="#accrualsStatus">rico:accrualsStatus</a> | <a href="#altimetricSystem">rico:altimetricSystem</a> | <a href="#altitude">rico:altitude</a> | <a href="#authenticityNote">rico:authenticityNote</a> | <a href="#authorizingMandate">rico:authorizingMandate</a> | <a href="#beginningDate">rico:beginningDate</a> | <a href="#birthDate">rico:birthDate</a> | <a href="#carrierExtent">rico:carrierExtent</a> | <a href="#classification">rico:classification</a> | <a href="#conditionsOfAccess">rico:conditionsOfAccess</a> | <a href="#conditionsOfUse">rico:conditionsOfUse</a> | <a href="#creationDate">rico:creationDate</a> | <a href="#date">rico:date</a> | <a href="#dateQualifier">rico:dateQualifier</a> | <a href="#deathDate">rico:deathDate</a> | <a href="#destructionDate">rico:destructionDate</a> | <a href="#endDate">rico:endDate</a> | <a href="#expressedDate">rico:expressedDate</a> | <a href="#generalDescription">rico:generalDescription</a> | <a href="#geodesicSystem">rico:geodesicSystem</a> | <a href="#geographicalCoordinates">rico:geographicalCoordinates</a> | <a href="#height">rico:height</a> | <a href="#history">rico:history</a> | <a href="#identifier">rico:identifier</a> | <a href="#instantiationExtent">rico:instantiationExtent</a> | <a href="#instantiationStructure">rico:instantiationStructure</a> | <a href="#integrityNote">rico:integrityNote</a> | <a href="#lastModificationDate">rico:lastModificationDate</a> | <a href="#latitude">rico:latitude</a> | <a href="#length">rico:length</a> | <a href="#location">rico:location</a> | <a href="#longitude">rico:longitude</a> | <a href="#measure">rico:measure</a> | <a href="#modificationDate">rico:modificationDate</a> | <a href="#name">rico:name</a> | <a href="#normalizedDateValue">rico:normalizedDateValue</a> | <a href="#normalizedValue">rico:normalizedValue</a> | <a href="#physicalCharacteristicsNote">rico:physicalCharacteristicsNote</a> | <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a> | <a href="#productionTechnique">rico:productionTechnique</a> | <a href="#publicationDate">rico:publicationDate</a> | <a href="#qualityOfRepresentationNote">rico:qualityOfRepresentationNote</a> | <a href="#quantity">rico:quantity</a> | <a href="#recordResourceExtent">rico:recordResourceExtent</a> | <a href="#recordResourceStructure">rico:recordResourceStructure</a> | <a href="#referenceSystem">rico:referenceSystem</a> | <a href="#relationCertainty">rico:relationCertainty</a> | <a href="#relationSource">rico:relationSource</a> | <a href="#relationState">rico:relationState</a> | <a href="#ruleFollowed">rico:ruleFollowed</a> | <a href="#scopeAndContent">rico:scopeAndContent</a> | <a href="#structure">rico:structure</a> | <a href="#technicalCharacteristics">rico:technicalCharacteristics</a> | <a href="#textualValue">rico:textualValue</a> | <a href="#title">rico:title</a> | <a href="#type">rico:type</a> | <a href="#unitOfMeasurement">rico:unitOfMeasurement</a> | <a href="#usedFromDate">rico:usedFromDate</a> | <a href="#usedToDate">rico:usedToDate</a> | <a href="#width">rico:width</a>
          </p>
          <div class="propertyDescription" id="accruals">
             <h4 title="https://www.ica.org/standards/RiC/ontology#accruals">Datatype property: rico:accruals</h4>
@@ -8033,54 +8086,6 @@
                <dd>2023-08-25: Added a new rdfs:label in French.</dd>
                <dd>2020-11-01: Text definition and scope note updated. Examples added.
                Objective: to make RiC-O compliant with RiC-CM v0.2.</dd>
-            </dl>
-            <p>
-               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
-            </p>
-         </div>
-         <div class="propertyDescription" id="certainty">
-            <h4 title="https://www.ica.org/standards/RiC/ontology#certainty">Datatype property: rico:certainty</h4>
-            <p class="IRI">
-               <span class="IRI_label">IRI: </span>
-               <a href="https://www.ica.org/standards/RiC/ontology#certainty">https://www.ica.org/standards/RiC/ontology#certainty</a>
-            </p>
-            <dl>
-               <dt>Label(s)</dt>
-               <dd>certainty [en]; degré de certitude [fr]; certeza [es]</dd>
-               <dt>Definition</dt>
-               <dd>Qualifies the level of certitude of the accuracy of an Event or a
-         Relation.</dd>
-               <dt>Mapping to RiC-CM 1.0</dt>
-               <dd>Corresponds, as concerns Relation, to RiC-RA01
-         (Certainty of Relation attribute)</dd>
-            </dl>
-            <dl>
-               <dt>Example(s)</dt>
-               <dd>
-                  <span class="example">"certain"</span> [en]</dd>
-               <dd>
-                  <span class="example">"uncertain"</span> [en]</dd>
-               <dd>
-                  <span class="example">"unknown"</span> [en]</dd>
-            </dl>
-            <dl>
-               <dt>Has domain</dt>
-               <dd>
-                  <a href="#Event">rico:Event</a>
-                  <span class="logic"> or </span>
-                  <a href="#Relation">rico:Relation</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has range</dt>
-               <dd>rdfs:Literal</dd>
-            </dl>
-            <dl>
-               <dt>Change note(s)</dt>
-               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
-               <dd>2023-10-14: Reintroduced this datatype property, with the definition
-               assigned to it in RiC-CM 1.0, apart from its domain that also includes
-               Event.</dd>
             </dl>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -10133,6 +10138,97 @@
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
             </p>
          </div>
+         <div class="propertyDescription" id="relationCertainty">
+            <h4 title="https://www.ica.org/standards/RiC/ontology#relationCertainty">Datatype property: rico:relationCertainty</h4>
+            <p class="IRI">
+               <span class="IRI_label">IRI: </span>
+               <a href="https://www.ica.org/standards/RiC/ontology#relationCertainty">https://www.ica.org/standards/RiC/ontology#relationCertainty</a>
+            </p>
+            <dl>
+               <dt>Label(s)</dt>
+               <dd>relation certainty  [en]; degré de certitude de la relation [fr]; certeza de la relación [es]</dd>
+               <dt>Definition</dt>
+               <dd>Qualifies the level of certitude of the accuracy of a
+         Relation.</dd>
+               <dt>Mapping to RiC-CM 1.0</dt>
+               <dd>Corresponds to RiC-RA01 (Certainty of Relation
+         attribute)</dd>
+            </dl>
+            <dl>
+               <dt>Example(s)</dt>
+               <dd>
+                  <span class="example">"certain"</span> [en]</dd>
+               <dd>
+                  <span class="example">"uncertain"</span> [en]</dd>
+               <dd>
+                  <span class="example">"unknown"</span> [en]</dd>
+            </dl>
+            <dl>
+               <dt>Has domain</dt>
+               <dd>
+                  <a href="#Relation">rico:Relation</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has range</dt>
+               <dd>rdfs:Literal</dd>
+            </dl>
+            <dl>
+               <dt>Change note(s)</dt>
+               <dd>2023-12-27: Renamed the datatype property (was 'certainty') and reduced its
+               domain to Relation (the dmain was the union of Event and Relation). Consequently
+               updated the labels.</dd>
+               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
+               <dd>2023-10-14: Reintroduced this datatype property, with the definition
+               assigned to it in RiC-CM 1.0, apart from its domain that also includes
+               Event.</dd>
+            </dl>
+            <p>
+               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+            </p>
+         </div>
+         <div class="propertyDescription" id="relationSource">
+            <h4 title="https://www.ica.org/standards/RiC/ontology#relationSource">Datatype property: rico:relationSource</h4>
+            <p class="IRI">
+               <span class="IRI_label">IRI: </span>
+               <a href="https://www.ica.org/standards/RiC/ontology#relationSource">https://www.ica.org/standards/RiC/ontology#relationSource</a>
+            </p>
+            <dl>
+               <dt>Label(s)</dt>
+               <dd>relation source [en]; source de la relation [fr]; fuente de la relación [es]</dd>
+               <dt>Definition</dt>
+               <dd>A source of information used for identifying and describing a
+         Relation.</dd>
+               <dt>Scope note</dt>
+               <dd>Use only if you don't use the 'isEvidencedBy' object
+         property.</dd>
+               <dt>Mapping to RiC-CM 1.0</dt>
+               <dd>Corresponds to RiC-RA05 (Source of Relation
+         attribute).</dd>
+            </dl>
+            <dl>
+               <dt>Has domain</dt>
+               <dd>
+                  <a href="#Relation">rico:Relation</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has range</dt>
+               <dd>rdfs:Literal</dd>
+            </dl>
+            <dl>
+               <dt>Change note(s)</dt>
+               <dd>2023-12-27: Renamed the datatype property (was 'source') and reduced its
+               domain to Relation (the domain was the union of Record Resource and Relation).
+               Consequently updated the rdfs:comment, labels and scope note. Added a
+               rico:RiCCMCorrespondingComponent annotation.</dd>
+               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
+               <dd>2023-08-25: Added a new rdfs:label in French.</dd>
+            </dl>
+            <p>
+               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+            </p>
+         </div>
          <div class="propertyDescription" id="relationState">
             <h4 title="https://www.ica.org/standards/RiC/ontology#relationState">Datatype property: rico:relationState</h4>
             <p class="IRI">
@@ -10175,8 +10271,8 @@
                <dt>Label(s)</dt>
                <dd>rule followed [en]; règle suivie [fr]; regla aplicada [es]</dd>
                <dt>Definition</dt>
-               <dd>The rule or conditions that govern the existence or lifecycle of
-         &gt;&gt;&gt;&gt;&gt;&gt;&gt; version_1-0 a Thing.</dd>
+               <dd>The rule or conditions that govern the existence or lifecycle of a
+         Thing.</dd>
                <dt>Scope note</dt>
                <dd>Provided for usability reasons. May be deprecated and removed
          later on. Use only if you don't use the Rule class for handling rules.</dd>
@@ -10273,44 +10369,6 @@
                <dd>2023-08-25: Added a new rdfs:label in French.</dd>
                <dd>2020-11-01: Text definition updated. Examples added. Objective: to make
                RiC-O compliant with RiC-CM v0.2.</dd>
-            </dl>
-            <p>
-               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
-            </p>
-         </div>
-         <div class="propertyDescription" id="source">
-            <h4 title="https://www.ica.org/standards/RiC/ontology#source">Datatype property: rico:source</h4>
-            <p class="IRI">
-               <span class="IRI_label">IRI: </span>
-               <a href="https://www.ica.org/standards/RiC/ontology#source">https://www.ica.org/standards/RiC/ontology#source</a>
-            </p>
-            <dl>
-               <dt>Label(s)</dt>
-               <dd>source [en]; source [fr]; fuente [es]</dd>
-               <dt>Definition</dt>
-               <dd>Information about a source used to identify or describe an
-         entity.</dd>
-               <dt>Scope note</dt>
-               <dd>Can be used, in particular, for Records having documentary form
-         type Finding Aid or Authority Record, or for Relations. Use only if you don't use the
-         hasSource object property.</dd>
-            </dl>
-            <dl>
-               <dt>Has domain</dt>
-               <dd>
-                  <a href="#RecordResource">rico:RecordResource</a>
-                  <span class="logic"> or </span>
-                  <a href="#Relation">rico:Relation</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has range</dt>
-               <dd>rdfs:Literal</dd>
-            </dl>
-            <dl>
-               <dt>Change note(s)</dt>
-               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
-               <dd>2023-08-25: Added a new rdfs:label in French.</dd>
             </dl>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -10744,12 +10802,12 @@
          <div id="objectPropertiesListOne">
             <p>This first list includes <strong>RiC-O main, 'core' object
                                 properties</strong>.</p>
-            <a href="#activityIsContextOfRelation">rico:activityIsContextOfRelation</a> | <a href="#affectsOrAffected">rico:affectsOrAffected</a> | <a href="#agentHasOrHadLocation">rico:agentHasOrHadLocation</a> | <a href="#authorizedBy">rico:authorizedBy</a> | <a href="#authorizes">rico:authorizes</a> | <a href="#contained">rico:contained</a> | <a href="#containsOrContained">rico:containsOrContained</a> | <a href="#containsTransitive">rico:containsTransitive</a> | <a href="#describesOrDescribed">rico:describesOrDescribed</a> | <a href="#directlyContains">rico:directlyContains</a> | <a href="#directlyFollowsInSequence">rico:directlyFollowsInSequence</a> | <a href="#directlyIncludes">rico:directlyIncludes</a> | <a href="#directlyPrecedesInSequence">rico:directlyPrecedesInSequence</a> | <a href="#documentedBy">rico:documentedBy</a> | <a href="#documents">rico:documents</a> | <a href="#existsOrExistedIn">rico:existsOrExistedIn</a> | <a href="#expressesOrExpressed">rico:expressesOrExpressed</a> | <a href="#followedInSequence">rico:followedInSequence</a> | <a href="#followsInSequenceTransitive">rico:followsInSequenceTransitive</a> | <a href="#followsInTime">rico:followsInTime</a> | <a href="#followsOrFollowed">rico:followsOrFollowed</a> | <a href="#hadComponent">rico:hadComponent</a> | <a href="#hadConstituent">rico:hadConstituent</a> | <a href="#hadPart">rico:hadPart</a> | <a href="#hadSubdivision">rico:hadSubdivision</a> | <a href="#hadSubevent">rico:hadSubevent</a> | <a href="#hadSubordinate">rico:hadSubordinate</a> | <a href="#hasAccumulator">rico:hasAccumulator</a> | <a href="#hasActivityType">rico:hasActivityType</a> | <a href="#hasAddressee">rico:hasAddressee</a> | <a href="#hasAncestor">rico:hasAncestor</a> | <a href="#hasAuthor">rico:hasAuthor</a> | <a href="#hasBeginningDate">rico:hasBeginningDate</a> | <a href="#hasBirthDate">rico:hasBirthDate</a> | <a href="#hasBirthPlace">rico:hasBirthPlace</a> | <a href="#hasCarrierType">rico:hasCarrierType</a> | <a href="#hasChild">rico:hasChild</a> | <a href="#hasCollector">rico:hasCollector</a> | <a href="#hasComponentTransitive">rico:hasComponentTransitive</a> | <a href="#hasConstituentTransitive">rico:hasConstituentTransitive</a> | <a href="#hasContentOfType">rico:hasContentOfType</a> | <a href="#hasCopy">rico:hasCopy</a> | <a href="#hasCreationDate">rico:hasCreationDate</a> | <a href="#hasCreator">rico:hasCreator</a> | <a href="#hasDateType">rico:hasDateType</a> | <a href="#hasDeathDate">rico:hasDeathDate</a> | <a href="#hasDeathPlace">rico:hasDeathPlace</a> | <a href="#hasDescendant">rico:hasDescendant</a> | <a href="#hasDestructionDate">rico:hasDestructionDate</a> | <a href="#hasDirectComponent">rico:hasDirectComponent</a> | <a href="#hasDirectConstituent">rico:hasDirectConstituent</a> | <a href="#hasDirectPart">rico:hasDirectPart</a> | <a href="#hasDirectSubdivision">rico:hasDirectSubdivision</a> | <a href="#hasDirectSubevent">rico:hasDirectSubevent</a> | <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a> | <a href="#hasDocumentaryFormType">rico:hasDocumentaryFormType</a> | <a href="#hasDraft">rico:hasDraft</a> | <a href="#hasEndDate">rico:hasEndDate</a> | <a href="#hasEventType">rico:hasEventType</a> | <a href="#hasExtent">rico:hasExtent</a> | <a href="#hasExtentType">rico:hasExtentType</a> | <a href="#hasFamilyAssociationWith">rico:hasFamilyAssociationWith</a> | <a href="#hasFamilyType">rico:hasFamilyType</a> | <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a> | <a href="#hasIdentifierType">rico:hasIdentifierType</a> | <a href="#hasModificationDate">rico:hasModificationDate</a> | <a href="#hasOrHadAgentName">rico:hasOrHadAgentName</a> | <a href="#hasOrHadAllMembersWithCategory">rico:hasOrHadAllMembersWithCategory</a> | <a href="#hasOrHadAllMembersWithContentType">rico:hasOrHadAllMembersWithContentType</a> | <a href="#hasOrHadAllMembersWithCreationDate">rico:hasOrHadAllMembersWithCreationDate</a> | <a href="#hasOrHadAllMembersWithDocumentaryFormType">rico:hasOrHadAllMembersWithDocumentaryFormType</a> | <a href="#hasOrHadAllMembersWithLanguage">rico:hasOrHadAllMembersWithLanguage</a> | <a href="#hasOrHadAllMembersWithLegalStatus">rico:hasOrHadAllMembersWithLegalStatus</a> | <a href="#hasOrHadAllMembersWithRecordState">rico:hasOrHadAllMembersWithRecordState</a> | <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a> | <a href="#hasOrHadAppellation">rico:hasOrHadAppellation</a> | <a href="#hasOrHadAuthorityOver">rico:hasOrHadAuthorityOver</a> | <a href="#hasOrHadCategory">rico:hasOrHadCategory</a> | <a href="#hasOrHadComponent">rico:hasOrHadComponent</a> | <a href="#hasOrHadConstituent">rico:hasOrHadConstituent</a> | <a href="#hasOrHadController">rico:hasOrHadController</a> | <a href="#hasOrHadCoordinates">rico:hasOrHadCoordinates</a> | <a href="#hasOrHadCorporateBodyType">rico:hasOrHadCorporateBodyType</a> | <a href="#hasOrHadCorrespondent">rico:hasOrHadCorrespondent</a> | <a href="#hasOrHadDemographicGroup">rico:hasOrHadDemographicGroup</a> | <a href="#hasOrHadDerivedInstantiation">rico:hasOrHadDerivedInstantiation</a> | <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a> | <a href="#hasOrHadEmployer">rico:hasOrHadEmployer</a> | <a href="#hasOrHadHolder">rico:hasOrHadHolder</a> | <a href="#hasOrHadIdentifier">rico:hasOrHadIdentifier</a> | <a href="#hasOrHadInstantiation">rico:hasOrHadInstantiation</a> | <a href="#hasOrHadIntellectualPropertyRightsHolder">rico:hasOrHadIntellectualPropertyRightsHolder</a> | <a href="#hasOrHadJurisdiction">rico:hasOrHadJurisdiction</a> | <a href="#hasOrHadLanguage">rico:hasOrHadLanguage</a> | <a href="#hasOrHadLeader">rico:hasOrHadLeader</a> | <a href="#hasOrHadLegalStatus">rico:hasOrHadLegalStatus</a> | <a href="#hasOrHadLocation">rico:hasOrHadLocation</a> | <a href="#hasOrHadMainSubject">rico:hasOrHadMainSubject</a> | <a href="#hasOrHadManager">rico:hasOrHadManager</a> | <a href="#hasOrHadMandateType">rico:hasOrHadMandateType</a> | <a href="#hasOrHadMember">rico:hasOrHadMember</a> | <a href="#hasOrHadMostMembersWithCreationDate">rico:hasOrHadMostMembersWithCreationDate</a> | <a href="#hasOrHadName">rico:hasOrHadName</a> | <a href="#hasOrHadOccupationOfType">rico:hasOrHadOccupationOfType</a> | <a href="#hasOrHadOwner">rico:hasOrHadOwner</a> | <a href="#hasOrHadPart">rico:hasOrHadPart</a> | <a href="#hasOrHadParticipant">rico:hasOrHadParticipant</a> | <a href="#hasOrHadPhysicalLocation">rico:hasOrHadPhysicalLocation</a> | <a href="#hasOrHadPlaceName">rico:hasOrHadPlaceName</a> | <a href="#hasOrHadPlaceType">rico:hasOrHadPlaceType</a> | <a href="#hasOrHadPosition">rico:hasOrHadPosition</a> | <a href="#hasOrHadRuleType">rico:hasOrHadRuleType</a> | <a href="#hasOrHadSomeMembersWithCategory">rico:hasOrHadSomeMembersWithCategory</a> | <a href="#hasOrHadSomeMembersWithContentType">rico:hasOrHadSomeMembersWithContentType</a> | <a href="#hasOrHadSomeMembersWithCreationDate">rico:hasOrHadSomeMembersWithCreationDate</a> | <a href="#hasOrHadSomeMembersWithLanguage">rico:hasOrHadSomeMembersWithLanguage</a> | <a href="#hasOrHadSomeMembersWithLegalStatus">rico:hasOrHadSomeMembersWithLegalStatus</a> | <a href="#hasOrHadSomeMembersWithRecordState">rico:hasOrHadSomeMembersWithRecordState</a> | <a href="#hasOrHadSomeMemberswithDocumentaryFormType">rico:hasOrHadSomeMemberswithDocumentaryFormType</a> | <a href="#hasOrHadSpouse">rico:hasOrHadSpouse</a> | <a href="#hasOrHadStudent">rico:hasOrHadStudent</a> | <a href="#hasOrHadSubdivision">rico:hasOrHadSubdivision</a> | <a href="#hasOrHadSubevent">rico:hasOrHadSubevent</a> | <a href="#hasOrHadSubject">rico:hasOrHadSubject</a> | <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a> | <a href="#hasOrHadTeacher">rico:hasOrHadTeacher</a> | <a href="#hasOrHadTitle">rico:hasOrHadTitle</a> | <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a> | <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a> | <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a> | <a href="#hasOriginal">rico:hasOriginal</a> | <a href="#hasPartTransitive">rico:hasPartTransitive</a> | <a href="#hasProductionTechniqueType">rico:hasProductionTechniqueType</a> | <a href="#hasPublicationDate">rico:hasPublicationDate</a> | <a href="#hasPublisher">rico:hasPublisher</a> | <a href="#hasReceiver">rico:hasReceiver</a> | <a href="#hasRecordSetType">rico:hasRecordSetType</a> | <a href="#hasRecordState">rico:hasRecordState</a> | <a href="#hasReply">rico:hasReply</a> | <a href="#hasRepresentationType">rico:hasRepresentationType</a> | <a href="#hasSender">rico:hasSender</a> | <a href="#hasSibling">rico:hasSibling</a> | <a href="#hasSource">rico:hasSource</a> | <a href="#hasSubdivisionTransitive">rico:hasSubdivisionTransitive</a> | <a href="#hasSubeventTransitive">rico:hasSubeventTransitive</a> | <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a> | <a href="#hasSuccessor">rico:hasSuccessor</a> | <a href="#hasUnitOfMeasurement">rico:hasUnitOfMeasurement</a> | <a href="#hasWithin">rico:hasWithin</a> | <a href="#included">rico:included</a> | <a href="#includesOrIncluded">rico:includesOrIncluded</a> | <a href="#includesTransitive">rico:includesTransitive</a> | <a href="#intersects">rico:intersects</a> | <a href="#isAccumulatorOf">rico:isAccumulatorOf</a> | <a href="#isActivityTypeOf">rico:isActivityTypeOf</a> | <a href="#isAddresseeOf">rico:isAddresseeOf</a> | <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a> | <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a> | <a href="#isAssociatedWithDate">rico:isAssociatedWithDate</a> | <a href="#isAssociatedWithEvent">rico:isAssociatedWithEvent</a> | <a href="#isAssociatedWithPlace">rico:isAssociatedWithPlace</a> | <a href="#isAssociatedWithRule">rico:isAssociatedWithRule</a> | <a href="#isAuthorOf">rico:isAuthorOf</a> | <a href="#isAuthorizingAgentInMandateRelation">rico:isAuthorizingAgentInMandateRelation</a> | <a href="#isBeginningDateOf">rico:isBeginningDateOf</a> | <a href="#isBirthDateOf">rico:isBirthDateOf</a> | <a href="#isBirthPlaceOf">rico:isBirthPlaceOf</a> | <a href="#isCarrierTypeOf">rico:isCarrierTypeOf</a> | <a href="#isChildOf">rico:isChildOf</a> | <a href="#isCollectorOf">rico:isCollectorOf</a> | <a href="#isComponentOfTransitive">rico:isComponentOfTransitive</a> | <a href="#isConstituentOfTransitive">rico:isConstituentOfTransitive</a> | <a href="#isContainedByTransitive">rico:isContainedByTransitive</a> | <a href="#isContentTypeOf">rico:isContentTypeOf</a> | <a href="#isCopyOf">rico:isCopyOf</a> | <a href="#isCreationDateOf">rico:isCreationDateOf</a> | <a href="#isCreatorOf">rico:isCreatorOf</a> | <a href="#isDateAssociatedWith">rico:isDateAssociatedWith</a> | <a href="#isDateOfOccurrenceOf">rico:isDateOfOccurrenceOf</a> | <a href="#isDateTypeOf">rico:isDateTypeOf</a> | <a href="#isDeathDateOf">rico:isDeathDateOf</a> | <a href="#isDeathPlaceOf">rico:isDeathPlaceOf</a> | <a href="#isDestructionDateOf">rico:isDestructionDateOf</a> | <a href="#isDirectComponentOf">rico:isDirectComponentOf</a> | <a href="#isDirectConstituentOf">rico:isDirectConstituentOf</a> | <a href="#isDirectPartOf">rico:isDirectPartOf</a> | <a href="#isDirectSubdivisionOf">rico:isDirectSubdivisionOf</a> | <a href="#isDirectSubeventOf">rico:isDirectSubeventOf</a> | <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a> | <a href="#isDirectlyContainedBy">rico:isDirectlyContainedBy</a> | <a href="#isDirectlyIncludedIn">rico:isDirectlyIncludedIn</a> | <a href="#isDocumentaryFormTypeOf">rico:isDocumentaryFormTypeOf</a> | <a href="#isDraftOf">rico:isDraftOf</a> | <a href="#isEndDateOf">rico:isEndDateOf</a> | <a href="#isEquivalentTo">rico:isEquivalentTo</a> | <a href="#isEventAssociatedWith">rico:isEventAssociatedWith</a> | <a href="#isEventTypeOf">rico:isEventTypeOf</a> | <a href="#isExtentOf">rico:isExtentOf</a> | <a href="#isExtentTypeOf">rico:isExtentTypeOf</a> | <a href="#isFamilyTypeOf">rico:isFamilyTypeOf</a> | <a href="#isFromUseDateOf">rico:isFromUseDateOf</a> | <a href="#isFunctionallyEquivalentTo">rico:isFunctionallyEquivalentTo</a> | <a href="#isIdentifierTypeOf">rico:isIdentifierTypeOf</a> | <a href="#isIncludedInTransitive">rico:isIncludedInTransitive</a> | <a href="#isInstantiationAssociatedWithInstantiation">rico:isInstantiationAssociatedWithInstantiation</a> | <a href="#isLastUpdateDateOf">rico:isLastUpdateDateOf</a> | <a href="#isModificationDateOf">rico:isModificationDateOf</a> | <a href="#isOrWasAdjacentTo">rico:isOrWasAdjacentTo</a> | <a href="#isOrWasAffectedBy">rico:isOrWasAffectedBy</a> | <a href="#isOrWasAgentNameOf">rico:isOrWasAgentNameOf</a> | <a href="#isOrWasAnalogueInstantiationOf">rico:isOrWasAnalogueInstantiationOf</a> | <a href="#isOrWasAppellationOf">rico:isOrWasAppellationOf</a> | <a href="#isOrWasCategoryOf">rico:isOrWasCategoryOf</a> | <a href="#isOrWasCategoryOfAllMembersOf">rico:isOrWasCategoryOfAllMembersOf</a> | <a href="#isOrWasCategoryOfSomeMembersOf">rico:isOrWasCategoryOfSomeMembersOf</a> | <a href="#isOrWasComponentOf">rico:isOrWasComponentOf</a> | <a href="#isOrWasConstituentOf">rico:isOrWasConstituentOf</a> | <a href="#isOrWasContainedBy">rico:isOrWasContainedBy</a> | <a href="#isOrWasContentTypeOfAllMembersOf">rico:isOrWasContentTypeOfAllMembersOf</a> | <a href="#isOrWasContentTypeOfSomeMembersOf">rico:isOrWasContentTypeOfSomeMembersOf</a> | <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a> | <a href="#isOrWasCoordinatesOf">rico:isOrWasCoordinatesOf</a> | <a href="#isOrWasCorporateBodyTypeOf">rico:isOrWasCorporateBodyTypeOf</a> | <a href="#isOrWasCreationDateOfAllMembersOf">rico:isOrWasCreationDateOfAllMembersOf</a> | <a href="#isOrWasCreationDateOfMostMembersOf">rico:isOrWasCreationDateOfMostMembersOf</a> | <a href="#isOrWasCreationDateOfSomeMembersOf">rico:isOrWasCreationDateOfSomeMembersOf</a> | <a href="#isOrWasDemographicGroupOf">rico:isOrWasDemographicGroupOf</a> | <a href="#isOrWasDerivedFromInstantiation">rico:isOrWasDerivedFromInstantiation</a> | <a href="#isOrWasDescribedBy">rico:isOrWasDescribedBy</a> | <a href="#isOrWasDigitalInstantiationOf">rico:isOrWasDigitalInstantiationOf</a> | <a href="#isOrWasDocumentaryFormTypeOfAllMembersOf">rico:isOrWasDocumentaryFormTypeOfAllMembersOf</a> | <a href="#isOrWasDocumentaryFormTypeOfSomeMembersOf">rico:isOrWasDocumentaryFormTypeOfSomeMembersOf</a> | <a href="#isOrWasEmployerOf">rico:isOrWasEmployerOf</a> | <a href="#isOrWasEnforcedBy">rico:isOrWasEnforcedBy</a> | <a href="#isOrWasExpressedBy">rico:isOrWasExpressedBy</a> | <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a> | <a href="#isOrWasHolderOfIntellectualPropertyRightsOf">rico:isOrWasHolderOfIntellectualPropertyRightsOf</a> | <a href="#isOrWasIdentifierOf">rico:isOrWasIdentifierOf</a> | <a href="#isOrWasIncludedIn">rico:isOrWasIncludedIn</a> | <a href="#isOrWasInstantiationOf">rico:isOrWasInstantiationOf</a> | <a href="#isOrWasJurisdictionOf">rico:isOrWasJurisdictionOf</a> | <a href="#isOrWasLanguageOf">rico:isOrWasLanguageOf</a> | <a href="#isOrWasLanguageOfAllMembersOf">rico:isOrWasLanguageOfAllMembersOf</a> | <a href="#isOrWasLanguageOfSomeMembersOf">rico:isOrWasLanguageOfSomeMembersOf</a> | <a href="#isOrWasLeaderOf">rico:isOrWasLeaderOf</a> | <a href="#isOrWasLegalStatusOf">rico:isOrWasLegalStatusOf</a> | <a href="#isOrWasLegalStatusOfAllMembersOf">rico:isOrWasLegalStatusOfAllMembersOf</a> | <a href="#isOrWasLegalStatusOfSomeMembersOf">rico:isOrWasLegalStatusOfSomeMembersOf</a> | <a href="#isOrWasLocationOf">rico:isOrWasLocationOf</a> | <a href="#isOrWasLocationOfAgent">rico:isOrWasLocationOfAgent</a> | <a href="#isOrWasMainSubjectOf">rico:isOrWasMainSubjectOf</a> | <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a> | <a href="#isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</a> | <a href="#isOrWasMemberOf">rico:isOrWasMemberOf</a> | <a href="#isOrWasNameOf">rico:isOrWasNameOf</a> | <a href="#isOrWasOccupationTypeOf">rico:isOrWasOccupationTypeOf</a> | <a href="#isOrWasOccupiedBy">rico:isOrWasOccupiedBy</a> | <a href="#isOrWasOwnerOf">rico:isOrWasOwnerOf</a> | <a href="#isOrWasPartOf">rico:isOrWasPartOf</a> | <a href="#isOrWasParticipantIn">rico:isOrWasParticipantIn</a> | <a href="#isOrWasPerformedBy">rico:isOrWasPerformedBy</a> | <a href="#isOrWasPhysicalLocationOf">rico:isOrWasPhysicalLocationOf</a> | <a href="#isOrWasPlaceNameOf">rico:isOrWasPlaceNameOf</a> | <a href="#isOrWasPlaceTypeOf">rico:isOrWasPlaceTypeOf</a> | <a href="#isOrWasRecordStateOfAllMembersOf">rico:isOrWasRecordStateOfAllMembersOf</a> | <a href="#isOrWasRecordStateOfSomeMembersOf">rico:isOrWasRecordStateOfSomeMembersOf</a> | <a href="#isOrWasRegulatedBy">rico:isOrWasRegulatedBy</a> | <a href="#isOrWasResponsibleForEnforcing">rico:isOrWasResponsibleForEnforcing</a> | <a href="#isOrWasRuleTypeOf">rico:isOrWasRuleTypeOf</a> | <a href="#isOrWasSubdivisionOf">rico:isOrWasSubdivisionOf</a> | <a href="#isOrWasSubeventOf">rico:isOrWasSubeventOf</a> | <a href="#isOrWasSubjectOf">rico:isOrWasSubjectOf</a> | <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a> | <a href="#isOrWasTitleOf">rico:isOrWasTitleOf</a> | <a href="#isOrWasUnderAuthorityOf">rico:isOrWasUnderAuthorityOf</a> | <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a> | <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a> | <a href="#isOriginalOf">rico:isOriginalOf</a> | <a href="#isPartOfTransitive">rico:isPartOfTransitive</a> | <a href="#isPlaceAssociatedWith">rico:isPlaceAssociatedWith</a> | <a href="#isPlaceAssociatedWithAgent">rico:isPlaceAssociatedWithAgent</a> | <a href="#isProductionTechniqueTypeOf">rico:isProductionTechniqueTypeOf</a> | <a href="#isPublicationDateOf">rico:isPublicationDateOf</a> | <a href="#isPublisherOf">rico:isPublisherOf</a> | <a href="#isReceiverOf">rico:isReceiverOf</a> | <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a> | <a href="#isRecordSetTypeOf">rico:isRecordSetTypeOf</a> | <a href="#isRecordStateOf">rico:isRecordStateOf</a> | <a href="#isRelatedTo">rico:isRelatedTo</a> | <a href="#isReplyTo">rico:isReplyTo</a> | <a href="#isRepresentationTypeOf">rico:isRepresentationTypeOf</a> | <a href="#isResponsibleForIssuing">rico:isResponsibleForIssuing</a> | <a href="#isRuleAssociatedWith">rico:isRuleAssociatedWith</a> | <a href="#isSenderOf">rico:isSenderOf</a> | <a href="#isSourceOf">rico:isSourceOf</a> | <a href="#isSubdivisionOfTransitive">rico:isSubdivisionOfTransitive</a> | <a href="#isSubeventOfTransitive">rico:isSubeventOfTransitive</a> | <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a> | <a href="#isSuccessorOf">rico:isSuccessorOf</a> | <a href="#isToUseDateOf">rico:isToUseDateOf</a> | <a href="#isUnitOfMeasurementOf">rico:isUnitOfMeasurementOf</a> | <a href="#isWithin">rico:isWithin</a> | <a href="#issuedBy">rico:issuedBy</a> | <a href="#knownBy">rico:knownBy</a> | <a href="#knows">rico:knows</a> | <a href="#knowsOf">rico:knowsOf</a> | <a href="#migratedFrom">rico:migratedFrom</a> | <a href="#migratedInto">rico:migratedInto</a> | <a href="#occupiesOrOccupied">rico:occupiesOrOccupied</a> | <a href="#occurredAtDate">rico:occurredAtDate</a> | <a href="#overlapsOrOverlapped">rico:overlapsOrOverlapped</a> | <a href="#performsOrPerformed">rico:performsOrPerformed</a> | <a href="#positionIsContextOfLeadershipRelation">rico:positionIsContextOfLeadershipRelation</a> | <a href="#positionIsContextOfMembershipRelation">rico:positionIsContextOfMembershipRelation</a> | <a href="#precededInSequence">rico:precededInSequence</a> | <a href="#precedesInSequenceTransitive">rico:precedesInSequenceTransitive</a> | <a href="#precedesInTime">rico:precedesInTime</a> | <a href="#precedesOrPreceded">rico:precedesOrPreceded</a> | <a href="#proxyFor">rico:proxyFor</a> | <a href="#proxyIn">rico:proxyIn</a> | <a href="#regulatesOrRegulated">rico:regulatesOrRegulated</a> | <a href="#relationHasContext">rico:relationHasContext</a> | <a href="#resultedFromTheMergerOf">rico:resultedFromTheMergerOf</a> | <a href="#resultedFromTheSplitOf">rico:resultedFromTheSplitOf</a> | <a href="#resultsOrResultedFrom">rico:resultsOrResultedFrom</a> | <a href="#resultsOrResultedIn">rico:resultsOrResultedIn</a> | <a href="#roleIsContextOfCreationRelation">rico:roleIsContextOfCreationRelation</a> | <a href="#thingIsContextOfRelation">rico:thingIsContextOfRelation</a> | <a href="#wasComponentOf">rico:wasComponentOf</a> | <a href="#wasConstituentOf">rico:wasConstituentOf</a> | <a href="#wasContainedBy">rico:wasContainedBy</a> | <a href="#wasIncludedIn">rico:wasIncludedIn</a> | <a href="#wasLastUpdatedAtDate">rico:wasLastUpdatedAtDate</a> | <a href="#wasMergedInto">rico:wasMergedInto</a> | <a href="#wasPartOf">rico:wasPartOf</a> | <a href="#wasSplitInto">rico:wasSplitInto</a> | <a href="#wasSubdivisionOf">rico:wasSubdivisionOf</a> | <a href="#wasSubeventOf">rico:wasSubeventOf</a> | <a href="#wasSubordinateTo">rico:wasSubordinateTo</a> | <a href="#wasUsedFromDate">rico:wasUsedFromDate</a> | <a href="#wasUsedToDate">rico:wasUsedToDate</a>
+            <a href="#affectsOrAffected">rico:affectsOrAffected</a> | <a href="#agentHasOrHadLocation">rico:agentHasOrHadLocation</a> | <a href="#authorizedBy">rico:authorizedBy</a> | <a href="#authorizes">rico:authorizes</a> | <a href="#contained">rico:contained</a> | <a href="#containsOrContained">rico:containsOrContained</a> | <a href="#containsTransitive">rico:containsTransitive</a> | <a href="#describesOrDescribed">rico:describesOrDescribed</a> | <a href="#directlyContains">rico:directlyContains</a> | <a href="#directlyFollowsInSequence">rico:directlyFollowsInSequence</a> | <a href="#directlyIncludes">rico:directlyIncludes</a> | <a href="#directlyPrecedesInSequence">rico:directlyPrecedesInSequence</a> | <a href="#documentedBy">rico:documentedBy</a> | <a href="#documents">rico:documents</a> | <a href="#existsOrExistedIn">rico:existsOrExistedIn</a> | <a href="#expressesOrExpressed">rico:expressesOrExpressed</a> | <a href="#followedInSequence">rico:followedInSequence</a> | <a href="#followsInSequenceTransitive">rico:followsInSequenceTransitive</a> | <a href="#followsInTime">rico:followsInTime</a> | <a href="#followsOrFollowed">rico:followsOrFollowed</a> | <a href="#hadComponent">rico:hadComponent</a> | <a href="#hadConstituent">rico:hadConstituent</a> | <a href="#hadPart">rico:hadPart</a> | <a href="#hadSubdivision">rico:hadSubdivision</a> | <a href="#hadSubevent">rico:hadSubevent</a> | <a href="#hadSubordinate">rico:hadSubordinate</a> | <a href="#hasAccumulator">rico:hasAccumulator</a> | <a href="#hasActivityType">rico:hasActivityType</a> | <a href="#hasAddressee">rico:hasAddressee</a> | <a href="#hasAncestor">rico:hasAncestor</a> | <a href="#hasAuthor">rico:hasAuthor</a> | <a href="#hasBeginningDate">rico:hasBeginningDate</a> | <a href="#hasBirthDate">rico:hasBirthDate</a> | <a href="#hasBirthPlace">rico:hasBirthPlace</a> | <a href="#hasCarrierType">rico:hasCarrierType</a> | <a href="#hasChild">rico:hasChild</a> | <a href="#hasCollector">rico:hasCollector</a> | <a href="#hasComponentTransitive">rico:hasComponentTransitive</a> | <a href="#hasConstituentTransitive">rico:hasConstituentTransitive</a> | <a href="#hasContentOfType">rico:hasContentOfType</a> | <a href="#hasCopy">rico:hasCopy</a> | <a href="#hasCreationDate">rico:hasCreationDate</a> | <a href="#hasCreator">rico:hasCreator</a> | <a href="#hasDateType">rico:hasDateType</a> | <a href="#hasDeathDate">rico:hasDeathDate</a> | <a href="#hasDeathPlace">rico:hasDeathPlace</a> | <a href="#hasDescendant">rico:hasDescendant</a> | <a href="#hasDestructionDate">rico:hasDestructionDate</a> | <a href="#hasDirectComponent">rico:hasDirectComponent</a> | <a href="#hasDirectConstituent">rico:hasDirectConstituent</a> | <a href="#hasDirectPart">rico:hasDirectPart</a> | <a href="#hasDirectSubdivision">rico:hasDirectSubdivision</a> | <a href="#hasDirectSubevent">rico:hasDirectSubevent</a> | <a href="#hasDirectSubordinate">rico:hasDirectSubordinate</a> | <a href="#hasDocumentaryFormType">rico:hasDocumentaryFormType</a> | <a href="#hasDraft">rico:hasDraft</a> | <a href="#hasEndDate">rico:hasEndDate</a> | <a href="#hasEventType">rico:hasEventType</a> | <a href="#hasExtent">rico:hasExtent</a> | <a href="#hasExtentType">rico:hasExtentType</a> | <a href="#hasFamilyAssociationWith">rico:hasFamilyAssociationWith</a> | <a href="#hasFamilyType">rico:hasFamilyType</a> | <a href="#hasGeneticLinkToRecordResource">rico:hasGeneticLinkToRecordResource</a> | <a href="#hasIdentifierType">rico:hasIdentifierType</a> | <a href="#hasModificationDate">rico:hasModificationDate</a> | <a href="#hasOrHadAgentName">rico:hasOrHadAgentName</a> | <a href="#hasOrHadAllMembersWithCategory">rico:hasOrHadAllMembersWithCategory</a> | <a href="#hasOrHadAllMembersWithContentType">rico:hasOrHadAllMembersWithContentType</a> | <a href="#hasOrHadAllMembersWithCreationDate">rico:hasOrHadAllMembersWithCreationDate</a> | <a href="#hasOrHadAllMembersWithDocumentaryFormType">rico:hasOrHadAllMembersWithDocumentaryFormType</a> | <a href="#hasOrHadAllMembersWithLanguage">rico:hasOrHadAllMembersWithLanguage</a> | <a href="#hasOrHadAllMembersWithLegalStatus">rico:hasOrHadAllMembersWithLegalStatus</a> | <a href="#hasOrHadAllMembersWithRecordState">rico:hasOrHadAllMembersWithRecordState</a> | <a href="#hasOrHadAnalogueInstantiation">rico:hasOrHadAnalogueInstantiation</a> | <a href="#hasOrHadAppellation">rico:hasOrHadAppellation</a> | <a href="#hasOrHadAuthorityOver">rico:hasOrHadAuthorityOver</a> | <a href="#hasOrHadCategory">rico:hasOrHadCategory</a> | <a href="#hasOrHadComponent">rico:hasOrHadComponent</a> | <a href="#hasOrHadConstituent">rico:hasOrHadConstituent</a> | <a href="#hasOrHadController">rico:hasOrHadController</a> | <a href="#hasOrHadCoordinates">rico:hasOrHadCoordinates</a> | <a href="#hasOrHadCorporateBodyType">rico:hasOrHadCorporateBodyType</a> | <a href="#hasOrHadCorrespondent">rico:hasOrHadCorrespondent</a> | <a href="#hasOrHadDemographicGroup">rico:hasOrHadDemographicGroup</a> | <a href="#hasOrHadDerivedInstantiation">rico:hasOrHadDerivedInstantiation</a> | <a href="#hasOrHadDigitalInstantiation">rico:hasOrHadDigitalInstantiation</a> | <a href="#hasOrHadEmployer">rico:hasOrHadEmployer</a> | <a href="#hasOrHadHolder">rico:hasOrHadHolder</a> | <a href="#hasOrHadIdentifier">rico:hasOrHadIdentifier</a> | <a href="#hasOrHadInstantiation">rico:hasOrHadInstantiation</a> | <a href="#hasOrHadIntellectualPropertyRightsHolder">rico:hasOrHadIntellectualPropertyRightsHolder</a> | <a href="#hasOrHadJurisdiction">rico:hasOrHadJurisdiction</a> | <a href="#hasOrHadLanguage">rico:hasOrHadLanguage</a> | <a href="#hasOrHadLeader">rico:hasOrHadLeader</a> | <a href="#hasOrHadLegalStatus">rico:hasOrHadLegalStatus</a> | <a href="#hasOrHadLocation">rico:hasOrHadLocation</a> | <a href="#hasOrHadMainSubject">rico:hasOrHadMainSubject</a> | <a href="#hasOrHadManager">rico:hasOrHadManager</a> | <a href="#hasOrHadMandateType">rico:hasOrHadMandateType</a> | <a href="#hasOrHadMember">rico:hasOrHadMember</a> | <a href="#hasOrHadMostMembersWithCreationDate">rico:hasOrHadMostMembersWithCreationDate</a> | <a href="#hasOrHadName">rico:hasOrHadName</a> | <a href="#hasOrHadOccupationOfType">rico:hasOrHadOccupationOfType</a> | <a href="#hasOrHadOwner">rico:hasOrHadOwner</a> | <a href="#hasOrHadPart">rico:hasOrHadPart</a> | <a href="#hasOrHadParticipant">rico:hasOrHadParticipant</a> | <a href="#hasOrHadPhysicalLocation">rico:hasOrHadPhysicalLocation</a> | <a href="#hasOrHadPlaceName">rico:hasOrHadPlaceName</a> | <a href="#hasOrHadPlaceType">rico:hasOrHadPlaceType</a> | <a href="#hasOrHadPosition">rico:hasOrHadPosition</a> | <a href="#hasOrHadRuleType">rico:hasOrHadRuleType</a> | <a href="#hasOrHadSomeMembersWithCategory">rico:hasOrHadSomeMembersWithCategory</a> | <a href="#hasOrHadSomeMembersWithContentType">rico:hasOrHadSomeMembersWithContentType</a> | <a href="#hasOrHadSomeMembersWithCreationDate">rico:hasOrHadSomeMembersWithCreationDate</a> | <a href="#hasOrHadSomeMembersWithLanguage">rico:hasOrHadSomeMembersWithLanguage</a> | <a href="#hasOrHadSomeMembersWithLegalStatus">rico:hasOrHadSomeMembersWithLegalStatus</a> | <a href="#hasOrHadSomeMembersWithRecordState">rico:hasOrHadSomeMembersWithRecordState</a> | <a href="#hasOrHadSomeMemberswithDocumentaryFormType">rico:hasOrHadSomeMemberswithDocumentaryFormType</a> | <a href="#hasOrHadSpouse">rico:hasOrHadSpouse</a> | <a href="#hasOrHadStudent">rico:hasOrHadStudent</a> | <a href="#hasOrHadSubdivision">rico:hasOrHadSubdivision</a> | <a href="#hasOrHadSubevent">rico:hasOrHadSubevent</a> | <a href="#hasOrHadSubject">rico:hasOrHadSubject</a> | <a href="#hasOrHadSubordinate">rico:hasOrHadSubordinate</a> | <a href="#hasOrHadTeacher">rico:hasOrHadTeacher</a> | <a href="#hasOrHadTitle">rico:hasOrHadTitle</a> | <a href="#hasOrHadWorkRelationWith">rico:hasOrHadWorkRelationWith</a> | <a href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a> | <a href="#hasOrganicProvenance">rico:hasOrganicProvenance</a> | <a href="#hasOriginal">rico:hasOriginal</a> | <a href="#hasPartTransitive">rico:hasPartTransitive</a> | <a href="#hasProductionTechniqueType">rico:hasProductionTechniqueType</a> | <a href="#hasPublicationDate">rico:hasPublicationDate</a> | <a href="#hasPublisher">rico:hasPublisher</a> | <a href="#hasReceiver">rico:hasReceiver</a> | <a href="#hasRecordSetType">rico:hasRecordSetType</a> | <a href="#hasRecordState">rico:hasRecordState</a> | <a href="#hasReply">rico:hasReply</a> | <a href="#hasRepresentationType">rico:hasRepresentationType</a> | <a href="#hasSender">rico:hasSender</a> | <a href="#hasSibling">rico:hasSibling</a> | <a href="#hasSubdivisionTransitive">rico:hasSubdivisionTransitive</a> | <a href="#hasSubeventTransitive">rico:hasSubeventTransitive</a> | <a href="#hasSubordinateTransitive">rico:hasSubordinateTransitive</a> | <a href="#hasSuccessor">rico:hasSuccessor</a> | <a href="#hasTopConcept">skos:hasTopConcept</a> | <a href="#hasUnitOfMeasurement">rico:hasUnitOfMeasurement</a> | <a href="#hasWithin">rico:hasWithin</a> | <a href="#inScheme">skos:inScheme</a> | <a href="#included">rico:included</a> | <a href="#includesOrIncluded">rico:includesOrIncluded</a> | <a href="#includesTransitive">rico:includesTransitive</a> | <a href="#intersects">rico:intersects</a> | <a href="#isAccumulatorOf">rico:isAccumulatorOf</a> | <a href="#isActivityTypeOf">rico:isActivityTypeOf</a> | <a href="#isAddresseeOf">rico:isAddresseeOf</a> | <a href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a> | <a href="#isAgentAssociatedWithPlace">rico:isAgentAssociatedWithPlace</a> | <a href="#isAssociatedWithDate">rico:isAssociatedWithDate</a> | <a href="#isAssociatedWithEvent">rico:isAssociatedWithEvent</a> | <a href="#isAssociatedWithPlace">rico:isAssociatedWithPlace</a> | <a href="#isAssociatedWithRule">rico:isAssociatedWithRule</a> | <a href="#isAuthorOf">rico:isAuthorOf</a> | <a href="#isBeginningDateOf">rico:isBeginningDateOf</a> | <a href="#isBirthDateOf">rico:isBirthDateOf</a> | <a href="#isBirthPlaceOf">rico:isBirthPlaceOf</a> | <a href="#isCarrierTypeOf">rico:isCarrierTypeOf</a> | <a href="#isChildOf">rico:isChildOf</a> | <a href="#isCollectorOf">rico:isCollectorOf</a> | <a href="#isComponentOfTransitive">rico:isComponentOfTransitive</a> | <a href="#isConstituentOfTransitive">rico:isConstituentOfTransitive</a> | <a href="#isContainedByTransitive">rico:isContainedByTransitive</a> | <a href="#isContentTypeOf">rico:isContentTypeOf</a> | <a href="#isCopyOf">rico:isCopyOf</a> | <a href="#isCreationDateOf">rico:isCreationDateOf</a> | <a href="#isCreatorOf">rico:isCreatorOf</a> | <a href="#isDateAssociatedWith">rico:isDateAssociatedWith</a> | <a href="#isDateOfOccurrenceOf">rico:isDateOfOccurrenceOf</a> | <a href="#isDateTypeOf">rico:isDateTypeOf</a> | <a href="#isDeathDateOf">rico:isDeathDateOf</a> | <a href="#isDeathPlaceOf">rico:isDeathPlaceOf</a> | <a href="#isDestructionDateOf">rico:isDestructionDateOf</a> | <a href="#isDirectComponentOf">rico:isDirectComponentOf</a> | <a href="#isDirectConstituentOf">rico:isDirectConstituentOf</a> | <a href="#isDirectPartOf">rico:isDirectPartOf</a> | <a href="#isDirectSubdivisionOf">rico:isDirectSubdivisionOf</a> | <a href="#isDirectSubeventOf">rico:isDirectSubeventOf</a> | <a href="#isDirectSubordinateTo">rico:isDirectSubordinateTo</a> | <a href="#isDirectlyContainedBy">rico:isDirectlyContainedBy</a> | <a href="#isDirectlyIncludedIn">rico:isDirectlyIncludedIn</a> | <a href="#isDocumentaryFormTypeOf">rico:isDocumentaryFormTypeOf</a> | <a href="#isDraftOf">rico:isDraftOf</a> | <a href="#isEndDateOf">rico:isEndDateOf</a> | <a href="#isEquivalentTo">rico:isEquivalentTo</a> | <a href="#isEventAssociatedWith">rico:isEventAssociatedWith</a> | <a href="#isEventTypeOf">rico:isEventTypeOf</a> | <a href="#isExtentOf">rico:isExtentOf</a> | <a href="#isExtentTypeOf">rico:isExtentTypeOf</a> | <a href="#isFamilyTypeOf">rico:isFamilyTypeOf</a> | <a href="#isFromUseDateOf">rico:isFromUseDateOf</a> | <a href="#isFunctionallyEquivalentTo">rico:isFunctionallyEquivalentTo</a> | <a href="#isIdentifierTypeOf">rico:isIdentifierTypeOf</a> | <a href="#isIncludedInTransitive">rico:isIncludedInTransitive</a> | <a href="#isInstantiationAssociatedWithInstantiation">rico:isInstantiationAssociatedWithInstantiation</a> | <a href="#isLastUpdateDateOf">rico:isLastUpdateDateOf</a> | <a href="#isModificationDateOf">rico:isModificationDateOf</a> | <a href="#isOrWasAdjacentTo">rico:isOrWasAdjacentTo</a> | <a href="#isOrWasAffectedBy">rico:isOrWasAffectedBy</a> | <a href="#isOrWasAgentNameOf">rico:isOrWasAgentNameOf</a> | <a href="#isOrWasAnalogueInstantiationOf">rico:isOrWasAnalogueInstantiationOf</a> | <a href="#isOrWasAppellationOf">rico:isOrWasAppellationOf</a> | <a href="#isOrWasCategoryOf">rico:isOrWasCategoryOf</a> | <a href="#isOrWasCategoryOfAllMembersOf">rico:isOrWasCategoryOfAllMembersOf</a> | <a href="#isOrWasCategoryOfSomeMembersOf">rico:isOrWasCategoryOfSomeMembersOf</a> | <a href="#isOrWasComponentOf">rico:isOrWasComponentOf</a> | <a href="#isOrWasConstituentOf">rico:isOrWasConstituentOf</a> | <a href="#isOrWasContainedBy">rico:isOrWasContainedBy</a> | <a href="#isOrWasContentTypeOfAllMembersOf">rico:isOrWasContentTypeOfAllMembersOf</a> | <a href="#isOrWasContentTypeOfSomeMembersOf">rico:isOrWasContentTypeOfSomeMembersOf</a> | <a href="#isOrWasControllerOf">rico:isOrWasControllerOf</a> | <a href="#isOrWasCoordinatesOf">rico:isOrWasCoordinatesOf</a> | <a href="#isOrWasCorporateBodyTypeOf">rico:isOrWasCorporateBodyTypeOf</a> | <a href="#isOrWasCreationDateOfAllMembersOf">rico:isOrWasCreationDateOfAllMembersOf</a> | <a href="#isOrWasCreationDateOfMostMembersOf">rico:isOrWasCreationDateOfMostMembersOf</a> | <a href="#isOrWasCreationDateOfSomeMembersOf">rico:isOrWasCreationDateOfSomeMembersOf</a> | <a href="#isOrWasDemographicGroupOf">rico:isOrWasDemographicGroupOf</a> | <a href="#isOrWasDerivedFromInstantiation">rico:isOrWasDerivedFromInstantiation</a> | <a href="#isOrWasDescribedBy">rico:isOrWasDescribedBy</a> | <a href="#isOrWasDigitalInstantiationOf">rico:isOrWasDigitalInstantiationOf</a> | <a href="#isOrWasDocumentaryFormTypeOfAllMembersOf">rico:isOrWasDocumentaryFormTypeOfAllMembersOf</a> | <a href="#isOrWasDocumentaryFormTypeOfSomeMembersOf">rico:isOrWasDocumentaryFormTypeOfSomeMembersOf</a> | <a href="#isOrWasEmployerOf">rico:isOrWasEmployerOf</a> | <a href="#isOrWasEnforcedBy">rico:isOrWasEnforcedBy</a> | <a href="#isOrWasExpressedBy">rico:isOrWasExpressedBy</a> | <a href="#isOrWasHolderOf">rico:isOrWasHolderOf</a> | <a href="#isOrWasHolderOfIntellectualPropertyRightsOf">rico:isOrWasHolderOfIntellectualPropertyRightsOf</a> | <a href="#isOrWasIdentifierOf">rico:isOrWasIdentifierOf</a> | <a href="#isOrWasIncludedIn">rico:isOrWasIncludedIn</a> | <a href="#isOrWasInstantiationOf">rico:isOrWasInstantiationOf</a> | <a href="#isOrWasJurisdictionOf">rico:isOrWasJurisdictionOf</a> | <a href="#isOrWasLanguageOf">rico:isOrWasLanguageOf</a> | <a href="#isOrWasLanguageOfAllMembersOf">rico:isOrWasLanguageOfAllMembersOf</a> | <a href="#isOrWasLanguageOfSomeMembersOf">rico:isOrWasLanguageOfSomeMembersOf</a> | <a href="#isOrWasLeaderOf">rico:isOrWasLeaderOf</a> | <a href="#isOrWasLegalStatusOf">rico:isOrWasLegalStatusOf</a> | <a href="#isOrWasLegalStatusOfAllMembersOf">rico:isOrWasLegalStatusOfAllMembersOf</a> | <a href="#isOrWasLegalStatusOfSomeMembersOf">rico:isOrWasLegalStatusOfSomeMembersOf</a> | <a href="#isOrWasLocationOf">rico:isOrWasLocationOf</a> | <a href="#isOrWasLocationOfAgent">rico:isOrWasLocationOfAgent</a> | <a href="#isOrWasMainSubjectOf">rico:isOrWasMainSubjectOf</a> | <a href="#isOrWasManagerOf">rico:isOrWasManagerOf</a> | <a href="#isOrWasMandateTypeOf">rico:isOrWasMandateTypeOf</a> | <a href="#isOrWasMemberOf">rico:isOrWasMemberOf</a> | <a href="#isOrWasNameOf">rico:isOrWasNameOf</a> | <a href="#isOrWasOccupationTypeOf">rico:isOrWasOccupationTypeOf</a> | <a href="#isOrWasOccupiedBy">rico:isOrWasOccupiedBy</a> | <a href="#isOrWasOwnerOf">rico:isOrWasOwnerOf</a> | <a href="#isOrWasPartOf">rico:isOrWasPartOf</a> | <a href="#isOrWasParticipantIn">rico:isOrWasParticipantIn</a> | <a href="#isOrWasPerformedBy">rico:isOrWasPerformedBy</a> | <a href="#isOrWasPhysicalLocationOf">rico:isOrWasPhysicalLocationOf</a> | <a href="#isOrWasPlaceNameOf">rico:isOrWasPlaceNameOf</a> | <a href="#isOrWasPlaceTypeOf">rico:isOrWasPlaceTypeOf</a> | <a href="#isOrWasRecordStateOfAllMembersOf">rico:isOrWasRecordStateOfAllMembersOf</a> | <a href="#isOrWasRecordStateOfSomeMembersOf">rico:isOrWasRecordStateOfSomeMembersOf</a> | <a href="#isOrWasRegulatedBy">rico:isOrWasRegulatedBy</a> | <a href="#isOrWasResponsibleForEnforcing">rico:isOrWasResponsibleForEnforcing</a> | <a href="#isOrWasRuleTypeOf">rico:isOrWasRuleTypeOf</a> | <a href="#isOrWasSubdivisionOf">rico:isOrWasSubdivisionOf</a> | <a href="#isOrWasSubeventOf">rico:isOrWasSubeventOf</a> | <a href="#isOrWasSubjectOf">rico:isOrWasSubjectOf</a> | <a href="#isOrWasSubordinateTo">rico:isOrWasSubordinateTo</a> | <a href="#isOrWasTitleOf">rico:isOrWasTitleOf</a> | <a href="#isOrWasUnderAuthorityOf">rico:isOrWasUnderAuthorityOf</a> | <a href="#isOrganicOrFunctionalProvenanceOf">rico:isOrganicOrFunctionalProvenanceOf</a> | <a href="#isOrganicProvenanceOf">rico:isOrganicProvenanceOf</a> | <a href="#isOriginalOf">rico:isOriginalOf</a> | <a href="#isPartOfTransitive">rico:isPartOfTransitive</a> | <a href="#isPlaceAssociatedWith">rico:isPlaceAssociatedWith</a> | <a href="#isPlaceAssociatedWithAgent">rico:isPlaceAssociatedWithAgent</a> | <a href="#isProductionTechniqueTypeOf">rico:isProductionTechniqueTypeOf</a> | <a href="#isPublicationDateOf">rico:isPublicationDateOf</a> | <a href="#isPublisherOf">rico:isPublisherOf</a> | <a href="#isReceiverOf">rico:isReceiverOf</a> | <a href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a> | <a href="#isRecordSetTypeOf">rico:isRecordSetTypeOf</a> | <a href="#isRecordStateOf">rico:isRecordStateOf</a> | <a href="#isRelatedTo">rico:isRelatedTo</a> | <a href="#isReplyTo">rico:isReplyTo</a> | <a href="#isRepresentationTypeOf">rico:isRepresentationTypeOf</a> | <a href="#isResponsibleForIssuing">rico:isResponsibleForIssuing</a> | <a href="#isRuleAssociatedWith">rico:isRuleAssociatedWith</a> | <a href="#isSenderOf">rico:isSenderOf</a> | <a href="#isSubdivisionOfTransitive">rico:isSubdivisionOfTransitive</a> | <a href="#isSubeventOfTransitive">rico:isSubeventOfTransitive</a> | <a href="#isSubordinateToTransitive">rico:isSubordinateToTransitive</a> | <a href="#isSuccessorOf">rico:isSuccessorOf</a> | <a href="#isToUseDateOf">rico:isToUseDateOf</a> | <a href="#isUnitOfMeasurementOf">rico:isUnitOfMeasurementOf</a> | <a href="#isWithin">rico:isWithin</a> | <a href="#issuedBy">rico:issuedBy</a> | <a href="#knownBy">rico:knownBy</a> | <a href="#knows">rico:knows</a> | <a href="#knowsOf">rico:knowsOf</a> | <a href="#migratedFrom">rico:migratedFrom</a> | <a href="#migratedInto">rico:migratedInto</a> | <a href="#occupiesOrOccupied">rico:occupiesOrOccupied</a> | <a href="#occurredAtDate">rico:occurredAtDate</a> | <a href="#overlapsOrOverlapped">rico:overlapsOrOverlapped</a> | <a href="#performsOrPerformed">rico:performsOrPerformed</a> | <a href="#precededInSequence">rico:precededInSequence</a> | <a href="#precedesInSequenceTransitive">rico:precedesInSequenceTransitive</a> | <a href="#precedesInTime">rico:precedesInTime</a> | <a href="#precedesOrPreceded">rico:precedesOrPreceded</a> | <a href="#proxyFor">rico:proxyFor</a> | <a href="#proxyIn">rico:proxyIn</a> | <a href="#regulatesOrRegulated">rico:regulatesOrRegulated</a> | <a href="#resultedFromTheMergerOf">rico:resultedFromTheMergerOf</a> | <a href="#resultedFromTheSplitOf">rico:resultedFromTheSplitOf</a> | <a href="#resultsOrResultedFrom">rico:resultsOrResultedFrom</a> | <a href="#resultsOrResultedIn">rico:resultsOrResultedIn</a> | <a href="#topConceptOf">skos:topConceptOf</a> | <a href="#wasComponentOf">rico:wasComponentOf</a> | <a href="#wasConstituentOf">rico:wasConstituentOf</a> | <a href="#wasContainedBy">rico:wasContainedBy</a> | <a href="#wasIncludedIn">rico:wasIncludedIn</a> | <a href="#wasLastUpdatedAtDate">rico:wasLastUpdatedAtDate</a> | <a href="#wasMergedInto">rico:wasMergedInto</a> | <a href="#wasPartOf">rico:wasPartOf</a> | <a href="#wasSplitInto">rico:wasSplitInto</a> | <a href="#wasSubdivisionOf">rico:wasSubdivisionOf</a> | <a href="#wasSubeventOf">rico:wasSubeventOf</a> | <a href="#wasSubordinateTo">rico:wasSubordinateTo</a> | <a href="#wasUsedFromDate">rico:wasUsedFromDate</a> | <a href="#wasUsedToDate">rico:wasUsedToDate</a>
          </div>
          <div id="objectPropertiesListTwo">
             <p>This second list includes <strong>the object properties which are to be
                                 used with Relation classes only</strong>.</p>
-            <a href="#accumulationRelation_role">rico:accumulationRelation_role</a> | <a href="#activityDocumentationRelation_role">rico:activityDocumentationRelation_role</a> | <a href="#agentControlRelation_role">rico:agentControlRelation_role</a> | <a href="#agentHierarchicalRelation_role">rico:agentHierarchicalRelation_role</a> | <a href="#agentTemporalRelation_role">rico:agentTemporalRelation_role</a> | <a href="#agentToAgentRelation_role">rico:agentToAgentRelation_role</a> | <a href="#appellationRelation_role">rico:appellationRelation_role</a> | <a href="#asConcernsActivity">rico:asConcernsActivity</a> | <a href="#authorityRelation_role">rico:authorityRelation_role</a> | <a href="#authorizingAgent">rico:authorizingAgent</a> | <a href="#authorshipRelation_role">rico:authorshipRelation_role</a> | <a href="#childRelation_role">rico:childRelation_role</a> | <a href="#correspondenceRelation_role">rico:correspondenceRelation_role</a> | <a href="#creationRelation_role">rico:creationRelation_role</a> | <a href="#creationWithRole">rico:creationWithRole</a> | <a href="#derivationRelation_role">rico:derivationRelation_role</a> | <a href="#descendanceRelation_role">rico:descendanceRelation_role</a> | <a href="#eventRelation_role">rico:eventRelation_role</a> | <a href="#familyRelation_role">rico:familyRelation_role</a> | <a href="#functionalEquivalenceRelation_role">rico:functionalEquivalenceRelation_role</a> | <a href="#groupSubdivisionRelation_role">rico:groupSubdivisionRelation_role</a> | <a href="#instantiationToInstantiationRelation_role">rico:instantiationToInstantiationRelation_role</a> | <a href="#intellectualPropertyRightsRelation_role">rico:intellectualPropertyRightsRelation_role</a> | <a href="#knowingOfRelation_role">rico:knowingOfRelation_role</a> | <a href="#knowingRelation_role">rico:knowingRelation_role</a> | <a href="#leadershipRelation_role">rico:leadershipRelation_role</a> | <a href="#leadershipWithPosition">rico:leadershipWithPosition</a> | <a href="#managementRelation_role">rico:managementRelation_role</a> | <a href="#mandateRelation_role">rico:mandateRelation_role</a> | <a href="#membershipRelation_role">rico:membershipRelation_role</a> | <a href="#membershipWithPosition">rico:membershipWithPosition</a> | <a href="#migrationRelation_role">rico:migrationRelation_role</a> | <a href="#organicOrFunctionalProvenanceRelation_role">rico:organicOrFunctionalProvenanceRelation_role</a> | <a href="#organicProvenanceRelation_role">rico:organicProvenanceRelation_role</a> | <a href="#ownershipRelation_role">rico:ownershipRelation_role</a> | <a href="#performanceRelation_role">rico:performanceRelation_role</a> | <a href="#placeRelation_role">rico:placeRelation_role</a> | <a href="#positionHoldingRelation_role">rico:positionHoldingRelation_role</a> | <a href="#positionToGroupRelation_role">rico:positionToGroupRelation_role</a> | <a href="#recordResourceGeneticRelation_role">rico:recordResourceGeneticRelation_role</a> | <a href="#recordResourceHoldingRelation_role">rico:recordResourceHoldingRelation_role</a> | <a href="#recordResourceToInstantiationRelation_role">rico:recordResourceToInstantiationRelation_role</a> | <a href="#recordResourceToRecordResourceRelation_role">rico:recordResourceToRecordResourceRelation_role</a> | <a href="#relationConnects">rico:relationConnects</a> | <a href="#relationHasSource">rico:relationHasSource</a> | <a href="#relationHasTarget">rico:relationHasTarget</a> | <a href="#relation_role">rico:relation_role</a> | <a href="#ruleRelation_role">rico:ruleRelation_role</a> | <a href="#sequentialRelation_role">rico:sequentialRelation_role</a> | <a href="#siblingRelation_role">rico:siblingRelation_role</a> | <a href="#spouseRelation_role">rico:spouseRelation_role</a> | <a href="#teachingRelation_role">rico:teachingRelation_role</a> | <a href="#temporalRelation_role">rico:temporalRelation_role</a> | <a href="#thingIsConnectedToRelation">rico:thingIsConnectedToRelation</a> | <a href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a> | <a href="#thingIsTargetOfRelation">rico:thingIsTargetOfRelation</a> | <a href="#typeRelation_role">rico:typeRelation_role</a> | <a href="#wholePartRelation_role">rico:wholePartRelation_role</a> | <a href="#workRelation_role">rico:workRelation_role</a>
+            <a href="#accumulationRelation_role">rico:accumulationRelation_role</a> | <a href="#activityDocumentationRelation_role">rico:activityDocumentationRelation_role</a> | <a href="#activityIsContextOfRelation">rico:activityIsContextOfRelation</a> | <a href="#agentControlRelation_role">rico:agentControlRelation_role</a> | <a href="#agentHierarchicalRelation_role">rico:agentHierarchicalRelation_role</a> | <a href="#agentTemporalRelation_role">rico:agentTemporalRelation_role</a> | <a href="#agentToAgentRelation_role">rico:agentToAgentRelation_role</a> | <a href="#appellationRelation_role">rico:appellationRelation_role</a> | <a href="#asConcernsActivity">rico:asConcernsActivity</a> | <a href="#authorityRelation_role">rico:authorityRelation_role</a> | <a href="#authorizingAgent">rico:authorizingAgent</a> | <a href="#authorshipRelation_role">rico:authorshipRelation_role</a> | <a href="#childRelation_role">rico:childRelation_role</a> | <a href="#correspondenceRelation_role">rico:correspondenceRelation_role</a> | <a href="#creationRelation_role">rico:creationRelation_role</a> | <a href="#creationWithRole">rico:creationWithRole</a> | <a href="#derivationRelation_role">rico:derivationRelation_role</a> | <a href="#descendanceRelation_role">rico:descendanceRelation_role</a> | <a href="#eventRelation_role">rico:eventRelation_role</a> | <a href="#evidences">rico:evidences</a> | <a href="#familyRelation_role">rico:familyRelation_role</a> | <a href="#functionalEquivalenceRelation_role">rico:functionalEquivalenceRelation_role</a> | <a href="#groupSubdivisionRelation_role">rico:groupSubdivisionRelation_role</a> | <a href="#instantiationToInstantiationRelation_role">rico:instantiationToInstantiationRelation_role</a> | <a href="#intellectualPropertyRightsRelation_role">rico:intellectualPropertyRightsRelation_role</a> | <a href="#isAuthorizingAgentInMandateRelation">rico:isAuthorizingAgentInMandateRelation</a> | <a href="#isEvidencedBy">rico:isEvidencedBy</a> | <a href="#knowingOfRelation_role">rico:knowingOfRelation_role</a> | <a href="#knowingRelation_role">rico:knowingRelation_role</a> | <a href="#leadershipRelation_role">rico:leadershipRelation_role</a> | <a href="#leadershipWithPosition">rico:leadershipWithPosition</a> | <a href="#managementRelation_role">rico:managementRelation_role</a> | <a href="#mandateRelation_role">rico:mandateRelation_role</a> | <a href="#membershipRelation_role">rico:membershipRelation_role</a> | <a href="#membershipWithPosition">rico:membershipWithPosition</a> | <a href="#migrationRelation_role">rico:migrationRelation_role</a> | <a href="#organicOrFunctionalProvenanceRelation_role">rico:organicOrFunctionalProvenanceRelation_role</a> | <a href="#organicProvenanceRelation_role">rico:organicProvenanceRelation_role</a> | <a href="#ownershipRelation_role">rico:ownershipRelation_role</a> | <a href="#performanceRelation_role">rico:performanceRelation_role</a> | <a href="#placeRelation_role">rico:placeRelation_role</a> | <a href="#positionHoldingRelation_role">rico:positionHoldingRelation_role</a> | <a href="#positionIsContextOfLeadershipRelation">rico:positionIsContextOfLeadershipRelation</a> | <a href="#positionIsContextOfMembershipRelation">rico:positionIsContextOfMembershipRelation</a> | <a href="#positionToGroupRelation_role">rico:positionToGroupRelation_role</a> | <a href="#recordResourceGeneticRelation_role">rico:recordResourceGeneticRelation_role</a> | <a href="#recordResourceHoldingRelation_role">rico:recordResourceHoldingRelation_role</a> | <a href="#recordResourceToInstantiationRelation_role">rico:recordResourceToInstantiationRelation_role</a> | <a href="#recordResourceToRecordResourceRelation_role">rico:recordResourceToRecordResourceRelation_role</a> | <a href="#relationConnects">rico:relationConnects</a> | <a href="#relationHasContext">rico:relationHasContext</a> | <a href="#relationHasSource">rico:relationHasSource</a> | <a href="#relationHasTarget">rico:relationHasTarget</a> | <a href="#relation_role">rico:relation_role</a> | <a href="#roleIsContextOfCreationRelation">rico:roleIsContextOfCreationRelation</a> | <a href="#ruleRelation_role">rico:ruleRelation_role</a> | <a href="#sequentialRelation_role">rico:sequentialRelation_role</a> | <a href="#siblingRelation_role">rico:siblingRelation_role</a> | <a href="#spouseRelation_role">rico:spouseRelation_role</a> | <a href="#teachingRelation_role">rico:teachingRelation_role</a> | <a href="#temporalRelation_role">rico:temporalRelation_role</a> | <a href="#thingIsConnectedToRelation">rico:thingIsConnectedToRelation</a> | <a href="#thingIsContextOfRelation">rico:thingIsContextOfRelation</a> | <a href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a> | <a href="#thingIsTargetOfRelation">rico:thingIsTargetOfRelation</a> | <a href="#typeRelation_role">rico:typeRelation_role</a> | <a href="#wholePartRelation_role">rico:wholePartRelation_role</a> | <a href="#workRelation_role">rico:workRelation_role</a>
          </div>
          <div class="propertyDescription" id="accumulationRelation_role">
             <h4> Object property: rico:accumulationRelation_role</h4>
@@ -12598,6 +12656,61 @@
                <dd>2023-11-08: In order to get a system of rolified Relation classes: created
                the object property, with domain and range the EventRelation rolified class. Declared
                it as reflexive. Declared it(s) superproperty(ies).</dd>
+            </dl>
+            <p>
+               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+            </p>
+         </div>
+         <div class="propertyDescription" id="evidences">
+            <h4> Object property: rico:evidences</h4>
+            <p class="IRI">
+               <span class="IRI_label">IRI: </span>
+               <a href="https://www.ica.org/standards/RiC/ontology#evidences">https://www.ica.org/standards/RiC/ontology#evidences</a>
+            </p>
+            <dl>
+               <dt>Label(s)</dt>
+               <dd>evidences [en] | atteste de [fr] | evidencia [es]</dd>
+               <dt>Definition</dt>
+               <dd>Connects a Record Resource to a Relation, when the first is used
+         for proving the existence of the second one, or for describing it.</dd>
+               <dt>Mapping to RiC-CM 1.0</dt>
+               <dd>Inverse of 'is evidenced by' object
+         property.</dd>
+            </dl>
+            <dl>
+               <dt>Has super-properties</dt>
+               <dd>
+                  <a title="https://www.ica.org/standards/RiC/ontology#thingIsConnectedToRelation"
+                     href="#thingIsConnectedToRelation">rico:thingIsConnectedToRelation</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has domain</dt>
+               <dd>
+                  <a href="#RecordResource">rico:RecordResource</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has range</dt>
+               <dd>
+                  <a href="#Relation">rico:Relation</a>
+               </dd>
+            </dl>
+            <p>
+               <span class="label">Has inverse</span>: <span>
+                  <a title="https://www.ica.org/standards/RiC/ontology#isEvidencedBy"
+                     href="#isEvidencedBy">rico:isEvidencedBy</a>
+               </span>
+            </p>
+            <dl>
+               <dt>Change note(s)</dt>
+               <dd>2023-12-27: Renamed the object property (was 'is source of') and reduced
+               its domain to Record Resource (the domain was the union of Record Resource and Agent)
+               and its range to Relation (the range was the union of Record Resource and Relation).
+               Consequently updated the superproperty, the labels, and added a
+               rico:RiCCMCorrespondingComponent. Same for the inverse object property.</dd>
+               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
+               <dd>2023-08-28: Added a new rdfs:label in French.</dd>
             </dl>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -20305,58 +20418,6 @@
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
             </p>
          </div>
-         <div class="propertyDescription" id="hasSource">
-            <h4> Object property: rico:hasSource</h4>
-            <p class="IRI">
-               <span class="IRI_label">IRI: </span>
-               <a href="https://www.ica.org/standards/RiC/ontology#hasSource">https://www.ica.org/standards/RiC/ontology#hasSource</a>
-            </p>
-            <dl>
-               <dt>Label(s)</dt>
-               <dd>has source [en] | a pour source [fr] | tiene como fuente [es]</dd>
-               <dt>Definition</dt>
-               <dd>Connects a Record Resource or Relation to a Record Resource or
-         Agent that is used as a source of information for identifying or describing
-         it.</dd>
-            </dl>
-            <dl>
-               <dt>Has super-properties</dt>
-               <dd>
-                  <a title="https://www.ica.org/standards/RiC/ontology#isRelatedTo"
-                     href="#isRelatedTo">rico:isRelatedTo</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has domain</dt>
-               <dd>
-                  <a href="#RecordResource">rico:RecordResource</a>
-                  <span class="logic"> or </span>
-                  <a href="#Relation">rico:Relation</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has range</dt>
-               <dd>
-                  <a href="#Agent">rico:Agent</a>
-                  <span class="logic"> or </span>
-                  <a href="#RecordResource">rico:RecordResource</a>
-               </dd>
-            </dl>
-            <p>
-               <span class="label">Has inverse</span>: <span>
-                  <a title="https://www.ica.org/standards/RiC/ontology#isSourceOf"
-                     href="#isSourceOf">rico:isSourceOf</a>
-               </span>
-            </p>
-            <dl>
-               <dt>Change note(s)</dt>
-               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
-               <dd>2023-08-28: Added a new rdfs:label in French.</dd>
-            </dl>
-            <p>
-               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
-            </p>
-         </div>
          <div class="propertyDescription" id="hasSubdivisionTransitive">
             <h4> Object property: rico:hasSubdivisionTransitive</h4>
             <p class="IRI">
@@ -23643,6 +23704,61 @@
                <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
                <dd>2023-08-28: Added a new rdfs:label in French.</dd>
                <dd>2021-01-22: changed the superproperty IRI.</dd>
+            </dl>
+            <p>
+               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
+            </p>
+         </div>
+         <div class="propertyDescription" id="isEvidencedBy">
+            <h4> Object property: rico:isEvidencedBy</h4>
+            <p class="IRI">
+               <span class="IRI_label">IRI: </span>
+               <a href="https://www.ica.org/standards/RiC/ontology#isEvidencedBy">https://www.ica.org/standards/RiC/ontology#isEvidencedBy</a>
+            </p>
+            <dl>
+               <dt>Label(s)</dt>
+               <dd>is evidenced by [en] | est attestée par [fr] | se evidencia en [es]</dd>
+               <dt>Definition</dt>
+               <dd>Connects a Relation to a Record Resource that is used for proving
+         is existence or describing it.</dd>
+               <dt>Mapping to RiC-CM 1.0</dt>
+               <dd>Object property implementation of RiC-RA05 (Source
+         of Relation attribute).</dd>
+            </dl>
+            <dl>
+               <dt>Has super-properties</dt>
+               <dd>
+                  <a title="https://www.ica.org/standards/RiC/ontology#relationConnects"
+                     href="#relationConnects">rico:relationConnects</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has domain</dt>
+               <dd>
+                  <a href="#Relation">rico:Relation</a>
+               </dd>
+            </dl>
+            <dl>
+               <dt>Has range</dt>
+               <dd>
+                  <a href="#RecordResource">rico:RecordResource</a>
+               </dd>
+            </dl>
+            <p>
+               <span class="label">Has inverse</span>: <span>
+                  <a title="https://www.ica.org/standards/RiC/ontology#evidences"
+                     href="#evidences">rico:evidences</a>
+               </span>
+            </p>
+            <dl>
+               <dt>Change note(s)</dt>
+               <dd>2023-12-27: Renamed the object property (was 'has source') and reduced its
+               domain to Relation (the domain was the union of Record Resource and Relation) and its
+               range to Record Resource (the range was the union of Agent and Record Resource).
+               Consequently updated the superproperty, the labels, and added a
+               rico:RiCCMCorrespondingComponent. Same for the inverse object property.</dd>
+               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
+               <dd>2023-08-28: Added a new rdfs:label in French.</dd>
             </dl>
             <p>
                <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
@@ -29070,8 +29186,7 @@
                      href="#hasOrHadSomeMembersWithLanguage">rico:hasOrHadSomeMembersWithLanguage</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasOrHadSubject"
                      href="#hasOrHadSubject">rico:hasOrHadSubject</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasOrganicOrFunctionalProvenance"
                      href="#hasOrganicOrFunctionalProvenance">rico:hasOrganicOrFunctionalProvenance</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasPublisher"
-                     href="#hasPublisher">rico:hasPublisher</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasSource"
-                     href="#hasSource">rico:hasSource</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasUnitOfMeasurement"
+                     href="#hasPublisher">rico:hasPublisher</a>; <a title="https://www.ica.org/standards/RiC/ontology#hasUnitOfMeasurement"
                      href="#hasUnitOfMeasurement">rico:hasUnitOfMeasurement</a>; <a title="https://www.ica.org/standards/RiC/ontology#isAgentAssociatedWithAgent"
                      href="#isAgentAssociatedWithAgent">rico:isAgentAssociatedWithAgent</a>; <a title="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"
                      href="#isAssociatedWithDate">rico:isAssociatedWithDate</a>; <a title="https://www.ica.org/standards/RiC/ontology#isAssociatedWithEvent"
@@ -29099,8 +29214,7 @@
                      href="#isPlaceAssociatedWith">rico:isPlaceAssociatedWith</a>; <a title="https://www.ica.org/standards/RiC/ontology#isPublisherOf"
                      href="#isPublisherOf">rico:isPublisherOf</a>; <a title="https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"
                      href="#isRecordResourceAssociatedWithRecordResource">rico:isRecordResourceAssociatedWithRecordResource</a>; <a title="https://www.ica.org/standards/RiC/ontology#isRuleAssociatedWith"
-                     href="#isRuleAssociatedWith">rico:isRuleAssociatedWith</a>; <a title="https://www.ica.org/standards/RiC/ontology#isSourceOf"
-                     href="#isSourceOf">rico:isSourceOf</a>; <a title="https://www.ica.org/standards/RiC/ontology#isUnitOfMeasurementOf"
+                     href="#isRuleAssociatedWith">rico:isRuleAssociatedWith</a>; <a title="https://www.ica.org/standards/RiC/ontology#isUnitOfMeasurementOf"
                      href="#isUnitOfMeasurementOf">rico:isUnitOfMeasurementOf</a>; <a title="https://www.ica.org/standards/RiC/ontology#precedesOrPreceded"
                      href="#precedesOrPreceded">rico:precedesOrPreceded</a>; <a title="https://www.ica.org/standards/RiC/ontology#proxyFor"
                      href="#proxyFor">rico:proxyFor</a>; <a title="https://www.ica.org/standards/RiC/ontology#proxyIn"
@@ -29401,58 +29515,6 @@
                <span class="label">Has inverse</span>: <span>
                   <a title="https://www.ica.org/standards/RiC/ontology#hasSender"
                      href="#hasSender">rico:hasSender</a>
-               </span>
-            </p>
-            <dl>
-               <dt>Change note(s)</dt>
-               <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
-               <dd>2023-08-28: Added a new rdfs:label in French.</dd>
-            </dl>
-            <p>
-               <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
-            </p>
-         </div>
-         <div class="propertyDescription" id="isSourceOf">
-            <h4> Object property: rico:isSourceOf</h4>
-            <p class="IRI">
-               <span class="IRI_label">IRI: </span>
-               <a href="https://www.ica.org/standards/RiC/ontology#isSourceOf">https://www.ica.org/standards/RiC/ontology#isSourceOf</a>
-            </p>
-            <dl>
-               <dt>Label(s)</dt>
-               <dd>is source of [en] | est la source de [fr] | es fuente de [es]</dd>
-               <dt>Definition</dt>
-               <dd>Connects a Record Resource or an Agent to a Record Resource or
-         Relation, when the first is used as a source of information for identifying or describing
-         the second one.</dd>
-            </dl>
-            <dl>
-               <dt>Has super-properties</dt>
-               <dd>
-                  <a title="https://www.ica.org/standards/RiC/ontology#isRelatedTo"
-                     href="#isRelatedTo">rico:isRelatedTo</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has domain</dt>
-               <dd>
-                  <a href="#Agent">rico:Agent</a>
-                  <span class="logic"> or </span>
-                  <a href="#RecordResource">rico:RecordResource</a>
-               </dd>
-            </dl>
-            <dl>
-               <dt>Has range</dt>
-               <dd>
-                  <a href="#RecordResource">rico:RecordResource</a>
-                  <span class="logic"> or </span>
-                  <a href="#Relation">rico:Relation</a>
-               </dd>
-            </dl>
-            <p>
-               <span class="label">Has inverse</span>: <span>
-                  <a title="https://www.ica.org/standards/RiC/ontology#hasSource"
-                     href="#hasSource">rico:hasSource</a>
                </span>
             </p>
             <dl>
@@ -32107,7 +32169,8 @@
             <dl>
                <dt>Has sub-properties</dt>
                <dd>
-                  <a title="https://www.ica.org/standards/RiC/ontology#relationHasContext"
+                  <a title="https://www.ica.org/standards/RiC/ontology#isEvidencedBy"
+                     href="#isEvidencedBy">rico:isEvidencedBy</a>; <a title="https://www.ica.org/standards/RiC/ontology#relationHasContext"
                      href="#relationHasContext">rico:relationHasContext</a>; <a title="https://www.ica.org/standards/RiC/ontology#relationHasSource"
                      href="#relationHasSource">rico:relationHasSource</a>; <a title="https://www.ica.org/standards/RiC/ontology#relationHasTarget"
                      href="#relationHasTarget">rico:relationHasTarget</a>
@@ -32969,7 +33032,8 @@
             <dl>
                <dt>Has sub-properties</dt>
                <dd>
-                  <a title="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"
+                  <a title="https://www.ica.org/standards/RiC/ontology#evidences"
+                     href="#evidences">rico:evidences</a>; <a title="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"
                      href="#thingIsContextOfRelation">rico:thingIsContextOfRelation</a>; <a title="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"
                      href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a>; <a title="https://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"
                      href="#thingIsTargetOfRelation">rico:thingIsTargetOfRelation</a>
@@ -34431,7 +34495,20 @@
             <li>2023, December 6: <strong>improved the description (rdfs:comment) of
                         the 48 n-ary Relation classes by clearly specifying how they are
                         directed</strong>.</li>
-            <li>2023, December 21: <strong>revised and updated the ontology metadata and introduction, and the HTML view.</strong>.</li>
+            <li>2023, December 13: Completed the metadata of the vocabulary: added
+                     dc:language, a history note and a scope note.</li>
+            <li>2023, December 21: <strong>revised and updated the ontology metadata
+                        and introduction, and the HTML view.</strong>.</li>
+            <li>2023, December 27: in order to make the ontology clearer and more
+                     consistent, renamed the certainty and source datatype properties to
+                     relationCertainty and relationSource and reduced their domain to Relation.
+                     Renamed the 'hasSource' object property to 'isEvidencedBy' and reduced its
+                     domain to Relation and range to RecordResource; same for the inverse property,
+                     'isSourceOf', renamed to 'evidences'. Updated the specifications of these
+                     properties accordingly.</li>
+            <li>2023, December 27: added rdfs:isDefinedBy to all the properties not
+                     defined in RiC-O itself.</li>
+            <li>2023, December 28: made a few changes in the ontology introduction (dcterms:description) and metadata.</li>
          </ul>
          <p>
             <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
