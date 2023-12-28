@@ -1,4 +1,4 @@
-# Modularized version of RiC-0 1.O
+# Modularized version of RiC-O 1.0: rationale, warning and use cases
 
 This folder contains **five files, which, when they are used together, are equivalent to the RiC-O_1.0.rdf file**:
 
