@@ -57,6 +57,7 @@
       <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-9375-2102"/>
       <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-9938-6502"/>
       <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6743-9622"/>
+      <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-0165-8341"/>
       <dcterms:description rdf:parseType="Literal">
          <html:div xml:lang="en" id="introduction">
             <html:h3>Introduction</html:h3>
@@ -797,6 +798,7 @@
                   <html:li>2023, December 6: <html:strong>improved the description (rdfs:comment) of
                         the 48 n-ary Relation classes by clearly specifying how they are
                         directed</html:strong>.</html:li>
+                  <html:li>2023, December 13: Completed the metadata of the vocabulary: added dc:language, a history note and a scope note.</html:li>
                   <html:li>2023, December 21: <html:strong>revised and updated the ontology metadata and introduction, and the HTML view.</html:strong>.</html:li>
                   <html:li>2023, December 27: in order to make the ontology clearer and more consistent, renamed the certainty and source datatype properties to relationCertainty and relationSource and reduced their domain to Relation. Renamed the 'hasSource' object property to 'isEvidencedBy' and reduced its domain to Relation and range to RecordResource; same for the inverse property, 'isSourceOf', renamed to 'evidences'. Updated the specifications of these properties accordingly.</html:li>
                   <html:li>2023, December 27: added rdfs:isDefinedBy to all the properties not defined in RiC-O itself.</html:li>
@@ -25485,11 +25487,10 @@
          types</skos:definition>
       <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts Ontology. When
          the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
-         would be released: the first one, consisting of a unique large OWL file, would
-         remain the reference one. Meanwhile, RiC-0 1.0 was also provided as a set of
+         would be released. The first one, consisting of a unique large OWL file, would
+         remain the reference one. RiC-0 1.0 would also be provided as a set of
          files, in order to address specific needs, e.g. using only the core of the
-         ontology, or using only the individuals it defined and defining new individuals,
-         or extending the Relation classes system. So from December 2023, you can find
+         ontology, or using only the individuals it defined and defining new individuals. So from December 2023, you can find
          the vocabulary on Documentary Form Types, either in the unique large OWL RiC-O
          file, or as a separate file.
       </skos:historyNote>
@@ -25546,11 +25547,10 @@
       </skos:changeNote>
       <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts Ontology. When
          the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
-         would be released: the first one, consisting of a unique large OWL file, would
-         remain the reference one. Meanwhile, RiC-0 1.0 was also provided as a set of
+         would be released. The first one, consisting of a unique large OWL file, would
+         remain the reference one. RiC-0 1.0 would also be provided as a set of
          files, in order to address specific needs, e.g. using only the core of the
-         ontology, or using only the individuals it defined and defining new individuals,
-         or extending the Relation classes system. So from December 2023, you can find
+         ontology, or using only the individuals it defined and defining new individuals. So from December 2023, you can find
          the vocabulary on Record Set Types, either in the unique large OWL RiC-O
          file, or as a separate file.
       </skos:historyNote>
