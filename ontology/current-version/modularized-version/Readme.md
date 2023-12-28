@@ -18,7 +18,7 @@ This folder contains **five files, which, when they are used together, are equiv
 This set of files has been generated from the RiC-O_1-0.rdf file. They may be in the future the reference files for RiC-O, since EGAD may consider easier to maintain the ontology this way. RiC-O is already a very dense ontology, whose size is about 1,5 Mo. If the ontology is further enriched with new components, or new assertions, such as mappings, or complete translations of its documentation, or new concepts for the vocabularies, it could prove much more practical to manage it in the form of a set of specialized files.
 
 
-However, **for now, the reference version of RiC-O remains the RiC-O_1.0.rdf file**. Besides, the modularized version is more difficult to use. **It is therefore recommended to use the RiC-O_1-0.rdf file in preference to the modularized version**.
+However, **for now, the reference version of RiC-O remains the RiC-O_1.0.rdf file**. Besides, the modularized version is more difficult to use. **It is therefore strongly recommended to use the RiC-O_1-0.rdf file in preference to the modularized version**.
 
 In some implementations, **expert users may nevertheless consider interesting to use the modular version of RiC-O, since they may only need some of the files provided**.
 
