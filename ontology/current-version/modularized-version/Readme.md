@@ -33,7 +33,7 @@ In order to do so, you would first have to open the RiC-O_1-0_main.rdf file in a
 ```
 Then, you can open the *RiC-O_1-0_main.rdf* file in an OWL 2 ontology editor like Protégé Desktop, and resolve the imports by locating the three needed files on your local system. An ontology editor like Protégé Desktop will then display the content of the four files just as is they were in a single file.
 
-- **use case 2**: **You are just working on vocabularies and would like to use and extend the RiC-O vocabularies**. In such a case, just use the vocabulary files.
+- **use case 2**: **you are just working on vocabularies and would like to use and extend the RiC-O vocabularies**. In such a case, just use the vocabulary files.
 
 
 
