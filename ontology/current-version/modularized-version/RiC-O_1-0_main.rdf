@@ -20,8 +20,6 @@
       <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
       <owl:imports rdf:resource="RiC-O_1-0_core.rdf"/>
       <owl:imports rdf:resource="RiC-O_1-0_relations.rdf"/>
-      <owl:imports rdf:resource="RiC_DocumentaryFormTypes_vocabulary.rdf"/>
-      <owl:imports rdf:resource="RiC_RecordSetTypes_vocabulary.rdf"/>
       <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
       <dc:contributor xml:lang="en">Florence Clavaud (Archives nationales de France), member of EGAD
          and lead of EGAD RiC-O team from 2012</dc:contributor>
@@ -446,7 +444,7 @@
       <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA
          RiC-O) version 1.0</rdfs:label>
-      <owl:versionInfo xml:lang="en">Version 1.0 - 2023-12-29.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 1.0 - 2023-12-30.</owl:versionInfo>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
       <owl:incompatibleWith rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
@@ -811,12 +809,13 @@
                      defined in RiC-O itself.</html:li>
                   <html:li>2023, December 28: made a few changes in the ontology introduction
                      (dcterms:description) and metadata.</html:li>
+                  <html:li>2023, December 29: Added the property chain axiom on 'hasCreator'.</html:li>
                </html:ul>
             </html:div>
          </html:div>
       </skos:historyNote>
    </owl:Ontology>
-   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Annotation properties // /////////////////////////////////////////////////////////////////////////////////////// -->
    <!-- http://creativecommons.org/ns#license -->
    <rdf:Description rdf:about="http://creativecommons.org/ns#license">
       <rdfs:isDefinedBy rdf:resource="http://creativecommons.org/ns#"/>

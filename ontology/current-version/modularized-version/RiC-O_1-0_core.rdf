@@ -15,8 +15,7 @@
          xmlns:voaf="http://purl.org/vocommons/voaf#"
          xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-         xml:base="https://www.ica.org/standards/RiC/ontology">
-   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Annotation properties // /////////////////////////////////////////////////////////////////////////////////////// --><!-- https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent -->
+         xml:base="https://www.ica.org/standards/RiC/ontology"><!-- /////////////////////////////////////////////////////////////////////////////////////// // // Annotation properties // /////////////////////////////////////////////////////////////////////////////////////// --><!-- https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent -->
    <owl:AnnotationProperty rdf:about="https://www.ica.org/standards/RiC/ontology#RiCCMCorrespondingComponent">
       <rdfs:comment xml:lang="en">When it exists, specifies the identifier and name of RiC-CM
          component that corresponds to the annotated class or property.</rdfs:comment>
@@ -1769,6 +1768,12 @@
       <rdfs:label xml:lang="en">has creator</rdfs:label>
       <rdfs:label xml:lang="fr">a pour créateur</rdfs:label>
       <rdfs:label xml:lang="es">tiene como creador a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-12-29</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom, that had been forgotten.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>

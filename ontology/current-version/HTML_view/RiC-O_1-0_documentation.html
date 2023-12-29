@@ -234,12 +234,15 @@
       <div id="metadata">
          <h3>Ontology metadata</h3>
          <p>
-            <span class="metadata_label">This version</span>: <strong>Version 1.0 - 2023-12-29.</strong>
+            <span class="metadata_label">This version</span>: <strong>Version 1.0 - 2023-12-30.</strong>
          </p>
          <p>See also the project on GitHub, where other resources can be
                         found: <a href="https://github.com/ICA-EGAD/RiC-O" target="_blank">https://github.com/ICA-EGAD/RiC-O</a>, and the accompanying website (<a href="https://ica-egad.github.io/RiC-O/" target="_blank">https://ica-egad.github.io/RiC-O/</a>).</p>
          <p>
-            <span class="metadata_label">Prior version</span>: <a href="https://github.com/ICA-EGAD/RiC-O/releases/tag/v1.0-beta">RiC-O_v1.0-beta</a>.</p>
+            <span class="metadata_label">Prior version</span>: <a href="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf">RiC-O_v1.0-beta</a>.</p>
+         <p>
+            <span class="metadata_label">Incompatible with version:</span>
+            <a href="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf">0.2</a>.</p>
          <dl>
             <dt>Creator:</dt>
             <dd>International Council on Archives Expert Group on Archival
@@ -483,8 +486,8 @@
                   querying them using SPARQL, and making inferences using the logic of the
                   ontology.</p>
             <p>While some projects have built some specific ontologies for describing
-                  archives, in 2013 no generic domain ontology existed for the specific needs of
-                  the archival community. This is why EGAD decided to develop RiC-O as a part of RiC
+                  archives, in 2013 no generic domain ontology existed for the specific needs of the
+                  archival community. This is why EGAD decided to develop RiC-O as a part of RiC
                   standard.</p>
             <p>Apart from this first, main target, <strong>RiC-O, as a technical
                      implementation of RiC-CM that also extends and refines it and that includes
@@ -557,8 +560,8 @@
                   superclass, more general or generic than its subproperties or subclasses, must
                   exist and be available for handling information, while at the same time more
                   accurate subcomponents must be there for handling more accurate description. Also,
-                  RiC-O provides methods for describing relations as full entities, as well as direct and short paths between
-                  entities.</p>
+                  RiC-O provides methods for describing relations as full entities, as well as
+                  direct and short paths between entities.</p>
             <p>
                <strong>4. RiC-O opens new potential for archival description.</strong>
             </p>
@@ -585,8 +588,8 @@
                   have the option of extending the ontology by adding new subclasses or
                   subproperties as needed. Also, the concepts defined in existing SKOS vocabularies
                   (e.g. a list of documentary form types) can also be connected to RiC-O based
-                  graphs (using the *Type classes, and properties which are in the domain or range of
-                  these classes).</p>
+                  graphs (using the *Type classes, and properties which are in the domain or range
+                  of these classes).</p>
             <p>RiC-O has also the potential to be usable in other contexts than purely
                   archival ones. It can be used to “hook” archival description to descriptive
                   metadata in other domains (e.g. bibliographic or museum metadata). As said above,
@@ -604,146 +607,148 @@
                   <h6>1. RiC-O classes</h6>
                   <p>
                      <strong>Each RiC-CM entity has a corresponding class in
-                        RiC-O</strong>. These classes are organized according to the same
-                     hierarchy as in RiC-CM. Some projects may need very few of them (e.g. Agent,
-                     Record Resource and Activity only), while others may need more (e.g. Corporate
-                     Body and Person; Record; Place; Organic Provenance Relation).</p>
+                           RiC-O</strong>. These classes are organized according to the same
+                        hierarchy as in RiC-CM. Some projects may need very few of them (e.g. Agent,
+                        Record Resource and Activity only), while others may need more (e.g.
+                        Corporate Body and Person; Record; Place; Organic Provenance
+                        Relation).</p>
                   <p>
                      <strong>Many classes only exist in RiC-O and not in
-                        RiC-CM</strong>. These additional classes address special
-                     needs:</p>
+                           RiC-CM</strong>. These additional classes address special
+                        needs:</p>
                   <ul>
                      <li>
-                        <strong>some correspond to RiC-CM attributes</strong>, when
-                        it may be considered necessary to handle them as full entities. This is the
-                        case for <a href="#Type">Type</a> and its subclasses, that
-                        correspond to RiC-CM attributes that contain controlled values, and that can
-                        help to articulate RiC-O with external RDF resources like SKOS vocabularies;
-                        and also for <a href="#Language">Language</a>, <a href="#Name">Name</a> and <a href="#Identifier">Identifier</a>, that can be considered as full entities and as key
-                        linking nodes in a RDF graph. All these classes have been grouped under a
-                           <a href="#Concept">Concept</a> class. </li>
+                        <strong>some correspond to RiC-CM attributes</strong>,
+                           when it may be considered necessary to handle them as full entities. This
+                           is the case for <a href="#Type">Type</a> and its
+                           subclasses, that correspond to RiC-CM attributes that contain controlled
+                           values, and that can help to articulate RiC-O with external RDF resources
+                           like SKOS vocabularies; and also for <a href="#Language">Language</a>, <a href="#Name">Name</a> and
+                              <a href="#Identifier">Identifier</a>, that can be
+                           considered as full entities and as key linking nodes in a RDF graph. All
+                           these classes have been grouped under a <a href="#Concept">Concept</a> class. </li>
                      <li>
-                        <strong>some classes have been added in order to provide a more
-                           accurate definition and model for some entities</strong>. <a href="#Place">Place</a> thus comes along with a <a href="#PhysicalLocation">Physical Location class</a>, and with
-                        a <a href="#Coordinates">Coordinates class</a>. A Place is
-                        considered both a geographical and historical entity. As a historical
-                        entity, among other features, it has a history, and may be preceded or
-                        succeeded by other Places. A Place also may have zero to many Physical
-                        Location through time (for instance, its boundaries, if it is an
-                        administrative area or a country, may change). Each Physical Location may be
-                        connected to zero to many Coordinates. This model is quite close to the
-                        Linked Places Format (<a href="https://github.com/LinkedPasts/linked-places" target="_blank">https://github.com/LinkedPasts/linked-places</a>). Another example
-                        of such an addition is the <a href="#Proxy">Proxy class</a>,
-                        that represents (stands for) a Record Resource as it exists in a specific
-                        Record Set.</li>
+                        <strong>some classes have been added in order to provide a
+                              more accurate definition and model for some entities</strong>.
+                              <a href="#Place">Place</a> thus comes along with a
+                              <a href="#PhysicalLocation">Physical Location
+                           class</a>, and with a <a href="#Coordinates">Coordinates
+                              class</a>. A Place is considered both a geographical and
+                           historical entity. As a historical entity, among other features, it has a
+                           history, and may be preceded or succeeded by other Places. A Place also
+                           may have zero to many Physical Location through time (for instance, its
+                           boundaries, if it is an administrative area or a country, may change).
+                           Each Physical Location may be connected to zero to many Coordinates. This
+                           model is quite close to the Linked Places Format (<a href="https://github.com/LinkedPasts/linked-places" target="_blank">https://github.com/LinkedPasts/linked-places</a>). Another
+                           example of such an addition is the <a href="#Proxy">Proxy
+                              class</a>, that represents (stands for) a Record Resource as it
+                           exists in a specific Record Set.</li>
                      <li>
-                        <strong>finally, a system of n-ary classes helps to implement the
-                           Relations section of RiC-CM</strong>. While these relations also are
-                        represented as simple, binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a> that
-                        corresponds to RiC-R026 relation), you may need to assign different
-                        attributes to a relation, e.g. a date, certainty or description, as it is
-                        already possible, and quite often done, in a XML/EAC-CPF file. One of the
-                        standard available methods for representing such a documented relation in
-                        RDF for now is to use a class. The RDF-star specification, which is being
-                        developed by the W3C RDF-DEV Community Group, provides a far simpler method
-                        (allowing to consider a triple as the subject or object of another triple;
-                        see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being used by
-                        some tools; however it is not yet a complete W3C standard. Thus, for
-                        example, in RiC-O a <a href="#OrganicProvenanceRelation">OrganicProvenanceRelation class</a> exists. This class may connect
-                        one to many Agents to one to many created or accumulated Record Resources or
-                        Instantiations, and has some specific object properties (certainty, date,
-                        description, source). Back to the <a href="#hasOrganicProvenance">hasOrganicProvenance</a> object property, let us add that it is
-                        formally defined in RiC-O, using OWL 2 property chain axiom (see <a href="https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion"
+                        <strong>finally, a system of n-ary classes helps to implement
+                              the Relations section of RiC-CM</strong>. While these relations
+                           also are represented as simple, binary object properties (e.g. <a href="#hasOrganicProvenance">hasOrganicProvenance</a> that
+                           corresponds to RiC-R026 relation), you may need to assign different
+                           attributes to a relation, e.g. a date, certainty or description, as it is
+                           already possible, and quite often done, in a XML/EAC-CPF file. One of the
+                           standard available methods for representing such a documented relation in
+                           RDF for now is to use a class. The RDF-star specification, which is being
+                           developed by the W3C RDF-DEV Community Group, provides a far simpler
+                           method (allowing to consider a triple as the subject or object of another
+                           triple; see <a href="https://w3c.github.io/rdf-star/" target="_blank">https://w3c.github.io/rdf-star/</a>) and is already being used
+                           by some tools; however it is not yet a complete W3C standard. Thus, for
+                           example, in RiC-O a <a href="#OrganicProvenanceRelation">OrganicProvenanceRelation class</a> exists. This class may
+                           connect one to many Agents to one to many created or accumulated Record
+                           Resources or Instantiations, and has some specific object properties
+                           (certainty, date, description, source). Back to the <a href="#hasOrganicProvenance">hasOrganicProvenance</a> object
+                           property, let us add that it is formally defined in RiC-O, using OWL 2
+                           property chain axiom (see <a href="https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion"
                            target="_blank">https://www.w3.org/TR/owl2-new-features/#F8:_Property_Chain_Inclusion</a>),
-                        as a ‘shortcut’ for the longer path
-                        ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
-                        where the intermediate node is an instance of OrganicProvenanceRelation:<br/>
+                           as a ‘shortcut’ for the longer path
+                           ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
+                           where the intermediate node is an instance of OrganicProvenanceRelation:<br/>
                         <code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
-                           <br/> &lt;rdf:Description
-                           rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
-                           <br/> &lt;rdf:Description
-                           rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/&gt;
-                           <br/> &lt;rdf:Description
-                           rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
-                           <br/> &lt;/owl:propertyChainAxiom&gt; </code>
-                        <br/>A triplestore, with the appropriate configuration, may thus infer
-                        the direct ‘hasOrganicProvenance’ assertion from this long path.</li>
+                              <br/> &lt;rdf:Description
+                              rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
+                              <br/> &lt;rdf:Description
+                              rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/&gt;
+                              <br/> &lt;rdf:Description
+                              rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
+                              <br/> &lt;/owl:propertyChainAxiom&gt; </code>
+                        <br/>A triplestore, with the appropriate configuration, may thus
+                           infer the direct ‘hasOrganicProvenance’ assertion from this long
+                           path.</li>
                   </ul>
                   <p>
                      <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
                   </p>
                </div>
                <div id="RiC-O_datatype-properties">
-                  <h6>2. RiC-O datatype properties (relations whose object is a
-                        litteral) and RiC-CM attributes</h6>
+                  <h6>2. RiC-O datatype properties (relations whose object is a litteral)
+                        and RiC-CM attributes</h6>
                   <p>
-                     <strong>Most of the datatype properties in RiC-O correspond to RiC-CM
-                        attributes that contain free, plain text</strong>. See for example
-                        <a href="#generalDescription">rico:generalDescription</a>,
-                        <a href="#history">rico:history</a> and <a href="#scopeAndContent">rico:scopeAndContent</a>.</p>
+                     <strong>Most of the datatype properties in RiC-O correspond to
+                           RiC-CM attributes that contain free, plain text</strong>. See for
+                        example <a href="#generalDescription">rico:generalDescription</a>, <a href="#history">rico:history</a> and <a href="#scopeAndContent">rico:scopeAndContent</a>.</p>
                   <p>In many simple usecases it’s sufficent to just use the <a href="#identifier">rico:identifier</a> or <a href="#name">rico:name</a> datatype properties. However, in
-                     addition to these datatype properties, the Name and Identifier
-                        RiC-CM attributes also have corresponding classes (subclasses
-                     of <a href="#Appellation">rico:Appellation</a>). A resource may
-                     have several Identifiers (e.g. archival reference code, system number, digital
-                     object identifier) or Names and each comes with different attributes; in this
-                     case instances of classes are needed.</p>
-                  <p>The Location RiC-CM attribute also has a <a href="#PhysicalLocation">rico:Physical Location</a> corresponding
-                     class (for users who want to use Place, Physical Location and Coordinates for
-                     handling places).</p>
-                  <p>As already said too, every RiC-CM attribute that has ‘controlled value’ or
-                     ‘rule-based’ as a schema value, has a class as corresponding component in
-                     RiC-O. <strong>However, for these CM attributes that correspond to a RiC-O
-                        class, as it is necessary to provide an immediately usable ontology, two
-                        supplementary datatype properties exist that allow not to use the classes,
-                        at least for a while, if you want to implement RiC-O and create RiC-O/RDF
-                        datasets from existing archival metadata without being able to handle URIs
-                        for the information you have</strong>.</p>
+                        addition to these datatype properties, the Name and Identifier RiC-CM
+                        attributes also have corresponding classes (subclasses of <a href="#Appellation">rico:Appellation</a>). A resource may have
+                        several Identifiers (e.g. archival reference code, system number, digital
+                        object identifier) or Names and each comes with different attributes; in
+                        this case instances of classes are needed.</p>
+                  <p>The Location RiC-CM attribute also has a <a href="#PhysicalLocation">rico:Physical Location</a>
+                        corresponding class (for users who want to use Place, Physical Location and
+                        Coordinates for handling places).</p>
+                  <p>As already said too, every RiC-CM attribute that has ‘controlled value’
+                        or ‘rule-based’ as a schema value, has a class as corresponding component in
+                        RiC-O. <strong>However, for these CM attributes that correspond to a
+                           RiC-O class, as it is necessary to provide an immediately usable
+                           ontology, two supplementary datatype properties exist that allow not to
+                           use the classes, at least for a while, if you want to implement RiC-O and
+                           create RiC-O/RDF datasets from existing archival metadata without being
+                           able to handle URIs for the information you have</strong>.</p>
                   <p>For example, you may not be able to handle and maintain URIs for some
-                     controlled values you use in EAD finding aids for carrier types: maybe your
-                     information system does not use a vocabulary for this, and you cannot for a
-                     while consider these carrier types as full entities. Nevertheless you want to
-                     produce RiC-O datasets where every piece of information is kept, and you want
-                     to avoid blank nodes. If RiC-O would only provide the Carrier Type class, it
-                     would be an issue for you.</p>
-                  <p>So RiC-O provides a <a href="#type">rico:type</a> datatype
-                     property, with range rdfs:literal, which allows you to move forward. For RiC-CM
-                     Coordinates attribute, you also have the <a href="#geographicalCoordinates">rico:geographicalCoordinates</a>
-                     datatype property.</p>
-                  <p>These datatype properties have a skos:scopeNote which says (for example)
-                     "Provided for usability reasons. May be made deprecated or removed later on.
-                     Use only if you don’t use Physical Location and Coordinates classes with
-                     Place."</p>
+                        controlled values you use in EAD finding aids for carrier types: maybe your
+                        information system does not use a vocabulary for this, and you cannot for a
+                        while consider these carrier types as full entities. Nevertheless you want
+                        to produce RiC-O datasets where every piece of information is kept, and you
+                        want to avoid blank nodes. If RiC-O would only provide the Carrier Type
+                        class, it would be an issue for you.</p>
+                  <p>So RiC-O provides a <a href="#type">rico:type</a>
+                        datatype property, with range rdfs:literal, which allows you to move
+                        forward. For RiC-CM Coordinates attribute, you also have the <a href="#geographicalCoordinates">rico:geographicalCoordinates</a> datatype property.</p>
+                  <p>These datatype properties have a skos:scopeNote which says (for
+                        example) "Provided for usability reasons. May be made deprecated or removed
+                        later on. Use only if you don’t use Physical Location and Coordinates
+                        classes with Place."</p>
                   <p>
                      <strong>The same key design principle (RiC-O must be immediately
-                        usable) led us to define some datatype properties that would enable users to
-                        use RiC-O in simple usecases where they do not want to consider dates and
-                        rules as full entities</strong>. Thus, there of course is Date and Rule
-                     classes in RiC-O (since there are Date and Rule entities in RiC-CM). And
-                        <strong>you also have a <a href="#date">rico:date</a>
-                        datatype property, which has several subproperties; plus a <a href="#ruleFollowed">rico:ruleFollowed</a> datatype
-                        property</strong>. The same analysis led us to keep the <a href="#history">rico:history</a> datatype property in RiC-O (same
-                     as RiC-CM history attribute), while RiC-CM and RiC-O also provide the <a href="#Event">Event</a> class, and using a series of Events may of
-                     course be a better method, easier to query, link and display, than simply using
-                     a history prose discourse. The two methods may be used in parallel within the
-                     same dataset by an institution that, for example, would decide to emphasize
-                     only the accession, appraisal and description events among the whole history of
-                     Record Resources.</p>
+                           usable) led us to define some datatype properties that would enable users
+                           to use RiC-O in simple usecases where they do not want to consider dates
+                           and rules as full entities</strong>. Thus, there of course is Date
+                        and Rule classes in RiC-O (since there are Date and Rule entities in
+                        RiC-CM). And <strong>you also have a <a href="#date">rico:date</a> datatype property, which has several
+                           subproperties; plus a <a href="#ruleFollowed">rico:ruleFollowed</a> datatype property</strong>. The same
+                        analysis led us to keep the <a href="#history">rico:history</a> datatype property in RiC-O (same as RiC-CM history
+                        attribute), while RiC-CM and RiC-O also provide the <a href="#Event">Event</a> class, and using a series of Events may
+                        of course be a better method, easier to query, link and display, than simply
+                        using a history prose discourse. The two methods may be used in parallel
+                        within the same dataset by an institution that, for example, would decide to
+                        emphasize only the accession, appraisal and description events among the
+                        whole history of Record Resources.</p>
                   <p>These datatype properties have the same kind of skos:scopeNote as
-                     above.</p>
-                  <p>Finally, <strong>we have introduced a few datatype properties that do
-                        not correspond to any RiC-CM attribute</strong>.</p>
-                  <p>Some are superproperties, and thus group datatype properties: <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>,
-                     with rico:carrierExtent, rico:instantiationExtent and rico:recordResourceExtent
-                     as subproperties; <a href="#textualValue">rico:textualValue</a>,
-                     with rico:expressedDate, rico:normalizedValue and rico:quantity as
-                     subproperties; <a href="#measure">rico:measure</a>; <a href="#referenceSystem">rico:referenceSystem</a>.</p>
-                  <p>Some are simply more specific properties: <a href="#accrualsStatus">rico:accrualsStatus</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a>
-                     and <a href="#instantiationStructure">rico:instantiationStructure</a>, subproperties of rico:structure;
-                        <a href="#title">rico:title</a> (subproperty of rico:name);
-                     rico:altitude, rico:height, rico:latitude, rico:length, rico:longitude,
-                     rico:width (subproperties of <a href="#measure">rico:measure</a>), rico:geodesicSystem and rico:altimetricSystem
-                     (subproperties of <a href="#referenceSystem">rico:referenceSystem</a>).</p>
+                        above.</p>
+                  <p>Finally, <strong>we have introduced a few datatype properties that
+                           do not correspond to any RiC-CM attribute</strong>.</p>
+                  <p>Some are superproperties, and thus group datatype properties: <a href="#physicalOrLogicalExtent">rico:physicalOrLogicalExtent</a>, with rico:carrierExtent,
+                        rico:instantiationExtent and rico:recordResourceExtent as subproperties;
+                           <a href="#textualValue">rico:textualValue</a>, with
+                        rico:expressedDate, rico:normalizedValue and rico:quantity as subproperties;
+                           <a href="#measure">rico:measure</a>; <a href="#referenceSystem">rico:referenceSystem</a>.</p>
+                  <p>Some are simply more specific properties: <a href="#accrualsStatus">rico:accrualsStatus</a>; <a href="#recordResourceStructure">rico:recordResourceStructure</a> and <a href="#instantiationStructure">rico:instantiationStructure</a>,
+                        subproperties of rico:structure; <a href="#title">rico:title</a> (subproperty of rico:name); rico:altitude,
+                        rico:height, rico:latitude, rico:length, rico:longitude, rico:width
+                        (subproperties of <a href="#measure">rico:measure</a>),
+                        rico:geodesicSystem and rico:altimetricSystem (subproperties of <a href="#referenceSystem">rico:referenceSystem</a>).</p>
                   <p>
                      <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
                   </p>
@@ -751,56 +756,60 @@
                <div id="RiC-O_object-properties">
                   <h6>3. RiC-O object properties (relations between two entities)</h6>
                   <p>In order to connect all the classes created, <strong>a significant
-                        number of object properties have been
-                        defined.</strong>
+                           number of object properties have been defined.</strong>
                   </p>
                   <p>While the 'flat' list of object properties is a long one,
-                           <strong>the object properties are grouped hierarchically</strong>, so that one can
-                           use the upper to intermediate level ones for simplicity sake, or choose the
-                           most accurate and expressive ones, or extend the system adding a subproperty
-                           easily. It is expected that, in most use cases, a subset of these properties
-                           only will be needed.</p>
-                  <p>Below we just give a few details on certain specific sets of properties.</p>
-                  <p>While in RiC-CM it was not possible to achieve such a level of precision
-                     with simple attributes, <strong>RiC-O includes object properties to assert
-                        that a <a href="#RecordSet">rico:RecordSet</a> has or had
-                        members (either all of them, or some of them) that share some
-                        characteristics</strong>, i.e. Language, ContentType,
-                     DocumentaryFormType, LegalStatus, or RecordState. See for example <a href="#hasOrHadAllMembersWithCategory">rico:hasOrHadAllMembersWithCategory</a>, and its
-                     subproperties.</p>
+                           <strong>the object properties are grouped
+                           hierarchically</strong>, so that one can use the upper to
+                        intermediate level ones for simplicity sake, or choose the most accurate and
+                        expressive ones, or extend the system adding a subproperty easily. It is
+                        expected that, in most use cases, a subset of these properties only will be
+                        needed.</p>
+                  <p>Below we just give a few details on certain specific sets of
+                        properties.</p>
+                  <p>While in RiC-CM it was not possible to achieve such a level of
+                        precision with simple attributes, <strong>RiC-O includes object
+                           properties to assert that a <a href="#RecordSet">rico:RecordSet</a> has or had members (either all of them, or
+                           some of them) that share some characteristics</strong>, i.e.
+                        Language, ContentType, DocumentaryFormType, LegalStatus, or RecordState. See
+                        for example <a href="#hasOrHadAllMembersWithCategory">rico:hasOrHadAllMembersWithCategory</a>, and its
+                        subproperties.</p>
                   <p>
                      <strong>Some of the object properties are formally defined as
-                        shortcuts</strong>: they can be inferred if you create triples that
-                     include instances of the Relation classes. See the example explained above in
-                     the <a href="#RiC-O_classes">section dedicated to classes</a>.</p>
+                           shortcuts</strong>: they can be inferred if you create triples that
+                        include instances of the Relation classes. See the example explained above
+                        in the <a href="#RiC-O_classes">section dedicated to
+                        classes</a>.</p>
                   <p>
                      <strong>Many properties, new in RiC-O 1.0, are transitive or
-                        reflexive</strong>, as explained in the <a href="#history-note">history note</a> above.</p>
+                           reflexive</strong>, as explained in the <a href="#history-note">history note</a> above.</p>
                   <p>
                      <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
                   </p>
                </div>
                <div id="named-individuals">
                   <h6>4. Named Individuals</h6>
-                  <p>RiC-O adds six individuals to address current and frequent needs:</p>
+                  <p>RiC-O adds six individuals to address current and frequent
+                        needs:</p>
                   <ul>
                      <li>
-                        <a href="#FindingAid">FindingAid</a> and <a href="#AuthorityRecord">AuthorityRecord</a>, which are instances of
-                        both RiC-O Documentary Form Type and SKOS Concept. They can be used for
-                        categorizing Records, finding aids and authority records being considered as
-                        Records. For example, a Record with Documentary Form Type ‘Finding Aid’ may
-                        be connected to one to many Record Resources using the 'rico:describes’
-                        object property. </li>
+                        <a href="#FindingAid">FindingAid</a> and <a href="#AuthorityRecord">AuthorityRecord</a>, which are instances
+                           of both RiC-O Documentary Form Type and SKOS Concept. They can be used
+                           for categorizing Records, finding aids and authority records being
+                           considered as Records. For example, a Record with Documentary Form Type
+                           ‘Finding Aid’ may be connected to one to many Record Resources using the
+                           'rico:describes’ object property. </li>
                      <li>
-                        <a href="#Fonds">Fonds</a>, <a href="#Series">Series</a>, <a href="#File">File</a>, and <a href="#Collection">Collection</a> are instances of both Record Set
-                        Type class and skos:Concept. Their definition is taken from the ISAD(G)
-                        glossary. They can be used for categorizing Record Sets.</li>
+                        <a href="#Fonds">Fonds</a>, <a href="#Series">Series</a>, <a href="#File">File</a>, and <a href="#Collection">Collection</a> are instances of both Record
+                           Set Type class and skos:Concept. Their definition is taken from the
+                           ISAD(G) glossary. They can be used for categorizing Record
+                           Sets.</li>
                   </ul>
                   <p>We expect other categories to be defined by the archival community as
-                     RiC-O matures, forming rich, hopefully multilingual, SKOS vocabularies that
-                     support rich description (for example, allowing an instance of the <a href="#DocumentaryFormType">Documentary Form Type class</a> to
-                     have a history and temporal relations to other documentary form
-                     types).</p>
+                        RiC-O matures, forming rich, hopefully multilingual, SKOS vocabularies that
+                        support rich description (for example, allowing an instance of the <a href="#DocumentaryFormType">Documentary Form Type class</a> to
+                        have a history and temporal relations to other documentary form
+                        types).</p>
                   <p>
                      <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>
                   </p>
@@ -14589,8 +14598,19 @@
                      href="#hasAuthor">rico:hasAuthor</a>
                </dd>
             </dl>
+            <p>
+               <span class="label">Has sub-properties chains</span>: <a title="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"
+                  href="#thingIsSourceOfRelation">rico:thingIsSourceOfRelation</a>
+               <span class="logic"> o </span>
+               <a title="https://www.ica.org/standards/RiC/ontology#creationRelation_role"
+                  href="#creationRelation_role">rico:creationRelation_role</a>
+               <span class="logic"> o </span>
+               <a title="https://www.ica.org/standards/RiC/ontology#relationHasTarget"
+                  href="#relationHasTarget">rico:relationHasTarget</a>
+            </p>
             <dl>
                <dt>Change note(s)</dt>
+               <dd>2023-12-29: Added the property chain axiom, that had been forgotten.</dd>
                <dd>2023-11-02: Added a new rdfs:label in Spanish.</dd>
                <dd>2023-08-28: Added a new rdfs:label in French.</dd>
                <dd>2021-01-22: changed the IRI and label (changed made in order to make RiC-O
@@ -34508,7 +34528,9 @@
                      properties accordingly.</li>
             <li>2023, December 27: added rdfs:isDefinedBy to all the properties not
                      defined in RiC-O itself.</li>
-            <li>2023, December 28: made a few changes in the ontology introduction (dcterms:description) and metadata.</li>
+            <li>2023, December 28: made a few changes in the ontology introduction
+                     (dcterms:description) and metadata.</li>
+            <li>2023, December 29: Added the property chain axiom on 'hasCreator'.</li>
          </ul>
          <p>
             <a href="#toc">Back to the table of contents</a> | <a href="#top">Back to top</a>

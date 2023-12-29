@@ -15,8 +15,7 @@
          xmlns:voaf="http://purl.org/vocommons/voaf#"
          xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-         xml:base="https://www.ica.org/standards/RiC/ontology">
-   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// --><!-- https://www.ica.org/standards/RiC/ontology#accumulationRelation_role -->
+         xml:base="https://www.ica.org/standards/RiC/ontology"><!-- /////////////////////////////////////////////////////////////////////////////////////// // // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// --><!-- https://www.ica.org/standards/RiC/ontology#accumulationRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
@@ -747,6 +746,14 @@
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#childRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+      </owl:propertyChainAxiom>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasCreator -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCreator">
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
       </owl:propertyChainAxiom>
    </owl:ObjectProperty>
