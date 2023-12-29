@@ -867,6 +867,7 @@
                      defined in RiC-O itself.</html:li>
                   <html:li>2023, December 28: made a few changes in the ontology introduction
                      (dcterms:description) and metadata.</html:li>
+                  <html:li>2023, December 29: Added the property chain axiom on 'hasCreator'.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -3551,6 +3552,13 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+      </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Record Resource or an Instantiation to an Agent that is
          either responsible for all or some of the content of the Record Resource or is a
          contributor to the genesis or production of an Instantiation.</rdfs:comment>
@@ -3558,6 +3566,12 @@
       <rdfs:label xml:lang="en">has creator</rdfs:label>
       <rdfs:label xml:lang="fr">a pour créateur</rdfs:label>
       <rdfs:label xml:lang="es">tiene como creador a</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-12-29</dc:date>
+            <rdf:value xml:lang="en">Added the property chain axiom, that had been forgotten.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
