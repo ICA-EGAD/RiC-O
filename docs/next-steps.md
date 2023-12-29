@@ -9,22 +9,15 @@
 * [Events and presentations](events.html)
 * [Projects and tools](projects-and-tools.html)
 
-The following is an overview of RiC-O roadmap and schedule for 2020 and 2021.
+The following is an overview of RiC-O roadmap and schedule for 2024.
 
-Of course, **the schedule also depends on RiC-O users, on their comments, expectations and proposals**. RiC-O users now can use the public GitHub repository to create issues, and also fork it and create pull requests from a fork. 
+Of course, **the schedule also depends on RiC-O users, on their comments, expectations and proposals**. RiC-O users now can use the public GitHub repository to create issues or comment existing issues, and also fork it and create pull requests from a fork. **A big "thank you" to all the people who, outside the ICA/EGAD group, already contributed to the development of RiC-O 1.0, through their requests, their comments, their advice or their help**.
 
-You can also simply contact us and send comments and questions, using either ([egad at ica.org mailbox](mailto:egad@ica.org), or RiC-O users discussion list. If you would like to subscribe to the RiC-O discussion list, simply email to Florence Clavaud ([florence.clavaud at culture.gouv.fr](mailto:florence.clavaud@culture.gouv.fr)).
+You can also simply contact us and send comments and questions, using either ([egad at ica.org mailbox](mailto:egad@ica.org), or the new [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users)** RiC-O users discussion list.
 
-The global schedule is the following:
+The following is a non exhaustive list of known topics or tasks on which EGAD has begun to work and will continue to work in the next months. We will update and enrich it, and will of course create issues so that more information is available on what we are doing.
 
-* **preparing and releasing RiC 0.2**. Apart from fixing the possibly remaining bugs in 0.1, this will mainly imply making RiC-O compliant with RiC-CM 0.2. In this CM version, some definitions of the already existing components have changed. A few additions have also be done. **This has been done: RiC-O 0.2 was released in February 2021.** The issues and pull requests made in the GitHub repository provide more information on the main changes. The internal documentation of RiC-0 0.2 also includes a detailed history note (see the ontology metadata); besides, any change in the definition of a class or property, since December 2019, is documented in the ontology file, using a skos:changeNote property in the description of the resource updated.
-* **preparing and releasing RiC-0 1.0**. This version will not be a draft, but the first official recommendation. **It will be released in 2022 or by the beginning of 2023**, along with RiC-CM 1.0.
-
-The following is a non exhaustive list of topics, tasks and known issues on which EGAD RiC-O development team will work in the next months, the milestone being RiC-O 1.0:
-
-* adding more examples and diagrams to the GitHub repository;
-* defining more accurately some properties (as transitive, functional, inverse functional...); possibly adding some transitive properties;
-* finishing the system of relations (where some subclasses are still missing);
-* articulating the Event and Activity classes, and the Relation system of classes;
-* providing mappings between the components of RiC-O, and the components of the EAD and EAC-CPF XML schemata that archivists use for producing or exchanging finding aids and authority records conforming to the ICA previous standards (ISAD(G) and ISAAR(CPF);
-* adding suggestions of mappings (in rico:closeTo) and OWL equivalences between some classes or properties and components in other models (among which - this is not an exhaustive list- CIDOC-CRM, IFLA-LRM, PREMIS, PROV-O, and Schema.org).
+- add more examples and diagrams to the GitHub repository;
+- add suggestions of mappings (in rico:closeTo) and OWL equivalences between some classes or properties and components in other models (among which
+                     - this is not an exhaustive list- PREMIS, Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or document how these models can be used together.
+- articulate the Event and Activity classes, and the Relation system of classes.
