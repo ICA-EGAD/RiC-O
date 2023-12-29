@@ -8,7 +8,7 @@ ICA RiC-O (Records in Contexts-Ontology) is an OWL 2 ontology for describing arc
 
 
 
-The **latest public release of RiC-O, RiC-O 1.0, dated December 30, 2023, is available for download here.** As the first stable and complete version of this ontology, **RiC-0 1.0 is
+The **latest public release of RiC-O, RiC-O 1.0, dated December 30, 2023, is available for download here.** As the first stable and complete version of this ontology, **RiC-O 1.0 is
                thus a major milestone**.
                
 The OWL/RDF file is stored in the ontology/current-version folder of this repository. 
