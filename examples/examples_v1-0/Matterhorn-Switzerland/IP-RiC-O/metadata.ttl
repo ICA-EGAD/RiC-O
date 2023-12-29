@@ -1,0 +1,130 @@
+@prefix crypHashFunc: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix evtype: <http://id.loc.gov/vocabulary/preservation/eventType/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix relSubType:  <http://id.loc.gov/vocabulary/preservation/relationshipSubType> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+# 2023, Dec. 29: example revised and made compliant with RiC-O 1.0 by Florence Clavaud
+
+# ====== Record
+<_20201118115821577> a rico:Record ;
+    rico:title "Logo docuteam" ;
+    rico:hasOrHadIdentifier <501>, <502>, <503>, <504> ;
+	rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDateValue       "20030501" ;
+								rico:type       "from" ;
+								] ;
+	rico:isAssociatedWithDate [ a               rico:Date ;
+								rico:normalizedDateValue      "20201231" ;
+								rico:type       "to" ;
+								] ;
+	rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "1" ;
+						rico:unitOfMeasurement "Einheit(en)" ;
+						] ;
+	rico:scopeAndContent "Enthält eine Logo-Datei" ;		
+	rico:isOrWasRegulatedBy <700>, <701>, <702>;
+	rico:thingIsSourceOfRelation   [ a rico:CreationRelation ;
+										rico:type  "archivist" ;
+										rico:relationHasTarget <101> ;
+										] ;
+	rico:hasOrHadLanguage				[a 		rico:Language ;
+											rico:name "deutsch";
+									] ;
+	rico:generalDescription              "Notes abc" ;
+	rico:isOrWasAffectedBy [ a               rico:Activity ;
+							rico:name       "Komplettübernahme" ;
+							rico:type       "Appraisal" ;
+							] ; 
+	rico:isOrWasAffectedBy [ a               rico:Activity ;
+							rico:name       "Direktübernahme" ;
+							rico:type       "Acquisition" ;
+							] ;
+	rico:hasOrHadDigitalInstantiation <_20201118115820159> .
+
+# ====== Representation
+<_20201118115820159> a rico:Instantiation, premis:Representation ;
+	rico:hasOrHadIdentifier <505> ;
+	relSubType:inc <_20201118115821547>.
+
+# ====== File
+<_20201118115821547> a premis:File ;
+	premis:storedAt "file:///logo.png" ;
+	premis:compositionLevel "0" ;
+	premis:fixity	[ a crypHashFunc:md5 ;
+						rdf:value "7911b0a33e472b398d76e177d1c77ef0" ;
+	] ;
+	premis:size "39552" ;
+	premis:originalName "logo.png" ;
+	dct:format <PNG> .
+
+# ====== Event
+<_20201118115821558> a rico:Activity, premis:Event ;
+	rico:occurredAtDate [ a rico:Date ;
+	                       rico:normalizedDateValue "2020-11-18T11:58:21" 
+	                       ]  ;
+	rico:isOrWasPerformedBy <100> ;
+	rico:hasEventType <creation> ;
+	premis:outcome [ a premis:OutcomeStatus ;
+	                   rdf:value "Success" ;] ;
+	premis:outcomeNote "Performed by: 'Jane Doe'" ;
+	rico:affectsOrAffected <_20201118115821547> .
+
+# ====== Identifiers
+<501> a rico:Identifier ;
+	rico:type "refCode" ;
+	rico:name "ABC" .
+
+<502> a rico:Identifier ;
+	rico:type "refCodeOld" ; 
+	rico:name "DEF" .
+
+<503> a rico:Identifier ;
+	rico:type "separator" ;
+	rico:name "-" .
+
+<504> a rico:Identifier ;
+	rico:type "isVisible" ;
+	rico:name "true" .
+
+<505> a rico:Identifier ;
+	rico:type "dao" ;
+	rico:name "xyz:1001" .
+
+# ====== Rule
+<700> a rico:Rule ;
+	rico:type "accessRestrictionsClosureYear" ;
+	rico:endDate "2025" .
+
+<701> a rico:Rule ;
+	rico:type "accessRestrictionsPrivacy" ;
+	rico:name "Schützenswerte Personendaten" .
+
+<702> a rico:Rule ;
+	rico:type "retentionPeriod" ;
+	rico:name "15 Jahre" .
+
+# ====== Agent
+<100> a rico:Mechanism ;
+	rico:name "docuteam-packer";
+	premis:version "5.8.0".
+
+<101> a  rico:Person ;
+	rico:name "Tobias Wildi" .
+
+# ====== File Format
+<PNG> a dct:FileFormat ;
+	rico:name "Portable Network Graphics" ;
+	owl:sameAs <http://www.nationalarchives.gov.uk/pronom/fmt/13> ;
+	ebucore:hasMimeType "image/png" .
+
+# ====== Event types
+<creation> a evtype:cre ;
+    a rico:EventType ;
+	rico:name "creation" ;
+	rico:generalDescription "The process of creating a new object." .
