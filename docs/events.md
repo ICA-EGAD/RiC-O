@@ -10,7 +10,7 @@
 * **Events and presentations**
 * [Projects and tools](projects-and-tools.html)
 
-Last updated on December 30, 2023
+**This page will soon be updated**
 
 The following is a list of past and future events on RiC-O, from the end of 2019, and of presentations on RiC-O that are now available online.
 

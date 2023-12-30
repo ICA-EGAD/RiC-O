@@ -18,6 +18,6 @@ You can also simply contact us and send comments and questions, using either ([e
 The following is a non exhaustive list of known topics or tasks on which EGAD has begun to work and will continue to work in the next months. We will update and enrich it, and will of course create issues so that more information is available on what we are doing.
 
 - add more examples and diagrams to the GitHub repository;
-- add suggestions of mappings (in rico:closeTo) and OWL equivalences between some classes or properties and components in other models (among which
-                     - this is not an exhaustive list- PREMIS, Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or document how these models can be used together.
+- add suggestions of mappings (in rico:closeTo) and OWL equivalences between some classes or properties and components in other models (among which - this is not an exhaustive list- PREMIS, Schema.org, PROV-O, IFLA-LRM and RDA, CIDOC-CRM), or document how these models can be used together.
 - articulate the Event and Activity classes, and the Relation system of classes.
+- enrich the two existing vocabularies on Documentary Form Types and Record Set Types, and develop other ones, e.g. on Event/Activity Types.
