@@ -1,6 +1,6 @@
 # Modularized version of RiC-O 1.0: rationale, warning and use cases
 
-This folder contains **five files, which, when they are used together, are equivalent to the [RiC-O_1.0.rdf file](https://github.com/ICA-EGAD/RiC-O/blob/version_1-0/ontology/current-version/RiC-O_1-0.rdf)**:
+This folder contains **five files, which, when they are used together, are equivalent to the [RiC-O_1.0.rdf file](../RiC-O_1-0.rdf)**:
 
 - the *RiC-O_1-0_main.rdf* file. This file contains the metadata and introduction of the ontology, and the declarations of the classes and properties used in RiC-O but defined by other ontologies and vocabularies, e.g. SKOS. It also includes, at lines 21-24, four owl:imports whose objects are the four other files:
 ```
