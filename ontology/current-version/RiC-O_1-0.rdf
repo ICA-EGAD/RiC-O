@@ -868,6 +868,7 @@
                   <html:li>2023, December 28: made a few changes in the ontology introduction
                      (dcterms:description) and metadata.</html:li>
                   <html:li>2023, December 29: Added the property chain axiom on 'hasCreator'.</html:li>
+                  <html:li>2023, December 30: Fixed a typo in two French labels.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -15695,9 +15696,15 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Record Resource Holding Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre agents et ressources archivistiques
-         ou instantiations conservées</rdfs:label>
+         ou instanciations conservées</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre agentes y recursos
          documentales que conservan</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-12-30</dc:date>
+            <rdf:value xml:lang="en">Fixed a typo in the French label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
