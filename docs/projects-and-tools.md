@@ -9,7 +9,7 @@
 * [Events and presentations](events.html)
 * **Projects and tools**
 
-Last updated on September 13, 2021
+**This page will soon be updated (Last updated on September 13, 2021)**
 
 Since RiC is a recent standard, and remains a draft (version 1.0 will be released at the end of 2021), there are still few concrete uses for it. In addition, RiC-CM and RiC-O are freely usable, so it is impossible to know all the uses. The list below has been drawn up on the basis of a survey carried out mainly among all members of the EGAD group. We invite people with knowledge of other projects to contact us ([egad at ica.org](mailto:egad@ica.org)) to have them listed.
 

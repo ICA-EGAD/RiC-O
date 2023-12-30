@@ -9,6 +9,7 @@
 * [Events and presentations](events.html)
 * [Projects and tools](projects-and-tools.html)
 
+**This page will soon be updated**
 
 **If you are a records manager or archivist or provide services to them and you are interested in making current or future archival record descriptive data available as Linked Data, then RiC-O will be of interest to you**. RiC-O represents the first comprehensive standard for expressing archival description as Linked Data. While testing and refining RiC-O is ongoing, it is currently well enough along that one can begin testing and using it with existing data.
 
