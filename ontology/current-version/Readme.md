@@ -4,4 +4,4 @@ The [modularized-version](./modularized-version) subfolder contains a set of fil
 Note that **for now, the reference version of RiC-O remains the RiC-O_1.0.rdf file. It is therefore strongly recommended to use the RiC-O_1-0.rdf file in preference to the modularized version**.
 
 
-The [HTML_view](https://github.com/ICA-EGAD/RiC-O/tree/version_1-0/ontology/current-version/HTML_view) sufolder contains an HTML page allowing anyone with an internet browser to easily consult the contents of the OWL file. Once you have downloaded the folder, simply open the [https://github.com/ICA-EGAD/RiC-O/blob/version_1-0/ontology/current-version/HTML_view/RiC-O_1-0_documentation.html](https://github.com/ICA-EGAD/RiC-O/blob/version_1-0/ontology/current-version/HTML_view/RiC-O_1-0_documentation.html) in your browser.
+The [HTML_view](./HTML_view) sufolder contains an HTML page allowing anyone with an internet browser to easily consult the contents of the OWL file. Once you have downloaded the folder, simply open the [RiC-O_1-0_documentation.html file](./HTML_view/RiC-O_1-0_documentation.html) in your browser.
