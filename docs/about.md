@@ -20,7 +20,7 @@ RiC-O provides a generic vocabulary and formal rules for creating RDF datasets (
 
 Records in Contexts standard is developed by [International Council on Archives Expert Group on Archival Description (ICA EGAD)](https://www.ica.org/en/egad-steering-committee-0).
 
-The **latest public release of RiC-O, RiC-O 1.0**, was published in December 2023. It is fully documented in English and available in the RiC-O GitHub repository, in the [current-version](./ontology/current-version) folder. It replaces RiC-O 0.2, which was released in February 2021.
+The **latest public release of RiC-O, RiC-O 1.0**, was published in December 2023. It is fully documented in English and available in the RiC-O GitHub repository, in the [current-version](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version) folder. It replaces RiC-O 0.2, which was released in February 2021.
 
 RiC-O 1.0 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 1.0, which was released in November 2023** and is available for download [here](https://github.com/ICA-EGAD/RiC-CM/releases/tag/v1.0), or [here](https://www.ica.org/app/uploads/2023/12/RiC-CM-1.0.pdf).
 
