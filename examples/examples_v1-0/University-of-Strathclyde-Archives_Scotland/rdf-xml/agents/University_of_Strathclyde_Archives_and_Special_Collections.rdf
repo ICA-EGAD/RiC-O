@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:isni="https://isni.org/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/"
+    xml:base="http://data.archives.strath.ac.uk/">
+    <rico:Record rdf:about="record/university-of-strathclyde-archives-united-kingdom">
+        <rico:hasDocumentaryFormType
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+        <rico:describesOrDescribed
+            rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+        <rico:hasCreator rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+        <rico:hasOrHadManager rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+
+        <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2023-07</rico:lastModificationDate>
+        <rico:isOrWasAffectedBy>
+            <rico:Activity>
+                <rico:name xml:lang="en">creation and revisions, by Victoria Peters</rico:name>
+                <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2010-01</rico:beginningDate>
+                <rico:generalDescription xml:lang="en">Created by Victoria Peters, January 2010.
+                    Revised by VP, February 2018, January 2020, July 2023.</rico:generalDescription>
+            </rico:Activity>
+        </rico:isOrWasAffectedBy>
+        <rico:hasOrHadDigitalInstantiation>
+            <rico:Instantiation
+                rdf:about="instantiation/university-of-strathclyde-archives-united-kingdom">
+                <rico:isOrWasDigitalInstantiationOf
+                    rdf:resource="record/university-of-strathclyde-archives-united-kingdom"/>
+                <dc:format xml:lang="en">text/xml</dc:format>
+
+                <rico:hasOrHadHolder
+                    rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+                <rdfs:seeAlso
+                    rdf:resource="https://atom.lib.strath.ac.uk/university-of-strathclyde-archives-united-kingdom"/>
+
+            </rico:Instantiation>
+        </rico:hasOrHadDigitalInstantiation>
+    </rico:Record>
+
+    <rico:Agent rdf:about="agent/university-of-strathclyde-archives-united-kingdom">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+        <rdfs:label xml:lang="en">University of Strathclyde Archives and Special Collections, United
+            Kingdom</rdfs:label>
+        <rico:hasOrHadAgentName>
+            <rico:AgentName
+                rdf:about="agentName/university-of-strathclyde-archives-united-kingdom-University%20of%20Strathclyde%20Archives%20and%20Special%20Collections%2C%20United%20Kingdom">
+                <rdfs:label xml:lang="en">University of Strathclyde Archives and Special
+                    Collections, United Kingdome</rdfs:label>
+                <rico:textualValue xml:lang="en">University of Strathclyde Archives and Special
+                    Collections, United Kingdom</rico:textualValue>
+                <rico:isOrWasAgentNameOf
+                    rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+            </rico:AgentName>
+        </rico:hasOrHadAgentName>
+        <rico:hasOrHadLocation>
+            <rico:Place>
+                <rdfs:label xml:lang="en">Andersonian Library Curran Building</rdfs:label>
+                <rico:name xml:lang="en">Andersonian Library Curran Building</rico:name>
+                <rico:location rdf:parseType="Literal">
+                    <html:p xml:lang="en">
+                        <html:h4>Address</html:h4>
+                        <html:span>101 St James Road</html:span>
+                        <html:span>Glasgow</html:span>
+                        <html:span>United Kingdom</html:span>
+                        <html:span>G4 ONS</html:span>
+                    </html:p>
+                </rico:location>
+
+
+            </rico:Place>
+        </rico:hasOrHadLocation>
+        <rico:generalDescription rdf:parseType="Literal">
+            <html:div xml:lang="en">
+                <html:h4>Contact information</html:h4>
+                <html:p>Telephone: +44 (0)141 548 2497</html:p>
+                <html:p>Email: archives@strath.ac.uk</html:p>
+                <html:p>URL: http://www.strath.ac.uk/archives</html:p>
+            </html:div>
+        </rico:generalDescription>
+        <rdfs:seeAlso rdf:resource="http://www.strath.ac.uk/archives"/>
+    </rico:Agent>
+</rdf:RDF>
