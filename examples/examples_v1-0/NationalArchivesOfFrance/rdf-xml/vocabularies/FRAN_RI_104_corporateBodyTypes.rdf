@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:cc="http://creativecommons.org/ns#" xmlns:html="http://www.w3.org/1999/xhtml"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <skos:ConceptScheme rdf:about="corporateBodyTypes">
+      <dc:description xml:lang="fr">Thésaurus des catégories de collectivités. Résulte de la
+         conversion automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML
+         correspondant (RI_104) dit des statuts juridiques des collectivités), et de l'intégration
+         dans ce fichier RDF des données figurant uniquement dans la version Ginco de ce
+         référentiel. Des enrichissements, modifications de structure et alignements sont prévus
+         dans les prochains mois.</dc:description>
+      <dc:source xml:lang="fr">FRAN_RI_104</dc:source>
+      <dc:title xml:lang="fr">Thésaurus des catégories de collectivités</dc:title>
+      <dcterms:creator>
+         <foaf:Organization>
+            <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
+            <foaf:homepage>https://www.archives-nationales.culture.gouv.fr</foaf:homepage>
+            <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
+         </foaf:Organization>
+      </dcterms:creator>
+      <dcterms:created>2021-04-30</dcterms:created>
+      <dcterms:modified>2022-03-20</dcterms:modified>
+      <dcterms:modified>2022-04-13T15:41:29.806+02:00</dcterms:modified>
+      <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
+      <dc:language>fr-FR</dc:language>
+      <dc:type xml:lang="fr">Thésaurus</dc:type>
+      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un
+         droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non,
+         dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion
+         des informations de l'indication précise de l'origine des métadonnées : « Archives
+         nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans le
+         fichier Excel qui en donne la liste). Voir à ce sujet la page :
+         https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+      <skos:historyNote rdf:parseType="Literal">
+         <html:ul>
+            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier. Les métadonnées du
+               vocabulaire ont été améliorées. Ajout de deux concepts (organisation paramilitaire et
+               société anonyme). Corrections de forme dans certaines définitions.</html:li>
+         </html:ul>
+      </skos:historyNote>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-acqahmcoo--zyzdyoegxv67"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-afj6suzmb--1aezp32qm7579"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-11f0vtd9g-14xoercgkxxtk"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolsbn6--1v8dkhwwncgqp"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolsmmx--nvog23grnqxt"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-aber4h5pa--t5dltn5cvvo8"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloohyrt--1xjp5y3h0mvzu"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-accmz51qn--m68dghr4db08"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-afvdshcyl--1j2tyrrthai8t"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomr6mp--rim7dd1ugjeq"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomrbsy--d2dm41z2xnq2"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-ad8jimz5u-1vw0irbg3wxst"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-ad24j6poo--1aa5oyqbqi4jn"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-aec4bbo0n--pbh0kun35aq6"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloma6vf-1ggqx7lhcg0rt"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomqzim--1mkd2xzkct0kh"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-af76k559m--epwsnopxwiib"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-3z6w7qnrv-1oa33gu5rgzqp"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolsr5w-1gf48a7lk74c"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-3zkfrnbnh-jfbvlhdaa4m3"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-afzi3ruci-1s2ujv07ckpsa"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-89sjvftpg--hqsefwlotp7i"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blokq9z8-le7xc6gt3t2i"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomaef1--lt4f8tpnjvyf"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blonarq5-4915ysawyv52"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2lv1--65p8cc56ah9l"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqczv--1ijs4336zzm9y"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2d8n--lnot744delnh"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blonav6b-7jwfyyjh3efl"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-49eyjlm6o-1xcxt93hstyhs"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2j25-1c245l4bneo85"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-68iapa3gr--1778gsj0xqa96"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolsjma--1vqf43rb8pwnj"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolbi4x--nvtz7sypvml4"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-38i15qo9q-119g9y8exnrbd"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-ae4onrcse--1ecw731ui6kom"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolbf4a--bqca3bgt33m2"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomaa3u-ng98vm7dkbnq"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blomr902-13lmns87apgev"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-a3rji4ry8-1sr3unv4bbpxs"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolb44i--1thq2t5vh65yl"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-1ji7jau5s--1mgqggbdk7gh9"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2gwk-sgl3fc00gzgl"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolsg64--1n2krc0n6p77x"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo28po-1bei6cefdzkj"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blom9zjl-l45jh5o3uznu"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-ad3kibdxz--tui6dsh7iiwm"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blolb807--17l0i3bi6sxd8"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:hasTopConcept rdf:resource="corporateBodyType/FRAN_RI_104-d-ag32u6afy--108479wtqgzzn"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-acqahmcoo--zyzdyoegxv67">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">administration ou juridiction religieuse
+         séculière</skos:prefLabel>
+      <skos:definition xml:lang="fr">Toute personne ou groupe ayant en charge l’administration d’une
+         portion territoriale de l’Eglise universelle (religion catholique) ou de l’Eglise
+         réformée.</skos:definition>
+      <skos:example xml:lang="fr">Paroisse Sainte-Catherine-du-Val-des-Ecoliers</skos:example>
+      <skos:example xml:lang="fr">Évêché de Paris</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0f38d5b1-20ae-49dc-807c-a0ba1a740e32"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-accmz51qn--m68dghr4db08">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">administration ou juridiction royale locale (Ancien
+         Régime)</skos:prefLabel>
+      <skos:example xml:lang="fr">Prévôté d'Ile-de-France</skos:example>
+      <skos:example xml:lang="fr">Prévôté de Paris</skos:example>
+      <skos:example xml:lang="fr">Élection de Paris</skos:example>
+      <skos:example xml:lang="fr">Bureau des finances de la généralité de Paris</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7e15fe54-ff81-4881-9ce4-a4a17dac4011"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomqzim--1mkd2xzkct0kh">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">assemblée parlementaire</skos:prefLabel>
+      <skos:example xml:lang="fr">Sénat</skos:example>
+      <skos:example xml:lang="fr">Assemblée nationale</skos:example>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d-aewoka0ac--z6lg7921a3eb"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/478d908b-e3e1-4868-ae49-9dee954ebdb5"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-aec4bbo0n--pbh0kun35aq6">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">assemblée représentative (Ancien Régime)</skos:prefLabel>
+      <skos:definition xml:lang="fr">Instance composée de membres délégués ou désignés pour
+         représenter un groupe social, un ordre, une province ou un pays, et administration
+         rattachée.</skos:definition>
+      <skos:example xml:lang="fr">États provinciaux</skos:example>
+      <skos:example xml:lang="fr">Agence du clergé</skos:example>
+      <skos:example xml:lang="fr">Assemblée de notables</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b24e0af5-6ce9-426f-818a-898911e44fc2"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blom9zjl-l45jh5o3uznu">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">association</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">fédération sportive</skos:altLabel>
+      <skos:definition xml:lang="fr">Groupement de personnes régi par la loi du 1er juillet
+         1901.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloo28po-1bei6cefdzkj">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">autorité indépendante</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">autorité publique indépendante</skos:altLabel>
+      <skos:altLabel xml:lang="fr">autorité administrative indépendante</skos:altLabel>
+      <skos:altLabel xml:lang="fr">autorité constitutionnelle indépendante</skos:altLabel>
+      <skos:definition xml:lang="fr">Il n'existe pas de définition officielle des autorités
+         administratives indépendantes. En 2006, le rapport parlementaire "Les autorités
+         administratives indépendantes : un objet juridique non identifié", rédigé par M. Patrice
+         Gélard, sénateur, au nom de l'Office parlementaire d'évaluation de la législation, après
+         avoir rappelé que la dénomination d'autorité administrative indépendante, appliquée par le
+         législateur à différents organismes à partir de 1978 (historiquement, l'expression
+         "Autorité administrative indépendante" est appliquée pour la première fois à la Commission
+         nationale de l'informatique et des libertés (loi n°78-17 du 6 janvier 1978, article8.)), a
+         été étendue à d'autres entités par la jurisprudence ou la doctrine, propose, en s'appuyant
+         sur un précédent rapport rendu par le Conseil d'État en 2001, une liste de 39 instances
+         qualifiées d'autorités administratives indépendantes, ou, pour quatre d'entre elles,
+         d'autorités publiques indépendantes (ce rapport peut être consulté sur le site internet du
+         Sénat à l'adresse : http://www.senat.fr/rap/r05-404-1/r05-404-1.html). Une version mise à
+         jour, comprenant actuellement 38 entités, est disponible sur le site Legifrance
+         (https://www.legifrance.gouv.fr/Sites/Autorites-independantes2). Une autorité publique
+         indépendante est une autorité indépendante dotée de la personnalité morale, qualifiée ainsi
+         par la loi (l'expression "Autorité publique indépendante"est appliquée pour la première
+         fois, en 2003, à l'Autorité des marchés financiers (loi n°2003-706 du 1er août 2003,
+         article 2). Le Défenseur des droits est qualifié d'autorité constitutionnelle indépendante
+         par la loi organique du 29 mars 2011 (article 2).</skos:definition>
+      <skos:scopeNote xml:lang="fr">Dans le cadre du référentiel des producteurs des Archives
+         nationales, le terme générique "Autorité indépendante" est utilisé pour : - les autorités
+         administratives indépendantes, - les autorités publiques indépendantes, - les entités dont
+         l'existence est prévue par la Constitution autres que le Président de la République, le
+         Gouvernement, le Parlement et les cours de justice, à savoir le Conseil constitutionnel, le
+         Conseil supérieur de la magistrature, le Conseil économique, social et environnemental et
+         le Défenseur des droits, - le Conseil d'État.</skos:scopeNote>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ae4onrcse--1ecw731ui6kom">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">autorité seigneuriale laïque</skos:prefLabel>
+      <skos:definition xml:lang="fr">Toute personne physique ou morale exerçant une autorité de
+         nature politique, administrative ou judiciaire sur un ensemble de terres ou d'hommes,
+         souveraine ou non. Regroupe les juridictions seigneuriales et l'administration
+         territoriale, qui peut être le fait d'une personne, d'un groupe de personnes ou d'agents
+         délégués.</skos:definition>
+      <skos:example xml:lang="fr">Seigneurie de Puy-Paulin</skos:example>
+      <skos:example xml:lang="fr">Comté de Montbéliard</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/718f289f-a1b3-4e9f-bde3-9816dae08a87"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blonb04s-1nqrprwwl75h0">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">cabinet ministériel</skos:prefLabel>
+      <skos:definition xml:lang="fr">Le terme Cabinet ministériel est utilisé pour les cabinets du
+         Premier ministre, des ministres et des secrétaires d'État, ainsi que pour les membres de
+         ces cabinets, désignés par leur fonction.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-1ji7jau5s--1mgqggbdk7gh9">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">collectivité territoriale</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">collectivité locale</skos:altLabel>
+      <skos:definition xml:lang="fr">Les collectivités territoriales sont des structures
+         administratives françaises, distinctes de l'administration de l'État, qui doivent prendre
+         en charge les intérêts de la population d'un territoire précis. Sont définies comme
+         collectivités territoriales : les communes ; les départements auxquels s'ajoutent les cinq
+         départements d'outre-mer (Dom) ; les régions auxquelles s'ajoutent également cinq régions
+         d'outre-mer ; les collectivités à statut particulier ; les collectivités d'outre-mer
+         (Com).</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/e94325a8-725b-4b12-a956-f10a8a12c72b"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q58386"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-aewoka0ac--z6lg7921a3eb">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">comité d'assemblée parlementaire</skos:prefLabel>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blomqzim--1mkd2xzkct0kh"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/cef10c59-010e-4829-8972-db6f0b488268"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolsjma--1vqf43rb8pwnj">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">comité interministériel</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/da73c490-6383-45fc-9a74-8bb07d080845"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-68iapa3gr--1778gsj0xqa96">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">commission exécutive provisoire</skos:prefLabel>
+      <skos:definition xml:lang="fr">Commission créée par l'Exécutif et chargée d'organiser une
+         opération (événement) qui a une durée de vie éphémère. La commission est composée de
+         commissaires généraux a qui est déléguée l'organisation de l'opération.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/052119">
+            <rdfs:label xml:lang="fr">France. Commission impériale de l'exposition universelle de
+               1867 (1865-1872)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/cc10fcc3-b2a1-405b-a683-2e16a47cb051"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomr6mp--rim7dd1ugjeq">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">commission juridictionnelle</skos:prefLabel>
+      <skos:definition xml:lang="fr">Le terme "Commission juridictionnelle" était utilisé au titre
+         IV du livre 1er du code de l'organisation judiciaire dans sa version antérieure à
+         l'ordonnance du 8 juin 2006 pour désigner les commissions placées auprès de la Cour de
+         Cassation, désormais mentionnées à l'article L.451-1 du même code. Il reste utilisé pour la
+         Cour de Cassation pour désigner les commissions placées auprès d'elle. (Voir, sur le site
+         internet de la Cour de cassation, la page "Hautes juridictions et commissions
+         juridictionnelles" :
+         https://www.courdecassation.fr/autres_juridictions_commissions_juridictionnelles_3/). </skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b2a5c7f3-673c-4e4c-91cf-0eb28e6338fb"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-af76k559m--epwsnopxwiib">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">congrégation religieuse ou ordre militaire</skos:prefLabel>
+      <skos:definition xml:lang="fr">Association d'établissements ou de communautés de religieux,
+         réguliers ou séculiers ; s'entend des instances décisionnelles centrales de ces
+         congrégations.</skos:definition>
+      <skos:example xml:lang="fr">Grand prieuré de l'ordre de France (ordre de
+         Saint-Jean-de-Jérusalem)</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c947cfa-1fa0-4181-9977-aac6c3720209"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-afj6suzmb--1aezp32qm7579">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">corporation ou communauté de métier</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/127f9cd7-255d-4020-bb34-282aaa59c387"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-afvdshcyl--1j2tyrrthai8t">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">corps de ville ou communauté d'habitants</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/520d2724-9b80-4bcb-b1c1-7b377c71de9c"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-aber4h5pa--t5dltn5cvvo8">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">cour supérieure ou souveraine</skos:prefLabel>
+      <skos:definition xml:lang="fr">Haute juridiction rendant des décisions de justice en dernier
+         ressort.</skos:definition>
+      <skos:example xml:lang="fr">Chambre des comptes</skos:example>
+      <skos:example>
+         <rico:Agent rdf:about="agent/050964">
+            <rdfs:label xml:lang="fr">France. Parlement de Paris (1254-1790)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b59781dd-17d4-41a6-8827-2c2b6e224b0f"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ad3kibdxz--tui6dsh7iiwm">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement d'enseignement</skos:prefLabel>
+      <skos:example xml:lang="fr">Université de Paris</skos:example>
+      <skos:example xml:lang="fr">École militaire</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0da15059-e045-434a-98c1-1f581521fd15"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public</skos:prefLabel>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqfd8--191myac7ayrnr"/>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5blonb3ky--u69ytier8ih6"/>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5blomr36k--99x29dl50sw1"/>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5blolbbvw--1q92uxfd43c1a"/>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5bloma37i--zasxhhwa4h0"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/03074e3d-9e5b-4be9-a04a-583e21cf8e2b"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blonb3ky--u69ytier8ih6">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public à caractère administratif</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">EPA</skos:altLabel>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q3244038"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blokqfd8--191myac7ayrnr">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public à caractère industriel et
+         commercial</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">EPIC</skos:altLabel>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/8f285767-b5b3-4cd0-8a19-4afb9ad51c8c"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q3591583"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloma37i--zasxhhwa4h0">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public à caractère scientifique, culturel et
+         professionnel</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">EPSCP</skos:altLabel>
+      <skos:definition xml:lang="fr">Établissement public national d'enseignement supérieur et de
+         recherche régi par le titre Ier du livre VII du code de l'éducation. Les établissements
+         publics à caractère scientifique, culturel et professionnel sont les universités, les
+         instituts et écoles ne faisant pas partie des universités, les écoles normales supérieures,
+         les "grands établissements" tels que le Collège de France et les écoles françaises à
+         l'étranger.</skos:definition>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6c06728e-9968-4aa0-90fb-ebe20ffde0a7"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q3591586"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomr36k--99x29dl50sw1">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public à caractère scientifique et
+         technologique</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">établissement public de caractère scientifique et
+         technique</skos:altLabel>
+      <skos:altLabel xml:lang="fr">EPST</skos:altLabel>
+      <skos:definition xml:lang="fr">Établissement public de recherche régi par le titre Ier du
+         livre III du code de la recherche.</skos:definition>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/98e97bbe-a839-4468-9c9a-b6b2ccbd57c5"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q13582798"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolbbvw--1q92uxfd43c1a">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement public de santé</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">EPS</skos:altLabel>
+      <skos:definition xml:lang="fr">Établissement régi par le titre IV du livre Ier de la sixième
+         partie du code de la santé publique.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/004557">
+            <rdfs:label xml:lang="fr">​Centre national d'ophtalmologie des Quinze-Vingt</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5blok7do7--is93h066w4ha"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f05cc16b-a4d5-49ad-972d-d8b33bdd1b25"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q3591565"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ad24j6poo--1aa5oyqbqi4jn">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">établissement religieux</skos:prefLabel>
+      <skos:definition xml:lang="fr">Communauté de religieux, réguliers ou séculiers, ou de
+         religieuses, liés par des vœux ou par une promesse d'obéissance, et
+         dépendances.</skos:definition>
+      <skos:example xml:lang="fr">Abbaye Saint-Denis</skos:example>
+      <skos:example xml:lang="fr">Abbaye Saint-Martin-des-Champs</skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/97e2f3de-95cd-40ad-be31-f2224372d940"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blonarq5-4915ysawyv52">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">fondation</skos:prefLabel>
+      <skos:definition xml:lang="fr">Personne morale créée dans les conditions définies à l'article
+         18 de la loi n° 87-571 du 23 juillet 1987.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6aef9140-e880-4d5e-b2b5-1a7db61f93e9"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-89sjvftpg--hqsefwlotp7i">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">gouvernement provisoire</skos:prefLabel>
+      <skos:definition xml:lang="fr">Un gouvernement provisoire est un gouvernement instauré dans un
+         Etat dans des circonstances exceptionnelles, pouvant inclure une guerre ou une révolution,
+         et chargé d'administrer les affaires du pays en attendant le retour à un fonctionnement
+         normal des institutions.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/e92afb37-229c-4bcc-8976-58947087b5e5"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q59281"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomaef1--lt4f8tpnjvyf">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">groupement d'intérêt économique</skos:prefLabel>
+      <skos:definition xml:lang="fr">Groupement de personnes physiques ou morales doté de la
+         personnalité morale régi par le chapitre Ier du titre V du livre II du code du
+         commerce.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/61048104-2df3-4003-804d-466b18347938"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloo2d8n--lnot744delnh">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">groupement d'intérêt public</skos:prefLabel>
+      <skos:definition xml:lang="fr">Personne morale de droit public régi par le chapitre II de la
+         loi n° 2011-525 du 17 mai 2011 de simplification et d'amélioration du droit. (Depuis 1982,
+         les groupements d'intérêt public peuvent être constitués entre des établissements publics
+         ayant une activité de recherche et de développement technologique ou entre l'un et
+         plusieurs d'entre eux et une ou plusieurs autres personnes morales (loi n° 82-610 du 15
+         juillet 1982, article 21). Des textes spécifiques ont ensuite étendu cette possibilité à
+         d'autres domaines d'activité. La loi du 17 mai 2011 a unifié le droit des groupements
+         d'intérêt public en se substituant à l'ensemble des textes préexistants.)</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1d954407-cb67-4aa9-b37e-75bc713851fd"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomaa3u-ng98vm7dkbnq">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">groupement d'intérêt scientifique</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">groupement scientifique</skos:altLabel>
+      <skos:definition xml:lang="fr">Contrat de coopération scientifique entre le Centre national de
+         recherche scientifique et un organisme tiers, régi par les dispositions internes du
+         CNRS.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/003832">
+            <rdfs:label xml:lang="fr">​Centre national d'études et de recommandation sur la
+               nutrition et l'alimentation</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1ddfa008-e02e-4ec4-b857-ffd34308672a"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ag32u6afy--108479wtqgzzn">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">hôpital ou organisme d'assistance publique</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7b01d591-b921-4fd1-8ee3-79c46c0e3da3"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolb807--17l0i3bi6sxd8">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">institution de prévoyance</skos:prefLabel>
+      <skos:definition xml:lang="fr">Personne morale de droit privé à but non lucratif régie par le
+         titre 3 du livre 9 du code de la sécurité sociale.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/000149">
+            <rdfs:label xml:lang="fr">​Institut de prévoyance des agents contractuels et temporaires
+               de l'État</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/5448e759-9b58-4236-9ee6-65a159dbe0e3"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloo2lv1--65p8cc56ah9l">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">juridiction</skos:prefLabel>
+      <skos:definition xml:lang="fr">Terme utilisé pour l'ensemble des juridictions, administratives
+         et judiciaires, autres que les commissions juridictionnelles. </skos:definition>
+      <skos:scopeNote xml:lang="fr">En l'état actuel du référentiel, ce terme s'applique à la
+         Commission centrale d'aide sociale, à la Cour de Cassation, à la Cour des comptes, à la
+         Cour nationale de l'incapacité et de la tarification de l'assurance des accidents du
+         travail, à la Cour nationale du droit d'asile et au Tribunal des conflits. Le Conseil
+         d'État, dont le rôle n'est pas exclusivement juridictionnel, est en revanche qualifié
+         d'Autorité indépendante.</skos:scopeNote>
+      <skos:example>
+         <rico:Agent rdf:about="agent/050996">
+            <rdfs:label xml:lang="fr">France. ​Cour supérieure d'arbitrage (1938-....)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d-abuh97t7a-mzm3fo556v8q"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1b74f6f3-0a6e-421f-9c51-e73ac06c7834"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-abuh97t7a-mzm3fo556v8q">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">juridiction d'exception ou d'attribution</skos:prefLabel>
+      <skos:definition xml:lang="fr">Juridiction non souveraine compétente pour certains types
+         d'infractions ou de justiciables.</skos:definition>
+      <skos:example xml:lang="fr">Connétablie et maréchaussée</skos:example>
+      <skos:example xml:lang="fr">Eaux-et-forêts</skos:example>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2lv1--65p8cc56ah9l"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/3336c711-7d0b-4349-9107-e423e862be43"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-3z6w7qnrv-1oa33gu5rgzqp">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">laboratoire de recherche</skos:prefLabel>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d5blokoeq2--1ahhkzq0zm7zp"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/1ea869a6-ba2c-4e6e-8647-9e689054a987"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloo2gwk-sgl3fc00gzgl">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">ministère</skos:prefLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/051231">
+            <rdfs:label xml:lang="fr">France. Ministère des prisonniers, réfugiés et
+               déportés</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-38i15qo9q-119g9y8exnrbd">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">non identifié</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/78b07112-8ed5-4c50-856e-73eac6c6c5af"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomr902-13lmns87apgev">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">office notarial</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">étude notariale</skos:altLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/010198">
+            <rdfs:label xml:lang="fr">​Etude LXXI</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/ccd8bd98-fd5b-4074-ad5a-0c7431fe4910"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolsmmx--nvog23grnqxt">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">ordre professionnel</skos:prefLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/004558">
+            <rdfs:label xml:lang="fr">​Ordre national des pharmaciens (France)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/27e6ac89-fbc2-4894-8c93-beda1e639518"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-afzi3ruci-1s2ujv07ckpsa">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organe gouvernemental de la monarchie (Ancien
+         Régime)</skos:prefLabel>
+      <skos:definition xml:lang="fr">Toute structure ou organisme placé auprès du roi et contribuant
+         au gouvernement du royaume.</skos:definition>
+      <skos:example xml:lang="fr">Département de la Marine</skos:example>
+      <skos:example xml:lang="fr">Chancellerie</skos:example>
+      <skos:example xml:lang="fr">Conseil du roi</skos:example>
+      <skos:narrower rdf:resource="corporateBodyType/FRAN_RI_104-d-ags9nq68f--dg6dz8uwnd7u"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/02368aa6-ec4a-44a8-9153-9ab28bec1aa1"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ad8jimz5u-1vw0irbg3wxst">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organisation intergouvernementale</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0e4404e4-32af-4c22-bb83-52b412f09c05"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-a3rji4ry8-1sr3unv4bbpxs">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organisation paramilitaire</skos:prefLabel>
+      <skos:definition xml:lang="fr">Une organisation paramilitaire est une force armée dont la
+         fonction et l'organisation sont similaires à celles d'une armée professionnelle mais qui
+         n'est pas considérée comme faisant partie des forces armées d'un État.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9610bcbf-001a-4f58-81b3-ee36c88398a4"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blomrbsy--d2dm41z2xnq2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organisme consultatif</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blooi3ij--n2hur9uc3des">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organisme de sécurité sociale</skos:prefLabel>
+      <skos:definition xml:lang="fr">Organisme de droit privé régi par le code de la sécurité
+         sociale (autre que les institutions de prévoyance).</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/cd35d91d-2541-45e7-bd04-41e0532d5e75"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-49eyjlm6o-1xcxt93hstyhs">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">organisme parapublic (Ancien Régime)</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/0b3460a9-be7e-42b3-9c77-d47e2ff91644"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloma6vf-1ggqx7lhcg0rt">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">parti politique</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/668e02d2-a285-405c-ac0b-35f3669a0c24"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolsbn6--1v8dkhwwncgqp">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">présidence de la République</skos:prefLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/050006">
+            <rdfs:label xml:lang="fr">​État-major particulier du président de la
+               République</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c1ddb003-4095-4dc2-954e-e0f6eff413b9"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service à compétence nationale</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">SCN</skos:altLabel>
+      <skos:definition xml:lang="fr">Service de l'État régi par le décret n° 92-604 portant charte
+         de la déconcentration (modifié par le décret n° 97-463 du 9 mai 1997).</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/005061">
+            <rdfs:label xml:lang="fr">Archives nationales (France ; 1790-....)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9be2dd2a-28eb-4bc5-8e2b-b09bcf02d411"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloo2j25-1c245l4bneo85">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service actif de police</skos:prefLabel>
+      <skos:definition xml:lang="fr">Direction ou service central de police nationale désigné comme
+         tel dans les textes réglementaires relatifs à l'organisation de la police nationale et
+         service qui en dépend, par opposition aux services dits "administratifs" de la direction
+         générale de la police nationale.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/001160">
+            <rdfs:label xml:lang="fr">​​France. Ministère de l'Intérieur. Direction générale de la
+               police nationale. Direction de la surveillance du territoire (1899-2008)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a7cccf09-98c6-4892-8f20-79b88d22ba8f"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service d'administration centrale</skos:prefLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/005073">
+            <rdfs:label xml:lang="fr">​France. Ministère de la Culture et de la Communication.
+               Direction des Archives de France (1897-2010)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blokqczv--1ijs4336zzm9y">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service déconcentré de l'Etat</skos:prefLabel>
+      <skos:definition xml:lang="fr">Service de l'État régi par le décret n° 92-604 du 1er juillet
+         1992 portant charte de la déconcentration et par le décret n° 2004-374 du 29 avril
+         2004.</skos:definition>
+      <skos:scopeNote xml:lang="fr">Avant 1992, employer : Service extérieur</skos:scopeNote>
+      <skos:example>
+         <rico:Agent rdf:about="agent/004005">
+            <rdfs:label xml:lang="fr">​Rectorat de l'Académie de Paris. Service des constructions
+               des académies de la région Île-de-France (19559-1994)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/dcefe1cf-e79a-479c-80eb-ec6b96ae1f99"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5bloohyrt--1xjp5y3h0mvzu">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service extérieur</skos:prefLabel>
+      <skos:scopeNote xml:lang="fr">À partir de 1992, employer : service déconcentré de
+         l'État.</skos:scopeNote>
+      <skos:example>
+         <rico:Agent rdf:about="agent/050949">
+            <rdfs:label xml:lang="fr">​Agence d'architecture du Conservatoire national des Arts et
+               Métiers (Paris ; 1798-2000)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b5398f6f-f260-4f45-9cb0-4dc1b2ad1a37"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolsg64--1n2krc0n6p77x">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">service technique central</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b8c38c1c-b5dc-44f9-b5ba-2fbc54f4dce7"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-11f0vtd9g-14xoercgkxxtk">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société anonyme</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">SA</skos:altLabel>
+      <skos:definition xml:lang="fr">La Société Anonyme est définie dans le Code de commerce au
+         Livre deuxième, titre II, chapitre V. Il s'agit d'une entreprise dont les principales
+         caractéristiques sont les suivantes : - Les associés, ou actionnaires, ne sont responsables
+         que dans la limite de leurs apports ; - Elle est composée d'au moins deux actionnaires.
+         Toutefois, pour les sociétés dont les titres sont admis aux négociations sur un marché
+         réglementé, le nombre des associés ne peut pas être inférieur à deux (L.225-1 C. com.) ; -
+         Le capital social doit être intégralement souscrit ; (Le capital minimum est de 37 0001
+         euros pour la SA ordinaire comme pour la SA faisant une offre de titres financiers (L.224-2
+         C. Com.), l'ordonnance du 22 janvier 2009 a en effet supprimé le seuil des 225 000 euros ;
+         - La variabilité du capital est impossible sans modifier les statuts ; - Un (ou plusieurs)
+         commissaire aux comptes est désigné pour en contrôler la gestion comptable ; - Les
+         actionnaires peuvent en principe céder librement leurs titres (ou actions) ; - Les SASP et
+         SAS : SASP est une société anonyme sportive professionnelle (certains club de football en
+         font partie) et SAS signifie société par actions simplifiée. La société anonyme a été
+         officiellement réglementée pour la première fois dans le code de commerce de
+         1807.</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/8a5066ab-ce62-4a38-ae7e-e6cf1bc3cb63"/>
+      <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q18195767"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blokq9z8-le7xc6gt3t2i">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société civile</skos:prefLabel>
+      <skos:definition xml:lang="fr">Société régie par les articles 1845 à 1870-1 du code
+         civil.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/009233">
+            <rdfs:label xml:lang="fr">​Société pour la protection artistique des dessins et
+               modèles</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9f003401-174a-4882-9d99-d93619ef5c55"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blonav6b-7jwfyyjh3efl">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société commerciale</skos:prefLabel>
+      <skos:definition xml:lang="fr">Société régie par les titres Ier à IV du livre II du code du
+         commerce. Les sociétés commerciales sont les sociétés en nom collectif (SNC), les sociétés
+         en commandite simple (SCS), les sociétés à responsabilité limité (SARL), les sociétés par
+         action (sociétés anonymes (SA), sociétés en commandite par actions (SCA), et sociétés par
+         actions simplifiées (SAS)) et les sociétés européennes (régies par le règlement européen du
+         8 octobre 2001).</skos:definition>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6a1fe8f2-1b81-4bfd-a423-03501c6e04f5"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolb44i--1thq2t5vh65yl">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société coopérative et participative</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">société coopérative d'intérêt collectif</skos:altLabel>
+      <skos:altLabel xml:lang="fr">société coopérative ouvrière de production</skos:altLabel>
+      <skos:definition xml:lang="fr">Terme générique permettant de conserver l'acronyme "SCOP"
+         utilisé par la Confédération générale des SCOP pour désigner les sociétés coopératives
+         ouvrières de production et les sociétés coopératives d'intérêt collectif. Les sociétés
+         coopératives ouvrières de production (SCOP) sont des sociétés régies par la loi n° 78-763
+         du 19 juillet 1978. Les sociétés coopératives d'intérêt collectif (SCIC) sont de sociétés
+         régies par le titre II ter de la loi n° 47-1775 du 10 septembre 1947 portant statut de la
+         coopération (titre créé par l'article 36 de la loi n° 2001-624 du 17 juillet
+         2001).</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/009208">
+            <rdfs:label xml:lang="fr">​Compagnie d'études industrielles et d'aménagement du
+               territoire</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/22e96bfb-39e2-43e5-8bc9-c4d07854da5f"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolbi4x--nvtz7sypvml4">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société d'économie mixte</skos:prefLabel>
+      <skos:example>
+         <rico:Agent rdf:about="agent/005426">
+            <rdfs:label xml:lang="fr">​Société d'économie mixte de la Villette</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/14001ead-ff53-4031-8fba-9b5f78932843"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolsr5w-1gf48a7lk74c">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société d'Etat</skos:prefLabel>
+      <skos:definition xml:lang="fr">Société créée en application de l'article 2 de la loi n° 46-860
+         du 30 avril 1946 tendant à l'établissement, au financement et à l'exécution de plans
+         d'équipement et de développement des territoires relevant du ministère de la France
+         d'Outre-mer.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/010125">
+            <rdfs:label xml:lang="fr">France 3​</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/168f4dc3-2a48-4586-be55-86a6024b4c86"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-3zkfrnbnh-jfbvlhdaa4m3">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">société secrète</skos:prefLabel>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a9ee8a2d-570d-4e10-b232-5912422f1cde"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d-ags9nq68f--dg6dz8uwnd7u">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">subdivision d'un organe gouvernemental de la monarchie (Ancien
+         Régime)</skos:prefLabel>
+      <skos:definition xml:lang="fr">Toute subdivision d'une structure ou organisme placé auprès du
+         roi et contribuant au gouvernement du royaume.</skos:definition>
+      <skos:example xml:lang="fr">Secrétariat d'Etat</skos:example>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d-afzi3ruci-1s2ujv07ckpsa"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c033d74c-6910-46f3-ad3a-d8df307af1e4"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blolbf4a--bqca3bgt33m2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">syndicat professionnel</skos:prefLabel>
+      <skos:definition xml:lang="fr">Association d'employeurs de droit privé ou de salariés régie
+         par le livre 1er de la deuxième partie du code du travail.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/009297">
+            <rdfs:label xml:lang="fr">​Fédération française des syndicats professionnels de
+               marins</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b13484df-5a40-41de-97e0-4b55ae8f7521"
+      />
+   </skos:Concept>
+   <skos:Concept rdf:about="corporateBodyType/FRAN_RI_104-d5blokoeq2--1ahhkzq0zm7zp">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
+      <skos:inScheme rdf:resource="corporateBodyTypes"/>
+      <skos:prefLabel xml:lang="fr">unité mixte de recherche</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">UMR</skos:altLabel>
+      <skos:definition xml:lang="fr">Laboratoire de recherche associant le Centre national de
+         recherche scientifique et des établissements supérieur ou d'autres organismes publics de
+         recherche.</skos:definition>
+      <skos:example>
+         <rico:Agent rdf:about="agent/051817">
+            <rdfs:label xml:lang="fr">​Centre d'études arctiques (Paris ; 1957-....)</rdfs:label>
+         </rico:Agent>
+      </skos:example>
+      <skos:broader rdf:resource="corporateBodyType/FRAN_RI_104-d-3z6w7qnrv-1oa33gu5rgzqp"/>
+      <skos:exactMatch
+         rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/40e86481-1485-442f-a62c-030f53290065"
+      />
+   </skos:Concept>
+</rdf:RDF>

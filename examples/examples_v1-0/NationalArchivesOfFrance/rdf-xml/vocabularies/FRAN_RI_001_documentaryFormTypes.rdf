@@ -1,0 +1,2209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <skos:ConceptScheme rdf:about="documentaryFormTypes">
+        <dc:description xml:lang="fr">Thésaurus des types de documents. Résulte de la conversion
+            automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML correspondant (une
+            partie du fichier RI_001 des AN). Des enrichissements, modifications de structure et
+            alignements sont prévus dans les prochains mois.</dc:description>
+        <dc:source xml:lang="fr">FRAN_RI_001 (version 1.5 du 2 mai 2022)</dc:source>
+        <dc:title xml:lang="fr">Thésaurus des types de documents</dc:title>
+        <dcterms:creator>
+            <foaf:Organization>
+                <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
+                <foaf:homepage>https://www.archives-nationales.culture.gouv.fr</foaf:homepage>
+                <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
+            </foaf:Organization>
+        </dcterms:creator>
+        <dcterms:created>2019</dcterms:created>
+        <dcterms:modified>2021-11</dcterms:modified>
+        <dcterms:modified>2022-03-20</dcterms:modified>
+        <dcterms:modified>2022-05-02T18:55:20.849+02:00</dcterms:modified>
+        <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
+        <dc:language>fr-FR</dc:language>
+        <dc:type xml:lang="fr">Thésaurus</dc:type>
+        <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un
+            droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non,
+            dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion
+            des informations de l'indication précise de l'origine des métadonnées : « Archives
+            nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans
+            le fichier Excel qui en donne la liste). Voir à ce sujet la page :
+            https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+        <skos:historyNote rdf:parseType="Literal">
+            <html:ul>
+                <html:li xml:lang="fr">Modifié manuellement en novembre 2021 la description de
+                    l'album (documentaryFormType/FRAN_RI_001-d3nd89vnrk--16wap6q8xb894) (instance
+                    des deux classes RecordSetType et DocumentaryFormType pour l'instant).</html:li>
+                <html:li xml:lang="fr">Mars-mai 2022 : regénéré le fichier. Enrichissement des
+                    métadonnées du vocabulaire. Ajout de quelques concepts (rapport de préfet,
+                    rapport de stage, enquête judiciaire) et relations d'association, et, le 2 mai
+                    2022, de quelques définitions et de trois nouveaux concepts (répertoire de
+                    notaire, liste d'actes notariés, mention d'acte notarié), pour la description
+                    des archives notariales. Quelques autres concepts ont été supprimés (sont
+                    désormais des instances de la classe RecordSetType).</html:li>
+            </html:ul>
+        </skos:historyNote>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89amxp--lr0xlor5wm53"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89kj1g-1sbn6fcuvb0xq"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89lgo1-7iazj0zqu03g"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89svym-c1cv76xovth5"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w8cm77-1tqmya6frrzjd"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89uqki-1sihp37bgk7ha"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89wkqv--6vqbxzyz7sp0"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89xhie-393mc7qw2ngf"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89yehp--2z7zlyrw5die"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w7guie-bhj7eawslp2y"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89zbh0-fn2zvsslz5jg"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a088j--19kojnbc83wvg"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a2kb0--1w6x2p5lkup0o"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a3ldr-129nz7ssd9ahs"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a4ikt-188w81hj6hr3q"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a5fk4--1m1zy9p8828mv"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a93wu-ae9lkqmwilxz"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aa0od--1ethxybiwgeht"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aaxno--k01w0bpy8ee"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8abuf8-12y7npkq554ne"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8acrej-16r90mop9gxdk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aeld4-1x8685xus2w7h"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aficf-avwqwtl95mym"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8agfbq-1cqelmqz0i5zl"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ahcb1-ss3ez0u0ty4a"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ai92k--wfo4k1bs52bi"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aj69n-2ryw9debp2mc"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ak2tf-110kk0n3uzzej"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d699mmx4aaw--1kgyjvv9o6hwd"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8alwk9-1nsop83rsdnbg"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8amz5b--1agydv44ah78d"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aosw6--1tccysg7gm8n0"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8apq38-9aotxhf663jy"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aqn2j--dgv2812cqteq"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ark1u-nz64a6kgd0bz"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ash15-1hyjwj2tqpu7s"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8atdso--17i9ugr1kx2by"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8auarz--aro7pmfu019w"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8av7ji-2m7xjqbxqsjd"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8aw4it-19as7kymqwcs3"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ax1i4--1i4lwg89chtsh"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ayvoh-bx5c2dhiijb1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b0d50-f15b2jnbt9l1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b1dkh--2deuzgjdnpwq"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b29gz--1gv6ybg4imtfj"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b368i--1dqegsgf1h9j1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bd2c9-e47vue9hkip7"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8biyg8--qf7axzw7kjv1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bkoqx--18erurunaprvj"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bnaqc--1wogdqudkmylk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bo5rt--zhln30nlkxwn"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bp18s--llgw37gz8dup"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bq6ez-1daxfsx19z37l"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d40zmm--17yo450mcyfxx"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bu6u9--mvcoswza7lg8"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bv05n-qt4ad5kscmt"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bvtwj-12zl8fa6bkzyy"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w80war-dx43pzarix9f"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bwnv7-ot62i2ixeny3"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d4532k--1gep98bytvea4"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bxhm4-3r2dxdm3wy4n"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8byaxh-1kirf75swf2zk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bz4w5-12bpj56h7m3xw"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c7kty--1jayoglt0nbys"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cauyi-zz087oqu7vc"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cppz6--vy9l7i1cqerr"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3lnso--aa93h30v1xxk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cqjak--6kazwjfiraz1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cs6kl--1rj0hw58nlipu"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d699mmy0b4q-3c0d3scqeg5r"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-9zyvvh698-15cn917pr1q9n"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ct0bi-j2s6oluymdb0"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w8d8du-pzakwhqg5tcm"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cttmv-l7h2ocjuub4j"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cun60--uh9evbx7ph8h"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w7j24y--17vivdkfnfhha"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cxxic--9xd6djdhyy3d"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cyr1h--sqsuax6fmjnx"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8czkkm-w478232b1n0t"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d0dvz-9ipzdhdzysbw"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d2g98--1nsfre3g9sc57"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w8763s-tu17dgdf4059"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d3a7w-rqrq3hod8rjj"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d4wun--5fx3alx73y2a"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d90al--tpw5gwi66l5"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dd20g-1ay3usivasvn9"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8deo7p--14r13itx7glib"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dfhqu--1avccnr4bnfxb"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dgb27-14noniz1f0m86"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dh4dl-1sevjg3qz870"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dhxh7--1l0rrc8cmohcj"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dkphx-1n957atl82nyo"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dpmgz--n5vhfdtyuaf6"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-a9cel0wzc--1ki1j5devjps"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dr8o8-f8cat616tba6"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dsuvh-ldi2yrasulx3"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dtnrb-9iwtzotghozd"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3mwms--hg04367s1uad"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w87l5p--n59ufveu4od0"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dugn6--1jz7jus1oxmrk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dxom5--1n6okrudb7a4s"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dyhxi--4gp1f9bymco5"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e0yqp-1qnzg5md0cw8q"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e1shl-1dj0p1ikqjdhk"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e2mg9--a5cn1qxaesq2"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e3fze--1tzou1wedwinf"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e592y--1eh3sssxpxr0n"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e62m3-724g1kg5vvjd"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e6w58-4be3g9bj3owp"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d699mmxkbwm-43y86jcikpoj"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e9d66-1pi3xr1bfuemw"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ea6x3-1hloa5w84ykem"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eb08g--1106d226t24ck"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8edh1n--6pmbenfru38u"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8efxut-73bdmxk10sbw"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8egrdy-1x1n0tuc6tt62"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ehl4u-1d4vs2jzu1dg1"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eieg8-1dufykarlxz3g"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ej7zd-o3oclccebvl"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ek1ar--1g1f8set4d7oa"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8elosk-otgow1r6uhwc"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ekv1n--1u7uepiigbfqx"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8etn9s-13h20k3akaolv"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8euh0o-37slydvw5j2q"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8evac2--7ly6xmca840y"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f08lp-1dqkzwj723t1t"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w7vk5y--1xcrdyu96wxem"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f12cl-18qjy3uld3sts"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f1w3i-10u4aitg4g2jq"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f2pue--m9a3gl0xq4zp"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f611r--88esfn5duhyq"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f7o41-9cqbc6rfh0vz"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f8hn6-1cv55keqf50vh"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w7w5k2-1s3b7nsr7ls5d"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fb424--dh6yl2dg03ev"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fbxdh--bci2l9pio3m9"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fdknj-kr3ok726zwc5"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8feeef--5hushyhdhb"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ff7xk-z0gyte45gv23"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-8da7t9knp--ju2vtil7dkls"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-8dbwnykoj-rmop86jrp76a"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-8db3kc215-8zdj28fwu710"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d-8dbwo0ds3--1mf83mud9au6f"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d-8ddc0zidi--16pvppnbayt5q"/>
+        <skos:hasTopConcept
+            rdf:resource="documentaryFormType/FRAN_RI_001-d-8dcnnjg0m--1ia1b7rkkvxyy"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d-8ddxfu4j1--ls2rujag2j7a"/>
+        <skos:hasTopConcept rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w8dl27--jxkj8k5bbsim"
+        />
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89amxp--lr0xlor5wm53">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">transaction</skos:altLabel>
+        <skos:altLabel xml:lang="fr">concordat</skos:altLabel>
+        <skos:altLabel xml:lang="fr">accommodement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">compromis</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d699mmxork4-13sopuexhsw4"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d699mmxork4-13sopuexhsw4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord de travail</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">accord de branche</skos:altLabel>
+        <skos:altLabel xml:lang="fr">accord collectif de travail</skos:altLabel>
+        <skos:definition xml:lang="fr">Code du travail art. L 2221-1 et 2221-2.</skos:definition>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bjtpg--fuudgtkg2jxu"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89amxp--lr0xlor5wm53"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord international</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">convention internationale</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89amxp--lr0xlor5wm53"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89gsbd--7jyxbksw47a6"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89hpq6--ykqozermv564"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89inkj-17j8bdf8gjgqx"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89jl74--slaqp849yovm"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89gsbd--7jyxbksw47a6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord bilatéral</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89hpq6--ykqozermv564">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord commercial</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89inkj-17j8bdf8gjgqx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">accord économique</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89jl74--slaqp849yovm">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">traité</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">traité diplomatique</skos:altLabel>
+        <skos:altLabel xml:lang="fr">pacte international</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89fuos-1vonceo73v7dz"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89kj1g-1sbn6fcuvb0xq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte d'état civil</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">acte de naissance</skos:altLabel>
+        <skos:altLabel xml:lang="fr">acte de décès</skos:altLabel>
+        <skos:altLabel xml:lang="fr">acte de mariage</skos:altLabel>
+        <skos:altLabel xml:lang="fr">baptistaire</skos:altLabel>
+        <skos:altLabel xml:lang="fr">acte civil public</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89lgo1-7iazj0zqu03g">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte de vente</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">acte d'achat</skos:altLabel>
+        <skos:altLabel xml:lang="fr">acquisition</skos:altLabel>
+        <skos:altLabel xml:lang="fr">adjudication</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89me2v-1xfyihxuch3po"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89me2v-1xfyihxuch3po">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">titre de propriété</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89lgo1-7iazj0zqu03g"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte notarié</skos:prefLabel>
+        <skos:definition xml:lang="fr">Acte établi par un notaire. (source : Département du Minutier
+            central des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">définition ajoutée le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a04blhkno-92bbw9jou9ed"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a30srcwqc-iqa4ovt0t2mp"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a9cel0wzc--1ki1j5devjps"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89o8wi--1rme6ynsra3qz"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89p6j3-16rea8x5it1b"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89r14z-1fb7upmwc7u9n"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89ryrj--o10l2ijvrpqj"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89o8wi--1rme6ynsra3qz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte imparfait</skos:prefLabel>
+        <skos:definition xml:lang="fr">Acte préparé par un notaire, mais n’ayant pas abouti de
+            manière définitive, en général de par la volonté des parties, ayant renoncé à la
+            transaction avant que l’acte soit « parfait ». (source : Département du Minutier central
+            des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">définition modifiée le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89p6j3-16rea8x5it1b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">brevet notarié</skos:prefLabel>
+        <skos:definition xml:lang="fr">Acte notarié dont le premier original, à la différence de la
+            minute notariale, n’est pas conservé par le notaire ayant instrumenté, mais remis aux
+            parties signataires. Les parties peuvent rapporter un brevet au notaire ou à son
+            successeur pour que celui-ci soit déposé au rang des minutes ou grossoyé (copié dans les
+            formes), de même que certains brevets ont pu rester à l’étude sans avoir été récupérés
+            par les parties. Le brevet, jusqu’à la loi du 25 ventôse an XI (16 mars 1803)
+            réorganisant le notariat, n’est pas inscrit, à la différence de la minute notariale, au
+            répertoire du notaire. Il figure cependant au répertoire dans une colonne spécifique
+            après cette réforme, même s’il n’est pas plus conservé par le notaire qu’auparavant et
+            toujours remis directement aux parties signataires. Le brevet correspondant à une forme
+            allégée d’acte notarié, seuls des actes d’importance relativement modeste peuvent être
+            passés sous cette forme. (source : DMC) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">définition ajoutée le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89r14z-1fb7upmwc7u9n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">minute notariale</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Premier original d’un acte notarié, complet de toutes ses
+            annexes, dont le notaire a charge de la conservation jusqu’à ce que la loi en transfère
+            la responsabilité à un service public d’archives. La minute est signée du ou des
+            notaires et des parties à l’acte. Elle est inscrite au répertoire de ce même notaire et
+            fait foi (valeur probatoire), constituant un acte authentique au sens du Code civil.
+            (source : Département du Minutier central des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">définition ajoutée le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/03/2022</dc:date>
+                <rdf:value xml:lang="fr">classe modifiée (changée en DocumentaryFormType) le
+                    [14/03/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89ryrj--o10l2ijvrpqj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">protêt</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">protestation</skos:altLabel>
+        <skos:altLabel xml:lang="fr">protest</skos:altLabel>
+        <skos:definition xml:lang="fr">Le "protêt" est un acte formel par lequel un huissier ou un
+            notaire qui a présenté un effet de commerce (billet à ordre ou lettre de change) au tiré
+            constate, si la présentation est faite avant l'échéance, que le tiré refuse de
+            l'accepter, ou, si la présentation est faite à l'échéance, que le tiré refuse de payer
+            ou déclare ne pas pouvoir payer la somme pour laquelle le titre a été créé. (S. Braudo,
+            dictionnaire du droit privé. dictionnaire-juridique.com)</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89svym-c1cv76xovth5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">actes de congrès</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">actes de colloque</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">entité LRM : Item</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8cm77-1tqmya6frrzjd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte sous seing privé</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89uqki-1sihp37bgk7ha">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">agenda</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89wkqv--6vqbxzyz7sp0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">annonce légale</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">annonce officielle et légale</skos:altLabel>
+        <skos:altLabel xml:lang="fr">annonce judiciaire et légale</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89xhie-393mc7qw2ngf">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">annuaire</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89yehp--2z7zlyrw5die">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">armorial</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w7guie-bhj7eawslp2y">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">arrêt</skos:prefLabel>
+        <skos:definition xml:lang="fr">S'applique notamment aux actes de la Cour des comptes en
+            matière de jugement des comptes.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89zbh0-fn2zvsslz5jg">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">arrêté</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a088j--19kojnbc83wvg">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">article de presse</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a2kb0--1w6x2p5lkup0o">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">attestation</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a3ldr-129nz7ssd9ahs">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">autorisation d'exercice professionnel</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a4ikt-188w81hj6hr3q">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">autorisation d'urbanisme</skos:prefLabel>
+        <skos:definition xml:lang="fr">19ème siècle.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a5fk4--1m1zy9p8828mv">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">avant-projet</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a6cje--1rvuw06021kbf"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a79y8-1dfpx0fshw8e4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a6cje--1rvuw06021kbf">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">avant-projet d'architecture</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">avant-projet détaillé</skos:altLabel>
+        <skos:altLabel xml:lang="fr">avant-projet sommaire</skos:altLabel>
+        <skos:altLabel xml:lang="fr">avant-projet définitif</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a5fk4--1m1zy9p8828mv"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a79y8-1dfpx0fshw8e4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">avant-projet de loi</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a5fk4--1m1zy9p8828mv"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a93wu-ae9lkqmwilxz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">avis</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">avis de parents</skos:altLabel>
+        <skos:definition xml:lang="fr">Préciser de quelle autorité émane l'avis reviendrait à créer
+            un champ trop restrictif. C'est pourquoi il est préférable de ne faire figurer ici que
+            le terme générique.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aa0od--1ethxybiwgeht">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bail</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bail à rente</skos:altLabel>
+        <skos:altLabel xml:lang="fr">bail à loyer</skos:altLabel>
+        <skos:altLabel xml:lang="fr">bail à ferme</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aaxno--k01w0bpy8ee">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">base de données</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">Terme employé également dans le référentiel Matières.
+            classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir (dataset?)</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8abuf8-12y7npkq554ne">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bibliographie</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8acrej-16r90mop9gxdk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bilan</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8adodt-10xe2w7xfhlp1"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8adodt-10xe2w7xfhlp1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bilan comptable</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bilan financier</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8acrej-16r90mop9gxdk"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aeld4-1x8685xus2w7h">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">brevet d'invention</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aficf-avwqwtl95mym">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">brochure</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">presse institutionnelle</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">S'emploie pour désigner toutes sortes de dépliants,
+            plaquettes... </skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8agfbq-1cqelmqz0i5zl">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">budget</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ahcb1-ss3ez0u0ty4a">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bulle pontificale</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ai92k--wfo4k1bs52bi">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bulletin de salaire</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bulletin de paie</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aj69n-2ryw9debp2mc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">bulletin de vote</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ak2tf-110kk0n3uzzej">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">cahier d'enchères</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d699mmx4aaw--1kgyjvv9o6hwd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">cahier de doléances</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8alwk9-1nsop83rsdnbg">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">calendrier</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8amz5b--1agydv44ah78d">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte d'identité</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">carte nationale d'identité</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8anw4m-zatcn4uvaz1w"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8anw4m-zatcn4uvaz1w">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte d'identité professionnelle</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8amz5b--1agydv44ah78d"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aosw6--1tccysg7gm8n0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte de membre</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8apq38-9aotxhf663jy">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte de travail</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aqn2j--dgv2812cqteq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte de voeux</skos:prefLabel>
+        <skos:definition xml:lang="fr">forme préférée modifiée le [14/04/2021]</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ark1u-nz64a6kgd0bz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carton d'invitation</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ash15-1hyjwj2tqpu7s">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">cartulaire</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8atdso--17i9ugr1kx2by">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">catalogue</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8auarz--aro7pmfu019w">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">cautionnement</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">caution</skos:altLabel>
+        <skos:altLabel xml:lang="fr">engagement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">garantie</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8av7ji-2m7xjqbxqsjd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">certificat</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8aw4it-19as7kymqwcs3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">cession</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ax1i4--1i4lwg89chtsh">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">chanson</skos:prefLabel>
+        <skos:definition xml:lang="fr">Correspond à la fois au texte des paroles et aux partitions
+            musicales. Terme employé également dans le référentiel Matières.</skos:definition>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8axyhf--o5847a110xxj"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8axyhf--o5847a110xxj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">partition musicale</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ax1i4--1i4lwg89chtsh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ayvoh-bx5c2dhiijb1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">charte</skos:prefLabel>
+        <skos:definition xml:lang="fr">S'emploie pour les documents solennels médiévaux et d'Ancien
+            Régime.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b0d50-f15b2jnbt9l1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">chronique</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b1dkh--2deuzgjdnpwq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">circulaire</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">instruction</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b29gz--1gv6ybg4imtfj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">communiqué</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">communiqué de presse</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b368i--1dqegsgf1h9j1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">comparution</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b4ywk-y3cj65e4cs22"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b5v0t--1nmsgc3k8tunk"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b6rkl--1pb1om5b2zaqu"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b7o4d--hng40wumuywm"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b8lyq--xe6wjcf38tck"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b9iii-j62nzxz3kbxi"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b4ywk-y3cj65e4cs22">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte administratif</skos:prefLabel>
+        <skos:definition xml:lang="fr">Finances locales : compte établi en fin d'exercice, retraçant
+            les mouvements effectifs de dépenses et de recettes de la collectivité, par le président
+            de l'assemblée délibérante (INSEE).</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b5v0t--1nmsgc3k8tunk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte d'exécution testamentaire</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b6rkl--1pb1om5b2zaqu">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte de gestion</skos:prefLabel>
+        <skos:definition xml:lang="fr">Finances locales : compte établi par le comptable public,
+            retraçant les débits et les crédits de la collectivité.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b7o4d--hng40wumuywm">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte de résultat</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">compte d'exploitation</skos:altLabel>
+        <skos:definition xml:lang="fr">Sociétés et associations : liste de toutes les recettes
+            encaissées et de toutes les dépenses consommées sur une période de généralement 12
+            mois.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b8lyq--xe6wjcf38tck">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte de tutelle</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8b9iii-j62nzxz3kbxi">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte financier</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8b42sa-2vo6rr7qrxfh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte-rendu</skos:prefLabel>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ef4bo-p1s4bb3ribhy"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bbaj9-1n5zjfal1y6o0"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bc6va-220mbs6oh245"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bbaj9-1n5zjfal1y6o0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte-rendu de séance</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bc6va-220mbs6oh245">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">compte-rendu interministériel</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bleu de Matignon</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bd2c9-e47vue9hkip7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">constitution de rente</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">tontine</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">contrat</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bgd43-1oyb50e7d0dxd"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bh85k-zoce6yspjkhr"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w7r99q-o99xkn05llek"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bi371-1mjp07dkae4vt"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bgd43-1oyb50e7d0dxd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">contrat d'apprentissage</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bh85k-zoce6yspjkhr">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">contrat de mariage</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w7r99q-o99xkn05llek">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">contrat de travail</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bi371-1mjp07dkae4vt">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">marché</skos:prefLabel>
+        <skos:definition xml:lang="fr">Type de contrat concernant essentiellement la construction et
+            l'artisanat.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bffx1--ohw07a50f03g"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8biyg8--qf7axzw7kjv1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">convention</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bjtpg--fuudgtkg2jxu"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bjtpg--fuudgtkg2jxu">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">convention collective</skos:prefLabel>
+        <skos:definition xml:lang="fr">Code du travail art. L 2221-1 et 2221-2. Terme employé
+            également dans le référentiel Matières.</skos:definition>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d699mmxork4-13sopuexhsw4"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8biyg8--qf7axzw7kjv1"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bkoqx--18erurunaprvj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">copie (examen et concours)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bmfh4-mfggewbaaxe9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">chrono</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">pelurier</skos:altLabel>
+        <skos:altLabel xml:lang="fr">minutier chronologique</skos:altLabel>
+        <skos:altLabel xml:lang="fr">minutier</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8afrf-wptpfph9phjw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">courrier parlementaire</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bnaqc--1wogdqudkmylk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">curriculum vitae</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">CV</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bo5rt--zhln30nlkxwn">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">décharge</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bp18s--llgw37gz8dup">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">décision</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">arbitrage</skos:altLabel>
+        <skos:definition xml:lang="fr">Préciser de quelle autorité émane la décision reviendrait à
+            créer un champ trop restrictif. C'est pourquoi il est préférable de ne faire figurer ici
+            que le terme générique.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bq6ez-1daxfsx19z37l">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">déclaration</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">déposition</skos:altLabel>
+        <skos:altLabel xml:lang="fr">soumission</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8br23p-1mttyh3fzcdtb"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8btbl1-1f4ir0hueyo3t"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8br23p-1mttyh3fzcdtb">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">déclaration d'utilité publique</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bq6ez-1daxfsx19z37l"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8btbl1-1f4ir0hueyo3t">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">déclaration fiscale</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">déclaration de succession</skos:altLabel>
+        <skos:altLabel xml:lang="fr">déclaration de revenus</skos:altLabel>
+        <skos:altLabel xml:lang="fr">déclaration de douane</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bq6ez-1daxfsx19z37l"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d40zmm--17yo450mcyfxx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">déclaration féodale</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">reconnaissances seigneuriales</skos:altLabel>
+        <skos:altLabel xml:lang="fr">foi et hommage</skos:altLabel>
+        <skos:altLabel xml:lang="fr">aveu et dénombrement</skos:altLabel>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bu6u9--mvcoswza7lg8">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">décret</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">décret d'application</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bv05n-qt4ad5kscmt">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">délibération</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">direction</skos:altLabel>
+        <skos:definition xml:lang="fr">direction : régie que des créanciers font, par le moyen de
+            syndic ou directeur, des biens qui leur ont été abandonnés par leur débiteur
+            (dictionnaire de l'Académie française, 6è éd., 1835).</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bvtwj-12zl8fa6bkzyy">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">délivrance de legs</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w80war-dx43pzarix9f">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">dépôt d'argent</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">apport</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bwnv7-ot62i2ixeny3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">dépôt de pièces</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d4532k--1gep98bytvea4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">dictionnaire</skos:prefLabel>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bxhm4-3r2dxdm3wy4n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">diplôme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8byaxh-1kirf75swf2zk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">directive européenne</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8bz4w5-12bpj56h7m3xw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">discours</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">allocution</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">document graphique</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">document dessiné</skos:altLabel>
+        <skos:altLabel xml:lang="fr">document figuré</skos:altLabel>
+        <skos:altLabel xml:lang="fr">document peint</skos:altLabel>
+        <skos:altLabel xml:lang="fr">estampe</skos:altLabel>
+        <skos:altLabel xml:lang="fr">gravure</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur qui remplace document figuré </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89tt5o--dhoqf04g1o4n"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89vnrk--16wap6q8xb894"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c1ubq--3r55qs4uf7jy"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c2nuv-lqflm4w8o3jx"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c4ax5--zozxdc7l7vkq"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d699mmwtm0y-1c9x716tm2v76"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3m00w8g07q-sdu6w3nalpjf"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d39l88-ayk74wlyh5u7"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89tt5o--dhoqf04g1o4n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">affiche</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd89vnrk--16wap6q8xb894">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">album</skos:prefLabel>
+        <skos:definition xml:lang="fr">S'emploie pour les albums de documents
+            graphiques.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c1ubq--3r55qs4uf7jy">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">caricature</skos:prefLabel>
+        <skos:definition xml:lang="fr">S'emploie pour les documents graphiques.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c2nuv-lqflm4w8o3jx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte à jouer</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c4ax5--zozxdc7l7vkq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carte postale</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d699mmwtm0y-1c9x716tm2v76">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">document cartographique</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">carte</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8a15fm--9k46ej38wfc8"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8a15fm--9k46ej38wfc8">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">atlas</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d699mmwtm0y-1c9x716tm2v76"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">document photographique</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">photographie</skos:altLabel>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur qui remplace photographie.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8g07q-sdu6w3nalpjf">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d39l88-ayk74wlyh5u7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan d'architecture</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3ez8c-mlmlps3dtnb6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c7kty--1jayoglt0nbys">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">document préparatoire</skos:prefLabel>
+        <skos:definition xml:lang="fr">A n'utiliser que pour des documents de cabinet
+            ministériel.</skos:definition>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c8eku--r057lyeffdqo"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c97w8--dnuy8p45vg4v"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c8eku--r057lyeffdqo">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">projet de loi</skos:prefLabel>
+        <skos:definition xml:lang="fr">Projet de texte législatif déposé au Parlement à l’initiative
+            du gouvernement (vie-publique.fr). Terme employé également dans le référentiel
+            Matières.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c7kty--1jayoglt0nbys"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8c97w8--dnuy8p45vg4v">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">proposition de loi</skos:prefLabel>
+        <skos:definition xml:lang="fr">Projet de texte législatif déposé au Parlement à l’initiative
+            d’un ou plusieurs parlementaires (vie-publique.fr). Terme employé également dans le
+            référentiel Matières.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8c7kty--1jayoglt0nbys"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cauyi-zz087oqu7vc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">donation</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">don</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d41rfo-vw0uchq207nu">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">décision de justice</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">décision juridictionnelle</skos:altLabel>
+        <skos:altLabel xml:lang="fr">jugement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">minute juridictionnelle</skos:altLabel>
+        <skos:altLabel xml:lang="fr">ordonnance juridictionnelle</skos:altLabel>
+        <skos:altLabel xml:lang="fr">sentence</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8co2p5-1uinwbukez0z8">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">carnet de santé</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Désigne le carnet médical d'un individu.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cppz6--vy9l7i1cqerr">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">échange</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d3lnso--aa93h30v1xxk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">écrit du for privé</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">livre de raison</skos:altLabel>
+        <skos:altLabel xml:lang="fr">journal intime</skos:altLabel>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cqjak--6kazwjfiraz1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">édit</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cs6kl--1rj0hw58nlipu">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">enquête</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ct0bi-j2s6oluymdb0"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d699mmy0b4q-3c0d3scqeg5r">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">enquête d'opinion</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">sondage d'opinion</skos:altLabel>
+        <skos:altLabel xml:lang="fr">sondage</skos:altLabel>
+        <skos:definition xml:lang="fr">Terme employé également dans les référentiels Matières et
+            Fonctions.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-9zyvvh698-15cn917pr1q9n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">enquête judiciaire</skos:prefLabel>
+        <skos:definition xml:lang="fr">L’enquête judiciaire regroupe les investigations effectuées
+            pour déterminer les auteurs d’une infraction ainsi que les conditions dans lesquelles
+            celle-ci a été commise. </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>24/09/2021</dc:date>
+                <rdf:value xml:lang="fr">Ajouté le [24/09/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ct0bi-j2s6oluymdb0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">étude</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">étude technique</skos:altLabel>
+        <skos:altLabel xml:lang="fr">livre blanc</skos:altLabel>
+        <skos:definition xml:lang="fr">Terme employé également dans les référentiels Matières et
+            Fonctions.</skos:definition>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cs6kl--1rj0hw58nlipu"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8d8du-pzakwhqg5tcm">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">extrait d'acte</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cttmv-l7h2ocjuub4j">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">faire-part</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cun60--uh9evbx7ph8h">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">fiche</skos:prefLabel>
+        <skos:relatedMatch
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSetType/FRAN_RI_001-d3nd8cw9ss--1lp7knf1ldpoh"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cvghe-1kylp0q3gbg04"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cvghe-1kylp0q3gbg04">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">fiche nominative</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">fiche biographique</skos:altLabel>
+        <skos:relatedMatch
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8cun60--uh9evbx7ph8h"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w7j24y--17vivdkfnfhha">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">fondation</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cxxic--9xd6djdhyy3d">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">fondation pieuse</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8cyr1h--sqsuax6fmjnx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">formulaire administratif</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8czkkm-w478232b1n0t">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">indemnité</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d0dvz-9ipzdhdzysbw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">inventaire</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d1j9y--1stj96clt05y3"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d1j9y--1stj96clt05y3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">inventaire après décès</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d0dvz-9ipzdhdzysbw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d2g98--1nsfre3g9sc57">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">laissez-passer</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8763s-tu17dgdf4059">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">lettre de change</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d3a7w-rqrq3hod8rjj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">lettre de mission</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d43ja-1ba23lmjf0lwp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d43ja-1ba23lmjf0lwp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">ordre de mission</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d3a7w-rqrq3hod8rjj"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d4wun--5fx3alx73y2a">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">liquidation</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">dissolution</skos:altLabel>
+        <skos:definition xml:lang="fr">Terme employé également dans le référentiel
+            Fonctions.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">liste</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">rôle</skos:altLabel>
+        <skos:altLabel xml:lang="fr">nomenclature</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d-a30srcwqc-iqa4ovt0t2mp"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d6jwx-1w1u7lgvs2456"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d7dg2--xr5j8rtdxjz6"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d86z8--nc6f6fn0zh7v"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-a30srcwqc-iqa4ovt0t2mp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">liste d’actes notariés</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Subdivision logique d'un répertoire de notaire, concernant le
+            plus souvent une période donnée, par exemple une année. (source : Département du
+            Minutier central des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">ajouté le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a04blhkno-92bbw9jou9ed"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a9cel0wzc--1ki1j5devjps"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d6jwx-1w1u7lgvs2456">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">liste électorale</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">fichier électoral</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d7dg2--xr5j8rtdxjz6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">liste nominative</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d86z8--nc6f6fn0zh7v">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rôle d'équipage</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d5qds--1ik00q3toqh7h"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d90al--tpw5gwi66l5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">livre comptable</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">grand livre</skos:altLabel>
+        <skos:altLabel xml:lang="fr">journal centralisateur</skos:altLabel>
+        <skos:altLabel xml:lang="fr">livre journal</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d9t6g--15b2xaj9jrcis"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8d9t6g--15b2xaj9jrcis">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">pièce comptable</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">titre de recette</skos:altLabel>
+        <skos:altLabel xml:lang="fr">quitus</skos:altLabel>
+        <skos:altLabel xml:lang="fr">pièce justificative de dépenses</skos:altLabel>
+        <skos:altLabel xml:lang="fr">ordre de reversement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">ordre de recouvrement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">ordonnance de paiement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">mandat de paiement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">facture</skos:altLabel>
+        <skos:altLabel xml:lang="fr">décompte définitif</skos:altLabel>
+        <skos:altLabel xml:lang="fr">mémoire</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d90al--tpw5gwi66l5"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dama2--lppp3o1hmxyn"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dbflg-15uovbijc0oz"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dc8p2-nyxarkw0ppoi"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dama2--lppp3o1hmxyn">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">décision de paiement</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">ordonnancement</skos:altLabel>
+        <skos:definition xml:lang="fr">19ème siècle.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d9t6g--15b2xaj9jrcis"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dbflg-15uovbijc0oz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">devis</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d9t6g--15b2xaj9jrcis"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dc8p2-nyxarkw0ppoi">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">quittance</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8d9t6g--15b2xaj9jrcis"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dd20g-1ay3usivasvn9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">livre d'or</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8deo7p--14r13itx7glib">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">livre liturgique</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">missel</skos:altLabel>
+        <skos:altLabel xml:lang="fr">bréviaire</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dfhqu--1avccnr4bnfxb">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">livret militaire</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dgb27-14noniz1f0m86">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">livret ouvrier</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dh4dl-1sevjg3qz870">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">loi</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dhxh7--1l0rrc8cmohcj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">mainlevée</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dkphx-1n957atl82nyo">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">maquette</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">classe CRM : E22 Man-Made Object</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dpmgz--n5vhfdtyuaf6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">marque de fabrique</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dqfsd-rhe7zwagavj2"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dqfsd-rhe7zwagavj2">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">modèle de fabrique</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dpmgz--n5vhfdtyuaf6"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-a9cel0wzc--1ki1j5devjps">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">mention d’acte notarié</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Mention d’un acte dans une liste d'actes notariés. Le notaire
+            y spécifie toujours la date de l’acte (année et mois, pas toujours le quantième dans le
+            mois), le type d’acte, le nom de l’intéressé ou des parties. (source : département du
+            Minutier central des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/23022</dc:date>
+                <rdf:value xml:lang="fr">ajouté le [02/05/23022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a30srcwqc-iqa4ovt0t2mp"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a04blhkno-92bbw9jou9ed"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dr8o8-f8cat616tba6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">menu</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dsuvh-ldi2yrasulx3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">motion</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">voeu</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dtnrb-9iwtzotghozd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">motion parlementaire</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d3mwms--hg04367s1uad">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">nécrologie</skos:prefLabel>
+        <skos:definition xml:lang="fr">liste d'autorité archives locales : édition 2011 nouveau
+            descripteur.</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w87l5p--n59ufveu4od0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">nomination</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">présentation</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dugn6--1jz7jus1oxmrk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">norme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">note</skos:prefLabel>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ef4bo-p1s4bb3ribhy"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dw2mo--1khfprp60ozcr"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dwvij--dxmn3hgfi7ft"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dw2mo--1khfprp60ozcr">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">note de renseignement</skos:prefLabel>
+        <skos:definition xml:lang="fr">A utiliser exclusivement pour les documents produits par les
+            services de renseignement.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dwvij--dxmn3hgfi7ft">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">note de service</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dxom5--1n6okrudb7a4s">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">notoriété</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">certificat de vie</skos:altLabel>
+        <skos:altLabel xml:lang="fr">certificat après décès</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dyhxi--4gp1f9bymco5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">objet</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">classe CRM : E22 Man-Made Object</skos:editorialNote>
+        <skos:definition xml:lang="fr">S'emploie pour signaler la présence de produits publicitaires
+            et de promotion, comme les stylos, les tee-shirts, les épinglettes, etc., d'autres types
+            d'objets comme les brassards d'enfants, des banderoles, des échantillons de tissus, des
+            objets de bonneterie, etc... </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">à revoir</skos:editorialNote>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dzbgn--kx5r3hrwq042"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e4fjt--v7edms58lehc"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e04s1--vnadxljv3hvq"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8dzbgn--kx5r3hrwq042">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">médaille</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">classe CRM : E22 Man-Made Object</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dyhxi--4gp1f9bymco5"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e4fjt--v7edms58lehc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">panneau d'exposition</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">classe CRM : E22 Man-Made Object</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dyhxi--4gp1f9bymco5"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e04s1--vnadxljv3hvq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">sceau</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">classe CRM : E22 Man-Made Object</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dyhxi--4gp1f9bymco5"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e0yqp-1qnzg5md0cw8q">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">obligation</skos:prefLabel>
+        <skos:definition xml:lang="fr">Terme désignant le lien de droit créé par l'effet de la loi
+            ou par la volonté de celui ou de ceux qui s'engagent en vue de fournir ou de recevoir un
+            bien ou une prestation. Dans le langage courant cette expression est souvent prise comme
+            synonyme de contrat ou de convention. En fait un contrat est constitué d'un ensemble
+            d'obligations (S. Braudo, dictionnaire du droit privé.
+            dictionnaire-juridique.com).</skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e1shl-1dj0p1ikqjdhk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">ordonnance</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e2mg9--a5cn1qxaesq2">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">organigramme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e3fze--1tzou1wedwinf">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">ouvrage imprimé</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">entité LRM : Item</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e592y--1eh3sssxpxr0n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">partage</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">succession</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e62m3-724g1kg5vvjd">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">passeport</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e6w58-4be3g9bj3owp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">permis</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">licence</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e7pw5-wqa045fjwwu5"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e7pw5-wqa045fjwwu5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">permis de recherche</skos:prefLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8e6w58-4be3g9bj3owp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d699mmxkbwm-43y86jcikpoj">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">pétition</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">adresse politique</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8e9d66-1pi3xr1bfuemw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">placard</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ea6x3-1hloa5w84ykem">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan cadastral</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eb08g--1106d226t24ck">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan d'urbanisme</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">plan d'alignement</skos:altLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ebtrl--1lrfjh1qyje5z"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ebtrl--1lrfjh1qyje5z">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan local d'urbanisme</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">PLU</skos:altLabel>
+        <skos:altLabel xml:lang="fr">POS</skos:altLabel>
+        <skos:altLabel xml:lang="fr">plan d'occupation des sols</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eb08g--1106d226t24ck"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8edh1n--6pmbenfru38u">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">procès-verbal</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eead0--3bapblsmqsry"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ef4bo-p1s4bb3ribhy"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eead0--3bapblsmqsry">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">procès-verbal d'élection</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8edh1n--6pmbenfru38u"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ef4bo-p1s4bb3ribhy">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">procès-verbal de séance</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">procès-verbal de réunion</skos:altLabel>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8edh1n--6pmbenfru38u"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8efxut-73bdmxk10sbw">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">procuration</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">pouvoir</skos:altLabel>
+        <skos:altLabel xml:lang="fr">commission</skos:altLabel>
+        <skos:altLabel xml:lang="fr">délégation</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8egrdy-1x1n0tuc6tt62">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">profession de foi</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ehl4u-1d4vs2jzu1dg1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">programme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eieg8-1dufykarlxz3g">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">promesse</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ej7zd-o3oclccebvl">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">publication officielle</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">entité LRM : Item</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ek1ar--1g1f8set4d7oa">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">publication périodique</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">entité LRM : Item</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8elosk-otgow1r6uhwc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">questionnaire</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8emhw6--rupez9gtu0e7"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8emhw6--rupez9gtu0e7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">questionnaire d'enquête</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">feuille de ménage</skos:altLabel>
+        <skos:altLabel xml:lang="fr">document de base</skos:altLabel>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f7o41-9cqbc6rfh0vz"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8elosk-otgow1r6uhwc"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ekv1n--1u7uepiigbfqx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">question parlementaire</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">question orale</skos:altLabel>
+        <skos:altLabel xml:lang="fr">question écrite</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport</skos:prefLabel>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ef4bo-p1s4bb3ribhy"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8dv9j1-1wzteoks8ncyf"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8bae78-1sgv3dojeymw1"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eo4qp-jbnqxqbck7hc"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ephw0-e8yd9fnc9jg4"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eqc2f-16m16wcjqinq0"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8er613-rkvliu4vixfb"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d-9znm4smzw-6l0o7waf3hoh"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d3d2om--1ln9pxb9dh20t"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8erzrz-y95y3lea0qci"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eo4qp-jbnqxqbck7hc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport d'activité</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">bilan d'activité</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ephw0-e8yd9fnc9jg4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport d'expertise</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eqc2f-16m16wcjqinq0">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport d'inspection</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8er613-rkvliu4vixfb">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport de mission</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-9znm4smzw-6l0o7waf3hoh">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport de préfet</skos:prefLabel>
+        <skos:definition xml:lang="fr">Typologie documentaire par laquelle le préfet rend compte au
+            ministère de l’Intérieur de la situation politique, économique et sociale du
+            département. La périodicité et l’organisation interne du rapport sont encadrées par
+            circulaire. Outre le rapport d’ensemble, le plus souvent mensuel, les préfets peuvent
+            être sollicités sur un sujet précis. </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>24/09/2021</dc:date>
+                <rdf:value xml:lang="fr">Ajouté le [24/09/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d5b8d3d2om--1ln9pxb9dh20t">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport des forces de l'ordre</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">rapport de police</skos:altLabel>
+        <skos:altLabel xml:lang="fr">rapport de gendarmerie</skos:altLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8erzrz-y95y3lea0qci">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">rapport de stage</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8enb7k-1qnyt9apv8kp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8etn9s-13h20k3akaolv">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">ratification</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">consentement</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8euh0o-37slydvw5j2q">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">reconnaissance</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8evac2--7ly6xmca840y">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">registre</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">registre du courrier</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ew42y--1xrcx35yo3e4b"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ewxtv-emejh4l9df9g"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8exrkr-g90l7b20gkft"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ew42y--1xrcx35yo3e4b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">main courante</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8evac2--7ly6xmca840y"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ewxtv-emejh4l9df9g">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">registre d'audience</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">plumitif d'audience</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8evac2--7ly6xmca840y"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8exrkr-g90l7b20gkft">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">registre paroissial</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8evac2--7ly6xmca840y"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8eyl3w-w73dhs5yfzo5"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ezf2k-a865ob82ft2b"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8eyl3w-w73dhs5yfzo5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">registre de catholicité</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8exrkr-g90l7b20gkft"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ezf2k-a865ob82ft2b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">registre protestant</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">registre d'état civil protestant</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8exrkr-g90l7b20gkft"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f08lp-1dqkzwj723t1t">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">règlement</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w7vk5y--1xcrdyu96wxem">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">relevé météorologique</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f12cl-18qjy3uld3sts">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">remboursement d'office</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f1w3i-10u4aitg4g2jq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">renonciation</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">résignation</skos:altLabel>
+        <skos:altLabel xml:lang="fr">retrait</skos:altLabel>
+        <skos:altLabel xml:lang="fr">désaveu</skos:altLabel>
+        <skos:altLabel xml:lang="fr">abandon</skos:altLabel>
+        <skos:altLabel xml:lang="fr">délaissement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">abstention</skos:altLabel>
+        <skos:altLabel xml:lang="fr">annulation</skos:altLabel>
+        <skos:altLabel xml:lang="fr">déguerpissement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">désistement</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f2pue--m9a3gl0xq4zp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">répertoire</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f3jla--to36ja96m31q"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f3jla--to36ja96m31q">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">répertoire d'officier public ministériel</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f2pue--m9a3gl0xq4zp"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d-a04blhkno-92bbw9jou9ed"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-a04blhkno-92bbw9jou9ed">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">répertoire de notaire</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Liste, en général chronologique, se présentant sous forme de
+            registre ou d’ensemble de feuillets, que le notaire a obligation de tenir, aujourd’hui
+            jour par jour, en y faisant figurer date, nature de l’acte (titre qui en caractérise le
+            contenu, par exemple : vente, procuration, inventaire…), espèce de l’acte (minute ou
+            brevet), noms des parties et toutes autres mentions prescrites par la loi ou les
+            règlements. Le temps ayant passé, et une fois versé avec les minutes dans un service
+            public d’archives, il sert principalement à repérer un acte donné en l’absence outils de
+            recherche plus commodes, mais le répertoire, comme la minute, comporte intrinsèquement
+            une valeur probatoire, donnant date certaine à l’acte, permettant d’effectuer le
+            récolement des minutes d’une étude notariale lors d’un changement de titulaire,
+            permettant un contrôle de la fiscalité des actes. (source : Département du Minutier
+            central des notaires de Paris) </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>02/05/2022</dc:date>
+                <rdf:value xml:lang="fr">ajouté le [02/05/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a30srcwqc-iqa4ovt0t2mp"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d-a9cel0wzc--1ki1j5devjps"/>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd89nbho-16u3osxzn3rkw"/>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f3jla--to36ja96m31q"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f57au--l5s3tydjspv5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">coupure de presse</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f611r--88esfn5duhyq">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">schéma directeur</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f7o41-9cqbc6rfh0vz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">statistique</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">recensement</skos:altLabel>
+        <skos:altLabel xml:lang="fr">tableau statistique</skos:altLabel>
+        <skos:definition xml:lang="fr">Terme employé également dans les référentiels Matières et
+            Fonctions.</skos:definition>
+        <skos:related rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8emhw6--rupez9gtu0e7"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f8hn6-1cv55keqf50vh">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">statuts</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f9b6b-1ezu1k5fbcyoz"/>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8faaiz--12govod7cujwg"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8f9b6b-1ezu1k5fbcyoz">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">acte de société</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">dissolution de société</skos:altLabel>
+        <skos:altLabel xml:lang="fr">acte constitutif de société</skos:altLabel>
+        <skos:definition xml:lang="fr">Constitution de société.</skos:definition>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f8hn6-1cv55keqf50vh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8faaiz--12govod7cujwg">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">statuts d'association</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f8hn6-1cv55keqf50vh"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w7w5k2-1s3b7nsr7ls5d">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">substitution</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8fb424--dh6yl2dg03ev">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">sujet (examen et concours)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8fbxdh--bci2l9pio3m9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">tarif</skos:prefLabel>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fcr4e-s5wrmy9gzwd9"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8fcr4e-s5wrmy9gzwd9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">mercuriale</skos:prefLabel>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fbxdh--bci2l9pio3m9"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8fdknj-kr3ok726zwc5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">télégramme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8feeef--5hushyhdhb">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">télégramme diplomatique</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8ff7xk-z0gyte45gv23">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">terrier</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">censier</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:narrower rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8fg18y-170lylob5uuur"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3nd8fg18y-170lylob5uuur">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">plan terrier</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">atlas terrier</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8ff7xk-z0gyte45gv23"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8da7t9knp--ju2vtil7dkls">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">testament</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">codicille</skos:altLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8dbwnykoj-rmop86jrp76a">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">thèse</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">mémoire universitaire</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : DocumentaryFormType</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">entité LRM : Item</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8db3kc215-8zdj28fwu710">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">timbre postal</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">timbre-poste</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8dbwo0ds3--1mf83mud9au6f">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">titre de séjour</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">carte de séjour</skos:altLabel>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8ddc0zidi--16pvppnbayt5q">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">titre nouvel</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8dcnnjg0m--1ia1b7rkkvxyy">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">tract</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d-8ddxfu4j1--ls2rujag2j7a">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">traité d'office</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="documentaryFormType/FRAN_RI_001-d3m00w8dl27--jxkj8k5bbsim">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <skos:inScheme rdf:resource="documentaryFormTypes"/>
+        <skos:prefLabel xml:lang="fr">transport de droits</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">cession de droits</skos:altLabel>
+        <skos:altLabel xml:lang="fr">transfert</skos:altLabel>
+        <skos:altLabel xml:lang="fr">transport de rente</skos:altLabel>
+    </skos:Concept>
+</rdf:RDF>
