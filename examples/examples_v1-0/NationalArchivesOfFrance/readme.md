@@ -30,7 +30,7 @@ https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{AR_Id}, where '{AR_i
 **The 'rdf-xml' folder contains the RDF files generated from the  'examples_v1-0/NationalArchivesOfFrance/rdf-xml' folder, and conforming to RiC-O v1.0**. Each EAC-CPF or EAD file corresponds to one RDF/RiC-O source file. 
 The 'vocabularies' subfolder contains a first, most often quite poor and not complete, RDF/RiC-O version of some of the controlled vocabularies used in the ANF, for indexing the EAD and EAC-CPF files. Though the RDF files refer to some instances of RiC-O Place, the ANF authority records on places are not provided in this folder. The files provided here are part of the files published in another public GitHub repository ([https://github.com/ArchivesNationalesFR/Referentiels](https://github.com/ArchivesNationalesFR/Referentiels)).
 
-**The base URI defined for these RDF resources is: http://data.archives-nationales.culture.gouv.fr/. It is fictitious**: the URIs are not dereferencable. The RDF dataset is provided only as an example RiC-O archival dataset.
+**The base URI defined for these RDF resources is: http://data.archives-nationales.culture.gouv.fr/. It is fictitious**: the URIs are not yet dereferencable. The RDF dataset is provided only as an example RiC-O archival dataset.
 
 You will also find three JPEG images in the folder. These are **screenshots from visual graphs generated from the RDF dataset, by a GraphDB Free local instance, about some of the agents and record resources described**.
 
