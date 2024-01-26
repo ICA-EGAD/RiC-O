@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+    xmlns:isni="https://isni.org/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xml:base="http://data.archives.strath.ac.uk/">
+    <rico:Record rdf:about="record/C0451">
+        <rico:hasDocumentaryFormType
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+        <rico:describesOrDescribed
+            rdf:resource="agent/scottish-oral-history-centre"/>
+        <rico:hasCreator rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+        <rico:hasOrHadManager rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+        
+        <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2024-01-26</rico:lastModificationDate>
+        <rico:isOrWasAffectedBy>
+            <rico:Activity>
+                <rico:name xml:lang="en">creation</rico:name>
+                <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2017-05-04</rico:date>
+                <rico:generalDescription xml:lang="en">Created by Anna-K Mayer, 4 May 2017.</rico:generalDescription>
+            </rico:Activity>
+        </rico:isOrWasAffectedBy>
+        <rico:isOrWasAffectedBy>
+            <rico:Activity>
+                <rico:name xml:lang="en">corrections (by Florence Clavaud, ICA/EGAD | Archives nationales de France)</rico:name>
+                <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-26</rico:date>
+                <rico:generalDescription xml:lang="en">some manual additions and corrections (in order to get a valid EAC-CPF
+                    file only)</rico:generalDescription>
+            </rico:Activity>
+        </rico:isOrWasAffectedBy>
+        <rico:hasOrHadDigitalInstantiation>
+            <rico:Instantiation
+                rdf:about="instantiation/C0451">
+                <rico:isOrWasDigitalInstantiationOf
+                    rdf:resource="record/C0451"/>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>C0451</rico:identifier>
+                <rico:hasOrHadHolder
+                    rdf:resource="agent/university-of-strathclyde-archives-united-kingdom"/>
+                <rdfs:seeAlso
+                    rdf:resource="https://atom.lib.strath.ac.uk/scottish-oral-history-centre"/>
+                
+            </rico:Instantiation>
+        </rico:hasOrHadDigitalInstantiation>
+    </rico:Record>
+    <rico:Agent rdf:about="agent/scottish-oral-history-centre">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+        <rdfs:label xml:lang="en">University of Strathclyde | Scottish Oral History
+            Centre</rdfs:label>
+        <rico:hasOrHadAgentName>
+            <rico:AgentName rdf:about="agentName/scottish-oral-history-centre-Scottish%20Oral%20History%20Centre">
+                <rdfs:label xml:lang="en">University of Strathclyde | Scottish Oral History
+                    Centre</rdfs:label>
+                <rico:textualValue xml:lang="en">University of Strathclyde | Scottish Oral History
+                    Centre</rico:textualValue>
+                <rico:isOrWasAgentNameOf rdf:resource="agent/scottish-oral-history-centre"/>
+            </rico:AgentName>
+        </rico:hasOrHadAgentName>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1995</rico:beginningDate>
+        <rico:date xml:lang="en">Established 1995</rico:date>
+        <rico:history rdf:parseType="Literal">
+            <div xml:lang="en">
+                <p>The Scottish Oral History Centre (SOHC) was set up within the Department of History at the University of Strathclyde in 1995. Since its foundation the SOHC has been involved in a wide range of teaching, research and outreach activities designed primarily to encourage the use of ‘best practice’ oral history methodology in Scotland. Until 2005, the SOHC was directed by Professor Callum Brown, since then by Professor Arthur McIvor.</p>
+            </div>
+        </rico:history>
+        <rico:performsOrPerformed>
+            <rico:Activity>
+                <rico:generalDescription xml:lang="en">The SOHC was founded to support the use of oral history within the academic community as well as cognate areas such as archives and museums.</rico:generalDescription>
+            </rico:Activity>
+        </rico:performsOrPerformed>
+        <rico:isOrganicProvenanceOf rdf:resource="recordResource/sohc-archive"/>
+    </rico:Agent>
+</rdf:RDF>

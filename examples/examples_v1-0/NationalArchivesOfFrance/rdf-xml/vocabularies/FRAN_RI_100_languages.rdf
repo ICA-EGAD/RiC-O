@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+
+    <skos:ConceptScheme rdf:about="languages">
+        <dc:description xml:lang="fr">Thésaurus des langues des documents et des agents. Produit
+            manuellement, en RDF/XML conforme à RiC-O 0.2, à partir des données contenues dans la
+            liste des langues (FRAN_RI_100) interne au système d'information archivistique (SIA) des
+            Archives nationales. Ne prend pas en compte la totalité des langues déclarées dans la
+            liste SIA. Les relations d'équivalence ont été ajoutées ainsi que les labels. Des enrichissements sont prévus dans les prochains
+            mois.</dc:description>
+        <dc:source xml:lang="fr">FRAN_RI_100</dc:source>
+        <dc:title xml:lang="fr">Thésaurus des langues</dc:title>
+        <dcterms:creator>
+            <foaf:Organization>
+                <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
+                <foaf:homepage>https://www.archives-nationales.culture.gouv.fr</foaf:homepage>
+                <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
+            </foaf:Organization>
+        </dcterms:creator>
+        <dcterms:created>2020</dcterms:created>
+        <dcterms:modified>2021-11</dcterms:modified>
+        <dcterms:modified>2022-03</dcterms:modified>
+        <dc:language>fr-FR</dc:language>
+        <dc:language>en-EN</dc:language>
+        <dc:type xml:lang="fr">Thésaurus</dc:type>
+        <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un
+            droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non,
+            dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion
+            des informations de l'indication précise de l'origine des métadonnées : « Archives
+            nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans
+            le fichier Excel qui en donne la liste). Voir à ce sujet la page :
+            https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+        <skos:historyNote rdf:parseType="Literal">
+            <html:ul>
+                <html:li xml:lang="fr">Mars-avril 2022 : revu le fichier, pour utiliser directement la
+                    norme SKOS et ajouter des métadonnées à ce vocabulaire.</html:li>
+            </html:ul>
+        </skos:historyNote>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-name4"/>
+
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-d-6g899b3ht-jm6991yabdi"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-name5"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-name6"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-name7"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-name9"/>
+
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-d-1r5pt0vk2-1nbochkgb87dc"/>
+
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-d-6qh7b8yep--z64lmk0i2mn7"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-d-1sjflaasd--2gtom2adgool"/>
+        <skos:hasTopConcept rdf:resource="language/FRAN_RI_100-d-oss057ra-ggj18pxos22n"/>
+    </skos:ConceptScheme>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-name4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:prefLabel xml:lang="fr">français</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">French</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Français/fre</skos:altLabel>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fre"/>
+
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-d-6g899b3ht-jm6991yabdi">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+
+        <skos:prefLabel xml:lang="fr">catalan | valencien</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Catalan | Valencian</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Catalan/cat</skos:altLabel>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/cat"/>
+
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-name5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/ger"/>
+
+
+        <skos:prefLabel xml:lang="fr">allemand</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">German</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Allemand/ger</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-name6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+
+
+        <skos:prefLabel xml:lang="fr">anglais</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">English</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Anglais/eng</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-name7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/spa"/>
+
+
+        <skos:prefLabel xml:lang="fr">espagnol | castillan</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Spanish | Castilian</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Espagnol/spa</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-name9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/lat"/>
+
+
+        <skos:prefLabel xml:lang="fr">latin</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Latin</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Latin/lat</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-d-1r5pt0vk2-1nbochkgb87dc">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/ita"/>
+
+
+        <skos:prefLabel xml:lang="fr">italien</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Italian</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Italien/ita</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-d-6qh7b8yep--z64lmk0i2mn7">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/ara"/>
+
+
+        <skos:prefLabel xml:lang="fr">arabe</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Arabic</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">Arabe/ara</skos:altLabel>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-d-1sjflaasd--2gtom2adgool">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/rus"/>
+
+        <skos:prefLabel xml:lang="fr">russe</skos:prefLabel>
+        <skos:altLabel xml:lang="en">Russian</skos:altLabel>
+        <skos:altLabel xml:lang="fr">russe</skos:altLabel>
+
+    </skos:Concept>
+
+    <skos:Concept rdf:about="language/FRAN_RI_100-d-oss057ra-ggj18pxos22n">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <skos:inScheme rdf:resource="languages"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/vocabulary/iso639-2/und"/>
+
+
+        <skos:prefLabel xml:lang="fr">indéterminé</skos:prefLabel>
+        <skos:altLabel xml:lang="en">undetermined</skos:altLabel>
+        <skos:altLabel xml:lang="fr">indéterminé</skos:altLabel>
+
+    </skos:Concept>
+
+
+
+</rdf:RDF>
