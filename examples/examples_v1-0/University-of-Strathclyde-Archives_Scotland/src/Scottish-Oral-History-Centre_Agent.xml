@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" xmlns="urn:isbn:1-931666-33-4"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <control>
+        <recordId>C0451</recordId>
+        <!-- added a maintenanceStatus element -->
+        <maintenanceStatus>revised</maintenanceStatus>
+        <maintenanceAgency>
+            <agencyName>GB 249</agencyName>
+        </maintenanceAgency>
+        <conventionDeclaration>
+            <abbreviation>conventionDeclaration</abbreviation>
+            <citation>ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies,
+                Persons and Families, International Council on Archives (2nd edition, 2003); Rules for the
+                construction of personal, place and corporate names, National Council on Archives
+                (1997).</citation>
+        </conventionDeclaration>
+        <localTypeDeclaration>
+            <abbreviation>detailLevel</abbreviation>
+            <citation>http://ica-atom.org/doc/RS-2#5.4</citation>
+        </localTypeDeclaration>
+        <!-- added a maintenanceHistory element-->
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime>2024-01-26</eventDateTime>
+                <agentType>human</agentType>
+                <agent>Florence Clavaud (ICA/EGAD member | Archives nationales de France)</agent>
+                <eventDescription>some manual additions and corrections (in order to get a valid EAC-CPF
+                    file only)</eventDescription>
+            </maintenanceEvent>
+        </maintenanceHistory>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityType>corporateBody</entityType>
+            <nameEntry>
+                <part>University of Strathclyde | Scottish Oral History Centre</part>
+                <authorizedForm>conventionDeclaration</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <date>Established 1995</date>
+            </existDates>
+            <function>
+                <term>The SOHC was founded to support the use of oral history within the academic
+                    community as well as cognate areas such as archives and museums.</term>
+            </function>
+            <occupation><!--
+                <descriptiveNote>The SOHC was founded to support the use of oral history within the
+                    academic community as well as cognate areas such as archives and
+                    museums.</descriptiveNote>-->
+                <descriptiveNote>
+                    <p>The SOHC was founded to support the use of oral history within the
+                        academic community as well as cognate areas such as archives and
+                        museums.</p>
+                </descriptiveNote>
+            </occupation>
+            <biogHist>
+                <p>The Scottish Oral History Centre (SOHC) was set up within the Department of
+                    History at the University of Strathclyde in 1995. Since its foundation the SOHC
+                    has been involved in a wide range of teaching, research and outreach activities
+                    designed primarily to encourage the use of ‘best practice’ oral history
+                    methodology in Scotland. Until 2005, the SOHC was directed by Professor Callum
+                    Brown, since then by Professor Arthur McIvor.</p>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/walker-david-b-1956-historian"
+                xlink:type="simple">
+                <relationEntry>Walker, David, b. 1956, historian</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/james-ferns-2" xlink:type="simple">
+                <relationEntry>Ferns, James Patrick, fl.2021, historian</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="hierarchical-parent"
+                xlink:href="https://atom.lib.strath.ac.uk/mcivor-arthur-j-b-1956-social-historian"
+                xlink:type="simple">
+                <relationEntry>McIvor, Arthur J., b. 1956, social historian</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="2005">2005</fromDate>
+                    <toDate standardDate="2005">2005</toDate>
+                </dateRange>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="hierarchical-parent"
+                xlink:href="https://atom.lib.strath.ac.uk/university-of-strathclyde-department-of-history"
+                xlink:type="simple">
+                <relationEntry>University of Strathclyde | Department of History</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="hierarchical-child"
+                xlink:href="https://atom.lib.strath.ac.uk/brown-callum-b-1953-historian"
+                xlink:type="simple">
+                <relationEntry>Brown, Callum, b. 1953, historian</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1995">1995</fromDate>
+                    <toDate standardDate="2005">2005</toDate>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Professor Callum Brown was the Director of the Scottish Oral History
+                        Centre.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/rafeek-neil-christopher-1960-2006-oral-historian-socialist"
+                xlink:type="simple">
+                <relationEntry>Rafeek, Neil Christopher, 1960-2006, oral historian,
+                    socialist</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/morrison-sue-fl-1960s-present-oral-historian-researcher-consultant"
+                xlink:type="simple">
+                <relationEntry>Morrison, Susan, b. c. 1960, oral historian, researcher,
+                    consultant</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/young-hilary-b-1979-oral-historian-researcher-digital-curator"
+                xlink:type="simple">
+                <relationEntry>Young, Hilary, b. 1979, oral historian, researcher, digital
+                    curator</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative"
+                xlink:href="https://atom.lib.strath.ac.uk/johnston-ronald-fl-1960-present-oral-historian-researcher"
+                xlink:type="simple">
+                <relationEntry>Johnston, Ronald James, b. c. 1960, oral historian, researcher,
+                    writer</relationEntry>
+            </cpfRelation>
+            <resourceRelation resourceRelationType="subjectOf"
+                xlink:href="https://atom.lib.strath.ac.uk/history-of-the-aberdeen-typhoid-outbreak-1964"
+                xlink:type="simple">
+                <relationEntry>History of the Aberdeen Typhoid Outbreak 1964</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc002-conversations-about-the-singer-strike-1911"
+                xlink:type="simple">
+                <relationEntry>Singer strike, 1911</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc003-ockrim-collins-oral-histories"
+                xlink:type="simple">
+                <relationEntry>Conversations between a Glasgow GP and her former
+                    patients</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc004-conversations-about-asbestos-related-diseases-in-the-west-of-scotland"
+                xlink:type="simple">
+                <relationEntry>Asbestos-related diseases in the West of Scotland oral history
+                    project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc005-occupational-health-in-scotland-draft-version"
+                xlink:type="simple">
+                <relationEntry>Occupational health in Scotland</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc006-conversations-about-coal-miners-and-dust-related-disease"
+                xlink:type="simple">
+                <relationEntry>Coal miners and dust-related disease oral history
+                    project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/chemical-workers-oral-history-project"
+                xlink:type="simple">
+                <relationEntry>Chemical workers oral history project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc008-mens-work-in-heavy-industries-in-glasgow"
+                xlink:type="simple">
+                <relationEntry>Men's work in heavy industries in Glasgow oral history
+                    project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/impact-of-asbestos-on-workers-and-their-families-in-inverclyde-1945-1980"
+                xlink:type="simple">
+                <relationEntry>Asbestos: the impact on the workers and their families in Inverclyde
+                    during the period 1945 to 1980</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc-10-conversation-with-cordelia-oliver"
+                xlink:type="simple">
+                <relationEntry>Conversation with Cordelia Oliver</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc-conversation-with-jim-scullion"
+                xlink:type="simple">
+                <relationEntry>Conversation with Jim Scullion</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc005-occupational-health-in-scotland"
+                xlink:type="simple">
+                <relationEntry>Occupational health in Scotland oral history project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc001-conversations-with-workers-at-former-linwood-car-plant"
+                xlink:type="simple">
+                <relationEntry>Conversations with workers at the former Linwood car
+                    plant</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/sohc-archive" xlink:type="simple">
+                <relationEntry>Scottish Oral History Centre Archive</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/glasgow-dock-workers-oral-history-project"
+                xlink:type="simple">
+                <relationEntry>Glasgow dock workers oral history project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/a-tale-of-two-hamlets" xlink:type="simple">
+                <relationEntry>A Tale of Two Hamlets: Rural Life in Scotland</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/m74-oral-history-project"
+                xlink:type="simple">
+                <relationEntry>M74 Oral History Project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/c796-wcza-2bhm" xlink:type="simple">
+                <relationEntry>Oral history project on women’s experiences of work and closure at
+                    James Templeton &amp;amp; Company Ltd, Glasgow, c. 1960-1981</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/oral-history-project-on-the-changing-work-identity-of-govans-shipbuilders-c-1960-2016"
+                xlink:type="simple">
+                <relationEntry>Oral history project on the changing work identity of Govan's
+                    shipbuilders c. 1960-2016</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/glasgows-working-lives"
+                xlink:type="simple">
+                <relationEntry>Glasgow's Working Lives</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/interview-with-phyllis-craig"
+                xlink:type="simple">
+                <relationEntry>Interview with Phyllis Craig, Chair of Clydeside Action on
+                    Asbestos</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/music-from-the-coalfields"
+                xlink:type="simple">
+                <relationEntry>Music from the coalfields oral history project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/jewish-immigration-to-glasgow-and-transmission-of-culture-through-the-generations-oral-history-project-2"
+                xlink:type="simple">
+                <relationEntry>Jewish immigration to Glasgow and transmission of culture through the
+                    generations oral history project</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/conversation-with-david-mcletchie"
+                xlink:type="simple">
+                <relationEntry>Conversation with David McLetchie MSP</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/oral-history-interviews-carried-out-by-jessica-douthwaite-phd-student-at-university-of-strathclyde-2"
+                xlink:type="simple">
+                <relationEntry>‘Voices of the Cold War in Britain, 1945-1962’ - Oral history
+                    interviews carried out by Jessica Douthwaite, PhD student at the University of
+                    Strathclyde</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/the-university-experience-1945-1975-an-oral-history-of-the-university-of-strathclyde-interviews"
+                xlink:type="simple">
+                <relationEntry>The university experience 1945-1975: an oral history of the
+                    University of Strathclyde [interviews] OLD VERSION</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf"
+                xlink:href="https://atom.lib.strath.ac.uk/the-university-experience-1945-1975-an-oral-history-of-the-university-of-strathclyde-interviews-test"
+                xlink:type="simple">
+                <relationEntry>The university experience 1945-1975: an oral history of the
+                    University of Strathclyde [interviews] VERSION 2</relationEntry>
+            </resourceRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>
