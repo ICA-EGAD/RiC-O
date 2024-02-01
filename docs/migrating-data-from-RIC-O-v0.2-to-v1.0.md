@@ -43,13 +43,12 @@ In addition to these changes:
 - the rico:qualifier datatype property can be used to specify the certainty or precision of the date when needed (the former certainty attribute was replaced with a rico:relationCertainty attribute whose domain has been reduced to Relation) 
 - the dateStandard and calendar datatype properties have been removed: the calendar and standard used to specify a normalized date value or a natural language expression of a date are to be declared for each specific value of  rico:normalizedDateValue or rico:expressedDate,  using, among other possibilities, a W3C date datatype, or creating subproperties of these properties when needed.
 
-### Changes made to other core classes 
+### Changes made to other 'core' classes 
 
 A rico:MandateType class has been created, as a subclass of rico:RuleType, along with the two object properties needed to connect instances of this class to instances of rico:Mandate.
 
 
-
-### Changes made to the datatype properties
+### Changes made to the 'core' datatype properties
 
 In addition to the datatype properties whose domain is rico:Date and which are quoted above, **you should pay attention to the following changes**:
 - **descriptiveNote**, which had domain rico:Thing and is therefore probably being very widely used, **was replaced by rico:generalDescription**, with a slightly different textual definition; rico:scopeAndContent was made a subproperty of rico:generalDescription. 
@@ -58,7 +57,7 @@ In addition to the datatype properties whose domain is rico:Date and which are q
 
 A new rico:destructionDate property was created, subproperty of rico:endDate, with rico:domain RecordResource.
 
-### Changes made to the object properties
+### Changes made to the 'core' object properties
 
 The following changes have been made:
 - **hasInstantiation  was replaced with rico:hasOrHadInstantiation** (same for the inverse object property, which is now rico:isOrWasInstantiationOf)
@@ -86,6 +85,10 @@ Last but not least, **object properties have been created under the following ex
 As an example, rico:directlyIncludes can now be used to connect a Record Set and its direct present members, and rico:includesTransitive can be inferred from this, or created, to connect a Record Set and its present direct or indirect members (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. Rico:included can be used to connect a Record Set and a former member of this Record Set.
 
 Rico:directlyFollowsInSequence can now be used to connect a Record Resource and its direct following sibling in a sequence of record resources. Rico:followsInSequenceTransitive can be inferred from this property, or created, to connect a Record Resource and any of its following siblings in a sequence. This can be applied when you want to generate data from a sequence of EAD `c` elements. 
-On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41), and [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97). 
+On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41), and [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97).
 
+
+## Changes made to the system of Relation classes
+
+TO BE COMPLETED
 
