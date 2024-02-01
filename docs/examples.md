@@ -6,9 +6,11 @@
 * [Next steps](next-steps.html)
 * [Diagrams](diagrams.html)
 * **Examples**
+* [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 * [Events and presentations](events.html)
-* [Projects and tools](projects-and-tools.html)
+* [Projects, tools, and resources](projects-tools-resources.html)
 
+Last updated on February 1<sup>st</sup>, 2024
 
 The RiC-O GitHub repository includes **some example files**.
 

@@ -1,4 +1,4 @@
-# ![ICA-EGAD logo](images/ICA_Logo_ExpertGroups_EGAD_small.png) ICA EGAD Records in Contexts-Ontology (RiC-O) GitHub repository web pages
+# ![ICA-EGAD logo](images/28-LOGO-EGAD-RGB_small.jpg) ICA EGAD Records in Contexts-Ontology (RiC-O) GitHub repository web pages
 
 
 * **Home**
@@ -7,12 +7,13 @@
 * [Next steps](next-steps.html)
 * [Diagrams](diagrams.html)
 * [Examples](examples.html)
+* [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 * [Events and presentations](events.html)
-* [Projects and tools](projects-and-tools.html)
+* [Projects, tools, and resources](projects-tools-resources.html)
 
-Last updated on December 30<sup>th</sup>, 2023
+Last updated on February 1<sup>st</sup>, 2024
 
-This is **the official website on ICA EGAD Records in Contexts-Ontology (ICA RiC-O)**. It is an HTML version of the documentation that was prepared about the ontology and whose sources are in the [GitHub repository](https://github.com/ICA-EGAD/RiC-O). It also provides useful links to the other contents of this repository.
+This is **the official website on ICA EGAD Records in Contexts-Ontology (ICA RiC-O)**. It is an HTML version of the documentation that was prepared about the ontology and whose Markdown sources are in the [GitHub repository](https://github.com/ICA-EGAD/RiC-O). It also provides useful links to the other contents of this repository.
 
 The **latest public release of RiC-O, RiC-O 1.0, is dated December 30, 2023**. You can find it in the GitHub repository, in the [ontology/current-version](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version) subfolder.
 
