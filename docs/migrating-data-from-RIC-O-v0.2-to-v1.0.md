@@ -52,10 +52,10 @@ A rico:MandateType class has been created, as a subclass of rico:RuleType, along
 
 In addition to the datatype properties whose domain is rico:Date and which are quoted above, **you should pay attention to the following changes**:
 - **descriptiveNote**, which had domain rico:Thing and is therefore probably being very widely used, **was replaced by rico:generalDescription**, with a slightly different textual definition; rico:scopeAndContent was made a subproperty of rico:generalDescription. 
-- accrual was replaced with rico:accruals, and accrualStatus with rico:accrualsStatus
-- integrity was replaced with rico:integrityNote (with domain rico:RecordResource only) and physicalCharacteristics with rico:physicalCharacteristicsNote; qualityOfRepresentation was replaced with rico:qualityOfRepresentationNote and made a subproperty of rico:physicalCharacteristicsNote;
+- **accrual was replaced with rico:accruals**, and accrualStatus with rico:accrualsStatus
+- integrity was replaced with rico:integrityNote (with domain rico:RecordResource only) and physicalCharacteristics with rico:physicalCharacteristicsNote; qualityOfRepresentation was replaced with rico:qualityOfRepresentationNote and made a subproperty of rico:physicalCharacteristicsNote.
 
-A new rico:destructionDate property was created, subproperty of rico:endDate, with rico:domain RecordResource.
+A new rico:destructionDate property was created, subproperty of rico:endDate, with domain rico:RecordResource.
 
 ### Changes made to the 'core' object properties
 
@@ -63,16 +63,16 @@ The following changes have been made:
 - **hasInstantiation  was replaced with rico:hasOrHadInstantiation** (same for the inverse object property, which is now rico:isOrWasInstantiationOf)
 - **hasDerivedInstantiation was replaced with rico:hasOrHadDerivedInstantiation** (same for the inverse property, which is now rico:isOrWasDerivedFromInstantiation)
 - **hasProvenance was replaced with rico:hasOrganicProvenance**, subproperty of the new rico:hasOrganicOrFunctionalProvenance; rico:documents has been made a subproperty of this new rico:hasOrganicOrFunctionalProvenance; same for the inverse properties
-- **hasSource** (whose domain was the union of RecordResource and Relation) **has been removed** - a new rico:isEvidencedBy property has been created, with domain Relation only); same for the inverse property, isSourceOf
-- **rico:precedesInTime and rico:followsInTime have been made transitive**
+- **hasSource** (whose domain was the union of RecordResource and Relation) **has been removed** ; a new rico:isEvidencedBy property has been created, with domain Relation only); same for the inverse property, isSourceOf
+- **rico:precedesInTime and rico:followsInTime have been made transitive**.
 
 
-In addition to these changes, many object properties have been added, which may help to produce more precise data, or data which would be easier to process:
-- **several properties were added with domain the union of RecordResource and Instantiation, or RecordSet, and range rico:Date** : rico:hasPublicationDate, rico:hasCreationDate, rico:hasDestructionDate; and several properties to specify the creation dates of all, some or most members of a rico:RecordSet. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date where the record set was formed. A notable exception may be the case where the Record Set is a collection (you may know the date when the collection was created, and the dates of the records that are included in the collection).
-- two properties were created with domain and range rico:Date: rico:intersects and rico:isWithin
+In addition to these changes,**many object properties have been added, which may help to produce more precise data, or data which would be easier to process**:
+- **several properties were added with domain the union of RecordResource and Instantiation, or RecordSet, and with range rico:Date** : rico:hasPublicationDate, rico:hasCreationDate, rico:hasDestructionDate; plus several properties to specify the creation dates of all, some or most members of a rico:RecordSet. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date where the Record Set was formed. A notable exception may be the case where the Record Set is a collection (you may know both the date when the collection was created, and the dates of the records that are included in the collection).
+- two properties were created with domain and range rico:Date: rico:intersects and rico:isWithin;
 - rico:occurredAtDate was created with domain Event and range Date;
 - two subproperties were added to rico:hasOrHadInstantiation: rico:hasOrHadDigitalInstantiation (which can be used, for example, when you generate a rico:Instantiation from a `dao` EAD element); rico:hasOrHadAnalogueInstantiation; 
-- several properties were created with domain and range rico:Agent or subclasses of this class: rico:wasMergedInto and rico:wasSplitInto; rico:isOrWasEmployer; rico:hasBirthPlace, rico:hasDeatPlace.
+- several properties were created with domain and range rico:Agent or subclasses of this class: rico:wasMergedInto and rico:wasSplitInto; rico:isOrWasEmployer; rico:hasBirthPlace, rico:hasDeathPlace.
 
 Last but not least, **object properties have been created under the following existing properties, in order to distinguish past and present relations, and as concerns present relations, to get transitive properties**: 
 - rico:followsOrFollowed (with domain rico:Thing);
@@ -82,13 +82,37 @@ Last but not least, **object properties have been created under the following ex
 - rico:containsOrContained (with domain rico:Place) ;
 -  rico:hasOrHadSubdivision (with domain rico:Group).
 
-As an example, rico:directlyIncludes can now be used to connect a Record Set and its direct present members, and rico:includesTransitive can be inferred from this, or created, to connect a Record Set and its present direct or indirect members (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. Rico:included can be used to connect a Record Set and a former member of this Record Set.
+As an example, **rico:directlyIncludes can now be used to connect a Record Set and its direct present members, and rico:includesTransitive can be inferred from this, or created, to connect a Record Set and its present direct or indirect members** (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. Rico:included can be used to connect a Record Set and a former member of this Record Set.
 
-Rico:directlyFollowsInSequence can now be used to connect a Record Resource and its direct following sibling in a sequence of record resources. Rico:followsInSequenceTransitive can be inferred from this property, or created, to connect a Record Resource and any of its following siblings in a sequence. This can be applied when you want to generate data from a sequence of EAD `c` elements. 
+**Rico:directlyFollowsInSequence can now be used to connect a Record Resource and its direct following sibling in a sequence of record resources. Rico:followsInSequenceTransitive can be inferred from this property, or created, to connect a Record Resource and any of its following siblings in a sequence**. This can be applied when you want to generate data from a sequence of EAD `c` elements. 
 On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41), and [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97).
 
 
 ## Changes made to the system of Relation classes
 
-TO BE COMPLETED
+**The AgentOriginationRelation was replaced with rico:OrganicProvenanceRelation**, subclass of the new rico:OrganicOrFunctionalProvenanceRelation class.
+
+The source object property was replaced with rico:relationSource datatype property, with domain Relation. Same for the certainty datatype property, which was replaced with a rico:relationCertainty. 
+
+As already said above, the hasSource object property, whose domain included rico:Relation and whose range was the union of rico:Agent and rico:RecordResource, was replaced with a rico:isEvidencedBy object property, with domain rico:Relation and range rico:RecordResource. Same for the inverse property, isSourceOf, which became rico:evidences.
+
+**The Relation classes have been rolified, for the reasons and following the method and pattern explained [here](https://github.com/ICA-EGAD/RiC-O/issues/67)**.
+
+As a consequence:
+- **166 specific object properties, defined in RiC-O to connect entities to these relations, were removed**. If you have instantiated Relation classes in your RiC-O 0.2 dataset, you should replace these object properties with the following properties, which existed already: either rico:relationConnects (if the Relation class used is not oriented, e.g. for rico:AgentToAgentRelation) or rico:relationHasSource and rico:relationHasTarget (if the Relation class used is oriented, e.g. for rico:LeadershipRelation)
+- a new reflexive object property, whose name ends with a `_role` suffix, was defined for each of the 48 Relation classes, with domain and range the concerned class.
+- the property chain axioms that had been defined for the binary shortcuts of the classes, were modified.
+
+
+Again, you can read much more details about this on the page related to [issue 67](https://github.com/ICA-EGAD/RiC-O/issues/67).
+
+Here is an example of what has changed, for a rico:LeadershipRelation. (TODO reuse the 2 images already prepared a long time ago and add the XML/RDF code.)
+
+If you want to be able to use the property path directly () in SPARQL queries, in order to traverse the relations, as most of graph databases do not support for now the OWL 2 owl:hasSelf declaration (they cannot infer it by directly), you should either generate the triple below in your RiC-O 1-0 dataset before importing it into a graph database, or add it to the dataset, once imported, using SPARQL UPDATE .
+
+Due to the same reason, you should also generate the shortcut triple below, either before or after importing it in your graph base.
+
+
+
+
 
