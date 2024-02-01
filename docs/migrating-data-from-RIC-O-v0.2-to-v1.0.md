@@ -76,6 +76,7 @@ In addition to these changes, many object properties have been added, which may 
 - several properties were created with domain and range rico:Agent or subclasses of this class: rico:wasMergedInto and rico:wasSplitInto; rico:isOrWasEmployer; rico:hasBirthPlace, rico:hasDeatPlace.
 
 Last but not least, **object properties have been created under the following existing properties, in order to distinguish past and present relations, and as concerns present relations, to get transitive properties**: 
+- rico:followsOrFollowed (with domain rico:Thing);
 - rico:includesOrIncluded (with domain rico:RecordSet) ; 
 - rico:hasOrHadConstituent (with domain rico:Record);
 - rico:hasOrHadComponent (with domain rico:Instantiation) ; 
@@ -83,4 +84,8 @@ Last but not least, **object properties have been created under the following ex
 -  rico:hasOrHadSubdivision (with domain rico:Group).
 
 As an example, rico:directlyIncludes can now be used to connect a Record Set and its direct present members, and rico:includesTransitive can be inferred from this, or created, to connect a Record Set and its present direct or indirect members (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. Rico:included can be used to connect a Record Set and a former member of this Record Set.
-On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41).
+
+Rico:directlyFollowsInSequence can now be used to connect a Record Resource and its direct following sibling in a sequence of record resources. Rico:followsInSequenceTransitive can be inferred from this property, or created, to connect a Record Resource and any of its following siblings in a sequence. This can be applied when you want to generate data from a sequence of EAD `c` elements. 
+On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41), and [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97). 
+
+
