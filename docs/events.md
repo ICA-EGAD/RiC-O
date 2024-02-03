@@ -4,12 +4,12 @@
 * [Home](index.html)
 * [About RiC-O](about.html)
 * [Why use RiC-O?](why-use-RiC-O.html)
-* [Next steps](next-steps.html)
 * [Diagrams](diagrams.html)
 * [Examples](examples.html)
 * [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 **Events and presentations**
 * [Projects, tools, and resources](projects-tools-resources.html)
+* [Next steps](next-steps.html)
 
 Last updated on February 1<sup>st</sup>, 2024
 
@@ -20,7 +20,7 @@ The best place where you can find information about events and presentations is 
 
 You will nevertheless find, below, the list that had been established about events dated from the end of 2019 to September 2021.
 
-Let us also mention the **international study day on the first implementations of RiC, which took place on November 15, 2023** at the National Archives of France. This day brought together around 750 people on site and online. The [https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/](https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/) reflects the diversity and number of projects in progress, and may help to  get a global, of course not exhaustive, overview of what is going on about RiC-O in archival instututions and elsewhere. The slides and video recording of this day will be available soon. These resources will also be referenced in the list mentioned on page [projects-tools-resources-events.html](projects-tools-resources-events.html).
+Let us also mention the **international study day on the first implementations of RiC, which took place on November 15, 2023** at the National Archives of France. This day brought together around 750 people on site and online. The [https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/](https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/) reflects the diversity and number of projects in progress, and may help to get a global, of course not exhaustive, overview of what is going on about RiC-O in archival instututions and elsewhere. The slides and video recording of this day will be available soon. These resources will also be referenced in the list mentioned on page [projects-tools-resources-events.html](projects-tools-resources-events.html).
 
 * Events from 2019 to 2021 (the resources listed below may be obsolete)*
 

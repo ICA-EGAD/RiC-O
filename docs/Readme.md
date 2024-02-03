@@ -19,7 +19,7 @@ The **latest public release of RiC-O, RiC-O 1.0, is dated December 30, 2023**. Y
 
 It will be available to machines and human readers through its IRI (https://www.ica.org/standards/RiC/ontology) as soon as the ICA website has been migrated to a new site.
 
-RiC-O 1.0 is **based on the latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 1.0, which was  released on November 30, 2023**, and which is available for download [here](https://github.com/ICA-EGAD/RiC-CM/releases/tag/v1.0), or [here](https://www.ica.org/app/uploads/2023/12/RiC-CM-1.0.pdf).
+RiC-O 1.0 is **based on the latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 1.0, which was  released on November 30, 2023**, and which is available for download [here](https://github.com/ICA-EGAD/RiC-CM/releases/tag/v1.0.1), or [from the ICA website](https://www.ica.org/app/uploads/2023/12/RiC-CM-1.0.pdf).
 
 
 **If you want to contact us, or send comments and questions, you can use the new [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users)**.

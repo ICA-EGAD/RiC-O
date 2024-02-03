@@ -3,12 +3,12 @@
 * [Home](index.html)
 * [About RiC-O](about.html)
 * [Why use RiC-O?](why-use-RiC-O.html)
-* [Next steps](next-steps.html)
 * **Diagrams**
 * [Examples](examples.html)
 * [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 * [Events and presentations](events.html)
 * [Projects, tools, and resources](projects-tools-resources.html)
+* [Next steps](next-steps.html)
 
 
 Last updated on February 1<sup>st</sup>, 2024
@@ -23,7 +23,7 @@ The diagrams folder now mainly includes diagrams about RiC-O 0.1 and RiC-0 0.2.
 
 The diagrams are under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
-All of them for now have been designed using [diagrams.net](https://app.diagrams.net/), a free online diagram software. The GitHub repo therefore includes, for each diagram, the XML source file and a JPEG screenshot. If you want to edit a diagram once downloaded to your local repository, just open the XML source file in diagrams.net! 
+All of them for now have been designed using [diagrams.net](https://app.diagrams.net/), a free online diagram software. The GitHub repository therefore includes, for each diagram, the XML source file and a JPEG screenshot. If you want to edit a diagram once downloaded to your local repository, just open the XML source file in diagrams.net! 
 
 If you have some diagrams and would like to share them, just contact us ([egad at ica.org](mailto:egad@ica.org))! We can either list them in this web page and provide a link to your own project or institution repository, or include these diagrams into the GitHub RiC-O repository.
 
