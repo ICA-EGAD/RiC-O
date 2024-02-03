@@ -106,14 +106,37 @@ As a consequence:
 
 Again, you can read much more details about this on the page related to [issue 67](https://github.com/ICA-EGAD/RiC-O/issues/67).
 
-Here is an example of what has changed, for a `rico:LeadershipRelation`. (TODO reuse the 2 images already prepared a long time ago and add the XML/RDF code.)
+Here is an example of what has changed, for a `rico:LeadershipRelation`.
+
+![images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png](images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png)
+
+![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png](images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png)
+
+The image below show the RDF/XML data that corresponds to Figure 2.
+
+![images/rico_LeadershipRelation.png](images/rico_LeadershipRelation.png)
 
 
+The rico:LeadershipRelation itself is now defined as follows in RiC-O 1.0 (see the ontology to get the full specification):
 
-If you want to be able to use the property path directly (TODO) in SPARQL queries, in order to traverse the relations, as most of graph databases do not support for now the OWL 2 owl:hasSelf declaration (they cannot infer it by directly), you should either generate the triple below in your RiC-O 1-0 dataset before importing it into a graph database, or add it to the dataset, once imported, using SPARQL UPDATE .
+![images/rico_LeadershipRelation.png](images/rico_LeadershipRelation.png)
 
-Due to the same reason, you should also generate the shortcut triple below, either before or after importing it in your graph base.
+### Warning
 
+Suppose you want to be able, in your dataset, to use the property path quoted in the caption of the Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving the `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is used in the definition or the Relation classes. So they cannot infer it directly if you instantiate the Relation classes and declare they are Relations (for example, if you assert an entity is a `rico:LeadershipRelation`). So you should, either also generate the corresponding triple (see the example below) for each Relation instantiated in your RiC-O 1-0 dataset, before importing it into a graph database, or add it to the dataset, once imported, using SPARQL Update.
+
+```
+<rico:LeadershipRelation_role rdf:resource="agentHierarchicalRelation/JNoelJeanneney-RadioFrance-19820101-19861231"/>
+
+```
+
+
+Due to the same reason, you should also generate at least one of the two shortcut triples below, either before or after importing the data in your graph base.
+
+```
+<rico:isOrWasLeaderOf rdf:resource="agent/RadioFrance"/>
+<rico:hasOrHadLeader rdf:resource="agent/JNoelJeanneney"/>
+```
 
 
 
