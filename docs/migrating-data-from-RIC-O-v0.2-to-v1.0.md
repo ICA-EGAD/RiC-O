@@ -130,7 +130,7 @@ The image below shows the RDF/XML data that corresponds to Figure 2.
 ![images/rico_LeadershipRelation.png](images/leadershipRelation_in_RDF.png)
 
 
-The rico:LeadershipRelation itself is now defined as follows in RiC-O 1.0 (see the ontology to get the full specification):
+The `rico:LeadershipRelation` itself is now defined as follows in RiC-O 1.0 (see the ontology file or HTML page to get the full specification):
 
 ![images/rico_LeadershipRelation.png](images/rico_LeadershipRelation.png)
 
