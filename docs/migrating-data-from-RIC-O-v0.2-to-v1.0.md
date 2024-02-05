@@ -16,8 +16,6 @@ Last updated on February 5<sup>th</sup>, 2024
 
 Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.
 
-We will probably soon generate a complete mapping from RiC-O 0.2 to RiC-O 1.0.
-
 **RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduces some new components; it also brings some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 is not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to the first official version of the RiC ontology (which we would recommend), you may need to modify your data**.
 
 We will mainly **focus on the most significant changes made to RiC-O 0.2 components**, starting with the ones that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). We will also emphasize some additions that may be very useful in some projects.
@@ -38,14 +36,14 @@ Though this is the main change, it will affect your data only if you have instan
 **The three v0.2 subclasses of the `rico:Date` class (*DateSet*, *DateRange* and *SingleDate*) have been removed**. As a consequence, any instance of these classes should be modified and declared as being of type `rico:Date`.
 
 In addition to these changes:
-- a `rico:DateType` class has been created along with the object properties needed to connect its instances to Date entities (`rico:hasDateType` and `rico:isDateTypeOf`).
+- a `rico:DateType` class was created along with the object properties needed to connect its instances to Date entities (`rico:hasDateType` and `rico:isDateTypeOf`).
 - the `rico:normalizedDateValue` datatype property remains available, and can be used for storing a date in e.g. ISO 8601 or EDTF format; of course it also can be used along with W3C date datatypes.
 - the `rico:qualifier` datatype property can be used to specify the certainty or precision of the date when needed (the former certainty attribute was replaced with a `rico:relationCertainty` attribute whose domain has been reduced to Relation).
-- the *dateStandard* and *calendar* datatype properties have been removed: the calendar and standard used to specify a normalized date value or a natural language expression of a date are to be declared for each specific value of `rico:normalizedDateValue` or `rico:expressedDate`, using, among other possibilities, a W3C date datatype, or creating subproperties of these properties when needed.
+- the *dateStandard* and *calendar* datatype properties were removed: the calendar and standard used to specify a normalized date value or a natural language expression of a date are to be declared for each specific value of `rico:normalizedDateValue` or `rico:expressedDate`, using, among other possibilities, a W3C date datatype, or creating subproperties of these properties when needed.
 
 ### Changes made to other 'core' classes 
 
-A `rico:MandateType` class has been created, as a subclass of `rico:RuleType`, along with the two object properties needed to connect instances of this class to instances of `rico:Mandate`.
+A `rico:MandateType` class was created, as a subclass of `rico:RuleType`, along with the two object properties needed to connect instances of this class to instances of `rico:Mandate`.
 
 
 ### Changes made to the 'core' datatype properties
