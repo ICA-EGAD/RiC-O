@@ -60,8 +60,6 @@ A new `rico:length` property was created, subproperty of `rico:measure`, with do
 A new `rico:destructionDate` property was created, subproperty of `rico:endDate`, with domain `rico:RecordResource`. 
 
 
-
-
 ### Changes made to the 'core' object properties
 
 The following changes have been made:
@@ -90,7 +88,7 @@ Last but not least, **object properties have been created under the following ex
 
 For example, **`rico:directlyIncludes` can now be used to connect a Record Set and its direct present members, and `rico:includesTransitive` can be inferred from this, or created, to connect a Record Set and its present, direct or indirect, members** (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. `Rico:included` can be used to connect a Record Set and a former member of this Record Set.
 
-The image below shows the hierarchy of properties under rico:includesOrIncluded, as displayed by Protégé Desktop.
+The image below shows the hierarchy of properties under `rico:includesOrIncluded`, as displayed by Protégé Desktop.
 
 ![images/hasOrPart_hierarchyOfProperties.png](images/hasOrPart_hierarchyOfProperties.png)
 
