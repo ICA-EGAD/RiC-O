@@ -1,4 +1,4 @@
-# ![ICA-EGAD logo](images/28-LOGO-EGAD-RGB_small.jpg) ICA EGAD Records in Contexts-Ontology (RiC-O) information web pages
+# ICA EGAD Records in Contexts-Ontology (RiC-O) information web pages
 
 
 * **Home**
