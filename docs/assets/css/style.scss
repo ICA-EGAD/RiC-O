@@ -31,10 +31,9 @@ footer p {
 text-align:left;
 }
 
-/*img {
-width:100px;
-display:inline;
-}*/
+h1 {
+    display:inline;
+  }  
 
 h1 img {
 width:200px;
@@ -64,6 +63,7 @@ font-variant:small-caps;
 font-weight:bold;
 }
 
-h1+ul li::after {
+h1+ul li::after 
+{
  content: " | ";
 }
