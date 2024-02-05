@@ -4,15 +4,25 @@
 * [Home](index.html)
 * [About RiC-O](about.html)
 * [Why use RiC-O?](why-use-RiC-O.html)
-* [Next steps](next-steps.html)
 * [Diagrams](diagrams.html)
 * [Examples](examples.html)
-* **Events and presentations**
-* [Projects and tools](projects-and-tools.html)
+* [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
+**Events and presentations**
+* [Projects, tools, and resources](projects-tools-resources.html)
+* [Next steps](next-steps.html)
 
-**This page will soon be updated**
+Last updated on February 1<sup>st</sup>, 2024
 
-The following is a list of past and future events on RiC-O, from the end of 2019, and of presentations on RiC-O that are now available online.
+
+Just like for the projects and tools, it seems now really difficult for the RiC-O team to maintain an up-to-date list of events about RiC-O by itself. 
+
+The best place where you can find information about events and presentations is the [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users) list.
+
+You will nevertheless find, below, the list that had been established about events dated from the end of 2019 to September 2021.
+
+Let us also mention the **international study day on the first implementations of RiC, which took place on November 15, 2023** at the National Archives of France. This day brought together around 750 people on site and online. The [https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/](https://www.archives-nationales.culture.gouv.fr/documents/10157/294803/15112023_prog_records.pdf/) reflects the diversity and number of projects in progress, and may help to get a global, of course not exhaustive, overview of what is going on about RiC-O in archival instututions and elsewhere. The slides and video recording of this day will be available soon. These resources will also be referenced in the list mentioned on page [projects-tools-resources-events.html](projects-tools-resources-events.html).
+
+* Events from 2019 to 2021 (the resources listed below may be obsolete)*
 
 * On **November 22, 2019**, the Adochs project organised an **[international study day on Linked Data](http://adochs.be/linking/)** at KBR (the Royal Library of **Belgium**). While morning presentations tackled new models, those of afternoon presented several case studies on publishing archival data as Linked Data. The first presentation on RiC-CM 0.2 and RiC-O 0.1 took place there. The [slides on RiC, written in English](http://adochs.be/wp-content/uploads/2020/01/LinkingThePast_Brussels_20191122_RecordsInContexts.pdf), are less detailed about the standard than the ones mentioned below; however they include some information about the projects lead by the Archives nationales de France.
 * On **January 28, 2020**, a conference named **"_Les métadonnées archivistiques en transition : le nouveau cadre normatif, les enjeux et les premières réalisations_" (in English: "_Archival metadata in transition: the new description standard, the challenges and first achievments_")** took place at the Archives nationales de **France** (ANF). The slides used for each presentation can be downloaded from [here](https://labarchiv.hypotheses.org/1495). The [slides about RiC](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_2_RecordsInContexts_englishVersionAdded1003.pdf) are bilingual (French and English). 
