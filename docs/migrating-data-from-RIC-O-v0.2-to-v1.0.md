@@ -22,7 +22,7 @@ We will mainly **focus on the most significant changes made to RiC-O 0.2 compone
 
 **Before modifying your data**, in order to get a more precise understanding of what has to be done in your dataset, **you should, in addition to reading this text**:
 - **open the ontology file in an OWL ontology editor, browse it or directly search the component you have in mind**; any change made to an existing component has been documented precisely;
-- **have a look at the [three CSV files provided](ontology/current-version/CSV_lists_of_components)**, whose last column lists the changes made from RiC-O 0.2 for each component.
+- **have a look at the [three CSV files provided](../ontology/current-version/CSV_lists_of_components)**, whose last column lists the changes made from RiC-O 0.2 for each component.
 
 In the following lines, we use the `rico:` prefix only for RiC-O 1.0 components.
 
@@ -60,13 +60,13 @@ A new `rico:destructionDate` property was created, subproperty of `rico:endDate`
 The following changes have been made:
 - ***hasInstantiation*  was replaced with `rico:hasOrHadInstantiation`** (same for the inverse object property, which is now `rico:isOrWasInstantiationOf`)
 - ***hasDerivedInstantiation* was replaced with `rico:hasOrHadDerivedInstantiation`** (same for the inverse property, which is now `rico:isOrWasDerivedFromInstantiatio`n)
-- ***hasProvenance* was replaced with `rico:hasOrganicProvenance*`*, subproperty of the new `rico:hasOrganicOrFunctionalProvenance`; `rico:documents` was also made a subproperty of this new property; same for the inverse properties
+- ***hasProvenance* was replaced with `rico:hasOrganicProvenance*`**, subproperty of the new `rico:hasOrganicOrFunctionalProvenance`; `rico:documents` was also made a subproperty of this new property; same for the inverse properties
 - ***hasSource* (whose domain was the union of RecordResource and Relation) was removed**; a new `rico:isEvidencedBy` property has been created, with domain `rico:Relation` only; same for the inverse property, *isSourceOf*
 - **`rico:precedesInTime` and `rico:followsInTime` were made transitive**.
 
 
 In addition to these changes, **many object properties have been added, which may help to produce more precise data, or data which would be easier to process**. The inverse properties were also created, though we are not mentioning them below.
-- **several properties were added with domain the union of `rico:RecordResource` and `rico:Instantiation`, or `rico:RecordSet`, and with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate`; plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but these properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties.
+- **several properties were added with domain the union of `rico:RecordResource` and `rico:Instantiation`, or `rico:RecordSet`, and with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate`; plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but the properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties.
 - two properties were created with domain and range `rico:Date`: `rico:intersects` and `rico:isWithin`;
 - a new `rico:occurredAtDate` property was created with domain `rico:Event` and range `rico:Date`;
 - two subproperties were added to `rico:hasOrHadInstantiation`: `rico:hasOrHadDigitalInstantiation` (which can be used, for example, when you generate a `rico:Instantiation` from a `dao` EAD element), and `rico:hasOrHadAnalogueInstantiation`; 
@@ -127,7 +127,7 @@ The rico:LeadershipRelation itself is now defined as follows in RiC-O 1.0 (see t
 
 ### Warning
 
-Suppose you want to be able, in your dataset, to use the property path quoted in the caption of the Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving the `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is used in the definition or the Relation classes. So they cannot infer it directly if you instantiate the Relation classes and declare they are Relations (for example, if you assert that an entity is a `rico:LeadershipRelation`). So you should, either also generate the corresponding `owl:hasSelf` triple (as the one shown below) for each Relation instantiated in your RiC-O 1-0 dataset, before importing it into a graph database, or add it to the dataset, once imported, using for example SPARQL Update.
+Suppose you want to be able, in your dataset, to use the property path quoted in the caption of Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving the `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is used in the definition or the Relation classes. So they cannot infer it directly if you instantiate the Relation classes and declare they are Relations (for example, if you assert that an entity is a `rico:LeadershipRelation`). So you should, either also generate the corresponding `owl:hasSelf` triple (as the one shown below) for each Relation instantiated in your RiC-O 1-0 dataset, before importing it into a graph database, or add it to the dataset, once imported, using for example SPARQL Update.
 
 ```
 <rico:LeadershipRelation_role rdf:resource="agentHierarchicalRelation/JNoelJeanneney-RadioFrance-19820101-19861231"/>
@@ -135,7 +135,7 @@ Suppose you want to be able, in your dataset, to use the property path quoted in
 ```
 
 
-ALso, note that the shortcut triples like the two ones below (that come from the same example) will be inferred automatically by a OWL-RL reasoner. If your graph database is not configured to use such a reasoner, you should also generate at least one of these two shortcut triples, either before or after importing the data in your graph base.
+Also, note that the shortcut triples like the two ones below (that come from the same example) will be inferred automatically by a OWL-RL reasoner. However, if your graph database is not configured to use such a reasoner, you should also generate at least one of these two shortcut triples, either before or after importing the data in your graph base.
 
 ```
 <rico:isOrWasLeaderOf rdf:resource="agent/RadioFrance"/>
