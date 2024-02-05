@@ -1,4 +1,4 @@
-# ![ICA-EGAD logo](images/28-LOGO-EGAD-RGB_small.jpg) Records in Contexts-Ontology GitHub web pages
+# Records in Contexts-Ontology GitHub web pages
 
 
 
