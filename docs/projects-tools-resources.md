@@ -1,5 +1,7 @@
 # RiC-O Projects, tools, and resources
 
+
+
 * [Home](index.html)
 * [About RiC-O](about.html)
 * [Why use RiC-O?](why-use-RiC-O.html)
@@ -9,6 +11,7 @@
 * [Events and presentations](events.html)
 * **Projects, tools, and resources**
 * [Next steps](next-steps.html)
+
 
 
 Last updated on February 1<sup>st</sup>, 2024

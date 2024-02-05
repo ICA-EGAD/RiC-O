@@ -1,5 +1,7 @@
 # ![ICA-EGAD logo](images/28-LOGO-EGAD-RGB_small.jpg) Records in Contexts-Ontology GitHub web pages
 
+
+
 * **Home**
 * [About RiC-O](about.html)
 * [Why use RiC-O?](why-use-RiC-O.html)
@@ -9,6 +11,8 @@
 * [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 * [Events and presentations](events.html)
 * [Projects, tools, and resources](projects-tools-resources.html)
+
+
 
 Last updated on February 1<sup>st</sup>, 2024
 
