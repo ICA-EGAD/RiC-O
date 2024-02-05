@@ -12,7 +12,7 @@
 
 
 
-Last updated on February 3<sup>rd</sup>, 2024
+Last updated on February 5<sup>th</sup>, 2024
 
 Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.
 
@@ -108,9 +108,15 @@ Again, you can read much more details about this on the page related to [issue 6
 
 Here is an example of what has changed, for a `rico:LeadershipRelation`.
 
-![images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png](images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png)
+Figure 1 shows how this relation is expressed using RiC-O 0.2.
 
-![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png](images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png)
+![images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png](images/a-n-ary-relation-and-its-shortcut_inRiC-O_0.2.png)
+
+Figure 2 shows how the same relation is now expressed using RiC-O 1.0.
+
+![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png](images/a-n-ary-relation-and-its-shortcut_inRiC-O_1.0.png)
+
+
 
 The image below shows the RDF/XML data that corresponds to Figure 2.
 
@@ -123,7 +129,7 @@ The rico:LeadershipRelation itself is now defined as follows in RiC-O 1.0 (see t
 
 ### Warning
 
-Suppose you want to be able, in your dataset, to use the property path quoted in the caption of the Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving the `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is used in the definition or the Relation classes. So they cannot infer it directly if you instantiate the Relation classes and declare they are Relations (for example, if you assert an entity is a `rico:LeadershipRelation`). So you should, either also generate the corresponding triple (see the example below) for each Relation instantiated in your RiC-O 1-0 dataset, before importing it into a graph database, or add it to the dataset, once imported, using SPARQL Update.
+Suppose you want to be able, in your dataset, to use the property path quoted in the caption of the Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving the `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is used in the definition or the Relation classes. So they cannot infer it directly if you instantiate the Relation classes and declare they are Relations (for example, if you assert that an entity is a `rico:LeadershipRelation`). So you should, either also generate the corresponding `owl:hasSelf` triple (as the one shown below) for each Relation instantiated in your RiC-O 1-0 dataset, before importing it into a graph database, or add it to the dataset, once imported, using for example SPARQL Update.
 
 ```
 <rico:LeadershipRelation_role rdf:resource="agentHierarchicalRelation/JNoelJeanneney-RadioFrance-19820101-19861231"/>
@@ -131,7 +137,7 @@ Suppose you want to be able, in your dataset, to use the property path quoted in
 ```
 
 
-Due to the same reason, you should also generate at least one of the two shortcut triples below, either before or after importing the data in your graph base.
+ALso, note that the shortcut triples like the two ones below (that come from the same example) will be inferred automatically by a OWL-RL reasoner. If your graph database is not configured to use such a reasoner, you should also generate at least one of these two shortcut triples, either before or after importing the data in your graph base.
 
 ```
 <rico:isOrWasLeaderOf rdf:resource="agent/RadioFrance"/>
