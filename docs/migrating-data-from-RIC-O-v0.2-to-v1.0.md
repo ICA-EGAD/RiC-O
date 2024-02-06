@@ -84,7 +84,8 @@ Last but not least, **object properties have been created under the following ex
 - `rico:hasOrHadComponent` (with domain `rico:Instantiation`) ; 
 - `rico:containsOrContained` (with domain `rico:Place`) ;
 - `rico:hasOrHadSubdivision` (with domain `rico:Group`);
-- `rico:hasOrHadSubevent` (with domain `rico:Event`).
+- `rico:hasOrHadSubevent` (with domain `rico:Event`);
+- `rico:hasOrHadSubordinate` (with domain `rico:Agent`).
 
 For example, **`rico:directlyIncludes` can now be used to connect a Record Set and its direct present members, and `rico:includesTransitive` can be inferred from this, or created, to connect a Record Set and its present, direct or indirect, members** (e.g. a fonds and an item in this fonds). This can be applied when you want to generate data from a tree of EAD `c` elements. `Rico:included` can be used to connect a Record Set and a former member of this Record Set.
 
