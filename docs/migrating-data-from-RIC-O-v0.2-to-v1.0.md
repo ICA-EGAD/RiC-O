@@ -26,7 +26,7 @@ We will mainly **focus on the most significant changes made to RiC-O 0.2 compone
 - **open the ontology file in an OWL ontology editor, browse it or directly search the component you have in mind**; any change made to an existing component has been documented precisely;
 - **have a look at the [three CSV files provided](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version/CSV_lists_of_components)**, whose last column lists the changes made from RiC-O 0.2 for each component.
 
-In the following lines, we use the `rico:` prefix only for RiC-O 1.0 components.
+In the following lines, we use the `rico` prefix only for RiC-O 1.0 components.
 
 
 ## Changes affecting the core of RiC-O
