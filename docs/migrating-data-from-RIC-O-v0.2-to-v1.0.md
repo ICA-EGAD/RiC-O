@@ -14,7 +14,7 @@
 
 
 
-Last updated on February 5<sup>th</sup>, 2024
+Last updated on February 6<sup>th</sup>, 2024
 
 Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.
 

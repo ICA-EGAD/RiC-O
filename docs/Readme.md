@@ -14,7 +14,7 @@
 
 
 
-Last updated on February 1<sup>st</sup>, 2024
+This website was last updated on February 6<sup>th</sup>, 2024
 
 This is **the official website on ICA EGAD Records in Contexts-Ontology (ICA RiC-O)**. It is an HTML version of the documentation that was prepared about the ontology and whose Markdown sources are in the [GitHub repository](https://github.com/ICA-EGAD/RiC-O). It also provides useful links to the other contents of this repository.
 
