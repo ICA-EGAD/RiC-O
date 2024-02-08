@@ -25,7 +25,7 @@ RiC-O 1.0 is compliant with the **latest version of Records in Contexts-Conceptu
 
 The version 1.0 of RiC-FAD, RiC-CM, and RiC-O marks **the first stable and complete version of the first three parts of RiC, and thus a major milestone in the development of the standard**. 
 
-RiC standard is developed by the [International Council on Archives Expert Group on Archival Description (ICA EGAD)](https://www.ica.org/en/egad-steering-committee-0).
+RiC standard is developed by the [International Council on Archives Expert Group on Archival Description (ICA EGAD)](https://www.ica.org/ica-network/expert-groups/egad/).
 
 RiC makes it possible to describe archival records and the multiple layers of contexts in which they are inscribed through time, from their creation to their curation in an archival institution. 
 It enables archivists and records managers to move forward, from the four previous ICA description standards (ISAD(G), ISAAR(CPF), ISDF and ISDIAH), which it replaces, to a more accurate, more nuanced, easier to process, multidimensional description.
