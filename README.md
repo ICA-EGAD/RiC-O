@@ -11,7 +11,7 @@ The **latest public release of RiC-O, RiC-O 1.0, dated December 30, 2023, is now
 The OWL/RDF file of RiC-O 1.0 is stored in the [ontology/current-version](./ontology/current-version) folder of this repository, with accompanying material, including a HTML version provided for human readers.
 The repository also contains other resources, among which examples and diagrams.
 
-**You can easily download the whole content of this repository using [the latest release](https://github.com/ICA-EGAD/RiC-O/releases/tag/v1.0)**.
+**You can easily download the whole content of this repository using [the latest release](https://github.com/ICA-EGAD/RiC-O/releases/tag/v1.0)**, whose notes provide a global overview of the changes made from RiC-O v0.2.
 
 
 **If you want to contact us, or send comments and questions, you can use the new [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users)**.
