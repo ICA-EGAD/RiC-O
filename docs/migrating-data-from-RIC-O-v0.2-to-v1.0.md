@@ -40,7 +40,7 @@ Though this is the main change, it will affect your data only if you have instan
 In addition to these changes:
 - a `rico:DateType` class was created along with the object properties needed to connect its instances to Date entities (`rico:hasDateType` and `rico:isDateTypeOf`).
 - the `rico:normalizedDateValue` datatype property remains available, and can be used for storing a date in e.g. ISO 8601 or EDTF format; of course it also can be used along with W3C date datatypes.
-- the `rico:qualifier` datatype property can be used to specify the certainty or precision of the date when needed (the former certainty attribute was replaced with a `rico:relationCertainty` attribute whose domain has been reduced to Relation).
+- the `rico:qualifier` datatype property can be used to specify the certainty or precision of the date when needed (the former *certainty* attribute was replaced with a `rico:relationCertainty` attribute whose domain has been reduced to `rico:Relation`).
 - the *dateStandard* and *calendar* datatype properties were removed: the calendar and standard used to specify a normalized date value or a natural language expression of a date are to be declared for each specific value of `rico:normalizedDateValue` or `rico:expressedDate`, using, among other possibilities, a W3C date datatype, or creating subproperties of these properties when needed.
 
 ### Changes made to other 'core' classes 
@@ -50,7 +50,7 @@ A `rico:MandateType` class was created, as a subclass of `rico:RuleType`, along 
 
 ### Changes made to the 'core' datatype properties
 
-In addition to the datatype properties whose domain is rico:Date and which are quoted above, **you should pay attention to the following changes**:
+In addition to the datatype properties whose domain is `rico:Date` and which are quoted above, **you should pay attention to the following changes**:
 - ***descriptiveNote***, which had domain `rico:Thing` and is therefore most probably being very widely used, **was replaced with `rico:generalDescription`**, with a slightly different textual definition; `rico:scopeAndContent` was made a subproperty of `rico:generalDescription`. 
 - ***accrual* was replaced with `rico:accruals`**, and *accrualStatus* with rico:accrualsStatus`.
 - *integrity* was replaced with `rico:integrityNote` (with domain `rico:RecordResource` only) and *physicalCharacteristics* with `rico:physicalCharacteristicsNote`; *qualityOfRepresentation* was replaced with `rico:qualityOfRepresentationNote` and made a subproperty of `rico:physicalCharacteristicsNote`.
@@ -65,7 +65,7 @@ A new `rico:destructionDate` property was created, subproperty of `rico:endDate`
 The following changes have been made:
 - ***hasInstantiation*  was replaced with `rico:hasOrHadInstantiation`** (same for the inverse object property, which is now `rico:isOrWasInstantiationOf`)
 - ***hasDerivedInstantiation* was replaced with `rico:hasOrHadDerivedInstantiation`** (same for the inverse property, which is now `rico:isOrWasDerivedFromInstantiatio`n)
-- ***hasProvenance* was replaced with `rico:hasOrganicProvenance*`**, subproperty of the new `rico:hasOrganicOrFunctionalProvenance`; `rico:documents` was also made a subproperty of this new property; same for the inverse properties
+- ***hasProvenance* was replaced with `rico:hasOrganicProvenance`**, subproperty of the new `rico:hasOrganicOrFunctionalProvenance`; `rico:documents` was also made a subproperty of this new property; same for the inverse properties
 - ***hasSource* (whose domain was the union of RecordResource and Relation) was removed**; a new `rico:isEvidencedBy` property has been created, with domain `rico:Relation` only; same for the inverse property, *isSourceOf*
 - **`rico:precedesInTime` and `rico:followsInTime` were made transitive**.
 
