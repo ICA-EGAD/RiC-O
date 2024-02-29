@@ -57,7 +57,7 @@ In addition to the datatype properties whose domain is `rico:Date` and which are
 
 A new `rico:length` property was created, subproperty of `rico:measure`, with domain `rico:Thing`.
 
-A new `rico:destructionDate` property was created, subproperty of `rico:endDate`, with domain `rico:RecordResource`. 
+A new `rico:destructionDate` property was created, subproperty of `rico:endDate`, with domain `rico:Thing`. 
 
 
 ### Changes made to the 'core' object properties
@@ -71,7 +71,7 @@ The following changes have been made:
 
 
 In addition to these changes, **many object properties have been added, which may help to produce more precise data, or data which would be easier to process**. The inverse properties were also created, though we are not mentioning them below.
-- **several properties were added with domain the union of `rico:RecordResource` and `rico:Instantiation`, or `rico:RecordSet`, and with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate`; plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but the properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties.
+- **several properties were added with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate`; plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but the properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties.
 - two properties were created with domain and range `rico:Date`: `rico:intersects` and `rico:isWithin`;
 - a new `rico:occurredAtDate` property was created with domain `rico:Event` and range `rico:Date`;
 - two subproperties were added to `rico:hasOrHadInstantiation`: `rico:hasOrHadDigitalInstantiation` (which can be used, for example, when you generate a `rico:Instantiation` from a `dao` EAD element), and `rico:hasOrHadAnalogueInstantiation`; 
