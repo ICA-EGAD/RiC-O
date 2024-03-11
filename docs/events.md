@@ -14,7 +14,7 @@
 
 
 
-Last updated on February 1<sup>st</sup>, 2024
+Last updated on March 11<sup>th</sup>, 2024
 
 
 Just like for the projects and tools, it seems now really difficult for the RiC-O team to maintain an up-to-date list of events about RiC-O by itself. 
