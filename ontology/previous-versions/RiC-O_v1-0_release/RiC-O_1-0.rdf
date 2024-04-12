@@ -468,9 +468,9 @@
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA
          RiC-O) version 1.0</rdfs:label>
       <owl:versionInfo xml:lang="en">Version 1.0 - 2023-12-30.</owl:versionInfo>
-      <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
-      <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
-      <owl:incompatibleWith rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
+      <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/> 
+      <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>     
+      <owl:incompatibleWith rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>      
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:div id="history-note">
@@ -869,8 +869,6 @@
                      (dcterms:description) and metadata.</html:li>
                   <html:li>2023, December 29: Added the property chain axiom on 'hasCreator'.</html:li>
                   <html:li>2023, December 30: Fixed a typo in five French labels.</html:li>
-                  <html:li>2024, February 21: Fixed a typo in the rdfs:comment of rico:RoleType class.</html:li>
-                  <html:li>2024, April 10: Fixed the qname of 'hasOrHadSomeMemberswithDocumentaryFormType' (changed to 'hasOrHadSomeMembersWithDocumentaryFormType') and corrected several typos.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -1885,8 +1883,8 @@
       <skos:scopeNote xml:lang="en">Can be used, among other situations, for specifying that some
          finding aid (a Record that has Documentary Form Type Finding Aid) describes some Record
          Set.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R021 ('describes or
-         described' relation)</RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R021 (describes or
+         described)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#directlyContains -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#directlyContains">
@@ -2273,17 +2271,11 @@
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Position to a Group in which that Position exists or
-         existed, or that is defined by that Group's organizational structure.</rdfs:comment>
+         existed, or that is defined by that Group�s organizational structure.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">exists or existed in</rdfs:label>
       <rdfs:label xml:lang="fr">existe ou a existé dans</rdfs:label>
       <rdfs:label xml:lang="es">existe o existía en</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Corrected unparseable symbol in rdfs:comment</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -3544,7 +3536,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.0.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R080i ('has creation date' relation)</RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R080i</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasCreator -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCreator">
@@ -6268,7 +6260,7 @@
          the whole Thing only if it is not possible to use a narrower, more specific whole/part
          relation, for example has or had constituent. The end of existence of a whole/part relation
          may affect the integrity or nature of the domain entity.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R002 ('has or had part'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R002 (has or had part
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadParticipant -->
@@ -6632,52 +6624,6 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R082i ('has or had some members with creation
          date' relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType -->
-   <owl:ObjectProperty
-      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType">
-      <rdfs:subPropertyOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
-      <owl:inverseOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfSomeMembersOf"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
-      <rdfs:comment xml:lang="en">Connects a Record Set and a Documentary Form Type that categorizes
-         some of the Records or Record Parts that are or were included in the Record
-         Set.</rdfs:comment>
-      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">has or had some members with documentary form type</rdfs:label>
-      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
-         document</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como tipo
-         documental</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Fixed a typo in IRI: changed 'with' to 'With'.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-11-02</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2023-08-28</dc:date>
-            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2020-12-28</dc:date>
-            <rdf:value xml:lang="en">Object property added for handling the case where a Record Set
-               is described as having all or some members that belong to some category (see RiC-CM
-               0.2 attributes section, #4.4 on Record Set, Record and Record Part
-               attributes).</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
-   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithLanguage -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithLanguage">
@@ -6768,6 +6714,46 @@
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour état</rdfs:label>
       <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como estado de
          documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-11-02</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2023-08-28</dc:date>
+            <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2020-12-28</dc:date>
+            <rdf:value xml:lang="en">Object property added for handling the case where a Record Set
+               is described as having all or some members that belong to some category (see RiC-CM
+               0.2 attributes section, #4.4 on Record Set, Record and Record Part
+               attributes).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMemberswithDocumentaryFormType -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMemberswithDocumentaryFormType">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfSomeMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Documentary Form Type that categorizes
+         some of the Records or Record Parts that are or were included in the Record
+         Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had some members with documentary form type</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
+         document</rdfs:label>
+      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como tipo
+         documental</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -6945,7 +6931,7 @@
                the name of this property in RiC-O 0.1 was "hasSubdivision").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R005 ('has or had subdivision'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R005 ('has or hadsubdivision'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSubevent -->
@@ -7411,7 +7397,7 @@
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R010i ('is original of'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R010i (is original of
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasPartTransitive -->
@@ -9953,7 +9939,7 @@
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">There may be zero to many intermediate records, ignored or
          unknown, between the two connected Records.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R011 ('is draft of'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R011 (is draft of
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isEndDateOf -->
@@ -10065,18 +10051,12 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasEventType"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#EventType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Event"/>
-      <rdfs:comment xml:lang="en">Connects an Event Type to an Event that it
+      <rdfs:comment xml:lang="en">Connects an Event Type to an Event that is
          categorizes.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is event type of</rdfs:label>
       <rdfs:label xml:lang="fr">est le type d’événement de</rdfs:label>
       <rdfs:label xml:lang="es">es tipo de evento de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Fixed typo in rdfs:comment</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -10224,18 +10204,12 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasFamilyType"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
-      <rdfs:comment xml:lang="en">Connects a Family Type to a Family that it
+      <rdfs:comment xml:lang="en">Connects a Family Type to a Family that is
          categorizes.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is family type of</rdfs:label>
       <rdfs:label xml:lang="fr">est le type de famille de</rdfs:label>
       <rdfs:label xml:lang="es">es tipo de familia de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Fixed typo in rdfs:comment</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -11541,7 +11515,7 @@
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
       <owl:inverseOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType"/>
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMemberswithDocumentaryFormType"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:comment xml:lang="en">Connects a Documentary Form Type and a Record Set whose some past
@@ -12391,8 +12365,8 @@
                0.2; the name of this property in RiC-O 0.1 was "isMainSubjectOf").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R020i ('is or was main subject
-         of' relation)</RiCCMCorrespondingComponent>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R020i (is or was main subject
+         of)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasManagerOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasManagerOf">
@@ -12460,18 +12434,12 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMandateType"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#MandateType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Mandate"/>
-      <rdfs:comment xml:lang="en">Connects a Mandate Type to a Mandate that it categorized or
+      <rdfs:comment xml:lang="en">connects a Mandate Type to a Mandate that it categorized or
          categorizes.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was mandate type of</rdfs:label>
       <rdfs:label xml:lang="fr">est ou a été le type de mandat de</rdfs:label>
       <rdfs:label xml:lang="es">es o era tipo de norma de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Make capitalisation of rdfs:comment consistent.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-13</dc:date>
@@ -12756,7 +12724,7 @@
                of this property in RiC-O 0.1 was "isPartOf").</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R002i ('is or was part of'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R002i (is or was part of
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasParticipantIn -->
@@ -13110,18 +13078,12 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadRuleType"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
-      <rdfs:comment xml:lang="en">Connects a Rule Type to a Rule that it categorized or
+      <rdfs:comment xml:lang="en">connects a Rule Type to a Rule that it categorized or
          categorizes.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was rule type of</rdfs:label>
       <rdfs:label xml:lang="fr">est ou a été le type de règle de</rdfs:label>
       <rdfs:label xml:lang="es">es o era tipo de regla de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Make capitalisation of rdfs:comment consistent.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -13492,18 +13454,12 @@
             rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Inverse of 'has organic provenance' object
+      <rdfs:comment xml:lang="en">inverse of 'has organic provenance' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is organic provenance of</rdfs:label>
       <rdfs:label xml:lang="fr">est la provenance organique de</rdfs:label>
       <rdfs:label xml:lang="es">es procedencia orgánica de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Make capitalisation of rdfs:comment consistent.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14019,7 +13975,7 @@
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">RiC-R001 ('is related to'
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R001 (is related to
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isReplyTo -->
@@ -16016,17 +15972,11 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#wasMergedInto"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rdfs:comment xml:lang="en">Inverse of 'was merged into' object property.</rdfs:comment>
+      <rdfs:comment xml:lang="en">inverse of 'was merged into' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">resulted from the merger of</rdfs:label>
       <rdfs:label xml:lang="es">resultado de la fusión de</rdfs:label>
       <rdfs:label xml:lang="fr">résulte de la fusion de</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Make capitalisation of rdfs:comment consistent.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-12</dc:date>
@@ -18809,7 +18759,7 @@
          </rdf:Description>
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">Use if you use the Extent class and its properties for handling
-         an accurate description of the extent of a resource.</skos:scopeNote>
+         an accurate description of the extent of a resource..</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
@@ -18825,15 +18775,9 @@
          physical storage dimensions of the members of the Record Set. For individual records or
          record parts, quantity may be expressed in more precise terms. </rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">Record Resource Extent</rdfs:label>
+      <rdfs:label xml:lang="en">Record Resource extent</rdfs:label>
       <rdfs:label xml:lang="fr">mesure de la ressource archivistique</rdfs:label>
       <rdfs:label xml:lang="es">soporte de recurso documental</rdfs:label>
-      <skos:changeNote>
-         <rdf:Description>
-            <dc:date>2024-03-15</dc:date>
-            <rdf:value xml:lang="en">Fix capitalisation in English label.</rdf:value>
-         </rdf:Description>
-      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-11</dc:date>
@@ -18881,7 +18825,7 @@
          might hold a record of 1,500 words (record resource extent) represented in two versions,
          one a Word document with an instantiation extent of 3 KB and the other a PDF file with an
          instantiation extent of 5 KB.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource Extent
+      <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource extent
          attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceStructure -->
@@ -22256,7 +22200,7 @@
          </rdf:Description>
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R050 and RiC-R050i
-         relations</RiCCMCorrespondingComponent>
+         relationsi</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#KnowingRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#KnowingRelation">
@@ -22321,7 +22265,7 @@
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">The relation implies that the two persons met or at least
          corresponded with each other.</skos:scopeNote>
-      <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R051 and RiC—R051i
+      <RiCCMCorrespondingComponent xml:lang="en">Cass implementation of RiC-R051 and RiC—R051i
          relations</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#Language -->
@@ -24763,7 +24707,7 @@
       <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
       <rdfs:comment xml:lang="en">The role an Agent plays in some context (usually in some creation
          relation). Not to be confused with a Position (position of an agent in some group). For
-         example, a Person who is the head of some Corporate Body may play the role of annotator (of
+         example, a Person who is the head of some Corporate bBdy may play the role of annotator (of
          a record) in a creation relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Role Type</rdfs:label>
@@ -25627,7 +25571,7 @@
          </rdf:Description>
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R046 and RiR046i
-         relations</RiCCMCorrespondingComponent>
+         relations-</RiCCMCorrespondingComponent>
    </owl:Class>
    <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Individuals // /////////////////////////////////////////////////////////////////////////////////////// -->
    <!-- https://www.ica.org/standards/RiC/ontology -->
@@ -25682,7 +25626,7 @@
          assign a documentary form type to a Record or a Record Part, using the
          rico:hasDocumentaryFormType object property, or its inverse one. They also can be used to
          specify that a rico:RecordSet included or includes members whose some
-         (rico:hasOrHadSomeMembersWithDocumentaryFormType) or all
+         (rico:hasOrHadSomeMemberswithDocumentaryFormType) or all
          (rico:hasOrHadAllMembersWithDocumentaryFormType) have some Documentary Form Type. Each
          concept is both defined as a skos:Concept and a rico:DocumentaryFormType, so that it is
          possible to extend the classic definition of such concepts using RiC-O properties. For

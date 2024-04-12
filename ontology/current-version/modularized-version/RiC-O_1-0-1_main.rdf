@@ -18,8 +18,10 @@
          xml:base="https://www.ica.org/standards/RiC/ontology">
    <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology">
       <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-      <owl:imports rdf:resource="RiC-O_1-0_core.rdf"/>
-      <owl:imports rdf:resource="RiC-O_1-0_relations.rdf"/>
+      <owl:imports rdf:resource="RiC-O_1-0-1_core.rdf"/>
+      <owl:imports rdf:resource="RiC-O_1-0-1_relations.rdf"/>
+      <owl:imports rdf:resource="RiC_DocumentaryFormTypes_vocabulary.rdf"/>
+      <owl:imports rdf:resource="RiC_RecordSetTypes_vocabulary.rdf"/>
       <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
       <dc:contributor xml:lang="en">Florence Clavaud (Archives nationales de France), member of EGAD
          and lead of EGAD RiC-O team from 2012</dc:contributor>
@@ -46,10 +48,14 @@
             <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing archival
                record resources. As the third part of Records in Contexts standard, it is a formal
                representation of Records in Contexts Conceptual Model (RiC-CM).</html:p>
-            <html:p>The current version is <html:strong>v1.0</html:strong>; <html:strong>it is
+            <html:p>The current version is <html:strong>v1.0.1</html:strong>; <html:strong>it is
                   compliant with RiC-CM 1.0</html:strong>, which was published by EGAD on November
-               30, 2023. As the first stable and complete version of this ontology, RiC-0 1.0 is
-               thus a major milestone.</html:p>
+               30, 2023. Version 1.0.1 follows the release of RiC-O 1.0, dated December 2023, which
+               was the first stable and complete version of this ontology, and thus a major
+               milestone. Apart from slightly modifying a few details in the introduction and fixing
+               a few typos in the documentation of RiC-O 1.0, version 1.0.1 only brings one change:
+               it fixes the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to
+               'hasOrHadSomeMembersWithDocumentaryFormType').</html:p>
             <html:p>RiC-O provides a generic vocabulary and formal rules for creating RDF datasets
                to describe any kind of archival record resource, whether natively or by transforming
                existing metadata (or generating them from existing archival metadata). It supports
@@ -199,8 +205,8 @@
                <html:h4>Understanding RiC-O: a quick overview of some features</html:h4>
                <html:div id="fromRiCCM-to-RiCO">
                   <html:h5>From RiC-CM to RiC-O</html:h5>
-                  <html:div id="RiC-O_classes">
-                     <html:h6>1. RiC-O classes</html:h6>
+                  <html:div id="From_RiC-CM_components_to_RiC-O_classes">
+                     <html:h6>1. From RiC-CM components to RiC-O classes</html:h6>
                      <html:p>
                         <html:strong>Each RiC-CM entity has a corresponding class in
                            RiC-O</html:strong>. These classes are organized according to the same
@@ -261,22 +267,30 @@
                            as a ‘shortcut’ for the longer path
                            ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
                            where the intermediate node is an instance of OrganicProvenanceRelation:<html:br/>
-                           <html:code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
+                           <!--<html:code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
                               <html:br/> &lt;rdf:Description
                               rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
                               <html:br/> &lt;rdf:Description
                               rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/&gt;
                               <html:br/> &lt;rdf:Description
                               rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
-                              <html:br/> &lt;/owl:propertyChainAxiom&gt; </html:code>
+                              <html:br/> &lt;/owl:propertyChainAxiom&gt; </html:code>-->
+                           <!--<html:img
+                              src="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg?raw=true"
+                              alt="A partial overview of RiC-CM 1.0 main entities" class="diagram"/>-->
+                           <html:img src="https://github.com/ICA-EGAD/RiC-O/blob/prepare_1.0.1_version/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png?raw=true"
+                                     class="code"
+                                     alt="rico:hasOrganicProvenance object property as a shortcut"/>
+                           <!--https://github.com/ICA-EGAD/RiC-O/blob/prepare_1.0.1_version/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png?raw=true-->
+                           <!-- https://github.com/ICA-EGAD/RiC-O/blob/ffdedfc3abf82acb43d016b2a7ca476ce41114ea/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png-->
                            <html:br/>A triplestore, with the appropriate configuration, may thus
                            infer the direct ‘hasOrganicProvenance’ assertion from this long
                            path.</html:li>
                      </html:ul>
                   </html:div>
-                  <html:div id="RiC-O_datatype-properties">
-                     <html:h6>2. RiC-O datatype properties (relations whose object is a litteral)
-                        and RiC-CM attributes</html:h6>
+                  <html:div id="about_RiC-O_datatype-properties">
+                     <html:h6>2. About RiC-O datatype properties (relations whose object is a
+                        litteral)</html:h6>
                      <html:p>
                         <html:strong>Most of the datatype properties in RiC-O correspond to
                            RiC-CM attributes that contain free, plain text</html:strong>. See for
@@ -287,7 +301,7 @@
                         several Identifiers (e.g. archival reference code, system number, digital
                         object identifier) or Names and each comes with different attributes; in
                         this case instances of classes are needed.</html:p>
-                     <html:p>The Location RiC-CM attribute also has a <html:a href="#rico:PhysicalLocation">rico:Physical Location</html:a>
+                     <html:p>The Location RiC-CM attribute also has a <html:a href="#rico:PhysicalLocation">rico:PhysicalLocation</html:a>
                         corresponding class (for users who want to use Place, Physical Location and
                         Coordinates for handling places).</html:p>
                      <html:p>As already said too, every RiC-CM attribute that has ‘controlled value’
@@ -342,10 +356,12 @@
                         (subproperties of <html:a href="#rico:measure">rico:measure</html:a>),
                         rico:geodesicSystem and rico:altimetricSystem (subproperties of <html:a href="#rico:referenceSystem">rico:referenceSystem</html:a>).</html:p>
                   </html:div>
-                  <html:div id="RiC-O_object-properties">
-                     <html:h6>3. RiC-O object properties (relations between two entities)</html:h6>
+                  <html:div id="about_RiC-O_object-properties">
+                     <html:h6>3. About RiC-O object properties (relations between two
+                        entities)</html:h6>
                      <html:p>In order to connect all the classes created, <html:strong>a significant
-                           number of object properties have been defined.</html:strong>
+                           number of object properties have been defined, in addition to the 85
+                           relations defined in RiC-CM 1.0.</html:strong>
                      </html:p>
                      <html:p>While the 'flat' list of object properties is a long one,
                            <html:strong>the object properties are grouped
@@ -443,10 +459,11 @@
       <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
       <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA
-         RiC-O) version 1.0</rdfs:label>
-      <owl:versionInfo xml:lang="en">Version 1.0 - 2023-12-30.</owl:versionInfo>
+         RiC-O) version 1.0.1</rdfs:label>
+      <owl:versionInfo xml:lang="en">Version 1.0.1 - 2024-04-25.</owl:versionInfo>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
+      <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0_release/RiC-O_1-0.rdf"/>
       <owl:incompatibleWith rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
@@ -809,10 +826,19 @@
                      defined in RiC-O itself.</html:li>
                   <html:li>2023, December 28: made a few changes in the ontology introduction
                      (dcterms:description) and metadata.</html:li>
-                  <html:li>2023, December 29: Added the property chain axiom on 'hasCreator'.</html:li>
+                  <html:li>2023, December 29: Added the property chain axiom on
+                     'hasCreator'.</html:li>
                   <html:li>2023, December 30: Fixed a typo in five French labels.</html:li>
-                  <html:li>2024, February 21: Fixed a typo in the rdfs:comment of rico:RoleType class.</html:li>
-                  <html:li>2024, April 10: Fixed the qname of 'hasOrHadSomeMemberswithDocumentaryFormType' (changed to 'hasOrHadSomeMembersWithDocumentaryFormType') and corrected several typos.</html:li>
+                  <html:li>2024, February 21: Fixed a typo in the rdfs:comment of rico:RoleType
+                     class.</html:li>
+                  <html:li>2024, April 10: <html:strong>Fixed the IRI of
+                        'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to
+                        'hasOrHadSomeMembersWithDocumentaryFormType')</html:strong> and corrected
+                     several typos.</html:li>
+                  <html:li>2024, April 12: Replaced the code illustrating the shortcut by an image,
+                     change the headers of the subsections in 'From RiC-CM to RiC-O'; added a few
+                     details to an sentence in the section on Ric-O properties; adjusted the
+                     metadata, mainly moved to v1.0.1.</html:li>
                </html:ul>
             </html:div>
          </html:div>
