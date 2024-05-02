@@ -37,6 +37,8 @@
          member of EGAD and EGAD RiC-O team from 2012 to 2022</dc:contributor>
       <dc:contributor xml:lang="en">Tobias Wildi (University of Applied Sciences of the Grisons,
          Switzerland), member of EGAD and EGAD RiC-O team from 2019</dc:contributor>
+      <dc:contributor xml:lang="en">Richard David Williamson (National Archives of Norway), member
+         of EGAD and of EGAD RiC-O team from 2024</dc:contributor>
       <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
          Netherlands), member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
       <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
@@ -54,8 +56,8 @@
                was the first stable and complete version of this ontology, and thus a major
                milestone. Apart from slightly modifying a few details in the introduction and fixing
                a few typos in the documentation of RiC-O 1.0, version 1.0.1 only brings one change:
-               it fixes the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to
-               <html:a href="#rico:hasOrHadSomeMembersWithDocumentaryFormType">rico:hasOrHadSomeMembersWithDocumentaryFormType</html:a>).</html:p>
+               it fixes the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property
+               (changed to <html:a href="#rico:hasOrHadSomeMembersWithDocumentaryFormType">rico:hasOrHadSomeMembersWithDocumentaryFormType</html:a>).</html:p>
             <html:p>RiC-O provides a generic vocabulary and formal rules for creating RDF datasets
                to describe any kind of archival record resource, whether natively or by transforming
                existing metadata (or generating them from existing archival metadata). It supports
@@ -455,12 +457,12 @@
       </dcterms:description>
       <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
       <dcterms:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-         (ICA RiC-O) version 1.0</dcterms:title>
+         (ICA RiC-O) version 1.0.1</dcterms:title>
       <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
       <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology (ICA
          RiC-O) version 1.0.1</rdfs:label>
-      <owl:versionInfo xml:lang="en">Version 1.0.1 - 2024-04-25.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 1.0.1 - 2024-05-02.</owl:versionInfo>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0_release/RiC-O_1-0.rdf"/>
@@ -553,10 +555,10 @@
                      each of the n-ary relations, could then be deleted. A full accounting of the
                      rolification of n-ary relations may be found at <html:a href="https://github.com/ICA-EGAD/RiC-O/issues/67">https://github.com/ICA-EGAD/RiC-O/issues/67</html:a>).</html:li>
                </html:ul>
-               <html:p>RiC-O 1.0.1 therefore presents itself as an ontology that is <html:strong>more
-                     compact than RiC-O 0.2, while being richer, technically opening up new
-                     possibilities (with transitive relations) and preserving the semantics defined
-                     previously</html:strong>.</html:p>
+               <html:p>RiC-O 1.0.1 therefore presents itself as an ontology that is
+                     <html:strong>more compact than RiC-O 0.2, while being richer, technically
+                     opening up new possibilities (with transitive relations) and preserving the
+                     semantics defined previously</html:strong>.</html:p>
                <html:p>Besides, an effort has been made regarding the documentation of the ontology.
                   In particular, <html:strong>the labels of each class and property (rdfs:label
                      annotations) are now available in French and Spanish as well as in
@@ -839,6 +841,7 @@
                      change the headers of the subsections in 'From RiC-CM to RiC-O'; added a few
                      details to an sentence in the section on Ric-O properties; adjusted the
                      metadata, mainly moved to v1.0.1.</html:li>
+                  <html:li>2024, May 2: Added Richard David Williamson to the list of contributors and set the date of v1.0.1 to May 2, 2024.</html:li>
                </html:ul>
             </html:div>
          </html:div>
