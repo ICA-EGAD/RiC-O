@@ -18,7 +18,7 @@ Last updated on May 13<sup>th</sup>, 2024
 
 Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.1.
 
-**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduced some new components; it also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.0.1. are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.0.1 (which we would recommend), you may need to modify your data**.
+**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduced some new components; it also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.0.1, are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.0.1 (which we would recommend), you may need to modify your data**.
 
 We will mainly **focus on the most significant changes made to RiC-O 0.2 components**, starting with the ones that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). We will also emphasize some additions that may be very useful in some projects.
 
@@ -137,7 +137,7 @@ The `rico:LeadershipRelation` itself is now defined as follows in RiC-O 1.0 (see
 
 ### Warning
 
-**Suppose you want to be able, in your dataset, to use the property path quoted in the caption of Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving some `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated**. 
+Suppose you want to be able, in your dataset, to use the property path quoted in the caption of Figure 2 above (`rico:thingIsSourceOfRelation/rico:leadershipRelation_role/rico:relationHasTarget`), and any similar property path involving some `*_role` property, directly in SPARQL queries, in order to traverse the relations you have instantiated. 
 
 Most of graph databases do not support for now the OWL 2 `owl:hasSelf` declaration that is included in the definition or the Relation classes. So they cannot infer the triple that uses the `*_role` property and connects the instance of the Relation class to itself, from the assertion that the instance is a Relation (for example, if you assert that an entity is a `rico:LeadershipRelation`, the graph database you use will most probably not be able to infer the triple that connects this instance of the `rico:LeadershipRelation` to itself using `rico:leadershipRelation_role`).
 
