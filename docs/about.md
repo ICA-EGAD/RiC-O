@@ -14,14 +14,14 @@
 
 
 
-Last updated on February 1<sup>st</sup>, 2024
+Last updated on May 13<sup>th</sup>, 2024
 
 
 RiC-O (Records in Contexts-Ontology) is **an OWL 2 ontology for describing archival record resources**. As **the third part of Records in Contexts (RiC) standard**, it is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
 
-The **latest public release of RiC-O, RiC-O 1.0, was published in December 2023**. It is fully documented in English and available in the RiC-O GitHub repository, in the [current-version](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version) folder. It replaces RiC-O 0.2, which was released in February 2021. It comes with some [examples](examples.html) and [diagrams](diagrams.html). 
+The **latest public release of RiC-O, RiC-O 1.0.1, was published in May 2024**. It was released a few weeks after the first stable and complete version of this ontology, thus a major milestone, **RiC-O 1.0**, replacing RiC-O 0.2, which was released in February 2021. Apart from slightly modifying or updating a few details in the introduction and fixing a few typos in the documentation of RiC-O 1.0, version 1.0.1 only brings one change: it fixes the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to 'rico:hasOrHadSomeMembersWithDocumentaryFormType'). It is fully documented in English and available in the RiC-O GitHub repository, in the [current-version](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version) folder. It comes with some [examples](examples.html) and [diagrams](diagrams.html). 
 
-RiC-O 1.0 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 1.0, which was released in November 2023** and is available for download is available for download  [here](https://github.com/ICA-EGAD/RiC-CM/releases/tag/v1.0.1), or [from the ICA website](https://www.ica.org/app/uploads/2023/12/RiC-CM-1.0.pdf).
+RiC-O 1.0.1 is compliant with the **latest version of Records in Contexts-Conceptual Model (RiC-CM), RiC-CM 1.0, which was released in November 2023** and is available for download is available for download  [here](https://github.com/ICA-EGAD/RiC-CM/releases/tag/v1.0.1), or [from the ICA website](https://www.ica.org/app/uploads/2023/12/RiC-CM-1.0.pdf).
 
 The version 1.0 of RiC-FAD, RiC-CM, and RiC-O marks **the first stable and complete version of the first three parts of RiC, and thus a major milestone in the development of the standard**. 
 
