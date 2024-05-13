@@ -16,6 +16,6 @@ The folder contains:
 - **IP-Matterhorn-METS:** A METS-based information package. METS is being used for structuring the package and contains very little semantic information. Within the descriptive metadata-sections (dmd-Sec) EAD is used and for the technical metadata (amd-Sec) you'll find Premis metadata.
 - **IP-RiC-O:** The same package, but converted to RDF. METS is no longer necessary, since the structure is represented through the semantic network. The descriptive metadata were converted to RiC-O 1.0, the technical metadata to the [PREMIS ontology](http://www.loc.gov/standards/premis/ontology/).
 
-More info about Matterhorn METS can be found here: [https://docs.docuteam.ch/introduction/en/matterhorn](https://docs.docuteam.ch/introduction/en/matterhorn).
+More info about Matterhorn METS can be found here: [https://docs.docuteam.ch/introduction/matterhorn](https://docs.docuteam.ch/introduction/matterhorn).
 
-More information about Matterhorn RDF can be found here: [https://docs.docuteam.ch/introduction/en/matterhornRDF](https://docs.docuteam.ch/introduction/en/matterhornRDF).
+More information about Matterhorn RDF can be found here: [https://docs.docuteam.ch/introduction/matterhornRDF](https://docs.docuteam.ch/introduction/matterhornRDF).
