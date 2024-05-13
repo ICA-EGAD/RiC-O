@@ -17,7 +17,7 @@
 Last updated on May 13<sup>th</sup>, 2024
 
 
-RiC-O (Records in Contexts-Ontology) is **an OWL 2 ontology for describing archival record resources**. As **the third part of Records in Contexts (RiC) standard**, it is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
+RiC-O (Records in Contexts-Ontology) is **an OWL 2 ontology for describing archival record resources**, whose IRI is [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology). As **the third part of Records in Contexts (RiC) standard**, it is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
 
 The **latest public release of RiC-O, RiC-O 1.0.1, was published in May 2024**. It was released a few weeks after the first stable and complete version of this ontology, thus a major milestone, **RiC-O 1.0**, replacing RiC-O 0.2, which was released in February 2021. Apart from slightly modifying or updating a few details in the introduction and fixing a few typos in the documentation of RiC-O 1.0, version 1.0.1 only brings one change: it fixes the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to 'rico:hasOrHadSomeMembersWithDocumentaryFormType'). It is fully documented in English and available in the RiC-O GitHub repository, in the [current-version](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version) folder. It comes with some [examples](examples.html) and [diagrams](diagrams.html). 
 
