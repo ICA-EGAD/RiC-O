@@ -14,11 +14,11 @@
 
 
 
-Last updated on February 6<sup>th</sup>, 2024
+Last updated on May 13<sup>th</sup>, 2024
 
-Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.
+Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.1.
 
-**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduces some new components; it also brings some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 is not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to the first official version of the RiC ontology (which we would recommend), you may need to modify your data**.
+**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduced some new components; it also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.0.1. are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.0.1 (which we would recommend), you may need to modify your data**.
 
 We will mainly **focus on the most significant changes made to RiC-O 0.2 components**, starting with the ones that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). We will also emphasize some additions that may be very useful in some projects.
 
@@ -26,7 +26,7 @@ We will mainly **focus on the most significant changes made to RiC-O 0.2 compone
 - **open the ontology file in an OWL ontology editor, browse it or directly search the component you have in mind**; any change made to an existing component has been documented precisely;
 - **have a look at the [three CSV files provided](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version/CSV_lists_of_components)**, whose last column lists the changes made from RiC-O 0.2 for each component.
 
-In the following lines, we use the `rico` prefix only for RiC-O 1.0 components.
+In the following lines, we use the `rico` prefix only for RiC-O 1.0.1 components.
 
 
 ## Changes affecting the core of RiC-O
