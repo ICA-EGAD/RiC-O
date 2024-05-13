@@ -11,7 +11,7 @@ The **latest public release of RiC-O, RiC-O 1.0.1, dated May 2024, is now availa
 The OWL/RDF file of RiC-O 1.0.1 is stored in the [ontology/current-version](./ontology/current-version) folder of this repository, with accompanying material, including a HTML version provided for human readers.
 The repository also contains other resources, among which examples and diagrams.
 
-**RiC-O 1.O.1 is also accessible to humans and machines through its IRI, [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology)**.
+**RiC-O 1.0.1 is also accessible to humans and machines through its IRI, [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology)**.
 
 **You can easily download the whole content of this repository using the latest release.
 
