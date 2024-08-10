@@ -407,8 +407,8 @@
                         include instances of the Relation classes. See the example explained above
                         in the <html:a href="#RiC-O_classes">section dedicated to
                         classes</html:a>.</html:p>
-                     <html:p><html:strong>Many properties, new in RiC-O 1.0, are transitive or
-                           reflexive</html:strong>, as explained in the <html:a href="#history-note"
+                     <html:p><html:strong>Many properties, new in RiC-O 1.0, are
+                         transitive</html:strong>, as explained in the <html:a href="#history-note"
                            >history note</html:a> above.</html:p>
                   </html:div>
                   <html:div id="named-individuals">
@@ -602,7 +602,7 @@
                      inverse properties. It was accompanied by the creation of properties specifying
                      past relations. <html:br/> Finally, <html:strong>in order to simplify their
                         maintenance, the n-ary Relation classes were rolified</html:strong>. 48 new
-                     reflexive object properties were created to do this, such as for example
+                     object properties were created to do this, such as for example
                         <html:a href="#rico:leadershipRelation_role"
                         >rico:leadershipRelation_role</html:a>; the definition of n-ary Relation
                      classes (such as <html:a href="#rico:LeadershipRelation"
@@ -905,6 +905,7 @@
                      metadata, mainly moved to v1.0.1.</html:li>
                   <html:li>2024, May 2: Added Richard David Williamson to the list of contributors and set the date of v1.0.1 to May 2, 2024.</html:li>
                   <html:li>2024, May 13: Added Richard Williamson's ORCID number, changed the affiliation of T. Wildi and J. Krause-Bilvin, and set the date of v1.0.1 to May 13, 2024.</html:li>
+                  <html:li>2024, August 2: Removed global reflexivity from the object properties that rolify the Relation classes, to fix a source of inconsistency (they still satisfy local reflexivity, i.e. reflexivity for each of these object properties can be inferred for all individuals in their domain).</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -1063,16 +1064,21 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AccumulationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AccumulationRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AccumulationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Accumulation Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’accumulation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de Acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1093,13 +1099,12 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#eventRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#organicOrFunctionalProvenanceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#ActivityDocumentationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a ActivityDocumentationRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+      <rdfs:comment xml:lang="en">Connects an ActivityDocumentationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Activity Documentation Relation</rdfs:label>
@@ -1107,6 +1112,12 @@
          archivistiques</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de procedencia
          funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1201,17 +1212,22 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#authorityRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AgentControlRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AgentControlRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Agent Control Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de contrôle entre agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de control entre
          agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1264,19 +1280,24 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentHierarchicalRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AgentHierarchicalRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AgentHierarchicalRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Agent Hierarchical Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation hiérarchique entre agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación jerárquica entre
          agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1297,17 +1318,22 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#temporalRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentTemporalRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AgentTemporalRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AgentTemporalRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Agent Temporal Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation temporelle entre agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación temporal entre
          agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1325,16 +1351,21 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentToAgentRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AgentToAgentRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AgentToAgentRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Agent Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1352,16 +1383,21 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#appellationRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AppellationRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AppellationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Appellation Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’appellation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de denominación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1415,17 +1451,22 @@
    <!-- https://www.ica.org/standards/RiC/ontology#authorityRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authorityRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorityRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AuthorityRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AuthorityRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Authority Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’autorité</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de control por parte de
          agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1568,17 +1609,22 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"/>
-      <rdfs:comment xml:lang="en">Connects a AuthorshipRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an AuthorshipRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Authorship Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de responsabilité
          intellectuelle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de autoría</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1596,16 +1642,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#childRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#descendanceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ChildRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ChildRelation"/>
-      <rdfs:comment xml:lang="en">Connects a ChildRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a ChildRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Child Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de filiation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de filiación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1739,17 +1790,22 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#correspondenceRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#knowingRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CorrespondenceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a CorrespondenceRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a CorrespondenceRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Correspondence Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation épistolaire</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre personas por
          correspondencia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1767,16 +1823,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a CreationRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a CreationRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Creation Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de création</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1824,16 +1885,21 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#temporalRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DerivationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a DerivationRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a DerivationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Derivation Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de dérivation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de derivación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -1854,16 +1920,21 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentTemporalRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#familyRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DescendanceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a DescendanceRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a DescendanceRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Descendance Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de descendance</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de descendencia</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -2231,16 +2302,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#eventRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#eventRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#EventRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#EventRelation"/>
-      <rdfs:comment xml:lang="en">Connects a EventRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects an EventRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Event Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation impliquant un événement</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación con un evento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -2389,16 +2465,27 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#familyRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyRelation"/>
-      <rdfs:comment xml:lang="en">Connects a FamilyRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a FamilyRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Family Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation familiale</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación familiar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-03-15</dc:date>
+            <rdf:value xml:lang="en">Corrected unparseable symbol in rdfs:comment</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -2605,19 +2692,24 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#functionalEquivalenceRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#FunctionalEquivalenceRelation"/>
       <rdfs:comment xml:lang="en">Connects a FunctionalEquivalenceRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Functional Equivalence Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’équivalence fonctionnelle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de equivalencia
          funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -2639,12 +2731,11 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentHierarchicalRelation_role"/>
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#wholePartRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
-      <rdfs:comment xml:lang="en">Connects a GroupSubdivisionRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a GroupSubdivisionRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Group Subdivision Relation</rdfs:label>
@@ -2652,6 +2743,12 @@
          d’agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de subdivisión entre grupos de
          agentes</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -8281,19 +8378,24 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationToInstantiationRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#InstantiationToInstantiationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a InstantiationToInstantiationRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+      <rdfs:comment xml:lang="en">Connects an InstantiationToInstantiationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Instantiation to Instantiation
          Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre instanciations</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre instanciaciones</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -8314,13 +8416,12 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#intellectualPropertyRightsRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#authorityRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#IntellectualPropertyRightsRelation"/>
-      <rdfs:comment xml:lang="en">Connects a IntellectualPropertyRightsRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+      <rdfs:comment xml:lang="en">Connects an IntellectualPropertyRightsRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Intellectual Property Rights
@@ -8328,6 +8429,12 @@
       <rdfs:label xml:lang="fr">a le rôle de la Relation de propriété intellectuelle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de propiedad
          intelectual</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14538,11 +14645,10 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#knowingOfRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingOfRelation"/>
-      <rdfs:comment xml:lang="en">Connects a KnowingOfRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a KnowingOfRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Knowing Of Relation</rdfs:label>
@@ -14550,6 +14656,12 @@
          personne</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de conocimieto indirecto entre
          personas</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14567,10 +14679,9 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#knowingRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#KnowingRelation"/>
-      <rdfs:comment xml:lang="en">Connects a KnowingRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a KnowingRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -14579,6 +14690,12 @@
          personnes</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de conocimiento directo entre
          personas</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14734,16 +14851,21 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#leadershipRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentControlRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
-      <rdfs:comment xml:lang="en">Connects a LeadershipRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a LeadershipRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Leadership Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de direction</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de liderazgo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14789,16 +14911,21 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#managementRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#authorityRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ManagementRelation"/>
-      <rdfs:comment xml:lang="en">Connects a ManagementRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a ManagementRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Management Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de gestion</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de gestión</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14816,16 +14943,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#mandateRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#ruleRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#MandateRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#MandateRelation"/>
-      <rdfs:comment xml:lang="en">Connects a MandateRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a MandateRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Mandate Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation impliquant un mandat</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación normativa</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -14844,16 +14976,21 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#membershipRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
-      <rdfs:comment xml:lang="en">Connects a MembershipRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a MembershipRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Membership Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’appartenance</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de membresía</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15022,17 +15159,22 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#derivationRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#MigrationRelation"/>
-      <rdfs:comment xml:lang="en">Connects a MigrationRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a MigrationRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Migration Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de migration</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de migración entre
          instanciaciones</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15139,13 +15281,12 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#organicOrFunctionalProvenanceRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicOrFunctionalProvenanceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a OrganicOrFunctionalProvenanceRelation to itself. It is
-         a reflexive property, that can stand for an instance of the class when necessary, e.g. when
+      <rdfs:comment xml:lang="en">Connects an OrganicOrFunctionalProvenanceRelation to itself. It is
+         a property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Organic or functional provenance
@@ -15154,6 +15295,12 @@
          fonctionnelle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de procedencia orgánica or
          funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15174,19 +15321,24 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#organicOrFunctionalProvenanceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicProvenanceRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#OrganicProvenanceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a OrganicProvenanceRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an OrganicProvenanceRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Organic Provenance Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de provenance organique</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de procedencia
          orgánica</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15249,16 +15401,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#ownershipRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#authorityRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#OwnershipRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#OwnershipRelation"/>
-      <rdfs:comment xml:lang="en">Connects a OwnershipRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects an OwnershipRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Ownership Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de propriété</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de posesión</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15277,17 +15434,22 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#performanceRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#eventRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a PerformanceRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a PerformanceRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Performance Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre activités et agents</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de desarrollo
          funcional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15355,16 +15517,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#placeRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#placeRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceRelation"/>
-      <rdfs:comment xml:lang="en">Connects a PlaceRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a PlaceRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Place Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation impliquant un lieu</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación con lugar</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15383,17 +15550,22 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#positionHoldingRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation"/>
-      <rdfs:comment xml:lang="en">Connects a PositionHoldingRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a PositionHoldingRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Position Holding Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre une personne et un poste</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de ocupación entre una persona y
          un puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15468,17 +15640,22 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#positionToGroupRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PositionToGroupRelation"/>
-      <rdfs:comment xml:lang="en">Connects a PositionToGroupRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a PositionToGroupRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Position to Group Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre un poste et un groupe</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de ocupación entre un grupo y un
          puesto</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15744,13 +15921,12 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceGeneticRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceToRecordResourceRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceGeneticRelation"/>
       <rdfs:comment xml:lang="en">Connects a RecordResourceGeneticRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Record Resource Genetic Relation</rdfs:label>
@@ -15758,6 +15934,12 @@
          archivistiques</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación genética entre recursos
          documentales</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15777,13 +15959,12 @@
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#managementRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceHoldingRelation"/>
       <rdfs:comment xml:lang="en">Connects a RecordResourceHoldingRelation to itself. It is a
-         reflexive property, that can stand for an instance of the class when necessary, e.g. when
+         property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Record Resource Holding Relation</rdfs:label>
@@ -15791,6 +15972,12 @@
          ou instanciations conservées</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre agentes y recursos
          documentales que conservan</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-12-30</dc:date>
@@ -15815,13 +16002,12 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceToInstantiationRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceToInstantiationRelation"/>
       <rdfs:comment xml:lang="en">Connects a RecordResourceToInstantiationRelation to itself. It is
-         a reflexive property, that can stand for an instance of the class when necessary, e.g. when
+         a property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Record Resource to Instantiation
@@ -15829,6 +16015,12 @@
       <rdfs:label xml:lang="fr">a le rôle de la Relation d’instanciation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación de recurso documental a
          instanciación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -15848,13 +16040,12 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceToRecordResourceRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation"/>
       <rdfs:range
          rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation"/>
       <rdfs:comment xml:lang="en">Connects a RecordResourceToRecordResourceRelation to itself. It is
-         a reflexive property, that can stand for an instance of the class when necessary, e.g. when
+         a property that can stand for an instance of the class when necessary, e.g. when
          you explore a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Record Resource to Record Resource
@@ -15863,6 +16054,12 @@
          archivistiques</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre recursos
          documentales</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16022,16 +16219,21 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#relation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#relation_role">
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
-      <rdfs:comment xml:lang="en">Connects a Relation to itself. It is a reflexive property, that
+      <rdfs:comment xml:lang="en">Connects a Relation to itself. It is a property that
          can stand for an instance of the class when necessary, e.g. when you explore a knowledge
          graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16218,16 +16420,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#ruleRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#ruleRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleRelation"/>
-      <rdfs:comment xml:lang="en">Connects a RuleRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a RuleRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Rule Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation impliquant une règle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación con regla</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16245,16 +16452,21 @@
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#sequentialRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#SequentialRelation"/>
-      <rdfs:comment xml:lang="en">Connects a SequentialRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a SequentialRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Sequential Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation séquentielle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación secuencial</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16272,10 +16484,9 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#siblingRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#familyRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#SiblingRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#SiblingRelation"/>
-      <rdfs:comment xml:lang="en">Connects a SiblingRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a SiblingRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -16283,6 +16494,12 @@
       <rdfs:label xml:lang="fr">a le rôle de la Relation de fratrie</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación familiar entre
          hermanos</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16300,10 +16517,9 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#spouseRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#familyRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#SpouseRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#SpouseRelation"/>
-      <rdfs:comment xml:lang="en">Connects a SpouseRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a SpouseRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -16311,6 +16527,12 @@
       <rdfs:label xml:lang="fr">a le rôle de la Relation matrimoniale</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación matrimonial entre
          personas</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16328,10 +16550,9 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#teachingRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#knowingRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#TeachingRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TeachingRelation"/>
-      <rdfs:comment xml:lang="en">Connects a TeachingRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a TeachingRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -16339,6 +16560,12 @@
       <rdfs:label xml:lang="fr">a le rôle de la Relation entre enseignants et étudiants</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación académica entre profesor y
          alumno</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16356,16 +16583,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#temporalRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#sequentialRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TemporalRelation"/>
-      <rdfs:comment xml:lang="en">Connects a TemporalRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a TemporalRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Temporal Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation temporelle</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación temporal</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16499,16 +16731,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#typeRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#typeRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#TypeRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TypeRelation"/>
-      <rdfs:comment xml:lang="en">Connects a TypeRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a TypeRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Type Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de catégorisation</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Tipo de relación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -16991,16 +17228,21 @@
    <!-- https://www.ica.org/standards/RiC/ontology#wholePartRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#wholePartRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#WholePartRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#WholePartRelation"/>
-      <rdfs:comment xml:lang="en">Connects a WholePartRelation to itself. It is a reflexive
-         property, that can stand for an instance of the class when necessary, e.g. when you explore
+      <rdfs:comment xml:lang="en">Connects a WholePartRelation to itself. It is a
+         property that can stand for an instance of the class when necessary, e.g. when you explore
          a knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Whole Part Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation partitive</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación entre todo y parte</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
@@ -17018,16 +17260,21 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#workRelation_role">
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#agentToAgentRelation_role"/>
-      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#WorkRelation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#WorkRelation"/>
-      <rdfs:comment xml:lang="en">Connects a WorkRelation to itself. It is a reflexive property,
+      <rdfs:comment xml:lang="en">Connects a WorkRelation to itself. It is a property
          that can stand for an instance of the class when necessary, e.g. when you explore a
          knowledge graph.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has the role of the Work Relation</rdfs:label>
       <rdfs:label xml:lang="fr">a le rôle de la Relation de travail</rdfs:label>
       <rdfs:label xml:lang="es">desempeña el papel de la Relación profesional</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-08-02</dc:date>
+            <rdf:value xml:lang="en">Removed global reflexivity (leads to inconsistency).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-08</dc:date>
