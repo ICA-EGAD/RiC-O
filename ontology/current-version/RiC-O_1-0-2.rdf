@@ -44,17 +44,19 @@
                     archival record resources. As the third part of Records in Contexts standard, it
                     is a formal representation of Records in Contexts Conceptual Model
                     (RiC-CM).</html:p>
-                <html:p>The current version is <html:strong>v1.0.1</html:strong>; <html:strong>it is
+                <html:p>The current version is <html:strong>v1.0.2</html:strong>; <html:strong>it is
                         compliant with RiC-CM 1.0</html:strong>, which was published by EGAD on
-                    November 30, 2023. Version 1.0.1 follows the release of RiC-O 1.0, dated
-                    December 2023, which was the first stable and complete version of this ontology,
-                    and thus a major milestone. Apart from slightly modifying a few details in the
-                    introduction, adding the name and ORCID of Richard Williamson as a contributor,
-                    and fixing a few typos in the documentation of RiC-O 1.0, version 1.0.1 only
-                    brings one change: it fixes the IRI of
+                    November 30, 2023. Version 1.0.2 follows the release of RiC-O 1.0.1, dated May
+                    2024, which modified a few details in the introduction, fixed a few typos in the
+                    documentation of RiC-O 1.0, and brought one change only, fixing the IRI of
                     'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to <html:a
                         href="#rico:hasOrHadSomeMembersWithDocumentaryFormType"
-                        >rico:hasOrHadSomeMembersWithDocumentaryFormType</html:a>).</html:p>
+                        >rico:hasOrHadSomeMembersWithDocumentaryFormType</html:a>). Version 1.0.2
+                    fixes an inconsistency bug in RiC-O 1.0, removing global reflexivity from the 48
+                    rolification object properties. It also fixes the French labels of six object
+                    properties. Finally, a version IRI (owl:versionIRI) has been added to this 1.0.2
+                    version, in order to make RiC-O compliant with the OWL 2 specification as
+                    concerns ontology documents.</html:p>
                 <html:p>RiC-O provides a generic vocabulary and formal rules for creating RDF
                     datasets to describe any kind of archival record resource, whether natively or
                     by transforming existing metadata (or generating them from existing archival
@@ -529,12 +531,12 @@
         </dcterms:description>
         <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
         <dcterms:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 1.0.1</dcterms:title>
+            (ICA RiC-O) version 1.0.2</dcterms:title>
         <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 1.0.1</rdfs:label>
-        <owl:versionInfo xml:lang="en">Version 1.0.1 - 2024-05-13.</owl:versionInfo>
+            (ICA RiC-O) version 1.0.2</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 1.0.2 - 2024-09-02.</owl:versionInfo>
         <owl:priorVersion
             rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
         <owl:priorVersion
@@ -543,6 +545,7 @@
             rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0_release/RiC-O_1-0.rdf"/>
         <owl:incompatibleWith
             rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.ica.org/standards/RiC/ontology/1.0.2"/>
         <skos:historyNote rdf:parseType="Literal">
             <html:div xml:lang="en">
                 <html:div id="history-note">
@@ -587,7 +590,7 @@
                             needs that a growing community of users was expressing</html:strong>. On
                         the other hand, it was obviously a question of <html:strong>making RiC-O 1.0
                             compliant with RiC-CM 1.0</html:strong>.</html:p>
-                    <html:p>As the result of this work, RiC-O 1.0.1 defines:</html:p>
+                    <html:p>As the result of this work, RiC-O 1.0.2 defines:</html:p>
                     <html:ul>
                         <html:li>
                             <html:strong>105 classes</html:strong>, one less than in v0.2. As in
@@ -674,7 +677,7 @@
                                 href="https://github.com/ICA-EGAD/RiC-O/issues/67"
                                 >https://github.com/ICA-EGAD/RiC-O/issues/67</html:a>).</html:li>
                     </html:ul>
-                    <html:p>RiC-O 1.0.1 therefore presents itself as an ontology that is
+                    <html:p>RiC-O 1.0.2 therefore presents itself as an ontology that is
                             <html:strong>more compact than RiC-O 0.2, while being richer,
                             technically opening up new possibilities (with transitive relations) and
                             preserving the semantics defined previously</html:strong>.</html:p>
@@ -1003,6 +1006,8 @@
                             rico:isOrWasResponsibleForEnforcing;
                             rico:hasOrHadIntellectualPropertyRightsHolder; rico:hasOrHadController;
                             rico:isOrWasControllerOf; rico:isOrWasJurisdictionOf.</html:li>
+                        <html:li>2024, September 2: Moved to v1.0.2: updated the metadata, and added
+                            a owl:versionIRI to this new version. Moved v1.0.1 to the previous-versions subfolder.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
