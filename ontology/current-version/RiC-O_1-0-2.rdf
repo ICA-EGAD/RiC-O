@@ -995,6 +995,7 @@
                             rico:isOrWasControllerOf; rico:isOrWasJurisdictionOf.</html:li>
                         <html:li>2024, September 2: Moved to v1.0.2: updated the metadata, and added
                             a owl:versionIRI to this new version. Moved v1.0.1 to the previous-versions subfolder.</html:li>
+                        <html:li>2024, September 2: Fixed a typo in two of the EDTF examples.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -19364,6 +19365,12 @@
         <rdfs:label xml:lang="es">valor normalizado de fecha</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2024-09-02</dc:date>
+                <rdf:value xml:lang="en">Fixed a typo in two of the EDTF examples.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the examples
                     (skos:example).</rdf:value>
@@ -19408,9 +19415,9 @@
         <skos:example xml:lang="en">1948/ (a date range in EDTF, starting in 1948, end
             unknown)</skos:example>
         <skos:example xml:lang="en">1550,1551,1553,1555 (a date set in EDTF, meaning one of the
-            years 1550, 1151, 1553, 1555)</skos:example>
-        <skos:example xml:lang="en">{1550,1151,1553,1555} (a date set in EDTF, meaning all of the
-            years 1550, 1151, 1553, 1555)</skos:example>
+            years 1550, 1551, 1553, 1555)</skos:example>
+        <skos:example xml:lang="en">{1550,1551,1553,1555} (a date set in EDTF, meaning all of the
+            years 1550, 1551, 1553, 1555)</skos:example>
         <skos:example xml:lang="en">{1805,1815..1820} (a date set in EDTF, meaning all of the years
             1805, 1815, 1816, 1817, 1818, 1819, 1820)</skos:example>
         <skos:scopeNote xml:lang="en">Used to represent the date in a standardized format that can
