@@ -78,7 +78,7 @@
                 <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing
                     archival record resources. As the third part of Records in Contexts standard, it
                     is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
-                    This version, which is v1.0.1, is the latest official release. It is compliant
+                    This version, which is v1.0.2, is the latest official release. It is compliant
                     with RiC-CM v1.0.</html:p>
                 <html:p>The following diagram shows the main RiC-CM 1.0 entities and a few relations
                     between them: <html:img
@@ -300,23 +300,10 @@
                                     as a ‘shortcut’ for the longer path
                                     ‘thingIsSourceOfRelation/organicProvenanceRelation_role/relationHasTarget’,
                                     where the intermediate node is an instance of OrganicProvenanceRelation:<html:br/>
-                                    <!--<html:code> &lt;owl:propertyChainAxiom rdf:parseType="Collection"&gt;
-                              <html:br/> &lt;rdf:Description
-                              rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/&gt;
-                              <html:br/> &lt;rdf:Description
-                              rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/&gt;
-                              <html:br/> &lt;rdf:Description
-                              rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/&gt;
-                              <html:br/> &lt;/owl:propertyChainAxiom&gt; </html:code>-->
-                                    <!--<html:img
-                              src="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg?raw=true"
-                              alt="A partial overview of RiC-CM 1.0 main entities" class="diagram"/>-->
-                                    <html:img
-                                        src="https://github.com/ICA-EGAD/RiC-O/blob/prepare_1.0.1_version/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png?raw=true"
+                                   <html:img
+                                        src="https://github.com/ICA-EGAD/RiC-O/blob/master/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png?raw=true"
                                         class="code"
                                         alt="rico:hasOrganicProvenance object property as a shortcut"/>
-                                    <!--https://github.com/ICA-EGAD/RiC-O/blob/prepare_1.0.1_version/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png?raw=true-->
-                                    <!-- https://github.com/ICA-EGAD/RiC-O/blob/ffdedfc3abf82acb43d016b2a7ca476ce41114ea/ontology/current-version/HTML_view/rico_hasOrganicProvenance.png-->
                                     <html:br/>A triplestore, with the appropriate configuration, may
                                     thus infer the direct ‘hasOrganicProvenance’ assertion from this
                                     long path.</html:li>
@@ -506,7 +493,7 @@
                                 the RiC-CM component.</html:li>
                             <html:li>information about possible mappings with other models or
                                 ontologies (<html:a href="#rico:closeTo">rico:closeTo</html:a>,
-                                rarely used in this 1.0.1 version)).</html:li>
+                                rarely used in this 1.0.2 version)).</html:li>
                         </html:ul>
                         <html:p>Any change in the definition of a class or property made since
                             December 2019 is documented using a skos:changeNote.</html:p>
