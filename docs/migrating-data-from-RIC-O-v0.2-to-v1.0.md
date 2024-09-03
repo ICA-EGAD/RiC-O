@@ -52,7 +52,7 @@ A `rico:MandateType` class was created, as a subclass of `rico:RuleType`, along 
 
 In addition to the datatype properties whose domain is `rico:Date` and which are quoted above, **you should pay attention to the following changes**:
 - ***descriptiveNote***, which had domain `rico:Thing` and is therefore most probably being very widely used, **was replaced with `rico:generalDescription`**, with a slightly different textual definition; `rico:scopeAndContent` was made a subproperty of `rico:generalDescription`. 
-- ***accrual* was replaced with `rico:accruals`**, and *accrualStatus* with rico:accrualsStatus`.
+- ***accrual* was replaced with `rico:accruals`**, and *accrualStatus* with `rico:accrualsStatus`.
 - *integrity* was replaced with `rico:integrityNote` (with domain `rico:RecordResource` only) and *physicalCharacteristics* with `rico:physicalCharacteristicsNote`; *qualityOfRepresentation* was replaced with `rico:qualityOfRepresentationNote` and made a subproperty of `rico:physicalCharacteristicsNote`.
 
 A new `rico:length` property was created, subproperty of `rico:measure`, with domain `rico:Thing`.
