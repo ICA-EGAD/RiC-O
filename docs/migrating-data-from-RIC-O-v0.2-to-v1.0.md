@@ -14,11 +14,11 @@
 
 
 
-Last updated on May 13<sup>th</sup>, 2024
+Last updated on September 3<sup>rd</sup>, 2024
 
-Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.1.
+Though the following information and recommendations do not for now pretend to be exhaustive, we hope that they can help the teams which have already produced datasets conforming to RiC-O (thus to RiC-0 0.2) to make them compliant with RiC-O 1.0.2.
 
-**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduced some new components; it also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.0.1, are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.0.1 (which we would recommend), you may need to modify your data**.
+**RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **introduced some new components; it also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.0.2, are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.0.2 (which we would recommend), you may need to modify your data**.
 
 We will mainly **focus on the most significant changes made to RiC-O 0.2 components**, starting with the ones that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). We will also emphasize some additions that may be very useful in some projects.
 
@@ -26,7 +26,7 @@ We will mainly **focus on the most significant changes made to RiC-O 0.2 compone
 - **open the ontology file in an OWL ontology editor, browse it or directly search the component you have in mind**; any change made to an existing component has been documented precisely;
 - **have a look at the [three CSV files provided](https://github.com/ICA-EGAD/RiC-O/tree/master/ontology/current-version/CSV_lists_of_components)**, whose last column lists the changes made from RiC-O 0.2 for each component.
 
-In the following lines, we use the `rico` prefix only for RiC-O 1.0.1 components.
+In the following lines, we use the `rico` prefix only for RiC-O 1.0.2 components.
 
 
 ## Changes affecting the core of RiC-O
@@ -64,7 +64,7 @@ A new `rico:destructionDate` property was created, subproperty of `rico:endDate`
 
 The following changes have been made:
 - ***hasInstantiation*  was replaced with `rico:hasOrHadInstantiation`** (same for the inverse object property, which is now `rico:isOrWasInstantiationOf`)
-- ***hasDerivedInstantiation* was replaced with `rico:hasOrHadDerivedInstantiation`** (same for the inverse property, which is now `rico:isOrWasDerivedFromInstantiatio`n)
+- ***hasDerivedInstantiation* was replaced with `rico:hasOrHadDerivedInstantiation`** (same for the inverse property, which is now `rico:isOrWasDerivedFromInstantiation`)
 - ***hasProvenance* was replaced with `rico:hasOrganicProvenance`**, subproperty of the new `rico:hasOrganicOrFunctionalProvenance`; `rico:documents` was also made a subproperty of this new property; same for the inverse properties
 - ***hasSource* (whose domain was the union of RecordResource and Relation) was removed**; a new `rico:isEvidencedBy` property has been created, with domain `rico:Relation` only; same for the inverse property, *isSourceOf*
 - **`rico:precedesInTime` and `rico:followsInTime` were made transitive**.
@@ -109,7 +109,7 @@ As already said above, the *hasSource* object property, whose domain included `r
 
 As a consequence:
 - **166 specific object properties, defined in RiC-O to connect entities to these relations, were removed**. If you have instantiated Relation classes in your RiC-O 0.2 dataset, you should replace these object properties with the following properties, which existed already: either `rico:relationConnects` (if the Relation class used is not oriented, e.g. for `rico:AgentToAgentRelation`) or `rico:relationHasSource` and `rico:relationHasTarget` (if the Relation class used is oriented, e.g. for `rico:LeadershipRelation`);
-- a new reflexive object property, whose name ends with a `_role` suffix, was defined for each of the 48 Relation classes, with domain and range the concerned class;
+- a new object property, whose name ends with a `_role` suffix, was defined for each of the 48 Relation classes, with domain and range the concerned class;
 - the property chain axioms that had been defined for the binary shortcuts corresponding to the classes, were modified.
 
 Again, you can read much more details about this on the page related to [issue 67](https://github.com/ICA-EGAD/RiC-O/issues/67).
@@ -120,7 +120,7 @@ Figure 1 shows how this relation is expressed using RiC-O 0.2.
 
 ![images/a-complex-relation-and-its-shortcut_inRiC-O_0.2.png](images/a-n-ary-relation-and-its-shortcut_inRiC-O_0.2.png)
 
-Figure 2 shows how the same relation is now expressed using RiC-O 1.0.
+Figure 2 shows how the same relation is now expressed using RiC-O 1.0.2.
 
 ![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png](images/a-n-ary-relation-and-its-shortcut_inRiC-O_1.0.png)
 
@@ -131,7 +131,7 @@ The image below shows the RDF/XML data that corresponds to Figure 2.
 ![images/rico_LeadershipRelation.png](images/leadershipRelation_in_RDF.png)
 
 
-The `rico:LeadershipRelation` itself is now defined as follows in RiC-O 1.0 (see the ontology file or HTML page to get the full specification):
+The `rico:LeadershipRelation` itself is now defined as follows in RiC-O 1.0.2 (see the ontology file or HTML page to get the full specification):
 
 ![images/rico_LeadershipRelation.png](images/rico_LeadershipRelation.png)
 
