@@ -1,4 +1,4 @@
-# Migrating data from RiC-O 0.2 to RiC-O 1.0
+# Migrating data from RiC-O 0.2 to RiC-O 1.0.2
 
 
 
@@ -122,8 +122,7 @@ Figure 1 shows how this relation is expressed using RiC-O 0.2.
 
 Figure 2 shows how the same relation is now expressed using RiC-O 1.0.2.
 
-![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.png](images/a-n-ary-relation-and-its-shortcut_inRiC-O_1.0.png)
-
+![images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.2.png](images/a-complex-relation-and-its-shortcut_inRiC-O_1.0.2.png)
 
 
 The image below shows the RDF/XML data that corresponds to Figure 2.
