@@ -14,7 +14,7 @@
 
 
 
-Last updated on September 3<sup>rd</sup>, 2024
+Last updated on September 4<sup>th</sup>, 2024
 
 
 RiC-O (Records in Contexts-Ontology) is **an OWL 2 ontology for describing archival record resources**, whose IRI is [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology). As **the third part of Records in Contexts (RiC) standard**, it is a formal representation of Records in Contexts Conceptual Model (RiC-CM).
