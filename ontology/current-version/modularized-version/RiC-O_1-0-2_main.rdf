@@ -486,7 +486,7 @@
       <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
             (ICA RiC-O) version 1.0.2</rdfs:label>
-      <owl:versionInfo xml:lang="en">Version 1.0.2 - 2024-09-02.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 1.0.2 - 2024-09-04.</owl:versionInfo>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0_release/RiC-O_1-0.rdf"/>
@@ -829,7 +829,7 @@
                   <html:li>2023, November 8: <html:strong>rolifying the Relation classes, step
                                 1</html:strong>: created 48 reflexive object properties that rolify
                             the classes; modified the specifications of the Relation classes;
-                            modified the chain property axioms of the corresponding shortcuts. Fixed
+                            modified the property chain axioms of the corresponding shortcuts. Fixed
                             the range of isExtentOf.</html:li>
                   <html:li>2023, November 8, later: <html:strong>rolifying the Relation
                                 classes, step 2</html:strong>: deleted 166 object properties that
@@ -914,13 +914,14 @@
                             for each of these object properties can be inferred for all individuals
                             in their domain).</html:li>
                   <html:li>2024, September 2: Fixed the French label (rdfs:label) of the
-                            following object properties: rico:isOrWasInforcedBy;
+                            following object properties: rico:isOrWasEnforcedBy;
                             rico:isOrWasResponsibleForEnforcing;
                             rico:hasOrHadIntellectualPropertyRightsHolder; rico:hasOrHadController;
                             rico:isOrWasControllerOf; rico:isOrWasJurisdictionOf.</html:li>
                   <html:li>2024, September 2: Moved to v1.0.2: updated the metadata, and added
                             a owl:versionIRI to this new version. Moved v1.0.1 to the previous-versions subfolder.</html:li>
-                  <html:li>2024, September 2: Fixed a typo in two of the EDTF examples.</html:li>
+                  <html:li>2024, September 2: Fixed a typo in two of the EDTF examples for rico:normalizedDateValue.</html:li>
+                  <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note.</html:li>
                </html:ul>
             </html:div>
          </html:div>
