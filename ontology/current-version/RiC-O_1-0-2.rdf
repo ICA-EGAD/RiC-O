@@ -434,8 +434,8 @@
                                     them, or some of them) that share some
                                     characteristics</html:strong>, i.e. Language, ContentType,
                                 DocumentaryFormType, LegalStatus, or RecordState. See for example
-                                    <html:a href="#rico:hasOrHadAllMembersWithCategory"
-                                    >rico:hasOrHadAllMembersWithCategory</html:a>, and its
+                                    <html:a href="#rico:hasOrHadAllMembersWithType"
+                                    >rico:hasOrHadAllMembersWithType</html:a>, and its
                                 subproperties.</html:p>
                             <html:p><html:strong>Some of the object properties are formally defined
                                     as shortcuts</html:strong>: they can be inferred if you create
@@ -997,6 +997,7 @@
                             a owl:versionIRI to this new version. Moved v1.0.1 to the previous-versions subfolder.</html:li>
                         <html:li>2024, September 2: Fixed a typo in two of the EDTF examples for rico:normalizedDateValue.</html:li>
                         <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note. Changed the date of the release (it is 2024 September 4th now).</html:li>
+                        <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf; Changed hasOrHadCategory et al. into hasOrHadType</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -3223,7 +3224,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasActivityType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasActivityType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isActivityTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ActivityType"/>
@@ -3520,7 +3521,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasCarrierType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCarrierType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCarrierTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
@@ -3757,7 +3758,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasContentOfType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentOfType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isContentTypeOf"/>
         <rdfs:domain>
             <owl:Class>
@@ -3935,7 +3936,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasDateType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDateType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#DateType"/>
@@ -4378,7 +4379,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf"/>
         <rdfs:domain>
@@ -4496,7 +4497,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasEventType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasEventType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isEventTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Event"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#EventType"/>
@@ -4569,7 +4570,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasExtentType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasExtentType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isExtentTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
@@ -4665,7 +4666,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasFamilyType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasFamilyType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isFamilyTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyType"/>
@@ -4761,7 +4762,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasIdentifierType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasIdentifierType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
@@ -4859,23 +4860,28 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory -->
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType -->
     <owl:ObjectProperty
-        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory">
+        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:comment xml:lang="en">Connects a Record Set and a Category (Type) to which all the
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Type to which all the
             Records or Record Parts that are or were included in the Record Set
             belong.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has or had all members with category</rdfs:label>
+        <rdfs:label xml:lang="en">has or had all members with type</rdfs:label>
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour
-            catégorie</rdfs:label>
-        <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como categoría</rdfs:label>
+            type</rdfs:label>
+        <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo</rdfs:label>
         <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>        <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
@@ -4901,7 +4907,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithContentType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasContentTypeOfAllMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -4985,7 +4991,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithDocumentaryFormType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfAllMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -5060,7 +5066,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithLegalStatus">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOfAllMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -5099,7 +5105,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithRecordState">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasRecordStateOfAllMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -5275,10 +5281,10 @@
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R036 ('has or had authority over'
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadCategory -->
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory">
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadType -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadType">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -5292,9 +5298,15 @@
         <rdfs:comment xml:lang="en">Connects a Thing to a Type that categorizes or categorized
             it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has or had category</rdfs:label>
-        <rdfs:label xml:lang="fr">a ou a eu pour catégorie</rdfs:label>
-        <rdfs:label xml:lang="es">tiene o tenía como categoría</rdfs:label>
+        <rdfs:label xml:lang="en">has or had type</rdfs:label>
+        <rdfs:label xml:lang="fr">a ou a eu pour type</rdfs:label>
+        <rdfs:label xml:lang="es">tiene o tenía como tipo</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -5533,7 +5545,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadCorporateBodyType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCorporateBodyTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -5620,7 +5632,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadDemographicGroup">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDemographicGroupOf"/>
         <rdfs:domain>
@@ -5636,8 +5648,8 @@
             belongs or belonged.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">has or had demographic group</rdfs:label>
-        <rdfs:label xml:lang="fr">a ou a eu pour catégorie démographique</rdfs:label>
-        <rdfs:label xml:lang="es">tiene o tenía como categoría demográfica</rdfs:label>
+        <rdfs:label xml:lang="fr">a ou a eu pour type démographique</rdfs:label>
+        <rdfs:label xml:lang="es">tiene o tenía como tipo demográfica</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -6192,7 +6204,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadLegalStatus -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadLegalStatus">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOf"/>
         <rdfs:domain>
@@ -6808,7 +6820,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadPlaceType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadPlaceType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasPlaceTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
@@ -6902,7 +6914,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadRuleType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadRuleType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasRuleTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
@@ -6940,22 +6952,28 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory -->
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType -->
     <owl:ObjectProperty
-        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory">
+        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
-        <rdfs:comment xml:lang="en">Connects a Record Set and a Category (Type) to which some of the
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Type to which some of the
             Records or Record Parts that are or were included in the Record Set
             belong.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">has or had some members with category</rdfs:label>
+        <rdfs:label xml:lang="en">has or had some members with type</rdfs:label>
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type</rdfs:label>
         <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como
-            categoría</rdfs:label>
+            tipo</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -6982,7 +7000,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithContentType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasContentTypeOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -7067,7 +7085,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -7149,7 +7167,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithLegalStatus">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -7189,7 +7207,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithRecordState">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasRecordStateOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -7912,7 +7930,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasProductionTechniqueType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isProductionTechniqueTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -8067,7 +8085,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasRecordSetType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasRecordSetType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordSetTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
@@ -8099,7 +8117,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasRecordState -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasRecordState">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordStateOf"/>
         <rdfs:domain>
             <owl:Class>
@@ -8178,7 +8196,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasRepresentationType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasRepresentationType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#isRepresentationTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -8493,7 +8511,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#hasTitleType -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasTitleType">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isTitleTypeOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TitleType"/>
@@ -8915,7 +8933,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isActivityTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isActivityTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasActivityType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ActivityType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Activity"/>
@@ -9417,7 +9435,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isCarrierTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isCarrierTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasCarrierType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CarrierType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -9690,7 +9708,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isContentTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isContentTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentOfType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ContentType"/>
         <rdfs:range>
@@ -9954,7 +9972,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isDateTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDateTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDateType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DateType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
@@ -10414,7 +10432,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isDocumentaryFormTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDocumentaryFormType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
@@ -10616,7 +10634,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isEventTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isEventTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasEventType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#EventType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Event"/>
@@ -10739,7 +10757,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isExtentTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isExtentTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasExtentType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ExtentType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Extent"/>
@@ -10778,7 +10796,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isFamilyTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isFamilyTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasFamilyType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#FamilyType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -10905,7 +10923,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isIdentifierTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasIdentifierType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#IdentifierType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Identifier"/>
@@ -11302,10 +11320,10 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf -->
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf">
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
-        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -11319,9 +11337,15 @@
         <rdfs:comment xml:lang="en">Connects a Type (a category) to a Thing that it categorizes or
             categorized.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is or was category of</rdfs:label>
-        <rdfs:label xml:lang="fr">est ou a été la catégorie de</rdfs:label>
-        <rdfs:label xml:lang="es">es o era la categoría de</rdfs:label>
+        <rdfs:label xml:lang="en">is or was type of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la type de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era la tipo de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
@@ -11351,20 +11375,26 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf -->
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf -->
     <owl:ObjectProperty
-        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf">
+        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rdfs:comment xml:lang="en">Connects a Category (Type) and a Record Set whose all present or
-            past Record or Record Part members belong to that Category.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Type and a Record Set whose all present or
+            past Record or Record Part members belong to that Type.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is or was category of all members of</rdfs:label>
-        <rdfs:label xml:lang="fr">est ou a été la catégorie de tous les membres de</rdfs:label>
-        <rdfs:label xml:lang="es">es o era la categoría de todos los miembros de</rdfs:label>
+        <rdfs:label xml:lang="en">is or was type of all members of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la type de tous les membres de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era la tipo de todos los miembros de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -11387,20 +11417,26 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
-    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf -->
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf -->
     <owl:ObjectProperty
-        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf">
+        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
         <owl:inverseOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithCategory"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rdfs:comment xml:lang="en">Connects a Category (Type) and a Record Set whose some present
-            or past Record or Record Part members belong to that Category.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Type and a Record Set whose some present
+            or past Record or Record Part members belong to that Type.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-        <rdfs:label xml:lang="en">is or was category of some members of</rdfs:label>
-        <rdfs:label xml:lang="fr">est ou a été la catégorie de certains membres de</rdfs:label>
-        <rdfs:label xml:lang="es">es o era la categoría de algunos miembros de</rdfs:label>
+        <rdfs:label xml:lang="en">is or was type of some members of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la type de certains membres de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era la tipo de algunos miembros de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Changed the word 'category' into 'type' in all applicable properties names.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -11563,7 +11599,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasContentTypeOfAllMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithContentType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ContentType"/>
@@ -11601,7 +11637,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasContentTypeOfSomeMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithContentType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#ContentType"/>
@@ -11740,7 +11776,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasCorporateBodyTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCorporateBodyType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBodyType"/>
@@ -11918,7 +11954,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasDemographicGroupOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDemographicGroup"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DemographicGroup"/>
@@ -11934,7 +11970,7 @@
             or belonged to it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is or was demographic group of</rdfs:label>
-        <rdfs:label xml:lang="fr">est ou a été la catégorie démographique de</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la type démographique de</rdfs:label>
         <rdfs:label xml:lang="es">es o era grupo demográfico de</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
@@ -12096,7 +12132,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfAllMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithDocumentaryFormType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
@@ -12134,7 +12170,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasDocumentaryFormTypeOfSomeMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
@@ -12797,7 +12833,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadLegalStatus"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
         <rdfs:range>
@@ -12843,7 +12879,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOfAllMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithLegalStatus"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
@@ -12880,7 +12916,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasLegalStatusOfSomeMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithLegalStatus"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LegalStatus"/>
@@ -13565,7 +13601,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasPlaceTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasPlaceTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadPlaceType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PlaceType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
@@ -13600,7 +13636,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasRecordStateOfAllMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfAllMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfAllMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithRecordState"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
@@ -13637,7 +13673,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasRecordStateOfSomeMembersOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOfSomeMembersOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOfSomeMembersOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithRecordState"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
@@ -13754,7 +13790,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasRuleTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasRuleTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadRuleType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RuleType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Rule"/>
@@ -14373,7 +14409,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isProductionTechniqueTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasProductionTechniqueType"/>
         <rdfs:domain
@@ -14576,7 +14612,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isRecordSetTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isRecordSetTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasRecordSetType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -14608,7 +14644,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isRecordStateOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isRecordStateOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasRecordState"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
         <rdfs:range>
@@ -14733,7 +14769,7 @@
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#isRepresentationTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf
             rdf:resource="https://www.ica.org/standards/RiC/ontology#hasRepresentationType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RepresentationType"/>
@@ -15051,7 +15087,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#isTitleTypeOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isTitleTypeOf">
         <rdfs:subPropertyOf
-            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasTypeOf"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasTitleType"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#TitleType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
@@ -26470,7 +26506,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#Type -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Type">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
-        <rdfs:comment xml:lang="en">A superclass for any category of some thing. A type
+        <rdfs:comment xml:lang="en">A superclass for any type of some thing. A type
             characterizes an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Type</rdfs:label>
