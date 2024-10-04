@@ -8490,6 +8490,27 @@
         <RiCCMCorrespondingComponent xml:lang="en">RIC-R016 ('has successor'
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasTitleType -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasTitleType">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadCategory"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isTitleTypeOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#TitleType"/>
+        <rdfs:comment xml:lang="en">Connects a Title and a Title Type that categorizes
+            it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has title type</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour type de titre</rdfs:label>
+        <rdfs:label xml:lang="es">tiene como tipo de título</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Object property added along with TitleType class and
+                    isTitleTypeOf object property. </rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://http://www.w3.org/2004/02/skos/core#hasTopConcept-->
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
         <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
@@ -15026,6 +15047,27 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R016i ('is successor of'
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isTitleTypeOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isTitleTypeOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasTitleType"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#TitleType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Title"/>
+        <rdfs:comment xml:lang="en">Connects a Title Type and a Title that it
+            categorizes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is title type of</rdfs:label>
+        <rdfs:label xml:lang="fr">est le type de titre de</rdfs:label>
+        <rdfs:label xml:lang="es">es tipo de título de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Object property added along with TitleType class and
+                    hasTitleType object property. </rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#isToUseDateOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isToUseDateOf">
@@ -26408,6 +26450,22 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of a specialization of
             RiC-A28 (Name attribute)</RiCCMCorrespondingComponent>
+    </owl:Class>
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TitleType">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:comment xml:lang="en">Categorization of a Title.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Title Type</rdfs:label>
+        <rdfs:label xml:lang="fr">Type de titre</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de título</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Class added along with hasTitleType and
+                    isTitleTypeOf object properties.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">For example, 'obsolete title' ; 'title on the original' ; 'anonimised title'</skos:scopeNote>
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#Type -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Type">
