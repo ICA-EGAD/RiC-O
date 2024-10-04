@@ -8930,6 +8930,40 @@
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R086 ('intersects'
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasAccumulationDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was
+            accumulated at this Date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is accumulation date of</rdfs:label>
+        <rdfs:label xml:lang="fr">est la date d'accumulation de</rdfs:label>
+        <rdfs:label xml:lang="es">es fecha de acumulación de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">When used for a Record Set (e.g. a file), it is the accumulation
+            date of the Record Set itself rather than the accumulation date of the members of the Record
+            Set. To record the accumulation date of members of the Record Set, use 'is or was accumulation
+            date of all members of', 'is or was accumulation date of most members of’ or 'is or was
+            accumulation date of some members of’.</skos:scopeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#isAccumulatorOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAccumulatorOf">
         <rdfs:subPropertyOf
