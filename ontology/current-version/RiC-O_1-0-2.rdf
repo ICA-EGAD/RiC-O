@@ -3159,6 +3159,34 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasAccumulationDate -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAccumulationDate">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">Inverse of 'is accumulation date of' object property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has accumulation date</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour date d'accumulation</rdfs:label>
+        <rdfs:label xml:lang="es">tiene como fecha de acumulación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasAccumulator -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAccumulator">
         <rdfs:subPropertyOf
@@ -4861,6 +4889,30 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithAccumulationDate -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithAccumulationDate">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfAllMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">Inverse of 'is or was accumulation date of all members of' object
+            property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had all members with accumulation date</rdfs:label>
+        <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour date 
+            d'accumulation</rdfs:label>
+        <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como fecha de
+            acumulación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType -->
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType">
@@ -6465,6 +6517,30 @@
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R055 ('has or had member'
             relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadMostMembersWithAccumulationDate -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadMostMembersWithAccumulationDate">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfMostMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">Inverse of 'is or was accumulation date of most members of' object
+            property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had most members with accumulation date</rdfs:label>
+        <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont la plupart ont pour date
+            d'accumulation</rdfs:label>
+        <rdfs:label xml:lang="es">tienen o tenían la mayoría de sus miembros como fecha de
+            acumulación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadMostMembersWithCreationDate -->
     <owl:ObjectProperty
         rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadMostMembersWithCreationDate">
@@ -6956,6 +7032,30 @@
                 <dc:date>2020-10-19</dc:date>
                 <rdf:value xml:lang="en">Object property added along with RuleType class and
                     isRuleTypeOf object property. </rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfSomeMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:comment xml:lang="en">Inverse of 'is or was accumulation date of some members of' object
+            property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had some members with accumulation date</rdfs:label>
+        <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour date
+            d'accumulation</rdfs:label>
+        <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como fecha de
+            acumulación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -8875,6 +8975,40 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R086 ('intersects'
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasAccumulationDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+                    <rdf:Description
+                        rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was
+            accumulated at this Date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is accumulation date of</rdfs:label>
+        <rdfs:label xml:lang="fr">est la date d'accumulation de</rdfs:label>
+        <rdfs:label xml:lang="es">es fecha de acumulación de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">When used for a Record Set (e.g. a file), it is the accumulation
+            date of the Record Set itself rather than the accumulation date of the members of the Record
+            Set. To record the accumulation date of members of the Record Set, use 'is or was accumulation
+            date of all members of', 'is or was accumulation date of most members of’ or 'is or was
+            accumulation date of some members of’.</skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#isAccumulatorOf -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isAccumulatorOf">
@@ -11120,6 +11254,78 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R073 ('is modification date of'
             relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+ <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfAllMembersOf -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfAllMembersOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithAccumulationDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Connects a Date to a Record Set all of whose present or past
+            members were created at this Date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was accumulation date of all members of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la date de accumulation de tous les membres
+            de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era fecha de acumulación de todos los miembros de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfMostMembersOf -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfMostMembersOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfSomeMembersOf"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMostMembersWithAccumulationDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Connects a Date to a Record Set most of whose present or past
+            members were created at this Date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was accumulation date of most members of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la date d'accumulation de la plupart des membres
+            de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era fecha de acumulación de la mayoría de los miembros
+            de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">To be used for specifying a bulk date, i.e. the predominant
+            date of the members of the record set.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfSomeMembersOf -->
+    <owl:ObjectProperty
+        rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAccumulationDateOfSomeMembersOf">
+        <rdfs:subPropertyOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+        <owl:inverseOf
+            rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Connects a Date to a Record Set some of whose present or past
+            members were created at this Date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was accumulation date of some members of</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été la date d'accumulation de certains membres
+            de</rdfs:label>
+        <rdfs:label xml:lang="es">es o era fecha de acumulación de algunos miembros de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-04</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAdjacentTo -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAdjacentTo">
