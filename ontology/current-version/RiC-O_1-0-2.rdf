@@ -998,6 +998,7 @@
                         <html:li>2024, September 2: Fixed a typo in two of the EDTF examples for rico:normalizedDateValue.</html:li>
                         <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note. Changed the date of the release (it is 2024 September 4th now).</html:li>
                         <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf; Changed hasOrHadCategory et al. into hasOrHadType</html:li>
+                        <html:li>2024, October 10: changed the French and/or Spanish labels of the DemographicGroup class and of the 2 properties used with it, hasOrHadDemographicGroup and isOrWasDemographicGroupOf.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -5648,8 +5649,14 @@
             belongs or belonged.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">has or had demographic group</rdfs:label>
-        <rdfs:label xml:lang="fr">a ou a eu pour type démographique</rdfs:label>
-        <rdfs:label xml:lang="es">tiene o tenía como tipo demográfica</rdfs:label>
+        <rdfs:label xml:lang="fr">a ou a eu pour groupe démographique</rdfs:label>
+        <rdfs:label xml:lang="es">tiene o tenía como grupo demográfico</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-10</dc:date>
+                <rdf:value xml:lang="en">Changed the French and Spanish labels (replaced 'catégorie' and 'categoria' with 'groupe' and 'grupo').</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -11970,8 +11977,14 @@
             or belonged to it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">is or was demographic group of</rdfs:label>
-        <rdfs:label xml:lang="fr">est ou a été la type démographique de</rdfs:label>
+        <rdfs:label xml:lang="fr">est ou a été le groupe démographique de</rdfs:label>
         <rdfs:label xml:lang="es">es o era grupo demográfico de</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-10</dc:date>
+                <rdf:value xml:lang="en">Changed the French label (replaced 'catégorie' with 'groupe').</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -22054,8 +22067,14 @@
             characteristics.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">Demographic Group</rdfs:label>
-        <rdfs:label xml:lang="fr">Catégorie démographique</rdfs:label>
-        <rdfs:label xml:lang="es">Categoría demográfica</rdfs:label>
+        <rdfs:label xml:lang="fr">Groupe démographique</rdfs:label>
+        <rdfs:label xml:lang="es">Grupo demográfico</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-10-10</dc:date>
+                <rdf:value xml:lang="en">Changed the French and Spanish labels (replaced 'catégorie' and 'categoria' with 'groupe' and 'grupo').</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
