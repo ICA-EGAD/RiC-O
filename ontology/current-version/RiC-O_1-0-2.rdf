@@ -919,7 +919,7 @@
                   <html:li>2024, September 2: Fixed a typo in two of the EDTF examples for rico:normalizedDateValue.</html:li>
                   <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note. Changed the date of the release (it is 2024 September 4th now).</html:li>
                   <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf; Changed hasOrHadCategory et al. into hasOrHadType</html:li>
-                  <html:li>2024, October 10: changed the French and/or Spanish labels of the DemographicGroup class and of the 2 properties used with it, hasOrHadDemographicGroup and isOrWasDemographicGroupOf.</html:li>
+                  <html:li>2024, October 14: changed the French and/or Spanish labels of the DemographicGroup class and of the 2 properties used with it, hasOrHadDemographicGroup and isOrWasDemographicGroupOf. Also added the following object properties under isDateAssociatedWith: isAccumulationDateOf, isOrWasAccumulationDateOfAllMembersOf, isOrWasAccumulationDateOfSomeMembersOf (and its isOrWasAccumulationDateOfMostMembersOf subproperty), and also created the inverse properties under isAssociatedWithDate.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -10582,7 +10582,7 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Set all of whose present or past
-            members were created at this Date.</rdfs:comment>
+            members were accumulated at this Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was accumulation date of all members of</rdfs:label>
       <rdfs:label xml:lang="fr">est ou a été la date de accumulation de tous les membres
@@ -10602,7 +10602,7 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Set most of whose present or past
-            members were created at this Date.</rdfs:comment>
+            members were accumulated at this Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was accumulation date of most members of</rdfs:label>
       <rdfs:label xml:lang="fr">est ou a été la date d'accumulation de la plupart des membres
@@ -10625,7 +10625,7 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Set some of whose present or past
-            members were created at this Date.</rdfs:comment>
+            members were accumulated at this Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">is or was accumulation date of some members of</rdfs:label>
       <rdfs:label xml:lang="fr">est ou a été la date d'accumulation de certains membres
