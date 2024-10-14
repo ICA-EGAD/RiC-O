@@ -20,8 +20,16 @@ jobs:
           distribution: 'oracle'
           java-version: '21'
       - name: "Setup Python"
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: "Install Owlready2"
-        run: pip install owlready2
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install owlready2
+          deactivate
       - name: "Carry out consistency check"
-        run: python .github/workflows/consistency_check.py
+        run: |
+          source venv/bin/activate
+          python .github/workflows/consistency_check.py
