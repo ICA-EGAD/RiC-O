@@ -479,16 +479,16 @@
       </dcterms:description>
       <dcterms:publisher rdf:resource="http://www.wikidata.org/entity/Q1421986"/>
       <dcterms:title xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 2.0.0 (unstable, work in progress)</dcterms:title>
+            (ICA RiC-O) version 1.1 (unstable, work in progress)</dcterms:title>
       <vann:preferredNamespacePrefix>rico</vann:preferredNamespacePrefix>
       <vann:preferredNamespaceUri>https://www.ica.org/standards/RiC/ontology#</vann:preferredNamespaceUri>
       <rdfs:label xml:lang="en">International Council on Archives Records in Contexts Ontology
-            (ICA RiC-O) version 2.0.0 (unstable, work in progress)</rdfs:label>
+            (ICA RiC-O) version 1.1 (unstable, work in progress)</rdfs:label>
       <owl:incompatibleWith rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v0-2_release/RiC-O_v0-2.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-beta_release/RiC-O_1-0-beta.rdf"/>
       <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0_release/RiC-O_1-0.rdf"/>
-      <owl:versionInfo xml:lang="en">Version 2.0.0 - 2024-XX-XX.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 1.1 - 2024-XX-XX.</owl:versionInfo>
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:div id="history-note">
@@ -949,6 +949,8 @@
                             from 9 dc:date in skos:changeNote. Automatically reordered everything in
                             the file, including the labels and the change notes; regenerated the
                             inverse properties. </html:li>
+                  <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made by the RiC-O team today. Modified the
+                     ontology metadata (owl:versionInfo, rdfs:label, dcterms:title). Renamed the file.</html:li>
                </html:ul>
             </html:div>
          </html:div>
