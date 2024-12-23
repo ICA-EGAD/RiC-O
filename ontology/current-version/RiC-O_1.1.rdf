@@ -302,6 +302,7 @@
                   <html:li>2024, October 16: started to move to v2.0.0: modified some of the ontology metadata (versionIRI, versionInfo, rdfs:label, dcterms:title). Removed the declarations of the two not used dcterms:creator and dcterms:rights annotations. Checked the annotation properties. Renamed the file.</html:li>
                   <html:li>2024, October 21: fixed the Spanish label of 'hasSubeventTransitive'. Added @xml:lang to 5 rdf:value and removed it from 9 dc:date in skos:changeNote. Automatically reordered everything in the file, including the labels and the change notes; regenerated the inverse properties. </html:li>
                   <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made by the RiC-O team today. Modified the ontology metadata (owl:versionInfo, rdfs:label, dcterms:title). Renamed the file.</html:li>
+                  <html:li>2024, December 23: added the following datatype properties: accumulationDate, allMembersWithAccumulationDate, someMembersWithAccumulationDate (subproperties of date); mostMembersWithAccumulationDate (subproperty of someMembersWithAccumulationDate); allMembersWithCreationDate and someMembersWithCreationDate (subproperties of beginningDate); mostMembersWithCreationDate (subproperty of someMembersWithCreationDate). Narrowed the domain of creationDate.</html:li>
                   <html:li>2024, December 24: added two new object properties, studiesOrStudiedAt and isOrWasAttendedByStudent, plus a StudyAtRelation n-ary Relation class, and studyAtRelation_role accompanyning property.</html:li>
                </html:ul>
             </html:div>
@@ -14713,6 +14714,7 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#accumulationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
       <rdfs:domain>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
@@ -14725,7 +14727,7 @@
       <rdfs:comment xml:lang="en">A date at which a Record Resource or Instantiation was accumulated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">accumulation date</rdfs:label>
-      <rdfs:label xml:lang="fr">date d'accumulation</rdfs:label>
+      <rdfs:label xml:lang="fr">date d’accumulation</rdfs:label>
       <rdfs:label xml:lang="es">fecha de acumulación</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -14733,16 +14735,17 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasAccumulationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasAccumulationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#allMembersWithAccumulationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#allMembersWithAccumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Date at which all of the present or past members of a Record Set were accumulated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">all members with accumulation date</rdfs:label>
-      <rdfs:label xml:lang="fr">des membres ayant tous pour date d'accumulation</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant tous pour date d’accumulation</rdfs:label>
       <rdfs:label xml:lang="es">todos sus miembros como fecha de acumulación</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -14750,7 +14753,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadAllMembersWithAccumulationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadAllMembersWithAccumulationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#allMembersWithCreationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#allMembersWithCreationDate">
@@ -14768,7 +14771,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadAllMembersWithCreationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadAllMembersWithCreationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R081i ('has or had all members with creation date' relation).</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#altimetricSystem -->
@@ -15150,8 +15153,7 @@
             <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasCreationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasCreationDate', provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R080i ('has creation date' relation).</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#date -->
@@ -15873,7 +15875,7 @@
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Date at which most of the present or past members of a Record Set were accumulated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="fr">des membres dont la plupart ont pour date d'accumulation</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres dont la plupart ont pour date d’accumulation</rdfs:label>
       <rdfs:label xml:lang="es">la mayoría de sus miembros como fecha de acumulación</rdfs:label>
       <rdfs:label xml:lang="en">most members with accumulation date</rdfs:label>
       <skos:changeNote>
@@ -15882,7 +15884,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadMostMembersWithAccumulationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadMostMembersWithAccumulationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#mostMembersWithCreationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#mostMembersWithCreationDate">
@@ -15900,7 +15902,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadMostMembersWithCreationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadMostMembersWithCreationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R083i ('has or had most members with creation date' relation).</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#name -->
@@ -16529,12 +16531,13 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Date at which some of the present or past members of a Record Set were accumulated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="es">algunos de sus miembros como fecha de acumulación</rdfs:label>
-      <rdfs:label xml:lang="fr">des membres ayant pour date d'accumulation</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant pour date d’accumulation</rdfs:label>
       <rdfs:label xml:lang="en">some members with creation date</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
@@ -16542,7 +16545,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadSomeMembersWithAccumulationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadSomeMembersWithAccumulationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#someMembersWithCreationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#someMembersWithCreationDate">
@@ -16560,7 +16563,7 @@
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadSomeMembersWithCreationDate' which is provided for usability reasons. May be deprecated and removed later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasOrHadSomeMembersWithCreationDate', which is provided for usability reasons. May be deprecated and removed later on. Use only if you don’t use Date classes for handling dates.</skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R082i ('has or had some members with creation date' relation).</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#structure -->
