@@ -14713,6 +14713,35 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R031i ('is sender of'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource-->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Connects a Record Resource to a Record Resource, when the first is
+         used as a source of information for producing the content of the second one.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es fuente de información de recurso documental</rdfs:label>
+      <rdfs:label xml:lang="fr">est une source d’information de la ressource
+         archivistique</rdfs:label>
+      <rdfs:label xml:lang="en">is source of information of Record Resource</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Object property added in RiC-O 1.1, with its inverse one. It
+               replaces, as concerns Record Resources, the former 'isSourceOf' object property, that
+               was available in RiC-0 0.1 and RiC-O 0.2, and was removed in RiC-O 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used, for example, for a Record Resource used to produce
+         a Record having documentary form type Authority Record or Finding Aid. Not to be confused
+         with the 'hasGeneticLinkToRecordResource' object property.</skos:scopeNote>
+
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isSubdivisionOfTransitive -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#isSubdivisionOfTransitive">
@@ -16355,6 +16384,37 @@
          RecordResourceGeneticRelation class, to connect each instance to itself, in order to be
          able to infer, using OWL-RL and property paths, the two shortcuts corresponding to this
          n-ary class.</skos:scopeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation-->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Connects a Record Resource to a Record Resource, when the second
+         one is used as a source of information for producing the content of the first
+         one.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">Record Resource has source of information</rdfs:label>
+      <rdfs:label xml:lang="fr">est une ressource archivistique qui a pour source
+         d’information</rdfs:label>
+      <rdfs:label xml:lang="es">recurso documental tiene como fuente de información</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Object property added in RiC-O 1.1, with its inverse one. It
+               replaces, as concerns Record Resources, the former 'hasSource' object property, that
+               was available in RiC-0 0.1 and RiC-O 0.2, and was removed in RiC-O 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used, for example, to connect a Record that has
+         documentary form type Authority Record or Finding Aid, and a Record Resource used as a
+         source of information for it. Not to be confused with the 'hasGeneticLinkToRecordResource'
+         object property.</skos:scopeNote>
+
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelation_role -->
    <owl:ObjectProperty
@@ -19591,7 +19651,7 @@
          Resource is based.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">Record Resource source of information</rdfs:label>
-      <rdfs:label xml:lang="es">fuente de recurso documental</rdfs:label>
+      <rdfs:label xml:lang="es">fuente de información de recurso documental</rdfs:label>
       <rdfs:label xml:lang="fr">source d’information de la ressource archivistique</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
