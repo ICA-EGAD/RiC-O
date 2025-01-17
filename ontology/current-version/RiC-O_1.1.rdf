@@ -302,12 +302,13 @@
                   <html:li>2024, October 16: started to move to v2.0.0: modified some of the ontology metadata (versionIRI, versionInfo, rdfs:label, dcterms:title). Removed the declarations of the two not used dcterms:creator and dcterms:rights annotations. Checked the annotation properties. Renamed the file.</html:li>
                   <html:li>2024, October 21: fixed the Spanish label of 'hasSubeventTransitive'. Added @xml:lang to 5 rdf:value and removed it from 9 dc:date in skos:changeNote. Automatically reordered everything in the file, including the labels and the change notes; regenerated the inverse properties. </html:li>
                   <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made by the RiC-O team today. Modified the ontology metadata (owl:versionInfo, rdfs:label, dcterms:title). Renamed the file.</html:li>
+                  <html:li>2024, December 24: added two new object properties, studiesOrStudiedAt and isOrWasAttendedByStudent, plus a StudyAtRelation n-ary Relation class, and studyAtRelation_role accompanyning property.</html:li>
                </html:ul>
             </html:div>
          </html:div>
       </skos:historyNote>
    </owl:Ontology>
-   <!-- 
+   <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -449,7 +450,7 @@
       </skos:changeNote>
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
    </owl:AnnotationProperty>
-   <!-- 
+   <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -9109,6 +9110,35 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMember"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Inverse of 'studies or studied at' object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">es o fue atendido por el estudiante</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été fréquenté par l’étudiant</rdfs:label>
+      <rdfs:label xml:lang="en">is or was attended by student</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasComponentOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasComponentOf">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isInstantiationAssociatedWithInstantiation"/>
@@ -13920,6 +13950,58 @@
       </skos:changeNote>
       <skos:scopeNote xml:lang="en">This property "rolifies" the SpouseRelation class. It should be used only when you have to manage instances of the SpouseRelation class, to connect each instance to itself, in order to be able to infer, using OWL-RL and property paths, the two shortcuts corresponding to this n-ary class.</skos:scopeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMemberOf"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Connects a Person to an educational institution at which they studied or study. Both 'institution' and 'at' can be interpreted broadly.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">estudia o estudió en</rdfs:label>
+      <rdfs:label xml:lang="en">studies or studied at</rdfs:label>
+      <rdfs:label xml:lang="fr">étudie ou a étudié à</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#studyAtRelation_role -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#membershipRelation_role"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#StudyAtRelation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#StudyAtRelation"/>
+      <rdfs:comment xml:lang="en">Connects a StudyAtRelation to itself. It is a property that can stand for an instance of the class when necessary, e.g. when you explore a knowledge graph.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a le rôle de la Relation entre institution d’enseignement et étudiants</rdfs:label>
+      <rdfs:label xml:lang="es">desempeña el papel de la Relación entre institución educativa y estudiantes</rdfs:label>
+      <rdfs:label xml:lang="en">has the role of the Study At Relation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#teachingRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#teachingRelation_role">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#knowingRelation_role"/>
@@ -16630,7 +16712,7 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:DatatypeProperty>
-   <!-- 
+   <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -21183,6 +21265,47 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R049 and RiC-R049i relations</RiCCMCorrespondingComponent>
    </owl:Class>
+   <!-- https://www.ica.org/standards/RiC/ontology#StudyAtRelation -->
+   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#StudyAtRelation">
+      <owl:equivalentClass>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+         </owl:Restriction>
+      </owl:equivalentClass>
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">Connects a Group (as an educational institution) to at least one Person who studied or study at this group. Both 'institution' and 'at' can be interpreted broadly. The Relation is oriented from the educational institution to the student(s): the former is the source of the Relation, and the latter is/are the target.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">Relación entre institución educativa y estudiantes</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation entre institution d’enseignement et étudiants</rdfs:label>
+      <rdfs:label xml:lang="en">Study At Relation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Fixed details in the definition. Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#TeachingRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TeachingRelation">
       <owl:equivalentClass>
@@ -21597,7 +21720,7 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R046 and RiR046i relations</RiCCMCorrespondingComponent>
    </owl:Class>
-   <!-- 
+   <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
