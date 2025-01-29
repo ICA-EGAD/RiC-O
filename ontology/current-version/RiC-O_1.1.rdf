@@ -947,6 +947,23 @@
                   <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made
                      by the RiC-O team today. Modified the ontology metadata (owl:versionInfo,
                      rdfs:label, dcterms:title). Renamed the file.</html:li>
+                  <html:li>2024, December 23: added the following datatype properties:
+                     accumulationDate, allMembersWithAccumulationDate,
+                     someMembersWithAccumulationDate (subproperties of date);
+                     mostMembersWithAccumulationDate (subproperty of
+                     someMembersWithAccumulationDate); allMembersWithCreationDate and
+                     someMembersWithCreationDate (subproperties of beginningDate);
+                     mostMembersWithCreationDate (subproperty of someMembersWithCreationDate).
+                     Narrowed the domain of creationDate.</html:li>
+                  <html:li>2024, December 24: added two new object properties, studiesOrStudiedAt
+                     and isOrWasAttendedByStudent, plus a StudyAtRelation n-ary Relation class, and
+                     studyAtRelation_role accompanyning property.</html:li>
+                  <html:li>2025, January 17: added a 'recordResourceSourceOfInformation' datatype
+                     property, and the 'recordResourceHasSourceOfInformation' and
+                     'isSourceOfInformationOfRecordResource' object properties. These properties
+                     replace, as concerns Record Resource, the 'source' datatype property and the
+                     'hasSource'/'isSourceOf' object properties, which had been created in RC-O 0.1
+                     and removed in RiC-O 1.0.</html:li>
                   <html:li>2025, January 17: added a 'note' datatype property, superproperty of the
                      existing 'integrityNote', 'authenticityNote' and 'physicalCharacteristicsNote'
                      properties.</html:li>
@@ -11212,6 +11229,38 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMember"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Inverse of 'studies or studied at' object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">es o fue atendido por el estudiante</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été fréquenté par l’étudiant</rdfs:label>
+      <rdfs:label xml:lang="en">is or was attended by student</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasComponentOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasComponentOf">
       <rdfs:subPropertyOf
@@ -14716,6 +14765,34 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R031i ('is sender of'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource-->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Connects a Record Resource to a Record Resource, when the first is
+         used as a source of information for producing the content of the second one.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es fuente de información de recurso documental</rdfs:label>
+      <rdfs:label xml:lang="fr">est une source d’information de la ressource
+         archivistique</rdfs:label>
+      <rdfs:label xml:lang="en">is source of information of Record Resource</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Object property added in RiC-O 1.1, with its inverse one. It
+               replaces, as concerns Record Resources, the former 'isSourceOf' object property, that
+               was available in RiC-0 0.1 and RiC-O 0.2, and was removed in RiC-O 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used, for example, for a Record Resource used to produce
+         a Record having documentary form type Authority Record or Finding Aid. Not to be confused
+         with the 'hasGeneticLinkToRecordResource' object property.</skos:scopeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isSubdivisionOfTransitive -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#isSubdivisionOfTransitive">
@@ -16359,6 +16436,36 @@
          able to infer, using OWL-RL and property paths, the two shortcuts corresponding to this
          n-ary class.</skos:scopeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation-->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isSourceOfInformationOfRecordResource"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:comment xml:lang="en">Connects a Record Resource to a Record Resource, when the second
+         one is used as a source of information for producing the content of the first
+         one.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">Record Resource has source of information</rdfs:label>
+      <rdfs:label xml:lang="fr">est une ressource archivistique qui a pour source
+         d’information</rdfs:label>
+      <rdfs:label xml:lang="es">recurso documental tiene como fuente de información</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Object property added in RiC-O 1.1, with its inverse one. It
+               replaces, as concerns Record Resources, the former 'hasSource' object property, that
+               was available in RiC-0 0.1 and RiC-O 0.2, and was removed in RiC-O 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used, for example, to connect a Record that has
+         documentary form type Authority Record or Finding Aid, and a Record Resource used as a
+         source of information for it. Not to be confused with the 'hasGeneticLinkToRecordResource'
+         object property.</skos:scopeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelation_role -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceHoldingRelation_role">
@@ -16958,6 +17065,67 @@
          used only when you have to manage instances of the SpouseRelation class, to connect each
          instance to itself, in order to be able to infer, using OWL-RL and property paths, the two
          shortcuts corresponding to this n-ary class.</skos:scopeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#studiesOrStudiedAt">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMemberOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasAttendedByStudent"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Connects a Person to an educational institution at which they
+         studied or study. Both 'institution' and 'at' can be interpreted broadly.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">estudia o estudió en</rdfs:label>
+      <rdfs:label xml:lang="en">studies or studied at</rdfs:label>
+      <rdfs:label xml:lang="fr">étudie ou a étudié à</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#studyAtRelation_role -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#membershipRelation_role"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#StudyAtRelation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#StudyAtRelation"/>
+      <rdfs:comment xml:lang="en">Connects a StudyAtRelation to itself. It is a property that can
+         stand for an instance of the class when necessary, e.g. when you explore a knowledge
+         graph.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a le rôle de la Relation entre institution d’enseignement et
+         étudiants</rdfs:label>
+      <rdfs:label xml:lang="es">desempeña el papel de la Relación entre institución educativa y
+         estudiantes</rdfs:label>
+      <rdfs:label xml:lang="en">has the role of the Study At Relation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#teachingRelation_role -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#teachingRelation_role">
@@ -17790,6 +17958,83 @@
       <RiCCMCorrespondingComponent xml:lang="en">specialization of RiC-A01 (Accruals
          attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#accumulationDate -->
+   <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+               <rdf:Description
+                  rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">A date at which a Record Resource or Instantiation was
+         accumulated.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">accumulation date</rdfs:label>
+      <rdfs:label xml:lang="fr">date d’accumulation</rdfs:label>
+      <rdfs:label xml:lang="es">fecha de acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of 'hasAccumulationDate', which is
+         provided for usability reasons. May be deprecated and removed later on. Use only if you
+         don’t use Date classes for handling dates.</skos:scopeNote>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#allMembersWithAccumulationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#allMembersWithAccumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which all of the present or past members of a Record Set
+         were accumulated.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">all members with accumulation date</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant tous pour date d’accumulation</rdfs:label>
+      <rdfs:label xml:lang="es">todos sus miembros como fecha de acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadAllMembersWithAccumulationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#allMembersWithCreationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#allMembersWithCreationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#beginningDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which all of the present or past members of a Record Set
+         were created.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">all members with creation date</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant tous pour date de création</rdfs:label>
+      <rdfs:label xml:lang="es">todos sus miembros como fecha de creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadAllMembersWithCreationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R081i ('has or had all members with creation
+         date' relation).</RiCCMCorrespondingComponent>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#altimetricSystem -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#altimetricSystem">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#referenceSystem"/>
@@ -18209,13 +18454,28 @@
    <!-- https://www.ica.org/standards/RiC/ontology#creationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#beginningDate"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+               <rdf:Description
+                  rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">Date at which an entity was created.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Date at which a Record Resource or Instantiation was
+         created.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">creation date</rdfs:label>
       <rdfs:label xml:lang="fr">date de création</rdfs:label>
       <rdfs:label xml:lang="es">fecha de creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Narrowed the domain to match 'hasCreationDate'.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -19107,6 +19367,57 @@
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
          RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#mostMembersWithAccumulationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#mostMembersWithAccumulationDate">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which most of the present or past members of a Record Set
+         were accumulated.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">des membres dont la plupart ont pour date
+         d’accumulation</rdfs:label>
+      <rdfs:label xml:lang="es">la mayoría de sus miembros como fecha de acumulación</rdfs:label>
+      <rdfs:label xml:lang="en">most members with accumulation date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadMostMembersWithAccumulationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#mostMembersWithCreationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#mostMembersWithCreationDate">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#someMembersWithCreationDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which most of the present or past members of a Record Set
+         were created.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">des membres dont la plupart ont pour date de création</rdfs:label>
+      <rdfs:label xml:lang="es">la mayoría de sus miembros como fecha de creación</rdfs:label>
+      <rdfs:label xml:lang="en">most members with creation date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadMostMembersWithCreationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R083i ('has or had most members with creation
+         date' relation).</RiCCMCorrespondingComponent>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#name -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#name">
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
@@ -19638,6 +19949,32 @@
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource Extent
          attribute)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#recordResourceSourceOfInformation -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceSourceOfInformation">
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Information about some source on which the content of a Record
+         Resource is based.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">Record Resource source of information</rdfs:label>
+      <rdfs:label xml:lang="es">fuente de información de recurso documental</rdfs:label>
+      <rdfs:label xml:lang="fr">source d’information de la ressource archivistique</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-16</dc:date>
+            <rdf:value xml:lang="en">Datatype property added in RiC-O 1.1. It replaces, as concerns
+               Record Resources, the former 'source' datatype property, that was available in RiC-0
+               0.1 and RiC-O 0.2, and was removed in RiC-O 1.0.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:example xml:lang="fr">Dardy-Cretin (Michèle), Histoire administrative du ministère de la
+         culture et de la communication (1959-2012). Paris: Collection du Comité d’histoire du
+         ministère de la culture et de la communication, 2012.</skos:example>
+      <skos:scopeNote xml:lang="en">Can be used, for example, for Records having documentary form
+         type Authority Record or Finding Aid. Use only if you don't use the
+         'recordResourceHasSourceOfInformation' object property.</skos:scopeNote>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#recordResourceStructure -->
    <owl:DatatypeProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceStructure">
@@ -19896,6 +20233,54 @@
          origination and subsequent changes to a Record Resource. </skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A38 (Scope and Content
          attribute)</RiCCMCorrespondingComponent>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which some of the present or past members of a Record Set
+         were accumulated.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">algunos de sus miembros como fecha de acumulación</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant pour date d’accumulation</rdfs:label>
+      <rdfs:label xml:lang="en">some members with creation date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadSomeMembersWithAccumulationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#someMembersWithCreationDate -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#someMembersWithCreationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#beginningDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which some of the present or past members of a Record Set
+         were created.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">algunos de sus miembros como fecha de creación</rdfs:label>
+      <rdfs:label xml:lang="fr">des membres ayant pour date de création</rdfs:label>
+      <rdfs:label xml:lang="en">some members with creation date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Datatype property analogue of
+         'hasOrHadSomeMembersWithCreationDate', which is provided for usability reasons. May be
+         deprecated and removed later on. Use only if you don’t use Date classes for handling
+         dates.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">RiC-R082i ('has or had some members with creation
+         date' relation).</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#structure -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#structure">
@@ -25919,6 +26304,58 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R049 and RiC-R049i
          relations</RiCCMCorrespondingComponent>
+   </owl:Class>
+   <!-- https://www.ica.org/standards/RiC/ontology#StudyAtRelation -->
+   <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#StudyAtRelation">
+      <owl:equivalentClass>
+         <owl:Restriction>
+            <owl:onProperty
+               rdf:resource="https://www.ica.org/standards/RiC/ontology#studyAtRelation_role"/>
+            <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+         </owl:Restriction>
+      </owl:equivalentClass>
+      <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#MembershipRelation"/>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty
+               rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+            <owl:qualifiedCardinality
+               rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+               >1</owl:qualifiedCardinality>
+            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:subClassOf>
+         <owl:Restriction>
+            <owl:onProperty
+               rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+            <owl:minQualifiedCardinality
+               rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+               >1</owl:minQualifiedCardinality>
+            <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+         </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">Connects a Group (as an educational institution) to at least one
+         Person who studied or study at this group. Both 'institution' and 'at' can be interpreted
+         broadly. The Relation is oriented from the educational institution to the student(s): the
+         former is the source of the Relation, and the latter is/are the target.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">Relación entre institución educativa y estudiantes</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation entre institution d’enseignement et étudiants</rdfs:label>
+      <rdfs:label xml:lang="en">Study At Relation</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-23</dc:date>
+            <rdf:value xml:lang="en">Fixed details in the definition. Added the French and Spanish
+               labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024-12-19</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:Class>
    <!-- https://www.ica.org/standards/RiC/ontology#TeachingRelation -->
    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#TeachingRelation">
