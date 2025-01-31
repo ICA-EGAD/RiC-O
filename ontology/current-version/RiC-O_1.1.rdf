@@ -967,6 +967,9 @@
                   <html:li>2025, January 17: added a 'note' datatype property, superproperty of the
                      existing 'integrityNote', 'authenticityNote' and 'physicalCharacteristicsNote'
                      properties.</html:li>
+                  <html:li>2025, January 30: added a 'IIIFManifest' SKOS Concept, RiC-O Documentary
+                     Form Type, to the named individuals. Made it a concept of the vocabulary on
+                     documentary form types and a narrower concept of FindingAid.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -26889,6 +26892,13 @@
       <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
+            <dc:date>2025-01-30</dc:date>
+            <rdf:value xml:lang="en">Added the IIIF manifest documentary form type, with broader
+               concept finding aid. Updated the scope note of the vocabulary.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
             <dc:date>2023-12-13</dc:date>
             <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added dc:language, a
                history note and a scope note.</rdf:value>
@@ -26908,7 +26918,7 @@
       </skos:changeNote>
       <skos:definition xml:lang="en">A vocabulary that provides URIs for describing documentary form
          types of RiC Records and Record Parts.</skos:definition>
-      <skos:scopeNote xml:lang="en">For now this vocabulary only defines two top concepts; it should
+      <skos:scopeNote xml:lang="en">For now this vocabulary only defines three concepts; it should
          hopefully be completed later. The concepts defined in this vocabulary can be used in
          combination with RiC-O classes and properties, whenever necessary and appropriate, to
          assign a documentary form type to a Record or a Record Part, using the
@@ -26958,9 +26968,18 @@
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
       <skos:topConceptOf
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+      <skos:narrower
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest"/>
       <rdfs:label xml:lang="en">finding aid</rdfs:label>
       <rdfs:label xml:lang="fr">instrument de recherche</rdfs:label>
       <rdfs:label xml:lang="es">instrumento de descripción</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-30</dc:date>
+            <rdf:value xml:lang="en">Added a skos:narrower with object the IIIF Manifest
+               concept.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-25</dc:date>
@@ -26975,6 +26994,27 @@
       </skos:changeNote>
       <skos:definition xml:lang="en">This documentary form type can be used for records that
          aggregate and organizes metadata on some record(s) or record set(s).</skos:definition>
+   </owl:NamedIndividual>
+   <!-- https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest -->
+   <owl:NamedIndividual
+      rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+      <skos:inScheme
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+      <skos:broader
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rdfs:label xml:lang="en">IIIF manifest</rdfs:label>
+      <rdfs:label xml:lang="fr">manifeste IIIF</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-30</dc:date>
+            <rdf:value xml:lang="en">Added to RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:definition xml:lang="en">Can be used to categorize records which describe collections of
+         cultural heritage objects, or of a single cultural object, and whose instantiations are
+         compliant to the IIIF Presentation API.</skos:definition>
    </owl:NamedIndividual>
    <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes -->
    <owl:NamedIndividual rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
