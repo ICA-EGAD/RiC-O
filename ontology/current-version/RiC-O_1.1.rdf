@@ -964,6 +964,9 @@
                      replace, as concerns Record Resource, the 'source' datatype property and the
                      'hasSource'/'isSourceOf' object properties, which had been created in RC-O 0.1
                      and removed in RiC-O 1.0.</html:li>
+                  <html:li>2025, January 17: added a 'note' datatype property, superproperty of the
+                     existing 'integrityNote', 'authenticityNote' and 'physicalCharacteristicsNote'
+                     properties.</html:li>
                   <html:li>2025, January 30: added a 'IIIFManifest' SKOS Concept, RiC-O Documentary
                      Form Type, to the named individuals. Made it a concept of the vocabulary on
                      documentary form types and a narrower concept of FindingAid.</html:li>
@@ -18086,6 +18089,7 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#authenticityNote -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authenticityNote">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
       <rdfs:domain>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
@@ -18096,13 +18100,20 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">Description of the evidence that a Record Resource or
+      <rdfs:comment xml:lang="en">Information on the evidence that a Record Resource or
          Instantiation is what it purports to be, was created or sent by the said Agent at the said
          time, and has not been tampered with, corrupted, or forged. </rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">authenticity note</rdfs:label>
       <rdfs:label xml:lang="es">nota de autenticidad</rdfs:label>
       <rdfs:label xml:lang="fr">note sur l’authenticité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Made this property a subproperty of the new rico:note datatype
+               property. Slightly modified its definition (rdfs:comment).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-11</dc:date>
@@ -19097,6 +19108,7 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#integrityNote -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#integrityNote">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Information about the known intellectual completeness of a Record
@@ -19105,6 +19117,13 @@
       <rdfs:label xml:lang="en">integrity note</rdfs:label>
       <rdfs:label xml:lang="es">nota de integridad</rdfs:label>
       <rdfs:label xml:lang="fr">note sur l'intégrité</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Made this property a subproperty of the new rico:note datatype
+               property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-11</dc:date>
@@ -19566,9 +19585,31 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#note -->
+   <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#note">
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">A short textual statement, that gives a little information on a
+         specific feature of a Thing.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">nota</rdfs:label>
+      <rdfs:label xml:lang="en">note</rdfs:label>
+      <rdfs:label xml:lang="fr">note</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-0 1.1, as a superproperty of any possible kind of
+               note.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Not to be confused with the rico:generalDescription datatype
+         property, which is used to provide a textual description of a Thing. Use the subproperties
+         of rico:note when they are appropriate.</skos:scopeNote>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#physicalCharacteristicsNote -->
    <owl:DatatypeProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#physicalCharacteristicsNote">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Information about the physical features, completeness, or
@@ -19579,6 +19620,13 @@
       <rdfs:label xml:lang="es">nota sobre las características físicas</rdfs:label>
       <rdfs:label xml:lang="fr">note sur les caractéristiques physiques</rdfs:label>
       <rdfs:label xml:lang="en">physical characteristics note</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-01-17</dc:date>
+            <rdf:value xml:lang="en">Made this property a subproperty of the new rico:note datatype
+               property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-11</dc:date>
