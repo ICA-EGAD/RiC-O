@@ -14386,12 +14386,18 @@
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasPublicationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-      <rdfs:comment xml:lang="en">Connects a Date to a Record Resource that was made public at this
+      <rdfs:comment xml:lang="en">Connects a Date to a Record Resource that was or will be made public at this
          Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="es">es fecha de publicación de</rdfs:label>
       <rdfs:label xml:lang="fr">est la date de publication de</rdfs:label>
       <rdfs:label xml:lang="en">is publication date of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-02-19</dc:date>
+            <rdf:value xml:lang="en">Changed definition (added "or will be").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-27</dc:date>
@@ -19880,11 +19886,17 @@
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">Date of the publication of a Record Resource.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Date of the publication, in the past or in the future, of a Record Resource.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">date de publication</rdfs:label>
       <rdfs:label xml:lang="es">fecha de publicación</rdfs:label>
       <rdfs:label xml:lang="en">publication date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-02-19</dc:date>
+            <rdf:value xml:lang="en">Changed definition (added "in the past or in the future").</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
