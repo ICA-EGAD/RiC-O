@@ -4031,7 +4031,13 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDestructionDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasEndDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDestructionDateOf"/>
-      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+            </owl:unionOf>
+         </owl:Class>      </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:comment xml:lang="en">Inverse of 'is destruction date of' object
          property.</rdfs:comment>
@@ -9946,7 +9952,14 @@
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDestructionDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
-      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+            </owl:unionOf>
+         </owl:Class>      
+      </rdfs:range>
       <rdfs:comment xml:lang="en">Connects a Date to a Thing that was or will be destructed at that
          Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
