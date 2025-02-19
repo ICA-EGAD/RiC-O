@@ -4728,7 +4728,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasMigrationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMigrationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasEndDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasModificationDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf"/>
       <rdfs:domain>
          <owl:Class>
@@ -10998,7 +10998,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isMigrationDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isModificationDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasMigrationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range>
