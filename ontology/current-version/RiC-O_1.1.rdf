@@ -4730,14 +4730,7 @@
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMigrationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasModificationDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf"/>
-      <rdfs:domain>
-         <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:unionOf>
-         </owl:Class>      
-      </rdfs:domain>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:comment xml:lang="en">Inverse of 'is migration date of' object
          property.</rdfs:comment>
@@ -11001,14 +10994,7 @@
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isModificationDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasMigrationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
-      <rdfs:range>
-         <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:unionOf>
-         </owl:Class>      
-      </rdfs:range>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was or will be migrated at that
          Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -19519,14 +19505,7 @@
    <!-- https://www.ica.org/standards/RiC/ontology#migrationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#modificationDate"/>
-      <rdfs:domain>
-         <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-            </owl:unionOf>
-         </owl:Class>      
-      </rdfs:domain>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Date at which a Record Resource or Instantiation was or will be migrated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
