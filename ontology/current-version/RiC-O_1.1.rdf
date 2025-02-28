@@ -4728,7 +4728,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasMigrationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMigrationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasModificationDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
@@ -10991,7 +10991,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isMigrationDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isModificationDateOf"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasMigrationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
@@ -19504,7 +19504,7 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#migrationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#modificationDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
       <rdfs:comment xml:lang="en">Date at which a Record Resource or Instantiation was or will be migrated.</rdfs:comment>
