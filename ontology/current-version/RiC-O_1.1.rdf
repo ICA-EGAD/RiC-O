@@ -3964,6 +3964,25 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasDerivationDate -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDerivationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDerivationDateOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <rdfs:comment xml:lang="en">Inverse of 'is derivation date of' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a pour date de dérivation</rdfs:label>
+      <rdfs:label xml:lang="en">has derivation date</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como fecha de derivación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasDescendant -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasDescendant">
       <rdfs:subPropertyOf
@@ -4729,7 +4748,7 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasMigrationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasMigrationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDerivationDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
@@ -4739,6 +4758,12 @@
       <rdfs:label xml:lang="fr">a pour date de migration</rdfs:label>
       <rdfs:label xml:lang="en">has migration date</rdfs:label>
       <rdfs:label xml:lang="es">tiene como fecha de migración</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Made this property a subproperty of the new 'hasDerivationDate' property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-02-19</dc:date>
@@ -9988,6 +10013,25 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isDerivationDateOf -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDerivationDateOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasDerivationDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:comment xml:lang="en">Connects a Date to an Instantiation from which a new Instantiation was or will be derived at that
+         Date.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es fecha de derivación de</rdfs:label>
+      <rdfs:label xml:lang="fr">est la date de dérivation de</rdfs:label>
+      <rdfs:label xml:lang="en">is derivation date of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isDestructionDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDestructionDateOf">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isEndDateOf"/>
@@ -10992,16 +11036,22 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isMigrationDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDerivationDateOf"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasMigrationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-      <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was or will be migrated at that
+      <rdfs:comment xml:lang="en">Connects a Date to an Instantiation that was or will be migrated at that
          Date.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="es">es fecha de migración de</rdfs:label>
       <rdfs:label xml:lang="fr">est la date de migration de</rdfs:label>
       <rdfs:label xml:lang="en">is migration date of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Removed 'Record Resource' from the definition and made this property a subproperty of the new 'isDerivationDateOf' property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-02-19</dc:date>
@@ -18757,6 +18807,27 @@
       <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
          RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
    </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#derivationDate -->
+   <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#derivationDate">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Date at which an Instantiation was or will be derived from another Instantiation.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">date de dérivation</rdfs:label>
+      <rdfs:label xml:lang="en">derivation date</rdfs:label>
+      <rdfs:label xml:lang="es">fecha de derivación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
+         later on. Use only if you don't use Date classes for handling dates.</skos:scopeNote>
+      <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of
+         RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#destructionDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#destructionDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#endDate"/>
@@ -19511,14 +19582,20 @@
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#migrationDate -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#derivationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-      <rdfs:comment xml:lang="en">Date at which a Record Resource or Instantiation was or will be migrated.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Date at which an Instantiation was or will be migrated.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">date de migration</rdfs:label>
-      <rdfs:label xml:lang="en">migration date</rdfs:label>
       <rdfs:label xml:lang="es">fecha de migración</rdfs:label>
+      <rdfs:label xml:lang="en">migration date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Removed 'Record Resource' from the definition and made the property a subproperty of the new 'derivationDate' property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-02-19</dc:date>
