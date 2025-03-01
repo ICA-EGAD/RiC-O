@@ -14424,7 +14424,7 @@
    <!-- https://www.ica.org/standards/RiC/ontology#isPublicationDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isPublicationDateOf">
       <rdfs:subPropertyOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#isBeginningDateOf"/>
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasPublicationDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
@@ -14434,6 +14434,12 @@
       <rdfs:label xml:lang="es">es fecha de publicación de</rdfs:label>
       <rdfs:label xml:lang="fr">est la date de publication de</rdfs:label>
       <rdfs:label xml:lang="en">is publication date of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-01</dc:date>
+            <rdf:value xml:lang="en">Made the property a subproperty of isDateAssociatedWith (instead of isBeginningDateOf).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-02-19</dc:date>
