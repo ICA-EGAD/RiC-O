@@ -985,8 +985,7 @@
                      hasMigrationDate, isMigrationDateOf and of migrationDate accordingly. Removed
                      the mention of Record Resource from the rdfs:comment of isMigrationDateOf and
                      migrationDate.</html:li>
-<<<<<<< HEAD
-                  <html:li>2025, March 4th: introduced datatype properties rankInSequence and
+<html:li>2025, March 4th: introduced datatype properties rankInSequence and
                      rankInHierarchy, expanded the range of proxyIn to any RecordResource and
                      tweaked the definition of it and proxyFor accordingly, added an inverse
                      property hasProxy for proxyFor, added two new sub-properties proxyInRecord and
@@ -994,17 +993,15 @@
                      of Proxy in sequences or hierarchies, and added one or two property chain
                      axioms involving rico:Proxy to a few object properties used to define sequences
                      or hierarchies.</html:li>
+                  <html:li>2025, March 13: added French and Spanish labels to the object properties
+                     that connect Date and Relation, and to the isOrganicProvenanceDateOf/hasOrganicProvenanceDate properties.
+                     Fixed the domain and a rdfs:subPropertyOf of isDateAssociatedWithRelation.
+                     Also added property chain axioms to hasDerivationDate, hasMigrationDate and to their
+                     inverse properties.</html:li>                 
                   <html:li>2025, April 2nd: reviewed the new properties for Proxies, hierarchies and
                      sequences. Fixed a few owl:inverseOf, owl:subPropertyOf and a property chain
                      axiom. Modified a few details in the rdfs:comment of those properties. Added
                      French and Spanish labels to these new properties.</html:li>
-=======
-                  <html:li>2025, March 13: added French and Spanish labels to the object properties
-                     that connect Date and Relation, and to the isOrganicProvenanceDateOf/hasOrganicProvenanceDate properties.
-                     Fixed the domain and a rdfs:subPropertyOf of isDateAssociatedWithRelation.
-                  Also added property chain axioms to hasDerivationDate, hasMigrationDate and to their
-                  inverse properties.</html:li>
->>>>>>> 1f964451cd490cc1c8f48cfd3bd2362a22702fb0
                </html:ul>
             </html:div>
          </html:div>
@@ -4047,16 +4044,12 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
-<<<<<<< HEAD
-      <rdfs:comment xml:lang="en">Inverse of 'is creation date of' object property.</rdfs:comment>
-=======
-      <owl:propertyChainAxiom rdf:parseType="Collection">
+<owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'is creation date of' object property</rdfs:comment>
->>>>>>> 1f964451cd490cc1c8f48cfd3bd2362a22702fb0
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de création</rdfs:label>
       <rdfs:label xml:lang="en">has creation date</rdfs:label>
