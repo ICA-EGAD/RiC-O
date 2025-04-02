@@ -988,6 +988,10 @@
                      of Proxy in sequences or hierarchies, and added one or two property chain
                      axioms involving rico:Proxy to a few object properties used to define sequences
                      or hierarchies.</html:li>
+                  <html:li>2025, April 2nd: reviewed the new properties for Proxies, hierarchies and
+                     sequences. Fixed a few owl:inverseOf, owl:subPropertyOf and a property chain
+                     axiom. Modified a few details in the rdfs:comment of those properties. Added
+                     French and Spanish labels to these new properties.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -2206,6 +2210,14 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy directly precedes in sequence' object property. </rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">directly follows proxy in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">sigue directamente el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">suit directement le proxy dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -2268,6 +2280,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">directly includes proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut directement le proxy</rdfs:label>
+      <rdfs:label xml:lang="es">incluye directamente el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -2347,6 +2367,14 @@
          chronologically).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">directly precedes proxy in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">precede directamente el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">précède directement le proxy dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -2919,6 +2947,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">follows proxy in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">sigue el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">suit le proxy dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -3800,7 +3836,15 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy is constituent of' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a pour constituant le proxy</rdfs:label>
       <rdfs:label xml:lang="en">has constituent proxy</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como elemento constitutivo el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-02</dc:date>
@@ -4411,7 +4455,15 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy is direct constituent of' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a pour constituant direct le proxy</rdfs:label>
       <rdfs:label xml:lang="en">has direct constituent proxy</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como directo elemento constitutivo el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -8155,7 +8207,15 @@
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Proxy"/>
       <rdfs:comment xml:lang="en">Inverse of 'proxy for' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a pour proxy</rdfs:label>
       <rdfs:label xml:lang="en">has proxy</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -8963,6 +9023,14 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy is included in' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">includes proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut le proxy</rdfs:label>
+      <rdfs:label xml:lang="es">incluye el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-02</dc:date>
@@ -9867,7 +9935,15 @@
       <rdfs:comment xml:lang="en">Connects a Record or Record Part to a Proxy of a Record or Record
          Part of which it is a constituent, directly or indirectly.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es elemento constitutivo del proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">est le constituant du proxy</rdfs:label>
       <rdfs:label xml:lang="en">is constituent of proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -10543,7 +10619,15 @@
       <rdfs:comment xml:lang="en">Connects a Record or Record Part to a Proxy of a Record or Record
          Part which it is a direct constituent of.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es elemento constitutivo directo del proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">est un constituant direct du proxy</rdfs:label>
       <rdfs:label xml:lang="en">is direct constituent of proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -10570,7 +10654,15 @@
       <rdfs:comment xml:lang="en">Connects a Record or Record Set to a Proxy of a Record Set which
          it is directly included in.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">está directamente incluido en el proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">est directement inclus dans le proxy</rdfs:label>
       <rdfs:label xml:lang="en">is directly included in proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -11300,7 +11392,15 @@
       <rdfs:comment xml:lang="en">Connects a Record or Record Set to a Proxy of a Record Set which
          it is included in, directly or indirectly.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="en">is constituent of proxy</rdfs:label>
+      <rdfs:label xml:lang="es">está incluido en el proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">est inclus dans le proxy</rdfs:label>
+      <rdfs:label xml:lang="en">is included in proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17022,7 +17122,15 @@
          precedes directly or indirectly in some sequence (not necessarily defined or characterised
          chronologically).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">precede el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">précède le proxy dans la séquence</rdfs:label>
       <rdfs:label xml:lang="en">precedes proxy in sequence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17045,6 +17153,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly follows in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">proxy sigue directamente en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy suit directement dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17067,6 +17183,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly follows proxy in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">proxy sigue directamente el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy suit directement le proxy dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17093,6 +17217,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly includes</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy inclut directement</rdfs:label>
+      <rdfs:label xml:lang="es">proxy incluye directamente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17114,6 +17246,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly includes proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy inclut directement le proxy</rdfs:label>
+      <rdfs:label xml:lang="es">proxy incluye directamente el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17137,6 +17277,14 @@
          chronologically).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly precedes in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">proxy precede directamente en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy précède directement dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17160,6 +17308,14 @@
          characterised chronologically).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy directly precedes proxy in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">proxy precede directamente el proxy en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy précède directement le proxy dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-01</dc:date>
@@ -17192,6 +17348,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy follows in sequence</rdfs:label>
+      <rdfs:label xml:lang="es">proxy sigue en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy suit dans la séquence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17213,6 +17377,14 @@
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy follows proxy in sequence transitive</rdfs:label>
+      <rdfs:label xml:lang="es">proxy sigue el proxy en la secuencia transitivo</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy suit le proxy dans la séquence transitif</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17274,7 +17446,15 @@
       <rdfs:comment xml:lang="en">Inverse of 'is constituent of proxy' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy a pour constituant</rdfs:label>
       <rdfs:label xml:lang="en">proxy has constituent</rdfs:label>
+      <rdfs:label xml:lang="es">proxy tiene como elemento constitutivo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17295,7 +17475,16 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy is constituent of proxy transitive' object
          property. This is a transitive relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy a pour constituant le proxy (transitif)</rdfs:label>
       <rdfs:label xml:lang="en">proxy has constituent proxy transitive</rdfs:label>
+      <rdfs:label xml:lang="es">proxy tiene como elemento constitutivo el proxy
+         (transitivo)</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17323,7 +17512,15 @@
       <rdfs:comment xml:lang="en">Inverse of 'is direct constituent of proxy' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy a pour constituant direct</rdfs:label>
       <rdfs:label xml:lang="en">proxy has direct constituent</rdfs:label>
+      <rdfs:label xml:lang="es">proxy tiene como directo elemento constitutivo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17344,7 +17541,15 @@
       <rdfs:comment xml:lang="en">Inverse of 'proxy is direct constituent of' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy a pour constituant direct le proxy</rdfs:label>
       <rdfs:label xml:lang="en">proxy has direct constituent proxy</rdfs:label>
+      <rdfs:label xml:lang="es">proxy tiene como directo elemento constitutivo el proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17405,6 +17610,14 @@
       <rdfs:comment xml:lang="en">Inverse of 'is included in proxy' object property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy includes</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy inclut</rdfs:label>
+      <rdfs:label xml:lang="es">proxy incluye</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17426,6 +17639,14 @@
          property. This is a transitive relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">proxy includes proxy transitive</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy inclut le proxy (transitif)</rdfs:label>
+      <rdfs:label xml:lang="es">proxy incluye el proxy (transitivo)</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17441,7 +17662,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy to a Record in which it stands for (represents) a
          Record Part or another Record.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy dans l’objet informationnel</rdfs:label>
+      <rdfs:label xml:lang="es">proxy en el documento</rdfs:label>
       <rdfs:label xml:lang="en">proxy in record</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17457,7 +17686,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy to a Record Set in which it stands for
          (represents) a Record or another Record Set.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy dans l’ensemble d’objets informationnels</rdfs:label>
+      <rdfs:label xml:lang="es">proxy en la agrupación documental</rdfs:label>
       <rdfs:label xml:lang="en">proxy in record set</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17488,7 +17725,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Part to a Record or Record
          Part which it is a constituent of, directly or indirectly.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">proxy est un constituant de</rdfs:label>
+      <rdfs:label xml:lang="es">proxy es un elemento constitutivo de</rdfs:label>
       <rdfs:label xml:lang="en">proxy is constituent of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17510,7 +17755,15 @@
          Record or Record Part which it is a constituent of, directly or indirectly. This is a
          transitive relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy es elemento constitutivo del proxy (transitivo)</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est un constituant du proxy (transitif)</rdfs:label>
       <rdfs:label xml:lang="en">proxy is constituent of proxy transitive</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17538,12 +17791,14 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Part to another Record or
          Record Part which the first is a direct constituent of.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy es elemento constitutivo directo de</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est un constituant direct de</rdfs:label>
       <rdfs:label xml:lang="en">proxy is direct constituent of</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-02</dc:date>
-            <rdf:value xml:lang="en">Fixed the owl:inverseOf property (was
-               hasConstituentProxy).</rdf:value>
+            <rdf:value xml:lang="en">Fixed the owl:inverseOf property (was hasConstituentProxy).
+               Added the French and Spanish labels.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -17566,7 +17821,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Part to a Proxy of another
          Record or Record Part of which the first is a direct constituent.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy es elemento constitutivo directo del proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est un constituant direct du proxy</rdfs:label>
       <rdfs:label xml:lang="en">proxy is direct constituent of proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17586,7 +17849,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Set to another Record Set
          which the first is directly included in.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy está directamente incluido en</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est directement inclus dans</rdfs:label>
       <rdfs:label xml:lang="en">proxy is directly included in</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17607,7 +17878,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Set to a Proxy of a Record
          Set which it is directly included in.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy está directamente incluido en el proxy</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est directement inclus dans le proxy</rdfs:label>
       <rdfs:label xml:lang="en">proxy is directly included in proxy</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17630,7 +17909,15 @@
       <rdfs:comment xml:lang="en">Connects a Proxy of a Record or Record Set to a Record Set which
          it is included in, directly or indirectly.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy está incluido en</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est inclus dans</rdfs:label>
       <rdfs:label xml:lang="en">proxy is included in</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17652,7 +17939,15 @@
          Set which it is included in, directly or indirectly. This is a transitive
          relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy está incluido en el proxy (transitivo)</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy est inclus dans le proxy (transitif)</rdfs:label>
       <rdfs:label xml:lang="en">proxy is included in proxy transitive</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17679,7 +17974,15 @@
          the first precedes directly or indirectly in some sequence (not necessarily defined or
          characterised chronologically).</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy precede en la secuencia</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy précède dans la séquence</rdfs:label>
       <rdfs:label xml:lang="en">proxy precedes in sequence</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
@@ -17701,7 +18004,15 @@
          Resource which directly or indirectly follows the first in some sequence (not necessarily
          defined or characterised chronologically). This is a transitive relation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">proxy precede el proxy en la secuencia (transitivo)</rdfs:label>
+      <rdfs:label xml:lang="fr">proxy précède le proxy dans la séquence (transitif)</rdfs:label>
       <rdfs:label xml:lang="en">proxy precedes proxy in sequence transitive</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-02</dc:date>
+            <rdf:value xml:lang="en">Added the French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
