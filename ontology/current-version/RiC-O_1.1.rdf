@@ -947,11 +947,12 @@
                   <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made
                      by the RiC-O team today. Modified the ontology metadata (owl:versionInfo,
                      rdfs:label, dcterms:title). Renamed the file.</html:li>
-                  <html:li>2024, December 19: added relationHasDate and isDateAssociatedWithRelation object properties,
-                  to connect n-ary Relation classes and Dates. Added hasOrganicProvenanceDate and isOrganicProvenanceDateOf
-                  object properties (with property chain axioms to connect
-                  those properties to the OrganicProvenanceRelation). Added property chain axioms to 
-                  hasCreationDate, hasAccumulationDate, and to their inverse properties.</html:li>
+                  <html:li>2024, December 19: added relationHasDate and isDateAssociatedWithRelation
+                     object properties, to connect n-ary Relation classes and Dates. Added
+                     hasOrganicProvenanceDate and isOrganicProvenanceDateOf object properties (with
+                     property chain axioms to connect those properties to the
+                     OrganicProvenanceRelation). Added property chain axioms to hasCreationDate,
+                     hasAccumulationDate, and to their inverse properties.</html:li>
                   <html:li>2024, December 23: added the following datatype properties:
                      accumulationDate, allMembersWithAccumulationDate,
                      someMembersWithAccumulationDate (subproperties of date);
@@ -985,7 +986,7 @@
                      hasMigrationDate, isMigrationDateOf and of migrationDate accordingly. Removed
                      the mention of Record Resource from the rdfs:comment of isMigrationDateOf and
                      migrationDate.</html:li>
-<html:li>2025, March 4th: introduced datatype properties rankInSequence and
+                  <html:li>2025, March 4th: introduced datatype properties rankInSequence and
                      rankInHierarchy, expanded the range of proxyIn to any RecordResource and
                      tweaked the definition of it and proxyFor accordingly, added an inverse
                      property hasProxy for proxyFor, added two new sub-properties proxyInRecord and
@@ -994,10 +995,11 @@
                      axioms involving rico:Proxy to a few object properties used to define sequences
                      or hierarchies.</html:li>
                   <html:li>2025, March 13: added French and Spanish labels to the object properties
-                     that connect Date and Relation, and to the isOrganicProvenanceDateOf/hasOrganicProvenanceDate properties.
-                     Fixed the domain and a rdfs:subPropertyOf of isDateAssociatedWithRelation.
-                     Also added property chain axioms to hasDerivationDate, hasMigrationDate and to their
-                     inverse properties.</html:li>                 
+                     that connect Date and Relation, and to the
+                     isOrganicProvenanceDateOf/hasOrganicProvenanceDate properties. Fixed the domain
+                     and a rdfs:subPropertyOf of isDateAssociatedWithRelation. Also added property
+                     chain axioms to hasDerivationDate, hasMigrationDate and to their inverse
+                     properties.</html:li>
                   <html:li>2025, April 2nd: reviewed the new properties for Proxies, hierarchies and
                      sequences. Fixed a few owl:inverseOf, owl:subPropertyOf and a property chain
                      axiom. Modified a few details in the rdfs:comment of those properties. Added
@@ -1992,7 +1994,6 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
-   
    <!-- https://www.ica.org/standards/RiC/ontology#derivationRelation_role -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelation_role">
@@ -2154,7 +2155,6 @@
          rdf:resource="https://www.ica.org/standards/RiC/ontology#directlyPrecedesInSequence"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-      <!--<owl:propertyChainAxiom rdf:parseType="Collection"> <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#proxyDirectlyFollowsInSequence"/> <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#proxyFor"/> </owl:propertyChainAxiom>-->
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#hasProxy"/>
          <rdf:Description
@@ -3281,7 +3281,8 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasAccumulationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAccumulationDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAccumulationDateOf"/>
       <rdfs:domain>
          <owl:Class>
@@ -3294,8 +3295,10 @@
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'is accumulation date of' object
@@ -3307,8 +3310,9 @@
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-12-19</dc:date>
-            <rdf:value xml:lang="en">Connect to AccumulationRelation via a sub-property chain, and make
-               a sub-property of the new object property 'hasOrganicProvenanceDate'.</rdf:value>
+            <rdf:value xml:lang="en">Connect to AccumulationRelation via a sub-property chain, and
+               make a sub-property of the new object property
+               'hasOrganicProvenanceDate'.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -4032,7 +4036,8 @@
    <!-- https://www.ica.org/standards/RiC/ontology#hasCreationDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCreationDate">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasBeginningDate"/>
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isCreationDateOf"/>
       <rdfs:domain>
          <owl:Class>
@@ -4044,9 +4049,11 @@
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
-<owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Inverse of 'is creation date of' object property</rdfs:comment>
@@ -4057,8 +4064,8 @@
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-12-19</dc:date>
-            <rdf:value xml:lang="en">Connect to CreationRelation via a sub-property chain, and make a
-               sub-property of the new object property 'hasOrganicProvenanceDate'.</rdf:value>
+            <rdf:value xml:lang="en">Connect to CreationRelation via a sub-property chain, and make
+               a sub-property of the new object property 'hasOrganicProvenanceDate'.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -8148,28 +8155,35 @@
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrganicProvenanceDateOf"/>
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrganicProvenanceDateOf"/>
       <rdfs:domain>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
                <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+               <rdf:Description
+                  rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:unionOf>
          </owl:Class>
       </rdfs:domain>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
       </owl:propertyChainAxiom>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour date de provenance organique</rdfs:label>
       <rdfs:label xml:lang="en">has organic provenance date</rdfs:label>
       <rdfs:label xml:lang="es">tiene como fecha de procedencia orgánica</rdfs:label>
-      <rdfs:comment xml:lang="en">Inverse of 'is date associated with organic provenance of' object property.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Inverse of 'is date associated with organic provenance of' object
+         property.</rdfs:comment>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-13</dc:date>
@@ -9273,8 +9287,10 @@
          </owl:Class>
       </rdfs:range>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#accumulationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was or
@@ -9292,8 +9308,9 @@
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-12-19</dc:date>
-            <rdf:value xml:lang="en">Connect to AccumulationRelation via a sub-property chain, and make
-               a sub-property of the new 'isOrganicProvenanceDateOf' object property.</rdf:value>
+            <rdf:value xml:lang="en">Connect to AccumulationRelation via a sub-property chain, and
+               make a sub-property of the new 'isOrganicProvenanceDateOf' object
+               property.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -10259,8 +10276,10 @@
          </owl:Class>
       </rdfs:range>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#creationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Date to a Record Resource or Instantiation that was or
@@ -10278,8 +10297,8 @@
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-12-19</dc:date>
-            <rdf:value xml:lang="en">Connect to CreationRelation via a sub-property chain, and make a
-               sub-property of the new 'isOrganicProvenanceDateOf' object property.</rdf:value>
+            <rdf:value xml:lang="en">Connect to CreationRelation via a sub-property chain, and make
+               a sub-property of the new 'isOrganicProvenanceDateOf' object property.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -10408,9 +10427,12 @@
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
       <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
@@ -10422,7 +10444,8 @@
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-13</dc:date>
-            <rdf:value xml:lang="en">Added French and Spanish labels; fixed the first rdfs:subPropertyOf and the rdfs:domain.</rdf:value>
+            <rdf:value xml:lang="en">Added French and Spanish labels; fixed the first
+               rdfs:subPropertyOf and the rdfs:domain.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
       <skos:changeNote>
@@ -10580,8 +10603,10 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Date to an Instantiation from which a new Instantiation
@@ -11751,8 +11776,10 @@
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#migrationRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#migrationRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
       <rdfs:comment xml:lang="en">Connects a Date to an Instantiation that was or will be migrated
@@ -11810,25 +11837,31 @@
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrganicProvenanceDateOf -->
-   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrganicProvenanceDateOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrganicProvenanceDateOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrganicProvenanceDate"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:range>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
                <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+               <rdf:Description
+                  rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
             </owl:unionOf>
          </owl:Class>
       </rdfs:range>
       <owl:propertyChainAxiom rdf:parseType="Collection">
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
-         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#organicProvenanceRelation_role"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects a Date associated with the organic provenance of a Record Resource or
-         Instantiation to that Record Resource or Instantiation.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects a Date associated with the organic provenance of a Record
+         Resource or Instantiation to that Record Resource or Instantiation.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="es">es la fecha de procedencia orgánica de</rdfs:label>
       <rdfs:label xml:lang="fr">est la date de provenance organique de</rdfs:label>
@@ -18512,9 +18545,12 @@
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#relationHasDate -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
-      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
       <rdfs:comment xml:lang="en">Connects an n-ary Relation to a Date.</rdfs:comment>
