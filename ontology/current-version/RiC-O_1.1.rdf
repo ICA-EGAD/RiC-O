@@ -17641,6 +17641,7 @@
    <!-- https://www.ica.org/standards/RiC/ontology#proxyFor -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#proxyFor">
       <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasProxy"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Proxy"/>
       <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
       <rdfs:comment xml:lang="en">Connects a Proxy to the Record Resource it stands for in the
