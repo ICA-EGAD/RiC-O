@@ -4446,15 +4446,21 @@
       </rdfs:range>
       <owl:propertyChainAxiom rdf:parseType="Collection">
          <rdf:Description
-            rdf:about="https://www.ica.org/standards/RiC/ontology#hasDirectConstituentOfProxy"/>
+            rdf:about="https://www.ica.org/standards/RiC/ontology#hasDirectConstituentProxy"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#proxyFor"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects a Record to another Record or Record Part that is its
+      <rdfs:comment xml:lang="en">Connects a Record or Record Part to another Record or Record Part that is its
          direct constituent.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a directement pour constituant</rdfs:label>
       <rdfs:label xml:lang="en">has direct constituent</rdfs:label>
       <rdfs:label xml:lang="es">tiene directamente como elemento constitutivo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-03</dc:date>
+            <rdf:value xml:lang="en">Fixed the property chain axiom.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-03-04</dc:date>
