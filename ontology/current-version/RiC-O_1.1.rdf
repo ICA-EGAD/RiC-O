@@ -994,6 +994,8 @@
                      of Proxy in sequences or hierarchies, and added one or two property chain
                      axioms involving rico:Proxy to a few object properties used to define sequences
                      or hierarchies.</html:li>
+                  <html:li>2025, March 6th: added a new object property 'isOrWasActiveAtDate' and an
+                     inverse.</html:li>
                   <html:li>2025, March 13: added French and Spanish labels to the object properties
                      that connect Date and Relation, and to the
                      isOrganicProvenanceDateOf/hasOrganicProvenanceDate properties. Fixed the domain
@@ -1004,6 +1006,9 @@
                      sequences. Fixed a few owl:inverseOf, owl:subPropertyOf and a property chain
                      axiom. Modified a few details in the rdfs:comment of those properties. Added
                      French and Spanish labels to these new properties.</html:li>
+                  <html:li>2025, April 3rd: renamed the inverse property of 'isOrWasActiveAtDate',
+                     adjusted the rdfs:comment of the two properties, added a chain property axiom
+                     and French and Spanish labels.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -11972,6 +11977,74 @@
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
             <rdf:value xml:lang="en">Added in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasActiveAtDate -->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasActiveAtDate">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithDate"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasActivityDateOf"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#performanceRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasDate"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Inverse of 'is or was activity date of' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">está o estuvo activo en la fecha</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été actif à la date</rdfs:label>
+      <rdfs:label xml:lang="en">is or was active at date</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-03</dc:date>
+            <rdf:value xml:lang="en">Adjusted the rdfs:comment and added French and Spanish
+               labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-06</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasActivityDateOf">-->
+   <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasActivityDateOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWith"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Date"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+      <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasActiveAtDate"/>
+      <owl:propertyChainAxiom rdf:parseType="Collection">
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#isDateAssociatedWithRelation"/>
+         <rdf:Description
+            rdf:about="https://www.ica.org/standards/RiC/ontology#performanceRelation_role"/>
+         <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+      </owl:propertyChainAxiom>
+      <rdfs:comment xml:lang="en">Connects a Date to an Agent that is or was active at that
+         Date.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era fecha de actividad de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été la date d’activité de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was date of activity of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-03</dc:date>
+            <rdf:value xml:lang="en">Renamed the property, changed its rdfs:comment, added the
+               property chain axiom and French and Spanish labels.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-03-06</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
