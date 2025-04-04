@@ -4000,6 +4000,70 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record or a Record Part to a Thing that its content
+         represents.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a un contenu qui représente</rdfs:label>
+      <rdfs:label xml:lang="en">has content which represents</rdfs:label>
+      <rdfs:label xml:lang="es">tiene contenido que representa</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-04</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used for visual Records or Record Parts, like
+         photographs, drawings, engravings, miniatures...</skos:scopeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasContentWhichMainlyRepresents -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentWhichMainlyRepresents">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMainSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record or a Record Part to a Thing that its content
+         mainly represents.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">a un contenu qui représente principalement</rdfs:label>
+      <rdfs:label xml:lang="en">has content which mainly represents</rdfs:label>
+      <rdfs:label xml:lang="es">tiene contenido que representa principalmente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-04</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can be used for visual Records or Record Parts, like
+         photographs, drawings, engravings, miniatures.... A common use case would be a photograph
+         of a person (a portrait.)</skos:scopeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasCopy -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCopy">
       <rdfs:subPropertyOf
@@ -4454,8 +4518,8 @@
             rdf:about="https://www.ica.org/standards/RiC/ontology#hasDirectConstituentProxy"/>
          <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#proxyFor"/>
       </owl:propertyChainAxiom>
-      <rdfs:comment xml:lang="en">Connects a Record or Record Part to another Record or Record Part that is its
-         direct constituent.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Connects a Record or Record Part to another Record or Record Part
+         that is its direct constituent.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a directement pour constituant</rdfs:label>
       <rdfs:label xml:lang="en">has direct constituent</rdfs:label>
@@ -11779,6 +11843,35 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOf"/>
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentWhichMainlyRepresents"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">Inverse of 'has content which mainly represents' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">est principalement représenté par le contenu de</rdfs:label>
+      <rdfs:label xml:lang="en">is mainly represented by content of</rdfs:label>
+      <rdfs:label xml:lang="es">está principalmente representado por el contenido de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-04</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isMigrationDateOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isMigrationDateOf">
       <rdfs:subPropertyOf
@@ -15701,6 +15794,34 @@
          <rdf:Description>
             <dc:date>2021-01-22</dc:date>
             <rdf:value xml:lang="en">changed the super property IRI.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:range>
+      <rdfs:comment xml:lang="en">Inverse of 'has content which represents' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="fr">est représenté par le contenu de</rdfs:label>
+      <rdfs:label xml:lang="en">is represented by content of</rdfs:label>
+      <rdfs:label xml:lang="es">está representado por el contenido de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-04</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
