@@ -1009,6 +1009,11 @@
                   <html:li>2025, April 3rd: renamed the inverse property of 'isOrWasActiveAtDate',
                      adjusted the rdfs:comment of the two properties, added a chain property axiom
                      and French and Spanish labels.</html:li>
+                  <html:li>2025, April 5 and 6th: added the sentimentOrEmotionExpressed datatype
+                     property, and the object properties needed to connect a Record Set whose some
+                     or all members have subject or main subject a Thing, or represent a Thing, plus
+                     the inverse properties. Adjusted the Spanish labels of several existing object
+                     properties.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -3398,7 +3403,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">a pour type d’activité</rdfs:label>
       <rdfs:label xml:lang="en">has activity type</rdfs:label>
-      <rdfs:label xml:lang="es">tiene como tipo de actividad a</rdfs:label>
+      <rdfs:label xml:lang="es">tiene como tipo de actividad</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Fixed the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -4038,7 +4049,7 @@
       <rdfs:subPropertyOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMainSubject"/>
       <owl:inverseOf
-         rdf:resource="https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf"/>
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isMainThingRepresentedByContentOf"/>
       <rdfs:domain>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
@@ -5270,8 +5281,14 @@
       <rdfs:label xml:lang="en">has or had all members with accumulation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour date
          d'accumulation</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como fecha de
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos como fecha de
          acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
@@ -5294,8 +5311,13 @@
       <rdfs:label xml:lang="en">has or had all members with content type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type de
          contenu</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo de
-         contenido</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con tipo de contenido</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5332,8 +5354,13 @@
       <rdfs:label xml:lang="en">has or had all members with creation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour date de
          création</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como fecha de
-         creación</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con fecha de creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-27</dc:date>
@@ -5376,7 +5403,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with documentary form type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo documental</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con tipo documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5412,7 +5445,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with language</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour langue</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como lengua</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con lengua</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5450,7 +5489,13 @@
       <rdfs:label xml:lang="en">has or had all members with legal status</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour statut
          légal</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como status jurídico</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con status jurídico</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5470,6 +5515,31 @@
                is described as having all or some members that belong to some category (see RiC-CM
                0.2 attributes section, #4.4 on Record Set, Record and Record Part
                attributes).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainSubject -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainSubject">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithSubject"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMainSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfAllMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is the main subject of all
+         the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had all members with main subject</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour principal
+         sujet</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con matería principal</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -5487,8 +5557,14 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with record state</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour état</rdfs:label>
-      <rdfs:label xml:lang="es">tiene o tenían todos sus miembros como estado de
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con estado de
          documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -5511,6 +5587,27 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithSubject -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithSubject">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfAllMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is the subject of all the
+         Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had all members with subject</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour sujet</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con matería</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithType">
@@ -5524,7 +5621,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had all members with type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant tous pour type</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían todos sus miembros como tipo</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía miembros, todos con tipo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
@@ -6794,8 +6897,14 @@
       <rdfs:label xml:lang="en">has or had most members with accumulation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont la plupart ont pour date
          d'accumulation</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían la mayoría de sus miembros como fecha de
+      <rdfs:label xml:lang="es">incluye o incluía miembros, la mayoría de los cuales con fecha de
          acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
@@ -6818,8 +6927,14 @@
       <rdfs:label xml:lang="en">has or had most members with creation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont la plupart ont pour date de
          création</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían la mayoría de sus miembros como fecha de
+      <rdfs:label xml:lang="es">incluye o incluía miembros, la mayoría de los cuales con fecha de
          creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-27</dc:date>
@@ -7286,6 +7401,58 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentMainlyRepresents -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentMainlyRepresents">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainThingRepresentedByContentOfSomeMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is the main element
+         represented by the content of some of the members of the Records or Record Parts that are
+         or were included in the Record Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had some members whose content mainly represents</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont le contenu représente
+         principalement</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros cuyo contenido representa
+         principalmente</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasRepresentedByContentOfSomeMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is represented by the
+         content of some of the Records or Record Parts that are or were included in the Record
+         Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had some members whose content represents</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont le contenu
+         représente</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros cuyo contenido
+         representa</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithAccumulationDate">
@@ -7301,8 +7468,14 @@
       <rdfs:label xml:lang="en">has or had some members with accumulation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour date
          d'accumulation</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como fecha de
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con fecha de
          acumulación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
@@ -7325,8 +7498,14 @@
       <rdfs:label xml:lang="en">has or had some members with content type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
          contenu</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como tipo de
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con tipo de
          contenido</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -7363,8 +7542,14 @@
       <rdfs:label xml:lang="en">has or had some members with creation date</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour date de
          création</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como fecha de
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con fecha de
          creación</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-27</dc:date>
@@ -7409,8 +7594,13 @@
       <rdfs:label xml:lang="en">has or had some members with documentary form type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type de
          document</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como tipo
-         documental</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con tipo documental</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-03-15</dc:date>
@@ -7452,7 +7642,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with language</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour langue</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como lengua</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con lengua</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -7489,8 +7685,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with legal status</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour statut légal</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como status
-         jurídico</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con status jurídico</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -7510,6 +7711,30 @@
                is described as having all or some members that belong to some category (see RiC-CM
                0.2 attributes section, #4.4 on Record Set, Record and Record Part
                attributes).</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainSubject -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainSubject">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfSomeMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is the main subject of some
+         of the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had some members with main subject</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour sujet
+         principal</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con matería
+         principal</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
@@ -7527,8 +7752,14 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with record state</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour état</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenía algunos de sus miembros como estado de
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con estado de
          documento</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-11-02</dc:date>
@@ -7551,6 +7782,33 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfSomeMembersOf"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is the subject of some of
+         the Records or Record Parts that are or were included in the Record Set.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">has or had some members with subject</rdfs:label>
+      <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour sujet</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con matería</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithType">
@@ -7564,7 +7822,13 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="en">has or had some members with type</rdfs:label>
       <rdfs:label xml:lang="fr">inclut ou a inclus des membres ayant pour type</rdfs:label>
-      <rdfs:label xml:lang="es">tienen o tenían algunos de sus miembros como tipo</rdfs:label>
+      <rdfs:label xml:lang="es">incluye o incluía algunos miembros con tipo</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Adjusted the Spanish label.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2024-10-04</dc:date>
@@ -11843,11 +12107,13 @@
          </rdf:Description>
       </skos:changeNote>
    </owl:ObjectProperty>
-   <!-- https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf -->
+   <!-- https://www.ica.org/standards/RiC/ontology#isMainThingRepresentedByContentOf -->
    <owl:ObjectProperty
-      rdf:about="https://www.ica.org/standards/RiC/ontology#isMainlyRepresentedByContentOf">
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOf"/>
-      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf"/>
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isMainThingRepresentedByContentOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOf"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isRepresentedByContentOf"/>
       <owl:inverseOf
          rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentWhichMainlyRepresents"/>
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
@@ -11862,9 +12128,9 @@
       <rdfs:comment xml:lang="en">Inverse of 'has content which mainly represents' object
          property.</rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
-      <rdfs:label xml:lang="fr">est principalement représenté par le contenu de</rdfs:label>
-      <rdfs:label xml:lang="en">is mainly represented by content of</rdfs:label>
-      <rdfs:label xml:lang="es">está principalmente representado por el contenido de</rdfs:label>
+      <rdfs:label xml:lang="es">es lo principal representado por el contenido de</rdfs:label>
+      <rdfs:label xml:lang="fr">est la chose principale représentée par le contenu de</rdfs:label>
+      <rdfs:label xml:lang="en">is main thing represented by content of</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-04</dc:date>
@@ -13949,6 +14215,79 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R020i ('is or was main subject of'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfAllMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfAllMembersOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOf"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfAllMembersOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainSubject"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had all members with main subject' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era la materia principal de todos los miembros de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été le sujet principal de tous les membres de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was main subject of all members of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfSomeMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfSomeMembersOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfSomeMembersOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainSubject"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had some members with main subject' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era la materia principal de algunos miembros de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été le sujet principal de certains membres de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was main subject of some members of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainThingRepresentedByContentOfSomeMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainThingRepresentedByContentOfSomeMembersOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainSubjectOfSomeMembersOf"/>
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasRepresentedByContentOfSomeMembersOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentMainlyRepresents"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had some members whose content mainly
+         represents' object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era lo principal representado por el contenido de algunos
+         miembros de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été la chose principale représentée par le contenu de
+         certains membres de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was main thing represented by content of some members
+         of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-06</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasManagerOf -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasManagerOf">
       <rdfs:subPropertyOf
@@ -14620,6 +14959,30 @@
       <RiCCMCorrespondingComponent xml:lang="en">RiC-R063i ('is or was regulated by'
          relation)</RiCCMCorrespondingComponent>
    </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasRepresentedByContentOfSomeMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasRepresentedByContentOfSomeMembersOf">
+      <rdfs:subPropertyOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfSomeMembersOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had some members whose content represents'
+         object property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">is or was represented by content of some members of</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été représenté par le contenu de certains membres
+         de</rdfs:label>
+      <rdfs:label xml:lang="es">es o era representado por el contenido de algunos miembros
+         de</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasResponsibleForEnforcing -->
    <owl:ObjectProperty
       rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasResponsibleForEnforcing">
@@ -14832,6 +15195,48 @@
       </skos:changeNote>
       <RiCCMCorrespondingComponent xml:lang="en">RIc-R019i ('is or was subject of'
          relation)</RiCCMCorrespondingComponent>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfAllMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfAllMembersOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOf"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithSubject"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had all members with subject' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era la matería de todos los miembros de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été le sujet de tous les membres de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was subject of all members of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+   </owl:ObjectProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfSomeMembersOf -->
+   <owl:ObjectProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOfSomeMembersOf">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+      <owl:inverseOf
+         rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject"/>
+      <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+      <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rdfs:comment xml:lang="en">Inverse of 'has or had some members with subject' object
+         property.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="es">es o era la matería de algunos miembros de</rdfs:label>
+      <rdfs:label xml:lang="fr">est ou a été le sujet de certains membres de</rdfs:label>
+      <rdfs:label xml:lang="en">is or was subject of some members of</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasSubordinateTo -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasSubordinateTo">
@@ -15817,7 +16222,7 @@
       <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
       <rdfs:label xml:lang="fr">est représenté par le contenu de</rdfs:label>
       <rdfs:label xml:lang="en">is represented by content of</rdfs:label>
-      <rdfs:label xml:lang="es">está representado por el contenido de</rdfs:label>
+      <rdfs:label xml:lang="es">es representado por el contenido de</rdfs:label>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-04-04</dc:date>
@@ -22506,6 +22911,34 @@
          origination and subsequent changes to a Record Resource. </skos:scopeNote>
       <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A38 (Scope and Content
          attribute)</RiCCMCorrespondingComponent>
+   </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#sentimentOrEmotionExpressed -->
+   <owl:DatatypeProperty
+      rdf:about="https://www.ica.org/standards/RiC/ontology#sentimentOrEmotionExpressed">
+      <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#scopeAndContent"/>
+      <rdfs:domain>
+         <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+               <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            </owl:unionOf>
+         </owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <rdfs:comment xml:lang="en">Specification of, or information about, the sentiment(s) or
+         emotion(s) expressed by the content of a Record or a Record Part.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+      <rdfs:label xml:lang="en">sentiment or emotion expressed</rdfs:label>
+      <rdfs:label xml:lang="fr">sentiment ou émotion exprimés</rdfs:label>
+      <rdfs:label xml:lang="es">sentimiento o emoción expresados</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-04-05</dc:date>
+            <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:scopeNote xml:lang="en">Can in particular be used for textual or visual records or
+         record parts.</skos:scopeNote>
    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#someMembersWithAccumulationDate -->
    <owl:DatatypeProperty
