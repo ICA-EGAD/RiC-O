@@ -1009,11 +1009,14 @@
                   <html:li>2025, April 3rd: renamed the inverse property of 'isOrWasActiveAtDate',
                      adjusted the rdfs:comment of the two properties, added a chain property axiom
                      and French and Spanish labels.</html:li>
-                  <html:li>2025, April 5 and 6th: added the sentimentOrEmotionExpressed datatype
-                     property, and the object properties needed to connect a Record Set whose some
-                     or all members have subject or main subject a Thing, or represent a Thing, plus
-                     the inverse properties. Adjusted the Spanish labels of several existing object
-                     properties.</html:li>
+                  <html:li>2025, April 5th: added hasContenWhichRepresents and
+                     hasContentWhichMainlyRepresents properties, with domain Record or Record Part,
+                     and the inverse properties.</html:li>
+                  <html:li>2025, April 6th: Added the sentimentOrEmotionExpressed datatype property,
+                     with domain Record or Record Part. Added the object properties needed to
+                     connect a Record Set whose some or all members have subject or main subject a
+                     Thing, or represent a Thing, plus the inverse properties. Adjusted the Spanish
+                     labels of several existing object properties.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -4071,8 +4074,8 @@
             <rdf:value xml:lang="en">Introduced in RiC-O 1.1.</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:scopeNote xml:lang="en">A common use case would be to connect a photograph
-         of a person (a portrait) and the person represented.</skos:scopeNote>
+      <skos:scopeNote xml:lang="en">A common use case would be to connect a photograph of a person
+         (a portrait) and the person represented.</skos:scopeNote>
    </owl:ObjectProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#hasCopy -->
    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasCopy">
