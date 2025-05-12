@@ -15,24 +15,24 @@
    <owl:Ontology rdf:about="https://www.ica.org/standards/RiC/ontology">
       <owl:versionIRI rdf:resource="https://www.ica.org/standards/RiC/ontology/1.1"/>
       <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-      <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA),
-         member of EGAD and EGAD RiC-O team from 2012 to 2022</dc:contributor>
-      <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of EGAD from
-         2012</dc:contributor>
       <dc:contributor xml:lang="en">Florence Clavaud (Archives nationales de France), member of EGAD
          and lead of EGAD RiC-O team from 2012</dc:contributor>
-      <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
-         Netherlands), member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
-      <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland), member of EGAD and
-         EGAD RiC-O team from 2023</dc:contributor>
-      <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD and
-         EGAD RiC-O team from 2016 to 2022</dc:contributor>
       <dc:contributor>Regine I. Heberlein (University of Princeton, USA), member of EGAD and EGAD
          RiC-O team from 2023 to 2024</dc:contributor>
-      <dc:contributor xml:lang="en">Richard David Williamson (National Archives of Norway), member
-         of EGAD and of EGAD RiC-O team from 2024</dc:contributor>
+      <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD and
+         EGAD RiC-O team from 2016 to 2022</dc:contributor>
+      <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland), member of EGAD and
+         EGAD RiC-O team from 2023</dc:contributor>
+      <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of EGAD from
+         2012</dc:contributor>
+      <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA),
+         member of EGAD and EGAD RiC-O team from 2012 to 2022</dc:contributor>
       <dc:contributor xml:lang="en">Tobias Wildi (docuteam, Switzerland), member of EGAD and EGAD
          RiC-O team from 2019</dc:contributor>
+      <dc:contributor xml:lang="en">Richard David Williamson (National Archives of Norway), member
+         of EGAD and of EGAD RiC-O team from 2024</dc:contributor>
+      <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
+         Netherlands), member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
       <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
          Description (ICA EGAD)</dc:creator>
       <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
@@ -405,7 +405,7 @@
                         rico:Thing). See for example <html:a href="#rico:hasOrHadAllMembersWithType"
                            >rico:hasOrHadAllMembersWithType</html:a>, or <html:a
                            href="#rico:hasOrHadSomeMembersWithSubject"
-                           >rico:hasOrHadSomeMembersWithSubject</html:a>and its
+                           >rico:hasOrHadSomeMembersWithSubject</html:a> and its
                         subproperties.</html:p>
                      <html:p>
                         <html:strong>Some of the object properties are formally defined as
@@ -480,8 +480,8 @@
             <html:div id="next-steps">
                <html:h4>Next steps</html:h4>
                <html:p>The following is a non exhaustive list of known issues, topics or tasks on
-                  which EGAD has begun to work and will continue to work in the next
-                  months.</html:p>
+                  which EGAD has begun to work and will continue to work in the next months. These
+                  topics are part of the roadmap for RiC-O 2.0.</html:p>
                <html:ul>
                   <html:li>articulate the Event and Activity classes, and the Relation system of
                      classes</html:li>
@@ -489,6 +489,13 @@
                      between some classes or properties and components in other models (among which
                      - this is not an exhaustive list- PREMIS, Schema.org, PROV-O, IFLA-LRM and RDA,
                      CIDOC-CRM), or document how these models can be used together. </html:li>
+                  <html:li>develop multilingual vocabularies in order to provide users with means to
+                     populate RiC-CM attributes that have a controlled value, and to use shared
+                     instances of RiC-O *Type classes, so that their RDF datasets would be easier to
+                     query using SPARQL federated queries or portals, and to link to each other.
+                     Such a task will probably start with curation Activity Types and Rule Types, in
+                     addition to more Record Set Types and Documentary Form Types than the seven
+                     ones already defined.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -554,7 +561,7 @@
                      the needs that a growing community of users was expressing</html:strong>. On
                   the other hand, it was obviously a question of <html:strong>making RiC-O 1.0
                      compliant with RiC-CM 1.0</html:strong>.</html:p>
-               <html:p>After the release of RiC-O 1.O, the development team continued to improve the
+               <html:p>After the release of RiC-O 1.0, the development team continued to improve the
                   ontology. Bugs were fixed and a few adjustments made to RiC-O documentation in
                   v1.0.1 and 1.0.2. Then version 1.1 introduced, in addition to some corrections and
                   adjustments, several significant additions or modifications, the majority of which
@@ -654,7 +661,7 @@
                      then be deleted. A full accounting of the rolification of n-ary relations may
                      be found at <html:a href="https://github.com/ICA-EGAD/RiC-O/issues/67"
                         >https://github.com/ICA-EGAD/RiC-O/issues/67</html:a>).
-                        <html:br/><html:strong>In RiC-O 1.1, 8O object properties were added, whose
+                        <html:br/><html:strong>In RiC-O 1.1, 80 object properties were added, whose
                         domain or range are most often rico:RecordResource (or its subclasses),
                         rico:Proxy, rico:Instantiation, rico:Date or rico:Relation</html:strong>.
                      The following list describes the main additions made.<html:ul>
@@ -672,11 +679,10 @@
                               <html:a href="#rico:StudyingAtRelation"
                               >rico:StudyingAtRelation</html:a> n-ary class was also
                            created;</html:li>
-                        <html:li><html:strong>object properties were added to be used for
-                              accumulation dates</html:strong>, with domain the union of
-                           rico:RecordResource and rico:Instantiation (for <html:a
-                              href="#rico:hasAccumulationDate">rico:hasAccumulationDate</html:a>),
-                           or RecordSet (for <html:a
+                        <html:li>object properties were added to be used for accumulation dates,
+                           with domain the union of rico:RecordResource and rico:Instantiation (for
+                              <html:a href="#rico:hasAccumulationDate"
+                              >rico:hasAccumulationDate</html:a>), or RecordSet (for <html:a
                               href="#rico:hasOrHadAllMembersWithAccumulationDate"
                               >rico:hasOrHadAllMembersWithAccumulationDate</html:a>, <html:a
                               href="#rico:hasOrHadSomeMembersWithAccumulationDate"
@@ -726,32 +732,36 @@
                            particular, this resulted in <html:strong>a significant set of object
                               properties in order to allow the use of rico:Proxy in such sequences
                               and hierarchies</html:strong>.</html:li>
-                        <html:li><html:strong>two properties (<html:a
-                                 href="#rico:hasContentWhichRepresents"
-                                 >rico:hasContentWhichRepresents</html:a> and <html:a
-                                 href="#rico:hasContentWhichMainlyRepresents"
-                                 >rico:hasContentWhichMainlyRepresents</html:a>) were added as
-                              subproperties of rico:hasOrHadSubject and rico:hasOrHadMainSubject, in
-                              order to connect Records or Record Parts and the Things they
-                              represent</html:strong>. Variants of those properties were created in
-                           order to connect a Record Set and the Things that some or all of its
-                           members are about or represent. The inverse properties were also
-                           created.</html:li>
+                        <html:li>two properties (<html:a href="#rico:hasContentWhichRepresents"
+                              >rico:hasContentWhichRepresents</html:a> and <html:a
+                              href="#rico:hasContentWhichMainlyRepresents"
+                              >rico:hasContentWhichMainlyRepresents</html:a>) were added as
+                           subproperties of rico:hasOrHadSubject and rico:hasOrHadMainSubject, in
+                           order to connect Records or Record Parts and the Things they represent.
+                           Variants of those properties were created in order to connect a Record
+                           Set and the Things that some or all of its members are about or
+                           represent. The inverse properties were also created.</html:li>
                      </html:ul>
-                     <html:li>Besides, a new instance of skos:Concept and of
-                        rico:DocumentaryFormType was added in the vocabulary for documentary form
-                        types, to enable users to describe a IIIF manifest in a RiC-O knowledge
-                        graph.</html:li>
-                     <html:li>Finally, significant efforts were made since the release of RiC-O 0.2
-                        regarding the documentation of the ontology. In particular, <html:strong>the
-                           labels of each class and property (rdfs:label annotations) are now
-                           available in French and Spanish as well as in English</html:strong>. We
-                        would like to thank our French-speaking and Spanish-speaking colleagues,
-                        members or not of the ICA/EGAD group, who contributed to this translation
-                        work. In RiC-O 1.1, German labels were added to the 107 classes defined by
-                        the ontology, thanks to the work of several German-speaking members of
-                        ICA/EGAD.</html:li></html:li>
+                  </html:li>
+                  <html:li><html:strong>7 named individuals</html:strong>, all of which are
+                     instances of both skos:Concept and of, either rico:RecordSetType, or
+                     rico:DocumentaryFormType. Six of those indivivuals had been defined in RiC-O
+                     0.1. In RiC-O 1.1, a new individual, <html:a href="#IIIFManifest"
+                        >IIIFManifest</html:a>, instance of skos:Concept and of
+                     rico:DocumentaryFormType, was added, to enable users to describe a IIIF
+                     manifest in a RiC-O knowledge graph. Those individuals are part of two SKOS
+                     vocabularies, which have been available from v1.0 as separate files, in the
+                     modularized version of RiC-O.</html:li>
                </html:ul>
+               <html:p>Finally, significant efforts were made since the release of RiC-O 0.2
+                  regarding the documentation of the ontology. In particular, <html:strong>the
+                     labels of each class and property (rdfs:label annotations) are now available in
+                     French and Spanish as well as in English</html:strong>. We would like to thank
+                  our French-speaking and Spanish-speaking colleagues, members or not of the
+                  ICA/EGAD group, who contributed to this translation work. <html:strong>In RiC-O
+                     1.1, German labels were added to the 107 classes defined by the
+                     ontology</html:strong>, thanks to the work of several German-speaking members
+                  of ICA/EGAD.</html:p>
                <html:p><html:strong>RiC-O 1.1 therefore presents itself as an ontology richer than
                      RiC-O 0.2 and RiC-O 1.0, technically opening up new possibilities (with
                      transitive relations and shortcuts) and preserving or extending the semantics
@@ -1143,6 +1153,7 @@
                      a Thing, or represent a Thing, and this Thing, plus the inverse properties.
                      Adjusted the Spanish labels of several existing object properties.</html:li>
                   <html:li>2025, April 8th: Added German labels to the 107 RiC-O classes.</html:li>
+                  <html:li>2025, May 12: revised and updated the ontology metadata.</html:li>
                </html:ul>
             </html:div>
          </html:div>
