@@ -732,11 +732,11 @@
                            particular, this resulted in <html:strong>a significant set of object
                               properties in order to allow the use of rico:Proxy in such sequences
                               and hierarchies</html:strong>.</html:li>
-                        <html:li>two properties (<html:a href="#rico:hasContentWhichRepresents"
+                        <html:li><html:strong>two properties (<html:a href="#rico:hasContentWhichRepresents"
                               >rico:hasContentWhichRepresents</html:a> and <html:a
                               href="#rico:hasContentWhichMainlyRepresents"
                               >rico:hasContentWhichMainlyRepresents</html:a>) were added as
-                           subproperties of rico:hasOrHadSubject and rico:hasOrHadMainSubject, in
+                           subproperties of rico:hasOrHadSubject and rico:hasOrHadMainSubject</html:strong>, in
                            order to connect Records or Record Parts and the Things they represent.
                            Variants of those properties were created in order to connect a Record
                            Set and the Things that some or all of its members are about or
@@ -1046,30 +1046,30 @@
                   <html:li>2024, May 13: Added Richard Williamson's ORCID number, changed the
                      affiliation of T. Wildi and J. Krause-Bilvin, and set the date of v1.0.1 to May
                      13, 2024.</html:li>
-                  <html:li>2024, August 2: Removed global reflexivity from the object properties
-                     that rolify the Relation classes, to fix a source of inconsistency (they still
+                  <html:li><html:strong>2024, August 2: Removed global reflexivity from the object properties
+                     that rolify the Relation classes, to fix a source of inconsistency</html:strong> (they still
                      satisfy local reflexivity, i.e. reflexivity for each of these object properties
                      can be inferred for all individuals in their domain).</html:li>
                   <html:li>2024, September 2: Fixed the French label (rdfs:label) of the following
                      object properties: rico:isOrWasEnforcedBy; rico:isOrWasResponsibleForEnforcing;
                      rico:hasOrHadIntellectualPropertyRightsHolder; rico:hasOrHadController;
                      rico:isOrWasControllerOf; rico:isOrWasJurisdictionOf.</html:li>
-                  <html:li>2024, September 2: Moved to v1.0.2: updated the metadata, and added a
-                     owl:versionIRI to this new version. Moved v1.0.1 to the previous-versions
+                  <html:li>2024, September 2: Moved to v1.0.2: updated the metadata, and <html:strong>added a
+                     owl:versionIRI to this new version</html:strong>. Moved v1.0.1 to the previous-versions
                      subfolder.</html:li>
                   <html:li>2024, September 2: Fixed a typo in two of the EDTF examples for
                      rico:normalizedDateValue.</html:li>
                   <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note.
                      Changed the date of the release (it is 2024 September 4th now).</html:li>
-                  <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf; Changed
-                     hasOrHadCategory et al. into hasOrHadType</html:li>
+                  <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf; <html:strong>Changed
+                     hasOrHadCategory et al. into hasOrHadType</html:strong></html:li>
                   <html:li>2024, October 10: changed the French and/or Spanish labels of the
                      DemographicGroup class and of the 2 properties used with it,
                      hasOrHadDemographicGroup and isOrWasDemographicGroupOf.</html:li>
-                  <html:li>2024, October 14: added the following object properties under
+                  <html:li>2024, October 14: <html:strong>added the following object properties under
                      isDateAssociatedWith: isAccumulationDateOf,
                      isOrWasAccumulationDateOfAllMembersOf, isOrWasAccumulationDateOfSomeMembersOf
-                     (and its isOrWasAccumulationDateOfMostMembersOf subproperty), and also created
+                     (and its isOrWasAccumulationDateOfMostMembersOf subproperty)</html:strong>, and also created
                      the inverse properties under isAssociatedWithDate.</html:li>
                   <html:li>2024, October 16: started to move to v2.0.0: modified some of the
                      ontology metadata (versionIRI, versionInfo, rdfs:label, dcterms:title). Removed
@@ -1082,12 +1082,12 @@
                   <html:li>2024, October 22: went back from 2.0.0 to v1.1, following a decision made
                      by the RiC-O team today. Modified the ontology metadata (owl:versionInfo,
                      rdfs:label, dcterms:title). Renamed the file.</html:li>
-                  <html:li>2024, December 19: added relationHasDate and isDateAssociatedWithRelation
+                  <html:li>2024, December 19: <html:strong>added relationHasDate and isDateAssociatedWithRelation
                      object properties, to connect n-ary Relation classes and Dates. Added
                      hasOrganicProvenanceDate and isOrganicProvenanceDateOf object properties (with
                      property chain axioms to connect those properties to the
                      OrganicProvenanceRelation). Added property chain axioms to hasCreationDate,
-                     hasAccumulationDate, and to their inverse properties.</html:li>
+                     hasAccumulationDate, and to their inverse properties</html:strong>.</html:li>
                   <html:li>2024, December 23: added the following datatype properties:
                      accumulationDate, allMembersWithAccumulationDate,
                      someMembersWithAccumulationDate (subproperties of date);
@@ -1096,39 +1096,39 @@
                      someMembersWithCreationDate (subproperties of beginningDate);
                      mostMembersWithCreationDate (subproperty of someMembersWithCreationDate).
                      Narrowed the domain of creationDate.</html:li>
-                  <html:li>2024, December 24: added two new object properties, studiesOrStudiedAt
-                     and isOrWasAttendedByStudent, plus a StudyAtRelation n-ary Relation class, and
+                  <html:li>2024, December 24: <html:strong>added two new object properties, studiesOrStudiedAt
+                     and isOrWasAttendedByStudent, plus a StudyAtRelation n-ary Relation class</html:strong>, and
                      studyAtRelation_role accompanyning property.</html:li>
-                  <html:li>2025, January 17: added a 'recordResourceSourceOfInformation' datatype
+                  <html:li>2025, January 17: <html:strong>added a 'recordResourceSourceOfInformation' datatype
                      property, and the 'recordResourceHasSourceOfInformation' and
-                     'isSourceOfInformationOfRecordResource' object properties. These properties
+                     'isSourceOfInformationOfRecordResource' object properties</html:strong>. These properties
                      replace, as concerns Record Resource, the 'source' datatype property and the
                      'hasSource'/'isSourceOf' object properties, which had been created in RC-O 0.1
                      and removed in RiC-O 1.0.</html:li>
-                  <html:li>2025, January 17: added a 'note' datatype property, superproperty of the
+                  <html:li>2025, January 17: <html:strong>added a 'note' datatype property</html:strong>, superproperty of the
                      existing 'integrityNote', 'authenticityNote' and 'physicalCharacteristicsNote'
                      properties.</html:li>
-                  <html:li>2025, January 30: added a 'IIIFManifest' SKOS Concept, RiC-O Documentary
-                     Form Type, to the named individuals. Made it a concept of the vocabulary on
+                  <html:li>2025, January 30: <html:strong>added a 'IIIFManifest' SKOS Concept, RiC-O Documentary
+                     Form Type, to the named individuals</html:strong>. Made it a concept of the vocabulary on
                      documentary form types and a narrower concept of FindingAid.</html:li>
-                  <html:li>2025, February 19: changed definitions so that dates for destruction,
+                  <html:li>2025, February 19: <html:strong>changed definitions so that dates for destruction,
                      accumulation, creation and publication could be in the future. Added
                      hasMigrationDate, isMigrationDateOf and migrationDate. Restricted the domain of
-                     hasDestructionDate and of destructionDate</html:li>
+                     hasDestructionDate and of destructionDate</html:strong></html:li>
                   <html:li>2025, March 1st: fixed a bug (made isPublicationDateOf a subproperty of
-                     isDateAssociatedWith, instead of isBeginningDateOf). Added 'hasDerivationDate',
-                     'isDerivationDateOf' and 'derivationDate'. Changed the rdfs:subpropertyOf of
+                     isDateAssociatedWith, instead of isBeginningDateOf). <html:strong>Added 'hasDerivationDate',
+                     'isDerivationDateOf' and 'derivationDate'</html:strong>. Changed the rdfs:subpropertyOf of
                      hasMigrationDate, isMigrationDateOf and of migrationDate accordingly. Removed
                      the mention of Record Resource from the rdfs:comment of isMigrationDateOf and
                      migrationDate.</html:li>
-                  <html:li>2025, March 4th: introduced datatype properties rankInSequence and
+                  <html:li>2025, March 4th: <html:strong>introduced datatype properties rankInSequence and
                      rankInHierarchy, expanded the range of proxyIn to any RecordResource and
                      tweaked the definition of it and proxyFor accordingly, added an inverse
                      property hasProxy for proxyFor, added two new sub-properties proxyInRecord and
                      proxyInRecordSet of ProxyIn, introduced 36 object properties pertaining to use
                      of Proxy in sequences or hierarchies, and added one or two property chain
                      axioms involving rico:Proxy to a few object properties used to define sequences
-                     or hierarchies.</html:li>
+                     or hierarchies</html:strong>.</html:li>
                   <html:li>2025, March 6th: added a new object property 'isOrWasActiveAtDate' and an
                      inverse.</html:li>
                   <html:li>2025, March 13: added French and Spanish labels to the object properties
@@ -1144,16 +1144,16 @@
                   <html:li>2025, April 3rd: renamed the inverse property of 'isOrWasActiveAtDate',
                      adjusted the rdfs:comment of the two properties, added a chain property axiom
                      and French and Spanish labels.</html:li>
-                  <html:li>2025, April 5th: added hasContentWhichRepresents and
-                     hasContentWhichMainlyRepresents properties, with domain Record or Record Part,
+                  <html:li>2025, April 5th: <html:strong>added hasContentWhichRepresents and
+                     hasContentWhichMainlyRepresents properties</html:strong>, with domain Record or Record Part,
                      and the inverse properties.</html:li>
                   <html:li>2025, April 6th: Added the sentimentOrEmotionExpressed datatype property,
-                     with domain Record or Record Part. Added the object properties needed to
+                     with domain Record or Record Part. <html:strong>Added the object properties needed to
                      connect a Record Set, some or all of whose members have subject or main subject
-                     a Thing, or represent a Thing, and this Thing, plus the inverse properties.
+                     a Thing, or represent a Thing, and this Thing, plus the inverse properties</html:strong>.
                      Adjusted the Spanish labels of several existing object properties.</html:li>
-                  <html:li>2025, April 8th: Added German labels to the 107 RiC-O classes.</html:li>
-                  <html:li>2025, May 12: revised and updated the ontology metadata.</html:li>
+                  <html:li>2025, April 8th: <html:strong>Added German labels to the 107 RiC-O classes</html:strong>.</html:li>
+                  <html:li>2025, May 12th: revised and updated the ontology metadata.</html:li>
                </html:ul>
             </html:div>
          </html:div>
