@@ -752,8 +752,8 @@
                         >IIIFManifest</html:a>, instance of skos:Concept and of
                      rico:DocumentaryFormType, was added, to enable users to describe a IIIF
                      manifest in a RiC-O knowledge graph. Those individuals are part of two SKOS
-                     vocabularies, which have also been available from v1.0 as separate files, in the
-                     modularized version of RiC-O.</html:li>
+                     vocabularies, which have also been available from v1.0 as separate files, in
+                     the modularized version of RiC-O.</html:li>
                </html:ul>
                <html:p>Finally, significant efforts were made since the release of RiC-O 0.2
                   regarding the documentation of the ontology. In particular, <html:strong>the
@@ -1312,7 +1312,8 @@
       </skos:changeNote>
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
    </owl:AnnotationProperty>
-   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// --><!-- http://www.w3.org/2004/02/skos/core#broader -->
+   <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+   <!-- http://www.w3.org/2004/02/skos/core#broader -->
    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
       <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
       <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -30600,8 +30601,7 @@
       <skos:topConceptOf
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
       <skos:narrower
-         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest"
-      />
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest"/>
       <rdfs:label xml:lang="en">finding aid</rdfs:label>
       <rdfs:label xml:lang="fr">instrument de recherche</rdfs:label>
       <rdfs:label xml:lang="es">instrumento de descripción</rdfs:label>
@@ -30635,8 +30635,7 @@
       <skos:inScheme
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
       <skos:broader
-         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"
-      />
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
       <rdfs:label xml:lang="en">IIIF manifest</rdfs:label>
       <rdfs:label xml:lang="fr">manifeste IIIF</rdfs:label>
       <skos:changeNote>
