@@ -12,7 +12,7 @@ This folder contains **five files, which, when they are used together, are equiv
 
 - the *RiC-O_1-1_core.rdf* file. This file contains the specifications of all the RiC-O 1.1 components, except what concerns the n-ary Relation classes and the SKOS vocabularies and concepts.
 - the *RiC-O_1-1_relations.rdf* file. This file contains the specifications of the 49 RiC-O 1.1 n-ary Relation classes, of the three datatype properties which have domain these classes, of the 71 object properties which have domain or range these classes, and the declarations of the property chain axioms of the 119 shortcut object properties, in addition to their other features specified in the core file.
-- the *RiC_DocumentaryFormTypes_vocabulary.rdf* and the *RiC_RecordSetTypes_vocabulary.rdf* files, which define the SKOS vocabulary and a few SKOS concepts describing respectively Documentary Form Types and Record Set types.
+- the *RiC_DocumentaryFormTypes_vocabulary.rdf* and the *RiC_RecordSetTypes_vocabulary.rdf* files, which define the SKOS vocabularies and a few SKOS concepts describing respectively Documentary Form Types and Record Set types.
 
 
 This set of files has been generated from the RiC-O_1-1.rdf file. They may be in the future the reference files for RiC-O, since EGAD may consider easier to maintain the ontology this way. RiC-O is already a very dense ontology, whose size is about 1.7 Mb. If the ontology is further enriched with new components, or new assertions, such as mappings, or complete translations of its documentation, or new concepts for the vocabularies, it could prove much more practical to manage it in the form of a set of specialized files.
