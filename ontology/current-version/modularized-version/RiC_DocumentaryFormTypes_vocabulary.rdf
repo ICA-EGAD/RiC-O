@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
@@ -9,7 +9,6 @@
     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     <skos:ConceptScheme
         rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes">
         <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
@@ -54,7 +53,7 @@
         <dc:language>en</dc:language>
         <dc:language>fr</dc:language>
         <dc:language>es</dc:language>
-
+        <dcat:version>1.1</dcat:version>
         <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts
             Ontology. When the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of
             RiC-O would be released. The first one, consisting of a unique large OWL file, would
@@ -63,6 +62,12 @@
             individuals it defined and defining new individuals. So from December 2023, you can find
             the vocabulary on Documentary Form Types, either in the unique large OWL RiC-O file, or
             as a separate file. </skos:historyNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2025-05-14</dc:date>
+                <rdf:value xml:lang="en">Added a dcat:version property.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2025-01-30</dc:date>

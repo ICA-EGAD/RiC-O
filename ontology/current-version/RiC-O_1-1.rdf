@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns="https://www.ica.org/standards/RiC/ontology#"
    xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:dcterms="http://purl.org/dc/terms/" xmlns:html="http://www.w3.org/1999/xhtml"
-   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
@@ -65,7 +65,7 @@
             <html:p>RiC-O (Records in Contexts-Ontology) is an OWL ontology for describing archival
                record resources. As the third part of Records in Contexts standard, it is a formal
                representation of Records in Contexts Conceptual Model (RiC-CM). This version, which
-               is v1.0.2, is the latest official release. It is compliant with RiC-CM v1.0.</html:p>
+               is v1.1, is the latest official release. It is compliant with RiC-CM v1.0.</html:p>
             <html:p>The following diagram shows the main RiC-CM 1.0 entities and a few relations
                between them: <html:img
                   src="https://github.com/ICA-EGAD/RiC-O/blob/7bc6d5d59ecc85a4b901cc79d649ae50209fd69e/diagrams/diagrams_v1-0/RiC-CM-overview/diagram_RiC-CM-overview-RiC-v1-0.jpg?raw=true"
@@ -471,7 +471,7 @@
                         component.</html:li>
                      <html:li>information about possible mappings with other models or ontologies
                            (<html:a href="#rico:closeTo">rico:closeTo</html:a>, rarely used in this
-                        1.0.2 version)).</html:li>
+                        1.1 version)).</html:li>
                   </html:ul>
                   <html:p>Any change in the definition of a class or property made since December
                      2019 is documented using a skos:changeNote.</html:p>
@@ -518,7 +518,7 @@
       <owl:priorVersion
          rdf:resource="https://raw.githubusercontent.com/ICA-EGAD/RiC-O/master/ontology/previous-versions/RiC-O_v1-0-1_release/RiC-O_1-0-1.rdf"/>
       <owl:priorVersion rdf:resource="https://www.ica.org/standards/RiC/ontology/1.0.2"/>
-      <owl:versionInfo xml:lang="en">Version 1.1 - 2025-05-15.</owl:versionInfo>
+      <owl:versionInfo xml:lang="en">Version 1.1 - 2025-05-19.</owl:versionInfo>
       <skos:historyNote rdf:parseType="Literal">
          <html:div xml:lang="en">
             <html:div id="history-note">
@@ -1168,6 +1168,8 @@
                   <html:li>2025, April 8th: <html:strong>Added German labels to the 107 RiC-O
                         classes</html:strong>.</html:li>
                   <html:li>2025, May 12th: revised and updated the ontology metadata.</html:li>
+                  <html:li>2025, May 14th: added a dcat:version to the two skos:ConceptScheme named
+                     individuals.</html:li>
                </html:ul>
             </html:div>
          </html:div>
@@ -20531,6 +20533,10 @@
          shortcuts corresponding to this n-ary class.</skos:scopeNote>
    </owl:ObjectProperty>
    <!-- /////////////////////////////////////////////////////////////////////////////////////// // // Data Properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+   <!-- http://www.w3.org/ns/dcat#version-->
+   <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#version">
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat"/>
+   </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#accruals -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#accruals">
       <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -30519,9 +30525,16 @@
       <dc:language>fr</dc:language>
       <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for
          Documentary Form Types</dc:title>
+      <dcat:version>1.1</dcat:version>
       <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
       <rdfs:label xml:lang="es">Tipos documentales</rdfs:label>
       <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-05-14</dc:date>
+            <rdf:value xml:lang="en">Added a dcat:version property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2025-01-30</dc:date>
@@ -30666,9 +30679,16 @@
       <dc:language>fr</dc:language>
       <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for
          Record Set Types</dc:title>
+      <dcat:version>1.1</dcat:version>
       <rdfs:label xml:lang="en">Record Set Types</rdfs:label>
       <rdfs:label xml:lang="es">Tipos de agrupación documental</rdfs:label>
       <rdfs:label xml:lang="fr">Types d’ensembles d’objets informationnels</rdfs:label>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2025-05-14</dc:date>
+            <rdf:value xml:lang="en">Added a dcat:version property.</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
       <skos:changeNote>
          <rdf:Description>
             <dc:date>2023-12-13</dc:date>

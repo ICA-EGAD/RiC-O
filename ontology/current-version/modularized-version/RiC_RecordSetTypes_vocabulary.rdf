@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
     xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:voaf="http://purl.org/vocommons/voaf#"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
-    <skos:ConceptScheme
-        rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
+    xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <skos:ConceptScheme rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes">
         <rdfs:label xml:lang="en">Record Set Types</rdfs:label>
         <rdfs:label xml:lang="fr">Types d’ensembles d’objets informationnels</rdfs:label>
         <rdfs:label xml:lang="es">Tipos de agrupación documental</rdfs:label>
@@ -25,13 +22,14 @@
             RiC-O team from 2023 to 2024</dc:contributor>
         <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD
             and EGAD RiC-O team from 2016 to 2022</dc:contributor>
-        <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland),
-            member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
+        <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland), member of EGAD and
+            EGAD RiC-O team from 2023</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of EGAD from
             2012</dc:contributor>
         <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA),
             member of EGAD and EGAD RiC-O team from 2012 to 2022</dc:contributor>
-        <dc:contributor xml:lang="en">Tobias Wildi (docuteam, Switzerland), member of EGAD and EGAD RiC-O team from 2019</dc:contributor>
+        <dc:contributor xml:lang="en">Tobias Wildi (docuteam, Switzerland), member of EGAD and EGAD
+            RiC-O team from 2019</dc:contributor>
         <dc:contributor xml:lang="en">Richard David Williamson (National Archives of Norway), member
             of EGAD and of EGAD RiC-O team from 2024</dc:contributor>
         <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
@@ -49,30 +47,39 @@
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
         <dc:rights xml:lang="en">Copyright 2019-, International Council on Archives
             (ICA)</dc:rights>
-        <skos:definition xml:lang="en">A vocabulary that provides URIs for describing types
-            of RiC Record Sets.</skos:definition>
+        <skos:definition xml:lang="en">A vocabulary that provides URIs for describing types of RiC
+            Record Sets.</skos:definition>
         <dc:language>en</dc:language>
         <dc:language>fr</dc:language>
         <dc:language>es</dc:language>
+        <dcat:version>1.1</dcat:version>
         <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts
-            Ontology. When the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
-            would be released. The first one, consisting of a unique large OWL file, would remain the
-            reference one. RiC-0 1.0 would also be provided as a set of files, in order to address
-            specific needs, e.g. using only the core of the ontology, or using only the individuals it
-            defined and defining new individuals. So from December 2023, you can find the vocabulary on
-            Record Set Types, either in the unique large OWL RiC-O file, or as a separate file. </skos:historyNote>
-        <skos:changeNote
-            >
+            Ontology. When the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of
+            RiC-O would be released. The first one, consisting of a unique large OWL file, would
+            remain the reference one. RiC-0 1.0 would also be provided as a set of files, in order
+            to address specific needs, e.g. using only the core of the ontology, or using only the
+            individuals it defined and defining new individuals. So from December 2023, you can find
+            the vocabulary on Record Set Types, either in the unique large OWL RiC-O file, or as a
+            separate file. </skos:historyNote>
+        <skos:changeNote>
             <rdf:Description>
-                <dc:date>2024-05-13</dc:date>
-                <rdf:value xml:lang="en">Added the name and ORCID of Richard Williamson to the contributors, changed the affiliation of J. Krause-Bilvin and T. Wildi.</rdf:value>
+                <dc:date>2025-05-14</dc:date>
+                <rdf:value xml:lang="en">Added a dcat:version property.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:changeNote
-            >
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-05-13</dc:date>
+                <rdf:value xml:lang="en">Added the name and ORCID of Richard Williamson to the
+                    contributors, changed the affiliation of J. Krause-Bilvin and T.
+                    Wildi.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-12-13</dc:date>
-                <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added dc:language, a history note and a scope note.</rdf:value>
+                <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added
+                    dc:language, a history note and a scope note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -88,27 +95,27 @@
             </rdf:Description>
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">For now this vocabulary only defines four top concepts; it
-            should hopefully be completed later. The concepts defined in this vocabulary can be used in
-            combination with RiC-O classes and properties, whenever necessary and appropriate, to
-            assign a record set type to a Record Set, using the rico:hasRecordSetType object property,
-            or its inverse one. Each concept is both defined as a skos:Concept and a
+            should hopefully be completed later. The concepts defined in this vocabulary can be used
+            in combination with RiC-O classes and properties, whenever necessary and appropriate, to
+            assign a record set type to a Record Set, using the rico:hasRecordSetType object
+            property, or its inverse one. Each concept is both defined as a skos:Concept and a
             rico:RecordSetType, so that it is possible to extend the classic definition of such
             concepts using RiC-O properties. For example, you can use rico:history, rico:date, or
-            rico:isAssociatedWithPlace, rico:precedesInTime, if you consider a record set type as being
-            a historical entity, known and used in some known space or time region.</skos:scopeNote>
-      
-        
-      
+            rico:isAssociatedWithPlace, rico:precedesInTime, if you consider a record set type as
+            being a historical entity, known and used in some known space or time
+            region.</skos:scopeNote>
         <skos:hasTopConcept
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
         <skos:hasTopConcept
-            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"
-        />
-        <skos:hasTopConcept rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
-        <skos:hasTopConcept rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
+        <skos:hasTopConcept
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+        <skos:hasTopConcept
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
     </skos:ConceptScheme>
     <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection -->
-    <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
+    <skos:Concept
+        rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">collection</rdfs:label>
         <rdfs:label xml:lang="fr">collection</rdfs:label>
@@ -129,8 +136,9 @@
             basis of some common characteristic without regard to the provenance of those documents.
             Not to be confused with an archival fonds. (From ICA ISAD(G))</skos:definition>
         <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        </skos:Concept>
+        <skos:topConceptOf
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+    </skos:Concept>
     <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File -->
     <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
@@ -154,10 +162,11 @@
             relate to the same subject, activity, or transaction. A file is usually the basic unit
             within a record series. (From ICA ISAD(G))</skos:definition>
         <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        </skos:Concept>
+        <skos:topConceptOf
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+    </skos:Concept>
     <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds -->
-       <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds">
+    <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds">
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">fonds</rdfs:label>
         <rdfs:label xml:lang="fr">fonds</rdfs:label>
@@ -179,11 +188,12 @@
             corporate body in the course of that creator's activities and functions. (From ICA
             ISAD(G))</skos:definition>
         <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </skos:Concept>
     <!-- https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series -->
     <skos:Concept rdf:about="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series">
-      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
         <rdfs:label xml:lang="en">series</rdfs:label>
         <rdfs:label xml:lang="fr">série organique</rdfs:label>
         <rdfs:label xml:lang="es">serie</rdfs:label>
@@ -205,7 +215,8 @@
             arising out of their creation, receipt, or use. A series is also known as a records
             series. (From ICA ISAD(G))</skos:definition>
         <skos:inScheme rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
-        <skos:topConceptOf rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
+        <skos:topConceptOf
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes"/>
     </skos:Concept>
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSetType">
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
