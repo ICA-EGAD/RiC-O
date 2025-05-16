@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/051211">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl005"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl008"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:title xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI : MC/RE/XXI/25 - MC/RE/XXI/27</rico:title>
+      <rdfs:label xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI : MC/RE/XXI/25 - MC/RE/XXI/27</rdfs:label>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasPublisher rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</rico:publicationDate>
+      <rico:history rdf:parseType="Literal">
+         <html:div>
+            <html:h4>auteur(s)</html:h4>
+            <html:p xml:lang="fr">Minutier central des notaires de Paris, notices préparées par Thierry Boudignon, chargé d'études documentaires, et Marie-France Nivet, technicienne de recherche, puis Marie-Françoise Limon-Bonnet, conservateur général du patrimoine, responsable du Minutier central des notaires de Paris.</html:p>
+         </html:div>
+         <html:div>
+            <html:h4>mention d’édition</html:h4>
+            <html:p xml:lang="fr">Deuxième édition électronique</html:p>
+         </html:div>
+      </rico:history>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2016-07</rico:date>
+            <rico:generalDescription xml:lang="fr">Corrections et ajouts en vue de la mise en ligne en SIV, M.-F. Limon-Bonnet</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-051211"/>
+      <rico:hasOrHadDigitalInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051211-i1">
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/051211"/>
+            <rico:title xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI : MC/RE/XXI/25 - MC/RE/XXI/27</rico:title>
+            <rdfs:label xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI : MC/RE/XXI/25 - MC/RE/XXI/27</rdfs:label>
+            <rico:history xml:lang="fr">23 décembre 2004</rico:history>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_051211</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_051211"/>
+         </rico:Instantiation>
+      </rico:hasOrHadDigitalInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/top-051211">
+      <rico:isOrWasDescribedBy rdf:resource="record/051211"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+      <rico:title xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI</rico:title>
+      <rdfs:label xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+      <rico:date xml:lang="fr">27 mai 1882 - 3 mars 1891</rico:date>
+      <rico:hasOrHadAllMembersWithLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+      <rico:hasOrganicProvenance rdf:resource="agent/010148"/>
+      <rico:hasOrganicProvenance rdf:resource="agent/010330"/>
+      <rico:conditionsOfAccess rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:b>Minutes et répertoires :</html:b> la loi 2008-696 du 15 juillet 2008 relative aux archives a fixé à 75 ans à compter de la date de l'acte, ou à 25 ans à compter de la date du décès de l'intéressé si ce délai est plus bref, le délai de communication des minutes et répertoires des notaires ; ce délai est porté à 100 ans à compter de la date de l'acte si le document se rapporte à un mineur (code du Patrimoine, articles L213-2, 4e d et 5e).</html:p>
+            <html:p>
+               <html:b>Autres documents de l'étude (dossiers de clients, comptabilité...) :</html:b> s'agissant d'archives privées, ces documents sont communicables selon les modalités fixées par le déposant ou le donateur.</html:p>
+            <html:p>Certains documents ne sont pas accessibles sous leur forme originale en raison de leur mauvais état de conservation.</html:p>
+         </html:div>
+      </rico:conditionsOfAccess>
+      <rico:conditionsOfUse rdf:parseType="Literal">
+         <html:p xml:lang="fr">Les documents peuvent être librement reproduits à usage privé du copiste, dans le respect des textes relatifs à la réutilisation des informations publiques.</html:p>
+      </rico:conditionsOfUse>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Images des répertoires de l'étude XXI<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_041643">Archives de l'étude XXI</html:a>
+            </html:p>
+         </html:div>
+      </rico:scopeAndContent>
+      <rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d3nd8f3jla--to36ja96m31q"/>
+      <rico:hasOrHadInstantiation>
+         <rico:Instantiation rdf:about="instantiation/top-051211-i1">
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-051211"/>
+            <rico:identifier>MC/RE/XXI/25 - MC/RE/XXI/27</rico:identifier>
+            <rico:title xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI</rico:title>
+            <rdfs:label xml:lang="fr">Images des répertoires du notaire Martin Jules Léon Vallée pour l'étude XXI</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+            <rico:date xml:lang="fr">27 mai 1882 - 3 mars 1891</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">3 registres</html:p>
+            </rico:instantiationExtent>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+            <rico:hasOrganicProvenance rdf:resource="agent/010148"/>
+            <rico:hasOrganicProvenance rdf:resource="agent/010330"/>
+            <rico:conditionsOfAccess rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:p>
+                     <html:b>Minutes et répertoires :</html:b> la loi 2008-696 du 15 juillet 2008 relative aux archives a fixé à 75 ans à compter de la date de l'acte, ou à 25 ans à compter de la date du décès de l'intéressé si ce délai est plus bref, le délai de communication des minutes et répertoires des notaires ; ce délai est porté à 100 ans à compter de la date de l'acte si le document se rapporte à un mineur (code du Patrimoine, articles L213-2, 4e d et 5e).</html:p>
+                  <html:p>
+                     <html:b>Autres documents de l'étude (dossiers de clients, comptabilité...) :</html:b> s'agissant d'archives privées, ces documents sont communicables selon les modalités fixées par le déposant ou le donateur.</html:p>
+                  <html:p>Certains documents ne sont pas accessibles sous leur forme originale en raison de leur mauvais état de conservation.</html:p>
+               </html:div>
+            </rico:conditionsOfAccess>
+            <rico:conditionsOfUse rdf:parseType="Literal">
+               <html:p xml:lang="fr">Les documents peuvent être librement reproduits à usage privé du copiste, dans le respect des textes relatifs à la réutilisation des informations publiques.</html:p>
+            </rico:conditionsOfUse>
+            <rico:history rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:h4>Informations sur les modalités d’entrée</html:h4>
+                  <html:p>Répertoires versés aux Archives nationales en 1983</html:p>
+               </html:div>
+            </rico:history>
+         </rico:Instantiation>
+      </rico:hasOrHadInstantiation>
+      <rico:directlyIncludes rdf:resource="recordResource/051211-c1nnlr73n458-1syhzmh21plu6"/>
+      <rico:directlyIncludes rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+      <rico:directlyIncludes rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73n458-1syhzmh21plu6">
+      <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-051211"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+      <rico:title xml:lang="fr">Répertoire chronologique pour la période du 27 mai au 9 décembre 1882</rico:title>
+      <rdfs:label xml:lang="fr">Répertoire chronologique pour la période du 27 mai au 9 décembre 1882</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:endDate>
+      <rico:date xml:lang="fr">27 mai - 9 décembre 1882</rico:date>
+      <rico:structure rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+         </html:div>
+      </rico:structure>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le registre contient aussi le répertoire des notaires <html:b>François Le Monnyer</html:b> pour la période du 13 août 1864 au 7 mai 1874, <html:b>Stanislas Emile Baudoin</html:b> pour la période du 12 mai 1874 au 13 novembre 1879, et <html:b>Léon André Thion de la Chaume</html:b> pour la période du 14 novembre 1879 au 24 mai 1882.</html:p>
+            <html:p>Le répertoire contient les informations suivantes : 1. le n° de l'acte dans l'année ; 2. date du jour ; 3. nature de l'acte passé en brevet ; 4. nature de l'acte passé en minute ; 5. nom, prénom, domicile des parties, indication sur la situation et les prix des biens ; 6. date d'enregistrement de l'acte ; 7. droits d'enregistrement.</html:p>
+            <html:p>
+               <html:b>Attention : seuls les actes passés en</html:b>
+               <html:b>
+                  <html:i>minute</html:i>
+               </html:b>
+               <html:b>sont conservés ; les actes mentionnés dans le répertoire comme passés en simple</html:b>
+               <html:b>
+                  <html:i>brevet</html:i>
+               </html:b>
+               <html:b>(colonne 3) ne sont pas conservés par les notaires et ne sont donc pas versés au Minutier (ils sont remis aux clients).</html:b>
+            </html:p>
+         </html:div>
+      </rico:scopeAndContent>
+      <dc:type>répertoire</dc:type>
+      <rico:type>répertoire</rico:type>
+      <rico:hasOrHadInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73n458-1syhzmh21plu6-i1">
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73n458-1syhzmh21plu6"/>
+            <rico:identifier>MC/RE/XXI/25</rico:identifier>
+            <rico:title xml:lang="fr">Répertoire chronologique pour la période du 27 mai au 9 décembre 1882</rico:title>
+            <rdfs:label xml:lang="fr">Répertoire chronologique pour la période du 27 mai au 9 décembre 1882</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:endDate>
+            <rico:date xml:lang="fr">27 mai - 9 décembre 1882</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">Le répertoire comporte 16 feuillets et fait partie d'un registre de 252 feuillets de papier manuscrits, hauteur 35,5 x largeur 25,5 cm, composé de plusieurs cahiers cotés et paraphés par le juge suppléant au tribunal civil de première instance du département de la Seine conformément à la loi du 25 ventôse an XI. Le registre est en bon état.</html:p>
+            </rico:instantiationExtent>
+            <rico:structure rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+               </html:div>
+            </rico:structure>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73n458-1syhzmh21plu6"/>
+         </rico:Instantiation>
+      </rico:hasOrHadInstantiation>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73ngho--15vrqavrjuxma">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73n458-1syhzmh21plu6"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 27 mai au 9 décembre 1882</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 27 mai au 9 décembre 1882</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:endDate>
+            <rico:date xml:lang="fr">27 mai - 9 décembre 1882</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ngho--15vrqavrjuxma-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ngho--15vrqavrjuxma"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73ngho--15vrqavrjuxma-i2"/>
+                  <rico:identifier>237 r°-252 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 27 mai au 9 décembre 1882</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 27 mai au 9 décembre 1882</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:endDate>
+                  <rico:date xml:lang="fr">27 mai - 9 décembre 1882</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">16 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73ngho--15vrqavrjuxma"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ngho--15vrqavrjuxma-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ngho--15vrqavrjuxma"/>
+                  <rico:identifier>237 r°-252 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73ngho--15vrqavrjuxma-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06733_L.jpg#DAFANCH96_021MIC06749_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73njks-aa6cnq2z3387">
+      <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-051211"/>
+      <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73n458-1syhzmh21plu6"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+      <rico:title xml:lang="fr">Répertoire chronologique pour la période du 9 décembre 1882 au 3 mars 1891</rico:title>
+      <rdfs:label xml:lang="fr">Répertoire chronologique pour la période du 9 décembre 1882 au 3 mars 1891</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+      <rico:date xml:lang="fr">9 décembre 1882 - 3 mars 1891</rico:date>
+      <rico:structure rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+         </html:div>
+      </rico:structure>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le répertoire contient les informations suivantes : 1. le n° de l'acte dans l'année ; 2. date du jour ; 3. nature de l'acte passé en brevet ; 4. nature de l'acte passé en minute ; 5. nom, prénom, domicile des parties, indication sur la situation et les prix des biens ; 6. date d'enregistrement de l'acte ; 7. droits d'enregistrement.</html:p>
+            <html:p>
+               <html:b>Attention : seuls les actes passés en</html:b>
+               <html:b>
+                  <html:i>minute</html:i>
+               </html:b>
+               <html:b>sont conservés ; les actes mentionnés dans le répertoire comme passés en simple</html:b>
+               <html:b>
+                  <html:i>brevet</html:i>
+               </html:b>
+               <html:b>(colonne 3) ne sont pas conservés par les notaires et ne sont donc pas versés au Minutier (ils sont remis aux clients).</html:b>
+            </html:p>
+         </html:div>
+      </rico:scopeAndContent>
+      <dc:type>répertoire</dc:type>
+      <rico:type>répertoire</rico:type>
+      <rico:hasOrHadInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73njks-aa6cnq2z3387-i1">
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:identifier>MC/RE/XXI/26</rico:identifier>
+            <rico:title xml:lang="fr">Répertoire chronologique pour la période du 9 décembre 1882 au 3 mars 1891</rico:title>
+            <rdfs:label xml:lang="fr">Répertoire chronologique pour la période du 9 décembre 1882 au 3 mars 1891</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+            <rico:date xml:lang="fr">9 décembre 1882 - 3 mars 1891</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">Un registre de 281 feuillets de papier manuscrits, hauteur 35,5 x largeur 25 cm, composé de plusieurs cahiers cotés et paraphés par le juge au tribunal civil de première instance du département de la Seine conformément à la loi du 25 ventôse an XI. Le registre est en bon état.</html:p>
+            </rico:instantiationExtent>
+            <rico:structure rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+               </html:div>
+            </rico:structure>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73njks-aa6cnq2z3387"/>
+         </rico:Instantiation>
+      </rico:hasOrHadInstantiation>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73nmnw--5v1j36ezu5vo">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73npr0-50tfy04o30g0"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 9 au 30 décembre 1882</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 9 au 30 décembre 1882</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-30</rico:endDate>
+            <rico:date xml:lang="fr">9 décembre - 30 décembre 1882</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nmnw--5v1j36ezu5vo-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nmnw--5v1j36ezu5vo"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73nmnw--5v1j36ezu5vo-i2"/>
+                  <rico:identifier>1 r°-2 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 9 au 30 décembre 1882</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 9 au 30 décembre 1882</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-09</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-12-30</rico:endDate>
+                  <rico:date xml:lang="fr">9 décembre - 30 décembre 1882</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">2 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73nmnw--5v1j36ezu5vo"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nmnw--5v1j36ezu5vo-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nmnw--5v1j36ezu5vo"/>
+                  <rico:identifier>1 r°-2 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73nmnw--5v1j36ezu5vo-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06754_L.jpg#DAFANCH96_021MIC06755_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73npr0-50tfy04o30g0">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73nmnw--5v1j36ezu5vo"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73nudo-fleae0yqubr0"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1883</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1883</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1883</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73npr0-50tfy04o30g0-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73npr0-50tfy04o30g0"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73npr0-50tfy04o30g0-i2"/>
+                  <rico:identifier>2 r°-25 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1883</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1883</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1883</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">24 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73npr0-50tfy04o30g0"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73npr0-50tfy04o30g0-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73npr0-50tfy04o30g0"/>
+                  <rico:identifier>2 r°-25 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73npr0-50tfy04o30g0-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06755_L.jpg#DAFANCH96_021MIC06778_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73nudo-fleae0yqubr0">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73npr0-50tfy04o30g0"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73nxgs-1sy3nuugqjni4"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1884</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1884</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1884</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nudo-fleae0yqubr0-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nudo-fleae0yqubr0"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73nudo-fleae0yqubr0-i2"/>
+                  <rico:identifier>25 r°-54 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1884</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1884</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1884-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1884</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">30 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73nudo-fleae0yqubr0"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nudo-fleae0yqubr0-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nudo-fleae0yqubr0"/>
+                  <rico:identifier>25 r°-54 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73nudo-fleae0yqubr0-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06778_L.jpg#DAFANCH96_021MIC06808_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73nxgs-1sy3nuugqjni4">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73nudo-fleae0yqubr0"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73o0jw-cl6dwx5q5lis"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1885</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1885</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1885-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1885-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1885</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nxgs-1sy3nuugqjni4-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nxgs-1sy3nuugqjni4"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73nxgs-1sy3nuugqjni4-i2"/>
+                  <rico:identifier>54 r°-83 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1885</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1885</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1885-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1885-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1885</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">30 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73nxgs-1sy3nuugqjni4"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73nxgs-1sy3nuugqjni4-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73nxgs-1sy3nuugqjni4"/>
+                  <rico:identifier>54 r°-83 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73nxgs-1sy3nuugqjni4-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06808_L.jpg#DAFANCH96_021MIC06839_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73o0jw-cl6dwx5q5lis">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73nxgs-1sy3nuugqjni4"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73o2v8-1t97b557fcgzi"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1886</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1886</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1886</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o0jw-cl6dwx5q5lis-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o0jw-cl6dwx5q5lis"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73o0jw-cl6dwx5q5lis-i2"/>
+                  <rico:identifier>83 r°-112 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1886</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1886</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1886-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1886</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">30 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73o0jw-cl6dwx5q5lis"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o0jw-cl6dwx5q5lis-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o0jw-cl6dwx5q5lis"/>
+                  <rico:identifier>83 r°-112 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73o0jw-cl6dwx5q5lis-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06839_L.jpg#DAFANCH96_021MIC06869_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73o2v8-1t97b557fcgzi">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73o0jw-cl6dwx5q5lis"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73o5yc--1u12qcjmlfj0r"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1887</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1887</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-01-03</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-12-31</rico:endDate>
+            <rico:date xml:lang="fr">3 janvier - 31 décembre 1887</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o2v8-1t97b557fcgzi-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o2v8-1t97b557fcgzi"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73o2v8-1t97b557fcgzi-i2"/>
+                  <rico:identifier>112 r°-149 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1887</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1887</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-01-03</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1887-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">3 janvier - 31 décembre 1887</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">38 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73o2v8-1t97b557fcgzi"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o2v8-1t97b557fcgzi-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o2v8-1t97b557fcgzi"/>
+                  <rico:identifier>112 r°-149 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73o2v8-1t97b557fcgzi-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06869_L.jpg#DAFANCH96_021MIC06908_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73o5yc--1u12qcjmlfj0r">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73o2v8-1t97b557fcgzi"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73o91g--g9woo0dnhhze"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1888</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1888</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1888-01-03</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1888-12-31</rico:endDate>
+            <rico:date xml:lang="fr">3 janvier - 31 décembre 1888</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o5yc--1u12qcjmlfj0r-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o5yc--1u12qcjmlfj0r"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73o5yc--1u12qcjmlfj0r-i2"/>
+                  <rico:identifier>149 v°-189 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1888</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 3 janvier au 31 décembre 1888</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1888-01-03</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1888-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">3 janvier - 31 décembre 1888</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">41 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73o5yc--1u12qcjmlfj0r"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o5yc--1u12qcjmlfj0r-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o5yc--1u12qcjmlfj0r"/>
+                  <rico:identifier>149 v°-189 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73o5yc--1u12qcjmlfj0r-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06908_L.jpg#DAFANCH96_021MIC06948_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73o91g--g9woo0dnhhze">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73o5yc--1u12qcjmlfj0r"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73ocwc--18z3l300rvop9"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1889</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1889</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1889</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o91g--g9woo0dnhhze-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o91g--g9woo0dnhhze"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73o91g--g9woo0dnhhze-i2"/>
+                  <rico:identifier>189 r°-228 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1889</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1889</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1889</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">40 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73o91g--g9woo0dnhhze"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73o91g--g9woo0dnhhze-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73o91g--g9woo0dnhhze"/>
+                  <rico:identifier>189 r°-228 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73o91g--g9woo0dnhhze-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06948_L.jpg#DAFANCH96_021MIC06988_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73ocwc--18z3l300rvop9">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73o91g--g9woo0dnhhze"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73ofzg-7oxc561w74se"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1890</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1890</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-12-31</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 31 décembre 1890</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ocwc--18z3l300rvop9-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ocwc--18z3l300rvop9"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73ocwc--18z3l300rvop9-i2"/>
+                  <rico:identifier>228 r°-272 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1890</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 31 décembre 1890</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-12-31</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 31 décembre 1890</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">45 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73ocwc--18z3l300rvop9"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ocwc--18z3l300rvop9-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ocwc--18z3l300rvop9"/>
+                  <rico:identifier>228 r°-272 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73ocwc--18z3l300rvop9-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC06988_L.jpg#DAFANCH96_021MIC07034_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73ofzg-7oxc561w74se">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73ocwc--18z3l300rvop9"/>
+            <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 3 mars 1891</rico:title>
+            <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 3 mars 1891</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-01-02</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+            <rico:date xml:lang="fr">2 janvier - 3 mars 1891</rico:date>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ofzg-7oxc561w74se-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ofzg-7oxc561w74se"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73ofzg-7oxc561w74se-i2"/>
+                  <rico:identifier>273 r°-280 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 3 mars 1891</rico:title>
+                  <rdfs:label xml:lang="fr">Liste chronologique des actes pour la période du 2 janvier au 3 mars 1891</rdfs:label>
+                  <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-01-02</rico:beginningDate>
+                  <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1891-03-03</rico:endDate>
+                  <rico:date xml:lang="fr">2 janvier - 3 mars 1891</rico:date>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">8 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73ofzg-7oxc561w74se"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ofzg-7oxc561w74se-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ofzg-7oxc561w74se"/>
+                  <rico:identifier>273 r°-280 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73ofzg-7oxc561w74se-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07034_L.jpg#DAFANCH96_021MIC07042_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc">
+      <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-051211"/>
+      <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73njks-aa6cnq2z3387"/>
+      <rico:title xml:lang="fr">Répertoire alphabétique des clients pour la période du 27 mai 1882 au 31 décembre 1889</rico:title>
+      <rdfs:label xml:lang="fr">Répertoire alphabétique des clients pour la période du 27 mai 1882 au 31 décembre 1889</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-12-31</rico:endDate>
+      <rico:date xml:lang="fr">27 mai 1882 - 31 décembre 1889</rico:date>
+      <rico:structure rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+         </html:div>
+      </rico:structure>
+      <rico:scopeAndContent rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>Le registre contient aussi les répertoires alphabétiques des clients des notaires <html:b>François Le Monnyer</html:b>pour la période du 13 août 1864 au 7 mai 1874, <html:b>Stanislas Emile Baudoin</html:b> pour la période du 12 mai 1874 au 13 novembre 1879, et <html:b>Léon André Thion de la Chaume</html:b> pour la période du du 14 novembre 1879 au 24 mai 1882.</html:p>
+            <html:p>Le répertoire contient les informations suivantes : 1. noms des parties ; 2. nature des actes ; 3. noms des parties ; 4. dates des actes.</html:p>
+            <html:p>
+               <html:b>Attention : seuls les actes passés en</html:b>
+               <html:b>
+                  <html:i>minute</html:i>
+               </html:b>
+               <html:b>sont conservés ; les actes mentionnés dans le répertoire comme passés en simple</html:b>
+               <html:b>
+                  <html:i>brevet</html:i>
+               </html:b>
+               <html:b>(colonne 3) ne sont pas conservés par les notaires et ne sont donc pas versés au Minutier (ils sont remis aux clients).</html:b>
+            </html:p>
+         </html:div>
+      </rico:scopeAndContent>
+      <dc:type>répertoire</dc:type>
+      <rico:type>répertoire</rico:type>
+      <rico:hasOrHadInstantiation>
+         <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oj2k--8gajloh1m2cc-i1">
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:identifier>MC/RE/XXI/27</rico:identifier>
+            <rico:title xml:lang="fr">Répertoire alphabétique des clients pour la période du 27 mai 1882 au 31 décembre 1889</rico:title>
+            <rdfs:label xml:lang="fr">Répertoire alphabétique des clients pour la période du 27 mai 1882 au 31 décembre 1889</rdfs:label>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1882-05-27</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1889-12-31</rico:endDate>
+            <rico:date xml:lang="fr">27 mai 1882 - 31 décembre 1889</rico:date>
+            <rico:instantiationExtent rdf:parseType="Literal">
+               <html:p xml:lang="fr">Le répertoire comporte 98 feuillets et fait partie d'un registre de 310 feuillets de papier manuscrits, hauteur 32,5 x largeur 22 cm. Le registre n'est pas en bon état. La reliure est à refaire. De nombreux feuillets sont tachés ou déchirés.</html:p>
+            </rico:instantiationExtent>
+            <rico:structure rdf:parseType="Literal">
+               <html:div xml:lang="fr">
+                  <html:p>Registre folioté en 2003 (foliotation non visible à l'écran)</html:p>
+               </html:div>
+            </rico:structure>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73oj2k--8gajloh1m2cc"/>
+         </rico:Instantiation>
+      </rico:hasOrHadInstantiation>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73oldw-1hr8cozhsoozx">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73ooh0-1yes08e17zjz"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre A</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre A</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oldw-1hr8cozhsoozx-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oldw-1hr8cozhsoozx"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73oldw-1hr8cozhsoozx-i2"/>
+                  <rico:identifier>8 v°-10 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre A</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre A</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">3 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73oldw-1hr8cozhsoozx"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oldw-1hr8cozhsoozx-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oldw-1hr8cozhsoozx"/>
+                  <rico:identifier>8 v°-10 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73oldw-1hr8cozhsoozx-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07045_L.jpg#DAFANCH96_021MIC07056_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73ooh0-1yes08e17zjz">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73oldw-1hr8cozhsoozx"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73ork4-1feqbj0ba1im7"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre B</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre B</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ooh0-1yes08e17zjz-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ooh0-1yes08e17zjz"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73ooh0-1yes08e17zjz-i2"/>
+                  <rico:identifier>34 v°-43 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre B</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre B</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">10 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73ooh0-1yes08e17zjz"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ooh0-1yes08e17zjz-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ooh0-1yes08e17zjz"/>
+                  <rico:identifier>34 v°-43 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73ooh0-1yes08e17zjz-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07057_L.jpg#DAFANCH96_021MIC07089_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73ork4-1feqbj0ba1im7">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73ooh0-1yes08e17zjz"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73oun8-z9ifs1ua07j9"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre C</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre C</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ork4-1feqbj0ba1im7-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ork4-1feqbj0ba1im7"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73ork4-1feqbj0ba1im7-i2"/>
+                  <rico:identifier>65 r°-73 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre C</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre C</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">9 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73ork4-1feqbj0ba1im7"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73ork4-1feqbj0ba1im7-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73ork4-1feqbj0ba1im7"/>
+                  <rico:identifier>65 r°-73 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73ork4-1feqbj0ba1im7-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07090_L.jpg#DAFANCH96_021MIC07120_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73oun8-z9ifs1ua07j9">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73ork4-1feqbj0ba1im7"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73oxqc--1jj67s6tv2xi3"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre D</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre D</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oun8-z9ifs1ua07j9-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oun8-z9ifs1ua07j9"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73oun8-z9ifs1ua07j9-i2"/>
+                  <rico:identifier>93 v°-101 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre D</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre D</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">9 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73oun8-z9ifs1ua07j9"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oun8-z9ifs1ua07j9-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oun8-z9ifs1ua07j9"/>
+                  <rico:identifier>93 v°-101 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73oun8-z9ifs1ua07j9-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07120_L.jpg#DAFANCH96_021MIC07147_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73oxqc--1jj67s6tv2xi3">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73oun8-z9ifs1ua07j9"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73p0tg--1wgoptj9beq97"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre E</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre E</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oxqc--1jj67s6tv2xi3-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oxqc--1jj67s6tv2xi3"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73oxqc--1jj67s6tv2xi3-i2"/>
+                  <rico:identifier>104 v°-105 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre E</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre E</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">2 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73oxqc--1jj67s6tv2xi3"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73oxqc--1jj67s6tv2xi3-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73oxqc--1jj67s6tv2xi3"/>
+                  <rico:identifier>104 v°-105 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73oxqc--1jj67s6tv2xi3-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07148_L.jpg#DAFANCH96_021MIC07151_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73p0tg--1wgoptj9beq97">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73oxqc--1jj67s6tv2xi3"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73p3wk--65jngyu93tkx"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre F</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre F</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p0tg--1wgoptj9beq97-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p0tg--1wgoptj9beq97"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73p0tg--1wgoptj9beq97-i2"/>
+                  <rico:identifier>115 v°-119 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre F</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre F</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">5 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73p0tg--1wgoptj9beq97"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p0tg--1wgoptj9beq97-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p0tg--1wgoptj9beq97"/>
+                  <rico:identifier>115 v°-119 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73p0tg--1wgoptj9beq97-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07152_L.jpg#DAFANCH96_021MIC07165_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73p3wk--65jngyu93tkx">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73p0tg--1wgoptj9beq97"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73p6zo--marj7vc812or"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre G</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre G</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p3wk--65jngyu93tkx-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p3wk--65jngyu93tkx"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73p3wk--65jngyu93tkx-i2"/>
+                  <rico:identifier>135 v°-141 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre G</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre G</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">7 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73p3wk--65jngyu93tkx"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p3wk--65jngyu93tkx-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p3wk--65jngyu93tkx"/>
+                  <rico:identifier>135 v°-141 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73p3wk--65jngyu93tkx-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07166_L.jpg#DAFANCH96_021MIC07188_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73p6zo--marj7vc812or">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73p3wk--65jngyu93tkx"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73pa2s-r1xu8y5ro92d"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre H</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre H</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p6zo--marj7vc812or-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p6zo--marj7vc812or"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73p6zo--marj7vc812or-i2"/>
+                  <rico:identifier>148 v°-150 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre H</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre H</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">3 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73p6zo--marj7vc812or"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73p6zo--marj7vc812or-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73p6zo--marj7vc812or"/>
+                  <rico:identifier>148 v°-150 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73p6zo--marj7vc812or-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07189_L.jpg#DAFANCH96_021MIC07198_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73pa2s-r1xu8y5ro92d">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73p6zo--marj7vc812or"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73pd5w--m3a1zj0scgih"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettres I et J</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettres I et J</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pa2s-r1xu8y5ro92d-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pa2s-r1xu8y5ro92d"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73pa2s-r1xu8y5ro92d-i2"/>
+                  <rico:identifier>156 v°-158 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettres I et J</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettres I et J</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">3 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73pa2s-r1xu8y5ro92d"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pa2s-r1xu8y5ro92d-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pa2s-r1xu8y5ro92d"/>
+                  <rico:identifier>156 v°-158 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73pa2s-r1xu8y5ro92d-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07199_L.jpg#DAFANCH96_021MIC07205_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73pd5w--m3a1zj0scgih">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73pa2s-r1xu8y5ro92d"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73pfh8-rd1hj6xfd0kn"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre K</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre K</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pd5w--m3a1zj0scgih-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pd5w--m3a1zj0scgih"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73pd5w--m3a1zj0scgih-i2"/>
+                  <rico:identifier>160 r°-160 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre K</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre K</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">1 feuillet</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73pd5w--m3a1zj0scgih"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pd5w--m3a1zj0scgih-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pd5w--m3a1zj0scgih"/>
+                  <rico:identifier>160 r°-160 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73pd5w--m3a1zj0scgih-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07206_L.jpg#DAFANCH96_021MIC07208_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73pfh8-rd1hj6xfd0kn">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73pd5w--m3a1zj0scgih"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73pikc-1er2e7hem70ur"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre L</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre L</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pfh8-rd1hj6xfd0kn-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pfh8-rd1hj6xfd0kn"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73pfh8-rd1hj6xfd0kn-i2"/>
+                  <rico:identifier>180 r°-186 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre L</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre L</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">7 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73pfh8-rd1hj6xfd0kn"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pfh8-rd1hj6xfd0kn-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pfh8-rd1hj6xfd0kn"/>
+                  <rico:identifier>180 r°-186 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73pfh8-rd1hj6xfd0kn-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07209_L.jpg#DAFANCH96_021MIC07234_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73pikc-1er2e7hem70ur">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73pfh8-rd1hj6xfd0kn"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73plng-11rqt55rjb4g3"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre M</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre M</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pikc-1er2e7hem70ur-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pikc-1er2e7hem70ur"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73pikc-1er2e7hem70ur-i2"/>
+                  <rico:identifier>207 r°-214 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre M</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre M</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">8 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73pikc-1er2e7hem70ur"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pikc-1er2e7hem70ur-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pikc-1er2e7hem70ur"/>
+                  <rico:identifier>207 r°-214 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73pikc-1er2e7hem70ur-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07235_L.jpg#DAFANCH96_021MIC07262_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73plng-11rqt55rjb4g3">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73pikc-1er2e7hem70ur"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73poqk--1gz4re3oz7wxp"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre N</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre N</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73plng-11rqt55rjb4g3-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73plng-11rqt55rjb4g3"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73plng-11rqt55rjb4g3-i2"/>
+                  <rico:identifier>218 v°-220 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre N</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre N</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">3 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73plng-11rqt55rjb4g3"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73plng-11rqt55rjb4g3-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73plng-11rqt55rjb4g3"/>
+                  <rico:identifier>218 v°-220 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73plng-11rqt55rjb4g3-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07263_L.jpg#DAFANCH96_021MIC07268_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73poqk--1gz4re3oz7wxp">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73plng-11rqt55rjb4g3"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73prto--1x2jk40zbl2dz"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre O</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre O</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73poqk--1gz4re3oz7wxp-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73poqk--1gz4re3oz7wxp"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73poqk--1gz4re3oz7wxp-i2"/>
+                  <rico:identifier>223 v°-224 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre O</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre O</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">2 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73poqk--1gz4re3oz7wxp"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73poqk--1gz4re3oz7wxp-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73poqk--1gz4re3oz7wxp"/>
+                  <rico:identifier>223 v°-224 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73poqk--1gz4re3oz7wxp-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07269_L.jpg#DAFANCH96_021MIC07272_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73prto--1x2jk40zbl2dz">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73poqk--1gz4re3oz7wxp"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73puws--jo13ma8qfoyf"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre P</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre P</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73prto--1x2jk40zbl2dz-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73prto--1x2jk40zbl2dz"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73prto--1x2jk40zbl2dz-i2"/>
+                  <rico:identifier>237 r°-242 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre P</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre P</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">6 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73prto--1x2jk40zbl2dz"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73prto--1x2jk40zbl2dz-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73prto--1x2jk40zbl2dz"/>
+                  <rico:identifier>237 r°-242 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73prto--1x2jk40zbl2dz-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07273_L.jpg#DAFANCH96_021MIC07291_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73puws--jo13ma8qfoyf">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73prto--1x2jk40zbl2dz"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73pxzw--wncoonuufnc7"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Q</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Q</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73puws--jo13ma8qfoyf-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73puws--jo13ma8qfoyf"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73puws--jo13ma8qfoyf-i2"/>
+                  <rico:identifier>244 r°-244 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Q</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Q</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">1 feuillet</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73puws--jo13ma8qfoyf"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73puws--jo13ma8qfoyf-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73puws--jo13ma8qfoyf"/>
+                  <rico:identifier>244 r°-244 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73puws--jo13ma8qfoyf-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07292_L.jpg#DAFANCH96_021MIC07294_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73pxzw--wncoonuufnc7">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73puws--jo13ma8qfoyf"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73q130-tlzamzbmf7nm"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre R</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre R</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pxzw--wncoonuufnc7-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pxzw--wncoonuufnc7"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73pxzw--wncoonuufnc7-i2"/>
+                  <rico:identifier>257 r°-261 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre R</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre R</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">5 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73pxzw--wncoonuufnc7"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73pxzw--wncoonuufnc7-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73pxzw--wncoonuufnc7"/>
+                  <rico:identifier>257 r°-261 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73pxzw--wncoonuufnc7-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07295_L.jpg#DAFANCH96_021MIC07311_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73q130-tlzamzbmf7nm">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73pxzw--wncoonuufnc7"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73q464-dikhx21a227c"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre S</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre S</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q130-tlzamzbmf7nm-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q130-tlzamzbmf7nm"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73q130-tlzamzbmf7nm-i2"/>
+                  <rico:identifier>273 v°-277 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre S</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre S</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">5 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73q130-tlzamzbmf7nm"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q130-tlzamzbmf7nm-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q130-tlzamzbmf7nm"/>
+                  <rico:identifier>273 v°-277 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73q130-tlzamzbmf7nm-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07312_L.jpg#DAFANCH96_021MIC07326_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73q464-dikhx21a227c">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73q130-tlzamzbmf7nm"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73q798-1qx2yesrv7fmw"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre T</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre T</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q464-dikhx21a227c-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q464-dikhx21a227c"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73q464-dikhx21a227c-i2"/>
+                  <rico:identifier>286 r°-288 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre T</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre T</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">3 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73q464-dikhx21a227c"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q464-dikhx21a227c-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q464-dikhx21a227c"/>
+                  <rico:identifier>286 r°-288 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73q464-dikhx21a227c-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07327_L.jpg#DAFANCH96_021MIC07338_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73q798-1qx2yesrv7fmw">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73q464-dikhx21a227c"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73qacc-1djap4rdu2txz"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettres U, V, W</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettres U, V, W</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q798-1qx2yesrv7fmw-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q798-1qx2yesrv7fmw"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73q798-1qx2yesrv7fmw-i2"/>
+                  <rico:identifier>304 r°-307 v°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettres U, V, W</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettres U, V, W</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">4 feuillets</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73q798-1qx2yesrv7fmw"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73q798-1qx2yesrv7fmw-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73q798-1qx2yesrv7fmw"/>
+                  <rico:identifier>304 r°-307 v°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73q798-1qx2yesrv7fmw-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07339_L.jpg#DAFANCH96_021MIC07357_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73qacc-1djap4rdu2txz">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73q798-1qx2yesrv7fmw"/>
+            <rico:directlyPrecedesInSequence rdf:resource="recordResource/051211-c1nnlr73qdfg--157kvek1pk9ex"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Y</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Y</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73qacc-1djap4rdu2txz-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73qacc-1djap4rdu2txz"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73qacc-1djap4rdu2txz-i2"/>
+                  <rico:identifier>309 r°-309 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Y</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Y</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">1 feuillet</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73qacc-1djap4rdu2txz"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73qacc-1djap4rdu2txz-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73qacc-1djap4rdu2txz"/>
+                  <rico:identifier>309 r°-309 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73qacc-1djap4rdu2txz-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07358_L.jpg#DAFANCH96_021MIC07358_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+      <rico:hasOrHadPart>
+         <rico:RecordResource rdf:about="recordResource/051211-c1nnlr73qdfg--157kvek1pk9ex">
+            <rico:isOrWasPartOf rdf:resource="recordResource/051211-c1nnlr73oj2k--8gajloh1m2cc"/>
+            <rico:directlyFollowsInSequence rdf:resource="recordResource/051211-c1nnlr73qacc-1djap4rdu2txz"/>
+            <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Z</rico:title>
+            <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Z</rdfs:label>
+            <rico:hasOrHadInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73qdfg--157kvek1pk9ex-i1">
+                  <rico:isOrWasInstantiationOf rdf:resource="recordResource/051211-c1nnlr73qdfg--157kvek1pk9ex"/>
+                  <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/051211-c1nnlr73qdfg--157kvek1pk9ex-i2"/>
+                  <rico:identifier>310 r°-310 r°</rico:identifier>
+                  <rico:title xml:lang="fr">Liste alphabétique des clients , lettre Z</rico:title>
+                  <rdfs:label xml:lang="fr">Liste alphabétique des clients , lettre Z</rdfs:label>
+                  <rico:instantiationExtent rdf:parseType="Literal">
+                     <html:p xml:lang="fr">1 feuillet</html:p>
+                  </rico:instantiationExtent>
+                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_051211/c1nnlr73qdfg--157kvek1pk9ex"/>
+               </rico:Instantiation>
+            </rico:hasOrHadInstantiation>
+            <rico:hasOrHadDigitalInstantiation>
+               <rico:Instantiation rdf:about="instantiation/051211-c1nnlr73qdfg--157kvek1pk9ex-i2">
+                  <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/051211-c1nnlr73qdfg--157kvek1pk9ex"/>
+                  <rico:identifier>310 r°-310 r°</rico:identifier>
+                  <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/051211-c1nnlr73qdfg--157kvek1pk9ex-i1"/>
+                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                  <rico:identifier>DAFANCH96_021MIC07359_L.jpg#DAFANCH96_021MIC07359_L.jpg</rico:identifier>
+                  <dc:format xml:lang="en">image/jpeg</dc:format>
+                  <rico:hasOrganicProvenance rdf:resource="agent/005061"/>
+               </rico:Instantiation>
+            </rico:hasOrHadDigitalInstantiation>
+         </rico:RecordResource>
+      </rico:hasOrHadPart>
+   </rico:RecordResource>
+</rdf:RDF>

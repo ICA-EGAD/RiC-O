@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/005055">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describesOrDescribed rdf:resource="agent/005055"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name4"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:creationDate>
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:lastModificationDate>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Blandine WAGNER)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</rico:date>
+            <rico:generalDescription xml:lang="fr">Anciens identifiants : 5101/SNT, 5110/SNT</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Révision (par Marine ZELVERTE)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-17</rico:date>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:name xml:lang="fr">Modification (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-12</rico:date>
+            <rico:generalDescription xml:lang="fr">F. Clavaud, 12 avril 2017 : ajouté lien d'identité, revu liens IR</rico:generalDescription>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Journal Officiel de la République française</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Notice BnF n° FRBNF14638241</rico:recordResourceSourceOfInformation>
+      <rdfs:seeAlso rdf:resource="https://isni.org/isni/0000000121842352"/>
+      <rico:hasOrHadDigitalInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005055">
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005055"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005055</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005055"/>
+            <rico:identifier>5101/SNT</rico:identifier>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl011"/>
+         </rico:Instantiation>
+      </rico:hasOrHadDigitalInstantiation>
+   </rico:Record>
+   <rico:Agent rdf:about="agent/005055">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005055"/>
+      <owl:sameAs rdf:resource="https://isni.org/isni/0000000121842352"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Service national des travaux (1990-2010)</rdfs:label>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005055-France.%20Minist%C3%A8re%20de%20la%20Culture%20et%20de%20la%20Communication.%20Service%20national%20des%20travaux%20%281990-2010%29">
+            <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Service national des travaux (1990-2010)</rdfs:label>
+            <rico:textualValue xml:lang="fr">France. Ministère de la Culture et de la Communication. Service national des travaux (1990-2010)</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005055"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:hasOrHadAgentName>
+         <rico:AgentName rdf:about="agentName/005055-SNT">
+            <rdfs:label xml:lang="fr">SNT</rdfs:label>
+            <rico:textualValue xml:lang="fr">SNT</rico:textualValue>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005055"/>
+         </rico:AgentName>
+      </rico:hasOrHadAgentName>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-05</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-20</rico:endDate>
+      <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005055-d3nyugszba-a2wofi2a3sjm">
+            <rico:relationHasTarget rdf:resource="agent/005055"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d300e145">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005055-d3nyugszba-a2wofi2a3sjm"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugszba-a2wofi2a3sjm"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d300e145"/>
+      <rico:thingIsTargetOfRelation>
+         <rico:PerformanceRelation rdf:about="performanceRelation/005055-d5bhvimbi4--1c33jbciwlk3b">
+            <rico:relationHasTarget rdf:resource="agent/005055"/>
+            <rico:relationHasSource>
+               <rico:Activity rdf:nodeID="_Activity-d300e151">
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005055-d5bhvimbi4--1c33jbciwlk3b"/>
+                  <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimbi4--1c33jbciwlk3b"/>
+               </rico:Activity>
+            </rico:relationHasSource>
+         </rico:PerformanceRelation>
+      </rico:thingIsTargetOfRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-d300e151"/>
+      <rico:generalDescription rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <h4>Organisation interne ou généalogie</h4>
+            <html:p>Le SNT est organisé en 6 départements : un département des affaires juridiques et contentieuses, un département chargé de coordonner les études et la programmation et quatre départements de conduite d'opération.</html:p>
+         </html:div>
+      </rico:generalDescription>
+      <rico:history rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>
+               <html:u>Historique :</html:u>
+            </html:p>
+            <html:p>Créé par le décret n° 90-13 du 3 janvier 1990 (publié au Journal Officiel le 4 janvier), le Service national des travaux (SNT) est un service à compétence nationale chargé de missions de maîtrise d'ouvrage sur les immeubles bâtis et non bâtis de l'État. Il est à la fois l'héritier d'un service d'administration centrale, la sous-direction des affaires générales et des constructions publiques, qui était maître d'ouvrage pour la construction d'immeubles affectés au ministère de la Culture (gestion des crédits, études de faisabilité et de programmation architecturale et technique, choix du maître d'œuvre), et d'un service d'échelon régional, la Conservation régionale des monuments historiques d'Ile-de-France (CRMH), chargée de recenser, protéger et restaurer les monuments historiques franciliens, et qui a cédé au SNT, en 1990, la conduite des travaux portant sur les principaux édifices classés d'Île-de-France appartenant à l'État. Le SNT est installé dans les locaux de la CRMH, à la Grande Écurie du Roi, à Versailles.</html:p>
+            <html:p>Ses compétences sont précisées par l'arrêté du 3 mai 2002. Il est rattaché au directeur de l'administration générale et au directeur de l'architecture et du patrimoine du ministère de la Culture et de la Communication.</html:p>
+            <html:p>En application d'une décision du Conseil de modernisation des politiques publiques de juin 2008, le SNT et l'Établissement public de maîtrise d'ouvrage des travaux culturels (EMOC), chargé de missions voisines, ont fusionné dans un établissement public à caractère administratif, l'Opérateur du patrimoine et des projets immobiliers de la Culture (OPPIC), créé par décret n° 2010-818 du 14 juillet 2010 (publié au Journal Officiel le 20 juillet).</html:p>
+            <html:p>
+               <html:u>Missions :</html:u>
+            </html:p>
+            <html:p>Les missions du SNT sont définies dans l'article 2 de l'arrêté du 3 mai 2002 : "À la demande du directeur de l'administration générale et du directeur de l'architecture et du patrimoine, le service exerce des missions de maîtrise d'ouvrage sur les immeubles bâtis et non bâtis de l'État dont la liste est arrêtée par le ministre chargé de la culture ainsi que pour l'organisation des cérémonies nationales et pour le transfert au Panthéon de cendres illustres. Il participe à l'élaboration du programme des travaux en liaison avec la direction ou l'établissement public dont dépend l'immeuble. Il propose l'enveloppe financière prévisionnelle et détermine le processus selon lequel les travaux seront réalisés. Il conclut avec les maîtres d'oeuvre et les entreprises les marchés d'études et de réalisation des travaux. Il assure le suivi de la réalisation des travaux et l'exécution des marchés."</html:p>
+         </html:div>
+      </rico:history>
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/005406-005055-19980101-20100112"/>
+      <rico:wasSubordinateTo rdf:resource="agent/005406"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005055-005437-20100113-20100720"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005437"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentTemporalRelation/005055-005427-20100721-*"/>
+      <rico:hasSuccessor rdf:resource="agent/005427"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005055-005074-19900105-19931231"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/005074"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005055-051355-19940101-20100720"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/051355"/>
+      <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb14638241f#about"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053533-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053533"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/053532-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-053532"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054246-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054246"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054248-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054248"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/054247-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-054247"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055368-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055368"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/055879-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-055879"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/056412-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-056412"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/052944-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-052944"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/029536-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-029536"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028491-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028491"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/028890-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-028890"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/029448-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-029448"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/010262-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-010262"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059262-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059262"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/032519-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-032519"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059489-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059489"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/059801-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-059801"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/060085-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-060085"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061598-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061598"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061507-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061507"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/061650-005055"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-061650"/>
+   </rico:Agent>
+</rdf:RDF>
