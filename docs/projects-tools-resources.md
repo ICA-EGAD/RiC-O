@@ -24,7 +24,7 @@ Since September 2021 when this page provided a list of early projects, **it has 
 **We thus have decided to replace this list with a list maintained collaboratively by the teams and people who take care of the projects or are interested in RiC**. 
 This list also includes the RiC-CM based projects and bibliographic information about articles and other works related to RiC.
 
-This resource list has been available online since April 2025, at the following link:  [https://ica-egad.github.io/RiC-ResourceList](https://ica-egad.github.io/RiC-ResourceList).
+**This resource list has been available online since April 2025, at the following link:  [https://ica-egad.github.io/RiC-ResourceList](https://ica-egad.github.io/RiC-ResourceList)**.
 
 We hope that you will find it useful, and will contribute by adding or editing resources! As is mentioned there, we are aware that the list is currently far from exhaustive. As is explained when one fills out the form for adding or editing resources, EGAD will moderate submissions before they go live.
 
