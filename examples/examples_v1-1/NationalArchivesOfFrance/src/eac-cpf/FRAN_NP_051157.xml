@@ -1,0 +1,149 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051157</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Elsa CAMUS</agent>
+            <eventDescription>F. Clavaud, 1er décembre 2015 : revu le nom. @protoLinkedData@</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-03-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-03-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Almanach impérial, Paris, chez A. Guyot et Scribe, 1853-1870</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>État général des fonds des Archives nationales (Paris) : F/21 Beaux-Arts. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère de la maison de l'Empereur. Surintendance des Beaux-Arts (1863-1870)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+               <toDate standardDate="1870-12-31">1870</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret du 29 juin 1863 créant la surintendance des Beaux-Arts</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <structureOrGenealogy>
+            <p>La surintendance des Beaux-Arts gère trois services : le bureau des Beaux-Arts, le bureau des Monuments historiques (qui retourne au sein des Beaux-Arts après une courte période d'autonomie), le bureau des souscriptions. Les Théâtres ne sont alors plus sous la tutelle des Beaux-Arts et forment une surintendance générale, nouvellement créée.</p>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>Une surintendance des Beaux-Arts est créée par décret impérial le 29 juin 1863. Elle est rattachée au ministère de la Maison de l'Empereur et confiée au directeur général des musées, le comte de Nieuwerkerke. Celui-ci conserve ce poste jusqu'en 1870 au moment où les Beaux-Arts quittent le ministère de la Maison de l'Empereur.</p>
+            <p>En effet, du 2 janvier au 23 août 1870, l’éphémère ministère des Lettres, Sciences et Beaux-Arts récupère notamment les Beaux-Arts. Suite à la suppression du ministère des Lettres, Sciences et Beaux-Arts, la direction des Beaux-Arts rejoint durablement le ministère de l’Instruction publique par décret le 5 septembre 1870.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_051156"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère d'État. Division des Beaux-Arts (1853-1863)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_051124"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de la maison de l'Empereur. Surintendance des Beaux-Arts. Bureau des Monuments historiques (1863-1870)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+               <toDate standardDate="1870-12-31">1870</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>@isPartOf@</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_051493"
+                      xlink:type="simple">
+            <relationEntry>Conservatoire de musique et de déclamation (Paris ; 1806-1946)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1864-01-01">1864</fromDate>
+               <toDate standardDate="1870-12-31">1870</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Rattachement à la section Théâtres.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_051158"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de l'Éducation nationale. Direction des Beaux-Arts (1870-1940)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1870-01-01">1870</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_051159"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de la maison de l'Empereur (1852-1870)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+               <toDate standardDate="1870-12-31">1870</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>@isPartOf@</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

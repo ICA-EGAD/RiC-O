@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ric-dft="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#"
     xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#"
     xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:voaf="http://purl.org/vocommons/voaf#"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+    xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <skos:ConceptScheme
         rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes">
         <rdfs:label xml:lang="en">Documentary Form Types</rdfs:label>
         <rdfs:label xml:lang="fr">Types de documents</rdfs:label>
         <rdfs:label xml:lang="es">Tipos documentales</rdfs:label>
         <dc:title xml:lang="en">International Council on Archives Records in Contexts Vocabulary for
-Documentary Form Types</dc:title>
+            Documentary Form Types</dc:title>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor xml:lang="en">Florence Clavaud (Archives nationales de France), member of
             EGAD and lead of EGAD RiC-O team from 2012</dc:contributor>
         <dc:contributor>Regine I. Heberlein (University of Princeton, USA), member of EGAD and EGAD
-            RiC-O team from 2023</dc:contributor>
+            RiC-O team from 2023 to 2024</dc:contributor>
         <dc:contributor xml:lang="en">Miia Herrala (National Archives of Finland), member of EGAD
             and EGAD RiC-O team from 2016 to 2022</dc:contributor>
-        <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland),
-            member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
+        <dc:contributor xml:lang="en">Jan Krause-Bilvin (docuteam, Switzerland), member of EGAD and
+            EGAD RiC-O team from 2023</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Pitti (University of Virginia, USA), chair of EGAD from
             2012</dc:contributor>
         <dc:contributor xml:lang="en">Aaron Rubinstein (University of Massachusetts Amherst, USA),
             member of EGAD and EGAD RiC-O team from 2012 to 2022</dc:contributor>
-        <dc:contributor xml:lang="en">Tobias Wildi (docuteam, Switzerland), member of EGAD and EGAD RiC-O team from 2019</dc:contributor>
+        <dc:contributor xml:lang="en">Tobias Wildi (docuteam, Switzerland), member of EGAD and EGAD
+            RiC-O team from 2019</dc:contributor>
         <dc:contributor xml:lang="en">Richard David Williamson (National Archives of Norway), member
             of EGAD and of EGAD RiC-O team from 2024</dc:contributor>
         <dc:contributor xml:lang="en">Ivo Zandhuis (Consultant Digital Cultural Heritage, The
             Netherlands), member of EGAD and EGAD RiC-O team from 2023</dc:contributor>
         <!-- ORCID links for the current members of EGAD -->
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-5681-4850"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0803-8025"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6743-9622"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-9375-2102"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-9938-6502"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6743-9622"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0009-0004-3219-2534"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0803-8025"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-5681-4850"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-0165-8341"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0009-0004-3219-2534"/>
         <dc:creator xml:lang="en">International Council on Archives Expert Group on Archival
             Description (ICA EGAD)</dc:creator>
         <dc:publisher xml:lang="en">International Council on Archives</dc:publisher>
@@ -54,26 +53,41 @@ Documentary Form Types</dc:title>
         <dc:language>en</dc:language>
         <dc:language>fr</dc:language>
         <dc:language>es</dc:language>
-
+        <dcat:version>1.1</dcat:version>
         <skos:historyNote xml:lang="en">This vocabulary was created within the Records in Contexts
-            Ontology. When the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of RiC-O
-            would be released. The first one, consisting of a unique large OWL file, would remain the
-            reference one. RiC-0 1.0 would also be provided as a set of files, in order to address
-            specific needs, e.g. using only the core of the ontology, or using only the individuals it
-            defined and defining new individuals. So from December 2023, you can find the vocabulary on
-            Documentary Form Types, either in the unique large OWL RiC-O file, or as a separate file. </skos:historyNote>
-        <skos:changeNote
-            >
+            Ontology. When the ICA/EGAD developed RiC-O 1.0, it was decided that two versions of
+            RiC-O would be released. The first one, consisting of a unique large OWL file, would
+            remain the reference one. RiC-0 1.0 would also be provided as a set of files, in order
+            to address specific needs, e.g. using only the core of the ontology, or using only the
+            individuals it defined and defining new individuals. So from December 2023, you can find
+            the vocabulary on Documentary Form Types, either in the unique large OWL RiC-O file, or
+            as a separate file. </skos:historyNote>
+        <skos:changeNote>
             <rdf:Description>
-                <dc:date>2024-05-13</dc:date>
-                <rdf:value xml:lang="en">Added the name and ORCID of Richard Williamson to the contributors, changed the affiliation of J. Krause-Bilvin and T. Wildi.</rdf:value>
+                <dc:date>2025-05-14</dc:date>
+                <rdf:value xml:lang="en">Added a dcat:version property.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:changeNote
-            >
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2025-01-30</dc:date>
+                <rdf:value xml:lang="en">Added the IIIF manifest documentary form type, with broader
+                    concept finding aid. Updated the scope note of the vocabulary.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2024-05-13</dc:date>
+                <rdf:value xml:lang="en">Added the name and ORCID of Richard Williamson to the
+                    contributors, changed the affiliation of J. Krause-Bilvin and T.
+                    Wildi.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-12-13</dc:date>
-                <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added dc:language, a history note and a scope note.</rdf:value>
+                <rdf:value xml:lang="en">Completed the metadata of the vocabulary: added
+                    dc:language, a history note and a scope note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -88,7 +102,7 @@ Documentary Form Types</dc:title>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">For now this vocabulary only defines two top concepts; it should
+        <skos:scopeNote xml:lang="en">For now this vocabulary only defines three concepts; it should
             hopefully be completed later. The concepts defined in this vocabulary can be used in
             combination with RiC-O classes and properties, whenever necessary and appropriate, to
             assign a documentary form type to a Record or a Record Part, using the
@@ -142,6 +156,13 @@ Documentary Form Types</dc:title>
         <rdfs:label xml:lang="es">instrumento de descripción</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2025-01-30</dc:date>
+                <rdf:value xml:lang="en">Added a skos:narrower with object the IIIF Manifest
+                    concept.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
             </rdf:Description>
@@ -158,6 +179,30 @@ Documentary Form Types</dc:title>
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
         <skos:topConceptOf
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+        <skos:narrower
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest"
+        />
+    </skos:Concept>
+    <!-- https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest -->
+    <skos:Concept
+        rdf:about="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#IIIFManifest">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
+        <rdfs:label xml:lang="en">IIIF manifest</rdfs:label>
+        <rdfs:label xml:lang="fr">manifeste IIIF</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2025-01-30</dc:date>
+                <rdf:value xml:lang="en">Added to RiC-O 1.1.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:definition xml:lang="en">Can be used to categorize records which describe collections
+            of cultural heritage objects, or of a single cultural object, and whose instantiations
+            are compliant to the IIIF Presentation API.</skos:definition>
+        <skos:inScheme
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes"/>
+        <skos:broader
+            rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"
+        />
     </skos:Concept>
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#DocumentaryFormType">
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
