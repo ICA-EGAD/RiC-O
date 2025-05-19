@@ -14,19 +14,23 @@
 
 
 
-Last updated on February 1<sup>st</sup>, 2024
+Last updated on 2025, May 19<sup>th</sup>
 
 
-Since RiC is a recent standard, there are still few concrete uses for it. In addition, RiC-CM and RiC-O are freely usable, so it is impossible to know all the uses. 
+Since RiC is a recent standard, there are still not so many concrete uses for it. In addition, RiC-CM and RiC-O are freely usable, so it is impossible to know all the uses. 
 
-Since September 2021 when this page provided a list of early projects, **it has proven to be difficult for the RiC-O team to maintain an up-to-date list of projects by itself**. And this will be even more difficult now: the projects already listed or known to us have evolved or will evolve, many other projects have started, contacting each of the teams we already know has already become complicated, and above all many other projects are not known to us.
+Since September 2021 when this page provided a list of early projects, **it has proven to be difficult for the RiC-O team to maintain an up-to-date list of projects by itself**. And this is far more difficult now: the projects already listed or known to us have evolved or will evolve, many other projects have started, contacting each of the teams we already know has already become complicated, and above all many other projects are not known to us.
 
 **We thus have decided to replace this list with a list maintained collaboratively by the teams and people who take care of the projects or are interested in RiC**. 
-This list will also include the RiC-CM based projects and bibliographic information about articles and other works related to RiC.
+This list also includes the RiC-CM based projects and bibliographic information about articles and other works related to RiC.
 
-To avoid complicating things, we plan to create a quite simple Google sheet in a folder accessible to all on Google Drive, and invite members of the "Records in Contexts users" group to fill out this file, giving key information about the projects and resources they know.
+This resource list has been available online since April 2025, at the following link:  [https://ica-egad.github.io/RiC-ResourceList](https://ica-egad.github.io/RiC-ResourceList).
 
-This Google sheet is not yet available. Meanwhile, you will find all discussions and information on this topic on the [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users).
+We hope that you will find it useful, and will contribute by adding or editing resources! As is mentioned there, we are aware that the list is currently far from exhaustive. As is explained when one fills out the form for adding or editing resources, EGAD will moderate submissions before they go live.
+
+If you have any suggestions regarding the site itself, or encounter any bugs, please use the 'Issues' tab at the GitHub repository for the site at the following link: [https://github.com/ICA-EGAD/RiC-ResourceList](https://github.com/ICA-EGAD/RiC-ResourceList).
+
+Also, feel free to get in touch with EGAD about this resource list via the [Records in Contexts users Google group](https://groups.google.com/g/Records_in_Contexts_users).
 
 
 

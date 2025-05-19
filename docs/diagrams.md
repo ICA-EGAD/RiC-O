@@ -14,7 +14,7 @@
 
 
 
-Last updated on February 1<sup>st</sup>, 2024
+Last updated on 2025, May 19<sup>th</sup>
 
 EGAD has begun to draw some **diagrams**, hoping that they can help understanding RiC-O as a domain ontology.
 
@@ -27,7 +27,9 @@ The diagrams folder now mainly includes diagrams about RiC-O 0.1 and RiC-0 0.2.
 The diagrams are under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
 All of them for now have been designed using [diagrams.net](https://app.diagrams.net/), a free online diagram software. The GitHub repository therefore includes, for each diagram, the XML source file and a JPEG screenshot. If you want to edit a diagram once downloaded to your local repository, just open the XML source file in diagrams.net! 
+You could also use, for such a task, a library of shapes designed for RiC-O, which is available [here](https://github.com/williamsonrichard/records_in_contexts_draw_io_shape_library).
 
 If you have some diagrams and would like to share them, just contact us ([egad at ica.org](mailto:egad@ica.org))! We can either list them in this web page and provide a link to your own project or institution repository, or include these diagrams into the GitHub RiC-O repository.
+
 
 
