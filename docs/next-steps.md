@@ -14,9 +14,6 @@
 
 
 
-**Next steps**
-
-
 Last updated on 2025, May 19<sup>th</sup>
 
 The following is an overview of RiC-O roadmap and schedule for 2025.
