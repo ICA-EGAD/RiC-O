@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:html="http://www.w3.org/1999/xhtml" xml:base="http://data.archives.strath.ac.uk/">
+    <!-- checked on 2025, May 19th -->
+    <!-- added to the RDF dataset on 2021, Feb. 10th , updated on 2023, Jan. 26th (the ATOM web application now considers these as genre forms. Thus they can be used in the RDF data generated from EAD finding aids, where sound recordings and audiovisual materials are still indexed as subjects). -->
+    <rico:DocumentaryFormType rdf:about="documentaryFormType/Audiovisual%20materials">
+        <rdfs:label xml:lang="en">Audiovisual materials</rdfs:label>
+        <rico:name xml:lang="en">Audiovisual materials</rico:name>
+        <owl:sameAs rdf:resource="https://atom.lib.strath.ac.uk/audiovisual-materials-2"/>
+    </rico:DocumentaryFormType>
+    <rico:DocumentaryFormType rdf:about="documentaryFormType/Sound%20recordings">
+        <rdfs:label xml:lang="en">Sound recordings</rdfs:label>
+        <rico:name xml:lang="en">Sound recordings</rico:name>
+        <owl:sameAs rdf:resource="https://atom.lib.strath.ac.uk/sound-recordings-2"/>
+    </rico:DocumentaryFormType>
+    <!-- the following has been added since in the EAD file on Interviews with George Wyllie, with a genreform having value Interviews (though no concept exists for this in the Genre vocabulary in the ATOM web app-->
+    <rico:DocumentaryFormType rdf:about="documentaryFormType/Interviews">
+        <rdfs:label xml:lang="en">Interviews</rdfs:label>
+        <rico:name xml:lang="en">Interviews</rico:name>
+    </rico:DocumentaryFormType>
+</rdf:RDF>
