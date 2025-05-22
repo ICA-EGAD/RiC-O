@@ -21,7 +21,7 @@ RiC-O (Records in Contexts-Ontology) is **an OWL 2 ontology for describing archi
 
 RiC-O provides a generic vocabulary and formal rules for creating RDF datasets (or generating them from existing archival metadata) that describe in a consistent way any kind of archival record resource and its contextual entities. It is therefore a reference model for publishing archival metadata sets as Linked Data, querying them using SPARQL, and making inferences using the logic of the ontology.
 
-The **latest public release of RiC-O, RiC-O 1.1, was published in May 2025**. **Version 1.1 follows the release of RiC-O 1.0.2, dated September 2024, the release of RiC-O 1.0.1 in May 2024, and the release of the first stable and complete version of this ontology, thus a major milestone, RiC-O 1.0, dated February 2024**. 
+The **latest public release of RiC-O, RiC-O 1.1, was published in May 2025**. **Version 1.1 follows the release of RiC-O 1.0.2, dated September 2024, the release of RiC-O 1.0.1 in May 2024, and the release of the first stable and complete version of this ontology, thus a major milestone, RiC-O 1.0, dated December 2023**. 
 
 Version 1.0.1 modified a few details in the introduction, fixed a few typos in the documentation of RiC-O 1.0, and brought one change only, fixing the IRI of 'hasOrHadSomeMemberswithDocumentaryFormType' object property (changed to [rico:hasOrHadSomeMembersWithDocumentaryFormType](https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithDocumentaryFormType)). 
 
