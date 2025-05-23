@@ -580,8 +580,8 @@
                      generic <html:a href="#rico:OrganicOrFunctionalProvenanceRelation"
                         >rico:OrganicOrFunctionalProvenanceRelation</html:a> class was also added.
                      In RiC-O 1.1, a new <html:a href="#rico:TitleType">rico:TitleType</html:a>
-                     class was added, as well as a <html:a href="#rico:StudyingAtRelation"
-                        >rico:StudyingAtRelation</html:a> class.</html:li>
+                     class was added, as well as a <html:a href="#rico:StudyAtRelation"
+                        >rico:StudyAtRelation</html:a> class.</html:li>
                   <html:li>
                      <html:strong>75 datatype properties</html:strong>. Several properties had been
                      renamed in RiC-O 1.0, to make the ontology compliant with RiC-CM 1.0 (so
@@ -669,18 +669,18 @@
                         rico:Proxy, rico:Instantiation, rico:Date or rico:Relation</html:strong>.
                      The following list describes the main additions made.<html:ul>
                         <html:li>as a rico:TitleType class was added, the object properties needed
-                           to connect it to rico:Title. <html:strong>The names of the higher level
-                              'hasOrHadCategory' and 'isOrWasCategoryOf' object properties have been
-                              changed to 'hasOrHadType' and 'isOrWasTypeOf'</html:strong>.</html:li>
+                           to connect it to rico:Title were also created. <html:strong>The names of
+                              the higher level 'hasOrHadCategory' and 'isOrWasCategoryOf' object
+                              properties have been changed to 'hasOrHadType' and
+                              'isOrWasTypeOf'</html:strong>.</html:li>
                         <html:li>a <html:a href="#rico:studiesOrStudiedAt"
                               >rico:studiesOrStudiedAt</html:a> object property - and the inverse
                            one, <html:a href="#rico:isOrWasAttendedByStudent"
                               >rico:isOrWasAttendedByStudent</html:a> - was added, subproperty of
                            rico:isOrWasMemberOf, to connect a Person to a Corporate Body at which
                            the person studies or studied; as already said above, the corresponding
-                              <html:a href="#rico:StudyingAtRelation"
-                              >rico:StudyingAtRelation</html:a> n-ary class was also
-                           created;</html:li>
+                              <html:a href="#rico:StudyAtRelation">rico:StudyAtRelation</html:a>
+                           n-ary class was also created;</html:li>
                         <html:li>object properties were added to be used for accumulation dates,
                            with domain the union of rico:RecordResource and rico:Instantiation (for
                               <html:a href="#rico:hasAccumulationDate"
@@ -1069,7 +1069,7 @@
                      rico:normalizedDateValue.</html:li>
                   <html:li>2024, September 4: Fixed a few typos in Appendix 1 and in a change note.
                      Changed the date of the release (it is 2024 September 4th now).</html:li>
-                  <html:li>2024, October 4: Added TitleType, hasTitleType isTitleTypeOf;
+                  <html:li>2024, October 4: Added TitleType, hasTitleType and isTitleTypeOf;
                         <html:strong>Changed hasOrHadCategory et al. into
                      hasOrHadType</html:strong></html:li>
                   <html:li>2024, October 10: changed the French and/or Spanish labels of the
