@@ -1,4 +1,4 @@
-# Migrating data from RiC-O 0.2 to RiC-O 1.0.2
+# Migrating data from RiC-O 0.2 to RiC-O 1.1
 
 
 
@@ -7,7 +7,7 @@
 * [Why use RiC-O?](why-use-RiC-O.html)
 * [Diagrams](diagrams.html)
 * [Examples](examples.html)
-* **Migrating data from RiC-O 0.2 to RiC-O 1.0**
+* **Migrating data from RiC-O 0.2 to RiC-O 1.1**
 * [Events and presentations](events.html)
 * [Projects, tools, and resources](projects-tools-resources.html)
 * [Next steps](next-steps.html)
@@ -59,7 +59,7 @@ In addition to the datatype properties whose domain is `rico:Date` and which are
 - ***accrual* was replaced with `rico:accruals`**, and *accrualStatus* with `rico:accrualsStatus`.
 - *integrity* was replaced with `rico:integrityNote` (with domain `rico:RecordResource` only) and *physicalCharacteristics* with `rico:physicalCharacteristicsNote`; *qualityOfRepresentation* was replaced with `rico:qualityOfRepresentationNote` and made a subproperty of `rico:physicalCharacteristicsNote`.
 
-**A new `rico:destructionDate` property was also created, subproperty of `rico:endDate`. Note that while this property had domain `rico:Thing` in RiC-O 1.0, its domain has been restricted to the union of `rico:RecordResource` and `rico:Instantiation` in RiC-O 1.1**.
+**A new `rico:destructionDate` property was also created, subproperty of `rico:endDate`.** Note that while this property had domain `rico:Thing` in RiC-O 1.0, **its domain has been restricted to the union of `rico:RecordResource` and `rico:Instantiation` in RiC-O 1.1**.
 
 Let us also mention that nine datatype properties, with domain `rico:RecordResource` or its subclasses, and/or `rico:Instantiation`, were also added, to provide users with more precise relations for storing dates (e.g. `rico:migrationDate`, `rico:derivationDate` or `rico:accumulationDate`).
 
@@ -79,16 +79,16 @@ Finally, if you need some practical solution to help you display or query a grap
 - ***hasSource* (whose domain was the union of RecordResource and Relation) was removed**; a new `rico:isEvidencedBy` property has been created, with domain `rico:Relation` only; same for the inverse property, *isSourceOf*. 
 - **`rico:precedesInTime` and `rico:followsInTime` were made transitive**.
 
-**In RiC-0 1.0.1:**
-- **the IRI of `rico:hasOrHadSomeMembersWithDocumentaryFormType` was corrected** ('with' replaced by 'With')
-- ***hasOrHadCategory* was replaced with `rico:hasOrHadType`** (and the inverse object property, **isOrWascategoryOf**, was replaced with `rico:isOrWasTypeOf`.)
+**In RiC-O 1.0.1, the IRI of `rico:hasOrHadSomeMembersWithDocumentaryFormType` was corrected** ('with' replaced by 'With').
+
+**In RiC-O 1.1, `rico:hasOrHadCategory` was replaced with `rico:hasOrHadType`** (and the inverse object property, **isOrWascategoryOf**, was replaced with `rico:isOrWasTypeOf`.)
 
 In addition to these changes, **many object properties have been added, which may help to produce more precise data, or data which would be easier to process**. The inverse properties were also created, though we most often are not mentioning them below. The following is a non-exhaustive list of these additions:
-- **a property (`rico:recordResourceHasSourceOfInformation`) was added to connect a Record Resource to a Record Resource on which its content is based. This property, and its inverse one, replace, as concerns Record Resource, the 'source' datatype property and the 'hasSource'/'isSourceOf' object properties, which had been removed in RiC-O 1.0, as already said above**.
-- **several properties were added with domain rico:RecordResource or its subclasses, and/or rico:Instantiation, and with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate` were added, plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but the properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties. **Note that In RiC-O 1.1, the domain of `rico:hasDestructionDate`, and the range of the inverse property, were restricted** from `rico:Thing` to the union of `rico:RecordResource` and `rico:Instantiation`. **The set of subproperties of rico:isAssociatedwithDate was further increased in RiC-O 1.1**,  with `rico:hasOrganicProvenanceDate`, `rico:hasAccumulationDate` (and the properties to specify the accumulation dates of all, some or most members of a rico:RecordSet), `rico:hasMigrationDate`, `rico:hasDerivationDate` (with domain `rico:Instantiation`) and `rico:isOrWasActiveAtDate` (with domain `rico:Agent`).
-- a new `rico:occurredAtDate` property was created with domain `rico:Event` and range `rico:Date`;
-- two subproperties were added to `rico:hasOrHadInstantiation`: `rico:hasOrHadDigitalInstantiation` (which can be used, for example, when you generate a `rico:Instantiation` from a `dao` EAD element), and `rico:hasOrHadAnalogueInstantiation`; 
-- several properties were created with domain and range `rico:Agent` or subclasses of this class: `rico:wasMergedInto` and `rico:wasSplitInto`, `rico:isOrWasEmployerOf`, `rico:hasBirthPlace`, `rico:hasDeathPlace`. In addition to this set of properties, a `rico:studiesOrStudiedAt` property was added in RiC-O 1.1.
+- **a property (`rico:recordResourceHasSourceOfInformation`) was added to connect a Record Resource to a Record Resource on which its content is based.** This property, and its inverse one, replace, as concerns Record Resource, the 'source' datatype property and the 'hasSource'/'isSourceOf' object properties, which had been removed in RiC-O 1.0, as already said above.
+- **several properties were added with domain rico:RecordResource or its subclasses, and/or rico:Instantiation, and with range `rico:Date`**: `rico:hasPublicationDate`, `rico:hasCreationDate`, `rico:hasDestructionDate`, plus several properties to specify the creation dates of all, some or most members of a `rico:RecordSet`. Most often, when you assign dates to a Record Set, you actually mean the dates of its members - you don't know the date when the Record Set was formed; in such a case you should not use `rico:hasCreationDate`, but the properties that concern the members of the Record Set (e.g. `rico:hasOrHadMostMembersWithCreationDate`). A notable exception may be the case where the Record Set is a collection: you may know both the date when the collection was created, and the dates of the records that are included in the collection. In such a case you should use both properties. **Note that In RiC-O 1.1, the domain of `rico:hasDestructionDate`, and the range of the inverse property, were restricted** from `rico:Thing` to the union of `rico:RecordResource` and `rico:Instantiation`. **The set of subproperties of rico:isAssociatedwithDate was further increased in RiC-O 1.1**,  with `rico:hasOrganicProvenanceDate`, `rico:hasAccumulationDate` (and the properties to specify the accumulation dates of all, some or most members of a rico:RecordSet), `rico:hasMigrationDate`, `rico:hasDerivationDate` (with domain `rico:Instantiation`) and `rico:isOrWasActiveAtDate` (with domain `rico:Agent`).
+- a **new `rico:occurredAtDate` property was created with domain `rico:Event`** and range `rico:Date`;
+- two subproperties were added to `rico:hasOrHadInstantiation`: **`rico:hasOrHadDigitalInstantiation` (which can be used, for example, when you generate a `rico:Instantiation` from a `dao` EAD element), and `rico:hasOrHadAnalogueInstantiation`**; 
+- **several properties were created with domain and range `rico:Agent` or subclasses of this class**: `rico:wasMergedInto` and `rico:wasSplitInto`, `rico:isOrWasEmployerOf`, `rico:hasBirthPlace`, `rico:hasDeathPlace`. In addition to this set of properties, a `rico:studiesOrStudiedAt` property was added in RiC-O 1.1.
 
 **Object properties have been created under the following existing properties, in order to distinguish past and present relations, and, as concerns present relations, to get transitive properties**: 
 - `rico:followsOrFollowed` (with domain `rico:Thing`) and `rico:hasOrHadPart` (with domain `rico:Thing`);
@@ -108,7 +108,7 @@ The image below shows the hierarchy of properties under `rico:includesOrIncluded
 
 **`Rico:directlyFollowsInSequence` can now be used to connect a Record Resource and its direct following sibling in a sequence of Record Resources. `Rico:followsInSequenceTransitive` can be inferred from this property, or created, to connect a Record Resource and any of its following siblings in a sequence**. This can be applied when you want to generate data from a sequence of EAD `c` elements. On this topic see also [issue 41](https://github.com/ICA-EGAD/RiC-O/issues/41), and [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97).
 
-**in RiC-O 1.1, new properties, some of which being transitive, were added in order to complete the model as concerns the representation of sequences and hierarchies of record resources. In particular, this resulted in a significant set of object properties in order to allow the use of rico:Proxy in such sequences and hierarchies**. On this topic, see also [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97) and [pull request #136](https://github.com/ICA-EGAD/RiC-O/pull/136).
+**in RiC-O 1.1, new properties, some of which being transitive, were added in order to complete the model as concerns the representation of sequences and hierarchies of record resources.** In particular, this resulted in a significant set of object properties in order to allow the use of rico:Proxy in such sequences and hierarchies. On this topic, see also [issue 97](https://github.com/ICA-EGAD/RiC-O/issues/97) and [pull request #136](https://github.com/ICA-EGAD/RiC-O/pull/136).
 
 Last but not least, **two properties (`rico:hasContentWhichRepresents` and `rico:hasContentWhichMainlyRepresents`) were added as subproperties of `rico:hasOrHadSubject` and `rico:hasOrHadMainSubject`, in order to connect Records or Record Parts and the Things they represent**. Variants of those properties were created in order to connect a Record Set and the Things that some or all of its members are about or represent. The inverse properties were also created. **You could consider using these properties for describing any visual items.**
 

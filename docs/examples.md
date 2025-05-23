@@ -5,7 +5,7 @@
 * [Why use RiC-O?](why-use-RiC-O.html)
 * [Diagrams](diagrams.html)
 * **Examples**
-* [Migrating data from RiC-O 0.2 to RiC-O 1.0](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
+* [Migrating data from RiC-O 0.2 to RiC-O 1.1](migrating-data-from-RIC-O-v0.2-to-v1.0.html)
 * [Events and presentations](events.html)
 * [Projects, tools, and resources](projects-tools-resources.html)
 * [Next steps](next-steps.html)
