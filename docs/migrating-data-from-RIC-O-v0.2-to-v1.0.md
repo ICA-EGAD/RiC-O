@@ -20,7 +20,7 @@ Though the following information and recommendations do not pretend to be exhaus
 
 **RiC-O 1.0**, which is the first stable and complete version of RiC ontology, and thus a major milestone in the development of the standard, **then RiC-0 1.1, introduced some new components; they also brought some changes on the specifications of the v0.2 components**: the qualified names, definitions, domains or ranges of some have changed. Besides, some components have been removed. In other words, RiC-O 1.0 and therefore RiC-O 1.1, are not, as a whole, compatible with RiC-O 0.2. This is why, **if you have been using RiC-O 0.2 and want to move to RiC-O 1.1 (which we would recommend you choose), you may need to modify your data**.
 
-We will mainly **focus on the most significant changes made to RiC-O 0.2 components**, that imply that you need to check and update your existing RiC-O datasets accordingly and update them when necessary. We will start with the changes that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). **We will also emphasize some of the additions made** that may be in our opinion quite often useful. 
+We will mainly **focus on the most significant changes made to RiC-O 0.2 components, that imply that you need to check and update your existing RiC-O datasets accordingly and update them when necessary.** We will start with the changes that concern the core of RiC-O (i.e. everything but the Relation classes and their properties). **We will also emphasize some of the additions made** that may be in our opinion quite often useful. 
 
 Remember that **each release of a new official version of the ontology comes with an exhaustive list of changes made since the previous official version. You can therefore find there all the useful additions to the information given below.**
 
@@ -61,7 +61,7 @@ In addition to the datatype properties whose domain is `rico:Date` and which are
 
 **A new `rico:destructionDate` property was also created, subproperty of `rico:endDate`.** Note that while this property had domain `rico:Thing` in RiC-O 1.0, **its domain has been restricted to the union of `rico:RecordResource` and `rico:Instantiation` in RiC-O 1.1**.
 
-Let us also mention that nine datatype properties, with domain `rico:RecordResource` or its subclasses, and/or `rico:Instantiation`, were also added, to provide users with more precise relations for storing dates (e.g. `rico:migrationDate`, `rico:derivationDate` or `rico:accumulationDate`).
+Let us also mention that in RiC-0 1.1, nine datatype properties, with domain `rico:RecordResource` or its subclasses, and/or `rico:Instantiation`, were also added, to provide users with more precise relations for storing dates (e.g. `rico:migrationDate`, `rico:derivationDate` or `rico:accumulationDate`).
 
 You may be interested in using **the `rico:note` datatype property, which was added to RiC-O 1.1, and made a superproperty of the already existing, more specific, note datatype properties** (`rico:physicalCharacteristicsNote`, `rico:authentiticyNote` and `rico:integrityNote`). This generic property can be used whenever you need to store a short textual statement, that gives a little information on a specific feature of a rico:Thing; it can also be extended to address other specific needs.
 

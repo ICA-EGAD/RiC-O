@@ -16,7 +16,7 @@
 
 Last updated on 2025, May 19<sup>th</sup>
 
-The following is an overview of RiC-O roadmap and schedule for 2025.
+The following provides a few information of RiC-O roadmap and schedule for 2025 and 2026.
 
 Of course, **the schedule also depends on RiC-O users, on their comments, expectations and proposals**. RiC-O users now can use the public GitHub repository to create issues or comment existing issues, and also fork it and create pull requests from a fork. **A big "thank you" to all the people who, outside the ICA/EGAD group, already contributed, and will contribute, to the development of RiC-O, through their requests, their comments, their advice or their help**.
 
