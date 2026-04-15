@@ -780,7 +780,7 @@
         </skos:historyNote>
 
     </owl:Ontology>
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -923,7 +923,7 @@
         </skos:changeNote>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
     </owl:AnnotationProperty>
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -20029,7 +20029,9 @@
             rico:rankInSequence of Record Resource A, and no other Record Resource in that context should have rico:rankInSequence between that of
             Record Resource A and Record Resource B. For a given Record Resource, rico:rankInSequence should never be used more than once. If a Record
             Resource belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInSequence have source
-            such a proxy, in all cases except (possibly) the first.</skos:scopeNote>
+            such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
+            sequence, rico:rankInSequence currently should only be used with one of these sequences.
+        </skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#rankInTemporalSequence -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#rankInTemporalSequence">
@@ -20055,7 +20057,9 @@
             Record Resource A, and no other Record Resource in that context should have rico:rankInTemporalSequence between that of Record Resource A
             and Record Resource B. For a given Record Resource, rico:rankInTemporalSequence should never be used more than once. If a Record Resource
             belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInTemporalSequence have source
-            such a proxy, in all cases except (possibly) the first.</skos:scopeNote>
+            such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
+            sequence, rico:rankInTemporalSequence currently should only be used with one of these sequences.
+        </skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
@@ -20765,7 +20769,7 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:DatatypeProperty>
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -26943,7 +26947,7 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R046 and RiR046i relations</RiCCMCorrespondingComponent>
     </owl:Class>
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
