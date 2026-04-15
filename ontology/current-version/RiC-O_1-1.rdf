@@ -20011,6 +20011,12 @@
         <rdfs:label xml:lang="en">rank in sequence</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-04-15</dc:date>
+                <rdfs:comment xml:lang="en">Scope note expanded slightly in RiC-O 1.2 to reflect the change in domain to Thing. An incorrect statement removed in addition.</rdfs:comment>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2026-03-30</dc:date>
                 <rdfs:comment xml:lang="en">Domain changed to Thing in RiC-O 1.2.</rdfs:comment>
             </rdf:Description>
@@ -20026,8 +20032,7 @@
             example to help display or query a graph). But it should be ensured that it reflects and is compatible with (e.g. computed using) the
             sequential object properties in the intended context (e.g. the Records in a given Record Set). Thus, if, for example, Record Resource A
             rico:precedesOrPreceded Record Resource B, then the rico:rankInSequence of Record Resource B must be strictly greater than
-            rico:rankInSequence of Record Resource A, and no other Record Resource in that context should have rico:rankInSequence between that of
-            Record Resource A and Record Resource B. For a given Record Resource, rico:rankInSequence should never be used more than once. If a Record
+            rico:rankInSequence of Record Resource A. For a given Record Resource, rico:rankInSequence should never be used more than once. If a Record
             Resource belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInSequence have source
             such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
             sequence, rico:rankInSequence currently should only be used with one of these sequences.
@@ -20054,8 +20059,7 @@
             display or query a graph). But it should be ensured that it reflects and is compatible with (e.g. computed using) the sequential object
             properties in the intended context (e.g. the Records in a given Record Set). Thus, if, for example, Record Resource A rico:precedesInTime
             Record Resource B, then the rico:rankInTemporalSequence of Record Resource B must be strictly greater than rico:rankInTemporalSequence of
-            Record Resource A, and no other Record Resource in that context should have rico:rankInTemporalSequence between that of Record Resource A
-            and Record Resource B. For a given Record Resource, rico:rankInTemporalSequence should never be used more than once. If a Record Resource
+            Record Resource A. For a given Record Resource, rico:rankInTemporalSequence should never be used more than once. If a Record Resource
             belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInTemporalSequence have source
             such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
             sequence, rico:rankInTemporalSequence currently should only be used with one of these sequences.
