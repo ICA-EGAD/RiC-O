@@ -774,6 +774,11 @@
                         <html:li>2025, May 14th: added a dcat:version to the two skos:ConceptScheme named individuals.</html:li>
                         <html:li>2026, March 30th: added new datatype property rankInTemporalSequence as subproperty of rankInSequence for which the
                             domain was extended to Thing.</html:li>
+                        <html:li>2026, June 10th: Added the object properties 'hasContentWhichRefersTo' (domain Record or Record Part and range
+                            Thing) and 'hasOrHadSomeMembersWhoseContentRefersTo' (domain Record Set and range Thing), along with inverses
+                            'isOrWasReferredToInContentOf' and 'isOrWasReferredToInContentOfSomeMembersOf' respectively for these, all as
+                            sub-properties of 'isRelatedTo'. Made additions to the scope note of 'hasOrHadSubject'.
+                        </html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -3481,6 +3486,32 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">A common use case would be to connect a photograph of a person (a portrait) and the person
             represented.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasContentWhichRefersTo -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentWhichRefersTo">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isReferredToInContentOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:comment xml:lang="en">Connects a Record or a Record Part to a Thing that its content refers to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has content which refers to</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-06-10</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">The reference may be explicit (e.g. a direct quotation or mention) or implicit. The
+            content and reference might be textual, audio, visual, etc.
+        </skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents">
@@ -6531,6 +6562,24 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRefersTo -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRefersTo">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasReferredToInContentOfSomeMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is referred to in the content of some of the Records
+            or Record Parts that are or were included in the Record Set.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had some members whose content refers to</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-06-10</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">See the skos:scopeNote for rico:hasContentWhichRefersTo for the scope of 'refers to'.</skos:scopeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRepresents">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithSubject"/>
@@ -7096,6 +7145,12 @@
         <rdfs:label xml:lang="es">tiene o tenía como materia</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-06-10</dc:date>
+                <rdf:value xml:lang="en">Made additions to skos:scopeNote (RiC-O 1.2).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the skos:scopeNote.</rdf:value>
             </rdf:Description>
@@ -7119,7 +7174,15 @@
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was "hasSubject").</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">The subject of a Record Set may be affected if the Record Set loses some of the Records.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en"> A Thing may be a subject of a Record Resource in an implicit way. It is within scope that
+            a Thing is only a minor subject of the Record Resource; the sub-property rico:hasOrHadMainSubject can be used to
+            emphasise that a subject is a principal one. We regard a representation of a Thing in a Record or Record Part, e.g.
+            with visual content, as being a subject of it; the sub-property rico:hasContentWhichRepresents can be used in this
+            case. A Thing may be referenced, e.g., mentioned, in a Record or Record Part without being a subject of it; the
+            property rico:hasContentWhichRefersTo can be used in this case.
+
+            The subject of a Record Set may be affected if the Record Set loses some of the Records.
+        </skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R019 ('has or had subject' relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSubordinate -->
@@ -13229,6 +13292,22 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasReferredToInContentOfSomeMembersOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasReferredToInContentOfSomeMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWhoseContentRefersTo"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Inverse of 'has or had some members whose content refers to' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was referred to in content of some members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-06-10</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasRegulatedBy">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAssociatedWithRule"/>
@@ -14314,6 +14393,29 @@
                 <dc:date>2020-12-28</dc:date>
                 <rdf:value xml:lang="en">Changed the IRI, label, textual definition and range (Record Resource removed, replaced by Record or Record
                     Part).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isReferredToInContentOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isReferredToInContentOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasContentWhichRefersTo"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse of 'has content which refers to' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is referred to in content of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-06-10</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
