@@ -18862,6 +18862,22 @@
             for handling dates.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
+   <!-- https://www.ica.org/standards/RiC/ontology#depth -->
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#depth">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Vertical dimension of an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">depth</rdfs:label>
+		<skos:scopeNote xml:lang="en">  This Property will generally apply to the Instantiation of a Record.  Depth will normally be at right angles to the dimensions recorded under the properties Height and Width, and will often be perpendicular to the main surface on which information is inscribed using a writing system or otherwise. Examples include the thickness of a box, a folder, a multi-page codex, a framed document, or a document in which a seal is attached to a sheet of vellum. As Depth may change over time (a rolled document may be flattened, or a bundle of documents repackaged) the date on which the measurement was taken should be noted.</skos:scopeNote>
+		<skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-05-27</dc:date>
+                <rdf:value xml:lang="en">This Property was introduced in  RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#derivationDate -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#derivationDate">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
@@ -19545,6 +19561,7 @@
         <rdfs:label xml:lang="en">measure</rdfs:label>
         <rdfs:label xml:lang="es">medida</rdfs:label>
         <rdfs:label xml:lang="fr">mesure</rdfs:label>
+		<skos:scopeNote xml:lang="en">As the dimensions of an entity may change over time (for example, a rolled document may be flattened, or a bundle of documents repackaged) the date on which the measurement was taken should be noted.</skos:scopeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19555,6 +19572,12 @@
             <rdf:Description>
                 <dc:date>2023-08-25</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-05-27</dc:date>
+                <rdf:value xml:lang="en">Added scopeNote to note that the date of a measurement should be recorded.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:DatatypeProperty>
