@@ -19082,13 +19082,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#geographicalCoordinates -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Longitudinal and latitudinal information about a Place. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">coordenadas geográficas</rdfs:label>
         <rdfs:label xml:lang="fr">coordonnées géographiques</rdfs:label>
         <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Moved geographicalCoordinates to be a subproperty of measure, and changed domain to Thing, in line with wider discussions on properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
