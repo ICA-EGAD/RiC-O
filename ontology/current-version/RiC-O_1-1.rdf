@@ -18522,6 +18522,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#carrierExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#carrierExtent">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of the carrier of an Instantiation. In order to manage an
