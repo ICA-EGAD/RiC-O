@@ -20190,6 +20190,12 @@
         <rdfs:label xml:lang="es">soporte de recurso documental</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the properties forming a subproperty of Extent) cannot be used.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2024-03-15</dc:date>
                 <rdf:value xml:lang="en">Fix capitalisation in English label.</rdf:value>
             </rdf:Description>
@@ -20232,7 +20238,7 @@
         <skos:example xml:lang="en">3 minutes and 24 seconds</skos:example>
         <skos:example xml:lang="en">6 maps</skos:example>
         <skos:example xml:lang="en">6 photographs</skos:example>
-        <skos:scopeNote xml:lang="en">Use if you don't use RecordResourceExtent class and its properties for handling such information. Record
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of Extent: for example, when legacy metadata comprises a textual phrase combining different types of information. Use if you don't use RecordResourceExtent class and its properties for handling such information. Record
             resource extent should not be confused with instantiation extent or carrier extent. The number, size or duration of the information
             content unit(s) remains the same even if the information is instantiated in various carriers. For example, a CD with a storage capacity of
             700 MB (carrier extent) might hold a record of 1,500 words (record resource extent) represented in two versions, one a Word document with
