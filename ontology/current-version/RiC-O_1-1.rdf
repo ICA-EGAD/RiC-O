@@ -19540,11 +19540,17 @@
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#measure">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">The extent, quantity, amount, or degree of an entity, as determined by measurement or calculation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Intrinsic and measurable characteristics of a Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">measure</rdfs:label>
         <rdfs:label xml:lang="es">medida</rdfs:label>
         <rdfs:label xml:lang="fr">mesure</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Changed definition in line with clarification of properties relating to measurement and extent, and added scopeNote.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19557,6 +19563,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">These characteristics of a Thing may not actually have been measured: the key fact is that they are capable of being measured or calculated.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#migrationDate -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationDate">
