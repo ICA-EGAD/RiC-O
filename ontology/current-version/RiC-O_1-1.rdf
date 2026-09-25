@@ -18927,6 +18927,21 @@
             for handling dates.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Datatype property specialized implementation of RiC-E18 (Date entity)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#duration -->
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#duration">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The time interval during which an event or phenomenon unfolds, from its beginning to its end.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Created as a result of general discussions of properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Duration applies to Events and also to the temporal extent of a sound or audiovisual recording. When applied to Records, it will typically relate to audio-visual material such as a sound recording or film, but it may also apply to a digital object that executes a programmed sequence of actions, such as a Powerpoint slide-show; it may, by extension, be used to record a typical time that might be taken to read a written record.  It can be applied to Record Sets, Records and Record Parts. Different instatiations of these may well have different durations.</skos:scopeNote>
+    </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#endDate -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#endDate">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#date"/>
