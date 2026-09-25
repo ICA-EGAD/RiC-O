@@ -19129,14 +19129,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#height -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#height">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Vertical dimension of an entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A measurement of the dimension which is perpendicular to a chosen dimension of a Thing, in a certain planar section of this Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">altura</rdfs:label>
         <rdfs:label xml:lang="fr">hauteur</rdfs:label>
         <rdfs:label xml:lang="en">height</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified definition and scope note in line with wider discussions about properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19149,6 +19155,8 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Height will typically be measured from the base of the Thing in a direction perpendicular to the surface on which it rests. Often the chosen reference surface will be the surface of the Earth. Sample use cases include a building or a mountain. When “height” is applied to the instantiation of a Record, the dimension measured will typically be that of the main plane on which the record is written, measuring from the start point of the inscription down towards its end. It will typically be at right angles to the direction designated as “Width”.  For example, where Roman, Greek, Arabic or Hebrew writing systems are used the text of a record will typically run across the Width of a record instantiation and, having reached the edge, resume on the line below so that the overall progress of the text runs “down” the direction designated as Height. Height measures an intrinsic quality of a Thing, in contrast to altitude which is a measurement relative to an external reference frame (and for that reason height cannot have a negative value, unlike Altitude).
+</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#history -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#history">
