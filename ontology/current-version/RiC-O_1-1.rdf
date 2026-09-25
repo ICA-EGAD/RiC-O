@@ -20693,6 +20693,21 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:DatatypeProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#thickness -->
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#thickness">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A measurement of the dimension which is perpendicular to both the Height and Width of a Thing when both are defined.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Created as a result of general discussions of properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">This property will generally apply to the instantiation of a Record.  Thickness will normally be at right angles to the dimensions recorded under the properties height and width, and will often be perpendicular to the main surface on which information is inscribed using a writing system or otherwise. Examples include the thickness of a box, a folder, a multi-page codex, a framed document, or a document in which a seal is attached to a sheet of vellum. As thickness may change over time (a rolled document may be flattened, or a bundle of documents repackaged) the date on which the measurement was taken should be noted. Thickness measures an intrinsic quality of a Thing, and for that reason cannot have a negative value.</skos:scopeNote>
+    </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#title -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#title">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#name"/>
