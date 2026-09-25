@@ -236,8 +236,8 @@
                             <html:p>These datatype properties have the same kind of skos:scopeNote as above.</html:p>
                             <html:p>Finally, <html:strong>we have introduced a few datatype properties that do not correspond to any RiC-CM
                                 attribute</html:strong>.</html:p>
-                            <html:p>Some are superproperties, and thus group datatype properties: <html:a href="#rico:physicalOrLogicalExtent"
-                                >rico:physicalOrLogicalExtent</html:a>, with rico:carrierExtent, rico:instantiationExtent and
+                            <html:p>Some are superproperties, and thus group datatype properties: <html:a href="#rico:extent"
+                                >rico:extent</html:a>, with rico:carrierExtent, rico:instantiationExtent and
                                 rico:recordResourceExtent as subproperties; <html:a href="#rico:textualValue">rico:textualValue</html:a>, with
                                 rico:expressedDate, rico:normalizedValue and rico:quantity as subproperties; <html:a href="#rico:measure"
                                 >rico:measure</html:a>; <html:a href="#rico:referenceSystem">rico:referenceSystem</html:a>; <html:a href="#rico:note"
@@ -18521,7 +18521,7 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#carrierExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#carrierExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of the carrier of an Instantiation. In order to manage an
@@ -18532,6 +18532,12 @@
         <rdfs:label xml:lang="en">carrier extent</rdfs:label>
         <rdfs:label xml:lang="es">extensión del soporte</rdfs:label>
         <rdfs:label xml:lang="fr">mesure du support</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
@@ -19267,7 +19273,7 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#instantiationExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Countable characteristics of an Instantiation expressed as a quantity.</rdfs:comment>
@@ -19275,6 +19281,12 @@
         <rdfs:label xml:lang="en">Instantiation extent</rdfs:label>
         <rdfs:label xml:lang="fr">mesure de l’instanciation</rdfs:label>
         <rdfs:label xml:lang="es">soporte de instanciación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
@@ -19882,7 +19894,7 @@
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A31 (Physical Characteristics Note attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent -->
-    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent">
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#extent">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -19892,11 +19904,17 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Countable characteristics of the content of an entity expressed as a quantity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Intrinsic and measurable characteristics of a Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">importance physique ou logique</rdfs:label>
         <rdfs:label xml:lang="en">physical or logical extent</rdfs:label>
         <rdfs:label xml:lang="es">soporte físico o lógico</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Renamed property from physicalOrLogicalExtent, and clarified definition and scope note, in line with wider discussions on properties relating to measurement and extent.  Made domain be Thing, and made longitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19909,7 +19927,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Provided for usability reasons. Use only if you cannot use the subproperties (particularly if the same free text
+        <skos:scopeNote xml:lang="en">Although this property relates to characteristics that are measureable, they do not have actually to have been measured. Provided for usability reasons. Use only if you cannot use the subproperties (particularly if the same free text
             is being used in your current metadata for describing the record resource, carrier and instantiation extent).</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#productionTechnique -->
@@ -20176,7 +20194,7 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The quantity of information content, as human experienced, contained in a Record Resource. The method and
@@ -20188,6 +20206,12 @@
         <rdfs:label xml:lang="fr">mesure de la ressource archivistique</rdfs:label>
         <rdfs:label xml:lang="en">Record Resource Extent</rdfs:label>
         <rdfs:label xml:lang="es">soporte de recurso documental</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2024-03-15</dc:date>
