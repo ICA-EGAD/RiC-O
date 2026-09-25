@@ -19446,14 +19446,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#length -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#length">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Length of an entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A measure of distance between two points, typically the two ends of a Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <rdfs:label xml:lang="es">longitud</rdfs:label>
         <rdfs:label xml:lang="fr">longueur</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified definition and scope note in line with wider discussions about properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -19466,7 +19472,8 @@
                 <rdf:value xml:lang="en">Added for enabling to describe entities that have such a dimension.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">May be used, among other cases, for storing the length of some places like streets.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The Length of an entity is typically one of two horizontal dimensions of a Thing, the other being its width, and will often be measured in a straight line.  However, it may also trace a course that curves and/or varies in height or altitude, such as the length of a street or a river.  Where both the length and width of a Thing are recorded, generally length will apply to the greater value. An example use case is that of a street, in which the width will be the distance across the street between buildings, and the length the distance from one end of the street to another. 
+</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#location -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#location">
