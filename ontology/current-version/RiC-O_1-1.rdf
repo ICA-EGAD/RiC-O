@@ -18534,6 +18534,12 @@
         <rdfs:label xml:lang="fr">mesure du support</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the properties forming a subproperty of Extent) cannot be used.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
                 <rdf:value xml:lang="en">Aligned with RiC-CM 1.0: updated the description (rdfs:comment), skos:scopeNote, examples
                     (skos:example).</rdf:value>
@@ -18561,7 +18567,7 @@
         <skos:example xml:lang="en">1 page</skos:example>
         <skos:example xml:lang="en">3 GB (1 USB key)</skos:example>
         <skos:example xml:lang="en">32.5 x 49 cm (piece of parchment)</skos:example>
-        <skos:scopeNote xml:lang="en">For digital resources, it may be used to indicate the size of storage capacity (disk, tape, film, etc.). Carrier
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of Extent: for example, when legacy metadata comprises a textual phrase combining different types of information. For digital resources, it may be used to indicate the size of storage capacity (disk, tape, film, etc.). Carrier
             extent should not be confused with instantiation extent or record resource extent. For a given Record Resource, the instantiation extent
             may vary, based on format, density of information on the carrier, etc. For example, a CD with a storage capacity of 700 MB (carrier
             extent) might hold a record of 1500 words (record resource extent) represented in two versions, one a Word document with an instantiation
