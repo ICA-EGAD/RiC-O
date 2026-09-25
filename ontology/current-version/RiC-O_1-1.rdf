@@ -20861,14 +20861,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#width -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#width">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Horizontal dimension of an entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A measurement of the dimension which is parallel to a chosen linear dimension of a Thing, in a certain planar section of this Thing; typically the two sides of a Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">anchura</rdfs:label>
         <rdfs:label xml:lang="fr">largeur</rdfs:label>
         <rdfs:label xml:lang="en">width</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified definition and scope note in line with wider discussions about properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -20881,6 +20887,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">The width of an entity is typically one of its two horizontal dimensions that is lesser in magnitude, the other being its length. It will often be horizontal but may vary in altitude (for example, the width of a football pitch that slopes from one side to the other). An example use-case would be a street, in which the width will be the distance across the street between buildings, and the length the distance from one end of the street to another. When width is applied to the instantiation of a Record, it will typically refer to the main plane on which the record is inscribed, and will be at right angles to the direction designated as “height”.  For example, where Roman, Greek, Arabic or Hebrew writing systems are used the text of a record will typically run across the width of a record instantiation and, having reached the edge, resume on the line below so that the overall progress of the text runs “down” the direction designated as height. Width measures an intrinsic quality of a Thing, and for that reason cannot have a negative value.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
