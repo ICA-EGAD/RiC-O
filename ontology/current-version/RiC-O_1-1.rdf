@@ -18531,8 +18531,7 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2026-09-25</dc:date>
-                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
-                    properties forming a subproperty of Extent) cannot be used.</rdf:value>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the properties forming a subproperty of extent) cannot be used.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -18564,7 +18563,7 @@
         <skos:example xml:lang="en">1 page</skos:example>
         <skos:example xml:lang="en">3 GB (1 USB key)</skos:example>
         <skos:example xml:lang="en">32.5 x 49 cm (piece of parchment)</skos:example>
-        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of Extent: for example,
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
             when legacy metadata comprises a textual phrase combining different types of information. For digital resources, it may be used to
             indicate the size of storage capacity (disk, tape, film, etc.). Carrier extent should not be confused with instantiation extent or record
             resource extent. For a given Record Resource, the instantiation extent may vary, based on format, density of information on the carrier,
@@ -19315,7 +19314,7 @@
         <skos:example xml:lang="en">234 linear metres</skos:example>
         <skos:example xml:lang="en">Size of PDF file: 1.5 MB</skos:example>
         <skos:example xml:lang="en">The register has 345 written folios</skos:example>
-        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of Extent: for example,
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
             when legacy metadata comprises a textual phrase combining different types of information. Instantiation extent should not be confused with
             record resource extent or carrier extent. For a given Record Resource, the instantiation extent may vary, based on format, density of
             information on the carrier, etc. For example, a CD with a storage capacity of 700 MB (carrier extent) might hold a record of 1500 words
@@ -20189,8 +20188,8 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The quantity of information content, as human experienced, contained in a Record Resource. The method and
@@ -20253,7 +20252,7 @@
         <skos:example xml:lang="en">3 minutes and 24 seconds</skos:example>
         <skos:example xml:lang="en">6 maps</skos:example>
         <skos:example xml:lang="en">6 photographs</skos:example>
-        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of Extent: for example,
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
             when legacy metadata comprises a textual phrase combining different types of information. Use if you don't use RecordResourceExtent class
             and its properties for handling such information. Record resource extent should not be confused with instantiation extent or carrier
             extent. The number, size or duration of the information content unit(s) remains the same even if the information is instantiated in
