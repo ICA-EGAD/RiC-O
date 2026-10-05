@@ -2,6 +2,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
 @prefix evtype: <http://id.loc.gov/vocabulary/preservation/eventType/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix relSubType:  <http://id.loc.gov/vocabulary/preservation/relationshipSubType> .
@@ -10,6 +11,7 @@
 
 
 # 2023, Dec. 29: example revised and made compliant with RiC-O 1.0 by Florence Clavaud
+# 2026, Oct. 5: owl: prefix not bound - fixed by Les Kneebone
 
 # ====== Record
 <_20201118115821577> a rico:Record ;
