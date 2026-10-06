@@ -19273,8 +19273,8 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#instantiationExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Countable characteristics of an Instantiation expressed as a quantity.</rdfs:comment>
@@ -19286,7 +19286,7 @@
             <rdf:Description>
                 <dc:date>2026-09-25</dc:date>
                 <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
-                    properties forming a subproperty of Extent) cannot be used.</rdf:value>
+                    properties forming a subproperty of Extent) cannot be used. Made this property a subproperty of rico:note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
