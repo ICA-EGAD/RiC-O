@@ -236,13 +236,12 @@
                             <html:p>These datatype properties have the same kind of skos:scopeNote as above.</html:p>
                             <html:p>Finally, <html:strong>we have introduced a few datatype properties that do not correspond to any RiC-CM
                                 attribute</html:strong>.</html:p>
-                            <html:p>Some are superproperties, and thus group datatype properties: <html:a href="#rico:extent"
-                                >rico:extent</html:a>, with rico:carrierExtent, rico:instantiationExtent and
-                                rico:recordResourceExtent as subproperties; <html:a href="#rico:textualValue">rico:textualValue</html:a>, with
-                                rico:expressedDate, rico:normalizedValue and rico:quantity as subproperties; <html:a href="#rico:measure"
-                                >rico:measure</html:a>; <html:a href="#rico:referenceSystem">rico:referenceSystem</html:a>; <html:a href="#rico:note"
-                                >rico:note</html:a> (added in RiC-O 1.1), with rico:authenticityNote, rico:integrityNote and
-                                rico:physicalCharacteristicsNote as subproperties.</html:p>
+                            <html:p>Some are superproperties, and thus group datatype properties: <html:a href="#rico:extent">rico:extent</html:a>,
+                                with rico:carrierExtent, rico:instantiationExtent and rico:recordResourceExtent as subproperties; <html:a
+                                href="#rico:textualValue">rico:textualValue</html:a>, with rico:expressedDate, rico:normalizedValue and rico:quantity
+                                as subproperties; <html:a href="#rico:measure">rico:measure</html:a>; <html:a href="#rico:referenceSystem"
+                                >rico:referenceSystem</html:a>; <html:a href="#rico:note">rico:note</html:a> (added in RiC-O 1.1), with
+                                rico:authenticityNote, rico:integrityNote and rico:physicalCharacteristicsNote as subproperties.</html:p>
                             <html:p>Some are simply more specific properties, like: <html:a href="#rico:accrualsStatus">rico:accrualsStatus</html:a>;
                                 <html:a href="#rico:recordResourceStructure">rico:recordResourceStructure</html:a> and <html:a
                                 href="#rico:instantiationStructure">rico:instantiationStructure</html:a>, subproperties of rico:structure; <html:a
@@ -774,11 +773,10 @@
                         <html:li>2025, May 14th: added a dcat:version to the two skos:ConceptScheme named individuals.</html:li>
                         <html:li>2026, March 30th: added new datatype property rankInTemporalSequence as subproperty of rankInSequence for which the
                             domain was extended to Thing.</html:li>
-                        <html:li>2026, June 10th: Added the object properties 'hasContentWhichRefersTo' (domain Record or Record Part and range
-                            Thing) and 'hasOrHadSomeMembersWhoseContentRefersTo' (domain Record Set and range Thing), along with inverses
+                        <html:li>2026, June 10th: Added the object properties 'hasContentWhichRefersTo' (domain Record or Record Part and range Thing)
+                            and 'hasOrHadSomeMembersWhoseContentRefersTo' (domain Record Set and range Thing), along with inverses
                             'isOrWasReferredToInContentOf' and 'isOrWasReferredToInContentOfSomeMembersOf' respectively for these, all as
-                            sub-properties of 'isRelatedTo'. Made additions to the scope note of 'hasOrHadSubject'.
-                        </html:li>
+                            sub-properties of 'isRelatedTo'. Made additions to the scope note of 'hasOrHadSubject'. </html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -3511,9 +3509,8 @@
                 <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">The reference may be explicit (e.g. a direct quotation or mention) or implicit. The
-            content and reference might be textual, audio, visual, etc.
-        </skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The reference may be explicit (e.g. a direct quotation or mention) or implicit. The content and reference might
+            be textual, audio, visual, etc. </skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasContentWhichRepresents">
@@ -6570,8 +6567,8 @@
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasReferredToInContentOfSomeMembersOf"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is referred to in the content of some of the Records
-            or Record Parts that are or were included in the Record Set.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Thing that is referred to in the content of some of the Records or Record Parts that
+            are or were included in the Record Set.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">has or had some members whose content refers to</rdfs:label>
         <rdfs:label xml:lang="fr">inclut ou a inclus des membres dont le contenu fait référence à</rdfs:label>
@@ -7178,14 +7175,12 @@
                     with RiC-CM 0.2; the name of this property in RiC-O 0.1 was "hasSubject").</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">A Thing may be a subject of a Record Resource in an implicit way. It is within scope that
-            a Thing is only a minor subject of the Record Resource; the sub-property rico:hasOrHadMainSubject can be used to
-            emphasise that a subject is a principal one. We regard a representation of a Thing in a Record or Record Part, e.g.
-            with visual content, as being a subject of it; the sub-property rico:hasContentWhichRepresents can be used in this
-            case. A Thing may be referenced, e.g., mentioned, in a Record or Record Part without being a subject of it; the
-            property rico:hasContentWhichRefersTo can be used in this case.
-            The subject of a Record Set may be affected if the Record Set loses some of the Records.
-        </skos:scopeNote>
+        <skos:scopeNote xml:lang="en">A Thing may be a subject of a Record Resource in an implicit way. It is within scope that a Thing is only a
+            minor subject of the Record Resource; the sub-property rico:hasOrHadMainSubject can be used to emphasise that a subject is a principal
+            one. We regard a representation of a Thing in a Record or Record Part, e.g. with visual content, as being a subject of it; the
+            sub-property rico:hasContentWhichRepresents can be used in this case. A Thing may be referenced, e.g., mentioned, in a Record or Record
+            Part without being a subject of it; the property rico:hasContentWhichRefersTo can be used in this case. The subject of a Record Set may be
+            affected if the Record Set loses some of the Records. </skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R019 ('has or had subject' relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSubordinate -->
@@ -18358,14 +18353,21 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#altitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#altitude">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">The height of a Place above a reference level, especially above sea level.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The position of a Place vertically relative to a particular reference level, typically sea level.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">altitud</rdfs:label>
         <rdfs:label xml:lang="en">altitude</rdfs:label>
         <rdfs:label xml:lang="fr">altitude</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified definition and scope note in line with wider discussions on properties relating to measurement and
+                    extent. Made domain be Thing, and made altitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -18378,8 +18380,9 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this class, use geographicalCoordinates property, a property
-            of Place class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Altitude measures a quality extrinsic to a Thing – that is, relative to an external reference frame – and can
+            thus, unlike height, have a negative value. The reference level should be specified, in as much detail as is necessary to avoid confusion,
+            as should the units used to measure height above or below.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#authenticityNote -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authenticityNote">
@@ -18522,6 +18525,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#carrierExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#carrierExtent">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of the carrier of an Instantiation. In order to manage an
@@ -18536,6 +18540,13 @@
             <rdf:Description>
                 <dc:date>2026-10-06</dc:date>
                 <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
+                    properties forming a subproperty of extent) cannot be used. Made this property a subproperty of rico:note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -18567,11 +18578,13 @@
         <skos:example xml:lang="en">1 page</skos:example>
         <skos:example xml:lang="en">3 GB (1 USB key)</skos:example>
         <skos:example xml:lang="en">32.5 x 49 cm (piece of parchment)</skos:example>
-        <skos:scopeNote xml:lang="en">For digital resources, it may be used to indicate the size of storage capacity (disk, tape, film, etc.). Carrier
-            extent should not be confused with instantiation extent or record resource extent. For a given Record Resource, the instantiation extent
-            may vary, based on format, density of information on the carrier, etc. For example, a CD with a storage capacity of 700 MB (carrier
-            extent) might hold a record of 1500 words (record resource extent) represented in two versions, one a Word document with an instantiation
-            extent of 3 KB and the other a PDF file with an instantiation extent of 5 KB. </skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
+            when legacy metadata comprises a textual phrase combining different types of information. For digital resources, it may be used to
+            indicate the size of storage capacity (disk, tape, film, etc.). Carrier extent should not be confused with instantiation extent or record
+            resource extent. For a given Record Resource, the instantiation extent may vary, based on format, density of information on the carrier,
+            etc. For example, a CD with a storage capacity of 700 MB (carrier extent) might hold a record of 1500 words (record resource extent)
+            represented in two versions, one a Word document with an instantiation extent of 3 KB and the other a PDF file with an instantiation
+            extent of 5 KB. </skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A04 (Carrier Extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#classification -->
@@ -19088,13 +19101,21 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#geographicalCoordinates -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates">
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Place"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Longitudinal and latitudinal information about a Place. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">coordenadas geográficas</rdfs:label>
         <rdfs:label xml:lang="fr">coordonnées géographiques</rdfs:label>
         <rdfs:label xml:lang="en">geographical coordinates</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Moved geographicalCoordinates to be a subproperty of measure, and changed domain to Thing, in line with wider
+                    discussions on properties relating to measurement and extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-11</dc:date>
@@ -19274,6 +19295,7 @@
     <!-- https://www.ica.org/standards/RiC/ontology#instantiationExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#instantiationExtent">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Countable characteristics of an Instantiation expressed as a quantity.</rdfs:comment>
@@ -19285,6 +19307,13 @@
             <rdf:Description>
                 <dc:date>2026-10-06</dc:date>
                 <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
+                    properties forming a subproperty of Extent) cannot be used. Made this property a subproperty of rico:note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -19315,10 +19344,12 @@
         <skos:example xml:lang="en">234 linear metres</skos:example>
         <skos:example xml:lang="en">Size of PDF file: 1.5 MB</skos:example>
         <skos:example xml:lang="en">The register has 345 written folios</skos:example>
-        <skos:scopeNote xml:lang="en">Instantiation extent should not be confused with record resource extent or carrier extent. For a given Record
-            Resource, the instantiation extent may vary, based on format, density of information on the carrier, etc. For example, a CD with a storage
-            capacity of 700 MB (carrier extent) might hold a record of 1500 words (record resource extent) represented in two versions, one a Word
-            document with an instantiation extent of 3 KB and the other a PDF file with an instantiation extent of 5 KB.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
+            when legacy metadata comprises a textual phrase combining different types of information. Instantiation extent should not be confused with
+            record resource extent or carrier extent. For a given Record Resource, the instantiation extent may vary, based on format, density of
+            information on the carrier, etc. For example, a CD with a storage capacity of 700 MB (carrier extent) might hold a record of 1500 words
+            (record resource extent) represented in two versions, one a Word document with an instantiation extent of 3 KB and the other a PDF file
+            with an instantiation extent of 5 KB.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A23 (Instantiation Extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#instantiationStructure -->
@@ -19433,14 +19464,21 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#latitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#latitude">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Distance in degrees north or south of the equator.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">latitud</rdfs:label>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
         <rdfs:label xml:lang="fr">latitude</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified scope note in line with wider discussions on properties relating to measurement and extent. Made
+                    domain be Thing, and made latitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19453,8 +19491,9 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this class, use geographicalCoordinates property, a property
-            of Place class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Latitude, and the perpendicular measure longitude, are used to designate locations on the surface of the Earth.
+            Both latitude and longitude would normally be expressed according to a standard (for example, such as WGS 84), which should be specified;
+            use the referenceSystem property, or its subproperties, to store information about this standard.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#length -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#length">
@@ -19525,8 +19564,8 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#longitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#longitude">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Distance in degrees east or west of a prime meridian.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
@@ -19535,6 +19574,13 @@
         <rdfs:label xml:lang="fr">longitude</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified scope note in line with wider discussions on properties relating to measurement and extent. Made
+                    domain be Thing, and made longitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
             </rdf:Description>
@@ -19545,20 +19591,28 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this class, use geographicalCoordinates property, a property
-            of Place class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Longitude, and the perpendicular measure latitude, are used to designate locations on the surface of the Earth.
+            Both latitude and longitude would normally be expressed according to a standard (for example, such as WGS 84), which should be specified;
+            use the referenceSystem property, or its subproperties, to store information about this standard.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#measure -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#measure">
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">The extent, quantity, amount, or degree of an entity, as determined by measurement or calculation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The result of the measuring or evaluation of some countable characteristics of a Thing.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="en">measure</rdfs:label>
         <rdfs:label xml:lang="es">medida</rdfs:label>
         <rdfs:label xml:lang="fr">mesure</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Changed definition in line with clarification of properties relating to measurement and extent, and added
+                    scopeNote.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in Spanish.</rdf:value>
             </rdf:Description>
@@ -19569,6 +19623,8 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">These characteristics of a Thing may not actually have been measured: the key fact is that they are capable of
+            being measured or calculated.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#migrationDate -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#migrationDate">
@@ -19905,7 +19961,8 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2026-09-25</dc:date>
-                <rdf:value xml:lang="en">Renamed property from physicalOrLogicalExtent, and clarified definition and scope note, in line with wider discussions on properties relating to measurement and extent.  Made domain be Thing, and made longitude a subproperty of geographicalCoordinates.</rdf:value>
+                <rdf:value xml:lang="en">Renamed property from physicalOrLogicalExtent, and clarified definition and scope note, in line with wider
+                    discussions on properties relating to measurement and extent. Made domain Thing.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -19920,7 +19977,8 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Although this property relates to characteristics that are measureable, they do not have actually to have been measured. Provided for usability reasons. Use only if you cannot use its subproperties.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Although this property relates to characteristics that are measureable, they do not have actually to have been
+            measured. Provided for usability reasons. Use only if you cannot use its subproperties.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#productionTechnique -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#productionTechnique">
@@ -20131,7 +20189,8 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2026-04-15</dc:date>
-                <rdfs:comment xml:lang="en">Scope note expanded slightly in RiC-O 1.2 to reflect the change in domain to Thing. An incorrect statement removed in addition.</rdfs:comment>
+                <rdfs:comment xml:lang="en">Scope note expanded slightly in RiC-O 1.2 to reflect the change in domain to Thing. An incorrect statement
+                    removed in addition.</rdfs:comment>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -20151,11 +20210,10 @@
             example to help display or query a graph). But it should be ensured that it reflects and is compatible with (e.g. computed using) the
             sequential object properties in the intended context (e.g. the Records in a given Record Set). Thus, if, for example, Record Resource A
             rico:precedesOrPreceded Record Resource B, then the rico:rankInSequence of Record Resource B must be strictly greater than
-            rico:rankInSequence of Record Resource A. For a given Record Resource, rico:rankInSequence should never be used more than once. If a Record
-            Resource belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInSequence have source
-            such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
-            sequence, rico:rankInSequence currently should only be used with one of these sequences.
-        </skos:scopeNote>
+            rico:rankInSequence of Record Resource A. For a given Record Resource, rico:rankInSequence should never be used more than once. If a
+            Record Resource belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInSequence have
+            source such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
+            sequence, rico:rankInSequence currently should only be used with one of these sequences. </skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#rankInTemporalSequence -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#rankInTemporalSequence">
@@ -20181,12 +20239,12 @@
             Record Resource A. For a given Record Resource, rico:rankInTemporalSequence should never be used more than once. If a Record Resource
             belongs to more than one sequence, a rico:Proxy of the Record Resource should be introduced, and rico:rankInTemporalSequence have source
             such a proxy, in all cases except (possibly) the first. For a Thing which is not a Record Resource which belongs to more than one
-            sequence, rico:rankInTemporalSequence currently should only be used with one of these sequences.
-        </skos:scopeNote>
+            sequence, rico:rankInTemporalSequence currently should only be used with one of these sequences. </skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#recordResourceExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#recordResourceExtent">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#extent"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The quantity of information content, as human experienced, contained in a Record Resource. The method and
@@ -20200,8 +20258,15 @@
         <rdfs:label xml:lang="es">soporte de recurso documental</rdfs:label>
         <skos:changeNote>
             <rdf:Description>
-                <dc:date>2026-09-25</dc:date>
+                <dc:date>2026-10-06</dc:date>
                 <rdf:value xml:lang="en">Made changes reflecting renaming of physicalOrLogicalExtent property to simply extent.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
+                    properties forming a subproperty of extent) cannot be used. Made this property a subproperty of rico:note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
@@ -20248,11 +20313,13 @@
         <skos:example xml:lang="en">3 minutes and 24 seconds</skos:example>
         <skos:example xml:lang="en">6 maps</skos:example>
         <skos:example xml:lang="en">6 photographs</skos:example>
-        <skos:scopeNote xml:lang="en">Use if you don't use RecordResourceExtent class and its properties for handling such information. Record
-            resource extent should not be confused with instantiation extent or carrier extent. The number, size or duration of the information
-            content unit(s) remains the same even if the information is instantiated in various carriers. For example, a CD with a storage capacity of
-            700 MB (carrier extent) might hold a record of 1,500 words (record resource extent) represented in two versions, one a Word document with
-            an instantiation extent of 3 KB and the other a PDF file with an instantiation extent of 5 KB.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This property is to be used when it is not possible to use a more precise expression of extent: for example,
+            when legacy metadata comprises a textual phrase combining different types of information. Use if you don't use RecordResourceExtent class
+            and its properties for handling such information. Record resource extent should not be confused with instantiation extent or carrier
+            extent. The number, size or duration of the information content unit(s) remains the same even if the information is instantiated in
+            various carriers. For example, a CD with a storage capacity of 700 MB (carrier extent) might hold a record of 1,500 words (record resource
+            extent) represented in two versions, one a Word document with an instantiation extent of 3 KB and the other a PDF file with an
+            instantiation extent of 5 KB.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A35 (Record Resource Extent attribute)</RiCCMCorrespondingComponent>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#recordResourceSourceOfInformation -->
