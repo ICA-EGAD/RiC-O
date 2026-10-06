@@ -18359,7 +18359,6 @@
     <!-- https://www.ica.org/standards/RiC/ontology#altitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#altitude">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">The position of a Place vertically relative to a particular reference level, typically sea level.</rdfs:comment>
@@ -18385,7 +18384,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Altitude measures a quality extrinsic to a Thing – that is, relative to an external reference frame – and can thus, unlike Height, have a negative value. The reference level should be specified, in as much detail as is necessary to avoid confusion, as should the units used to measure height above or below.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Altitude measures a quality extrinsic to a Thing – that is, relative to an external reference frame – and can thus, unlike height, have a negative value. The reference level should be specified, in as much detail as is necessary to avoid confusion, as should the units used to measure height above or below.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#authenticityNote -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authenticityNote">
