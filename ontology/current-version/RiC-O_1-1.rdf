@@ -18517,8 +18517,8 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#carrierExtent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#carrierExtent">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#note"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#physicalOrLogicalExtent"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Number of physical units and/or physical dimensions of the carrier of an Instantiation. In order to manage an
@@ -18532,7 +18532,8 @@
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2026-09-25</dc:date>
-                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the properties forming a subproperty of extent) cannot be used.</rdf:value>
+                <rdf:value xml:lang="en">Added note that this property is to be used only when a more precise expression (which will use one of the
+                    properties forming a subproperty of extent) cannot be used. Made this property a subproperty of rico:note.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
         <skos:changeNote>
