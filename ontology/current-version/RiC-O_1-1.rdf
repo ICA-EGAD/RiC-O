@@ -19546,14 +19546,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#longitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#longitude">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Distance in degrees east or west of a prime meridian.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">longitud</rdfs:label>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
         <rdfs:label xml:lang="fr">longitude</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified scope note in line with wider discussions on properties relating to measurement and extent.  Made domain be Thing, and made longitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -19566,8 +19572,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this class, use geographicalCoordinates property, a property
-            of Place class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Longitude, and the perpendicular measure latitude, are used to designate locations on the surface of the Earth. Both latitude and longitude would normally be expressed according to a standard (for example, such as WGS 84), which should be specified; use the referenceSystem property, or its subproperties, to store information about this standard.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#measure -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#measure">
