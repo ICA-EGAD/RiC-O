@@ -18354,14 +18354,20 @@
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#altitude -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#altitude">
-        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Coordinates"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#geographicalCoordinates"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">The height of a Place above a reference level, especially above sea level.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The position of a Place vertically relative to a particular reference level, typically sea level.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">altitud</rdfs:label>
         <rdfs:label xml:lang="en">altitude</rdfs:label>
         <rdfs:label xml:lang="fr">altitude</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-09-25</dc:date>
+                <rdf:value xml:lang="en">Clarified definition and scope note in line with wider discussions on properties relating to measurement and extent.  Made domain be Thing, and made altitude a subproperty of geographicalCoordinates.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -18374,8 +18380,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">Property of the Coordinates class. If you don't use this class, use geographicalCoordinates property, a property
-            of Place class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Altitude measures a quality extrinsic to a Thing – that is, relative to an external reference frame – and can thus, unlike height, have a negative value. The reference level should be specified, in as much detail as is necessary to avoid confusion, as should the units used to measure height above or below.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#authenticityNote -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#authenticityNote">
