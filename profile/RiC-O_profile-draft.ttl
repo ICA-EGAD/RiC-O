@@ -1,0 +1,126 @@
+# RiC-O as a W3C PROF Profile - DRAFT STUB
+# =========================================
+# A starting point for ICA-EGAD/RiC-O issue #157
+# (https://github.com/ICA-EGAD/RiC-O/issues/157). Not normative; for review.
+#
+# Describes the RiC-O ecosystem as a prof:Profile whose resources are the
+# ontology, its modules, the SKOS vocabularies, documentation, examples,
+# validators (see #156) and future mappings - each tagged with a prof:hasRole
+# so the pieces can be listed, versioned, validated and content-negotiated.
+#
+# Artefact IRIs point at current v1.1 locations; swap for PURLs / w3id when the
+# team settles canonical resource IRIs. Placeholder descriptors (validation,
+# mappings) are marked DRAFT and can be filled as those artefacts land.
+
+@prefix prof:    <http://www.w3.org/ns/dx/prof/> .
+@prefix role:    <http://www.w3.org/ns/dx/prof/role/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix ric:     <https://www.ica.org/standards/RiC/> .
+
+ric:profile
+    a prof:Profile ;
+    rdfs:label "Records in Contexts Ontology (RiC-O) - profile description"@en ;
+    dcterms:description
+        "A W3C PROF description of the RiC-O ecosystem: the ontology and its supporting resources (modules, vocabularies, documentation, examples, validators, mappings), each labelled with a prof:hasRole."@en ;
+    dcterms:publisher <https://www.ica.org/> ;    # ICA / EGAD
+    dcterms:conformsTo <http://www.w3.org/ns/dx/prof/> ;
+    # RiC-O is the OWL formalisation of the RiC-CM conceptual model:
+    prof:isProfileOf <https://www.ica.org/standards/RiC/RiC-CM> ;
+    prof:hasResource
+        ric:res-ontology , ric:res-module-core , ric:res-module-main ,
+        ric:res-module-relations , ric:res-vocab-documentaryFormTypes ,
+        ric:res-vocab-recordSetTypes , ric:res-guidance , ric:res-examples ,
+        ric:res-changelog , ric:res-validation , ric:res-mappings .
+
+# --- role:schema / role:specification - the ontology itself --------------------
+ric:res-ontology
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O ontology (OWL, single file)"@en ;
+    prof:hasRole role:vocabulary , role:schema ;
+    prof:hasArtifact <https://www.ica.org/standards/RiC/ontology> ;
+    dcterms:conformsTo <http://www.w3.org/2002/07/owl> ;
+    dcterms:format "application/rdf+xml" .
+
+# --- role:schema - the modularized version (one descriptor per module) ---------
+ric:res-module-core
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O module: core"@en ;
+    prof:hasRole role:schema ;
+    prof:hasArtifact <https://ica-egad.github.io/RiC-O/ontology/current-version/modularized-version/RiC-O_1-1_core.rdf> ;
+    dcterms:format "application/rdf+xml" .
+
+ric:res-module-main
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O module: main"@en ;
+    prof:hasRole role:schema ;
+    prof:hasArtifact <https://ica-egad.github.io/RiC-O/ontology/current-version/modularized-version/RiC-O_1-1_main.rdf> ;
+    dcterms:format "application/rdf+xml" .
+
+ric:res-module-relations
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O module: relations"@en ;
+    prof:hasRole role:schema ;
+    prof:hasArtifact <https://ica-egad.github.io/RiC-O/ontology/current-version/modularized-version/RiC-O_1-1_relations.rdf> ;
+    dcterms:format "application/rdf+xml" .
+
+# --- role:vocabulary - the published SKOS concept schemes ----------------------
+ric:res-vocab-documentaryFormTypes
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC vocabulary: Documentary Form Types (SKOS)"@en ;
+    prof:hasRole role:vocabulary ;
+    prof:hasArtifact <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes> ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    dcterms:format "application/rdf+xml" .
+
+ric:res-vocab-recordSetTypes
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC vocabulary: Record Set Types (SKOS)"@en ;
+    prof:hasRole role:vocabulary ;
+    prof:hasArtifact <https://www.ica.org/standards/RiC/vocabularies/recordSetTypes> ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    dcterms:format "application/rdf+xml" .
+
+# --- role:guidance - the human-readable documentation --------------------------
+ric:res-guidance
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O documentation (HTML)"@en ;
+    prof:hasRole role:guidance ;
+    prof:hasArtifact <https://ica-egad.github.io/RiC-O/> ;
+    dcterms:format "text/html" .
+
+# --- role:example - the worked examples ----------------------------------------
+ric:res-examples
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O examples (v1.1)"@en ;
+    prof:hasRole role:example ;
+    prof:hasArtifact <https://github.com/ICA-EGAD/RiC-O/tree/master/examples/examples_v1-1> ;
+    dcterms:format "application/rdf+xml" .
+
+# --- role:core / change history ------------------------------------------------
+ric:res-changelog
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O change history / release notes"@en ;
+    prof:hasRole role:core ;
+    prof:hasArtifact <https://github.com/ICA-EGAD/RiC-O/releases> ;
+    dcterms:format "text/html" .
+
+# --- role:validation - SHACL (see #156; external for now) ----------------------
+ric:res-validation
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O SHACL validator (DRAFT - candidate from issue #156)"@en ;
+    prof:hasRole role:validation ;
+    # Kurrawong-generated shapes proposed in #156; to be adopted/curated by EGAD.
+    prof:hasArtifact <https://github.com/Kurrawong/semantic-background/blob/main/resources/validators/items/rico.ttl> ;
+    dcterms:conformsTo <http://www.w3.org/ns/shacl> ;
+    dcterms:format "text/turtle" .
+
+# --- role:mapping - crosswalks (DRAFT; PROV-O / PREMIS / CIDOC-CRM / schema.org)
+ric:res-mappings
+    a prof:ResourceDescriptor ;
+    rdfs:label "RiC-O mappings (DRAFT - see #72 for schema.org)"@en ;
+    prof:hasRole role:mapping ;
+    prof:hasArtifact <https://ica-egad.github.io/RiC-ResourceList/index.html> ;
+    dcterms:format "text/html" .
