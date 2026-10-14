@@ -23022,6 +23022,22 @@
       <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed
          later on. Use only if you don't use the Rule class for handling rules.</skos:scopeNote>
    </owl:DatatypeProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#scale -->
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#scale">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#measure"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The intended ratio between the way a Record or Record Part represents a real object and the actual measures of this object. Can be expressed in words, as a ratio, or as a fraction.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="es">escala</rdfs:label>
+        <rdfs:label xml:lang="en">scale</rdfs:label>
+        <rdfs:label xml:lang="fr">échelle</rdfs:label>
+        <skos:example xml:lang="en">1/10,000</skos:example>
+        <skos:example xml:lang="en">1:10,000</skos:example>
+        <skos:example xml:lang="en">one centimetre to one hundred metres</skos:example>
+        <skos:scopeNote xml:lang="en">Examples include the scale of a map or building plan.</skos:scopeNote>
+    </owl:DatatypeProperty>
    <!-- https://www.ica.org/standards/RiC/ontology#scopeAndContent -->
    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#scopeAndContent">
       <rdfs:subPropertyOf
