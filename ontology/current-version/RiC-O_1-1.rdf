@@ -825,6 +825,7 @@
                             French labels of extent, Extent, isExtentTypeOf, has ExtentType, and ExtentType.</html:li>
                         <html:li>2026, November 15th: added hasOrHadActivityOfType (and the inverse property, isOrWasActivityTypeOfAgent) to connect
                             directly an Agent to an Activity Type. Made it a shortcut for two property paths.</html:li>
+                        <html:li>2026, November 17th: extended the domain of rico:hasAuthor to the union of rico:Record and rico:RecordPart, and changed the range of the inverse relation rico:isAuthorOf similarly.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -3067,7 +3068,14 @@
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasAuthor">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasCreator"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isAuthorOf"/>
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -3082,12 +3090,17 @@
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelation_role"/>
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
         </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Connects a Record to the Group, Person or Position that is responsible for conceiving and formulating the
-            information contained in the Record.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a Record or Record Part to the Group, Person or Position that is responsible for conceiving and formulating the information contained in the Record or Record Part.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a pour responsable intellectuel</rdfs:label>
         <rdfs:label xml:lang="en">has author</rdfs:label>
         <rdfs:label xml:lang="es">tiene como autor a</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-17</dc:date>
+                <rdf:value xml:lang="en">Aligned domain with RiC-CM 1.1 by extending it to the union of Record and Record Part.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-12</dc:date>
@@ -3119,9 +3132,7 @@
                 <rdf:value xml:lang="en">Created following the addition of RiC-R079 relation in RiC-CM 0.2</rdf:value>
             </rdf:Description>
         </skos:changeNote>
-        <skos:scopeNote xml:lang="en">To be used for a Person, Group or Position that makes any contribution to the content of a record. Includes the
-            Person, Group or Position in whose name or by whose command the content may have been formulated and first instantiated (for example the
-            Person who signed the Record).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">To be used for a Person, Group or Position that makes any contribution to the content of a Record or Record Part. Includes the Person, Group or Position in whose name or by whose command the content may have been formulated and first instantiated (for example the Person who signed the Record or Record Part).</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R079 ('has author' relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasBeginningDate -->
@@ -9007,7 +9018,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsTargetOfRelation"/>
             <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#authorshipRelation_role"/>
@@ -9018,6 +9036,12 @@
         <rdfs:label xml:lang="es">es autor(a) de</rdfs:label>
         <rdfs:label xml:lang="fr">est le responsable intellectuel de</rdfs:label>
         <rdfs:label xml:lang="en">is author of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-17</dc:date>
+                <rdf:value xml:lang="en">Aligned range with RiC-CM 1.1 by extending it to the union of Record and Record Part.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-08</dc:date>
