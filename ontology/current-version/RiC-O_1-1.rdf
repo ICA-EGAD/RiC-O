@@ -825,6 +825,7 @@
                             French labels of extent, Extent, isExtentTypeOf, has ExtentType, and ExtentType.</html:li>
                         <html:li>2026, November 15th: added hasOrHadActivityOfType (and the inverse property, isOrWasActivityTypeOfAgent) to connect
                             directly an Agent to an Activity Type. Made it a shortcut for two property paths.</html:li>
+                        <html:li>2026, November 17th: added new datatype property 'scale'.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -20678,6 +20679,33 @@
         </skos:changeNote>
         <skos:scopeNote xml:lang="en">Provided for usability reasons. May be deprecated and removed later on. Use only if you don't use the Rule class
             for handling rules.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#scale -->
+    <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#scale">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The intended ratio between measurements of the representation of a hypothetical or actual object in a Record or Record Part and measurements of this object itself.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="es">escala</rdfs:label>
+        <rdfs:label xml:lang="en">scale</rdfs:label>
+        <rdfs:label xml:lang="fr">échelle</rdfs:label>
+        <skos:example xml:lang="en">1/10,000</skos:example>
+        <skos:example xml:lang="en">1:10,000</skos:example>
+        <skos:example xml:lang="en">one centimetre to one hundred metres</skos:example>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-17</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Can be expressed in words, as a ratio, or as a fraction. Examples include the scale of a map, building plan, or engineering diagram. Refers to the intellectual content of a Record or Record Part; it is not intended to be used to relate the physical dimensions of different Instantiations of a Record or Record Part.</skos:scopeNote>
     </owl:DatatypeProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#scopeAndContent -->
     <owl:DatatypeProperty rdf:about="https://www.ica.org/standards/RiC/ontology#scopeAndContent">
