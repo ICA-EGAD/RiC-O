@@ -827,6 +827,7 @@
                             directly an Agent to an Activity Type. Made it a shortcut for two property paths.</html:li>
                         <html:li>2026, November 17th: added new datatype property 'scale'; extended the domain of rico:hasAuthor to the union of
                             rico:Record and rico:RecordPart, and changed the range of the inverse relation rico:isAuthorOf similarly.</html:li>
+                        <html:li>2026, November 25th: added new classes AgentLanguageRelation (along with a 'rolification' of it) and LanguageUsageType, as well as new object properties agentWithLanguageUsage, creationUsingLanguage, creationWithLanguageUsage, hasOrHadMainLanguage, hasOrHadAllMembersWithMainLanguage, hasOrHadSomeMembersWithMainLanguage, languageOfAppellation, performanceUsingLanguage, performanceWithLanguageUsage, performanceWithRole and an inverse for each of these. Added scope note to creationWithRole, and slightly adjusted its definition. Added Appellation to the domain of hasOrHadLanguage, and to the range of isOrWasLanguageOf. Made hasOrHadLanguage a shortcut for a property chain involving languageOfAppellation.</html:li>
                     </html:ul>
                 </html:div>
             </html:div>
@@ -1214,6 +1215,39 @@
         <skos:scopeNote xml:lang="en">This property "rolifies" the AgentHierarchicalRelation class. It should be used only when you have to manage
             instances of the AgentHierarchicalRelation class, to connect each instance to itself, in order to be able to infer, using OWL-RL and
             property paths, the two shortcuts corresponding to this n-ary class.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#agentLanguageRelation_role -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentLanguageRelation_role">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relation_role"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation"/>
+        <rdfs:comment xml:lang="en">Connects an AgentLanguageRelation to itself. Can stand for an instance of the AgentLanguageRelation class.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has the role of the Agent Language Relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">This property "rolifies" the AgentLanguageRelation class. It is intended to be used only for technical aspects of ontology design.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#agentWithLanguageUsage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentWithLanguageUsage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfAgentLanguageRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+        <rdfs:comment xml:lang="en">Connects an AgentLanguageRelation to a LanguageUsageType.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">agent with language usage</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Should only be used for a Agent Language Relation involving more than one Agent or Language if the usage type is applicable to all of them; if not, distinct Agent Language Relations with the same source(s) and target(s) should be used.</skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#agentTemporalRelation_role -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#agentTemporalRelation_role">
@@ -1684,17 +1718,57 @@
             the CreationRelation class, to connect each instance to itself, in order to be able to infer, using OWL-RL and property paths, the two
             shortcuts corresponding to this n-ary class.</skos:scopeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#creationUsingLanguage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationUsingLanguage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageIsContextOfCreationRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects a Creation Relation to a Language.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">creation using language</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+<skos:scopeNote xml:lang="en">The object property 'creation with language usage' can be used to specify the way in which the Language was used. Should only be used if the Language was used by, or is otherwise equally applicable to, all of the Agents involved in a Creation Relation; if not, distinct Creation Relations with the same source(s) should be used.</skos:scopeNote>
+</owl:ObjectProperty>
+<!-- https://www.ica.org/standards/RiC/ontology#creationWithLanguageUsage -->
+<owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationWithLanguageUsage">
+<rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+<owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfCreationRelation"/>
+<rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+<rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+<rdfs:comment xml:lang="en">Connects a CreationRelation to a LanguageUsageType.</rdfs:comment>
+<rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+<rdfs:label xml:lang="en">creation with language usage</rdfs:label>
+<skos:changeNote>
+    <rdf:Description>
+	<dc:date>2026-11-25</dc:date>
+	<rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+    </rdf:Description>
+</skos:changeNote>
+<skos:scopeNote xml:lang="en">Should only be used for a Creation Relation having more than one Language in its context if the usage type is applicable to all of the Languages involved; if not, distinct Creation Relations with the same source(s) and target(s) should be used.</skos:scopeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#creationWithRole -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#creationWithRole">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#roleIsContextOfCreationRelation"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RoleType"/>
-        <rdfs:comment xml:lang="en">Connects a Creation Relation to the Role Type that the creator Agent(s) has in the creation process</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connects a CreationRelation to a RoleType that the creator Agent or Agents has/have in the creation process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">creación con el rol de</rdfs:label>
         <rdfs:label xml:lang="fr">création avec pour rôle</rdfs:label>
         <rdfs:label xml:lang="en">creation with role</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Scope note added in RiC-O 1.2, and rdfs:comment slightly adjusted.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -1707,6 +1781,7 @@
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Should only be used for a Creation Relation involving more than one Agent if every Agent has the same Role Type; if not, distinct Creation Relations with the same source(s) should be used.</skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#derivationRelation_role -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#derivationRelation_role">
@@ -4953,6 +5028,24 @@
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainLanguage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainLanguage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMainLanguage"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithLanguage"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOfAllMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Language that all the Records or Record Parts that are or were included in the
+            Record Set mainly use or used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had all members with main language</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainSubject -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainSubject">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithSubject"/>
@@ -5876,17 +5969,29 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Appellation"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
-        <rdfs:comment xml:lang="en">Connects an Agent, Record or Record Part to a Language that uses or used it.</rdfs:comment>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#thingIsSourceOfRelation"/>
+            <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#appellationRelation_role"/>
+            <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#languageOfAppellation"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">Connects an Agent, Appellation, Record or Record Part to a Language that it uses or used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">a ou a eu pour langue</rdfs:label>
         <rdfs:label xml:lang="en">has or had language</rdfs:label>
         <rdfs:label xml:lang="es">tiene o tenía como lengua</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added Appellation to the domain in RiC-O 1.2, adjusted the definition, and added a shortcut involving the languageOfAppellation object property.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -6027,6 +6132,29 @@
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R075i ('has or had location' relation)</RiCCMCorrespondingComponent>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadMainLanguage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadMainLanguage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadLanguage"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects an Agent or Record Resource to a Language that it mainly uses or used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had main language</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadMainSubject -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadMainSubject">
@@ -6923,6 +7051,23 @@
                 <rdf:value xml:lang="en">Object property added for handling the case where a Record Set is described as having all or some members
                     that belong to some category (see RiC-CM 0.2 attributes section, #4.4 on Record Set, Record and Record Part
                     attributes).</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainLanguage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainLanguage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithLanguage"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOfSomeMembersOf"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects a Record Set and a Language that some of the Records or Record Parts that are or were included in the
+            Record Set mainly use or used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">has or had some members with main language</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -12473,16 +12618,23 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Appellation"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">Connects a Language to an Agent, Record or Record Part that uses or used it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of 'has or had language' object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="es">es o era lengua de</rdfs:label>
         <rdfs:label xml:lang="fr">est ou a été la langue de</rdfs:label>
         <rdfs:label xml:lang="en">is or was language of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added Appellation to the range in RiC-O 1.2, and adjusted rdfs:comment.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -12779,6 +12931,62 @@
             <rdf:Description>
                 <dc:date>2023-10-20</dc:date>
                 <rdf:value xml:lang="en">Added for RiC-O 1.0.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadMainLanguage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Agent"/>
+                    <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse of 'has or had main language' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was main language of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOfAllMembersOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOfAllMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasLanguageOfAllMembersOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadAllMembersWithMainLanguage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Inverse of 'has or had all members with main language' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was main language of all members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOSomeMembersOf -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#isOrWasMainLanguageOfSomeMembersOf">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#isOrWasLanguageOfSomeMembersOf"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadSomeMembersWithMainLanguage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rdfs:comment xml:lang="en">Inverse of 'has or had some members with main language' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">is or was main language of some members of</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Introduced in RiC-O 1.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -15277,6 +15485,118 @@
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">RiC-R050 ('knows of' relation)</RiCCMCorrespondingComponent>
     </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageIsContextOfAppellationRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageIsContextOfAppellationRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageOfAppellation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'language of appellation' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language is context of appellation relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageIsContextOfCreationRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageIsContextOfCreationRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#creationUsingLanguage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'creation using language' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language is context of creation relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageIsContextOfPerformanceRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageIsContextOfPerformanceRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#performanceUsingLanguage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'performance using language' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language is context of performance relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageOfAppellation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageOfAppellation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageIsContextOfAppellationRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#AppellationRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects an Appellation Relation to a Language.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language of appellation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfAgentLanguageRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfAgentLanguageRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentWithLanguageUsage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'agent with language usage' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language usage is context of agent-language relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfCreationRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfCreationRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#creationWithLanguageUsage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'creation with language usage' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language usage is context of creation relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfPerformanceRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfPerformanceRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#performanceWithLanguageUsage"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'performance with language usage' object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">language usage is context of performance relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#leadershipRelation_role -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#leadershipRelation_role">
         <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#agentControlRelation_role"/>
@@ -15800,6 +16120,57 @@
         <skos:scopeNote xml:lang="en">This property "rolifies" the PerformanceRelation class. It should be used only when you have to manage instances
             of the PerformanceRelation class, to connect each instance to itself, in order to be able to infer, using OWL-RL and property paths, the
             two shortcuts corresponding to this n-ary class.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#performanceUsingLanguage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#performanceUsingLanguage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageIsContextOfPerformanceRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+        <rdfs:comment xml:lang="en">Connects a PerformanceRelation to a Language.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">performance using language</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">The object property 'performance with language usage' can be used to specify the way in which the Language was used. Should only be used if the Language was used by, or is otherwise equally applicable to, all of the Agents involved in a Performance Relation; if not, distinct Performance Relations with the same source(s) should be used.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#performanceWithLanguageUsage -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#performanceWithLanguageUsage">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#languageUsageIsContextOfPerformanceRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#LanguageUsageType"/>
+        <rdfs:comment xml:lang="en">Connects a PerformanceRelation to a LanguageUsageType.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">performance with language usage</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Should only be used for a Performance Relation having more than one Language in its context if the usage type is applicable to all of the Languages involved; if not, distinct Performance Relations with the same source(s) and target(s) should be used.</skos:scopeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#performanceWithRole -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#performanceWithRole">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasContext"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#roleIsContextOfPerformanceRelation"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#RoleType"/>
+        <rdfs:comment xml:lang="en">Connects a PerformanceRelation to a RoleType of the performing Agent or Agents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">performance with role</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Should only be used for a Performance Relation involving more than one Agent if every Agent has the same Role Type; if not, distinct Performance Relations with the same source(s) should be used.</skos:scopeNote>
     </owl:ObjectProperty>
     <!-- https://www.ica.org/standards/RiC/ontology#performsOrPerformed -->
     <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#performsOrPerformed">
@@ -17449,12 +17820,17 @@
         <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#creationWithRole"/>
         <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RoleType"/>
         <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#CreationRelation"/>
-        <rdfs:comment xml:lang="en">Connects a Role Type to a Creation Relation (this Role Type being the specific role played by the creating Person
-            in the context of this Relation).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of 'creation with role' object property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
         <rdfs:label xml:lang="fr">rôle est le contexte de la relation de création</rdfs:label>
         <rdfs:label xml:lang="en">role is context of creation relation</rdfs:label>
         <rdfs:label xml:lang="es">rol es contexto de relación de creación</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Adjusted rdfs:comment slightly.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
         <skos:changeNote>
             <rdf:Description>
                 <dc:date>2023-11-02</dc:date>
@@ -17465,6 +17841,22 @@
             <rdf:Description>
                 <dc:date>2023-08-28</dc:date>
                 <rdf:value xml:lang="en">Added a new rdfs:label in French.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:ObjectProperty>
+    <!-- https://www.ica.org/standards/RiC/ontology#roleIsContextOfPerformanceRelation -->
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#roleIsContextOfPerformanceRelation">
+        <rdfs:subPropertyOf rdf:resource="https://www.ica.org/standards/RiC/ontology#thingIsContextOfRelation"/>
+        <owl:inverseOf rdf:resource="https://www.ica.org/standards/RiC/ontology#performanceWithRole"/>
+        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RoleType"/>
+        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#PerformanceRelation"/>
+        <rdfs:comment xml:lang="en">Inverse of the 'performance with role' object property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">role is context of performance relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
             </rdf:Description>
         </skos:changeNote>
     </owl:ObjectProperty>
@@ -21725,6 +22117,39 @@
             agents.</skos:scopeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Class implementation of RiC-R045 and RiC-R045i relations</RiCCMCorrespondingComponent>
     </owl:Class>
+    <!-- https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation -->
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentLanguageRelation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#agentLanguageRelation_role"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#relationHasTarget"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Connects at least one Language and at least one Agent that uses the language or languages. The Language or Languages is/are the source of the Relation and the Agent or Agents is/are the target.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Agent Language Relation</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+    </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#AgentName -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#AgentName">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Name"/>
@@ -24144,6 +24569,20 @@
             </rdf:Description>
         </skos:changeNote>
         <RiCCMCorrespondingComponent xml:lang="en">Corresponds to RiC-A25 (Language attribute)</RiCCMCorrespondingComponent>
+    </owl:Class>
+    <!-- https://www.ica.org/standards/RiC/ontology#LanguageUsageType -->
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#LanguageUsageType">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Type"/>
+        <rdfs:comment xml:lang="en">The type of usage of a Language or Languages in a given context, for instance by the Agent or Agents performing an Activity or creating a Record Resource or Instantiation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Language Usage Type</rdfs:label>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>2026-11-25</dc:date>
+                <rdf:value xml:lang="en">Added in RiC-O 1.2.</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:scopeNote xml:lang="en">Can be used in connection with a Creation Relation, for example to express that a Language was the mother tongue or working language of the creator of a Record Resource or Instantiation, or was the language a first draft of a Record Resource or Instantiation was created in. Can also be used in connection with a Performance Relation, for example to express that a Language was the primary one used during performance of an Activity, or that a translation was made into that Language live; or to express, say, that a Language was used by an interviewee during performance of an Activity.</skos:scopeNote>
     </owl:Class>
     <!-- https://www.ica.org/standards/RiC/ontology#LeadershipRelation -->
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#LeadershipRelation">
